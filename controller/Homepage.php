@@ -3,14 +3,24 @@ class Homepage extends BaseCore
 {
     public function index()
     {
-        $data = array('nini'=>'wowo');
+        $data = array('nini'=>'wowo');//头，中，尾部分别加载，单独传参。
+        $this->load->view('head.php');
         $this->load->view('index.php',$data);
     }
 
     public function list_pic()
     {
-        $list = array(1,2,3,4,5,6,7,8);
-        $data['list'] = $list;
-        $this->load->view('list.php',$data);
+        $this->load->view('list2.php');
+    }
+
+    public function testphp()
+    {
+        ShowError('SUCCESS!',BASE_URI.'/Homepage');
+    }
+
+    public function test()
+    {
+        $curl = $this->load->method('curl');
+        echo $curl->a;
     }
 }

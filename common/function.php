@@ -7,20 +7,16 @@
  */
 
 /*
- * 页面跳转
- */
-function JumpTo($address,$message = 'ERROR_OCCURED')
-{
-    if($address)
-    {
-        Header('Location:'.$address);
-    }
-}
-/*
  * 报错
  */
-function showError($error)
+function ShowError($error,$url = "")
 {
-    echo $error;
-    die;
+    if($error)
+    {
+        Header("Location:".BASE_URL."/common/error/generalError.php?error=$error&url=$url");
+    }else
+    {
+        echo 'Error Info Is Null!';
+        exit;
+    }
 }
