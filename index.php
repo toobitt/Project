@@ -20,6 +20,7 @@ if(!defined('BASE_URL'))
 class BaseCore
 {
         public $load;
+        public $pdo;
 
         private static $instance;
 
@@ -27,7 +28,9 @@ class BaseCore
         {
             include_once(COMMON_DIR.'LoadFile.php');
             include_once(COMMON_DIR.'function.php');
+            include_once(COMMON_DIR.'pdoMysql.php');
             $this->load = new LoadFile();
+            $this->pdo = (new pdoMysql())->connect();
         }
 
         public function __clone(){}
@@ -41,7 +44,7 @@ class BaseCore
             return self::$instance;
         }
 /*
- * 域名后面加载控制器时暂时需要携带index.php
+ * 域名后面加载控制器时暂时需要携带index.php;
  */
     	public function index()
         {
