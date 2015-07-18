@@ -7,8 +7,31 @@
  */
 class User extends BaseCore
 {
-    public function login ()
+    public function __construct()
     {
-        var_dump($this->pdo);
+        parent::__construct();
+    }
+    public function regist ()
+    {
+        $params = array(
+            'name' => $_POST['name'],
+            'password' => md5($_POST['password']),
+            'sex' => $_POST['sex'],
+            'birthday' => strtotime($_POST['birthday']),
+            'address' => $_POST['address'],
+            'registtime' => time(),
+        );
+        $sql = 'INSERT INTO sign_user SET ';
+        $p = '';
+        foreach($params as $key => $vo)
+        {
+            $sql .= $p . $key . '=' . '"' . $vo . '"';
+            $p = ',';
+        }
+        $re = $this->pdo->exec($sql);
+        if($re){
+            unset($params['password']);
+            print_r($params);
+        }
     }
 }

@@ -1,6 +1,10 @@
 <?php
 class Homepage extends BaseCore
 {
+    public function __construct()
+    {
+        parent::__construct();
+    }
     public function index()
     {
         $this->load->view('head.php');

@@ -14,6 +14,7 @@ class pdoMysql
         try
         {
             $pdo = new PDO("mysql:host=".HOST.";dbname=".DBNAME,USER,PWD);
+            $pdo->query('set names utf8');
             return $pdo;
         }catch(PDOException $e)
         {
