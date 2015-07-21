@@ -21,14 +21,22 @@
         <li mark="true"><a href="<?= BASE_URL ?>"><img alt="Brand" src="<?= BASE_URL ?>/public/image/mon.gif"></a></li>
         <li>xxxx</li>
         <li id="sign_login_li">
-            <a href="<?= BASE_URI ?>/User/login">户部</a>
+            <a href="javascript:void(0)"><?= isset($_SESSION['username']) ? $_SESSION['username'] : '户部'?></a>
 
             <div id="sign_mark_div">
-                <div><span class="glyphicon glyphicon glyphicon-user"></span></div>
-                <div><span class="glyphicon glyphicon-cog"></span></div>
-                <div data-toggle="modal" data-target="#sign_regist_form"><span
-                        class="sign_regist_span glyphicon glyphicon-registration-mark"></span></div>
-                <div><span class="glyphicon glyphicon-off"></span></div>
+                <?php if (isset($_SESSION['username'])) { ?>
+                    <div><span class="glyphicon glyphicon glyphicon-user"></span></div>
+                <?php } else { ?>
+                    <div><span class="icon-signin" data-target="#sign_login_form" data-toggle="modal"></span></div>
+                <?php } ?>
+                <div><span class="icon-cogs"></span></div>
+                <?php if (isset($_SESSION['username'])) { ?>
+                    <div class="sign_logout"><span class="icon-signout"></span></div>
+                <?php } else { ?>
+                    <div data-toggle="modal" data-target="#sign_regist_form"><span
+                            class="sign_regist_span icon-laptop"></span></div>
+                <?php } ?>
+                <div><span class="icon-envelope"></span></div>
             </div>
         </li>
     </url>
@@ -36,13 +44,13 @@
 <div class="welcome" style='background:url("<?= BASE_URL ?>/public/image/succ_bg.jpg")'>
     <div>聖旨</div>
     <div class="wel_body">
-        奉天承运，皇帝诏曰，准，<span id="succ_address">xxxx</span>庶人<span id="succ_name">李二</span>为本国公民，尽享帝国庇护，钦此！
+        奉天承运，皇帝诏曰，准，<span id="succ_address">xxxx</span>庶人<span id="succ_name">李二</span>为本国公民，尽享帝国庇护，即日起可前往户部登录，钦此！
     </div>
     <div>
         <?= date('Y/m/d') ?>/帝国户部
     </div>
 </div>
-<!--    表格附件-->
+<!--    表格附件1-->
 <div class="modal fade" id="sign_regist_form" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <center>
@@ -53,7 +61,7 @@
                 <div class="sign_in_form">
                     <div class="input-group">
                         <span class="input-group-addon">昵称</span>
-                        <input type="text" class="form-control" placeholder="2-8个汉字、数字或字母">
+                        <input type="text" class="form-control" placeholder="2-6个汉字、数字或字母">
                     </div>
                     <div class="input-group">
                         <span class="input-group-addon">密码</span>
@@ -88,6 +96,38 @@
             </div>
         </center>
     </div>
+</div>
+<!--    表格附件2-->
+<div class="modal fade" id="sign_login_form" tabindex="-1" role="dialog">
+    <form action="<?= BASE_URI ?>/User/login" method="post">
+        <div class="modal-dialog" role="document">
+            <center>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>登录</h3>
+                    </div>
+                    <div class="login_div">
+                        <div class="input-group">
+                            <span class="input-group-addon">昵称</span>
+                            <input type="text" class="form-control" name="username" placeholder="请输入昵称">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon">密码</span>
+                            <input type="password" class="form-control" name="password" placeholder="请输入密码">
+                        </div>
+                        <div class="input-group sign_login_info">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <center>
+                            <button type="button" class="sign_login_btn btn btn-default" data-dismiss="modal2">登录
+                            </button>
+                        </center>
+                    </div>
+            </center>
+        </div>
+</div>
+</form>
 </div>
 </body>
 </html>

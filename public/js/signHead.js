@@ -41,7 +41,7 @@ $(function () {
     })
 
     $('#sign_regist_form input:eq(0)').blur(function () {
-        if ($.trim($(this).val()).length >= 2 && $.trim($(this).val()).length <= 8) {
+        if ($.trim($(this).val()).length >= 2 && $.trim($(this).val()).length <= 6) {
             $.post("http://sign.com/index.php/User/regist",
                 {checkName: $(this).val()},
                 function (data) {
@@ -53,7 +53,7 @@ $(function () {
                     } else {
                         $('#sign_regist_form input:eq(0)').css('background', '#fff');
                         $('#sign_regist_form input:eq(0)').css('border', '1px solid #ccc');
-                        $('#sign_regist_form input:eq(0)').attr('placeholder', '2-8个汉字、数字或字母');
+                        $('#sign_regist_form input:eq(0)').attr('placeholder', '2-6个汉字、数字或字母');
                         $('#sign_regist_form button').attr('disabled', false);
                     }
                 }
@@ -61,7 +61,7 @@ $(function () {
         } else {
             $('#sign_regist_form input:eq(0)').val('');
             $('#sign_regist_form input:eq(0)').css('border', '2px solid red');
-            $('#sign_regist_form input:eq(0)').attr('placeholder', '用户名太长或太短!');
+            $('#sign_regist_form input:eq(0)').attr('placeholder', '用户名不符合字数限制!');
             $('#sign_regist_form button').attr('disabled', true);
         }
     })
@@ -83,7 +83,6 @@ $(function () {
             },
             function (data) {
                 if (data) {
-                    console.log(data);
                     $('#succ_name').html(name);
                     $('#succ_address').html(address);
                     $(".welcome").slideDown(2000, function () {
@@ -93,6 +92,41 @@ $(function () {
                 }
             }
         );
+    })
+
+    $(".sign_login_btn").click(function () {
+        var name = $.trim($(".login_div input:eq(0)").val());
+        var pwd = $.trim($(".login_div input:eq(1)").val());
+        if (name != '' && pwd != '') {
+            $.post("http://sign.com/index.php/User/login",
+                {
+                    name: name,
+                    pwd: pwd
+                },
+                function (data) {
+                    if (data == 0) {
+                        $(".sign_login_info").html("用户名不存在!");
+                    } else if (data == 2) {
+                        $(".sign_login_info").html("密码错误!");
+                    } else {
+                        $(".sign_login_info").html("");
+                        $(".sign_login_btn").attr("type", "submit");
+                        $(".sign_login_btn").unbind('click').click();
+                    }
+                }
+            )
+        }
+    })
+
+    $(".sign_logout").click(function () {
+        $.post('http://sign.com/index.php/User/logout',
+            {data: 1},
+            function (data) {
+                if (data == 1) {
+                    window.location.reload();
+                }
+            }
+        )
     })
 })
 

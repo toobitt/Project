@@ -5,11 +5,13 @@ class Homepage extends BaseCore {
     public function __construct()
     {
         parent::__construct();
+        session_start();
     }
 
     public function index()
     {
-        $this->load->view('head.php');
+        $this->load->view('head');
+        //$this->load->view('index');
     }
 
     public function list_pic()

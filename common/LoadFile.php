@@ -18,6 +18,10 @@ class LoadFile
  */
     public function view($filename,$data = '')
     {
+        if(strpos($filename,'.php') === false)
+        {
+            $filename = $filename.'.php';
+        }
         if(file_exists(VIEW_DIR.$filename))
         {
             if(is_array($data) && count(array_filter($data)) > 0)
