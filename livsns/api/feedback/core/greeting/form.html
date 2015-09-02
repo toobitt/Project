@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>#page_title#</title>
+<link rel="stylesheet" href="./css/framework7.custom.min.css">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/greeting.css">
+</head>
+<body>
+<div class="view view-main">
+	<div class="pages toolbar-through">
+		<div class="page">
+			<div class="page-content form-greeting">
+				<div class="content-block-title content-fenge">分割线</div>
+				<form class="list-block" id="greeting-form" action="#url#" method="post">
+				   	<ul>
+						@forms@
+					</ul>
+					<div class="content-button">
+						<input type="hidden" name="id" value="#id#" />
+						<input type="hidden" name="a" value="create_greet" />
+						<input type="hidden" name="repeat_feed" value="1"/>
+						<input type="hidden" name="filturl" value="#filturl#"/>
+						<a href="#" class="button button-primary form-to-json">分享</a>
+						<!-- <a href="#" class="button button-cancel close-popup">取消</a> -->
+					</div>
+			   </form>
+			</div>
+		</div>	
+	</div>
+</div>
+<script type="text/javascript" src="./js/module/head.min.js"></script>
+<script type="text/javascript">
+	head.js(
+		{zepto : "./js/module/zepto.min.js"},
+		{toast : './js/module/toast.js'},
+		{viewPC : './js/module/viewPC.js'},
+		{print_r : './js/module/print.js'},
+		{h5app : './js/module/h5app.js'}
+	);
+	head.ready(["zepto", "h5app"], function(){
+		head.js('./js/greeting_form.js');
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+.news-contant-headbg{height:58px;background:#ededed;}
+.news-contant-mainbg{box-shadow:0 0 5px #cfcfcf;}
+.news-contant-head{padding-top:10px;}
+.news-contant-head ul{float:right;padding-top:20px;color:#333;}
+.news-contant-head li{float:left;width:86px;text-align:center;}
+.news-contant-left{width:790px;padding:65px 0 50px 0;}
+.news-contant-left p{text-align:center;text-indent:15px;color:#333;line-height:1.8;}
+.news-contant-left h2{font-size:26px;text-align:center;line-height:1.5;}
+.news-contant-left .title{border-bottom:1px dotted #f0f0f0;}
+.news-contant-left span{padding:0 5px;}
+.news-contant-left .title p{font-size:12px;padding:15px 0 10px 0;color:#818181;}
+.news-contant-left .summary p{text-align:left;padding:15px 20px;margin:15px 0;background:#f0f0f0;}
+.news-contant-left .picture img{margin:25px 0;}
+.news-contant-left .content{padding:45px 5px 0 5px;;border-bottom:1px dotted #f0f0f0;}
+.news-contant-left .content p{text-align:left;line-height:30px;padding-bottom:25px;}
+.news-contant-left .content a{color:#3491db;}
+.news-contant-left .page{padding:18px 0;line-height:20px;font-size:12px;}
+.news-contant-left .previous{color:#a5a5a5;margin-right:45px;}
+.news-contant-left .next{color:#5aa1e0;}
+.news-contant-left .arrow{background:url(../images/news_inside_page1.png) no-repeat center;display:inline-block;height:10px;}
+.news-contant-left .next .arrow{background-image:url(../images/news_inside_page2.png);}
+.news-contant-left .back2index{color:#a5a5a5;font-size:12px;float:right;padding-right:10px;}
+.news-contant-right{margin-left:790px;}
+.news-contant-right .keywords-list{padding-top:145px;padding-left:35px;font-size:12px;}
+.news-contant-right .keywords-list span{color:#a5a5a5;padding:20px 0;line-height:32px;}
+.news-contant-right .keywords-list a{line-height:30px;color:#79b0e4;}
+.news-contant-right .keywords-list .li-two{color:#ff9000;}
+.news-contant-right .keywords-list .li-three{color:#79bb8f;}
+.news-contant-right .keywords-list .li-four{color:#e27d93;}
+.news-contant-right .keywords-list .li-five{color:#8e69b5;}
+.news-contant-right .keywords-list .li-six{color:#818181;}
+.news-contant-right .share{position:fixed;right:220px;top:500px;}
+.news-contant-right .share li{width:43px;height:43px;background:url(../images/news_inside_share1.png) no-repeat center #ccc;margin-top:8px;}
+.news-contant-right .share a{display:block;width:43px;height:43px;}
+.news-contant-right .share li:hover{background-color:#3491db;}
+.news-contant-right .share .share2tencent{background-image:url(../images/news_inside_share2.png)}
+.news-contant-right .share .gotop{background-image:url(../images/news_inside_share3.png)}
+
+

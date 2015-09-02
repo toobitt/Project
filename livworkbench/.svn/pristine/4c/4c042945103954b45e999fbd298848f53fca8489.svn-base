@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <title>HOGE-前端规范文档</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="./index.html">HOGE</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active">
+                <a href="./index.html">M2O前端规范</a>
+              </li>
+              <li class="" style="display: none;">
+                <a href="#">Webapp前端规范</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Subhead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <h1>M2O前端js规范</h1>
+    <p class="lead">js目录规范、模块js命名规范、插件组件注释说明规范</p>
+  </div>
+</header>
+
+
+  <div class="container">
+
+    <!-- Docs nav
+    ================================================== -->
+    <div class="row">
+      <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav">
+          <li><a href="#catalog-standard"><i class="icon-chevron-right"></i>js目录规范说明</a></li>
+          <li><a href="#jsname-standard"><i class="icon-chevron-right"></i>模块js命名规范</a></li>
+          <li><a href="#comments-standard"><i class="icon-chevron-right"></i>组件插件注释规范</a></li>
+          <li><a href="#fast-build"><i class="icon-chevron-right"></i>如何快速搭建一个模块</a></li>
+          <li><a href="#plugin-info"><i class="icon-chevron-right"></i>常用js插件组件说明</a></li>
+          <li><a href="#template-info"><i class="icon-chevron-right"></i>模板改版原型交互与文档</a></li>
+        </ul>
+      </div>
+      <div class="span9">
+
+
+
+        <!-- catalog-standard
+        ================================================== -->
+        <section id="catalog-standard">
+        	 <h3 style="text-align:center;position:absolute;right:40px;top:250px;"><a href="m2o应用前端开发规范.docx">m2o应用前端开发规范文档下载</a></h3>
+          <div class="page-header">
+            <h3>一、js目录规范说明</h3>
+          </div>
+          <p class="lead">如下列出主要的js目录说明，对应的js文件应该放到规定好的目录文件里面</p>
+<pre class="prettyprint">
+  lib/js/
+  ├── jquery/(jquery库存放目录，按版本存放)
+  │   ├── 1.11.1
+  │   ├── 2.1.1
+  ├── jquery-ui/(jquery-ui库存放目录，按版本存放)
+  │   ├── 1.11.2
+  ├── jquery-fn/(jquery插件存放目录，第三方插件直接存放在在此根目录,自己扩展的插件放入jqueryfn_custom子目录下)
+  │   ├── jqueryfn_custom(我们自己写的基于jquery的插件存放目录)
+  │   ├── 网上download下来的第三方插件.js
+  ├── jquerywidget/(基于jquery-ui的组件存放目录,同一组的组件可以统一放到一个子文件里面，例：video子目录)
+  │   ├── video(细分组件子目录，如video系列的组件可以统一归类到video子目录中)
+  │   ├── 基于jquery-ui扩展的组件.js
+  ├── 模块名称作为目录/(除了公用的库、插件组件外，跟具体应用相关的js统一放到各自的模块目录下)
+  │   ├── 模块列表页.js
+  │   ├── 模块表单页.js
+  └── common/(全局公用的除了jquery插件组件外的js存放目录)
+      ├── 公用.js
+      └── 公用.js
+</pre>
+        </section>
+
+
+
+        <!-- jsname-standard
+        ================================================== -->
+        <section id="jsname-standard">
+          <div class="page-header">
+            <h3>二、模块js命名规范</h3>
+          </div>
+          <ul>
+          <li>一个应用模块按现在的UI会包括列表页、表单页</li>
+          <li>列表页命名规范:模块名作为前缀,后面连接_list 如文稿模块模块名为news,对应文稿列表页js命名为news_list.js</li>
+          <li>表单页命名规范:模块名作为前缀,后面连接_form 如文稿模块模块名为news,对应文稿列表页js命名为news_form.js</li>
+          <li>其他页命名规范:模块名作为前缀,后面连接类似上面的列表页、表单页,接上_页面类型</li>
+          </ul>
+        </section>
+
+
+
+        <!-- comments-standard
+        ================================================== -->
+        <section id="comments-standard">
+          <div class="page-header">
+            <h3>三、组件插件注释规范</h3>
+          </div>
+          <h4>插件或组件都要写上注释：包括作者、时间、插组件名称、调用demo、以及可以配置的参数及参数的具体含义</h4>
+<pre>
+/*
+ * author zhangzhen
+ * date 2014-11-13
+ * 全局视频设置弹窗组件
+ * 组件名称 hoge_vodsetting
+ * example $('div').hoge_vodsetting();
+ * @param  可配置参数
+ * 	{	ajax_url : './run.php?mid=' + gMid + '&a=get_transcode_config',  //取配置信息接口
+* 		config : {														//配置项信息字典
+				server_id : {title : '转码服务器', default_option : '空闲'},
+				water_id : {title :'水印',default_option : '无'},
+				mosaic_id : {title : '马赛克', default_option : '无'},
+				vod_config_id : {title : '转码配置', default_option : '无'}
+			 }
+ *     }
+ * 公用方法
+ * show $('div').hoge_vodsetting('show')
+ * close $('div').hoge_vodsetting('close')
+ * */
+</pre>
+        </section>
+        
+        
+         <!-- fast-build
+        ================================================== -->
+        <section id="fast-build">
+          <div class="page-header">
+            <h3>四、如何快速搭建一个模块</h3>
+          </div>
+          <div>
+          	<p>一个常规的m2o模块包括列表页、表单页,快速搭建模块可以基于已经存在的模块，复制对应的模版；</p>
+          	<p>比如抽奖模块，就是一个标准的有常规的列表页lottery/lottery_list.php，form页lottery_form.php组成，同时模块列表页的高级搜索功能，需要每个模块配置a=advanced_search接口，以及建立一个高级搜索的小模版，如lottery下的lottery_search.php</p>
+          	<p>基于以上的步骤就可以快速搭建一个常规的m2o模块</p>
+          	<p><span style="color:red;">注：</span>如果新建立的模块不是常规的列表页结构，列表页不是左右结构，左边分类，右边列表内容的，具体的列表页就需要自行去写样式，form页同上，以转码应用为例，他的列表页是整个网页宽度的，需要自己基于设计稿去实现样式和对应的交互</p>
+          </div>
+        </section>
+        
+        <!-- plugin-info
+        ================================================== -->
+        <section id="plugin-info">
+          <div class="page-header">
+            <h3>五、常用js插件组件说明</h3>
+          </div>
+          <ul>
+	          <li><span class="mulu"><b>插组件目录(lib/js)</b></span><span class="yongtu"><b>用途</b></span></li>
+	          <li><span class="mulu">2013/tip.js</span><span class="yongtu">提示信息插件</span></li>
+	          <li><span class="mulu">2013/ajaxload_new.js</span><span class="yongtu">封装ajax操作,自动生成加载等待和状态维护</span></li>
+	          <li><span class="mulu">2013/new_search.js<br/>2013/new_search_init.js</span><span class="yongtu">列表页高级搜索组件</span></li>
+	          <li><span class="mulu">2013/hg_colorpicker.js</span><span class="yongtu">取色器插件</span></li>
+	          <li><span class="mulu">hg_datepicker.js</span><span class="yongtu">日期插件</span></li>
+	           <li><span class="mulu">hg_switchable.js</span><span class="yongtu">轮转图插件</span></li>
+	          <li><span class="mulu">jquerywidget/global_vod_setting.js</span><span class="yongtu">上传视频配置信息组件</span></li>
+          </ul>
+        </section>
+        
+        <!-- template-info
+        ================================================== -->
+        <section id="template-info">
+          <div class="page-header">
+            <h3>六、模板改版原型交互与文档</h3>
+          </div>
+          <ul>
+	          <li><a href="template/index.html" target="_blank">模板改版原型交互参考</a></li>
+	          <li><a href="模板改版文档.doc">模板改版文档</a></li>
+          </ul>
+        </section>
+
+
+
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+         <p>Designed and hoge RDC1 fed <a target="_blank" href="http://10.0.1.40/livworkbench/login.php" target="_blank">m2o新媒体综合运营平台</a>.</p>
+      </div>
+    </footer>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/holder/holder.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+
+    <script src="assets/js/application.js"></script>
+
+
+
+  </body>
+</html>

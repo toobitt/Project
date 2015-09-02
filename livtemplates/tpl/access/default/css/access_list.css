@@ -1,0 +1,94 @@
+@charset "utf-8";
+/*.access-paixu{width:30px}
+.access-cz{width:100px}
+.access-ssyy{width:120px;}
+.access-fwcs{width:120px;}
+.access-fwsj{width:120px}
+.access-biaoti-overflow{max-width:400px}
+.access-fwcs a{text-decoration:underline}*/
+
+.module{margin-bottom:20px; border-top:1px solid #ccc; }
+.module .aside{width:159px; padding:0 10px; background-color:#f9f9f9; }
+.aside .title{height:40px; line-height:40px; border-bottom:1px solid #e0e0e0; text-indent:7px; }
+.aside .tab{margin:10px 5px; }
+.aside .tab li{height:15px; line-height:15px; padding:0 5px; margin-top:5px; border-left-width:3px; border-left-style:solid;}
+
+/*已关注系统推送颜色*/
+.attention li.visit{border-left-color:#ff8100; color:#ff8100; }
+.attention li.comment{border-left-color:#ffbc75; color:#ffbc75; }
+.push li.visit{border-left-color:#37bafe; color:#37bafe; }
+.push li.comment{border-left-color:#9ddcfd; color:#9ddcfd; }
+.attention .vs-effet{background-color:#ff8100; }
+.attention .cm-effet{background-color:#ffbc75; }
+.push .vs-effet{background-color:#37bafe; }
+.push .cm-effet{background-color:#9ddcfd; }
+
+
+.module.type{min-height:400px; }
+.module.push, .module.attention{min-height:127px; }
+
+
+
+/*统计右侧*/
+.module .section{background-color:#fff; border:1px solid #e0e0e0; border-top:none; }
+.m2o-visit, .m2o-comment{width:160px; color:#999; }
+.m2o-visit a, .m2o-comment a{color:red; cursor:pointer; }
+.m2o-visit a.selected, .m2o-comment a.selected{color:#999; }
+.m2o-sort{color:#8fa8c6; }
+.m2o-attention{width:65px; }
+.m2o-attention a{display:inline-block; width:60px; text-indent:-9999px; cursor: pointer; background:url("{$RESOURCE_URL}access/attention_hover.png") no-repeat left center; }
+.m2o-attention.on a{background-image:url("{$RESOURCE_URL}access/attention.png")}
+
+.module-box{padding:14px 4px; }
+.module-item{float:left; width:229px; height:77px; padding:10px; }
+.attention .module-item:hover{background-color:#f9f9f9; }
+.module-item .title{max-width: 225px; font-size:14px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.module-item .title span{padding-right:5px; color:#9a9a9a; border-right:2px solid #9a9a9a; margin-right:5px; }
+.module-item > p{max-width:200px; min-width:20px; height:15px; line-height:16px; padding:0 4px; margin-bottom:6px;  }
+.module-item > p label{color:#fff;}
+.module-item > em{color:#83b8e4; font-style: normal; display:none; }
+.attention .module-item:hover > em{display:inline-block; cursor: pointer; }
+.nomodule-data p{font-size:14px; padding:10px 20px; color:#999; }
+
+/*类型选择*/
+.type-item{margin:10px 0;}
+.type-item .down_list{height:28px; }
+.type-item .input_middle{height:28px; line-height: 28px; border:none; }
+.type-item .down_list em{margin:10px 10px 0 0; background:url("{$RESOURCE_URL}access/down_gray.png") no-repeat center; }
+.type-item .input_middle a{color:#000; }
+.type-item .input_left, .type-item .input_right{display:none; }
+.type-item .input{width:100px; height:28px; border:1px solid #e0e0e0; margin-top:10px; }
+.type-item .input .input_middle{padding-left:10px; }
+.type-item .view-button{padding:0 10px;}
+.type-item .view-button:focus{border:none; color:#fff; }
+.type .btn_search{display:none!important; }
+
+.type-item.title{padding-top:10px; height:30px; line-height: 30px; }
+
+.title .input_middle{background-color:#f9f9f9; padding-left:0; }
+.type-time, .type-item input[type="text"]{ border:1px solid #e0e0e0;}
+
+.type-item input[type="text"]{width:146px; padding-left:9px; }
+.set-item{color:#999; font-size:13px; text-align:right; cursor: pointer; }
+.set-item:hover{color: #83b8e4; }
+
+/*下拉框*/
+.access{z-index: 1;}
+.access ul{width:159px; top:28px; border-bottom-color:#e0e0e0; }
+.access ul li{border-color:#e0e0e0; }
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2) {	
+	
+	.m2o-attention a{background-image:url("{$RESOURCE_URL}access/attention_hover-2x.png"); background-size:20px 20px; }
+	.m2o-attention.on a{background-image:url("{$RESOURCE_URL}access/attention-2x.png"); background-size:20px 20px; }
+	.type-item .down_list em{background-image:url("{$RESOURCE_URL}access/down_gray-2x.png"); background-size:10px 4px; }
+}
+
+
+
+
+

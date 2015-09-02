@@ -1,0 +1,38 @@
+{
+    "status": 1,
+    "msg": "",
+    "data": [
+        {
+            "id": "748",
+            "title": "0元抽奖001期楚天楚人足道获奖名单公布！快来领奖啦~",
+            "market_price": "69.00",
+            "team_price": "0.00",
+            "image": "team/2014/0904/14098245701504.jpg",
+            "distance": "10.2"
+        },
+        {
+            "id": "846",
+            "title": "0元抽奖003期星火健身汇获奖名单公布！快来领奖啦~",
+            "market_price": "388.00",
+            "team_price": "0.00",
+            "image": "team/2014/0924/14115283555027.jpg",
+            "distance": "10.2"
+        },
+        {
+            "id": "835",
+            "title": "抽奖通知单（楚天楚人足道0元抽奖）",
+            "market_price": "1.00",
+            "team_price": "0.01",
+            "image": "team/2014/0918/14110303528010.jpg",
+            "distance": "10.2"
+        },
+        {
+            "id": "747",
+            "title": "e线折扣测试专用2",
+            "market_price": "69.00",
+            "team_price": "0.00",
+            "image": null,
+            "distance": "10.2"
+        }
+    ]
+}

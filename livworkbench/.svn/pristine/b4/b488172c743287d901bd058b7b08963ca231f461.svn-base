@@ -1,0 +1,266 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="application/vnd.wap.xhtml+xml;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="ddh5sdk.js"></script>
+<script type="text/javascript" src="idangerousswiper.js"></script>
+<script type="text/javascript" src="initshopping.js"></script>
+</head>
+<style>
+/*客户端原先基础样式*/
+body {color: #000;margin:0;padding:0;{$body_margin$} line-height: 170%;background: #f8f8f8; word-wrap: break-word;overflow: auto;overflow-x: hidden;}
+p{padding: 0px; margin: 10px 0px;}
+.atitle { color: #111111;padding: 0px 0px;font-size: 22px;}
+.atime {color: #999999;padding: 0px 0px;font-size: 12px;}
+.contentstyle {color: #585858;font-size: 18px;font-weight: normal;padding: 0px 0px;}
+em {font-style: normal;font-weight: 400;}
+a {color: #000;text-decoration: none;}
+img { border: none;}
+/*幻灯样式*/
+.swiper-container{margin:0 auto;position:relative;overflow:hidden;-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;-ms-backface-visibility:hidden;-o-backface-visibility:hidden;backface-visibility:hidden;z-index:1;}.swiper-wrapper{position:relative;width:100%;-webkit-transition-property:-webkit-transform,left,top;-webkit-transition-duration:0s;-webkit-transform:translate3d(0px,0,0);-webkit-transition-timing-function:ease;-moz-transition-property:-moz-transform,left,top;-moz-transition-duration:0s;-moz-transform:translate3d(0px,0,0);-moz-transition-timing-function:ease;-o-transition-property:-o-transform,left,top;-o-transition-duration:0s;-o-transform:translate3d(0px,0,0);-o-transition-timing-function:ease;-o-transform:translate(0px,0px);-ms-transition-property:-ms-transform,left,top;-ms-transition-duration:0s;-ms-transform:translate3d(0px,0,0);-ms-transition-timing-function:ease;transition-property:transform,left,top;transition-duration:0s;transform:translate3d(0px,0,0);transition-timing-function:ease;}.swiper-free-mode>.swiper-wrapper{-webkit-transition-timing-function:ease-out;-moz-transition-timing-function:ease-out;-ms-transition-timing-function:ease-out;-o-transition-timing-function:ease-out;transition-timing-function:ease-out;margin:0 auto;}.swiper-slide{float:left;}.swiper-wp8-horizontal{-ms-touch-action:pan-y;}.swiper-wp8-vertical{-ms-touch-action:pan-x;}.swiper-container{}.swiper-slide{}.swiper-slide-active{}.swiper-slide-visible{}.swiper-pagination-switch{}.swiper-active-switch{}.swiper-visible-switch{}
+
+.mt20{margin-top:20px;}
+body{background:#f0f0f0;color:#464646;font:normal 14px "Hiragino Sans GB","Microsoft YaHei",tahoma,verdana,arial,sans-serif;-webkit-user-select:none;}
+body a{cursor:pointer;color:#464646;-webkit-tap-highlight-color:rgba(0, 0, 0, 0);text-decoration:none;}
+body a.touched{background:rgba(0,122,255,.15);}
+.each-item{padding:11px 14px;border-bottom:1px solid #e6e6e6;background:#fff;}
+
+/*多图或indexpic开始*/
+.contentpic-placeholder{position:relative;background:url(default_indexpic_2x.png) no-repeat center;height:200px;overflow:hidden;}
+.single-placehodler{position:absolute;top:14px;width:67px;height:23px;line-height:23px;font-size:12px;background:url(single_bg.png);background-size:67px 23px;color:#fff;text-align:center;z-index:2;}
+.contentpic-placeholder img{width:100%;}
+.contentpic-placeholder .pagination{position:absolute;left:0;bottom:14px;width:100%;text-align:center;z-index:2;}
+.contentpic-placeholder .swiper-pagination-switch{display:inline-block;margin:0 5px;width:10px;height:10px;border-radius:50%;background:#888483;}
+.contentpic-placeholder .swiper-active-switch{background:#fff;}
+
+/*价格样式*/
+.price-placeholder-box{height:61px;line-height:61px;}
+.price-placeholder{width:100%;height:60px;background:#fff;border-bottom:1px solid #bcbcbc;}
+.price-placeholder.fixed{top:45px;position:fixed;z-index:3;}
+.price-placeholder .price-wrap{float:left;color:#f57e36;padding-left:14px;}
+.price-placeholder .moneytype{font-size:16px;}
+.price-placeholder .currentPrice{font-size:24px;}
+.price-placeholder .originalPrice{color:#999;font-size:15px;padding-left:12px;text-decoration:line-through;}
+.price-placeholder .price-btn{float:right;padding-top:10px;padding-right:14px;}
+
+/*按钮样式*/
+.extend-btn{display:inline-block;background:#f57e36;text-align:center;color:#fff;border-radius:2px;}
+.extend-btn:active{background:#fb6810;}
+.extend-btn.btn4{width:95px;height:40px;line-height:40px;font-size:16px;color:#fff;}
+.extend-btn.btn2{width:50px;height:24px;line-height:24px;font-size:12px;color:#fff!important;}
+body .extend-btn.touched{background:rgba(0,122,255,.15);}
+
+.shop-base-wrap{background:#fff;padding-left:14px;}
+
+/*标题样式*/
+.title-placeholder{clear:left;min-height:18px;font-size:18px;line-height:1.4;padding:10px 14px 10px 0;}
+
+/*描述样式*/
+.brief-placeholder{min-height:18px;font-size:12px;line-height:1.7;padding:10px 14px 10px 0;}
+
+/*多选标识样式*/
+.multiple-placeholder{min-height:20px;font-size:12px;line-height:1.6;padding:11px 14px 7px 0;}
+.multiple-placeholder .option{display:inline-block;margin-right:4px;margin-bottom:4px;padding:3px 4px;color:#f57e36;border-radius:2px;border:1px solid #f57e36;}
+
+/*关键字样式*/
+.keywords-placeholder{min-height:20px;font-size:12px;}
+.keywords-placeholder .option{display:inline-block;margin-right:12px;padding-left:18px;position:relative;}
+.keywords-placeholder .option:before{position:absolute;left:0;top:3px;width:14px;height:14px;border-radius:50%;content:'';color:#fff;background-color:#56bf73;background-image:url(checked_icon.png);background-position:center;background-repeat:no-repeat;background-size:6px 5px;}
+
+/*打电话*/
+.tel-placehodler{min-height:18px;font-size:12px;}
+.tel-placehodler .label{font-size:14px;padding-left:18px;position:relative;color:#464646;}
+.tel-placehodler .label:before{content:'';position:absolute;top:4px;left:0;width:12px;height:11px;background:url(tel_icon.png) no-repeat;background-size:12px 11px;}
+.tel-placehodler .extend-btn{float:right;}
+
+/*评论样式*/
+.arrow:after{position:absolute;content:'';right:18px;top:15px;width:7px;height:12px;background:url(arrow.png) no-repeat;background-size:7px 12px;}
+.comment-placehodler{position:relative;}
+.comment-placehodler a{display:block;}
+.comment-placehodler .goodcomment{position:relative;padding-left:18px;}
+.comment-placehodler .goodcomment:before{content:'';position:absolute;top:3px;left:0;width:12px;height:11px;background:url(comment_icon.png) no-repeat;background-size:12px 11px;}
+.comment-placehodler .goodcommentbtn{color:#999;float:right;margin-right:30px;}
+
+/*自定义长文本样式*/
+.longtext-placehodler .label{height:40px;line-height:40px;color:#999;padding-left:14px;}
+.longtext-placehodler br{display:block;}
+.longtext-placehodler .detail{line-height:2;}
+
+/*自定义富文本样式*/
+.richtext-placehodler .label{height:40px;line-height:40px;color:#999;padding-left:14px;}
+.richtext-placehodler .wrap{padding:0;}
+.richtext-placehodler .title{padding-left:0;margin-left:14px;}
+.richtext-placehodler .btn{display:block;padding-left:14px;position:relative;border:0;}
+
+/*正文样式*/
+.content-placehodler-wrap{padding:0;overflow:hidden;margin-bottom:10px;}
+.content-placehodler .contentstyle{border-bottom:1px solid #e6e6e6;font-size:16px;margin:8px 0 0 14px;line-height:2;max-height: 130px;overflow:hidden;padding-right:14px;}
+.content-placehodler img{display:none;}
+.content-placehodler .btn{display:block;position:relative;border:0;}
+
+/*自定义短文本样式*/
+.shorttext-wrap{padding-left:14px;background:#fff;}
+.shorttext-placehodler{padding-left:0;}
+.shorttext-placehodler:last-child{border:0;}
+.shorttext-placehodler .label{color:#999;}
+.shorttext-placehodler .text{padding-left:16px;}
+</style>
+
+<body>
+	<!--多图或indexpic开始-->
+	<div class="contentpic-placeholder">
+		
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				
+				<div class="swiper-slide swiper-slide-visible swiper-slide-active"><img src="http://img.dev.hogesoft.com:233/material/news/img/320x176/2014/12/201412031530369XuR.png?Y9qs"></div>
+				
+				<div class="swiper-slide"><img src="http://img.dev.hogesoft.com:233/material/news/img/320x176/2014/12/201412031530369XuR.png?Y9qs"></div>
+				
+				<div class="swiper-slide"><img src="http://img.dev.hogesoft.com:233/material/news/img/320x176/2014/12/20141223184753xFVw.png?FAWa"></div>
+				
+			</div>
+		</div>
+		<div class="pagination"><span class="swiper-pagination-switch swiper-visible-switch swiper-active-switch"></span><span class="swiper-pagination-switch"></span><span class="swiper-pagination-switch"></span></div>
+		
+		<div class="single-placehodler">免预约</div>
+	</div>
+	<!--多图或indexpic结束-->
+	
+	<!--价格开始-->
+	
+    <div class="price-placeholder-box">
+    <div class="price-placeholder">
+		<div class="price-wrap">
+			<span class="moneytype">¥</span><span class="currentPrice">123</span>
+			<span class="originalPrice">¥150</span>
+		</div>
+        
+		<div class="price-btn">
+			<a class="extend-btn btn4" href="http://www.taobao.com">立即购买</a>
+		</div>
+        
+	</div>
+    </div>
+    
+	<!--价格结束-->
+	
+	<div class="shop-base-wrap">
+	<!--标题开始-->
+	<div class="title-placeholder each-item">豆腐坊</div>
+	<!--标题结束-->
+	
+	<!--描述开始-->
+	<div class="brief-placeholder each-item">100元代金卷一张，可叠加，部分菜品因时令原因有所不同，请以店内当日实际供应为准</div>
+	<!--描述结束-->
+	
+	<!--多选标识开始-->
+	
+	<div class="multiple－placeholder each-item">
+		
+		<span class="option">新用户优惠</span>
+		
+		<span class="option">返利1%</span>
+		
+		<span class="option">满100减8</span>
+		
+	</div>
+	
+	<!--多选标识结束-->
+	</div>
+	
+	<!--关键字开始-->
+	
+	<div class="keywords-placeholder each-item">
+		
+		<span class="option">随时退</span>
+		
+		<span class="option">过期退</span>
+		
+		<span class="option">免预约</span>
+		
+	</div>
+	
+	<!--关键字结束-->
+	
+	<!--电话按钮开始-->
+	
+    <div class="mt20">
+    <div class="tel-placehodler each-item">
+		<a class="label" href="TEL:400-0012-000">400-0012-000</a>
+		<a class="extend-btn btn2" href="TEL:400-0012-000">拨打</a>
+	</div>
+    </div>
+    
+	<!--电话按钮结束-->
+	
+	
+	<div class="mt20">
+	<!--评论开始-->
+	<div class="comment-placehodler arrow each-item">
+		<span class="goodcomment">1个好评</span>
+		<a class="goodcommentbtn" href="javascript:goToCommentList();">共1个好评</a>
+	</div>
+	<!--评论结束-->
+	</div>
+	
+	
+	<!--自定义长文本开始-->
+	
+		
+		<div class="longtext-placehodler">
+			<div class="label">适用商户</div>
+			<div class="detail each-item">南京南站店<br>玉兰路98号南京南站候车室HC-3-2<br>离你最近2.1km</div>
+		</div>
+		
+	
+	<!--自定义长文本结束-->
+	
+	<!--自定义富文本开始-->
+	
+	<!--自定义富文本结束-->
+	
+	<div class="shorttext-wrap mt20">
+	<!--自定义短文本开始-->
+	
+		
+		<div class="shorttext-placehodler each-item">
+			<span class="label">使用时间</span>
+			<span class="text">2014-04-29至2015-04-29</span>
+		</div>
+		
+		<div class="shorttext-placehodler each-item">
+			<span class="label">预约时间</span>
+			<span class="text">免预约,预约时间</span>
+		</div>
+		
+	
+	<!--自定义短文本结束-->
+	</div>
+	
+	<!--正文开始-->
+    <div class="content-placehodler-wrap each-item mt20">
+	<div class="content-placehodler">
+		<div id="article_body" class="contentstyle"><a><p></p><div m2o_mark="pic_0" style="display:none"></div><div m2o_mark="pic_1" style="display:none"></div><div m2o_mark="pic_2" style="display:none"></div><p></p><p>规格参数显示尺寸 5.5英寸触摸屏类型 电容式分辨率 1280x720像素网络网络类型 网络模式 双卡多模存储运行内存RAM 2GB机身内存 8GB基本参数品牌 Huawei/华为华为型号 荣耀畅玩4X 全网通高配版机身颜色 白色操作系统 Android/安卓手机类型 4G手机 商务手机电池类型 不可拆卸式电池核心数 四核心四核cpu频率 1.2GHz电池容量 3000mAh机身详情款式 直板键盘类型 QWERTY全键盘厚度 9mm以下拍照功能后置摄像头 1300万摄像头类型 双摄像头（前后）视频显示格式 720P(逐行高清D4)包装清单手机1 件充电器1 件USB线1 件快速指南1 件售后服务手册1 件</p><p></p></a></div>
+		<a class="btn arrow each-item" href='javascript:goToLink("news#");'>查看更多</a>
+	</div>
+    </div>
+	<!--正文结束-->
+</body>
+
+<script>
+	if( window.android ){
+		var iosstyle = $('#iosstyle');
+		if( iosstyle.length ){
+			iosstyle.remove();
+		}
+	}
+	$('body').on('touchstart', 'a', function(){
+		$(this).addClass('touched');
+	});
+        $('body').on('touchend', 'a', function(){
+		$(this).removeClass('touched');
+	});
+</script>
+</html>

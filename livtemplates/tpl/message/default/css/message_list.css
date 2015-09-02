@@ -1,0 +1,39 @@
+.common-paixu {
+	width: 30px;
+}
+.common-list-head .common-list-biaoti{overflow:visible;}
+1.common-list-biaoti{overflow:inherit;}
+.reviews-object, .reviews-object a{width:300px;}
+.reviews-object a{display:inline-block;}
+.common-title.has-reply{display:inline-block;max-width:200px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.reply-btn{color: #8ea8c8;text-decoration: underline;padding-left: 5px;}
+
+/**/
+.m2o-flex{display:-webkit-box;display:box;}
+.m2o-flex-one{-webkit-box-flex:1; -moz-box-flex:1; box-flex:1;width:10px;}
+.year-search-inner{float:right;margin-top: 8px;}
+.underline + .underline{margin-left:7px;}
+.sort-btn{cursor:pointer;display:inline-block;background:#1bbc9b;height:24px;line-height:24px;margin:8px 5px;border-radius:2px;color:#FFF;padding:0 12px;}
+.sort-btn[_now="open"]{background-color:orange;}
+.tile-list{padding:0 0 15px 18px;}
+.tile-item{position:relative;border-radius:3px;width:249px;height:152px;float:left;margin:10px 10px 0 0;color:#34495e;line-height:1.8;border: 1px solid #cad6e4;transition:background .3s;}
+.tile-item:hover, .tile-item.selected{background-color:#f3f8fe;}
+.tile-item.selected{border-color:#5594e3;}
+.tile-item .text-overflow{white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.tile-item .message-content, .tile-item .message-content a{font-size: 14px;line-height: 20px;padding-top: 10px;height: 44px;}
+.tile-item .audit-btn{cursor:pointer;}
+.tile-item .handle-btn{display:inline-block;background:#95A5A6;color:#fff;padding:0 0.8em 0 1.6em;margin-right:7px;;border-radius:3px;height:24px;line-height:24px;letter-spacing:0.5em;}
+.tile-item .handle-btn:hover{background-color:#7F8C8D;}
+.tile-item .message-info{padding:0 9px;height:123px;}
+.tile-item .title{display:block;width:60px;text-align:right;color:#999;}
+.tile-item .content{width:175px;}
+.tile-item .underline{color:#8ea8c8;}
+.tile-item .user-info{padding:0 6px;height:28px;line-height:28px;border-top:1px solid #e0e0e0;color:#999;}
+.tile-item .user-info .user-name{margin-right:4px;color:#8ea8c8;}
+.tile-item .user-ip{width:50px;}
+.tile-item .message-title{word-break:break-all;word-wrap:break-word;}
+
+.more-tip-box{background:#191919;}
+.more-tip-box .up{border-bottom:1px solid #0c0c0c;}
+.more-tip-box .down{border-top:1px solid #202020;}
+.more-tip-box .up{padding:15px;}

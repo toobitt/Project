@@ -1,0 +1,24 @@
+.record-set .one-record, .record-add-btn{position:relative;float:left;margin:20px 0 0 20px;border:1px solid #ccc;}
+.record-set .one-record.hover, .record-set .one-record.current, .record-add-btn{border:2px solid #6aa3d8;margin:19px -1px -1px 19px;}
+.record-set .one-record input{display:none;}
+.record-set .one-record p, .record-add-btn p{margin:10px;width:130px;height:175px;line-height:175px;text-align:center;}
+.record-set .one-record p img{/*max-width:130px;max-height:175px;*/vertical-align:middle;}
+.record-set .one-record h2, .record-add-btn h2{font-size:14px;margin:10px;}
+.record-set .one-record .record-info-box{display:none;position:absolute;z-index:1;padding-top:15px;}
+.record-info-box.align-right{right:0;}
+.record-info-box.align-right .record-info-box-pointer{left:auto;right:35px;}
+.record-set .one-record.hover .record-info-box{display:block;}
+.record-info-box-pointer{background:url({$RESOUCE_URL}bg-all.png) no-repeat scroll -2px -73px transparent;position:absolute;top:0;left:35px;-moz-transform:rotate(90deg);-webkit-transform:rotate(90deg);transform:rotate(90deg);height:22px;width:11px;}
+.record-set .one-record .record-info-box-inner{padding:15px;background:#eeeff1;float:left;width:470px;border:1px solid #ccc;}
+.record-set .one-record .record-info-box-inner ul{float:left;margin-bottom:10px;}
+.record-set .one-record .record-info-box-inner ul:last-child{margin-bottom:0;}
+.record-set li:last-child{margin-bottom:10px;}
+.record-operation li{float:left;margin-right:5px;}
+.record-operation li a{display:block;}
+.record-operation li:last-child{margin-right:0;}
+.record-info{padding:15px;background:white;width:440px;color:#939393;}
+.record-info li{float:left;margin-right:25px;}
+
+.record-add-btn{border-style:dashed;color:#6aa3d8;cursor:pointer;}
+.record-add-btn p{font-size:50px;font-weight:800;}
+.record-add-btn h2{text-align:center;position:relative;top:-50px;}

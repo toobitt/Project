@@ -1,0 +1,9 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+<script src="res/magic_view/js/jquery.min.js"></script>
+<script src="res/magic_view/js/magic_view.js"></script>
+</body>
+</html>

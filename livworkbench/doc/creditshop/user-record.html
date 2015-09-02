@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>积分商城</title>
+<link rel="stylesheet" href="css/framework7.min.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/credit.css">
+<link rel="stylesheet" href="css/skin_A.css">
+<script type="text/javascript" src="js/zepto.min.js"></script>
+
+</head>
+<body>
+<div class="view view-main user-record">
+ 	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="left">
+				<a href="javascript:history.back()" class="back link">
+					<i class="icon icon-back"></i>
+				</a>
+			</div>
+			<div class="center sliding">我的记录</div>
+			<div class="right">
+			 <a href="#" class="link icon-only open-panel"></a>
+			</div>
+		</div>
+	</div>
+	<div class="pages navbar-through">
+		<div class="page">
+			<div class="page-content">
+				<div class="content-block">
+					<div class="buttons-row">
+						<a href="#tab1" class="button active tab-link">兑换记录</a>
+						<a href="#tab2" class="button tab-link">积分记录</a>
+					</div>
+				</div>
+				
+				<div class="exchange-list">
+					<div class="content-block">
+					<div class="item-content m2o-flex m2o-flex-start">
+						<div class="item-media"><img src="images/shopping.png"></div>
+						<div class="item-info m2o-flex-one">
+							<div class="item-title m2o-overflow">上海牌手表</div>
+							<div class="item-credits">30000积分</div>
+							<p class="item-time">活动时间：7月20日16点40</p>
+							<em class="exchange-icon"></em>
+						</div>
+					</div>
+				</div>
+				
+				<div class="content-block">
+					<div class="item-content m2o-flex m2o-flex-start">
+						<div class="item-media"><img src="images/shopping.png"></div>
+						<div class="item-info m2o-flex-one">
+							<div class="item-title m2o-overflow">上海牌手表</div>
+							<div class="item-credits">30000积分</div>
+							<p class="item-time">活动时间：7月20日16点40</p>
+							<em class="exchange-icon"></em>
+						</div>
+					</div>
+				</div>
+				</div>
+				
+				<div class="list-block credits-list">
+					<ul>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title">提交邀请人账号</div>
+									<div class="item-after">+200分</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title">邀请新用户</div>
+									<div class="item-after">+200分</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title">每日开启无线常州</div>
+									<div class="item-after">+50分</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title">阅读订阅文章</div>
+									<div class="item-after">+20分</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+ <script type="text/javascript">
+	$('.buttons-row').on('click', '.tab-link', function( event ){
+ 		var $this = $(this);
+ 		if( $this.hasClass('active') ){
+ 			return;
+ 		}
+ 		$this.addClass('active').siblings().removeClass('active');
+ 		$('.exchange-list, .credits-list').toggle();
+ 		event.preventDefault();
+ 	});
+ </script>
+</body>
+</html>

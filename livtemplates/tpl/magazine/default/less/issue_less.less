@@ -1,0 +1,121 @@
+ @import 'http://localhost/livtemplates/tpl/lib/less/common_less.less';
+ /*期刊左侧*/
+.nav-box{display:block;}
+.m2o-main{width:100%; min-height:580px; }
+.m2o-l{width:@w230; padding:@m10; border-right: 1px solid lighten(@color-gray,20%);}
+
+.m2o-cont{padding:@m10 - 3px 0 @m10 - 3px @m10;
+  label{width:@w43 + 9px; text-align:right; min-height:@h25 - 1px; padding-top:2px; line-height:@h25 - 1px; margin-right:10px/2; display:inline-block;
+     vertical-align:top; color:@color-gray;}
+  p, input{font-size:@font-size12 + 2px; color:darken(@color-gray,60%); line-height:@h25 + 1px; display:inline-block; }
+  input{width:@w150 - 8px; border:1px solid #fff; height:@h25 - 3px; margin:0 @m10/5; text-indent:@m10 - 4px;
+    &:focus{border-color:lighten(@color-gray,24%) + #010101; box-shadow:none; }
+  }
+  select{margin-top:@m10/2;}
+  img{width:@w150 - 30px; height:@w150 + 6px; }
+  .text{width:@w100;}
+  .num{width:@w43 - 3px;}
+  em{margin-left:@m10; font-style:normal; color:@color-gray; display:inline-block; text-align:right; width:@m10 + 5px;}
+}
+.m2o-btn{padding:@m10 + 5px @m10 + 2px; text-align:center; }
+.cont-area{
+  .m2o-cont input{
+    border:1px solid lighten(@color-gray,24%) + #010101;
+  }
+}
+
+
+/*期刊列表*/
+.magazine-list{padding:@m10 + 2px @m10*3 - 2px;}
+.magazine-list li{margin:@m10 - 2px @m10 + 5px;}
+
+/*文章列表*/
+.m2o-list{position:relative; }
+.m2o-paixu{
+  a{background:url("@{path}bg-all.png") no-repeat -43px -27px; width:@m10 + 4px; height:@m10 + 3px; float:left;}
+  input{box-shadow:none; }
+}
+.m2o-classify{width:@w43*2 - 6px; color:@color-85accd;}
+.m2o-author{width:@w100; color:@color-gray;}
+.m2o-editor{width:@w150/2 - 5px; color:@color-gray;}
+.m2o-time{
+  .name, .time{color:@color-gray;}
+}
+.m2o-state{position:relative;}
+.m2o-bottom{.box-module;}
+.list-config a{cursor: pointer; display: inline-block; line-height:@h25 + 3px; margin:@m10/5 @m10/2 0; text-decoration: underline;}
+.common-list-empty{text-align:center; font-size:@font-size12 + 2px; font-family:'Microsoft YaHei'; color:@color-da2d2d; min-height:@w43 - 2px; line-height:@w43 - 2px; }
+
+/*新增期刊*/
+#add-issue{width:@w100*5 - 12px;
+  .pop-item ul{top:25px;
+    li{line-height:26px;}
+  }
+  .pop-add-content{padding:@m10*2 @m10; }
+}
+.pop-item{padding:0 0 @m10 + 3px @m10; color:lighten(@color-gray,24%) + #010101;
+  .down_list{width:215px!important;
+    ul{width:217px;}
+   }
+  .period-cover{float:left; width:@w100 + 18px; height:@h25*6 + 4px; background-color:lighten(@color-gray,34%); border:1px solid lighten(@color-gray,21%);
+     text-align:center; color:@color-gray; position:relative; font-size:@font-size12 + 4px; line-height:@h25*6 + 4px; margin-right:@m10*2;
+     img{.position-lefttop(0, 0); width:100%; height:100%;}  
+   }
+   label{width:@h25*2 + 2px; text-align:right; min-height:@h25 - 1px; line-height:@h25 - 1px; margin-right:@m10/2; display:inline-block;
+     vertical-align:top; color:@color-gray;}
+   span, input{font-size:@font-size12 + 2px; color:darken(@color-gray,60%); line-height:@h25 + 1px;}
+   input{border:1px solid lighten(@color-gray,24%) + #010101; height:@h25 - 3px; margin:0 @m10/5; text-indent:@m10 - 4px; width:@w100*2 + 13px;}
+}
+.pop-img{padding-bottom:0;}
+.fenge-dotted{background:url("@{path}dottedLine.png") repeat-x scroll center;}
+.m2o-text{padding:@m10 - 3px 0 0 @m10;
+  ul{width:@w100*4 - 5px; display: inline-block;}
+  li{width:@w100*2 - 10px; float:left; margin:0px @m10/2 - 1px @m10 + 3px 0;}
+  .text{width:@w100;}
+  .num{width:@w43 - 3px;}
+}
+.artical-sort li{
+    a{display:inline-block; width:@m10*2; height:@m10*2; .transition(opacity, 0.3s, ease-in); vertical-align:top; margin:4px 0 0 2px;}
+    &:hover .text-del{opacity: 1;}
+    .contract-value{width:@w100 + 10px;}
+}
+.text-del{background: url("@{path}magazine/text-del.png") no-repeat scroll center; opacity: 0; }
+.text-add{background: url("@{path}magazine/text-add.png") no-repeat scroll center; opacity: 1; }
+.result-tip{overflow:hidden; z-index:@z-1; .position-lefttop(122px, 350px); background:lighten(@color-gray,40%); text-align:center; margin-left:-@w100; .rounded-corners(4px); 
+   width:@w100*2; height:@w43 + 7px; border:3px solid @color-6ea5e8; .box-shadow-custom(0, 0, 4, 4, 0.8); font-size:@font-size12 + 4px; line-height:@w43 + 7px; .transition(all, 2s, ease); opacity:0;}
+.loading{.position-lefttop(125px, 200px); width:50px; margin-left:-@h25; z-index:@z99*10; display:none;}
+
+
+
+/*最新杂志*/
+.m2o-lastest{width:@w150 + @h25; border-right:1px solid lighten(@color-gray,20%); overflow-x:hidden; overflow-y:scroll; }
+.lastest-list{padding:0;
+  li{width:@w150 - 10px; height:@w230 - 18px; padding:@m10; margin:0 0 1px 0;
+    &:hover, &.selected{background-color:@color-a5c73c; }
+    &:not(:last-child):hover .mag-img:after, &.selected .mag-img:after{.box-shadow(0,0,0,0,0,inset); }
+    &:hover p, &.selected p{color:#fff; }
+    &:hover .period-href, &.selected .period-href{background-color:@color-5f9be4; }
+    &:hover h4, &.selected h4{color:lighten(@color-gray,40%); }
+    > p{margin-top:2px; padding-left:@m10;
+      span{margin-right:3px; }
+    }
+    h4{padding-left:@m10; margin-top:2px; height:21px;}
+  }
+  .mag-img{width:@w150 - 10px; height:@w150 + 26px; border:10px solid lighten(@color-gray,40%);
+    p{width:@w100 + 15px; height:@h25 - 3px; line-height:@h25 - 3px; .position-lefttop(20px, 152px); }
+  }
+  .del{.position-righttop(0, 0); }
+}
+.load-more{line-height:30px; font-size:@font-size12 + 2px; color:darken(@color-gray,20%); text-indent:@w43; border-top:1px solid lighten(@color-gray,20%); 
+  background: url("@{path}person/down_b-2x.png") no-repeat scroll 100px center; cursor:pointer; }
+.period-href{.position-righttop(20px, 154px); }
+.magazine-profile{height:@w43*2 - 1px; border-bottom:1px solid lighten(@color-gray,20%); 
+  h2{width:@w100*3; margin:@m10*2 0 0 @m10*2; height:@h25*2; line-height:@w43 + @h25 - 3px; }
+  ul{margin-left:@m10*2; }
+  li{float:left; height:@h25 - 1px; line-height:@h25 - 1px; margin-right:18px;}
+  label{color:@color-gray; }
+  span{font-weight:bold;}
+}
+.magazine-menu{float:right; margin-top:-(@m10 + @h25); 
+  a{margin-right:@m10; }
+}

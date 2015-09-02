@@ -1,0 +1,2365 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Dingdone h5sdk API 文档</title>
+	<meta name="keywords" content="叮当，dingdone，免费APP，APP开发，APP生成，APP工厂，APP制作，APP定制"/>
+	<meta name="description" content="叮当官网，dingdone，厚建出品的APP自助生产运营平台，在线免费制作生成原生APP，支持苹果、安卓同步生成。所见即所得的APP生成工具，无论首页、模块页、内容页都能个性定义。"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+	<link rel="shortcut icon" type="image/ico" href="http://www.dingdone.com/favicon.ico">
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+	<link rel="stylesheet" href="css/page.css" type="text/css"/>
+	<link rel="stylesheet" href="css/pigments.css" type="text/css"/> 
+</head>
+<body class="dingdone-api-body">
+	<div class="dingdone-head">
+		<a class="logo"></a>
+		<span class="name">公共平台开发者文档</span>
+	</div>
+	<!--主内容区开始-->
+	<div class="page">
+				<!--importJssdk start-->
+		<div class="member-module" id="importJssdk">
+			<div class="member-module-name">
+		        <h4><a name="dingdone" class="anchor">引入叮当JSSDK</a></h4>
+		    </div>
+		    <div class="member-module-desc">
+		        <div class="member-description">&lt;script url="http://file.dingdone.com/h5sdk/js/jssdk.1.0.min.js"&gt;&lt;/script&gt;</div>
+		    	<a href="http://file.dingdone.com/h5sdk/js/jssdk.1.0.min.js" class="download">下载地址</a><a href="demo.html">测试地址</a>
+		    </div>
+		</div>
+		<!--importJssdk end-->
+		<!--configJssdk start-->
+		<div class="member-module" id="configJssdk">
+			<div class="member-module-name">
+		        <h4><a name="dingdone" class="anchor">配置初始化JSSDK</a></h4>
+		    </div>
+		    <div class="member-box">
+    			<div class="clazz-member-list">
+    				<fileset>
+                		<div class="member-box">
+                			<!--方法内容开始-->
+                			<div class="member member-method">
+							    <div class="member-method-signature">
+							        <h4><a name="config" class="anchor">config(</a>param,<a data-href="config">function</a> callback)</h4>
+							        <div class="member-flag"><span class="label label-primary">方法</span></div>
+							    </div>
+							    <div class="member-method-desc">
+							        <div class="member-description">配置初始化JSSDK</div>
+							        <div class="affiliated">
+							            <div>所属模块： <a href="">dingdone</a></div>
+							        </div>
+							    </div>
+							    <div class="member-method-info">
+							        <!-- param start -->
+							        <fileset>
+							            <legend>参数列表</legend>
+							            <table class="table">
+							                <thead>
+							                    <tr>
+							                        <th>参数名</th>
+							                        <th>类型</th>
+							                        <th>描述</th>
+							                    </tr>
+							                </thead>
+							                <tbody>
+							                	<tr>
+							                        <td>param</td>
+							                        <td><a>object</a></td>
+							                        <td>debug: true, <span class="nt">//</span> 默认为false,debug 为true，开启调试模式，alert结果信息</td>
+							                    </tr>
+							                    <tr>
+							                        <td>callback</td>
+							                        <td><a>function</a></td>
+							                        <td>获取用户信息触发的回调方法</td>
+							                    </tr>
+							                    
+							                </tbody>
+							            </table>
+							        </fileset>
+							        <!-- param end -->
+							        <!-- returnValue start -->
+							        <fileset>
+							            <legend>callback返回值</legend>
+							            <table class="table">
+							                <thead>
+							                    <tr>
+							                        <th>字段名</th>
+							                        <th>类型</th>
+							                        <th>描述</th>
+							                    </tr>
+							                </thead>
+							                <tbody>
+							                    <tr>
+							                        <td>code</td>
+							                        <td><a>string</a></td>
+							                        <td>状态码</td>
+							                    </tr>
+							                    <tr>
+							                        <td>message</td>
+							                        <td><a>string</a></td>
+							                        <td>反馈消息</td>
+							                    </tr>
+							                    <tr>
+							                        <td>data</td>
+							                        <td><a>object</a></td>
+							                        <td>{<br/>
+							                        	expire_in: 7200,<br/>
+													    apilist: [
+													      getUserInfo ,
+													      getDeviceToken ,
+													      getLocation ,
+													      ....
+													    ]
+													    <br/>}<br/>
+  														expire_in: <span class="c1">//失效时间（单位秒，默认7200s ）</span><br/>
+														apilist:  <span class="c1">  //该域名支持的JS-API 列表</span></td>
+							                </tbody>
+							            </table>
+							        </fileset>
+							        <!-- returnValue end -->
+							        <!-- example start -->
+							        <!-- example start -->
+							        <fileset>
+							            <legend>示例</legend>
+							                <div class="example">
+							                    <div class="example-type"><span class="example-language">示例</span>代码：</div>
+							                    <table class="highlighttable">
+							                    	<tbody>
+							                    		<tr>
+							                    			<td class="linenos">
+							                    				<div class="linenodiv">
+							                    					<pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+ 10
+11
+12
+13
+14
+15
+16
+17
+18</pre>
+														</div>
+														</td>
+														<td class="code">
+															<div class="highlight">
+																<pre> <span class="nt">dingdone.config(</span>{
+       debug: true, <span class="nt">//</span> debug 为true，alert 调用结果信息
+  },function(res) <span class="nt">{</span>
+     <span class="c1">//配置验证权限后触发的回调，页面初始化立即执行的方法要放到这个回调里面</span>
+     <span class="nx">var code = res.code;</span>
+     
+     <span class="c1">//执行自己的逻辑代码</span>
+     <span class="nx">.................写自己的逻辑代码................</span>
+
+ <span class="nt">});</span>
+ 
+ <span class="nt">dingdone.registerEvents(</span>
+ {
+      NetworkChange : function(res){},
+      UserLoginState : function(res){}
+      <span class="nx">....注册客户端事件.....</span>
+  }
+ <span class="nt">});</span>
+</pre>
+															</div>
+														</td>
+												</tr>
+											</tbody>
+											</table>
+							             </div>
+							        </fileset>
+    			</div>
+    		</div>
+		    <div class="member-box">
+		    	<div class="member-module-info">
+		    		
+        <!-- example end -->
+		    	</div>
+		    </div>
+		</div>
+		<!--dingdone end-->
+		<!--dingdone start-->
+		<div class="member-module" id="dingdone">
+			<div class="member-module-name">
+		        <h2><a name="dingdone" class="anchor">dingdone</a></h2>
+		        <div class="member-flag">
+		            <span class="label label-primary">模块</span>
+		        </div>
+		    </div>
+		    <div class="member-module-desc">
+		        <div class="member-description">Dingdone类实例对象，调用客户端所有的功能都通过调用dingdone全局对象的方法属性</div>
+		    </div>
+		    <div class="member-box">
+		    	<div class="member-module-info">
+		    		<fileset>
+    					<legend>方法列表</legend>
+					    <table class="table">
+					        <thead>
+					            <tr>
+					                <th>方法签名</th>
+					                <th>描述</th>
+					            </tr>
+					        </thead>
+					        <tbody>
+					            <tr>
+					                <td><a class="nav-link" data-href="checkJsApi">checkJsApi( function callabck )</a></td>
+					                <td>检测js-sdk状态</td>
+					            </tr>
+					            <tr>
+					                <td><a class="nav-link" data-href="enableNavBar">enableNavBar( object param )</a></td>
+					                <td>隐藏/显示导航栏</td>
+					            </tr>
+					            <tr>
+					                <td><a class="nav-link"  data-href="enableNavMenu">enableNavMenu( object param )</a></td>
+					                <td>隐藏/显示右上角菜单</td>
+					            </tr>
+					            <tr>
+					                <td><a class="nav-link" data-href="setNavTitle">setNavTitle( object param  )</a></td>
+					                <td>设置浏览器的Title</td>
+					            </tr>
+					            <tr>
+					                <td><a class="nav-link" data-href="goBack">goBack()</a></td>
+					                <td>回退浏览器</td>
+					            </tr>
+					            <tr>
+					                <td><a class="nav-link"  data-href="exit">exit()</a></td>
+					                <td>退出浏览器</td>
+					            </tr>
+					            <tr>
+					                <td><a class="nav-link"  data-href="refresh">refresh()</a></td>
+					                <td>刷新浏览器</td>
+					            </tr>
+					            <tr>
+					                <td><a class="nav-link"  data-href="loadUrl">loadUrl( object param  )</a></td>
+					                <td>加载URL (内外链)</td>
+					            </tr>
+					            <tr>
+					                <td><a class="nav-link"  data-href="alert">alert( object param, function callabck )</a></td>
+					                <td>弹出提示对话框</td>
+					            </tr>
+					            <tr>
+					                <td><a class="nav-link"  data-href="getUserInfo">getUserInfo( function callabck )</a></td>
+					                <td>获取用户信息</td>
+					            </tr>
+					            <tr>
+					                <td><a class="nav-link"  data-href="getAppInfo">getAppInfo( function callabck )</a></td>
+					                <td>获取APP信息</td>
+					            </tr>
+					            <tr>
+					                <td><a class="nav-link"  data-href="getLocation">getLocation( function callabck )</a></td>
+					                <td>获取位置信息</td>
+					            </tr>
+					            <tr>
+					                <td><a class="nav-link"  data-href="getDevice">getDevice( function callabck )</a></td>
+					                <td>获取设备的信息</td>
+					            </tr>
+					            <tr>
+					                <td><a class="nav-link"  data-href="previewPic">previewPic( object param  )</a></td>
+					                <td>预览URL图片</td>
+					            </tr>
+					            <tr>
+					                <td><a class="nav-link"  data-href="share">share( object param  )</a></td>
+					                <td>分享面板</td>
+					            </tr>
+					            <tr>
+					                <td><a class="nav-link"  data-href="getNetwork">getNetwork( function callabck )</a></td>
+					                <td>获取网络的状态</td>
+					            </tr>
+					            <tr>
+					                <td><a class="nav-link"  data-href="toast">toast( object param )</a></td>
+					                <td>弹出提示信息并自动延迟消失</td>
+					            </tr>
+					        </tbody>
+					        </tbody>
+					    </table>
+</fileset>
+		    	</div>
+		    </div>
+		</div>
+		<!--dingdone end-->
+		<!--dingdone.checkJsApi start-->
+		<div class="member-module" id="checkJsApi">
+    		<div class="member-box">
+    			<div class="clazz-member-list">
+    				<fileset>
+                		<div class="member-box">
+                			<!--方法内容开始-->
+                			<div class="member member-method">
+							    <div class="member-method-signature">
+							        <h4><a name="checkJsApi" class="anchor">checkJsApi(</a><a data-href="checkJsApi">function</a> callback)</h4>
+							        <div class="member-flag"><span class="label label-primary">方法</span></div>
+							    </div>
+							    <div class="member-method-desc">
+							        <div class="member-description">功能描述：检测JSAPI是否可用</div>
+							        <div class="member-description">场&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;景：开发者通过此判断选择性使用JSSDK</div>
+							        <div class="affiliated">
+							            <div>所属模块： <a href="">dingdone</a></div>
+							        </div>
+							    </div>
+							    <div class="member-method-info">
+							        <!-- param start -->
+							        <fileset>
+							            <legend>参数列表</legend>
+							            <table class="table">
+							                <thead>
+							                    <tr>
+							                        <th>参数名</th>
+							                        <th>类型</th>
+							                        <th>描述</th>
+							                    </tr>
+							                </thead>
+							                <tbody>
+							                    <tr>
+							                        <td>callback</td>
+							                        <td><a>function</a></td>
+							                        <td>获取用户信息触发的回调方法</td>
+							                    </tr>
+							                    
+							                </tbody>
+							            </table>
+							        </fileset>
+							        <!-- param end -->
+							        <!-- returnValue start -->
+							        <fileset>
+							            <legend>callback返回值</legend>
+							            <table class="table">
+							                <thead>
+							                    <tr>
+							                        <th>字段名</th>
+							                        <th>类型</th>
+							                        <th>描述</th>
+							                    </tr>
+							                </thead>
+							                <tbody>
+							                    <tr>
+							                        <td>code</td>
+							                        <td><a>string</a></td>
+							                        <td>状态码</td>
+							                    </tr>
+							                    <tr>
+							                        <td>message</td>
+							                        <td><a>string</a></td>
+							                        <td>反馈消息</td>
+							                    </tr>
+							                    <tr>
+							                        <td>data</td>
+							                        <td><a>object</a></td>
+							                        <td>{<br/>
+							                        	expire_in: 7200,<br/>
+													    apilist: [
+													      getUserInfo ,
+													      getDeviceToken ,
+													      getLocation ,
+													      ....
+													    ]
+													    <br/>}<br/>
+  														expire_in: <span class="c1">//失效时间（单位秒，默认7200s ）</span><br/>
+														apilist:  <span class="c1">  //该域名支持的JS-API 列表</span></td>
+							                    </tr>
+							                </tbody>
+							            </table>
+							        </fileset>
+							        <!-- returnValue end -->
+							        <!-- example start -->
+							        <fileset>
+							            <legend>示例</legend>
+							                <div class="example">
+							                    <div class="example-type"><span class="example-language">示例</span>代码：</div>
+							                    <table class="highlighttable">
+							                    	<tbody>
+							                    		<tr>
+							                    			<td class="linenos">
+							                    				<div class="linenodiv">
+							                    					<pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+ 10
+</pre>
+														</div>
+														</td>
+														<td class="code">
+															<div class="highlight">
+																<pre> <span class="nt">dingdone.checkJsApi(</span>function(response) <span class="nt">{</span>
+
+     <span class="c1">//得到response返回值一组键值对</span>
+     <span class="nx">var code = response.code;</span>
+     
+     <span class="c1">//code == 0, JS-SDK 可用
+    // code == other, 异常</span>
+     <span class="nx">.................写自己的逻辑代码................</span>
+
+ <span class="nt">});</span>
+</pre>
+															</div>
+														</td>
+												</tr>
+											</tbody>
+											</table>
+							             </div>
+							        </fileset>
+							        <!-- example end -->
+							    </div>
+							</div>
+                			<!--方法内容结束-->
+                		</div>
+                	</fileset>
+    			</div>
+    		</div>
+		</div>
+		<!--dingdone.checkJsApi end-->
+		<!--dingdone.enableNavBar start-->
+		<div class="member-module" id="enableNavBar">
+    		<div class="member-box">
+    			<div class="clazz-member-list">
+    				<fileset>
+                		<div class="member-box">
+                			<!--方法内容开始-->
+                			<div class="member member-method">
+							    <div class="member-method-signature">
+							        <h4><a name="enableNavBar" class="anchor">enableNavBar(</a><a data-href="enableNavBar">object</a> param)</h4>
+							        <div class="member-flag"><span class="label label-primary">方法</span></div>
+							    </div>
+							    <div class="member-method-desc">
+							        <div class="member-description">功能描述：调用此接口实现导航栏的隐藏和显示</div>
+							        <div class="member-description">场&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;景：实现全屏的效果</div>
+							        <div class="affiliated">
+							            <div>所属模块： <a href="">dingdone</a></div>
+							        </div>
+							    </div>
+							    <div class="member-method-info">
+							        <!-- param start -->
+							        <fileset>
+							            <legend>参数列表</legend>
+							            <table class="table">
+							                <thead>
+							                    <tr>
+							                        <th>参数名</th>
+							                        <th>类型</th>
+							                        <th>描述</th>
+							                    </tr>
+							                </thead>
+							                <tbody>
+							                    <tr>
+							                        <td>param</td>
+							                        <td><a>object</a></td>
+							                        <td>{<br/>
+							                        	&nbsp;&nbsp;&nbsp;&nbsp;enable:true|false,&nbsp;&nbsp;&nbsp;&nbsp;<span class="c1">//是否显示导航栏</span><br/>
+        												&nbsp;&nbsp;&nbsp;&nbsp;anim:true|false&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c1">//动画效果是否显示，默认不显示动画</span>
+        												<br/>}
+        											</td>
+							                    </tr>
+							                    
+							                </tbody>
+							            </table>
+							        </fileset>
+							        <!-- param end -->
+							        <!-- example start -->
+							        <fileset>
+							            <legend>示例</legend>
+							                <div class="example">
+							                    <div class="example-type"><span class="example-language">示例</span>代码：</div>
+							                    <table class="highlighttable">
+							                    	<tbody>
+							                    		<tr>
+							                    			<td class="linenos">
+							                    				<div class="linenodiv">
+							                    					<pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+</pre>
+														</div>
+														</td>
+														<td class="code">
+															<div class="highlight">
+																<pre> <span class="nt">dingdone.enableNavBar(</span><span class="nt">{</span>
+
+     <span class="nx">enable:true,</span>
+     <span class="nx">anim:true</span>
+
+ <span class="nt">});</span>
+</pre>
+															</div>
+														</td>
+												</tr>
+											</tbody>
+											</table>
+							             </div>
+							        </fileset>
+							        <!-- example end -->
+							    </div>
+							</div>
+                			<!--方法内容结束-->
+                		</div>
+                	</fileset>
+    			</div>
+    		</div>
+		</div>
+		<!--dingdone.enableNavBar end-->
+		<!--dingdone.enableNavMenu start-->
+		<div class="member-module" id="enableNavMenu">
+    		<div class="member-box">
+    			<div class="clazz-member-list">
+    				<fileset>
+                		<div class="member-box">
+                			<!--方法内容开始-->
+                			<div class="member member-method">
+							    <div class="member-method-signature">
+							        <h4><a name="enableNavMenu" class="anchor">enableNavMenu(</a><a data-href="enableNavMenu">object</a> param)</h4>
+							        <div class="member-flag"><span class="label label-primary">方法</span></div>
+							    </div>
+							    <div class="member-method-desc">
+							        <div class="member-description">功能描述：隐藏/显示右上角菜单</div>
+							        <div class="member-description">场&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;景：在浏览器中打开等功能</div>
+							        <div class="affiliated">
+							            <div>所属模块： <a href="">dingdone</a></div>
+							        </div>
+							    </div>
+							    <div class="member-method-info">
+							        <!-- param start -->
+							        <fileset>
+							            <legend>参数列表</legend>
+							            <table class="table">
+							                <thead>
+							                    <tr>
+							                        <th>参数名</th>
+							                        <th>类型</th>
+							                        <th>描述</th>
+							                    </tr>
+							                </thead>
+							                <tbody>
+							                    <tr>
+							                        <td>param</td>
+							                        <td><a>object</a></td>
+							                        <td>{<br/>
+							                        	&nbsp;&nbsp;&nbsp;&nbsp;enable:true|false,&nbsp;&nbsp;&nbsp;&nbsp;<span class="c1">//是否显示导航栏右上角菜单按钮</span><br/>
+        												&nbsp;&nbsp;&nbsp;&nbsp;refresh:true|false,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c1">//是否显示刷新按钮</span><br/>
+        												&nbsp;&nbsp;&nbsp;&nbsp;copyUrl:true:true|false,&nbsp;&nbsp;&nbsp;&nbsp;<span class="c1">//是否显示复制链接按钮</span><br/>
+        												&nbsp;&nbsp;&nbsp;&nbsp;openInBrowser:true|false&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c1">//是否显示在浏览器中打开按钮</span>
+        												<br/>}
+        											</td>
+							                    </tr>
+							                    
+							                </tbody>
+							            </table>
+							        </fileset>
+							        <!-- param end -->
+							        <!-- example start -->
+							        <fileset>
+							            <legend>示例</legend>
+							                <div class="example">
+							                    <div class="example-type"><span class="example-language">示例</span>代码：</div>
+							                    <table class="highlighttable">
+							                    	<tbody>
+							                    		<tr>
+							                    			<td class="linenos">
+							                    				<div class="linenodiv">
+							                    					<pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+8</pre>
+														</div>
+														</td>
+														<td class="code">
+															<div class="highlight">
+																<pre> <span class="nt">dingdone.enableNavBar(</span><span class="nt">{</span>
+
+     <span class="nx">enable:true,</span>
+     <span class="nx">refresh:true</span>
+     <span class="nx">copyUrl:false,</span>
+     <span class="nx">openInBrowser:false</span>
+
+ <span class="nt">});</span>
+</pre>
+															</div>
+														</td>
+												</tr>
+											</tbody>
+											</table>
+							             </div>
+							        </fileset>
+							        <!-- example end -->
+							    </div>
+							</div>
+                			<!--方法内容结束-->
+                		</div>
+                	</fileset>
+    			</div>
+    		</div>
+		</div>
+		<!--dingdone.enableNavMenu end-->
+		<!--dingdone.setNavTitle start-->
+		<div class="member-module" id="setNavTitle">
+    		<div class="member-box">
+    			<div class="clazz-member-list">
+    				<fileset>
+                		<div class="member-box">
+                			<!--方法内容开始-->
+                			<div class="member member-method">
+							    <div class="member-method-signature">
+							        <h4><a name="setNavTitle" class="anchor">setNavTitle(</a><a data-href="setNavTitle">object</a> param)</h4>
+							        <div class="member-flag"><span class="label label-primary">方法</span></div>
+							    </div>
+							    <div class="member-method-desc">
+							        <div class="member-description">功能描述：默认显示加载的链接中的&lt;head&gt; 中的title</div>
+							        <div class="member-description">场&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;景：自定义Title</div>
+							        <div class="affiliated">
+							            <div>所属模块： <a href="">dingdone</a></div>
+							        </div>
+							    </div>
+							    <div class="member-method-info">
+							        <!-- param start -->
+							        <fileset>
+							            <legend>参数列表</legend>
+							            <table class="table">
+							                <thead>
+							                    <tr>
+							                        <th>参数名</th>
+							                        <th>类型</th>
+							                        <th>描述</th>
+							                    </tr>
+							                </thead>
+							                <tbody>
+							                    <tr>
+							                        <td>param</td>
+							                        <td><a>object</a></td>
+							                        <td>{<br/>
+							                        	&nbsp;&nbsp;&nbsp;&nbsp;title:xxxxxxx,&nbsp;&nbsp;&nbsp;&nbsp;<span class="c1">//自定义标题名称</span>
+        												<br/>}
+        											</td>
+							                    </tr>
+							                    
+							                </tbody>
+							            </table>
+							        </fileset>
+							        <!-- param end -->
+							        <!-- example start -->
+							        <fileset>
+							            <legend>示例</legend>
+							                <div class="example">
+							                    <div class="example-type"><span class="example-language">示例</span>代码：</div>
+							                    <table class="highlighttable">
+							                    	<tbody>
+							                    		<tr>
+							                    			<td class="linenos">
+							                    				<div class="linenodiv">
+							                    					<pre> 1
+ 2
+ 3
+ 4
+5</pre>
+														</div>
+														</td>
+														<td class="code">
+															<div class="highlight">
+																<pre> <span class="nt">dingdone.setNavTitle(</span><span class="nt">{</span>
+
+     <span class="nx">title:叮当开发平台</span>
+
+ <span class="nt">});</span>
+</pre>
+															</div>
+														</td>
+												</tr>
+											</tbody>
+											</table>
+							             </div>
+							        </fileset>
+							        <!-- example end -->
+							    </div>
+							</div>
+                			<!--方法内容结束-->
+                		</div>
+                	</fileset>
+    			</div>
+    		</div>
+		</div>
+		<!--dingdone.setNavTitle end-->
+		<!--dingdone.goBack start-->
+		<div class="member-module" id="goBack">
+    		<div class="member-box">
+    			<div class="clazz-member-list">
+    				<fileset>
+                		<div class="member-box">
+                			<!--方法内容开始-->
+                			<div class="member member-method">
+							    <div class="member-method-signature">
+							        <h4><a name="goBack" class="anchor">goBack(</a>)</h4>
+							        <div class="member-flag"><span class="label label-primary">方法</span></div>
+							    </div>
+							    <div class="member-method-desc">
+							        <div class="member-description">功能描述：返回浏览器的前一界面，在无前一界面的时候，没有执行的效果</div>
+							        <div class="member-description">场&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;景：需要回退操作</div>
+							        <div class="affiliated">
+							            <div>所属模块： <a href="">dingdone</a></div>
+							        </div>
+							    </div>
+							    <div class="member-method-info">
+							        <!-- example start -->
+							        <fileset>
+							            <legend>示例</legend>
+							                <div class="example">
+							                    <div class="example-type"><span class="example-language">示例</span>代码：</div>
+							                    <table class="highlighttable">
+							                    	<tbody>
+							                    		<tr>
+							                    			<td class="linenos">
+							                    				<div class="linenodiv">
+							                    					<pre> 1
+</pre>
+														</div>
+														</td>
+														<td class="code">
+															<div class="highlight">
+																<pre> <span class="nt">dingdone.goBack(</span><span class="nt">);</span>
+</pre>
+															</div>
+														</td>
+												</tr>
+											</tbody>
+											</table>
+							             </div>
+							        </fileset>
+							        <!-- example end -->
+							    </div>
+							</div>
+                			<!--方法内容结束-->
+                		</div>
+                	</fileset>
+    			</div>
+    		</div>
+		</div>
+		<!--dingdone.goBack end-->
+		<!--dingdone.exit start-->
+		<div class="member-module" id="exit">
+    		<div class="member-box">
+    			<div class="clazz-member-list">
+    				<fileset>
+                		<div class="member-box">
+                			<!--方法内容开始-->
+                			<div class="member member-method">
+							    <div class="member-method-signature">
+							        <h4><a name="exit" class="anchor">exit(</a>)</h4>
+							        <div class="member-flag"><span class="label label-primary">方法</span></div>
+							    </div>
+							    <div class="member-method-desc">
+							        <div class="member-description">功能描述：退出当前的界面</div>
+							        <div class="member-description">场&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;景：需要退出的操作</div>
+							        <div class="affiliated">
+							            <div>所属模块： <a href="">dingdone</a></div>
+							        </div>
+							    </div>
+							    <div class="member-method-info">
+							        <!-- example start -->
+							        <fileset>
+							            <legend>示例</legend>
+							                <div class="example">
+							                    <div class="example-type"><span class="example-language">示例</span>代码：</div>
+							                    <table class="highlighttable">
+							                    	<tbody>
+							                    		<tr>
+							                    			<td class="linenos">
+							                    				<div class="linenodiv">
+							                    					<pre> 1
+</pre>
+														</div>
+														</td>
+														<td class="code">
+															<div class="highlight">
+																<pre> <span class="nt">dingdone.exit(</span><span class="nt">);</span>
+</pre>
+															</div>
+														</td>
+												</tr>
+											</tbody>
+											</table>
+							             </div>
+							        </fileset>
+							        <!-- example end -->
+							    </div>
+							</div>
+                			<!--方法内容结束-->
+                		</div>
+                	</fileset>
+    			</div>
+    		</div>
+		</div>
+		<!--dingdone.exit end-->
+		<!--dingdone.refresh start-->
+		<div class="member-module" id="refresh">
+    		<div class="member-box">
+    			<div class="clazz-member-list">
+    				<fileset>
+                		<div class="member-box">
+                			<!--方法内容开始-->
+                			<div class="member member-method">
+							    <div class="member-method-signature">
+							        <h4><a name="refresh" class="anchor">refresh(</a>)</h4>
+							        <div class="member-flag"><span class="label label-primary">方法</span></div>
+							    </div>
+							    <div class="member-method-desc">
+							        <div class="member-description">功能描述：刷新当前的界面</div>
+							        <div class="member-description">场&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;景：需要刷新的操作</div>
+							        <div class="affiliated">
+							            <div>所属模块： <a href="">dingdone</a></div>
+							        </div>
+							    </div>
+							    <div class="member-method-info">
+							        <!-- example start -->
+							        <fileset>
+							            <legend>示例</legend>
+							                <div class="example">
+							                    <div class="example-type"><span class="example-language">示例</span>代码：</div>
+							                    <table class="highlighttable">
+							                    	<tbody>
+							                    		<tr>
+							                    			<td class="linenos">
+							                    				<div class="linenodiv">
+							                    					<pre> 1
+</pre>
+														</div>
+														</td>
+														<td class="code">
+															<div class="highlight">
+																<pre> <span class="nt">dingdone.refresh(</span><span class="nt">);</span>
+</pre>
+															</div>
+														</td>
+												</tr>
+											</tbody>
+											</table>
+							             </div>
+							        </fileset>
+							        <!-- example end -->
+							    </div>
+							</div>
+                			<!--方法内容结束-->
+                		</div>
+                	</fileset>
+    			</div>
+    		</div>
+		</div>
+		<!--dingdone.refresh end-->
+		<!--dingdone.loadUrl start-->
+		<div class="member-module" id="loadUrl">
+    		<div class="member-box">
+    			<div class="clazz-member-list">
+    				<fileset>
+                		<div class="member-box">
+                			<!--方法内容开始-->
+                			<div class="member member-method">
+							    <div class="member-method-signature">
+							        <h4><a name="loadUrl" class="anchor">loadUrl(</a><a data-href="loadUrl">object</a> param)</h4>
+							        <div class="member-flag"><span class="label label-primary">方法</span></div>
+							    </div>
+							    <div class="member-method-desc">
+							        <div class="member-description">功能描述：加载一段外链或内链</div>
+							        <div class="member-description">场&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;景：需要跳转页面的操作</div>
+							        <div class="affiliated">
+							            <div>所属模块： <a href="">dingdone</a></div>
+							        </div>
+							        <h4 style="margin-top:20px;">外内链规则</span></h4>
+							        <!--外内链规则开始-->
+							        <div class="member-description" style="padding-left:30px;">
+							        	<div class="wiki wiki-page">
+  <a name="外内链接的规则"></a>
+<h6>外内链接的规则<a href="#外内链接的规则" class="wiki-anchor"></a></h6>
+
+	<p>部分跳转功能需客户端支持该功能，否则，跳转的动作将无任何的效果</p>
+
+	<p>规则: url = 外链地址</p>
+
+	<p>支持http 和 https 跳转</p>
+
+	<p>例如: <a class="external" href="http://www.baidu.com">http://www.baidu.com</a></p>
+
+<h6>跳转到内容的详情<a href="#跳转到内容的详情" class="wiki-anchor"></a></h6>
+
+	<p>规则:  [type|mid|cid]</p>
+
+	<ul>
+	<li>type: 内容的类型  [news | vod | tuji | vote]  [图文混排 | 视频 | 图集 | 投票]</li>
+		<li>mid: 模块的ID</li>
+		<li>cid: 详情的ID</li>
+	</ul>
+
+	<p>例如:  news|12898|99878 , 跳转到12898模块下 图文数据 99878</p>
+<h6>跳转到用户模块<a href="#跳转到用户模块" class="wiki-anchor"></a></h6>
+	<p>规则: [mid#x]</p>
+	<ul>
+	<li>mid: 模块的ID</li>
+	</ul>
+
+
+	<p>例如: 12898#x,  跳转到模块12898模块的首届面</p>
+
+
+<h6>跳转到内置模块<a href="#跳转到内置模块" class="wiki-anchor"></a></h6>
+
+
+	<p>规则: [type#]</p>
+
+
+	<ul>
+	<li>userLogin: 用户登录的界面</li>
+		<li>userCenter: 用户中心的界面</li>
+		<li>weather: 天气的界面</li>
+		<li>aboutUs: APP关于我们界面       (dev)</li>
+		<li>feedBack: APP的意见反馈界面  (dev)</li>
+	</ul>
+
+
+	<p>例如： userLogin#， 跳转到用户的登录界面</p>
+</div>
+							        </div>
+							        <!--外内链规则结束-->
+							    </div>
+							    <div class="member-method-info">
+							        <!-- param start -->
+							        <fileset>
+							            <legend>参数列表</legend>
+							            <table class="table">
+							                <thead>
+							                    <tr>
+							                        <th>参数名</th>
+							                        <th>类型</th>
+							                        <th>描述</th>
+							                    </tr>
+							                </thead>
+							                <tbody>
+							                    <tr>
+							                        <td>param</td>
+							                        <td><a>object</a></td>
+							                        <td>{<br/>
+							                        	&nbsp;&nbsp;&nbsp;&nbsp;url:xxxxxxx,&nbsp;&nbsp;&nbsp;&nbsp;<span class="c1">//需要跳转的链接地址</span>
+        												<br/>}
+        											</td>
+							                    </tr>
+							                    
+							                </tbody>
+							            </table>
+							        </fileset>
+							        <!-- param end -->
+							        <!-- example start -->
+							        <fileset>
+							            <legend>示例</legend>
+							                <div class="example">
+							                    <div class="example-type"><span class="example-language">示例</span>代码：</div>
+							                    <table class="highlighttable">
+							                    	<tbody>
+							                    		<tr>
+							                    			<td class="linenos">
+							                    				<div class="linenodiv">
+							                    					<pre> 1
+ 2
+ 3
+ 4
+5</pre>
+														</div>
+														</td>
+														<td class="code">
+															<div class="highlight">
+																<pre> <span class="nt">dingdone.loadUrl(</span><span class="nt">{</span>
+
+     <span class="nx">url:xxxxxx</span>
+
+ <span class="nt">});</span>
+</pre>
+															</div>
+														</td>
+												</tr>
+											</tbody>
+											</table>
+							             </div>
+							        </fileset>
+							        <!-- example end -->
+							    </div>
+							</div>
+                			<!--方法内容结束-->
+                		</div>
+                	</fileset>
+    			</div>
+    		</div>
+		</div>
+		<!--dingdone.loadUrl end-->
+		<!--dingdone.alert start-->
+		<div class="member-module" id="alert">
+    		<div class="member-box">
+    			<div class="clazz-member-list">
+    				<fileset>
+                		<div class="member-box">
+                			<!--方法内容开始-->
+                			<div class="member member-method">
+							    <div class="member-method-signature">
+							        <h4><a name="alert" class="anchor">alert(</a><a data-href="alert">object</a> param,<a data-href="alert">function</a> callback)</h4>
+							        <div class="member-flag"><span class="label label-primary">方法</span></div>
+							    </div>
+							    <div class="member-method-desc">
+							        <div class="member-description">功能描述：弹出原生的对话框</div>
+							        <div class="member-description">场&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;景：需要确认或提醒的操作</div>
+							        <div class="affiliated">
+							            <div>所属模块： <a href="">dingdone</a></div>
+							        </div>
+							    </div>
+							    <div class="member-method-info">
+							        <!-- param start -->
+							        <fileset>
+							            <legend>参数列表</legend>
+							            <table class="table">
+							                <thead>
+							                    <tr>
+							                        <th>参数名</th>
+							                        <th>类型</th>
+							                        <th>描述</th>
+							                    </tr>
+							                </thead>
+							                <tbody>
+							                    <tr>
+							                        <td>param</td>
+							                        <td><a>object</a></td>
+							                        <td>{<br/>
+							                        	&nbsp;&nbsp;&nbsp;&nbsp;title:'弹窗提示标题',&nbsp;&nbsp;&nbsp;&nbsp;<span class="c1">//弹窗标题名称</span><br/>
+        												&nbsp;&nbsp;&nbsp;&nbsp;msg:'弹窗提示内容',&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c1">//弹窗提示内容</span><br/>
+        												&nbsp;&nbsp;&nbsp;&nbsp;btnOk:'确定',&nbsp;&nbsp;&nbsp;&nbsp;<span class="c1">//确定按钮显示的文本，不传递不显示</span><br/>
+        												&nbsp;&nbsp;&nbsp;&nbsp;btnCancel:'取消'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c1">//取消按钮显示的文本，不传递不显示
+</span>
+        												<br/>}
+        											</td>
+							                    </tr>
+							                    <tr>
+							                        <td>callback</td>
+							                        <td><a>function</a></td>
+							                        <td>提示弹窗回调方法</td>
+							                    </tr>
+							                </tbody>
+							            </table>
+							        </fileset>
+							        <!-- param end -->
+							        <!-- returnValue start -->
+							        <fileset>
+							            <legend>callback返回值</legend>
+							            <table class="table">
+							                <thead>
+							                    <tr>
+							                        <th>字段名</th>
+							                        <th>类型</th>
+							                        <th>描述</th>
+							                    </tr>
+							                </thead>
+							                <tbody>
+							                    <tr>
+							                        <td>code</td>
+							                        <td><a>string</a></td>
+							                        <td>状态码<br/>
+							                        	<span class="c1">//code == 0, 用户点击了 btnOK</span><br/>
+        <span class="c1">//res.code == 1, 用户点击了 btnCancel</span>
+							                        	</td>
+							                    </tr>
+							                </tbody>
+							            </table>
+							        </fileset>
+							        <!-- returnValue end -->
+							        <!-- example start -->
+							        <fileset>
+							            <legend>示例</legend>
+							                <div class="example">
+							                    <div class="example-type"><span class="example-language">示例</span>代码：</div>
+							                    <table class="highlighttable">
+							                    	<tbody>
+							                    		<tr>
+							                    			<td class="linenos">
+							                    				<div class="linenodiv">
+							                    					<pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+</pre>
+														</div>
+														</td>
+														<td class="code">
+															<div class="highlight">
+																<pre> <span class="nt">dingdone.enableNavBar(</span><span class="nt">{</span>
+
+     <span class="nx">title:'弹窗提示标题',</span>
+     <span class="nx">msg:'弹窗提示内容'</span>
+     <span class="nx">btnOk:'确定',</span>
+     <span class="nx">btnCancel:'取消'</span>
+
+ <span class="nt">},function(response) <span class="nt">{</span>
+
+     <span class="c1">//得到response返回值一组键值对</span>
+     
+     <span class="c1">//res.code == 0, 用户点击了 btnOK
+     //res.code == 1, 用户点击了 btnCancel</span>
+     <span class="nx">.................写自己的逻辑代码................</span>
+);</span>
+</pre>
+															</div>
+														</td>
+												</tr>
+											</tbody>
+											</table>
+							             </div>
+							        </fileset>
+							        <!-- example end -->
+							    </div>
+							</div>
+                			<!--方法内容结束-->
+                		</div>
+                	</fileset>
+    			</div>
+    		</div>
+		</div>
+		<!--dingdone.alert end-->
+		<!--dingdone.getUserInfo start-->
+		<div class="member-module" id="getUserInfo">
+    		<div class="member-box">
+    			<div class="clazz-member-list">
+    				<fileset>
+                		<div class="member-box">
+                			<!--方法内容开始-->
+                			<div class="member member-method">
+							    <div class="member-method-signature">
+							        <h4><a name="getUserInfo" class="anchor">getUserInfo(</a><a data-href="getUserInfo">function</a> callback)</h4>
+							        <div class="member-flag"><span class="label label-primary">方法</span></div>
+							    </div>
+							    <div class="member-method-desc">
+							        <div class="member-description">功能描述：调用返回用户的信息</div>
+							        <div class="member-description">场&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;景：需要得到用户信息的地方</div>
+							        <div class="affiliated">
+							            <div>所属模块： <a href="">dingdone</a></div>
+							        </div>
+							    </div>
+							    <div class="member-method-info">
+							        <!-- param start -->
+							        <fileset>
+							            <legend>参数列表</legend>
+							            <table class="table">
+							                <thead>
+							                    <tr>
+							                        <th>参数名</th>
+							                        <th>类型</th>
+							                        <th>描述</th>
+							                    </tr>
+							                </thead>
+							                <tbody>
+							                    <tr>
+							                        <td>callback</td>
+							                        <td><a>function</a></td>
+							                        <td>获取用户信息触发的回调方法</td>
+							                    </tr>
+							                    
+							                </tbody>
+							            </table>
+							        </fileset>
+							        <!-- param end -->
+							        <!-- returnValue start -->
+							        <fileset>
+							            <legend>callback返回值</legend>
+							            <table class="table">
+							                <thead>
+							                    <tr>
+							                        <th>字段名</th>
+							                        <th>类型</th>
+							                        <th>描述</th>
+							                    </tr>
+							                </thead>
+							                <tbody>
+							                    <tr>
+							                        <td>userId</td>
+							                        <td><a>string</a></td>
+							                        <td>用户id</td>
+							                    </tr>
+							                    <tr>
+							                        <td>avatarUrl</td>
+							                        <td><a>string</a></td>
+							                        <td>用户头像</td>
+							                    </tr>
+							                    <tr>
+							                        <td>userName</td>
+							                        <td><a>string</a></td>
+							                        <td>用户名称</td>
+							                    </tr>
+							                    <tr>
+							                        <td>telephone</td>
+							                        <td><a>string</a></td>
+							                        <td>用户绑定的电话号码</td>
+							                    </tr>
+							                    <tr>
+							                        <td>accessToken</td>
+							                        <td><a>string</a></td>
+							                        <td>accessToken身份口令</td>
+							                    </tr>
+							                    <tr>
+							                        <td>dingDoneUid</td>
+							                        <td><a>string</a></td>
+							                        <td>Dingdone+应用程序id+_+ userId</td>
+							                    </tr>
+							                </tbody>
+							            </table>
+							        </fileset>
+							        <!-- returnValue end -->
+							        <!-- example start -->
+							        <fileset>
+							            <legend>示例</legend>
+							                <div class="example">
+							                    <div class="example-type"><span class="example-language">示例</span>代码：</div>
+							                    <table class="highlighttable">
+							                    	<tbody>
+							                    		<tr>
+							                    			<td class="linenos">
+							                    				<div class="linenodiv">
+							                    					<pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+ 10
+11</pre>
+														</div>
+														</td>
+														<td class="code">
+															<div class="highlight">
+																<pre> <span class="nt">dingdone.getUserInfo(</span>function(response) <span class="nt">{</span>
+
+     <span class="c1">//得到response返回值一组键值对</span>
+     <span class="nx">var data = response || {};</span>
+     
+     <span class="c1">//执行自己的逻辑代码</span>
+     <span class="nx">var userId = data['userId'];</span>
+     <span class="nx">alert('调用客户端getUserInfo方法取到的用户id为:' + userId);</span>
+     <span class="nx">.................写自己的逻辑代码................</span>
+
+ <span class="nt">});</span>
+</pre>
+															</div>
+														</td>
+												</tr>
+											</tbody>
+											</table>
+							             </div>
+							        </fileset>
+							        <!-- example end -->
+							    </div>
+							</div>
+                			<!--方法内容结束-->
+                		</div>
+                	</fileset>
+    			</div>
+    		</div>
+		</div>
+		<!--dingdone.getUserInfo end-->
+		<!--dingdone.getAppInfo start-->
+		<div class="member-module" id="getAppInfo">
+    		<div class="member-box">
+    			<div class="clazz-member-list">
+    				<fileset>
+                		<div class="member-box">
+                			<!--方法内容开始-->
+                			<div class="member member-method">
+							    <div class="member-method-signature">
+							        <h4><a name="getAppInfo" class="anchor">getAppInfo(</a><a data-href="getAppInfo">function</a> callback)</h4>
+							        <div class="member-flag"><span class="label label-primary">方法</span></div>
+							    </div>
+							    <div class="member-method-desc">
+							        <div class="member-description">功能描述：调用返回APP的信息</div>
+							        <div class="member-description">场&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;景：用于显示APP的信息</div>
+							        <div class="affiliated">
+							            <div>所属模块： <a href="">dingdone</a></div>
+							        </div>
+							    </div>
+							    <div class="member-method-info">
+							        <!-- param start -->
+							        <fileset>
+							            <legend>参数列表</legend>
+							            <table class="table">
+							                <thead>
+							                    <tr>
+							                        <th>参数名</th>
+							                        <th>类型</th>
+							                        <th>描述</th>
+							                    </tr>
+							                </thead>
+							                <tbody>
+							                    <tr>
+							                        <td>callback</td>
+							                        <td><a>function</a></td>
+							                        <td>获取APP信息触发的回调方法</td>
+							                    </tr>
+							                    
+							                </tbody>
+							            </table>
+							        </fileset>
+							        <!-- param end -->
+							        <!-- returnValue start -->
+							        <fileset>
+							            <legend>callback返回值</legend>
+							            <table class="table">
+							                <thead>
+							                    <tr>
+							                        <th>字段名</th>
+							                        <th>类型</th>
+							                        <th>描述</th>
+							                    </tr>
+							                </thead>
+							                <tbody>
+							                </tbody>
+							            </table>
+							        </fileset>
+							        <!-- returnValue end -->
+							        <!-- example start -->
+							        <fileset>
+							            <legend>示例</legend>
+							                <div class="example">
+							                    <div class="example-type"><span class="example-language">示例</span>代码：</div>
+							                    <table class="highlighttable">
+							                    	<tbody>
+							                    		<tr>
+							                    			<td class="linenos">
+							                    				<div class="linenodiv">
+							                    					<pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+ 10
+11</pre>
+														</div>
+														</td>
+														<td class="code">
+															<div class="highlight">
+																<pre> <span class="nt">dingdone.getAppInfo(</span>function(response) <span class="nt">{</span>
+
+     <span class="c1">//得到response返回值一组键值对</span>
+     <span class="nx">var data = response || {};</span>
+     
+     <span class="c1">//执行自己的逻辑代码</span>
+     <span class="nx">var userId = data['userId'];</span>
+     <span class="nx">alert('调用客户端getAppInfo方法取到的用户id为:' + userId);</span>
+     <span class="nx">.................写自己的逻辑代码................</span>
+
+ <span class="nt">});</span>
+</pre>
+															</div>
+														</td>
+												</tr>
+											</tbody>
+											</table>
+							             </div>
+							        </fileset>
+							        <!-- example end -->
+							    </div>
+							</div>
+                			<!--方法内容结束-->
+                		</div>
+                	</fileset>
+    			</div>
+    		</div>
+		</div>
+		<!--dingdone.getAppInfo end-->
+		<!--dingdone.getLocation start-->
+		<div class="member-module" id="getLocation">
+    		<div class="member-box">
+    			<div class="clazz-member-list">
+    				<fileset>
+                		<div class="member-box">
+                			<!--方法内容开始-->
+                			<div class="member member-method">
+							    <div class="member-method-signature">
+							        <h4><a name="getLocation" class="anchor">getLocation(</a><a data-href="getLocation">function</a> callback)</h4>
+							        <div class="member-flag"><span class="label label-primary">方法</span></div>
+							    </div>
+							    <div class="member-method-desc">
+							        <div class="member-description">功能描述：获取位置信息</div>
+							        <div class="member-description">场&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;景：根据位置提供更佳精准的服务</div>
+							        <div class="affiliated">
+							            <div>所属模块： <a href="">dingdone</a></div>
+							        </div>
+							    </div>
+							    <div class="member-method-info">
+							        <!-- param start -->
+							        <fileset>
+							            <legend>参数列表</legend>
+							            <table class="table">
+							                <thead>
+							                    <tr>
+							                        <th>参数名</th>
+							                        <th>类型</th>
+							                        <th>描述</th>
+							                    </tr>
+							                </thead>
+							                <tbody>
+							                    <tr>
+							                        <td>callback</td>
+							                        <td><a>function</a></td>
+							                        <td>获取位置信息触发的回调方法</td>
+							                    </tr>
+							                    
+							                </tbody>
+							            </table>
+							        </fileset>
+							        <!-- param end -->
+							        <!-- returnValue start -->
+							        <fileset>
+							            <legend>callback返回值</legend>
+							            <table class="table">
+							                <thead>
+							                    <tr>
+							                        <th>字段名</th>
+							                        <th>类型</th>
+							                        <th>描述</th>
+							                    </tr>
+							                </thead>
+							                <tbody>
+							                </tbody>
+							            </table>
+							        </fileset>
+							        <!-- returnValue end -->
+							        <!-- example start -->
+							        <fileset>
+							            <legend>示例</legend>
+							                <div class="example">
+							                    <div class="example-type"><span class="example-language">示例</span>代码：</div>
+							                    <table class="highlighttable">
+							                    	<tbody>
+							                    		<tr>
+							                    			<td class="linenos">
+							                    				<div class="linenodiv">
+							                    					<pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+</pre>
+														</div>
+														</td>
+														<td class="code">
+															<div class="highlight">
+																<pre> <span class="nt">dingdone.getLocation(</span>function(response) <span class="nt">{</span>
+
+     <span class="c1">//得到response返回值一组键值对</span>
+     <span class="nx">var data = response || {};</span>
+     
+     <span class="c1">//执行自己的逻辑代码</span>
+     <span class="nx">.................写自己的逻辑代码................</span>
+
+ <span class="nt">});</span>
+</pre>
+															</div>
+														</td>
+												</tr>
+											</tbody>
+											</table>
+							             </div>
+							        </fileset>
+							        <!-- example end -->
+							    </div>
+							</div>
+                			<!--方法内容结束-->
+                		</div>
+                	</fileset>
+    			</div>
+    		</div>
+		</div>
+		<!--dingdone.getLocation end-->
+		<!--dingdone.getDevice start-->
+		<div class="member-module" id="getDevice">
+    		<div class="member-box">
+    			<div class="clazz-member-list">
+    				<fileset>
+                		<div class="member-box">
+                			<!--方法内容开始-->
+                			<div class="member member-method">
+							    <div class="member-method-signature">
+							        <h4><a name="getDevice" class="anchor">getDevice(</a><a data-href="getDevice">function</a> callback)</h4>
+							        <div class="member-flag"><span class="label label-primary">方法</span></div>
+							    </div>
+							    <div class="member-method-desc">
+							        <div class="member-description">功能描述：获取设备信息</div>
+							        <div class="member-description">场&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;景：第三方可用于统计,防止重复计数的功能</div>
+							        <div class="affiliated">
+							            <div>所属模块： <a href="">dingdone</a></div>
+							        </div>
+							    </div>
+							    <div class="member-method-info">
+							        <!-- param start -->
+							        <fileset>
+							            <legend>参数列表</legend>
+							            <table class="table">
+							                <thead>
+							                    <tr>
+							                        <th>参数名</th>
+							                        <th>类型</th>
+							                        <th>描述</th>
+							                    </tr>
+							                </thead>
+							                <tbody>
+							                    <tr>
+							                        <td>callback</td>
+							                        <td><a>function</a></td>
+							                        <td>获取设备信息触发的回调方法</td>
+							                    </tr>
+							                    
+							                </tbody>
+							            </table>
+							        </fileset>
+							        <!-- param end -->
+							        <!-- returnValue start -->
+							        <fileset>
+							            <legend>callback返回值</legend>
+							            <table class="table">
+							                <thead>
+							                    <tr>
+							                        <th>字段名</th>
+							                        <th>类型</th>
+							                        <th>描述</th>
+							                    </tr>
+							                </thead>
+							                <tbody>
+							                    <tr>
+							                        <td>system</td>
+							                        <td><a>string</a></td>
+							                        <td>系统名称</td>
+							                    </tr>
+							                    <tr>
+							                        <td>types</td>
+							                        <td><a>string</a></td>
+							                        <td>设备类型</td>
+							                    </tr>
+							                    <tr>
+							                        <td>programName</td>
+							                        <td><a>string</a></td>
+							                        <td>应用名称</td>
+							                    </tr>
+							                    <tr>
+							                        <td>programVersion</td>
+							                        <td><a>string</a></td>
+							                        <td>应用版本号</td>
+							                    </tr>
+							                    <tr>
+							                        <td>devicesToken</td>
+							                        <td><a>string</a></td>
+							                        <td>设备唯一信息(和硬件相关)</td>
+							                    </tr>
+							                    <tr>
+							                        <td>imei</td>
+							                        <td><a>string</a></td>
+							                        <td>设备IMEI</td>
+							                    </tr>
+							                    <tr>
+							                        <td>iccid</td>
+							                        <td><a>string</a></td>
+							                        <td>设备ICCID</td>
+							                    </tr>
+							                </tbody>
+							            </table>
+							        </fileset>
+							        <!-- returnValue end -->
+							        <!-- example start -->
+							        <fileset>
+							            <legend>示例</legend>
+							                <div class="example">
+							                    <div class="example-type"><span class="example-language">示例</span>代码：</div>
+							                    <table class="highlighttable">
+							                    	<tbody>
+							                    		<tr>
+							                    			<td class="linenos">
+							                    				<div class="linenodiv">
+							                    					<pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+ 10
+11</pre>
+														</div>
+														</td>
+														<td class="code">
+															<div class="highlight">
+																<pre> <span class="nt">dingdone.getDevice(</span>function(response) <span class="nt">{</span>
+
+     <span class="c1">//得到response返回值一组键值对</span>
+     <span class="nx">var data = response || {};</span>
+     
+     <span class="c1">//执行自己的逻辑代码</span>
+     <span class="nx">var devicesToken = data['devicesToken'];</span>
+     <span class="nx">alert('调用客户端getDevice方法取到的设备唯一信息为:' + devicesToken);</span>
+     <span class="nx">.................写自己的逻辑代码................</span>
+
+ <span class="nt">});</span>
+</pre>
+															</div>
+														</td>
+												</tr>
+											</tbody>
+											</table>
+							             </div>
+							        </fileset>
+							        <!-- example end -->
+							    </div>
+							</div>
+                			<!--方法内容结束-->
+                		</div>
+                	</fileset>
+    			</div>
+    		</div>
+		</div>
+		<!--dingdone.getDevice end-->
+		<!--dingdone.previewPic start-->
+		<div class="member-module" id="previewPic">
+    		<div class="member-box">
+    			<div class="clazz-member-list">
+    				<fileset>
+                		<div class="member-box">
+                			<!--方法内容开始-->
+                			<div class="member member-method">
+							    <div class="member-method-signature">
+							        <h4><a name="previewPic" class="anchor">previewPic(</a><a data-href="previewPic">object</a> param)</h4>
+							        <div class="member-flag"><span class="label label-primary">方法</span></div>
+							    </div>
+							    <div class="member-method-desc">
+							        <div class="member-description">功能描述：点击图片切换大图查看</div>
+							        <div class="member-description">场&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;景：需要浏览大图的情景</div>
+							        <div class="affiliated">
+							            <div>所属模块： <a href="">dingdone</a></div>
+							        </div>
+							    </div>
+							    <div class="member-method-info">
+							        <!-- param start -->
+							        <fileset>
+							            <legend>参数列表</legend>
+							            <table class="table">
+							                <thead>
+							                    <tr>
+							                        <th>参数名</th>
+							                        <th>类型</th>
+							                        <th>描述</th>
+							                    </tr>
+							                </thead>
+							                <tbody>
+							                    <tr>
+							                        <td>param</td>
+							                        <td><a>object</a></td>
+							                        <td>{<br/>
+							                        	&nbsp;&nbsp;&nbsp;&nbsp;pics: [pic1, pic2, pic3],&nbsp;&nbsp;&nbsp;&nbsp;<span class="c1">//预览图片的的链接数组</span><br/>
+        												&nbsp;&nbsp;&nbsp;&nbsp;position:0,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c1">//默认打开第几张图片，从0开始，默认是0</span><br/>
+        												<br/>}
+        											</td>
+							                    </tr>
+							                    
+							                </tbody>
+							            </table>
+							        </fileset>
+							        <!-- param end -->
+							        <!-- example start -->
+							        <fileset>
+							            <legend>示例</legend>
+							                <div class="example">
+							                    <div class="example-type"><span class="example-language">示例</span>代码：</div>
+							                    <table class="highlighttable">
+							                    	<tbody>
+							                    		<tr>
+							                    			<td class="linenos">
+							                    				<div class="linenodiv">
+							                    					<pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+</pre>
+														</div>
+														</td>
+														<td class="code">
+															<div class="highlight">
+																<pre> <span class="nt">dingdone.previewPic(</span><span class="nt">{</span>
+
+     <span class="nx">pics:['1.png','2.png','3.png'],</span>
+     <span class="nx">position:0</span>
+
+ <span class="nt">});</span>
+</pre>
+															</div>
+														</td>
+												</tr>
+											</tbody>
+											</table>
+							             </div>
+							        </fileset>
+							        <!-- example end -->
+							    </div>
+							</div>
+                			<!--方法内容结束-->
+                		</div>
+                	</fileset>
+    			</div>
+    		</div>
+		</div>
+		<!--dingdone.previewPic end-->
+		<!--dingdone.share start-->
+		<div class="member-module" id="share">
+    		<div class="member-box">
+    			<div class="clazz-member-list">
+    				<fileset>
+                		<div class="member-box">
+                			<!--方法内容开始-->
+                			<div class="member member-method">
+							    <div class="member-method-signature">
+							        <h4><a name="share" class="anchor">share(</a><a data-href="previewPic">object</a> param)</h4>
+							        <div class="member-flag"><span class="label label-primary">方法</span></div>
+							    </div>
+							    <div class="member-method-desc">
+							        <div class="member-description">功能描述：点击图片切换大图查看</div>
+							        <div class="member-description">场&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;景：需要浏览大图的情景</div>
+							        <div class="affiliated">
+							            <div>所属模块： <a href="">dingdone</a></div>
+							        </div>
+							    </div>
+							    <div class="member-method-info">
+							        <!-- param start -->
+							        <fileset>
+							            <legend>参数列表</legend>
+							            <table class="table">
+							                <thead>
+							                    <tr>
+							                        <th>参数名</th>
+							                        <th>类型</th>
+							                        <th>描述</th>
+							                    </tr>
+							                </thead>
+							                <tbody>
+							                    <tr>
+							                        <td>param</td>
+							                        <td><a>object</a></td>
+							                        <td>{<br/>
+							                        	&nbsp;&nbsp;&nbsp;&nbsp;title: '分享标题',&nbsp;&nbsp;&nbsp;&nbsp;<span class="c1">//分享出去的标题</span><br/>
+        												&nbsp;&nbsp;&nbsp;&nbsp;content:'分享内容',&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c1">//分享出去的内容</span><br/>
+        												&nbsp;&nbsp;&nbsp;&nbsp;url: 'http://xxxxxx',&nbsp;&nbsp;&nbsp;&nbsp;<span class="c1">//分享出去的链接地址</span><br/>
+        												&nbsp;&nbsp;&nbsp;&nbsp;picurl:'http://xxxxxx',&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c1">//图片链接</span><br/>
+        												<br/>}
+        											</td>
+							                    </tr>
+							                    
+							                </tbody>
+							            </table>
+							        </fileset>
+							        <!-- param end -->
+							        <!-- example start -->
+							        <fileset>
+							            <legend>示例</legend>
+							                <div class="example">
+							                    <div class="example-type"><span class="example-language">示例</span>代码：</div>
+							                    <table class="highlighttable">
+							                    	<tbody>
+							                    		<tr>
+							                    			<td class="linenos">
+							                    				<div class="linenodiv">
+							                    					<pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+</pre>
+														</div>
+														</td>
+														<td class="code">
+															<div class="highlight">
+																<pre> <span class="nt">dingdone.share(</span><span class="nt">{</span>
+
+     <span class="nx">title:'分享标题',</span>
+     <span class="nx">content:'分享内容'</span>
+     <span class="nx">url:'http://xxxxxx',</span>
+     <span class="nx">picurl:'http://xxxxxx'</span>
+
+ <span class="nt">});</span>
+</pre>
+															</div>
+														</td>
+												</tr>
+											</tbody>
+											</table>
+							             </div>
+							        </fileset>
+							        <!-- example end -->
+							    </div>
+							</div>
+                			<!--方法内容结束-->
+                		</div>
+                	</fileset>
+    			</div>
+    		</div>
+		</div>
+		<!--dingdone.share end-->
+		<!--dingdone.getNetwork start-->
+		<div class="member-module" id="getNetwork">
+    		<div class="member-box">
+    			<div class="clazz-member-list">
+    				<fileset>
+                		<div class="member-box">
+                			<!--方法内容开始-->
+                			<div class="member member-method">
+							    <div class="member-method-signature">
+							        <h4><a name="getNetwork" class="anchor">getNetwork(</a><a data-href="getNetwork">function</a> callback)</h4>
+							        <div class="member-flag"><span class="label label-primary">方法</span></div>
+							    </div>
+							    <div class="member-method-desc">
+							        <div class="member-description">功能描述：获取客户端当前的网络的状态</div>
+							        <div class="member-description">场&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;景：需要根据当前网络状态作进一步的操作</div>
+							        <div class="affiliated">
+							            <div>所属模块： <a href="">dingdone</a></div>
+							        </div>
+							    </div>
+							    <div class="member-method-info">
+							        <!-- param start -->
+							        <fileset>
+							            <legend>参数列表</legend>
+							            <table class="table">
+							                <thead>
+							                    <tr>
+							                        <th>参数名</th>
+							                        <th>类型</th>
+							                        <th>描述</th>
+							                    </tr>
+							                </thead>
+							                <tbody>
+							                    <tr>
+							                        <td>callback</td>
+							                        <td><a>function</a></td>
+							                        <td>获取网络状态触发的回调方法</td>
+							                    </tr>
+							                    
+							                </tbody>
+							            </table>
+							        </fileset>
+							        <!-- param end -->
+							        <!-- returnValue start -->
+							        <fileset>
+							            <legend>callback返回值</legend>
+							            <table class="table">
+							                <thead>
+							                    <tr>
+							                        <th>字段名</th>
+							                        <th>类型</th>
+							                        <th>描述</th>
+							                    </tr>
+							                </thead>
+							                <tbody>
+							                    <tr>
+							                        <td>code</td>
+							                        <td><a>string</a></td>
+							                        <td>状态码</td>
+							                    </tr>
+							                    <tr>
+							                        <td>data</td>
+							                        <td><a>string</a></td>
+							                        <td>网络状态<span class="c1">&nbsp;&nbsp;//NONE | MOBILE | WIFI</span></td>
+							                    </tr>
+							                </tbody>
+							            </table>
+							        </fileset>
+							        <!-- returnValue end -->
+							        <!-- example start -->
+							        <fileset>
+							            <legend>示例</legend>
+							                <div class="example">
+							                    <div class="example-type"><span class="example-language">示例</span>代码：</div>
+							                    <table class="highlighttable">
+							                    	<tbody>
+							                    		<tr>
+							                    			<td class="linenos">
+							                    				<div class="linenodiv">
+							                    					<pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+</pre>
+														</div>
+														</td>
+														<td class="code">
+															<div class="highlight">
+																<pre> <span class="nt">dingdone.getNetwork(</span>function(response) <span class="nt">{</span>
+
+     <span class="c1">// 得到response返回值一组键值对.code==0, 成功获取</span>
+     <span class="c1">// 得到response返回值一组键值对.data= NONE | MOBILE | WIFI</span>
+     
+     <span class="c1">//执行自己的逻辑代码</span>
+
+ <span class="nt">});</span>
+</pre>
+															</div>
+														</td>
+												</tr>
+											</tbody>
+											</table>
+							             </div>
+							        </fileset>
+							        <!-- example end -->
+							    </div>
+							</div>
+                			<!--方法内容结束-->
+                		</div>
+                	</fileset>
+    			</div>
+    		</div>
+		</div>
+		<!--dingdone.getNetwork end-->
+		<!--dingdone.toast start-->
+		<div class="member-module" id="toast">
+    		<div class="member-box">
+    			<div class="clazz-member-list">
+    				<fileset>
+                		<div class="member-box">
+                			<!--方法内容开始-->
+                			<div class="member member-method">
+							    <div class="member-method-signature">
+							        <h4><a name="setNavTitle" class="anchor">toast(</a><a data-href="toast">object</a> param)</h4>
+							        <div class="member-flag"><span class="label label-primary">方法</span></div>
+							    </div>
+							    <div class="member-method-desc">
+							        <div class="member-description">功能描述：弹出提示信息并自动延迟消失</div>
+							        <div class="member-description">场&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;景：需要提示信息</div>
+							        <div class="affiliated">
+							            <div>所属模块： <a href="">dingdone</a></div>
+							        </div>
+							    </div>
+							    <div class="member-method-info">
+							        <!-- param start -->
+							        <fileset>
+							            <legend>参数列表</legend>
+							            <table class="table">
+							                <thead>
+							                    <tr>
+							                        <th>参数名</th>
+							                        <th>类型</th>
+							                        <th>描述</th>
+							                    </tr>
+							                </thead>
+							                <tbody>
+							                    <tr>
+							                        <td>param</td>
+							                        <td><a>object</a></td>
+							                        <td>{<br/>
+							                        	&nbsp;&nbsp;&nbsp;&nbsp;msg:xxxxxxx,&nbsp;&nbsp;&nbsp;&nbsp;<span class="c1">//提示消息</span><br/>
+							                        	&nbsp;&nbsp;&nbsp;&nbsp;duration:3,&nbsp;&nbsp;&nbsp;&nbsp;<span class="c1">//显示的时间,单位秒，默认2s</span>
+        												<br/>}
+        											</td>
+							                    </tr>
+							                    
+							                </tbody>
+							            </table>
+							        </fileset>
+							        <!-- param end -->
+							        <!-- example start -->
+							        <fileset>
+							            <legend>示例</legend>
+							                <div class="example">
+							                    <div class="example-type"><span class="example-language">示例</span>代码：</div>
+							                    <table class="highlighttable">
+							                    	<tbody>
+							                    		<tr>
+							                    			<td class="linenos">
+							                    				<div class="linenodiv">
+							                    					<pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6</pre>
+														</div>
+														</td>
+														<td class="code">
+															<div class="highlight">
+																<pre> <span class="nt">dingdone.toast(</span><span class="nt">{</span>
+
+     <span class="nx">msg:叮当提示</span>
+     <span class="nx">duration:3</span>
+
+ <span class="nt">});</span>
+</pre>
+															</div>
+														</td>
+												</tr>
+											</tbody>
+											</table>
+							             </div>
+							        </fileset>
+							        <!-- example end -->
+							    </div>
+							</div>
+                			<!--方法内容结束-->
+                		</div>
+                	</fileset>
+    			</div>
+    		</div>
+		</div>
+		<!--dingdone.toast end-->
+		<!--dingdone.NetWorkChanged start-->
+		<div class="member-module" id="NetWorkChanged">
+    		<div class="member-box">
+    			<div class="clazz-member-list">
+    				<fileset>
+                		<div class="member-box">
+                			<div class="member-method-signature">
+							        <h4><a name="NetWorkChanged" class="anchor">NetWorkChanged(</a><a data-href="NetWorkChanged">object</a> param)</h4>
+							        <div class="member-flag"><span class="label label-primary">事件</span></div>
+							    </div>
+                			<div class="member-method-desc">
+							        <div class="member-description">事件描述：监听网络变化，此事件会在网络发生变化时触发</div>
+							        <div class="member-description">场&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;景：当网络环境变化后需要对此变化做出响应的业务</div>
+							        <div class="affiliated">
+							            <div>所属模块： <a href="">dingone.registerEvents</a></div>
+							        </div>
+							        
+						    </div>
+						    <div class="member-method-info">
+						    	<!-- example start -->
+							        <fileset>
+							            <legend>示例</legend>
+							                <div class="example">
+							                    <div class="example-type"><span class="example-language">示例</span>代码：</div>
+							                    <table class="highlighttable">
+							                    	<tbody>
+							                    		<tr>
+							                    			<td class="linenos">
+							                    				<div class="linenodiv">
+							                    					<pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+</pre>
+														</div>
+														</td>
+														<td class="code">
+															<div class="highlight">
+																<pre> <span class="nt">dingdone.registerEvents({</span>
+      NetworkChange : function(dev){
+      	<span class="c1">//dev{ type : MOBILE | WIFI | NONE }</span>
+      	if( dev.type  == 'WIFI'){
+      		<span class="nt">......执行自己的逻辑......</span>
+      	}
+      }
+ <span class="nt">});</span>
+</pre>
+															</div>
+														</td>
+												</tr>
+											</tbody>
+											</table>
+							             </div>
+							        </fileset>
+							        <!-- example end -->
+						    </div>
+                		</div>
+                	</fileset>
+    			</div>
+    		</div>
+		</div>
+		<!--dingdone.NetWorkChanged end-->
+		<!--dingdone.UserLoginState start-->
+		<div class="member-module" id="UserLoginState">
+    		<div class="member-box">
+    			<div class="clazz-member-list">
+    				<fileset>
+                		<div class="member-box">
+                			<div class="member-method-signature">
+							        <h4><a name="NetWorkChanged" class="anchor">UserLoginState(</a><a data-href="UserLoginState">object</a> param)</h4>
+							        <div class="member-flag"><span class="label label-primary">事件</span></div>
+							    </div>
+                			<div class="member-method-desc">
+							        <div class="member-description">事件描述：监听用户登录的状态</div>
+							        <div class="member-description">场&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;景：H5界面跳转到登录的界面，用户登录后，回到H5界面时触发</div>
+							        <div class="affiliated">
+							            <div>所属模块： <a href="">dingone.registerEvents</a></div>
+							        </div>
+							        
+						    </div>
+						    <div class="member-method-info">
+						    	<!-- example start -->
+							        <fileset>
+							            <legend>示例</legend>
+							                <div class="example">
+							                    <div class="example-type"><span class="example-language">示例</span>代码：</div>
+							                    <table class="highlighttable">
+							                    	<tbody>
+							                    		<tr>
+							                    			<td class="linenos">
+							                    				<div class="linenodiv">
+							                    					<pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+</pre>
+														</div>
+														</td>
+														<td class="code">
+															<div class="highlight">
+																<pre> <span class="nt">dingdone.registerEvents({</span>
+ 
+      UserLoginState : function(res){
+	      	<span class="c1"> //得到res返回值一组键值对</span>
+	     <span class="c1"> { <br/>
+	      	state:isLogin|isLogoff, <br/>
+	        userInfo: {......}  
+	   	<span class="c1">//用户退出登录时，无userInfo节点</span>
+	      	   <br/>             }
+	    </span>
+     }
+ <span class="nt">});</span>
+</pre>
+															</div>
+														</td>
+												</tr>
+											</tbody>
+											</table>
+							             </div>
+							        </fileset>
+							        <!-- example end -->
+						    </div>
+                		</div>
+                	</fileset>
+    			</div>
+    		</div>
+		</div>
+		<!--dingdone.UserLoginState end-->
+		<!--返回码说明 start-->
+		<div class="member-module" id="codeInfo">
+    		<div class="member-box">
+    			<div class="clazz-member-list">
+    				<fileset>
+                		<div class="member-box">
+                			<div class="member-method-signature">
+							        <h4><a name="codeInfo" class="anchor">客户端返回码说明</h4>
+							        <div class="member-flag"><span class="label label-primary">说明</span></div>
+							    </div>
+						    <div class="member-method-info">
+						    	<!-- param start -->
+							        <fileset>
+							            <table class="table">
+							                <thead>
+							                    <tr>
+							                        <th>code</th>
+							                        <th>说明</th>
+							                    </tr>
+							                </thead>
+							                <tbody>
+							                    <tr>
+							                        <td>0</td>
+							                        <td>处理成功</td>
+							                    </tr>
+							                    <tr>
+							                        <td>10</td>
+							                        <td>URL无法校验,NetError</td>
+							                    </tr>
+							                    <tr>
+							                        <td>11</td>
+							                        <td>URL无权限使用SDK,不在白名单中</td>
+							                    </tr>
+							                    <tr>
+							                        <td>12</td>
+							                        <td>URL无权限执行当前API方法</td>
+							                    </tr>
+							                    <tr>
+							                        <td>13</td>
+							                        <td>当前执行的方法客户端不支持，需升级客户端</td>
+							                    </tr>
+							                    <tr>
+							                        <td>14</td>
+							                        <td>客户端执行方法时出现异常</td>
+							                    </tr>
+							                    
+							                </tbody>
+							            </table>
+							        </fileset>
+							        <!-- param end -->
+						    </div>
+                		</div>
+                	</fileset>
+    			</div>
+    		</div>
+		</div>
+		<!--返回码说明 end-->
+		<!--dingdone.goLogin start-->
+		<div class="member-module" id="goLogin" style="display: none;">
+    		<div class="member-box">
+    			<div class="clazz-member-list">
+    				<fileset>
+                		<div class="member-box">
+                			<!--方法内容开始-->
+                			<div class="member member-method">
+							    <div class="member-method-signature">
+							        <h4><a name="getUserInfo" class="anchor">goLogin</a></h4>
+							        <div class="member-flag"><span class="label label-primary">方法</span></div>
+							    </div>
+							    <div class="member-method-desc">
+							        <div class="member-description">跳转到登录页</div>
+							        <div class="affiliated">
+							            <div>所属模块： <a href="">dingdone</a></div>
+							        </div>
+							    </div>
+							    <div class="member-method-info">
+							        <!-- param start -->
+							        <fileset>
+							            <legend>参数列表</legend>
+    							       <div>无</div>
+							       </fileset>
+							        <fileset>
+							            <legend>返回值</legend>
+							            <div>无</div>
+							       </fileset>
+							       <!-- example start -->
+							        <fileset>
+							            <legend>示例</legend>
+							                <div class="example">
+							                    <div class="example-type"><span class="example-language">示例</span>代码：</div>
+							                    <table class="highlighttable">
+							                    	<tbody>
+							                    		<tr>
+							                    			<td class="linenos">
+							                    				<div class="linenodiv">
+							                    					<pre> 1
+ 2</pre>
+														</div>
+														</td>
+														<td class="code">
+															<div class="highlight">
+																<pre> <span class="nt">dingdone.goLogin();
+     </span>
+</pre>
+															</div>
+														</td>
+												</tr>
+											</tbody>
+											</table>
+							             </div>
+							        </fileset>
+							        <!-- example end -->
+							    </div>
+							</div>
+                			<!--方法内容结束-->
+                		</div>
+                	</fileset>
+    			</div>
+    		</div>
+		</div>
+		<!--dingdone.goLogin end-->
+		
+	</div>
+	<!--主内容区结束-->
+	
+	<!--api导航列表开始-->
+	<div class="nav">
+		<div class="module-list">
+			<label>集成手册</label>
+			<ul>
+				<li><a class="nav-link" data-href="importJssdk">引入叮当JSSDK</a></li>
+				<li><a class="nav-link" data-href="configJssdk">配置初始化JSSDK</a></li>
+			</ul>
+			<label>API文档</label>
+			<ul>
+				<li><a class="nav-link" data-href="dingdone">dingdone</a></li>
+				<li><a class="nav-link" data-href="checkJsApi">dingdone.checkJsApi</a></li>
+				<li><a class="nav-link" data-href="enableNavBar">dingdone.enableNavBar</a></li>
+				<li><a class="nav-link" data-href="enableNavMenu">dingdone.enableNavMenu</a></li>
+				<li><a class="nav-link" data-href="setNavTitle">dingdone.setNavTitle</a></li>
+				<li><a class="nav-link" data-href="goBack">dingdone.goBack</a></li>
+				<li><a class="nav-link" data-href="exit">dingdone.exit</a></li>
+				<li><a class="nav-link" data-href="refresh">dingdone.refresh</a></li>
+				<li><a class="nav-link" data-href="loadUrl">dingdone.loadUrl</a></li>
+				<li><a class="nav-link" data-href="alert">dingdone.alert</a></li>
+				<li><a class="nav-link" data-href="getUserInfo">dingdone.getUserInfo</a></li>
+				<li><a class="nav-link" data-href="getAppInfo">dingdone.getAppInfo</a></li>
+				<li><a class="nav-link" data-href="getLocation">dingdone.getLocation</a></li>
+				<li><a class="nav-link" data-href="getDevice">dingdone.getDevice</a></li>
+				<li><a class="nav-link" data-href="previewPic">dingdone.previewPic</a></li>
+				<li><a class="nav-link" data-href="share">dingdone.share</a></li>
+				<li><a class="nav-link" data-href="getNetwork">dingdone.getNetwork</a></li>
+				<li><a class="nav-link" data-href="toast">dingdone.toast</a></li>
+			</ul>
+			<label>事件说明</label>
+			<ul>
+				<li><a class="nav-link" data-href="NetWorkChanged">NetWorkChanged</a></li>
+				<li><a class="nav-link" data-href="UserLoginState">UserLoginState</a></li>
+			</ul>
+			<label>客户端返回码说明</label>
+			<ul>
+				<li><a class="nav-link" data-href="codeInfo">返回码说明</a></li>
+			</ul>
+		</div>
+	</div>
+	<!--api导航列表结束-->
+	
+	<a id="elevator" class="go-to-top" href="#" title="回到顶部"><img src="images/up.png"></a>
+</body>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/script.js"></script>
+</html>

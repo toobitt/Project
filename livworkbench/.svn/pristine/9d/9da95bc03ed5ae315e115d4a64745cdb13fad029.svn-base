@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>商家详情</title>
+<link rel="stylesheet" href="css/framework7.min.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/discount.css">
+</head>
+<body>
+<div class="view view-main merchant-info">
+ 	<!-- <div class="navbar">
+		<div class="navbar-inner">
+			<div class="left">
+				<a href="javascript:history.back()" class="back link">
+					<i class="icon icon-back"></i>
+				</a>
+			</div>
+			<div class="center sliding">商家详情</div>
+			<div class="right">
+			 <a href="#" class="link">
+			 	<i class="icon icon-share"></i>
+			 </a>
+			</div>
+		</div>
+	</div> -->
+	<div class="pages toolbar-through">
+		<div class="page">
+			<div class="page-content">
+				<div class="content-detail">
+					<div class="item-content">
+						<div class="inner">
+							<p class="img-box"><img src="images/shopping5.png"></p>
+							<div class="cover">
+							</div>
+						</div>
+						<div class="info m2o-flex m2o-flex-center">
+							<div class="m2o-flex-one item-icon"><i class="icon icon-telorder"></i>电话预约</div>
+							<p class="fenge"></p>
+							<div class="m2o-flex-one item-icon"><i class="icon icon-searchline"></i>查看线路</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="content-block item-block group-block">
+					<div class="block-title"><span class="title-text">本店团购</span></div>
+					<div class="block-detail">
+						<ul class="list">
+							<li>
+								<a class="m2o-flex m2o-flex-center" href="./shopping-detail.html">
+								<div class="info m2o-flex-one">
+									<div class="name m2o-overflow">牛肉火锅套餐2至4人餐</div>
+									<div class="item-price"><span class="sale">¥<em class="num">89</em></span><em class="oldsale">89</em></div>
+								</div>
+								<div class="next"><i class="icon icon-next"></i></div>
+								</a>
+							</li>
+							<li>
+								<a class="m2o-flex m2o-flex-center" href="./shopping-detail.html">
+								<div class="info m2o-flex-one">
+									<div class="name m2o-overflow">牛肉火锅套餐2至4人餐</div>
+									<div class="item-price"><span class="sale">¥<em class="num">89</em></span><em class="oldsale">89</em></div>
+								</div>
+								<div class="next"><i class="icon icon-next"></i></div>
+								</a>
+							</li>
+							<li>
+								<a class="m2o-flex m2o-flex-center" href="./shopping-detail.html">
+								<div class="info m2o-flex-one">
+									<div class="name m2o-overflow">牛肉火锅套餐2至4人餐</div>
+									<div class="item-price"><span class="sale">¥<em class="num">89</em></span><em class="oldsale">89</em></div>
+								</div>
+								<div class="next"><i class="icon icon-next"></i></div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="content-block item-block environ-block">
+					<div class="block-title"><span class="title-text">商家环境</span></div>
+					<div class="block-detail">
+						<ul class="list clear">
+							<li><img src="images/shopping1.png"></li>
+							<li><img src="images/shopping1.png"></li>
+							<li><img src="images/shopping1.png"></li>
+						</ul>
+					</div>
+					<a class="block-link" href="./shopping-all.html">查看全部<i class="icon icon-next"></i></a>
+				</div>
+				
+				<div class="content-block item-block estimate-block">
+					<div class="block-title m2o-flex"><span class="title-text">评价</span>
+						<div class="item-score">
+							<em class="icon star">1</em><em class="icon star">2</em><em class="icon star">3</em><em class="icon star half">4</em><em class="icon star dark">5</em><em class="score">4.7</em>
+						</div>
+					</div>
+					<div class="block-detail">
+						<div class="item">
+							<div class="brief m2o-flex">
+								<div class="telephone m2o-overflow">流浪的狗</div>
+								<div class="time m2o-flex-one">2014-08-30</div>
+								<div class="item-score">
+							<em class="icon star">1</em><em class="icon star">2</em><em class="icon star">3</em><em class="icon star">4</em><em class="icon star dark">5</em>
+						</div>
+							</div>
+							<div class="content">微麻微辣，不柴不腻，既保存了原清汤火锅的营养精华，又迎合了现代人的口味，连一向不喜欢吃辣椒的温州人也大呼上瘾。</div>
+							<ul class="list clear">
+								<li><img src="images/shopping1.png"></li>
+								<li><img src="images/shopping2.png"></li>
+								<li><img src="images/shopping3.png"></li>
+								<li><img src="images/shopping4.png"></li>
+								<li><img src="images/shopping5.png"></li>
+								<li><img src="images/shopping1.png"></li>
+								<li><img src="images/shopping2.png"></li>
+								<li><img src="images/shopping3.png"></li>
+								<li><img src="images/shopping4.png"></li>
+								<li><img src="images/shopping5.png"></li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="brief m2o-flex">
+								<div class="telephone m2o-overflow">流浪的狗</div>
+								<div class="time m2o-flex-one">2014-08-30</div>
+								<div class="item-score">
+							<em class="icon star">1</em><em class="icon star">2</em><em class="icon star">3</em><em class="icon star">4</em><em class="icon star dark">5</em>
+						</div>
+							</div>
+							<div class="content">微麻微辣，不柴不腻，既保存了原清汤火锅的营养精华，又迎合了现代人的口味，连一向不喜欢吃辣椒的温州人也大呼上瘾。</div>
+							<ul class="list clear">
+								<li><img src="images/shopping1.png"></li>
+								<li><img src="images/shopping2.png"></li>
+								<li><img src="images/shopping3.png"></li>
+								<li><img src="images/shopping4.png"></li>
+								<li><img src="images/shopping5.png"></li>
+								<li><img src="images/shopping1.png"></li>
+								<li><img src="images/shopping2.png"></li>
+								<li><img src="images/shopping3.png"></li>
+								<li><img src="images/shopping4.png"></li>
+								<li><img src="images/shopping5.png"></li>
+							</ul>
+						</div>
+					</div>
+					<a class="block-link" href="#">查看更多评价<i class="icon icon-next"></i></a>
+				</div>
+				
+				<div class="content-block item-block recommend-block">
+					<div class="block-title m2o-flex"><span class="title-text">为您推荐</span></div>
+					<div class="block-detail">
+						<ul class="list clear">
+							<li>
+								<a href="shopping-detail.html">
+									<p class="img-box"><img src="images/shopping1.png">
+										<em class="distance">10.2km</em>
+									</p>
+									<div class="name m2o-overflow">YY家菜馆 5人餐</div>
+									<div class="item-price"><span class="sale">¥<em class="num">89</em></span><em class="oldsale">89</em></div>
+								</a>
+							</li>
+							<li>
+								<a href="shopping-detail.html">
+									<p class="img-box"><img src="images/shopping1.png">
+										<em class="distance">10.2km</em>
+									</p>
+									<div class="name m2o-overflow">YY家菜馆 5人餐</div>
+									<div class="item-price"><span class="sale">¥<em class="num">89</em></span><em class="oldsale">89</em></div>
+								</a>
+							</li>
+							<li>
+								<a href="shopping-detail.html">
+									<p class="img-box"><img src="images/shopping1.png">
+										<em class="distance">10.2km</em>
+									</p>
+									<div class="name m2o-overflow">YY家菜馆 5人餐</div>
+									<div class="item-price"><span class="sale">¥<em class="num">89</em></span><em class="oldsale">89</em></div>
+								</a>
+							</li>
+							<li>
+								<a href="shopping-detail.html">
+									<p class="img-box"><img src="images/shopping1.png">
+										<em class="distance">10.2km</em>
+									</p>
+									<div class="name m2o-overflow">YY家菜馆 5人餐</div>
+									<div class="item-price"><span class="sale">¥<em class="num">89</em></span><em class="oldsale">89</em></div>
+								</a>
+							</li>
+							<li>
+								<a href="shopping-detail.html">
+									<p class="img-box"><img src="images/shopping1.png">
+										<em class="distance">10.2km</em>
+									</p>
+									<div class="name m2o-overflow">YY家菜馆 5人餐</div>
+									<div class="item-price"><span class="sale">¥<em class="num">89</em></span><em class="oldsale">89</em></div>
+								</a>
+							</li>
+							<li>
+								<a href="shopping-detail.html">
+									<p class="img-box"><img src="images/shopping1.png">
+										<em class="distance">10.2km</em>
+									</p>
+									<div class="name m2o-overflow">YY家菜馆 5人餐</div>
+									<div class="item-price"><span class="sale">¥<em class="num">89</em></span><em class="oldsale">89</em></div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.body{background:#FFF url(top.png) repeat-x;}
+.warp{width:1080px;margin:0 auto;}
+.clr{clear:both;font-size:0;line-height:0;}
+.sub_nav_hidden{display:none;}
+

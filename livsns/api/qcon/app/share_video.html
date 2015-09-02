@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<title>video</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/base.css" rel="stylesheet" >
+<link href="css/video.css" rel="stylesheet">
+</head>
+<body>
+<section class="wrap video">
+    <h2 class="video-logo"></h2>
+    <div class="video-content">
+        <video  preload controls width="100%" height="100%">
+            <source src="http://live.liv.cn/huiyi/sd/live.m3u8" >
+        </video>
+    </div>
+    <a  href="http://www.ecits.org/app/ECITS_1.0.apk" class="video-download" id="androidDevice">
+        <span class="video-btn-ico"></span><span class="video-btn-txt">手机客户端下载</span>
+    </a>
+    <a  href="http://www.ecits.org/app/Meeting.ipa" class="video-download" id="iosDevice">
+        <span class="video-btn-ico"></span><span class="video-btn-txt">手机客户端下载</span>
+    </a>
+</section>
+<script type="text/javascript">
+var platform = navigator.userAgent.toLowerCase();
+window.isIosDevice = (/iphone|ipod|ipad/gi).test(platform);
+window.isIPad = (/ipad/gi).test(platform);
+window.isAndroid = (/android/gi).test(platform);
+window.isSafari = (/safari/gi).test(platform) && !(/chrome/gi).test(platform);
+if(isAndroid){
+    document.getElementById('androidDevice').style.display="block";
+}else{
+    document.getElementById('iosDevice').style.display="block";
+}
+</script>
+</body>
+</html>

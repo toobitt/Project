@@ -1,0 +1,1 @@
+{template:newlogin/login}

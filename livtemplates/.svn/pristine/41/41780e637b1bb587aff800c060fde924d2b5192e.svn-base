@@ -1,0 +1,10 @@
+.user{}
+.user ._left{width:200px;border:1px solid #E9E8E6;background: #F9F9F9;float: left;}
+.user ul.menu{width: 180px;padding: 0px 10px;}
+.user ul.menu li{width: 160px;border-bottom: 1px solid #E9E8E6;height: 42px;line-height: 42px;}
+.user ul.menu li.last{border-bottom: none;}
+.user ul.menu li a{font-size: 16px;color: #767676;width: 150px;display: inline-block;padding-left: 10px;}
+.user ul.menu li.on a{background: #5599CC;color:white;}
+.user ul.menu li:hover a{background: #5599CC;color:white;}
+.user ._mid{width:616px;border:1px solid #D3D3D3;background: #fff;float: left;height: 1000px;;}
+.user ._right{}

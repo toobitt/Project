@@ -1,0 +1,60 @@
+.cinema-bottom{background-color:#f9f9f9; border-top:1px solid #c8d4e2; min-height:43px; }
+.cinema-operate{width:300px; line-height:43px; padding-left:15px;}
+.cinema-operate input{height:13px; }
+.cinema-operate a{cursor: pointer; margin:0 5px; text-decoration:underline; line-height:28px;}
+.linking{width:140px; height:125px; position:absolute; left:8px; top:8px;}
+/*列表页*/
+.cinema-list{margin:9px 14px; padding-bottom: 10px; min-height:520px;}
+.cinema-list li{float:left; position:relative; width:273px; height:205px; overflow:hidden; border-radius:5px; margin:10px;}/*
+.cinema-list li.selected, .cinema-list li:not(:first-child):hover{border:1px solid #f57eb4; box-shadow: 0 0  0 1px #f57eb4 inset;}*/
+.cinema-name{height:48px; line-height:48px; font-size:24px; background-color:#127bab; border-top-left-radius:5px; border-top-right-radius:5px;}
+.cinema-name a{display:block; max-width: 250px; color:#fff; font-family:"冬青黑体"; font-size:24px; text-indent:15px;
+overflow: hidden; text-overflow: ellipsis; white-space: nowrap; vertical-align: middle;}
+.cinema-head{width:95%; border:none; background-color:transparent; position:absolute; top:1px; left:1px; height:40px; font-size:24px; color: #fff; text-indent:12px; display: none;}
+.cinema-head:hover, .cinema-head:focus{box-shadow: none; border:none; color:#fff!important;}
+.cinema-content{border:1px solid #e1e1e1; border-top:2px solid #127bab; padding:15px;  border-bottom-left-radius:5px; border-bottom-right-radius:5px;}
+.cinema-list li.current .cinema-content, .cinema-list li:hover .cinema-content{padding-top:16px; border:1px solid #127bab;  box-shadow: 0 0  0 1px #127bab inset;}
+.cinema-img{width:55px; text-align:center;}
+.cinema-img img{width:65px; height:65px; border-radius:3px;display: block;}
+.cinema-img span{display:block; text-align: center; line-height: 24px; margin-top:5px; cursor:pointer;}
+.cover-img{position:absolute; top:65px; left:16px; width:55px; height:55px; background-color:transparent;}
+.cinema-profile{margin-left:15px;}
+.cinema-intro{border-bottom: 1px dotted #e1e1e1; line-height: 25px; font-size:14px;width:173px;}
+.cinema-intro:first-child{margin-top:7px;}
+.cinema-intro:last-child{margin-top:15px;}
+.cinema-intro label{color:#9f9f9f; padding-left:5px;float:left;}
+.cinema-intro span{white-space: nowrap;overflow: hidden;text-overflow: ellipsis;display: block;}
+.cinema-time {margin-top:10px;padding-left: 25px;}
+.cinema-time span{color:#999; padding-right:5px;}
+.cinema-time em{ width:25px; height:25px; position:absolute; display:none; cursor:pointer; bottom:14px;}
+.del{background:url({$RESOURCE_URL}cinema/del.png) no-repeat scroll center; right:12px; }
+.edit{background:url({$RESOURCE_URL}cinema/edit.png) no-repeat scroll center; right:38px;}
+.save, .mkt-save{position:absolute; top:12px; right:10px; display:none;}
+.cinema-list li:hover .del, .cinema-list li:hover .edit , .cinema-list li:hover .arrange-film{display:block;}
+.cinema-list .cinema-add{border:1px solid #e1e1e1;height:203px;}
+.cinema-add .cinema-name{background-color:#f0f0f0; text-align:center; color:#ccc;}
+.cinema-default{line-height: 204px; height:154px; background:url({$RESOURCE_URL}cinema/default-pic.png) no-repeat scroll center 25px; font-size:22px; color:#ddd; text-align:center;}
+.cinema-default img{position:absolute; left:0; bottom: 0;}
+.cinema-add .cinema-head{text-align:center; background-color:#f0f0f0; display:block; color:#333!important;}
+.cinema-add .cinema-head:focus{color:#333!important;}
+.m2o-bottom{padding:0;}
+.cinema-operate{width:300px; line-height:43px; padding-left:15px;}
+.cinema-operate input{height:13px; }
+.cinema-operate a{cursor: pointer; margin:0 5px; text-decoration:underline; line-height:28px;}
+.arrange-film{position: absolute;top: 55px;right: 10px;font-size: 14px;color: #127bab;font-weight: bold;text-decoration: underline;display:none;}
+.cinema-list li .select{display: block;width: 20px;height: 20px;background: url({$RESOURCE_URL}cinema/unchecked.png) no-repeat center center #fff;position: absolute;bottom: 17px;left: 15px;border-radius:3px;cursor: pointer;}
+.cinema-list li.current .select{background-image: url({$RESOURCE_URL}/cinema/checked.png);}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2) {
+
+.del{background-image:url({$RESOURCE_URL}cinema/del-2x.png); background-size:18px 18px;} 
+.cinema-default{background-image:url({$RESOURCE_URL}cinema/default-pic-2x.png); background-size:92px 55px;}
+.edit{background-image:url({$RESOURCE_URL}cinema/edit-2x.png); background-size:24px 24px;}
+.cinema-list li .select{background-image: url({$RESOURCE_URL}cinema/unchecked.png);background-size:20px 20px;}
+.cinema-list li.current .select{background-image: url({$RESOURCE_URL}/cinema/checked.png);background-size:20px 20px;}
+}
+
+
+

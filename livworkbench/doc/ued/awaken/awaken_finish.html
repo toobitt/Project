@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="yes" name="apple-touch-fullscreen" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/iscroll.js"></script>
+<link rel="stylesheet" href="css/reset.css" type="text/css" />
+<link rel="stylesheet" href="css/common.css" type="text/css" />
+<link rel="stylesheet" href="css/awaken.css" type="text/css" />
+<title>叫醒</title>
+</head>
+<body>
+	<div class="awaken wait_pay">
+		<header class="m2o-header">
+			<div class="m2o-nav">
+				<aside class="m2o-nav-left">
+					<a class="m2o-nav-icon back" href="awaken_wait.html"></a>
+				</aside>
+				<h1 class="m2o-nav-title ft22" title="交易完成">交易完成</h1>
+			</div>
+		</header>
+		<div id="wrapper">
+			<div>
+			<article class="m2o-content m2o-gray-wave">
+			<div class="items">
+				<p class="pay-sure ft20"><em>&nbsp;</em>叫醒已完成，约定结束</p>
+			</div>
+			<div class="items m2o-flex m2o-flex-center">
+				<div class="avatar">
+					<img src="images/mumu_02.jpg" title="玲玲"/>
+				</div>
+				<div class="m2o-flex-one">
+					<h2 class="ft20" title="玲玲">玲玲<em class="girl">&nbsp;</em></h2>
+					<span class="gray ft16">巴西世界杯准点叫醒服务现已开始预约，名额优先！</span>
+				</div>
+			</div>
+			<div class="items ft16 noborder">
+				<p class="time"><label>叫醒时间：</label><span>12月30日 9:00</span></p>
+				<p class="matter"><label>叫醒事项：</label><span>赶紧起床</span><em class="gray">(最多超过30分钟)</em></p>
+			</div>
+		</article>
+			<div class="awaken-details">
+				<ul>
+					<li>
+						<p>您已挂断电话</p>
+						<span class="time">挂断时间：2013.12.30 10:01:03</span>
+					</li>
+					<li>
+						<p>系统自动给他了一朵鲜花</p>
+						<span class="time">挂断时间：2013.12.30 10:01:03</span>
+					</li>
+					<li>
+						<p>他给你了一朵鲜花</p>
+						<span class="time">挂断时间：2013.12.30 10:01:03</span>
+					</li>
+					<li>
+						<p>交易已结束，已付款到对方账户</p>
+						<span class="time">挂断时间：2013.12.30 10:01:03</span>
+					</li>
+					<li>
+						<p>您已挂断电话</p>
+						<span class="time">挂断时间：2013.12.30 10:01:03</span>
+					</li>
+					<li>
+						<p>系统自动给他了一朵鲜花</p>
+						<span class="time">挂断时间：2013.12.30 10:01:03</span>
+					</li>
+					<li>
+						<p>他给你了一朵鲜花</p>
+						<span class="time">挂断时间：2013.12.30 10:01:03</span>
+					</li>
+					<li>
+						<p>交易已结束，已付款到对方账户</p>
+						<span class="time">挂断时间：2013.12.30 10:01:03</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		</div>
+		<aside class="m2o-aside">
+		<div class="m2o-btn m2o-button-fixed">
+			<a class="icon_sure ft18"  href="appoint_success.html">再约她</a>
+			<a class="icon_cancel ft18 ml10">投诉</a>
+		</div>
+		</aside>
+			
+	</div>
+</body>
+</html>
+<script>
+	$(function(){
+		$('#wrapper').height($(window).height() - $('.m2o-aside').height() - $('.m2o-header').height());
+		new iScroll('wrapper', {hScrollbar:false, vScrollbar:false});
+	});
+</script>

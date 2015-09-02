@@ -1,0 +1,34 @@
+@charset "utf-8";
+.group-paixu{width:35px;}
+.group-cz{width:460px;}
+.group-cz2{width:150px;}
+.group-tz{width:180px;}
+.group-ht{width:50px;}
+.group-jm{width:60px}
+.group-lx{width:50px;}
+.group-zt{width:50px;}
+.group-tjr{width:130px;}
+.group-bt{width:200px}
+.group-download{width:98px; padding-left:2px}
+.group-download2{width:400px}
+.group-pt{width:130px}
+.group-test{width:100px}
+.group-release{width:360px}
+.group-tem{width:175px;}
+
+ul.common-list{margin:0;}
+.common-list-right{font-size:12px;}
+.to-appstore{cursor:pointer;}
+/*盒模型结构*/
+.sys-flex,.m2o-flex {display: -moz-box; display: box; display: -webkit-box; }
+.sys-flex-center,.m2o-flex-center{ -webkit-box-align:center; -moz-box-align:center; box-align:center;}
+.sys-flex-one,.m2o-flex-one{-webkit-box-flex:1; -moz-box-flex:1; box-flex:1;}
+.sys-flex-two,.m2o-flex-two{ -webkit-box-flex:2; -moz-box-flex:2; box-flex:2;}
+.sys-vertical,.m2o-vertical{-webkit-box-orient:vertical;-ms-flex-direction:column;}
+.sys-pack-center{-webkit-box-pack: center;}
+
+.common-list-item{display:table-cell;}
+.wd50{width:50px;}
+.wd120{width:120px;}
+.wd150{width:150px;}
+

@@ -1,0 +1,99 @@
+#wrapper{position:absolute; top:111px; left:0; bottom:0; overflow:auto; width:100%; }
+#scroller{position:relative; width:100%; }
+
+.subnav a{cursor:pointer}
+/*自行车列表*/
+#thelist .name a , .main-wrap .name a{display:inline-block; width:100%; color:#000; font-size:2.6em; }
+#thelist .address, #thelist .distance, #thelist .date, .main-wrap .date, .main-wrap .nearest-item .distance{font-size:2em; color:#999; }
+1#thelist .detail , .main-wrap .detail{width:95px; }
+#thelist .distance , .main-wrap .distance{max-width:120px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding-left:20px; background:url("../images/bike/location_blue.png") no-repeat left 2px; }
+#thelist .num ,.main-wrap .num{font-size:2em; }
+#thelist .address, .bike-list .name a, .bike-list .distance, .bike-list .date, #thelist .name a , .main-wrap .name a{white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+#thelist .addition,.main-wrap .addition{ margin-top:6px;}
+#thelist .addition span ,.main-wrap .addition span{margin-right:20px; color:#999; font-size:1.8em;}
+#thelist li , .main-wrap li{background-color:#fff; border-bottom:2px solid #cbcbcb; padding:12px 10px; margin:8px 10px;}
+
+/*离我最近*/
+.nearest-item .num{margin:5px 0; }
+.nearest-item .pic{width:80px; height:63px; text-align:center; margin-right:10px; }
+.nearest-item .pic img{max-width:80px; max-height: 50px; vertical-align: middle; }
+.nearest-item .num span:first{margin-right:20px; }
+.nearest-item .num{white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.mode-select{position:fixed; bottom:19px; right:9px; width:73px; height:29px; line-height:29px; text-align:center; background-color:#33B5E5;}
+.mode-select a{display:inline-block; font-size:1.6em; width:100%; height:100%; color:#fff; }
+.bikemap{width:100%; height:100%; overflow:hidden; padding:0; }
+
+.nearest-item .address{font-size:1.6em; }
+
+/*区域筛选*/
+.area-item .address{margin-top:6px; }
+.area-item .address span{margin-right:10px; }
+.area-item .distance{margin-top:10px; }
+
+/*站点*/
+1.website{ }
+.website  p{line-height:2; }
+.website .address,.website .update{color:#999; }
+.website .address, .website .business{white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.website .gohere{height:56px; margin:20px; line-height:50px; text-align:center; background-color:#fefaeb; border:1px solid #f2d680;}
+.website .gohere a{width:100%; height:100%; display:inline-block; font-size:1.8em; cursor:pointer; color:#ed8b28; }
+.website .general{margin:10px 20px 20px; }
+.website .general .pic{width:130px; height:180px; margin:8px 15px 0 0; }
+.website .general .pic img{width:100%; height:100%; }
+.website .business, .website .hotline{color:#999; margin:0 20px; }
+.website .carportnum span, .website .bikenum span{color:#f3ad28; }
+.website .reminding{color:#f3ad28; margin:0 20px 10px;}
+.website  .general .distance{line-height:20px; padding-left:35px; color:#999; background:url("../images/bike/location_bigblue.png") no-repeat left center; }
+.website-map{width:100%; height:200px; margin-bottom:15px;}
+
+.padding{padding:0;}
+.stationinfo{font-size:2em;}
+.stationinfo .address, .stationinfo .update{1font-size:0.9em; }
+.stationinfo .distance{max-width:200px;}
+
+/*站点公告*/
+.notice-header{margin:0 20px;}
+.notice-header .title{line-height:30px; font-size:22px; margin-top:15px;}
+.notice-header .detail{line-height:30px; font-size:14px; color:#999; }
+.notice{padding:20px 30px; font-size:16px; }
+.notice p{line-height:1.8; }
+
+/*站点公告详情*/
+.content-box{width:100%;position:relative;}
+.content-box-word{padding-top:20px;margin:0 20px;}
+.content-box h1{font-size:2.8em;line-height:1.2;color:#000;margin-bottom:10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.content-box .p-img{text-align:center;text-indent:0!important;}
+.content-box .publish-time,.content-box .author{color:#888;font-size:1.8em;}
+.content-box .author{padding-left:30px;}
+.content-box article{line-height:1.8;padding:20px 20px 0;font-size:2.6em;text-indent:2em;}
+.content-box .video-brief{font-size:2.2em;padding-top:15px;}
+.content-box p img{text-align:center;}
+.pic-slide{position:fixed;top:0;left:0;bottom:0;right:0;background:#000;}
+.pic-slide .slide-item{background: url(../images/bae_progress_loading.gif) no-repeat center;background-size: 54px;text-align: center;position: relative;display:table-cell;vertical-align:middle;/* overflow: hidden; */-webkit-box-sizing: border-box;height: auto;min-height:54px;}
+
+/*地图*/
+#mapDiv{margin:20px; }
+.nodata{font-size:2em; margin-top:30px; color:#999; text-align:center;}
+
+/*定位失败*/
+.falied-pic{width:150px;height:140px;margin:0 auto 15px;background:url(../images/bike/bus_geolocation_failed.png);}
+.vertical-btns{margin:20px 20px 0;}
+.common-btn{font-size:2em; display:block; text-align:center; margin-bottom:35px; height:44px; line-height:44px; color:#fff; letter-spacing:0.5em; border-bottom:2px solid #24a87b;background-color:#3bc697;}
+
+
+/*提示框*/
+.ui-dialog{background-color:rgba(0,0,0,0.8); color:#fff; }
+.ui-dialog .ui-dialog-content{font-size:18px; padding:15px 25px; }
+.ui-dialog-btns, .ui-dialog .ui-dialog-close{display:none; }
+
+.first-body{width:100%;}
+.second-body{width:100%;position:relative;}
+.bigpic{position: absolute;top: 0px;left: 0px;}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2) {
+	.bike-list .distance{background-image:url("../images/bike/location_blue-2x.png"); background-size:18px 18px;}
+}

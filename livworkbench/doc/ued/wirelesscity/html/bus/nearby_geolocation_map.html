@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="yes" name="apple-touch-fullscreen" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />  
+<link rel="apple-touch-icon-precomposed" href="" />
+<link rel="stylesheet" href="./css/common.css" type="text/css" />
+<link rel="stylesheet" href="./css/bus.css" type="text/css" />
+<script src="./js/zepto.min.js"></script>
+<script src="./js/gmu/gmu.js"></script>
+<script type="text/javascript" src="./js/bus.js"></script>
+<title>无线城市</title>
+</head>
+<body class="theme-">
+<header class="m2o-header">
+	<div class="m2o-nav">
+		<aside class="m2o-nav-left">
+			<a class="m2o-nav-icon cancel"  href="./nearby_list.html"></a>
+		</aside>
+		<h1 class="m2o-nav-title">地图选位置</h1>
+	</div>
+</header>
+<div class="getloc-wrap">
+	<div class="mask">
+		<div class="common-input-box">
+			<div class="input-item m2o-flex m2o-flex-center">
+				<span class="icon icon-search"></span>
+				<input class="input m2o-flex-one" placeholder="无锡广电" value=""/>
+				<span class="handle-btn clear"></span>
+			</div>
+		</div>
+		<p class="tip">您可以拖动地图选择位置</p>
+	</div>
+	<a class="bus-map-icon getloc"></a>
+	<div class="bmap" id="getloc-map">
+	
+	</div>
+</div>

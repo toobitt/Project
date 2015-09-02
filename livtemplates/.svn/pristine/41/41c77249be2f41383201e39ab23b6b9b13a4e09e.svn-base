@@ -1,0 +1,22 @@
+.content-tianjia-time,.content-shenhe-time {
+	width:120px;
+}
+.contentn-fabu{width:80px;}
+.content-delete,.content-neixing,.content-quanzhong {
+	width:60px;
+}
+.news-paixu {
+    width: 20px;
+}
+.content-shenhe-time .tjr span,.content-tianjia-time .shareslt span {
+    color:#888888;
+    font-size: 10px;
+	-webkit-text-size-adjust: none;
+}
+.shareslt.common-list-overflow{
+	width:82px;}
+.news-paixu a{
+width:14px;
+display:block;
+
+}

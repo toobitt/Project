@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no,email=no">
+<title>公积金</title>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/refer.css">
+</head>
+<body>
+	<div class="page-content toolbar-through refer-index">
+		<div class="list-block cpf-form login-form">
+			<form class="loginForm" action="" name="login-cpf" enctype="multipart/form-data" autocomplete="off" role="form">
+				<ul>
+					<li class="username">
+						<div class="input"><input type="text" name="userId" placeholder="账号"></div>
+					</li>
+					<li class="password">
+						<div class="input"><input type="password" name="password" placeholder="密码"/></div>
+					</li>
+					<input type="hidden" name="deviceToken" value="11" />
+				</ul>
+			</form>
+			<div class="btn-area">
+				<button class="btn btn-full btn-primary login">登录</button>
+			</div>
+			<p class="tips">请输入中山市住房公积金账号进行登录，如没有账号，请先<a class="link" href="./register.html?_ddtarget=push">注册>></a></p>
+		</div>
+		<div class="detail-block cpf-result cpf-list">
+			<div class="list-block">
+				<ul></ul>
+			</div>
+			<div class="btn-block">
+				<button class="btn btn-full btn-primary btn-unbind">解除绑定</button>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript" src="./js/module/sea.js"></script>
+<script type="text/javascript" src="./js/main.js"></script>
+<script type="text/javascript">
+	seajs.use("views/index");
+</script>
+</body>
+</html>

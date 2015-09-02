@@ -1,0 +1,62 @@
+/* 选项卡式 */
+.m2o-tab-foot{position:fixed;bottom:0;left:0;right:0;height:5em;line-height:8em;text-align:center;border-top:1px solid #e5e5e5;background:rgba(250,250,250,.9);}
+.m2o-tab-foot .foot-icon{color:#666;display:inline-block;width:100%;font-size:1.4em;background:url(../../lib/images/footicon/home_grey.png) center 2px no-repeat;}
+.m2o-tab-foot .foot-icon.touched{background:url(../../lib/images/footicon/home_white.png) center 2px no-repeat #ccc;color:#fff;}
+.m2o-tab-foot .foot-icon.selected{background:url(../../lib/images/footicon/home_white.png) center 2px no-repeat #be0201;color:#fff;}
+
+.m2o-tab-foot .foot-icon.more{background-image:url(../../lib/images/footicon/more_grey.png);}
+.m2o-tab-foot .foot-icon.pic{background-image:url(../../lib/images/footicon/pic_grey.png);}
+.m2o-tab-foot .foot-icon.topics{background-image:url(../../lib/images/footicon/topics_grey.png);}
+.m2o-tab-foot .foot-icon.video{background-image:url(../../lib/images/footicon/video_grey.png);}
+
+.m2o-tab-foot .foot-icon.touched.more,.m2o-tab-foot .foot-icon.selected.more{background-image:url(../../lib/images/footicon/more_white.png);}
+.m2o-tab-foot .foot-icon.touched.pic,.m2o-tab-foot .foot-icon.selected.pic{background-image:url(../../lib/images/footicon/pic_white.png);}
+.m2o-tab-foot .foot-icon.touched.topics,.m2o-tab-foot .foot-icon.selected.topics{background-image:url(../../lib/images/footicon/topics_white.png);}
+.m2o-tab-foot .foot-icon.touched.video,.m2o-tab-foot .foot-icon.selected.video{background-image:url(../../lib/images/footicon/video_white.png);}
+
+/* 杂志式 */
+.magazine-foot{position:fixed;bottom:0;left:0;right:0;height:3em;background:#fff;border-top:1px solid #e9e9e9;}
+.magazine-foot .magazine-foot-left{float:left;}
+.magazine-foot .magazine-foot-right{float:right;}
+
+.magazine-foot .magazine-foot-icon{display:inline-block;width:3em;height:3em;padding:0 0.5em;background:url(../../lib/images/magazine/footicon/icon_back.png) no-repeat center;}
+.magazine-foot .magazine-foot-icon.collect{background-image:url(../../lib/images/magazine/footicon/icon_collect.png);}
+.magazine-foot .magazine-foot-icon.comment{background-image:url(../../lib/images/magazine/footicon/icon_comment.png);}
+.magazine-foot .magazine-foot-icon.down{background-image:url(../../lib/images/magazine/footicon/icon_down.png);}
+.magazine-foot .magazine-foot-icon.good{background-image:url(../../lib/images/magazine/footicon/icon_good.png);}
+.magazine-foot .magazine-foot-icon.more{background-image:url(../../lib/images/magazine/footicon/icon_more.png);}
+.magazine-foot .magazine-foot-icon.refresh{background-image:url(../../lib/images/magazine/footicon/icon_refresh.png);}
+.magazine-foot .magazine-foot-icon.share{background-image:url(../../lib/images/magazine/footicon/icon_share.png);}
+.magazine-foot .magazine-foot-icon.writing{background-image:url(../../lib/images/magazine/footicon/icon_writing.png);}
+
+
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2) {
+	/* 选项卡式 */
+	.m2o-tab-foot .foot-icon{background-image:url(../../lib/images/footicon/home_grey@2x.png);background-size:30px 30px;}
+	.m2o-tab-foot .foot-icon.more{background-image:url(../../lib/images/footicon/more_grey@2x.png);}
+	.m2o-tab-foot .foot-icon.pic{background-image:url(../../lib/images/footicon/pic_grey@2x.png);}
+	.m2o-tab-foot .foot-icon.topics{background-image:url(../../lib/images/footicon/topics_grey@2x.png);}
+	.m2o-tab-foot .foot-icon.video{background-image:url(../../lib/images/footicon/video_grey@2x.png);}
+	
+	.m2o-tab-foot .foot-icon.selected{background-image:url(../../lib/images/footicon/home_white@2x.png);background-size:30px 30px;}
+	.m2o-tab-foot .foot-icon.selected.more{background-image:url(../../lib/images/footicon/more_white@2x.png);}
+	.m2o-tab-foot .foot-icon.selected.pic{background-image:url(../../lib/images/footicon/pic_white@2x.png);}
+	.m2o-tab-foot .foot-icon.selected.topics{background-image:url(../../lib/images/footicon/topics_white@2x.png);}
+	.m2o-tab-foot .foot-icon.selected.video{background-image:url(../../lib/images/footicon/video_white@2x.png);}
+
+	/* 杂志式 */
+	.magazine-foot .magazine-foot-icon{background-image:url(../../lib/images/magazine/footicon/icon_back-2x.png);background-size:24px 24px;}
+	.magazine-foot .magazine-foot-icon.collect{background-image:url(../../lib/images/magazine/footicon/icon_collect-2x.png);}
+	.magazine-foot .magazine-foot-icon.comment{background-image:url(../../lib/images/magazine/footicon/icon_comment-2x.png);}
+	.magazine-foot .magazine-foot-icon.down{background-image:url(../../lib/images/magazine/footicon/icon_down-2x.png);}
+	.magazine-foot .magazine-foot-icon.good{background-image:url(../../lib/images/magazine/footicon/icon_good-2x.png);}
+	.magazine-foot .magazine-foot-icon.more{background-image:url(../../lib/images/magazine/footicon/icon_more-2x.png);}
+	.magazine-foot .magazine-foot-icon.refresh{background-image:url(../../lib/images/magazine/footicon/icon_refresh-2x.png);}
+	.magazine-foot .magazine-foot-icon.share{background-image:url(../../lib/images/magazine/footicon/icon_share-2x.png);}
+	.magazine-foot .magazine-foot-icon.writing{background-image:url(../../lib/images/magazine/footicon/icon_writing-2x.png);}
+}

@@ -1,0 +1,30 @@
+.common-list-i{top:12px;}
+.vod-name{display:block;}
+.common-quanzhong-box{width:50px;}
+.vod-time{color:#888;font-size:10px;-webkit-text-size-adjust:none;}
+.vod-maliu span{display:inline-block;background:#4F6C98;border-radius:3px;color:#fff;font-size:9px;min-width:28px;line-height:12px;height:12px;text-align:center;padding:1px;vertical-align:middle;-webkit-text-size-adjust:none;}
+.vod-list .vod-date, .vod-list .vod-duration{color:#666;font-size:12px;margin-left:5px;}
+.vod-list .vod-duration{font-size:9px;-webkit-text-size-adjust:none;}
+
+.max-wd{max-width:320px;}
+
+.export-file-btn{display: block;width: 45px;height: 20px;border-radius: 3px;line-height: 20px;text-align: center;color: #fff;cursor: pointer;}
+.export-file-btn.is_export{background: #1bbc9b;}
+.export-file-btn.un_export{background: #fdd01b;}
+/*导出xml*/
+.export-file-box{min-height: 265px;z-index: 11;-moz-transition: top 0.5s;-webkit-transition: top 0.5s;transition: top 0.5s;position: absolute;top:-500px;left: 50%;margin-left: -123px;width: 330px;padding: 8px;border: 5px solid #6ba4eb;background: #fff;}
+.export-file-head{height: 30px;line-height: 26px;border-bottom: 1px dotted #e7e7e7;text-indent: 5px;position: relative;}
+.export-file-head .export-file-close{background: url({$RESOURCE_URL}/buttons/close4.png) center no-repeat;background-size: 12px 12px;position: absolute;width: 30px;height: 30px;right: 0;top: 0;cursor: pointer;}
+.export-file-item{width:100%;padding-top: 10px;}
+.export-file-item .label{display: block;width: 45px;padding-right: 3px;text-align: right;}
+.export-file-item ul{height: auto;max-height: 100px;overflow-y: auto;border-bottom: 1px dotted #e7e7e7;}
+.export-file-item ul li{display:-webkit-box;float:left}
+.export-file-item li input{margin: 5px 5px 5px 10px;cursor:pointer}
+.export-file-item li span{display:block;margin: 7px 5px;}
+.export-file-need{display: -webkit-box;border-bottom: 1px dotted #e7e7e7;padding-bottom: 5px;}
+.export-file-need input{margin: 0 5px 0 10px;}
+.export-file-need span{display: block;margin: 2px;}
+.export-file-control{padding-top: 10px;clear: left;display:-webkit-box;}
+.export-file-control .export-btn{margin-left: 10px;border-radius: 2px;display: inline-block;height: 26px;line-height: 26px;padding: 0;color: #fff;font-size: 12px;cursor: pointer;border: none;width: 70px;text-align: center;background: linear-gradient(#6EA5E8, #5192E2);}
+.export-file-control .upload-sign-btn{height: 30px;border: 1px solid #eee;line-height: 30px;text-align: center;font-size: 13px;border-radius: 3px;margin: 10px 0 0 10px;cursor: pointer;color: #31708f;background-color: #d9edf7;border-color: #bce8f1;text-decoration: underline;font-family: Arial, Helvetica, sans-serif;display:none}
+.exporting{line-height: 30px;margin-left: 20px;font-size: 16px;z-index: 999999999999;display:none}

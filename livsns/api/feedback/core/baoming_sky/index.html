@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>{liv_page_title}</title>
+<link rel="stylesheet" href="{liv_assist_url}/css/common.css">
+<link rel="stylesheet" href="{liv_assist_url}/css/tpl.css">
+</head>
+<body>
+	<div class="page-content toolbar-through">
+		<div class="content-block list-block title-block">
+			<div class="img-block">
+				<div class="img-box">
+					<span class="liv_indexpic image_w400_h200">liv_索引图</span>
+				</div>
+				<em class="tag tag-time primary">{liv_flag}</em>
+			</div>
+			<span class="liv_header_info">liv_头部信息</span>
+		</div>
+		<div class="content-block list-block form-block">
+			<div class="liv_forms_title">报名信息填写</div>
+			<form action="" target="targetWin" enctype="multipart/form-data" method="post">
+				<span class="liv_forms">liv_表单</span>
+				<div class="hiddenBox">
+					<input type="hidden" name="id" value="{liv_id}" />
+					<input type="hidden" name="device_token" value="" />
+					<input type="hidden" name="appid" value="" />
+					<input type="hidden" name="access_token" value="" />
+					<input type="hidden" name="appkey" value="" />
+					<input type="hidden" name="return" value="1" />
+					<input type="hidden" name="submitUrl" value="{liv_url}" />
+				</div>
+			</form>
+		</div>
+		<div class="content-block footer-block">
+			<span class="liv_footer_info">liv_底部信息</span>
+		</div>
+	</div>
+	<div class="fixed-bottom fixed-area">
+		<div class="btn-area">
+			<div class="limit" style="display:none">{liv_device_limit}</div>
+			<a class="btn btn-wid170 btn-primary btn-disable form-to-json"><span class="liv_submit_text">liv_提交按钮</span></a>
+		</div>
+	</div>
+<script type="text/javascript" src="{liv_assist_url}/js/module/head.min.js"></script>
+<script type="text/javascript">
+	head.js(
+		{zepto : "{liv_assist_url}/js/module/zepto.min.js"},
+		{spin : "{liv_assist_url}/js/module/spin.min.js"},
+		{toast : '{liv_assist_url}/js/module/toast.js'},
+		{h5Client : '{liv_assist_url}/js/module/h5Client.js'},
+		{print : '{liv_assist_url}/js/module/print.min.js'},
+		{log : '{liv_assist_url}/js/module/log.js'},
+		{address : '{liv_assist_url}/js/module/address.min.js'},
+		{utils : '{liv_assist_url}/js/utils.js'}
+	);
+	head.ready(["zepto", "spin", "h5Client"], function(){
+		head.js('{liv_assist_url}/js/module/hg_form.js', '{liv_assist_url}/js/baoming.js');
+	});
+</script>
+</body>
+</html>

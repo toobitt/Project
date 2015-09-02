@@ -1,0 +1,43 @@
+/* 商品表单页 */
+#loading{display:none;top:50%;left:50%;margin:-16px 0 0 -16px;background:url({$RESOURCE_URL}loading2.gif);position:absolute;height:32px;width:32px;background-size: 32px 32px;}
+textarea:hover,textarea:focus{box-shadow:none;}
+.save-button{float:right;margin-right:10px;}
+.red{color:red;}
+
+.indexpic{position:relative;text-align: center;line-height: 160px;margin:0 auto;font-size:0;width:160px;height:160px;border:1px solid #e0dcdd;background:url({$RESOURCE_URL}news/suoyin-default.png) no-repeat center #fff;}
+.indexpic img{width:160px;height:160px;}
+.indexpic .flag{position:absolute;left:-2px;top:-2px;background:url({$RESOURCE_URL}news/suoyintu.png) no-repeat;width:16px;height:46px;}
+.m2o-item.droped{background: #f2f2f2;}
+.m2o-item .title{width:40px;height:24px;line-height:24px;}
+aside .down_list{float:right!important;margin-right:20px;}
+/* section */
+section{position:relative;overflow:hidden;}
+.m2o-m input[type="checkbox"]{height:auto;}
+.m2o-m .product-item{padding:15px 0;border-bottom:1px dotted #e0e0e0;}
+.m2o-m .product-item:last-child{border-bottom:none;}
+.m2o-m .product-item .title{display:inline-block;color:#999;width:70px;text-align:right;}
+.m2o-m .desc textarea{width:850px;height:120px;}
+.m2o-m .column div{float:left;width:20%;margin-bottom:15px;}
+.m2o-m .column input{width:100px;}
+.m2o-m .media-list li,.add-btn{position:relative;float:left;width:130px;height:90px;margin:0 20px 10px 0;}
+.m2o-m .media-list img{width:130px;height:90px;}
+.m2o-m .media-list li:hover{}
+.m2o-m .add-btn{cursor:pointer;line-height:90px;text-align:center;background:#f0f0f0;color:#999;}
+.m2o-m .prefer textarea{width:850px;height:55px;}
+.m2o-m .play{position:absolute;cursor:pointer;background:url({$RESOURCE_URL}common/video_play.png) no-repeat center;width:50px;height:50px;top:50%;left:50%;margin:-25px 0 0 -25px;}
+.m2o-m .play:hover{background:url({$RESOURCE_URL}common/video_play_hover.png);}
+.m2o-m .del{display:none;position:absolute;top:0;right:0;width:24px;height:24px;cursor:pointer;background:url({$RESOURCE_URL}market/del.png) no-repeat center;}
+.media-list li:hover .del{display:block;}
+.m2o-m .more-info div{height:24px;}
+
+.switch-slide.ui-slider{position:absolute;left:8px;top:5px;width:14px;height:10px;background:none;border:none;}
+.common-switch{float:left;margin-right:5px;width:32px; height:20px; border-radius:10px; background-color:#aaa; position:relative;}
+.common-switch-on{background-color:#4dd865; }
+.ui-slider-horizontal .ui-slider-handle{cursor:pointer;border-radius:16px;z-index:9999;position:absolute;}
+
+.btn-mask{position:absolute;top:0;right:0;width:200px;height:34px;cursor:no-drop;z-index:-1;}
+/* 播放器 */
+.player-box{position:absolute;width:240px;height:100%;background:#f9f9f9;top:0;right:0;margin-right: -240px;transition: all ease-in .3s;}
+.player-box.show{margin-right: 0;}
+.vedio-back-close{position:absolute;width:22px;height:26px;background:url("{$RESOURCE_URL}/common/bk.png") center no-repeat #4c4c4c;top:0;right:-22px;cursor:pointer;}
+	

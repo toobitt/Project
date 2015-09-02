@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="yes" name="apple-touch-fullscreen" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<link rel="apple-touch-icon-precomposed" href="" />
+<link rel="stylesheet" href="./css/common.css" type="text/css" />
+<link rel="stylesheet" href="./css/gmu/tabs/tabs.default.css" type="text/css">
+<link rel="stylesheet" href="./css/gmu/tabs/tabs.css" type="text/css">
+<link rel="stylesheet" href="./css/bus.css" type="text/css" />
+<script src="./js/zepto.min.js"></script>
+<script src="./js/gmu/gmu.js"></script>
+<script src="./js/gmu/widget/tabs/tabs.js"></script>
+<title>无线城市</title>
+</head>
+<body class="theme-">
+<header class="m2o-header">
+	<div class="m2o-nav">
+		<aside class="m2o-nav-left">
+			<a class="m2o-nav-icon modules"  href=""></a>
+		</aside>
+		<h1 class="m2o-nav-title">公交</h1>
+	</div>
+</header>
+<div class="subnav m2o-flex">
+	<a class="item m2o-flex-one selected" href="./nearby_geolocation_failed.html">附近</a>
+	<a class="item m2o-flex-one" href="./route.html">线路</a>
+	<a class="item m2o-flex-one" href="./station.html">站点</a>
+	<a class="item m2o-flex-one" href="./interchange.html">换乘</a>
+	<a class="item m2o-flex-one" href="./collect_list.html">收藏</a>
+</div>
+<div class="main-wrap">
+	<div class="bus-item">
+		<div class="m2o-flex bus-info m2o-flex-center">
+			<div class="bus-base-info">
+				<p class="bus-num blue">211</p>
+				<p class="bus-special-flag blue">环形</p>
+			</div>
+			<div>
+				<p class="bus-end">开往<span class="blue">中央公园</span></p>
+				<p class="nearest">离我最近站<span class="red">运河饭店</span></p>
+			</div>
+		</div>
+		<div class="handle m2o-flex m2o-flex-center">
+			<p class="distance m2o-flex-one">最近一班车距离<span class="red">1站</span></p>
+			<a class="btn reverse"></a>
+			<a class="btn favor"></a>
+		</div>
+	</div>
+	<div class="bus-item">
+		<div class="m2o-flex bus-info m2o-flex-center">
+			<div class="bus-base-info">
+				<p class="bus-num blue">56</p>
+				<p class="bus-special-flag blue">环形</p>
+			</div>
+			<div>
+				<p class="bus-end">开往<span class="blue">金城桥</span></p>
+				<p class="nearest">离我最近站<span class="red">运河饭店</span></p>
+			</div>
+		</div>
+		<div class="handle m2o-flex m2o-flex-center">
+			<p class="distance m2o-flex-one">最近一班车距离<span class="red">1站</span></p>
+			<a class="btn reverse"></a>
+			<a class="btn favor"></a>
+		</div>
+	</div>
+	<div class="bus-item">
+		<div class="m2o-flex bus-info m2o-flex-center">
+			<div class="bus-base-info">
+				<p class="bus-num blue">131</p>
+				<p class="bus-special-flag blue"></p>
+			</div>
+			<div>
+				<p class="bus-end">开往<span class="blue">市民中心西</span></p>
+				<p class="nearest">离我最近站<span class="red">运河饭店</span></p>
+			</div>
+		</div>
+		<div class="handle m2o-flex m2o-flex-center">
+			<p class="distance m2o-flex-one">最近一班车距离<span class="red">1站</span></p>
+			<a class="btn reverse"></a>
+			<a class="btn favor"></a>
+		</div>
+	</div>
+	<div class="bus-item">
+		<div class="m2o-flex bus-info m2o-flex-center">
+			<div class="bus-base-info">
+				<p class="bus-num blue">宜家</p>
+				<p class="bus-special-flag blue">专线</p>
+			</div>
+			<div>
+				<p class="bus-end">开往<span class="blue">崇山</span></p>
+				<p class="nearest">离我最近站<span class="red">运河饭店</span></p>
+			</div>
+		</div>
+		<div class="handle m2o-flex m2o-flex-center">
+			<p class="distance m2o-flex-one">最近一班车距离<span class="red">1站</span></p>
+			<a class="btn reverse"></a>
+			<a class="btn favor"></a>
+		</div>
+	</div>
+	<div class="bus-item">
+		<div class="m2o-flex bus-info m2o-flex-center">
+			<div class="bus-base-info">
+				<p class="bus-num blue">211</p>
+				<p class="bus-special-flag blue">环形</p>
+			</div>
+			<div>
+				<p class="bus-end">开往<span class="blue">中央公园</span></p>
+				<p class="nearest">离我最近站<span class="red">运河饭店</span></p>
+			</div>
+		</div>
+		<div class="handle m2o-flex m2o-flex-center">
+			<p class="distance m2o-flex-one">最近一班车距离<span class="red">1站</span></p>
+			<a class="btn reverse"></a>
+			<a class="btn favor"></a>
+		</div>
+	</div>
+</div>

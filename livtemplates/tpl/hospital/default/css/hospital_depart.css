@@ -1,0 +1,183 @@
+body{overflow-x:hidden; }
+/*医院详情*/
+
+.main-box{background-color:#fff; }
+.line-wrap{text-overflow:ellipsis;-webkit-line-clamp: 2;display: -webkit-box; -webkit-box-orient: vertical; overflow:hidden; }
+.m2o-overflow{text-overflow:ellipsis; overflow:hidden; white-space:nowrap; }
+.transition-width{ -webkit-transition:width 0.3s; transition:width 0.3s; }
+.transition-height{ -webkit-transition:height 0.3s; transition:height 0.3s; }
+.main-box .img-box.has-images{background:#fff; }
+
+/*header*/
+
+.m2o-header{height:62px; padding:0; background:#f9f9f9; }
+.m2o-header .img-box{display:inline-block; width:36px; height:36px; border-radius:50%; vertical-align: middle; margin-right:5px; overflow:hidden; background-color:#fff; }
+.m2o-header img{width:100%; height:100%; }
+.m2o-header h2{display:inline-block; vertical-align: middle; color:#5b6fce; font-size:20px; margin-right:20px; }
+.hospital-header{height:62px; }
+.m2o-header .m2o-r{width:180px; text-align:right; }
+.m2o-header .m2o-r a{display:inline-block; height:34px; line-height:34px; padding:0 10px; color:#5b6fce; cursor:pointer; text-decoration:underline; }
+
+/*main*/
+.m2o-main .m2o-l{width: 230px; padding: 0; background-color:transparent; color:#999;}
+.m2o-main .num{margin-left:8px; color:#5b6fce; font-size:18px; font-style:normal; }
+
+.edit-detail{padding:0 15px; }
+.add-depart, .add-doctor{color:#fff; border-radius:0;}
+.btn-disable{background-color:#ccc; }
+.btn-primary, .btn-primary:hover{background:#5b6fce; border-radius:0; font-size:14px;  }
+.btn-info, .btn-info:hover{background:#20bf87; border-radius:0; font-size:14px; }
+.btn-cancel, .btn-cancel:hover{background:#737373;}
+.btn-icon{display:inline-block; width:28px; height:28px; font-size:0; vertical-align:middle; background:url("") no-repeat center center transparent; cursor:pointer; }
+
+.m2o-title{margin-bottom:20px; }
+
+.m2o-cont{margin:8px 0; }
+.m2o-title h3{font-size:22px; color:#000; }
+.m2o-cont input {width: 142px; display:none; border: 1px solid #fff; background-color:#fff; height: 22px; margin: 0 2px; text-indent: 6px;}
+.m2o-cont .item{display:inline-block; max-width:165px; vertical-align:top; }
+.m2o-pic{width:200px; height:120px; line-height:120px; text-align:center; overflow:hidden; }
+.m2o-pic img{max-width:100%; height:auto; vertical-align: middle; }
+
+/*科室*/
+
+.m2o-depart{width:420px; margin-left:20px; margin-bottom:40px; }
+.depart-box{position:relative; }
+.list-depart{width:202px; display:none; background-color:#f0f0f0; }
+.list-depart li{position:relative; height:43px; line-height: 43px; }
+.list-depart:not(.list-secondary) li.current{ background-color:#fff; }
+.list-depart:not(.list-secondary) li.current:after{position:absolute; left:0; top:0; width:200px; height:42px; border-width:1px 1px 1px 2px; border-style:solid; border-color:#e3e3e3 #fff #e3e3e3 #839cf8; content: ''; }
+.list-depart span{display:block; margin:0 20px; border-bottom:1px solid #e3e3e3; }
+.list-depart .noborderbottom span{border-bottom-width:0; }
+.list-depart .edit{position:absolute; right:10px; top:5px; width:36px; height:36px; line-height:36px; text-align:center; color:#5b6fce; display:none; z-index: 99;}
+.list-depart li:hover .edit{display:block; cursor:pointer; }
+.nodepart span{border-bottom-width:0; }
+
+
+.pagination{width:202px; height:40px; line-height:40px; margin-bottom:20px; border-top:1px solid #e3e3e3; text-align:center; background-color:#f0f0f0; display:none; }
+.pagination a{display:inline-block; width:28px; height:28px; font-size:0; background-image: url("{$RESOURCE_URL}hospital/icon_direction.png"); }
+.pagination .prev{background-position:36px -6px;}
+.pagination .next{background-position:-8px -6px;}
+.pagination .prev.disabled{background-position:36px -46px;}
+.pagination .next.disabled{background-position:-8px -46px;}
+
+/*二级*/
+.list-secondary{1position:absolute; 1left:0; 1top:0; border:1px solid #e3e3e3; background-color:#fff; }
+.list-secondary li.current:after{position:absolute; left:0; top:0; width:200px; height:42px; border-left:2px solid #839cf8; content:''; }
+.depart-second .pagination{height:42px; background-color:#fff; border-right:1px solid #e3e3e3; border-bottom:1px solid #e3e3e3; }
+.m2o-doctor{margin-left:30px; margin-bottom:40px; }
+
+
+/*弹窗*/
+.pop-box{position:absolute; left:50%; top:100px; background-color:#fff; -webkit-transition:top 0.3s; transition:top 0.3s; }
+.pop-hide{top:-1000px;}
+.pop-inner{margin:0 30px; }
+.pop-depart{width:580px; margin-left:-290px; border:10px solid #5b6fce; z-index:999; }
+.pop-box .pop-title{height:79px; line-height: 79px; }
+.pop-box h3{color:#5b6fce; }
+.pop-close{position:absolute; right:-10px; top:-10px; width:40px; height:40px; background-color:#5b6fce; display:inline-block; }
+.item-tab{font-size:14px; }
+.item-tab .tab{position:relative; float:left; width:128px; height:44px; line-height:44px; text-align:center; color:#727272; border:1px solid #e0e0e0; margin:0 -1px -1px 0; background-color:#f9f9f9; }
+.item-tab .tab.current{border-top-color:#5b6fce; color:#5b6fce; background-color:#fff; border-bottom-color:#fff;}
+.item-tab .tab.current:after{position:absolute; left:0; top:0; width:128px; height:1px; background-color:#5b6fce; content:'';}
+.pop-content{min-height:265px; max-height:285px; padding:30px 0; font-size:14px; overflow-y:auto; overflow-x:hidden; border:1px solid #e0e0e0; }
+.pop-content .item{display:inline-block; vertical-align: top; }
+.pop-content textarea{padding:20px; box-sizing:border-box; }
+.pop-item:not(:last-child){margin-bottom:26px; }
+.pop-item label{display:inline-block; width:110px; margin-right:20px; text-align:right; color:#727272; }
+.pop-content input, .pop-content textarea{font-size:14px; border:1px solid #e0e0e0; }
+.pop-content input{width:195px; height:45px; padding-left:20px; }
+.pop-content textarea{width:346px; height:68px; vertical-align:middle; }
+.pop-content .depart-secondary{display:none; }
+.pop-save{margin:20px 0; text-align:center; }
+.pop-save a{font-size:14px; border-radius:0; }
+.pop-save a.cancel-button{margin-right:30px; }
+
+.pop-content .select-item{position:relative; vertical-align: middle; }
+.selectbox-wrapper{position:absolute; top:51px; left:0; z-index:99; width:100%; max-height:200px; overflow-y:auto; overflow-x:hidden; background-color:#fff; border:1px solid #e0e0e0; border-top-width:0; box-sizing:border-box; }
+.selectbox-wrapper li{height:40px; line-height: 40px; border-bottom:1px solid #e0e0e0; text-align:center; }
+
+/*添加图片*/
+.pic-list li{margin-bottom:10px; }
+.pic-list textarea{height:110px; width: 212px; margin-left:10px; font-size:14px; }
+
+.envir-item .img-box{float:left; width:108px; height:108px; line-height:108px; font-size:14px; overflow: hidden; }
+.m2o-depart .img-box{color:#999; text-align:center; border:2px dashed #e0dcdd; cursor:pointer; }
+.m2o-depart .img-box:hover{color:#5b6fce; border-color:#5b6fce; text-decoration:underline; }
+.m2o-depart .img-box img{max-width:100%; height:auto; vertical-align: middle; }
+.m2o-depart .has-images{font-size:0!important; }
+
+.pop-item .set{display:inline-block; width:28px; height:28px; vertical-align:top; background-image: url("{$RESOURCE_URL}hospital/text_set.png"); font-size:0; }
+.pop-item .set.add{background-position: 97px 34px;}
+.pop-item .set.del{background-position: 51px 34px;}
+
+/*医生*/
+.m2o-doctor .m2o-list{background-color:#f0f0f0; }
+.m2o-doctor .m2o-each{position:relative; height:43px; line-height: 43px; padding:0 20px;}
+.m2o-doctor .m2o-each-inner{border-bottom:1px solid #e3e3e3;}
+.m2o-doctor .m2o-each:last-child .m2o-each-inner{border-bottom-width:0; }
+.m2o-doctor .m2o-each.current{background-color:#fff; }
+.m2o-doctor .m2o-each.current:after{position:absolute; left:0; top:0; width:100%; height:44px; border:1px solid #e3e3e3; border-left:2px solid #839cf8; box-sizing:border-box; content: ''; }
+.m2o-doctor .m2o-item{width:80px; padding:0; color:#999; border-bottom-width:0; }
+.m2o-doctor .img-box{width:30px; height:30px; border-radius:50%; overflow:hidden; text-align:center; background:url("{$RESOURCE_URL}hospital/head_2x.png") no-repeat center center #fff; background-size:30px 30px; }
+.m2o-doctor .avatar-item{width:50px; }
+.m2o-doctor .m2o-item:hover{background-color:transparent; }
+.m2o-doctor .m2o-name{font-size:14px; color:#727272; }
+.m2o-doctor .m2o-ibtn{position:relative; width:35px; height:43px; opacity:0; }
+.m2o-doctor .m2o-ibtn a{position:absolute; left:0; top:0; z-index:99; display:block; color:#5b6fce; cursor:pointer;  }
+.m2o-doctor .m2o-each:hover .m2o-ibtn{opacity:1; }
+.m2o-doctor .m2o-special{margin-right:10px; }
+
+/*医生搜索*/
+.m2o-doctor .type-item{position:relative; display:inline-block; vertical-align:middle; height:32px; margin-right:10px; width:28px; border:1px solid #fff;}
+.m2o-doctor .type-search{border-color:#e0e0e0; width:124px;}
+.m2o-doctor .type-search-item{overflow:hidden; }
+.m2o-doctor .type-item input{height:100%; width:84px; border-width:0; box-sizing:border-box; padding:5px; }
+.m2o-doctor .type-item > input, .m2o-doctor .select-item{margin-left:28px; }
+.m2o-doctor .type-item input:focus{border-width:0; box-shadow:none; }
+.m2o-doctor .btn-icon{position:absolute; left:0; top:2px;}
+.m2o-doctor .search{border-width:0; background-image:url("{$RESOURCE_URL}hospital/search_2x.png"); background-size:16px 16px;}
+.m2o-doctor .select{border-width:0; background-image:url("{$RESOURCE_URL}hospital/select_2x.png"); background-size:16px 16px;}
+.m2o-doctor .search:hover{border-width:0; }
+.m2o-doctor .del-btn{position:absolute; left:auto; right:0; top:3px; display:none; }
+.m2o-doctor .type-search .del-btn{display:block; }
+.m2o-doctor .del-btn:after, .del-btn:before{position:absolute; left:6px; top:13px; width:13px; height:1px; background-color:#999; content:''; }
+.m2o-doctor .del-btn:before{-webkit-transform:rotate(45deg); transform:rotate(45deg); }
+.m2o-doctor .del-btn:after{-webkit-transform:rotate(-45deg); transform:rotate(-45deg); }
+.m2o-doctor .type-select{border-color:#e0e0e0; width:122px; }
+.m2o-doctor .select-item{width:94px; display:inline-block; }
+.m2o-doctor .select-item input{width:100%; height:32px; display:none;}
+.m2o-doctor .type-select input{display:block; }
+.m2o-doctor .selectbox-wrapper{top:33px; }
+
+/*预约单*/
+.m2o-yuyue .m2o-list{border:1px solid #e0e0e0; }
+.m2o-yuyue .m2o-each{height:44px; padding:0; overflow:hidden; }
+.m2o-yuyue .m2o-each:last-child{height:43px; }
+.m2o-yuyue .m2o-each.current{height:143px; }
+.m2o-yuyue .m2o-each.current:after{border-width:0; border-top:2px solid #839cf8; }
+.m2o-yuyue .m2o-each.current .yuyue-basic{background-color:#f0f0f0; }
+.m2o-yuyue .m2o-info{width:180px; color:#333; }
+.m2o-yuyue .m2o-info p{line-height: 22px; }
+.m2o-yuyue .m2o-num{width:180px; margin-left:20px; margin-right:20px; }
+.m2o-yuyue .m2o-tip{width:108px; text-align:center; border-right:1px solid #e0e0e0; margin-right:20px; }
+.m2o-doctor .m2o-each:last-child .m2o-each-inner{border-bottom-width:1px; }
+.m2o-doctor .m2o-each:last-child .m2o-each-inner:last-child{border-bottom-width:0; }
+.yuyue-more, .yuyue-man{background-color:#fff; }
+.yuyue-man{height:54px; }
+.yuyue-man .m2o-tip{line-height: 54px; }
+
+.view-all{display:inline-block; line-height:34px; padding:0 15px; font-size:12px; text-decoration:underline; font-weight:normal; color:#5b6fce; cursor:pointer; }
+
+.common-list-empty{text-align:center; }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2) {
+	.pop-item .set.add{background-position: 121px 48px; background-size:60px 50px;}
+	.pop-item .set.del{background-position: 88px 48px; background-size:60px 50px;}
+
+}
+
+

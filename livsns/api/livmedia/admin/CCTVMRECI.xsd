@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- edited with XMLSpy v2006 sp2 U (http://www.altova.com) by dy (EMBRACE) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="CCTVMRECI" xmlns:tns2="CCTVMREML" targetNamespace="CCTVMRECI" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:import namespace="CCTVMREML" schemaLocation="CCTVMREML.xsd"/>
+	<xs:element name="CommonRequest" type="tns:CommonRequestType">
+		<xs:annotation>
+			<xs:documentation>通用请求信息</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="CommonResponse" type="tns:CommonResponseType">
+		<xs:annotation>
+			<xs:documentation>通用返回信息</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="AsynRequest" type="tns:AsynRequestType">
+		<xs:annotation>
+			<xs:documentation>异步请求信息</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="AsynResponse" type="tns:AsynResponseType">
+		<xs:annotation>
+			<xs:documentation>异步通用响应信息</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="AddEMBTaskRequest" type="tns:AddEMBTaskRequestType">
+		<xs:annotation>
+			<xs:documentation>增加EMB任务输入参数</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="AddEMBTaskResponse" type="tns:AddEMBTaskResponseType">
+		<xs:annotation>
+			<xs:documentation>增加EMB任务输出参数</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="QueryJobProgressRequest" type="tns:QueryJobProgressRequestType">
+		<xs:annotation>
+			<xs:documentation>查询交换作业进度输入参数</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="QueryJobProgressResponse" type="tns:QueryJobProgressResponseType">
+		<xs:annotation>
+			<xs:documentation>查询交换作业进度输出参数</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="QueryEMBTaskProgressRequest" type="tns:QueryEMBTaskProgressRequestType">
+		<xs:annotation>
+			<xs:documentation>查询EMB任务进度输入参数</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="QueryEMBTaskProgressResponse" type="tns:QueryEMBTaskProgressResponseType">
+		<xs:annotation>
+			<xs:documentation>查询EMB任务进度输出参数</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="QueryEMBTaskResultRequest" type="tns:QueryEMBTaskResultRequestType">
+		<xs:annotation>
+			<xs:documentation>查询EMB任务执行结果输入参数</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="QueryEMBTaskResultResponse" type="tns:QueryEMBTaskResultResponseType">
+		<xs:annotation>
+			<xs:documentation>查询EMB任务执行结果输出参数</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="CancelEMBTaskRequest" type="tns:CancelEMBTaskRequestType">
+		<xs:annotation>
+			<xs:documentation>取消EMB任务输入参数</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="CancelEMBTaskResponse" type="tns:CommonResponseType">
+		<xs:annotation>
+			<xs:documentation>取消EMB任务输出参数</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="EMBCallbackRequest" type="tns:EMBCallbackRequestType">
+		<xs:annotation>
+			<xs:documentation>EMB任务异步回调通知输入参数</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="ImportAllowRequest" type="tns:ImportAllowRequestType">
+		<xs:annotation>
+			<xs:documentation>导入允许输入参数</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="ImportAllowResponse" type="tns:ImportAllowResponseType">
+		<xs:annotation>
+			<xs:documentation>导入允许输出参数</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="ContentImportRequest" type="tns:ContentImportRequestType">
+		<xs:annotation>
+			<xs:documentation>内容交换输入参数</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="ContentImportResponse" type="tns:CommonResponseType">
+		<xs:annotation>
+			<xs:documentation>内容交换输出参数</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="PageInfo">
+		<xs:annotation>
+			<xs:documentation>分页信息</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="PageIndex" type="xsd:int" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>分页开始序号，第一页从0开始</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="CountPerPage" type="xsd:int" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>每页记录数</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="Operate" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>nextpage,prepage,lastpage,firstpage,default</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ImportOption" type="tns:ImportOptionType">
+		<xs:annotation>
+			<xs:documentation>控制选项信息</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="CommonRequestType">
+		<xs:sequence>
+			<xs:element name="SourceID" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>源系统ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="UserID" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>用户ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="UserName" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>用户名称</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CommonResponseType">
+		<xs:sequence>
+			<xs:element name="Status" type="xs:int">
+				<xs:annotation>
+					<xs:documentation>返回状态</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Description" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>状态文字描述</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="AsynRequestType">
+		<xs:sequence>
+			<xs:element name="SourceID" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>源系统ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Priority" type="xs:int" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>优先级</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="RequestID" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>GUID，作为请求标识</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CallbackAddressInfo" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>异步回调地址，异步服务执行完毕回调通知时调用该地址。一般是Webservice的URL。</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="AsynResponseType">
+		<xs:sequence>
+			<xs:element name="RequestID" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>消息等异步方式调用时，使用该请求ID关联原始请求</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Status" type="xs:int">
+				<xs:annotation>
+					<xs:documentation>状态,0代表成功，其他值代表出错</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Description" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>状态文字描述</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="AVEntityBasicInfoType">
+		<xs:annotation>
+			<xs:documentation>视音频实体对象的基本信息。供导入允许等服务使用</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="MaterialID" type="xsd:string">
+				<xs:annotation>
+					<xs:documentation>资源唯一标识代码</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="MaterialName" type="xsd:string">
+				<xs:annotation>
+					<xs:documentation>资源名称</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ProgramCode" type="xsd:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>节目代码</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="MaterialType" type="xsd:int" default="1">
+				<xs:annotation>
+					<xs:documentation>资源类型（素材、成品节目、播出节目、通稿等）</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TotalLength" type="xs:long" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>素材长度</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="tns2:FileGroups"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="AddEMBTaskRequestType">
+		<xs:sequence>
+			<xs:element ref="tns:AsynRequest"/>
+			<xs:element name="TaskName" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>任务名称</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ExecuteMode" type="xs:int" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>任务执行模式 0：自适应1：单任务 2：分布式任务 </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="BusinessType" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>业务类型</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SourceFiles">
+				<xs:annotation>
+					<xs:documentation>源文件信息</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element ref="tns2:FileGroup" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="TargetFiles" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>目标文件信息</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element ref="tns2:FileGroup" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="TaskTempleteName" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>EMB中配置的任务模板信息，如果这里填写了模板，下面的任务选项都不需要填写，模板中会有默认配置。</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TaskOption" type="tns:TaskOptionType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>任务选项</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="AutoAuditInfoType">
+		<xs:sequence>
+			<xs:element name="AuditStatus" type="xs:int">
+				<xs:annotation>
+					<xs:documentation>审核结果：0没有错误；其他值：有错误</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ErrorItem" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>出错结果信息</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="MarkIn" type="xs:int">
+							<xs:annotation>
+								<xs:documentation>入点</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="MarkOut" type="xs:int">
+							<xs:annotation>
+								<xs:documentation>出点</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="Description" type="xs:string" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>文字描述</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ContentImportRequestType">
+		<xs:sequence>
+			<xs:element ref="tns:CommonRequest"/>
+			<xs:element ref="tns2:AVMaterialEntity"/>
+			<xs:element name="JobID" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>交互作业ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DownloadProgressRequestType">
+		<xs:sequence>
+			<xs:element name="CommonRequest" type="tns:CommonRequestType"/>
+			<xs:element name="ApplicationID" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>下载申请ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DownloadProgressResponseType">
+		<xs:sequence>
+			<xs:element ref="tns:CommonResponse"/>
+			<xs:element name="TaskProgress" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>单个任务进度情况</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="TaskID" type="xs:string">
+							<xs:annotation>
+								<xs:documentation>下载任务ID，是下载申请单中一个单独的下载任务</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="Progress" type="xs:int">
+							<xs:annotation>
+								<xs:documentation>进度</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CancelEMBTaskRequestType">
+		<xs:sequence>
+			<xs:element ref="tns:CommonRequest"/>
+			<xs:element name="EMBTaskID" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>任务ID为添加任务时的请求ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ImportAllowRequestType">
+		<xs:sequence>
+			<xs:element ref="tns:CommonRequest"/>
+			<xs:element name="EntityInfo" type="tns:AVEntityBasicInfoType" maxOccurs="unbounded"/>
+			<xs:element ref="tns:ImportOption" minOccurs="0"/>
+			<xs:element name="ImportType" type="xs:int" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>导入业务类型</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="JobID">
+				<xs:annotation>
+					<xs:documentation>交互作业ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ImportAllowResponseType">
+		<xs:sequence>
+			<xs:element ref="tns:CommonResponse"/>
+			<xs:element name="EntityInfo" type="tns:AVEntityBasicInfoType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ImportOptionType">
+		<xs:sequence>
+			<xs:element name="DuplicatedMode" type="xsd:int" default="0">
+				<xs:annotation>
+					<xs:documentation>节目已存在时的处理方式：覆盖、返回错误还是创建新节目</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="QueryEMBTaskProgressRequestType">
+		<xs:sequence>
+			<xs:element ref="tns:CommonRequest"/>
+			<xs:element name="EMBTaskID" type="xs:string" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>任务ID为添加任务时的请求ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="QueryEMBTaskProgressResponseType">
+		<xs:sequence>
+			<xs:element ref="tns:CommonResponse"/>
+			<xs:element name="EMBTaskProgress" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="EMBTaskID" type="xs:string">
+							<xs:annotation>
+								<xs:documentation>任务ID为添加任务时的请求ID</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="TaskProgress" type="xs:int">
+							<xs:annotation>
+								<xs:documentation>任务进度，0－100</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="TaskStatus" type="xs:int">
+							<xs:annotation>
+								<xs:documentation>任务状态：等待、挂起、运行、出错、完成等</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="QueryEMBTaskResultRequestType">
+		<xs:sequence>
+			<xs:element ref="tns:CommonRequest"/>
+			<xs:element name="EMBTaskID" type="xs:string" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>任务ID为添加任务时的请求ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="QueryEMBTaskResultResponseType">
+		<xs:sequence>
+			<xs:element ref="tns:AsynResponse"/>
+			<xs:element name="TaskResult" type="tns:TaskResultExType" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TaskTempleteType">
+		<xs:sequence>
+			<xs:element name="TempleteID" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>模板ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TempleteName" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>模板名称</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TempleteDesc" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>模板描述</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TaskOptionType">
+		<xs:sequence>
+			<xs:element name="TCAbility" type="xsd:int" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>转码能力 int 值用户自定义，用来实现不同机器转不同的任务类型</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="IsDelSrc" type="xs:boolean" default="0" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>转码成功后是否删除源文件</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SourceValidateMode" type="xsd:int" default="0" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>转码或拷贝前源文件验证方式.0:不验证；1：验证时长 2：验证文件大小；3：验证MD5（只针对转码任务，源为FTP路径并且有验证码时，可能要求在转码前先下载文件到本地，进行MD5验证后再转码）</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TargetValidateMode" type="xsd:int" default="0" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>转码或拷贝后目标文件验证方式.0:不验证；1：验证时长 2：验证文件大小；3：验证MD5（只针对拷贝任务，目标拷贝完成后需要计算MD5，和原始文件MD5做比较）</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="MD5GenerateOption" type="xsd:int" default="0" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>MD5生成选项，可以进行位与组合：1，生成目标文件的MD5； 2，生成源文件MD5</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AudioMixerInfo" type="xsd:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>音频混音信息。每个目标声道对应一个整数混音值，多个混音值之间","分割。混音值的每个二进制位，代表源音频一个声道,最低位代表0声道．比如1代表0声道，4代表2声道，5代表0和2声道的混音。5,10代表目标有两个声道，分别是0、2声道和1、3声道的混音。</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ForceTranscode" type="xs:boolean" default="0" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>源和目标格式一致时是否进行重新编码</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AutoFileAudit" type="xsd:int" default="0" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>是否需要对文件进行自动技审，可以进行位与组合：1，审核源文件； 2，审核目标文件</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="IsAddLogoInfo" type="xs:boolean" default="0">
+				<xs:annotation>
+					<xs:documentation>是否需要生成台标</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LogoInfo" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>生成台标相关信息</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="PicFileName" type="xsd:string">
+							<xs:annotation>
+								<xs:documentation>图象文件名字,可以是TAG或BMP32位图</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="StartPointX" type="xsd:int" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>叠加的开始位置</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="StartPointY" type="xsd:int" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>叠加的开始位置</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="SizeX" type="xsd:int" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>叠加的大小(像素单位)</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="SizeY" type="xsd:int" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>叠加的大小(像素单位)</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="bUseAlpha" type="xsd:int" default="0" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>是否使用输入的Alpha值</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="Alpha" type="xsd:int" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>输入的Alpha值</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ModeChangeTime" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>模式转变时间，如果单任务到了此时间还没有开始执行就要转成分布式任务,格式（yyyy-MM-dd HH:mm:ss）</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="WarnTime" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>警告时间，如果任务到此时间还没有开始执行就向提交方反馈信息,格式（yyyy-MM-dd HH:mm:ss）</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="tns2:ExtendAttributes" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TaskFileType">
+		<xs:sequence>
+			<xs:element name="FileName" type="xsd:string">
+				<xs:annotation>
+					<xs:documentation>物理文件名称，不包含路径信息</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FileVerifyCode" type="xsd:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>文件验证代码</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="IsFileValid" type="xs:boolean">
+				<xs:annotation>
+					<xs:documentation>文件验证结果</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Status" type="xs:int">
+				<xs:annotation>
+					<xs:documentation>状态,0代表成功，其他值代表出错</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Description" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>状态文字描述</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AuditInfo" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>文件自动技审信息</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EncryptSeed" type="xsd:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>加密种子</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TaskFileExType">
+		<xs:sequence>
+			<xs:element name="FileName" type="xsd:string">
+				<xs:annotation>
+					<xs:documentation>物理文件名称，不包含路径信息</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FileVerifyCode" type="xsd:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>文件验证代码</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="IsFileValid" type="xs:boolean">
+				<xs:annotation>
+					<xs:documentation>文件验证结果</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Status" type="xs:int">
+				<xs:annotation>
+					<xs:documentation>状态,0代表成功，其他值代表出错</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Description" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>状态文字描述</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AuditInfo" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>文件自动技审信息</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EncryptSeed" type="xsd:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>加密种子</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="AddEMBTaskResponseType">
+		<xs:sequence>
+			<xs:element ref="tns:CommonResponse"/>
+			<xs:element name="EMBTaskID" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>返回对应的任务ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TaskResultType">
+		<xs:sequence>
+			<xs:element name="TaskFile" type="tns:TaskFileType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TaskResultExType">
+		<xs:sequence>
+			<xs:element name="TaskFile" type="tns:TaskFileExType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="EMBCallbackRequestType">
+		<xs:sequence>
+			<xs:element ref="tns:AsynResponse"/>
+			<xs:element name="TaskResult" type="tns:TaskResultType" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="QueryJobProgressRequestType">
+		<xs:sequence>
+			<xs:element ref="tns:CommonRequest"/>
+			<xs:element name="JobID" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>交互作业ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="QueryJobProgressResponseType">
+		<xs:sequence>
+			<xs:element ref="tns:CommonResponse"/>
+			<xs:element name="JobInfo" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="JobID">
+							<xs:annotation>
+								<xs:documentation>交互作业ID</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="JobProgress" type="xs:int">
+							<xs:annotation>
+								<xs:documentation>交换作业进度，0－100</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="JobStatus" type="xs:int">
+							<xs:annotation>
+								<xs:documentation>交换作业状态：等待、挂起、运行、出错、完成等</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

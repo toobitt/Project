@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no,email=no">
+<title>查询</title>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/refer.css">
+</head>
+<body>
+	<div class="page-content toolbar-through refer-index">
+		<div class="list-block">
+			<ul class="clear"></ul>
+		</div>
+	</div>
+<script type="text/javascript" src="./js/module/sea.js"></script>
+<script type="text/javascript" src="./js/main.js"></script>
+<script type="text/javascript">
+	seajs.use("views/index");
+</script>
+</body>
+</html>

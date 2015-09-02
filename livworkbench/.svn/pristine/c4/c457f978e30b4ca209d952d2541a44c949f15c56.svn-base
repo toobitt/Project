@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>积分商城</title>
+<link rel="stylesheet" href="css/framework7.min.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/credit.css">
+<link rel="stylesheet" href="css/skin_A.css">
+</head>
+<body>
+<div class="view view-main shopping-detail">
+ 	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="left">
+				<a href="javascript:history.back()" class="back link">
+					<i class="icon icon-back"></i>
+				</a>
+			</div>
+			<div class="center sliding">商品详情</div>
+			<div class="right"></div>
+		</div>
+	</div>
+	<div class="pages navbar-through">
+		<div class="page">
+			<div class="page-content">
+				<div class="content-block content-shopping content-detail">
+					<div class="item-content">
+						<div class="item-inner">
+							<img src="images/shopping.png">
+							<em class="tips-label new-label">新品</em>
+							<div class="item-title">7月20日16点40抢兑开始</div>
+						</div>
+						<div class="item-detail item-info">
+							<div class="item-intro m2o-flex m2o-flex-center">
+								<div class="item-name m2o-flex-one">无线常州纪念版上海牌手表</div>
+								<div class="item-credits m2o-flex-one">30000积分</div>
+							</div>
+						</div>
+						<div class="item-detail">最老式传承7120上海手动上弦手表。19钻上海老式手表，虽然走时准确度与美观无法与现在流行手表相持并论。但手表具有其收藏与怀旧意义，因为老式7120已经是绝版啦！正宗7120机芯，摆压板下面有；“中国 上海”钢印</div>
+					</div>
+				</div>
+				<div class="content-block content-btn">
+					<form action="./exchange-success.html" enctype="multipart/form-data" method="post" name="exchangeCredit">
+						<input type="hidden" name="shopname" value="无线常州纪念版上海牌手表" />
+						<input type="hidden" name="credits" value="30000"/>
+						<input type="hidden" name="exchange" value="1">
+						<input type="submit" class="button button-big button-submit" value="立即兑换"/>
+					</form>
+				</div>
+				<div class="content-block content-btn">
+					<a class="button button-big button-default" href="./gainCredit.html">积分不足</a>
+				</div>
+				<div class="content-block item-rule">
+					<div class="item-title">活动规则</div>
+					<div class="item-detail">2014年7月18日—22日，每天下午16：40，每天放送5个，仅需30000积分等你来抢。</div>
+				</div>
+				<div class="content-block item-rule">
+					<div class="item-title">兑换规则</div>
+					<ul class="item-detail">
+						<li>1   同一个订单中可以使用多张商品兑换券</li>
+						<li>2   商品兑换券不和账户绑定，用户中心无法查询商品兑换券;</li>
+						<li>3   提交订单成功后，订单中的商品兑换券视为“已使用”；</li>
+					</ul>
+				</div>
+				<div class="content-block item-rule">
+					<div class="item-title">热门兑换</div>
+				</div>
+				<div class="content-block content-shopping">
+					<div class="row">
+						<div class="col-50">
+							<a href="./shopping-detail.html" class="item-link">
+								<div class="item-content">
+									<div class="item-inner">
+										<img src="images/shopping.png">
+										<div class="item-title">
+											<p class="m2o-overflow">上海牌手表</p>
+											<p>300000积分</p>
+										</div>
+									</div>
+									<div class="item-time">现已抢兑开始</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-50">
+							<a href="./shopping-detail.html" class="item-link">
+								<div class="item-content">
+									<div class="item-inner">
+										<img src="images/shopping.png">
+										<div class="item-title">
+											<p class="m2o-overflow">10元手机话费</p>
+											<p>10000积分</p>
+										</div>
+									</div>
+									<div class="item-time">现已抢兑开始</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+ 
+</body>
+</html>

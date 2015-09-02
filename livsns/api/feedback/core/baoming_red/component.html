@@ -1,0 +1,101 @@
+<div class="liv_input">
+	<span class="cell_name">{cell_name}</span>
+	<span class="cell_input">
+		<input type="input" name="{cell_unique_name}" placeholder="{cell_brief}" value="" />
+	</span>
+</div>
+<div class="liv_textarea">
+	<span class="cell_name">{cell_name}</span>
+	<span class="cell_textarea">
+	<textarea name="{cell_unique_name}" placeholder="{cell_brief}"></textarea>
+	</span>
+</div>
+<div class="liv_choose">
+	<span class="cell_name">{cell_name}</span>
+	<span class="cell_choose">
+		<input type="{cell_cor}" name="{cell_unique_name}" value="{cell_options_element}"/><lable>{cell_options_element}</lable>
+	</span>
+	
+</div>
+<div class="liv_select">
+	<span class="cell_name">{cell_name}</span>
+	<select name="{cell_unique_name}"  class="cell_select">
+			<option>{cell_options_element}</option>
+	</select>
+</div>
+<div class="liv_file">
+	<span class="cell_name">{cell_name}</span>
+	<span class="cell_file">
+		<input type="file" name="{cell_unique_name}"/>
+	</span>
+</div>
+<div class="liv_split">
+	<span class="cell_name">{cell_name}</span>
+	<span class="cell_split">
+	</span>
+</div>
+<div class="liv_name">
+	<span class="cell_name">{cell_name}</span>
+	<span class="cell_input">
+	<input type="input" name="{cell_unique_name}" placeholder="{cell_brief}" value="" />
+	</span>
+</div>
+<div class="liv_email">
+	<span class="cell_name">{cell_name}</span>
+	<span class="cell_input">
+	<input type="input" name="{cell_unique_name}" placeholder="{cell_brief}" value="" />
+	</span>
+</div>
+<div class="liv_tel">
+	<span class="cell_name">{cell_name}</span>
+	<span class="cell_input">
+	<input type="input" name="{cell_unique_name}" placeholder="{cell_brief}" value="" />
+	</span>
+</div>
+<div class="liv_address">
+	<span class="cell_name">{cell_name}</span>
+	<span class="cell_element province cell_{cell_id}">
+		<select name="{cell_unique_name}" class="cell_select">
+			<option _id="{cell_key}" value="{cell_options_element}">{cell_options_element}</option>
+		</select>
+	</span>
+	<span class="cell_element city cell_{cell_id}">
+		<select name="{cell_unique_name}" class="cell_select">
+			<option _id="{cell_key}" value="{cell_options_element}">{cell_options_element}</option>
+		</select>
+	</span>
+	<span class="cell_element area cell_{cell_id}">
+		<select name="{cell_unique_name}" class="cell_select">
+			<option _id="{cell_key}" value="{cell_options_element}">{cell_options_element}</option>
+		</select>
+	</span>
+	<span class="cell_element detail cell_{cell_id}">
+		<span class="cell_input">
+		<input type="input" name="{cell_unique_name}" placeholder="{cell_brief}" value="" />
+		</span>
+	</span>
+</div>
+<div class="liv_date">
+	<span class="cell_name">{cell_name}</span>
+	<span class="cell_input">
+	<input type="input" name="{cell_unique_name}" placeholder="{cell_brief}" value="" />
+	</span>
+</div>
+<div class="liv_time">
+	<span class="cell_name">{cell_name}</span>
+	<span class="cell_element hour cell_{cell_id}">
+		<select name="{cell_unique_name}" class="cell_select">
+			<option>{cell_options_element}</option>
+		</select>
+	</span>
+	<span class="cell_element minit cell_{cell_id}">
+		<select name="{cell_unique_name}" class="cell_select">
+			<option>{cell_options_element}</option>
+		</select>
+	</span>
+	<span class="cell_element second cell_{cell_id}">
+		<select name="{cell_unique_name}" class="cell_select">
+			<option>{cell_options_element}</option>
+		</select>
+	</span>
+</div>

@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>我把盐城寄出去</title>
+<link rel="stylesheet" href="./css/framework7.custom.min.css">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/greeting.css">
+</head>
+<body>
+<div class="view view-main">
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="left">
+				<a href="javascript:history.back()" class="back link">
+					<i class="icon icon-back"></i>
+				</a>
+			</div>
+			<div class="center sliding">我把盐城寄出去</div>
+			<div class="right">
+			 <a href="#" class="link">
+			 	<i class="icon icon-share"></i>
+			 </a>
+			</div>
+		</div>
+	</div>
+	<div class="pages navbar-through">
+		<div class="page">
+			<div class="page-content content-greeting">
+				<div class="greeting-title">
+					<div class="img-box">
+						<img src="images/city.jpg">
+					</div>
+					<div class="text-title">
+						<h1>我把盐城寄出去</h1>
+						<p>—系列明信片征集精选—</p>
+					</div>
+				</div>
+				<div class="content-block-title">活动简介</div>
+				<div class="content-block">
+					<p>你想DIY一张明信片 寄给远方的那个他吗？那么快来参加“我把盐城寄出去”活动吧！</p>
+					<p>你可以用手机随手拍，通过智慧盐城APP报料平台上传照片后参加征集，就可把“美丽盐城”一起寄往世界各地。</p>
+				</div>
+				<div class="content-block-title">明信片精选</div>
+				<div class="content-block greet-sort">
+					<ul>
+						<li class="item humanity">
+							<div class="img-box">
+								<img class="lazy" 1src="images/scenery2.jpg" data-original="images/scenery2.jpg" />
+							</div>
+							<div class="item-title">
+								<h2>人文之美</h2>
+								<p>我把盐城寄出去系列明信片</p>
+							</div>
+							<a class="link" href="greeting.html"></a>
+						</li>
+						<li class="item city">
+							<div class="img-box">
+								<img class="lazy" 1src="images/city2.jpg" data-original="images/scenery2.jpg" />
+							</div>
+							<div class="item-title">
+								<h2>城市之美</h2>
+								<p>我把盐城寄出去系列明信片</p>
+							</div>
+							<a class="link" href="greeting.html"></a>
+						</li>
+						<li class="item scenery">
+							<div class="img-box">
+								<img class="lazy" 1src="images/scenery.jpg" data-original="images/scenery2.jpg" />
+							</div>
+							<div class="item-title">
+								<h2>风景之美</h2>
+								<p>我把盐城寄出去系列明信片</p>
+							</div>
+							<a class="link" href="greeting.html"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>	
+	</div>
+</div>
+<script type="text/javascript" src="./js/module/head.min.js"></script>
+<script type="text/javascript">
+	head.js(
+		{zepto : "./js/module/zepto.min.js"},
+		{lazyload : "./js/module/lazyload.js"}
+	);
+	head.ready(["zepto"], function(){
+		head.js( './js/lazyload_img.js' );
+	});
+</script>
+</body>
+</html>

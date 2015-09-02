@@ -1,0 +1,190 @@
+
+[2015-08-13 16:50:48]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 64:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://vapi1.dev.hogesoft.com/admin/vod_config.php?format=json&a=getDefaultWater&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=3aa2a36810f2ff98c44d2247baff6a9f
+
+[2015-08-13 16:50:48]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 64:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'a' => 'getDefaultWater',
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '3aa2a36810f2ff98c44d2247baff6a9f',
+)
+
+[2015-08-13 16:50:48]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 64:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 321:array (
+  'url' => 'http://vapi1.dev.hogesoft.com/admin/vod_config.php?format=json&a=getDefaultWater&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=3aa2a36810f2ff98c44d2247baff6a9f',
+  'content_type' => NULL,
+  'http_code' => 0,
+  'header_size' => 0,
+  'request_size' => 0,
+  'filetime' => -1,
+  'ssl_verify_result' => 0,
+  'redirect_count' => 0,
+  'total_time' => 0.000205,
+  'namelookup_time' => 2.0000000000000002E-5,
+  'connect_time' => 0,
+  'pretransfer_time' => 0,
+  'size_upload' => 0,
+  'size_download' => 0,
+  'speed_download' => 0,
+  'speed_upload' => 0,
+  'download_content_length' => -1,
+  'upload_content_length' => -1,
+  'starttransfer_time' => 0,
+  'redirect_time' => 0,
+  'redirect_url' => '',
+  'primary_ip' => '',
+  'certinfo' => 
+  array (
+  ),
+  'primary_port' => 0,
+  'local_ip' => '',
+  'local_port' => 0,
+)
+
+[2015-08-13 17:00:44]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 64:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://vapi1.dev.hogesoft.com/admin/vod_config.php?format=json&a=getDefaultWater&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=3aa2a36810f2ff98c44d2247baff6a9f
+
+[2015-08-13 17:00:44]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 64:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'a' => 'getDefaultWater',
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '3aa2a36810f2ff98c44d2247baff6a9f',
+)
+
+[2015-08-13 17:00:44]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 64:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 327:[{"water_default":"http:\/\/img.dev.hogesoft.com:233\/material\/mediaserver\/img\/160x\/2014\/11\/20141110150548FpmK.png"}]
+
+[2015-08-13 17:00:53]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 64:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://vapi1.dev.hogesoft.com/admin/vod_config.php?format=json&a=getDefaultWater&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=3aa2a36810f2ff98c44d2247baff6a9f
+
+[2015-08-13 17:00:53]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 64:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'a' => 'getDefaultWater',
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '3aa2a36810f2ff98c44d2247baff6a9f',
+)
+
+[2015-08-13 17:00:54]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 64:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 327:[{"water_default":"http:\/\/img.dev.hogesoft.com:233\/material\/mediaserver\/img\/160x\/2014\/11\/20141110150548FpmK.png"}]
+
+[2015-08-13 17:01:07]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 64:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://vapi1.dev.hogesoft.com/admin/vod_config.php?format=json&a=getDefaultWater&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=3aa2a36810f2ff98c44d2247baff6a9f
+
+[2015-08-13 17:01:07]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 64:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'a' => 'getDefaultWater',
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '3aa2a36810f2ff98c44d2247baff6a9f',
+)
+
+[2015-08-13 17:01:07]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 64:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 321:array (
+  'url' => 'http://vapi1.dev.hogesoft.com/admin/vod_config.php?format=json&a=getDefaultWater&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=3aa2a36810f2ff98c44d2247baff6a9f',
+  'content_type' => NULL,
+  'http_code' => 0,
+  'header_size' => 0,
+  'request_size' => 0,
+  'filetime' => -1,
+  'ssl_verify_result' => 0,
+  'redirect_count' => 0,
+  'total_time' => 0.000145,
+  'namelookup_time' => 2.8E-5,
+  'connect_time' => 0,
+  'pretransfer_time' => 0,
+  'size_upload' => 0,
+  'size_download' => 0,
+  'speed_download' => 0,
+  'speed_upload' => 0,
+  'download_content_length' => -1,
+  'upload_content_length' => -1,
+  'starttransfer_time' => 0,
+  'redirect_time' => 0,
+  'redirect_url' => '',
+  'primary_ip' => '',
+  'certinfo' => 
+  array (
+  ),
+  'primary_port' => 0,
+  'local_ip' => '',
+  'local_port' => 0,
+)
+
+[2015-08-13 17:04:42]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 64:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://vapi1.dev.hogesoft.com/admin/vod_config.php?format=json&a=getDefaultWater&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=3aa2a36810f2ff98c44d2247baff6a9f
+
+[2015-08-13 17:04:42]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 64:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'a' => 'getDefaultWater',
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '3aa2a36810f2ff98c44d2247baff6a9f',
+)
+
+[2015-08-13 17:04:42]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 64:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 327:[{"water_default":"http:\/\/img.dev.hogesoft.com:233\/material\/mediaserver\/img\/160x\/2014\/11\/20141110150548FpmK.png"}]
+
+[2015-08-13 17:05:25]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 64:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://vapi1.dev.hogesoft.com/admin/vod_config.php?format=json&a=getDefaultWater&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=3aa2a36810f2ff98c44d2247baff6a9f
+
+[2015-08-13 17:05:25]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 64:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'a' => 'getDefaultWater',
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '3aa2a36810f2ff98c44d2247baff6a9f',
+)
+
+[2015-08-13 17:05:25]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 64:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 327:[{"water_default":"http:\/\/img.dev.hogesoft.com:233\/material\/mediaserver\/img\/160x\/2014\/11\/20141110150548FpmK.png"}]

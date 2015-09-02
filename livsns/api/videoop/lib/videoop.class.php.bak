@@ -1,0 +1,150 @@
+<?php
+
+class videoop
+{
+   
+    protected $id;
+    protected $db;
+    protected $tableName;
+    protected $relationMap = array();
+    protected $hasModifiedProperties = array();   
+    protected $hasLoaded;
+    protected $forDelete = false;
+    
+    private $title;
+    private $siteId;
+    private $columnIds;
+    private $email;
+    private $updatePeri;
+    private $numberInclude;
+    private $videoopXmlDir;
+    private $videoopXmlFilename;
+    
+    public function __construct($db, $id='') {
+        $this->db = $db;
+        $this->tableName = $this->defineTableName();
+        $this->relationMap = $this->defineRelationMap();
+        if ($id) {
+            $this->id = $id;
+        }
+        $this->hasLoaded = false;
+        $this->hasModifiedProperties = array();
+    }
+    
+    public function defineTableName() {
+        return 'videoop';
+    }
+    
+    public function defineRelationMap() {
+        return array(
+            'id'                    => 'id',
+            'title'                 => 'title',
+            'site_id'                => 'siteId',
+            'column_ids'             => 'columnIds',
+            'email'                 => 'email',
+            'update_peri'            => 'updatePeri',
+            'number_include'         => 'numberInclude',
+            'videoop_xml_dir'         => 'videoopXmlDir',
+            'videoop_xml_filename'    => 'videoopXmlFilename',
+        );
+    }
+    
+    public function __get($propertyName) {
+        if (!property_exists($this, $propertyName)) {
+            throw new Exception("property is not exists!");            
+        }
+        if (!$this->hasLoaded) {
+            $this->load();
+        }
+        if (method_exists($this, 'get' . $propertyName)) {
+            call_user_func(array($this, 'get' . $propertyName));
+        }
+        else {
+            return $this->$propertyName;
+        }
+    }
+    
+    public function __set($propertyName, $propertyValue) {
+        if (!property_exists($this, $propertyName)) {
+            throw new Exception('unvailable property!');
+        }
+        if (method_exists($this, 'set' . $propertyName)) {
+            call_user_func(array($this, 'set' . $propertyName));
+        } else {
+           $this->$propertyName = $propertyValue;
+           $this->hasModifiedProperties[$propertyName] = $propertyValue;    
+        }
+    }
+    
+    public function save()
+    {
+        $data = array();
+        foreach ($this->relationMap as $key => $value) {
+            if (array_key_exists($value, $this->hasModifiedProperties)) {
+                $data[$key] = $this->$value;
+            }
+        }
+        if ($this->id) {
+            $this->db->update_data($data, $this->tableName, ' id = ' . $this->id);
+        } else {
+            $this->db->insert_data($data, $this->tableName);
+            $this->id = $this->db->insert_id();
+        }         
+    }
+    
+    public function load()
+    {
+        if ($this->id) {
+            $sql = "SELECT ";
+            if (is_array($this->relationMap) && count($this->relationMap) > 0) {
+                $fields = array_keys($this->relationMap);
+                $sql .= implode(',', $fields);
+            } else {
+                $sql .= 'id ';
+            }
+            $sql .= " FROM " .DB_PREFIX. $this->tableName . " WHERE id = " . $this->id;
+            $ret = $this->db->query_first($sql);
+            if ($ret) {
+                foreach ($ret as $key => $value) {
+                    $property = $this->relationMap[$key];
+                    if (property_exists($this, $property)) {
+                        $this->$property = $value;
+                    }
+                }
+            }
+            $this->hasLoaded = true;
+        }
+    }
+
+    public function detail()
+    {
+        if ($this->id) {
+            if (!$this->hasLoaded) {
+                $this->load();
+            }
+            $info = array();
+            foreach ($this->relationMap as $key => $value) {
+                $info[$key] = $this->$value;
+            }
+            return $info;
+        }
+        return array();
+    }
+    
+    public function makeForDelete()
+    {
+        $this->forDelete = true;
+    }
+    
+    public function __destruct() {
+        if ($this->id) {
+            if ($this->forDelete == true) {
+                $sql = "DELETE FROM " .DB_PREFIX . $this->tableName . " WHERE id = " . $this->id;
+                $this->db->query($sql);
+            }
+        }
+    }
+    
+}
+
+?>

@@ -1,0 +1,17 @@
+CACHE MANIFEST
+#VERSION 0.1
+#20150626-001
+CACHE:
+	{liv_assist_url}/js/sea.js
+	{liv_assist_url}/js/zepto.min.js
+	{liv_assist_url}/js/spin.min.js
+	{liv_assist_url}/js/package.js
+	{liv_assist_url}/js/views.js
+	{liv_assist_url}/css/common.css
+	{liv_assist_url}/css/views.css
+	{liv_assist_url}/images/imgdefault.png
+ 	{liv_assist_url}/images/vote.png
+ 	{liv_assist_url}/images/arrow.png
+ 
+NETWORK:
+ 	*

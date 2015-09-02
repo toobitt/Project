@@ -1,0 +1,29 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,select,p,blockquote,th,td{margin:0;padding:0}
+body{font:100 12px "Open Sans",Arial,"Hiragino Sans GB","Microsoft YaHei","微软雅黑","STHeiti","WenQuanYi Micro Hei",SimSun,sans-serif; background:#efefef; color:#888; }
+li{list-style:none}
+.page{background-color:#efefef; }
+.m2o-overflow{overflow:hidden; white-space: nowrap; text-overflow:ellipsis; }
+.clear{overflow:visible;}
+.clear:after{clear: both; content: '.';display: block;visibility:hidden;height:0;}
+
+.hide{display:none!important; }
+
+.content-block{margin:0; }
+p{margin:0; }
+.button{border:none; color:#fff; border-radius:3px; }
+
+.navbar{background-color:#fff; border-bottom-color:#ccc; }
+.navbar .center{color:#2f8dd4; font-size:20px; }
+.navbar a.goCredit{color:#2f8dd4; font-size:14px; }
+.content-block{color:#888; }
+
+/* 盒模型 */
+.m2o-flex{display:-webkit-box;width:auto;display:-ms-flexbox;}
+.m2o-flex-center{-webkit-box-align:center;-ms-flex-align: center;}
+.m2o-flex-end{-webkit-box-align:end;-ms-box-align:end;box-align:end;}
+.m2o-flex-start{-webkit-box-align:start;-ms-box-align:end;box-align:start;}
+.m2o-flex-one{-webkit-box-flex:1;-ms-flex:1;}
+.m2o-flex-two{-webkit-box-flex:2;-ms-flex:2;}
+.m2o-vertical{-webkit-box-orient:vertical;-ms-flex-direction:column;}
+.m2o-flex-overflow{flex-wrap:wrap;}
+

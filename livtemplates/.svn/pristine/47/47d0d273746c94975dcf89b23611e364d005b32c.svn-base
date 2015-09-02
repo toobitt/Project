@@ -1,0 +1,15 @@
+@charset "utf-8";
+.group-paixu{width:50px;}
+.group-cz{width:150px;}
+.group-cz2{width:200px;}
+.group-tz{width:80px;}
+.group-ht{width:50px;}
+.group-jm{width:60px}
+.group-lx{width:50px;}
+.group-zt{width:50px;}
+.group-tjr{width:150px;}
+
+.group-role{width:240px!important; text-align:center!important}
+.group-apply{width:100px!important; text-align:center!important}
+.group-manger{ width:240px!important; text-align:center!important}
+.group-ctime{width:120px!important; text-align:center!important}

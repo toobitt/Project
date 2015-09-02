@@ -1,0 +1,103 @@
+.m2o-flex{
+    display:-webkit-box;
+    display:-moz-box;
+    display:box;
+
+    width:100%;
+}
+.m2o-flex-center{
+    -webkit-box-align:center;
+    -moz-box-align:center;
+    box-align:center;
+}
+.m2o-flex-one{
+    -webkit-box-flex:1;
+    -moz-box-flex:1;
+    box-flex:1;
+}
+.m2o-flex-two{
+    -webkit-box-flex:2;
+    -moz-box-flex:2;
+    box-flex:2;
+}
+body{height:auto;overflow:auto;background:url({$RESOURCE_URL}menu2013/body-bg.png) repeat #f3f3f3!important;}
+
+.m2o-header{width:100%;height:35px;padding:25px 0 20px 0;background:url({$RESOURCE_URL}menu2013/shadow-xia-bg.png) left bottom repeat-x #f9f9f9;}
+.m2o-inner{width:1210px;margin:0 auto;}
+.m2o-item{padding:10px 15px;border-bottom:1px solid #e7e7e7;}
+.m2o-item:hover{background:#f2f2f2;}
+.m2o-item .title{width:60px;display:inline-block;color:#9f9f9f;}
+.m2o-item .down_list{display:inline-block;}
+.m2o-m{margin:0 15px;}
+.m2o-m .m2o-item{padding:10px;border-bottom:none;}
+.m2o-m .m2o-item:hover{background:none;}
+.m2o-m .title{width:auto;}
+.m2o-l{width:220px;}
+.m2o-r{width:250px;position:relative;}
+.m2o-main{margin-top:15px;margin-bottom:15px;}
+.m2o-main .m2o-l, .m2o-main .m2o-r{background:#f9f9f9;padding:10px;}
+.m2o-main .m2o-m{min-height:400px;background:#fff;padding:10px;margin-right:0;}
+
+
+/*form 组件*/
+.m2o-m-title{width:100%;height:36px;line-height:36px;background:transparent;border:0;border-bottom:2px solid transparent;font-size:22px;text-align:center;}
+.m2o-m-title:hover,.m2o-m-title:focus{box-shadow:none;border:0;border-bottom:2px solid transparent;}
+.m2o-m-title:focus{border-bottom-color:#000;}
+.m2o-save{cursor:pointer;position:absolute;right:44px;height:34px;padding:0 30px;line-height:30px;color:#fff;font-size:16px;border:none;background:url({$RESOURCE_URL}menu2013/form/form-button-blue.png) repeat-x;border-radius:2px;}
+.m2o-save:hover{border:0;background-image:url({$RESOURCE_URL}menu2013/form/form-button-blue-hover.png);}
+.m2o-close{cursor:pointer;display:block;float:right;width:34px;height:34px;background:url({$RESOURCE_URL}menu2013/form/close.png) no-repeat center center,url({$RESOURCE_URL}menu2013/form/form-button-gray.png) repeat-x;border-radius:2px;font-size:0;}
+.m2o-close:hover{background:url({$RESOURCE_URL}menu2013/form/close.png) no-repeat center center,url({$RESOURCE_URL}menu2013/form/form-button-gray-hover.png) repeat-x;}
+.m2o-channel-btn{display:inline-block;padding:0 16px;height:24px;background:#5B5B5B;color:white;text-align:center;line-height:24px;border-radius:2px;cursor:pointer;}
+.m2o-channel-btn:hover{background-color:#4b4b4b;}
+
+/*switch radio*/
+.m2o-item input[type="radio"]{display:none;}
+.common-switch{left:2px;display:inline-block;top:0;vertical-align:middle;}
+.m2o-l .m2o-item .down_list{display:inline-block;}
+.common-publish-button{color:#9f9f9f;display:inline-block;max-width:200px;}
+
+.channel-toggle{display:none;margin:10px 0 0 40px;}
+.channel-list-box ul{margin-top:5px;}
+.channel-list-box li{margin-bottom:3px;cursor:pointer;}
+.channel-list-box .name{padding-right:14px;}
+.channel-list-box .list{width:140px;padding:10px 16px;background:#f2f2f2;margin-right:10px;}
+.channel-list-box .program-list{width:250px;}
+.channel-list-box .plan-list{width:360px;}
+
+/*时间选择*/
+.ohms-box{position:absolute;left:0;top:0;z-index:10000;width:205px;box-sizing:border-box;-webkit-box-sizing:border-box;
+	border:2px solid #7a7a7a;padding:10px 15px;background:#4c4c4c;}
+.ohms-inputs, .ohms-sliders{margin-bottom:15px;}
+.ohms-inputs{height:27px;text-align:center;}
+.ohms-input{width:43px;height:27px;background:#7f7f7f;color:#fff;padding:0;margin:0;border:none !important;text-align:center;}
+.ohms-input:focus, .ohms-input.on{background:#fff;color:#000;outline:none;box-shadow:none;}
+.ohms-mao{display:inline-block;width:17px;color:#b7b7b7;}
+.ohms-slider{display:none;height:7px;}
+.ohms-slider:first-child{display:block;}
+.ohms-slider .ui-slider-handle{width:18px;height:18px;border-radius:9px;top:-6px;margin-left:-9px;border:none;background:#72aef6;}
+.ohms-options{clear:both;margin-top:10px;text-align:center;}
+.ohms-ok{margin-right:10px;}
+
+/*common button*/
+.common-button-group a{display:inline-block;height:28px;margin-left:5px;padding:0 15px;line-height:28px;color:#fff;background-repeat:repeat-x;border-radius:2px;cursor:pointer;}
+.common-button-group .blue{background-image:url("{$RESOURCE_URL}split/small-blue.jpg");}
+.common-button-group .gray{background-image:url("{$RESOURCE_URL}split/small-gray.jpg");}
+.common-button-group .blue:hover{background-image:url("{$RESOURCE_URL}split/small-blue-hover.jpg");}
+.common-button-group .gray:hover{background-image:url("{$RESOURCE_URL}split/small-gray-hover.jpg");}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2) {
+    body{background-image:url({$RESOURCE_URL}menu2013/body-bg-2x.png)!important;background-size:6px 6px!important;}
+    .m2o-header{background-image:url({$RESOURCE_URL}menu2013/shadow-xia-bg-2x.png);background-size:2px 5px;}
+    .m2o-save{background-image:url({$RESOURCE_URL}menu2013/form/form-button-blue-2x.png);background-size:2px 34px;}
+    .m2o-save:hover{background-image:url({$RESOURCE_URL}menu2013/form/form-button-blue-hover-2x.png);background-size:2px 34px;}
+    .m2o-close{background-image:url({$RESOURCE_URL}menu2013/form/close-2x.png),url({$RESOURCE_URL}menu2013/form/form-button-gray-2x.png);background-size:22px 21px,2px 34px;}
+    .m2o-close:hover{background-image:url({$RESOURCE_URL}menu2013/form/close-2x.png),url({$RESOURCE_URL}menu2013/form/form-button-gray-hover-2x.png);background-size:22px 21px,2px 34px;}
+	.common-button-group .blue{background-image:url({$RESOURCE_URL}split/small-blue-2x.jpg);background-size:2px 28px;}
+    .common-button-group .gray{background-image:url({$RESOURCE_URL}split/small-gray-2x.jpg);background-size:2px 28px;}
+    .common-button-group .blue:hover{background-image:url({$RESOURCE_URL}split/small-blue-hover-2x.jpg);background-size:2px 28px;}
+    .common-button-group .gray:hover{background-image:url({$RESOURCE_URL}split/small-gray-hover-2x.jpg);background-size:2px 28px;}
+}

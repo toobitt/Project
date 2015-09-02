@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="yes" name="apple-touch-fullscreen" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<link rel="apple-touch-icon-precomposed" href="" />
+<link rel="stylesheet" href="css/common.css" type="text/css" />
+<link rel="stylesheet" href="css/road.css" type="text/css" />
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/gmu.js"></script>
+
+<title>无线城市</title>
+</head>
+<body class="theme-">
+<header class="m2o-header">
+	<div class="m2o-nav">
+		<aside class="m2o-nav-left">
+			<a class="m2o-nav-icon modules"  href="#">&nbsp;</a>
+		</aside>
+		<aside class="m2o-nav-right">
+			<a class="m2o-nav-icon avatar"  href="#">&nbsp;</a>
+		</aside>
+		<h1 class="m2o-nav-title">路况</h1>
+	</div>
+</header>
+<div class="subnav m2o-flex">
+	<a class="item m2o-flex-one " href="road_all.html">全部</a>
+	<a class="item m2o-flex-one " href="road_accident.html">事故</a>
+	<a class="item m2o-flex-one selected" href="road_congestion.html">拥堵</a>
+	<a class="item m2o-flex-one " href="road_construct.html">施工</a>
+	<a class="item m2o-flex-one " href="road_regulate.html">管制</a>
+	<a class="item m2o-flex-one " href="road_other.html">其他</a>
+</div>
+<div class="main-wrap road">
+	<ul class="road-list">
+		<li class="road-item">
+			<div class="info">
+				<h3 class="title"><a href="#">新华路锡义路两车相擦；</a><span>（@无锡交通广播）</span></h3>
+			</div>
+			<div class="detail">
+				<span class="type congestion">拥堵</span>
+				<span class="ntime">08:48</span>
+			</div>
+		</li>
+		<li class="road-item">
+			<div class="info">
+				<h3 class="title"><a href="#">兴园路永乐东路不到往火车站方向两起追尾事故。</a><span>（@无锡交通广播）</span></h3>
+			</div>
+			<div class="detail">
+				<span class="type congestion">拥堵</span>
+				<span class="ntime">08:29</span>
+			</div>
+		</li>
+		<li class="road-item">
+			<div class="info">
+				<h3 class="title"><a href="#">锡曾路锡沪路进城方向小车和电动车相撞。</a><span>（@无锡交通广播）</span></h3>
+			</div>
+			<div class="detail">
+				<span class="type congestion">拥堵</span>
+				<span class="ntime">08:23</span>
+			</div>
+		</li>
+		<li class="road-item">
+			<div class="info">
+				<h3 class="title"><a href="#">北环路转312国道车流量大；</a><span>（@无锡交通广播）</span></h3>
+			</div>
+			<div class="detail">
+				<span class="type congestion">拥堵</span>
+				<span class="ntime">08:03</span>
+			</div>
+		</li>
+		<li class="road-item">
+			<div class="info">
+				<h3 class="title"><a href="#">惠山隧道往万达方向车多缓行；</a><span>（@无锡交通广播）</span></h3>
+			</div>
+			<div class="detail">
+				<span class="type congestion">拥堵</span>
+				<span class="ntime">08:02</span>
+			</div>
+		</li>		
+	</ul>
+	</div>
+</body>
+</html>

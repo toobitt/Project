@@ -1,0 +1,5 @@
+.more-item{font-size:2em;height:3em;line-height:3em;border-bottom:1px solid #d9d9d9;}
+.more-item a{color:#333;}
+.more-item .app-icon{float:left;margin:0 0.5em;width:1.5em;height:3em;background:url(../images/personal/icon_collect.png) no-repeat center;}
+.more-item .app-icon.weather{background-image:url(../images/personal/icon_weather.png);}
+.more-item .app-icon.vote{background-image:url(../images/personal/icon_recommend.png);}

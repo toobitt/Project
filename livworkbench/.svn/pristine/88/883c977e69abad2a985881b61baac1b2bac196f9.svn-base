@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=480,initial-scale=1,maximum-scale=1,user-scalable=0,target-densitydpi=high-dpi" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="yes" name="apple-touch-fullscreen" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<link rel="apple-touch-icon-precomposed" href="" />
+
+<link rel="stylesheet" href="./css/framework7.min.css" type="text/css">
+<link rel="stylesheet" href="./css/common.css" type="text/css" />
+<link rel="stylesheet" href="./css/picture.css" type="text/css"/>
+<title>图片</title>
+</head>
+<body>
+	<div class="views">
+		<div class="view view-main" data-page="tabs">
+			<div class="navbar">
+				<div class="navbar-inner">
+	          		<div class="center sliding">图片</div>
+	          	</div>
+		    </div>
+		    <div class="pages navbar-through">
+		    	<div data-page="tabs" class="page">
+		    		<div class="page-content infinite-scroll">
+		    			<div class="pull-to-refresh-content">
+				  			<div class="pull-to-refresh-layer">
+				  				<div class="preloader"></div>
+				  				<div class="pull-to-refresh-arrow"></div>
+							</div>
+							<div class="tabs"></div>
+				  		</div>
+	    			</div>
+		    	</div>
+	    	</div>
+    	</div>
+	</div>
+<script type="text/javascript" src="./js/zepto.min.js"></script>
+<script type="text/javascript" src="./js/template.js"></script>
+<script type="text/javascript" src="./js/framework7.min.js"></script>
+<script type="text/javascript" src="./js/picture/tool.js"></script>
+<script type="text/javascript" src="./js/picture/picture.js"></script>
+</body>
+</html>

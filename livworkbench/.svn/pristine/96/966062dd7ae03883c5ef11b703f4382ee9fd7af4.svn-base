@@ -1,0 +1,123 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="yes" name="apple-touch-fullscreen" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<link rel="apple-touch-icon-precomposed" href="" />
+<link rel="stylesheet" href="css/gmu.css" type="text/css"/>
+<link rel="stylesheet" href="css/bae.css" type="text/css"/>
+<link rel="stylesheet" href="css/common.css" type="text/css" />
+<link rel="stylesheet" href="css/subway.css" type="text/css" />
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<title>地铁</title>
+</head>
+<body>
+	<div class="first-body transition" _attr="1">
+		<div data-role="bae_header" class="ui-bae-header">
+			<div class="ui-bae-header-list">
+				<div class="ui-bae-header-left">
+					<a href="javascript:history.back()" data-role="bae_header_button" class="ui-bae-go-back"></a>
+				</div>西漳站 
+			</div>
+			<ul class="ui-bae-color-line"> 
+				<li>&nbsp;</li>  <li>&nbsp;</li> <li>&nbsp;</li> <li>&nbsp;</li> <li>&nbsp;</li> 
+			</ul>
+		</div>
+		<div class="route-info fontsize24">1号线 堰桥站 - 长广溪站</div>
+		<div class="detail-wrap">
+			<header class="subnav route-subnav ui-navigator" style="overflow: hidden;">
+				<div class="ui-scroller" >
+					<ul class="ui-navigator-list">
+						<li class="route-terminal">
+							<a class="m2o-overflow fontsize24">往<span class="aim">堰桥站</span></a>
+						</li>
+						<li class="route-terminal selected ui-state-active">
+							<a class="m2o-overflow">往<span class="aim">长广溪站</span></a>
+						</li>
+					</ul>
+				</div>
+			</header>
+			<div class="route-detail">
+				<div class="route-list-wrap">
+					<ul class="route-list">
+						<a class="item-station m2o-flex m2o-flex-center" href="platform.html">
+							<div class="icons">
+								<span class="icon_spot_line2">&nbsp; </span>
+							</div>
+							<div class="station-name m2o-flex-one">
+								<div class="fontsize24">长广溪站</div>
+								<span class="fontsize14">Changeguangxi</span>
+							</div>
+							<div class="icons">
+								<span class="toilet">&nbsp; </span>
+							</div>
+							<div class="detail">
+								<span class="fontsize20">06:29/21:31</span>
+							</div>
+							<div class="icons">
+								<span class="arrow">&nbsp; </span>
+							</div>
+						</a>
+						<a class="item-station m2o-flex m2o-flex-center" href="platform.html">
+							<div class="icons">
+								<span class="icon_spot_line2">&nbsp; </span>
+							</div>
+							<div class="station-name m2o-flex-one">
+								<div class="fontsize24">长广溪站</div>
+								<span class="fontsize14">Changeguangxi</span>
+							</div>
+							<div class="icons">
+								<span class="toilet">&nbsp; </span>
+							</div>
+							<div class="detail">
+								<span class="fontsize20">06:29/21:31</span>
+							</div>
+							<div class="icons">
+								<span class="arrow">&nbsp; </span>
+							</div>
+						</a>
+						<a class="item-station m2o-flex m2o-flex-center">
+							<div class="icons">
+								<span class="icon_spot_line2">&nbsp; </span>
+							</div>
+							<div class="station-name m2o-flex-one">
+								<div class="fontsize24">民丰</div>
+								<span class="fontsize14">mingfeng</span>
+							</div>
+							<div class="icons">
+								<span class="toilet">&nbsp; </span>
+							</div>
+							<div class="detail">
+								<span class="fontsize20">06:29/21:31</span>
+							</div>
+							<div class="icons">
+								<span class="arrow">&nbsp; </span>
+							</div>
+						</a>
+						<li class="item-station m2o-flex m2o-flex-center">
+							<div class="icons">
+								<span class="icon_spot_line2">&nbsp; </span>
+							</div>
+							<div class="station-name m2o-flex-one">
+								<div class="fontsize24">无锡火车站</div>
+								<span class="fontsize14">Wuxi Railway Station</span>
+							</div> 
+							<div class="icons">
+								<span class="toilet">&nbsp; </span>
+							</div>
+							<div class="detail">
+								<span class="fontsize20">06:29/21:31</span>
+							</div>
+							<div class="icons">
+								<span class="arrow">&nbsp; </span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

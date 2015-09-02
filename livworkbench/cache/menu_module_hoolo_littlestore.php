@@ -1,0 +1,1 @@
+<?php exit; ?>a:1:{i:264;a:12:{s:2:"id";s:3:"264";s:9:"module_id";s:3:"510";s:12:"app_uniqueid";s:17:"hoolo_littlestore";s:12:"include_apps";s:17:"hoolo_littlestore";s:12:"mod_uniqueid";s:15:"littlestore_cat";s:4:"name";s:12:"小店分类";s:3:"url";s:15:"run.php?mid=510";s:9:"father_id";s:3:"257";s:5:"class";s:0:"";s:5:"close";s:1:"0";s:8:"order_id";s:1:"2";s:5:"index";s:1:"0";}}

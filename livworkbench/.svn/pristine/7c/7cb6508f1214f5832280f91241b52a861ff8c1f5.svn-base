@@ -1,0 +1,18 @@
+/* 内容-文稿 */
+.content{padding:0 5px;}
+.content h1{font-size:2.3em;line-height:1.5;margin:5px 0;color:#3b3b3b;}
+.content h5{color:#888;font-size:1.5em;}
+.content .media-box{position:relative;margin:10px 0 5px;width:100%;}
+.content .media-box img{width:100%;height:100%;}
+.content article{font-size:1.4em;line-height:1.8;text-indent:2em;}
+.content article .name{margin-right:1em;}
+
+/* 内容-图集 */
+.tuji{height:100%;}
+.tuji .tuji-bg{width:100%;height:100%;}
+.tuji .intro{padding:5em 1em 0.5em 1em;position:fixed;bottom:0;left:0;right:0;background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1));color:#fff;}
+.tuji .intro h4{font-size:2em;line-height:1.8;margin-bottom:5px;}
+.tuji .intro .page{float:right;font-size:0.8em;line-height:2.2;}
+.tuji .intro p{margin-bottom:1em;font-size:1.4em;line-height:1.8;max-height:5em;overflow:hidden;}
+
+

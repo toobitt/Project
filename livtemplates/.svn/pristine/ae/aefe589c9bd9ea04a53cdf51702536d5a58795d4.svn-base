@@ -1,0 +1,103 @@
+@CHARSET "UTF-8";
+body { 
+font: normal 11px auto "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif; 
+color: #4f6b72;
+}
+
+#mytable { 
+width: 100%; 
+padding: 0; 
+margin: 0; 
+} 
+
+caption { 
+padding: 0 0 5px 0; 
+width: 700px; 
+font: italic 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif; 
+text-align: right; 
+} 
+
+th { 
+font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif; 
+color: #4f6b72; 
+border-right: 1px solid #C1DAD7; 
+border-bottom: 1px solid #C1DAD7; 
+border-top: 1px solid #C1DAD7; 
+letter-spacing: 2px; 
+text-transform: uppercase; 
+text-align: left; 
+padding: 6px 6px 6px 12px; 
+background: #CAE8EA no-repeat; 
+} 
+/*power by www.winshell.cn*/ 
+th.nobg { 
+border-top: 0; 
+border-left: 0; 
+border-right: 1px solid #C1DAD7; 
+background: none; 
+} 
+
+td { 
+border-right: 1px solid #C1DAD7; 
+border-bottom: 1px solid #C1DAD7; 
+background: #fff; 
+font-size:11px; 
+padding: 6px 6px 6px 12px; 
+color: #4f6b72; 
+} 
+/*power by www.winshell.cn*/ 
+
+td.alt { 
+background: #F5FAFA; 
+color: #797268; 
+} 
+
+th.spec { 
+border-left: 1px solid #C1DAD7; 
+border-top: 0; 
+background: #fff no-repeat; 
+font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif; 
+} 
+
+th.specalt { 
+border-left: 1px solid #C1DAD7; 
+border-top: 0; 
+background: #f5fafa no-repeat; 
+font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif; 
+color: #797268; 
+} 
+/*---------for IE 5.x bug*/ 
+html>body td{ font-size:11px;} 
+body,td,th { 
+font-family: 宋体, Arial; 
+font-size: 12px; 
+}
+
+.float_tp{width:125px;height:90px;left:0px;top:0px;position:absolute;display:none;}
+.float_tp div{width:100%;color:#000000;text-align:center;line-height:30px;border:1px solid black;cursor:pointer;background:#cae8ea;}
+.float_tp div:hover{width:100%;color:#ffffff;text-align:center;line-height:30px;border:1px solid black;cursor:pointer;background:#6ba5d9;}
+.add_onelist{background:url('{$RESOURCE_URL}/chg_plan_add_del.png') -3px -3px no-repeat;width:20px;height:20px;cursor:pointer;}
+.remove_onelist{background:url('{$RESOURCE_URL}/chg_plan_add_del.png') -23px -3px no-repeat;width:20px;height:20px;cursor:pointer;}
+tr td .c1{width:20px;height:5px;background:#128d49;}
+tr td .c2{width:20px;height:5px;background:#ca0000;}
+tr td .c3{width:20px;height:5px;background:#0066ff;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

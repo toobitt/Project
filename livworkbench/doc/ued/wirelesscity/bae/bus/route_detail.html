@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="yes" name="apple-touch-fullscreen" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<link href="./css/bae.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="./css/common.css" type="text/css" />
+<link rel="stylesheet" href="./css/bus.css" type="text/css" />
+<script type="text/javascript" src="./js/jquery.js"></script>
+<script type="text/javascript" src="./js/bae_progressbar.js"></script>
+<script type="text/javascript" src="./js/bae_header.js"></script>
+<script type="text/javascript" src="./js/bae_radio.js"></script>
+<script type="application/javascript" src="./js/iscroll.js"></script>
+<script type="text/javascript" src="./js/hg_scroll.js"></script>
+<script type="text/javascript" src="./js/jquery.tmpl.min.js"></script>
+<title>公交</title>
+</head>
+<body style="background:#fafafa;">
+	<div data-role="bae_header" data-event="javascript:history.go(-1);">56环形</div>
+	<div class="route-detail">
+		<div class="subnav m2o-flex">
+			<a class="item m2o-flex-one selected">开往<span class="blue">金城桥</span></a>
+			<a class="item m2o-flex-one">开往<span class="blue">新会花园</span></a>
+		</div>
+		<div class="route-info">
+			<p>首末班车:无锡中央车站 发出 6:00-21:00</p>
+			<p>公交车距离最近站<span class="red">运河饭店</span>还有<span class="red">5站</span></p>
+		</div>
+		<div id="wrapper" class="wrapper">
+			<div class="scroll">
+
+			</div>
+		</div>
+		<a class="bus-map-icon map" href="./route_map.html"></a>
+	</div>
+</body>
+<script type="text/javascript">
+$(function(){
+	$.getJSON('./json/route.php?a=detail',function(json){
+		$('#route-item-tpl').tmpl(json).appendTo('.scroll');
+		$.hg_scroll();
+	});
+});
+</script>
+<script type="text/x-jquery-tmpl" id="route-item-tpl">
+<div class="item m2o-flex">
+	<div class="icons m2o-flex m2o-flex-center">
+		<a class="icon normal"></a>
+		<a class="icon bus"></a>
+		<a class="icon g4"></a>
+		<a class="icon myloc"></a>
+	</div>
+	<div class="detail m2o-flex m2o-flex-center">
+		<div>
+			<p class="station-name red">${name}</p>
+			<p class="station-time red">到站时间:${time}</p>
+		</div>
+	</div>
+</div>
+</script>
+</html>

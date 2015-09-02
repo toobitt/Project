@@ -1,0 +1,104 @@
+<?php
+define('MOD_UNIQUEID','special_publish');
+require_once('global.php');
+require_once(ROOT_PATH.'lib/class/publishcontent.class.php');
+require_once(ROOT_PATH.'lib/class/publishplan.class.php');
+require(ROOT_PATH . 'frm/publish_interface.php');
+class SummaryPublish extends adminUpdateBase implements publish
+{
+	/**
+	 * 构造函数
+	 */
+	public function __construct()
+	{
+		parent::__construct();
+	}
+
+	public function __destruct()
+	{
+		parent::__destruct();
+	}
+	
+	public function create(){}
+	public function update(){}
+	public function delete(){}
+	public function audit(){}
+	public function sort(){}
+	public function publish(){}		
+	public function get_content()
+	{
+		$id = intval($this->input['from_id']);
+		$offset = $this->input['offset'] ? intval($this->input['offset']) : 0;
+		$num = $this->input['num'] ? intval($this->input['num']) : 10;
+		
+		$data_limit = ' LIMIT ' . $offset . ' , ' . $num;
+		
+		$sql = "select * from " . DB_PREFIX . "special where 1 and id=".$id;
+		$article_info = $this->db->query_first($sql);
+		
+		
+		$sql = "SELECT * FROM " . DB_PREFIX ."special_summary where 1 and special_id=" . $id ." and expand_id = '' and del = 0 ". $data_limit;
+		
+		$info = $this->db->query($sql);
+		$ret = array();
+		while($row = $this->db->fetch_array($info)) 
+		{
+			$row['bundle_id'] = APP_UNIQUEID;
+			$row['module_id'] = MOD_UNIQUEID;
+			$row['struct_id'] = 'special';
+			$row['struct_ast_id'] = 'special_summary';
+			$row['expand_id'] = $article_info['expand_id'];
+			$row['content_fromid'] = $row['id'];
+			$row['indexpic'] = 'index.php';
+			$row['ip'] = hg_getip();
+			$row['user_id'] = $this->user['user_id'];
+			$row['user_name'] = $this->user['user_name'];
+			$row['pic'] = unserialize($row['pic']);
+			unset($row['id']);
+			$ret[] = $row;
+		}
+		$this->addItem($ret);
+		$this->output();			
+	}
+ 	/**
+ 	 * 更新内容expand_id,发布内容id
+ 	 *
+ 	 */
+ 	function update_content()
+ 	{
+		$data = $this->input['data'];		
+		if(empty($data))
+		{
+			$this->errorOutput('data is empty!');
+		}
+		$sql = "UPDATE " . DB_PREFIX. "special_summary 
+				SET expand_id = " . $data['expand_id'] . " 
+				WHERE id =" . $data['from_id'];
+		$this->db->query($sql);
+		$this->addItem('true');
+		$this->output(); 		
+ 	}
+ 	
+ 	/**
+ 	 * 删除这条内容的发布
+ 	 *
+ 	 */
+ 	function delete_publish()
+ 	{
+ 		
+ 	}
+	
+	function unknow()
+	{
+		$this->errorOutput("此方法不存在！");
+	}
+}
+
+$out = new SummaryPublish();
+$action = $_INPUT['a'];
+if(!method_exists($out, $action))
+{
+	$action = 'unknow';
+}
+$out->$action(); 
+?>

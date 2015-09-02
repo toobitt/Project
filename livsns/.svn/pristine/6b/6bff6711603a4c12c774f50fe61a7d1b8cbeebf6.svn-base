@@ -1,0 +1,6 @@
+<div class="liv_verifycode liv_item">
+	<span class="cell_verifycode">
+		<input type="text" name="verifycode" placeholder="请填写验证码" value="" />
+		<img src="{cell_assist_url}{cell_verifycode_url}" onclick="this.src=this.src"/>
+	</span>
+</div>

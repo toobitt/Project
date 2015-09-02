@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="yes" name="apple-touch-fullscreen" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<link rel="apple-touch-icon-precomposed" href="" />
+<link href="./css/bae.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="./css/common.css" type="text/css" />
+<link rel="stylesheet" href="./css/bus.css" type="text/css" />
+<script type="text/javascript" src="./js/jquery.js"></script>
+<script type="text/javascript" src="./js/bae_progressbar.js"></script>
+<script type="text/javascript" src="./js/bae_header.js"></script>
+<script type="application/javascript" src="./js/iscroll.js"></script>
+<script type="text/javascript" src="./js/hg_scroll.js"></script>
+<script type="text/javascript" src="./js/jquery.tmpl.min.js"></script>
+<title>公交</title>
+</head>
+<body>
+	<div data-role="bae_header">公交</div>
+	<div class="subnav m2o-flex">
+		<a class="item m2o-flex-one selected" href="./nearby_route_failed.html">附近</a>
+		<a class="item m2o-flex-one" href="./route_search.html">线路</a>
+		<a class="item m2o-flex-one" href="./station_search.html">站点</a>
+		<a class="item m2o-flex-one" href="./interchange_search.html">换乘</a>
+		<a class="item m2o-flex-one" href="./collect_route.html">收藏</a>
+	</div>
+	<div id="wrapper" class="wrapper">
+		<div class="scroll">
+		
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+$(function(){
+	$.getJSON('./json/route.php',function(json){
+		$('#route-item-tpl').tmpl(json).appendTo('.scroll');
+		$.hg_scroll();
+	});
+	$('.wrapper').on('click','.favor',function(){
+		$(this).toggleClass('favored');
+	});
+});
+</script>
+<script type="text/x-jquery-tmpl" id="route-item-tpl">
+<div class="bus-item">
+	<div class="m2o-flex bus-info m2o-flex-center">
+		<div class="bus-base-info">
+			<a href="./route_detail.html">
+			<p class="bus-num blue">${num}</p>
+			<p class="bus-special-flag blue">${special_flag}</p>
+			</a>
+		</div>
+		<div>
+			<p class="bus-end">开往<span class="blue">${terminal}</span></p>
+			<p class="nearest">离我最近站<a href="./station_detail.html"><span class="red">${nearest}</span></a></p>
+		</div>
+	</div>
+	<div class="handle m2o-flex m2o-flex-center">
+		<p class="distance m2o-flex-one">最近一班车距离<span class="red">${distance}站</span></p>
+		<a class="btn reverse"></a>
+		<a class="btn favor"></a>
+	</div>
+</div>
+</script>
+</html>

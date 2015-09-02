@@ -1,0 +1,113 @@
+/*nav*/
+.ui-scroller, .ui-navigator-list{width:100%!important; }
+.ui-navigator-list li{width:33.3%; }
+.secondnav .ui-navigator-list li{width:25%; }
+.detail-wrap .route-subnav li{width:50%; }
+
+.tab-wrap{overflow:hidden; }
+
+/*分级选项卡*/
+.secondnav{height:43px; margin:15px 10px 0; background-color:#eee; display:block; }
+.secondnav .ui-navigator-list li{padding:0 5px; border:none; background-color:#eee; -webkit-box-sizing:border-box; }
+.secondnav .ui-navigator-list li a{background-color:#ddd; }
+.secondnav .ui-navigator-list li.ui-state-hover a, .secondnav .ui-navigator-list li.ui-state-active a{color:#fff; background-color:#3b9ac6; }
+
+/* 输入框 */
+.search-area{position:relative; margin-top:5px; }
+.common-input-box{position:relative;margin:0 auto;border-bottom:2px solid #cdcdcd;background:#fff;}
+.input-item{height:60px;border-bottom:1px solid #ddd;}
+.input-item:last-child{border:none;}
+.input-item .icon{display:block;width:20px;height:20px;margin:0 13px;}
+.input-item .input{font-size:2.4em;display:block;border: none;height: 100%;padding: 0;}
+.input-item .input:focus{outline:none;}
+.input-item .handle-btn{display:block;width:50px;height:100%; margin-right:10px; background:url() no-repeat center; cursor: pointer; background-size:50px 50px; } 
+.input-item .handle-btn.clear{background-image:url(../images/subway/textfield_clear-2x.png);}
+.input-item .handle-btn.location{background-image:url(../images/subway/textfield_location-2x.png);}
+1.input-item .handle-btn.search{background-image:url(../images/subway/textfield_search-2x.png);}
+.input-item .search-btn{display:block;width:60px;cursor:pointer;color:#fff;background:#3b9ac6;line-height:50px;font-size:16px;text-align:center;}
+
+/* 小图标 */
+.transfer-exchange-btn{position:absolute; width:40px; height:32px; top:50%; left:10px; margin-top:-18px; background:url() no-repeat center #fff; cursor: pointer; }
+.icon-station{background-image:url(../images/subway/icon_station-2x.png); background-size:20px 20px; }
+
+/*线网规划*/
+.station-fullbox{width:100%; height:100%; }
+.station-size1{width:20%; height:20%; }
+.station-size2{width:40%; height:40%; }
+.station-size3{width:60%; height:60%; }
+.station-size4{width:80%; height:80%; }
+.station-size5{width:100%; height:100%; }
+.station-fullPic, .station-fullPic img{width:100%; height:100%; }
+.pic-btns{position:fixed; bottom:50px; width:66px; }
+.pic-left{left:20px; height:210px;  }
+.pic-right{right:20px; height:67px; }
+
+.pic-btns a{display:inline-block; width:66px; height:66px; margin-bottom:1px; background-size:66px 66px; background:url() no-repeat center transparent; }
+.pic-btns a.fullpic-add{background-image:url(../images/subway/icon_add-2x.png); }
+.pic-btns a.fullpic-reduction{background-image:url(../images/subway/icon_reduction-2x.png); }
+.pic-btns a.fullpic-location{margin-top:10px; background-image:url(../images/subway/icon_location-2x.png); }
+.pic-btns a.fullpic-notice{background-image:url(../images/subway/icon_notice-2x.png); }
+
+
+
+/*表单页*/
+.platform-wrap{margin:20px 15px; }
+.item-area{margin-top:15px; display:block; }
+.item-area .title{margin-bottom:8px; color:#999; }
+
+.item-station{height:60px; margin-bottom:10px; background-color:#fff; border-bottom:1px solid #cbcbcb; }
+.item-station .icons{width:50px; text-align:center; }
+.item-station .icons span{display:inline-block; width:22px; height:22px; background:url() no-repeat center transparent; background-size:20px 20px; }
+.item-station .icons span.icon_spot_line1{background-image:url(../images/subway/icon_spot_line1-2x.png); }
+.item-station .icons span.icon_spot_line2{background-image:url(../images/subway/icon_spot_line2-2x.png); }
+.item-station .icons span.arrow{background-image:url(../images/subway/arrow-2x.png); }
+.item-station .icons span.toilet{background-image:url(../images/subway/toilet-2x.png); }
+.item-station .detail{text-align:right; margin-right:20px; }
+
+
+/*附近站点*/
+.station-area .item-station{background-color:#ffd200; border-color:#cdcdcd; }
+.station-area .detail{width:210px; color:#9d8101; }
+
+/*地铁查询*/
+.route-area .item-station{border-color:#cbcbcb}
+.route-area .mark{height:60px; width:15px; }
+.route-area .mark-line1{background-color:#c80000; }
+.route-area .mark-line2{background-color:#00b927; }
+.route-area .detail{width:180px;}
+.route-area .route{margin-left:12px; width:32px; line-height:60px; font-size:4em; }
+.route-area .station-name{line-height:20px; margin-top:8px; }
+
+
+/*线路详情*/
+.route-info{height:43px; line-height:43px; text-align:center; color:#fff; background-color:#ca1011; border-bottom:2px solid #811110; }
+.route-detail{margin:15px; }
+.route-detail .item-station{border-color:#adadad; }
+.route-detail .detail{color:#999; }
+
+/*站点详情*/
+.station-wrap{margin:15px; }
+.station-pic{text-align:center;margin-bottom:10px; }
+.station-pic img{height:190px; width:100%; }
+.station-wrap > .item-station{background-color:#ffd200; border-width:0; margin:0; }
+.station-info{background-color:#fff; border-bottom:2px solid #cbcbcb; padding-bottom:10px; }
+.station-info .title{height:50px; line-height:50px; border-bottom:1px solid #cbcbcb; margin:0 10px 10px; }
+.station-info .station-detail{margin-bottom:15px; }
+.station-info .item-station{border-width:0; height:40px; margin-bottom:0; }
+.station-info .station-name, .station-info .detail{color:#999; }
+.station-info .station-name span{margin-left:15px; }
+.station-info .detail span{margin:0 5px; }
+.station-btn{margin-top:10px; -webkit-columns-count:2; }
+.station-btn a{display:inline-block; width:48%; height:52px; line-height:52px; border-bottom:2px solid #0e709f; text-align:center; color:#fff; background-color:#3b9ac6; }
+.station-btn a:first-child{margin-right:4%; }
+
+
+
+
+
+
+
+
+
+
+

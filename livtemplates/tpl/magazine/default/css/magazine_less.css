@@ -1,0 +1,318 @@
+.magazine-list {
+  min-height: 540px;
+  padding: 8px 10px;
+}
+.magazine-list li {
+  float: left;
+  position: relative;
+  width: 150px;
+  height: 246px;
+  margin: 12px;
+}
+.magazine-list li:not(:last-child):hover .mag-img:after,
+.magazine-list li.selected .mag-img:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 150px;
+  height: 195px;
+  -webkit-box-shadow: 0 0 0 2px #000000 inset;
+  -moz-box-shadow: 0 0 0 2px #000000 inset;
+  box-shadow: 0 0 0 2px #000000 inset;
+}
+.magazine-list li:hover .period-href,
+.magazine-list li.selected .period-href {
+  background-color: #a5c73c;
+}
+.magazine-list li:hover .del {
+  display: block;
+}
+.magazine-each input {
+  display: none;
+}
+.magazine-each h4 {
+  height: 25px;
+  line-height: 25px;
+  margin-top: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.magazine-each p {
+  color: #999999;
+  margin-top: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.magazine-each p span {
+  margin-right: 5px;
+}
+.mag-img {
+  width: 150px;
+  height: 195px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.mag-img img {
+  width: 100%;
+  height: 100%;
+}
+.mag-img .newest-href {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 195px;
+  z-index: 99;
+  
+}
+.mag-img p {
+  width: 145px;
+  height: 24px;
+  line-height: 24px;
+  color: #ffffff;
+  position: absolute;
+  top: 169px;
+  left: 0;
+  z-index: 998;
+  background-color: #333333;
+  padding-left: 5px;
+}
+.mag-img .m2o-state {
+  font-style: normal;
+  cursor: pointer;
+  display: inline-block;
+  width: 43px;
+  height: 22px;
+  background-color: #ffffff;
+  text-align: center;
+  color: #000000;
+  margin-left: -3px;
+  margin-right: 2px;
+  position: relative;
+}
+.mag-img .audit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 22px;
+  margin-left: 0;
+}
+.period-href,
+.del {
+  height: 22px;
+  width: 22px;
+  position: absolute;
+  z-index: 999;
+}
+.period-href {
+  background: url("{$RESOURCE_URL}common/icon_info.png") no-repeat scroll center;
+  right: 2px;
+  top: 171px;
+}
+.del {
+  background: url("{$RESOURCE_URL}magazine/close.png") no-repeat scroll center;
+  right: -10px;
+  top: -10px;
+  display: none;
+  background-size:22px 22px; 
+}
+.mag-img.mag-noImg, .magazine-add .mag-img{
+	border:1px solid #cfcfcf; 
+	background-repeat:no-repeat; 
+	background-color:#f0f0f0; 
+}
+.mag-img.mag-noImg a, .magazine-add .mag-img{
+	color: #999;
+	text-align: center;
+	line-height: 240px;
+	font-size:16px;
+	cursor: pointer;
+}
+.mag-img.mag-noImg{background-image:url("{$RESOURCE_URL}magazine/magazine.png"); background-position:center 54px; background-size:48px 48px; }
+.magazine-add .mag-img {
+  background-image: url("{$RESOURCE_URL}magazine/magimg-add.png"); background-position:center 62px; background-size:34px 34px; font-size: 18px;}
+/*底部操作*/
+.record-bottom {
+  background-color: #f9f9f9;
+  border-top: 1px solid #c8d4e2;
+  min-height: 43px;
+}
+.record-operate {
+  width: 300px;
+  line-height: 43px;
+  padding-left: 15px;
+}
+.record-operate input {
+  height: 13px;
+}
+.record-operate a {
+  cursor: pointer;
+  margin: 0 5px;
+  text-decoration: underline;
+  line-height: 28px;
+}
+/*增加杂志弹框*/
+.pop-add-mag {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 508px;
+  margin-left: -254px;
+  border: 10px solid #6ea5e8;
+  z-index: 999;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.pop-add-title {
+  line-height: 25px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #6ea5e8;
+}
+.pop-add-title p {
+  width: 200px;
+  display: inline-block;
+}
+.pop-menu {
+  float: right;
+}
+.pop-menu .pop-save-button {
+  position: absolute;
+  top: 0;
+  right: 31px;
+}
+.pop-menu .pop-close-button2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.pop-add-content {
+  background-color: #ffffff;
+  padding: 10px 0 20px;
+}
+.m2o-tent {
+  display: inline-block;
+  padding: 7px 0 7px 10px;
+  color: #d7d7d7;
+}
+.m2o-tent label {
+  width: 52px;
+  text-align: right;
+  min-height: 24px;
+  line-height: 24px;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: top;
+  color: #999999;
+}
+.m2o-tent span {
+  font-size: 14px;
+  color: #000000;
+  line-height: 26px;
+}
+.m2o-tent input {
+  font-size: 14px;
+  color: #000000;
+  line-height: 26px;
+  border: 1px solid #d7d7d7;
+  height: 22px;
+  margin: 0 2px;
+  text-indent: 6px;
+  width: 93px;
+}
+.m2o-tent textarea {
+  width: 396px;
+  height: 52px;
+  font-size: 14px;
+}
+.m2o-tent select {
+  margin-right: 34px;
+}
+.pop-title input {
+  width: 213px;
+}
+.pop-text ul {
+  display: inline-block;
+}
+.pop-text li {
+  margin-bottom: 10px;
+}
+.pop-text .contract-name {
+  width: 70px;
+  margin-right: 5px;
+}
+.pop-text .contract-value {
+  width: 175px;
+}
+.pop-box li a {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  vertical-align: top;
+  margin: 4px 0 0 2px;
+  background-size:21px 21px;
+}
+.pop-box li:hover .text-del {
+  opacity: 1;
+}
+.text-del {
+  background: url("{$RESOURCE_URL}magazine/text-del.png") no-repeat scroll center;
+  opacity: 0;
+}
+.text-add {
+  background: url("{$RESOURCE_URL}magazine/text-add.png") no-repeat scroll center;
+  opacity: 1;
+}
+.pop-add-mag .down_list {
+  display: inline-block;
+  height: 25px;
+  border: 1px solid #cccccc;
+  width: 113px!important;
+}
+.pop-add-mag .down_list .input_left,
+.pop-add-mag .down_list .input_right {
+  display: none;
+}
+.pop-add-mag .down_list .input_middle {
+  border: none;
+  height: 25px;
+}
+.pop-add-mag .down_list label {
+  color: #000000;
+  font-size: 14px;
+  width: 85px;
+  text-align: left;
+}
+.pop-add-mag .down_list ul {
+  top: 26px;
+  max-height: 208px;
+}
+.pop-add-mag .down_list ul li {
+  line-height: 25px;
+}
+.pop-add-mag .down_list ul li a {
+  font-size: 14px;
+}
+.pop-secondary label {
+  width: 106px;
+}
+.pop-secondary input {
+  width: 175px;
+}
+.pop-hide {
+  opacity: 0;
+  top: -800px;
+}
+.add-lastest {
+  position: absolute;
+  top: -60px;
+  right: 103px;
+}

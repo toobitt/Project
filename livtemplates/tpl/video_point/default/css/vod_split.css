@@ -1,0 +1,156 @@
+
+
+.fl{float:left;}
+.fr{float:right;}
+
+.common-vod-area .pic{max-width:120px;max-height:90px;}
+.common_category .vod-icon{border:none;}
+.common_category{margin-top:-1px;}
+
+.vod-split,.split-main{width:1210px;margin:0 auto;background:#303030;font-size:14px;height:650px;}
+.split-main{position:absolute;left:0;top:0;overflow:hidden;z-index:1000;}
+.tip-title{height:56px;line-height:56px;background:#3f3f3f;border-bottom:1px solid #535353;color:#fff !important;margin-bottom:20px;}
+.tip-title h3{position:relative;float:left;font-size:22px;padding-left:65px;cursor:pointer;}
+.tip-title h3:before{position:absolute;left:0;content:'';width:56px;height:100%;border-right:1px solid #535353;background:url({$RESOURCE_URL}video/split/video.png) center no-repeat;}
+.tip-title .right{float:right;padding-right:25px;}
+.vod-split .tip-title .right .number{font-style:normal;}
+.vod-split .content{padding:0 30px 20px;}
+.vod-split .current-vod{float:left;width:505px;margin-bottom:25px;padding-right:35px;border-right:1px solid #575757;}
+.vod-split .video{height:380px;}
+.vod-split .camera-btn{float:left;display:none;width:120px;height:90px;margin-right:10px;border:1px dashed #666;background:url({$RESOURCE_URL}video/split/camera.png) no-repeat center #4c4c4c;cursor:pointer;}
+.vod-split .camera-btn:hover{background-color:#363636;}
+.vod-split .camera-btn img{max-width:120px;max-height:90px;}
+.vod-split .duration{display:inline-block;margin:18px 0 0 10px;height:28px;line-height:28px;font-size:12px;vertical-align:top;}
+.vod-split .yulan{display:inline-block;margin:18px 0 0 10px;height:28px;width:28px;background:url({$RESOURCE_URL}video/split/play.png) no-repeat center center;cursor:pointer;}
+
+.video-tips{width:100%; position:relative; background-color:#eee; height:5px; bottom:44px; left:0;}
+.video-tips .video-point{position:absolute;z-index:999;top:-9px;cursor:pointer;}
+.video-tips a{display:inline-block; width:9px; height:9px; border:none; background-color:#eee;border-radius: 5px; }
+.video-title{width:120px; position:absolute; bottom:18px;margin-left:-60px; background-color:#000; border:1px solid #666; padding:5px;display:none;}
+
+.video-title .video-content{line-height:22px; word-wrap:break-word;color:white;}
+.video-title em{position:absolute; left:60px; bottom:-4px; background:url({$RESOURCE_URL}video/split/video-pointer.png) no-repeat center transparent; width:8px; height:4px;}
+
+
+.vod-split .vod-title{width:360px;height:30px;margin-bottom:11px;margin-left:137px;border:1px solid #575757;text-indent:8px;background:transparent;color:#fff !important;}
+.vod-split .vod-title::-webkit-input-placeholder{color:#7f7f7f;}
+.vod-split .vod-title::-moz-placeholder{color:#7f7f7f;}
+.vod-split .upload-pic{display:inline-block;position:relative;width:60px;height:45px;float:left;width:128px;height:93px;margin-top:-46px;border:1px solid #575757;}
+.vod-split .upload-pic .start,.vod-split .upload-pic .end{position:relative;display:block;float:left;width:128px;height:100px;}
+.vod-split .two-point{width:120px;margin-left: 10px;}
+
+.vod-split .upload-pic img{max-width:128px;max-height:100px;width:120px;height:93px;}
+.vod-split .time-val{position:absolute;z-index:1;color:#fff;font-size:17px;left:16px;top:51px;
+    -webkit-transform:rotate(-15deg);
+    -moz-transform:rotate(-15deg);
+    transform:rotate(-15deg);
+}
+.vod-split .start .time-val{left:0px;top:0px;}
+.vod-split .end .time-val{right:0;bottom:3px;}
+
+.vod-split .common-button-group{float:right;margin-top:18px;margin-left: -10px;}
+.vod-split .vod-list{float:right;width:600px;overflow:auto;height:550px;}
+.vod-split .vod-list li{width:555px;height:30px;margin:0 0 6px 10px;padding:10px;position:relative;}
+.vod-split .vod-list li:hover,.vod-split .vod-list li.current{background:#4c4c4c;}
+.vod-split .vod-list li:hover .text,.vod-split .vod-list li.current .text{background:#4c4c4c;}
+.vod-split .vod-list li .text:focus,.vod-split .vod-list li.current .text:focus{background-color:#fff;}
+.vod-split .vod-list .update-text{background:white;color:white;border:0;}
+.vod-split .vod-list .pic{display:block;float:left;width:80px;height:60px;margin-right:6px;overflow:hidden;}
+.vod-split .vod-list .name{width:20%;display:block;font-size:14px;color:#fff;line-height:1.5;margin-top: 4px;}
+.vod-split .vod-list .time{color:#b8b8b8;font-size:10px;-webkit-text-size-adjust:none;line-height:1.8;}
+.vod-list .text{width:55%;height:33px;font-size:15px;background:#303030;color:white;border:none;float:right;margin-right:130px;margin-top:-31px;}
+
+.vod-list .text:focus .edit{display:block;}
+
+
+.vod-list .edit{background:#5495e5;color:#fff;padding:3px 5px;border-radius:3px;position:absolute;right:35px;bottom:15px;display:none;cursor:pointer;font-size:12px;}
+.vod-list .update{background:#5495e5;color:#fff;position:absolute;right:85px;bottom:15px;display:none;cursor:pointer;font-size:12px;}
+.vod-list li:hover .edit{display:block;}
+.zhuan{display:none;color:#ffdd7f;margin-left:5px;font-size:12px;}
+.zhuan.on{display:inline;}
+
+.split-main{background:#363636;}
+.split-main .split-right{position:relative;left:-1px;border-left:1px solid #565656;padding:0 25px 35px 0;overflow:hidden;}
+.split-main .split-right .top{height:30px;padding:0 5px 10px;}
+.split-main .split-right .common-page-link{padding-right:15px;}
+
+
+.icon-a{position:absolute;left:0;top:0;z-index:1000;width:65px;height:50px;}
+.common-vod-area li{height:150px;}
+
+
+#video-pian{position:relative;margin-top:20px;z-index:1;height:96px;}
+.video-pian-info{}
+.video-pian-tip{position:absolute;left:0;top:0;width:100%;height:96px;color:#fff;text-align:center;line-height:95px;}
+
+#video-pian{overflow:hidden;}
+.video-pian-info{overflow:hidden;position:absolute;top:0;left:0;background-color:#303030;
+    -webkit-transition:all .3s;
+    -moz-transition:all .3s;
+    transition:all .3s;
+}
+.video-pian-tip{overflow:hidden;top:100%;background-color:#4c4c4c;
+    -webkit-transition:all .3s;
+    -moz-transition:all .3s;
+    transition:all .3s;
+}
+#video-pian.option .video-pian-info{top:-100%;}
+#video-pian.option .video-pian-tip{top:0;}
+1#video-pian{
+    -webkit-perspective: 0;
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+
+    -moz-perspective: 0;
+    -moz-transform-style: preserve-3d;
+
+    perspective: 0;
+    transform-style: preserve-3d;
+}
+1.video-pian-info{
+    background-color:#303030;
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 0.5s;
+
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 0.5s;
+
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+1.video-pian-tip{
+    background-color:#4c4c4c;
+    -webkit-transform: translateY(48px) rotateX(-90deg);
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 0.5s;
+
+    -moz-transform: translateY(48px) rotateX(-90deg);
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 0.5s;
+
+    transform: translateY(48px) rotateX(-90deg);
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+1#video-pian.option .video-pian-info{
+    -webkit-transform: translateY(-48px) rotateX(90deg);
+    -moz-transform: translateY(-48px) rotateX(90deg);
+    transform: translateY(-48px) rotateX(90deg);
+}
+1#video-pian.option .video-pian-tip{
+    -webkit-transform: translateY(0px) rotateX(0deg);
+    -moz-transform: translateY(0px) rotateX(0deg);
+    transform: translateY(0px) rotateX(0deg);
+}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2) {
+    .vod-split .title h3:before{background-image:url({$RESOURCE_URL}video/split/video-2x.png);background-size:29px 29px;}
+    .vod-split .camera-btn{background-image:url({$RESOURCE_URL}video/split/camera-2x.png);background-size:55px 42px;}
+    .vod-split .two-point:after{background-image:url({$RESOURCE_URL}video/split/broken_line-2x.png);background-size:6px 45px;}
+    .vod-split .yulan{background-image:url({$RESOURCE_URL}video/split/play-2x.png);background-size:26px 26px;}
+
+}

@@ -1,0 +1,225 @@
+
+[2015-08-13 16:50:48]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 26:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://vapi1.dev.hogesoft.com/admin/water_config.php?format=json&count=&offset=&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=3aa2a36810f2ff98c44d2247baff6a9f
+
+[2015-08-13 16:50:48]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 26:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'count' => NULL,
+  'offset' => NULL,
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '3aa2a36810f2ff98c44d2247baff6a9f',
+)
+
+[2015-08-13 16:50:48]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 26:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 321:array (
+  'url' => 'http://vapi1.dev.hogesoft.com/admin/water_config.php?format=json&count=&offset=&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=3aa2a36810f2ff98c44d2247baff6a9f',
+  'content_type' => NULL,
+  'http_code' => 0,
+  'header_size' => 0,
+  'request_size' => 0,
+  'filetime' => -1,
+  'ssl_verify_result' => 0,
+  'redirect_count' => 0,
+  'total_time' => 0.001274,
+  'namelookup_time' => 1.9000000000000001E-5,
+  'connect_time' => 0,
+  'pretransfer_time' => 0,
+  'size_upload' => 0,
+  'size_download' => 0,
+  'speed_download' => 0,
+  'speed_upload' => 0,
+  'download_content_length' => -1,
+  'upload_content_length' => -1,
+  'starttransfer_time' => 0,
+  'redirect_time' => 0,
+  'redirect_url' => '',
+  'primary_ip' => '',
+  'certinfo' => 
+  array (
+  ),
+  'primary_port' => 0,
+  'local_ip' => '',
+  'local_port' => 0,
+)
+
+[2015-08-13 17:00:44]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 26:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://vapi1.dev.hogesoft.com/admin/water_config.php?format=json&count=&offset=&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=3aa2a36810f2ff98c44d2247baff6a9f
+
+[2015-08-13 17:00:44]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 26:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'count' => NULL,
+  'offset' => NULL,
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '3aa2a36810f2ff98c44d2247baff6a9f',
+)
+
+[2015-08-13 17:00:44]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 26:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 327:[{"id":"27","name":"test","hostwork":"vfile1.dev.hogesoft.com:233","base_path":"\/web\/mediauploads\/mp4\/water\/","img_path":"1429519531835760.jpg","create_time":"2015-04-20","update_time":"1429519531","user_id":"368","user_name":"Qiang","org_id":"0","order_id":"27","water_pic":"http:\/\/vfile1.dev.hogesoft.com:233\/water\/1429519531835760.jpg"},{"id":"25","name":"11","hostwork":"vfile1.dev.hogesoft.com:233","base_path":"\/web\/mediauploads\/mp4\/water\/","img_path":"1427879745419070.jpg","create_time":"2015-04-01","update_time":"1427879745","user_id":"221","user_name":"lulu","org_id":"1","order_id":"25","water_pic":"http:\/\/vfile1.dev.hogesoft.com:233\/water\/1427879745419070.jpg"},{"id":"23","name":"\u900f\u660e","hostwork":"vfile1.dev.hogesoft.com:233","base_path":"\/web\/mediauploads\/mp4\/water\/","img_path":"1398758846197070.png","create_time":"2014-04-29","update_time":"1398759327","user_id":"368","user_name":"Qiang","org_id":"14","order_id":"23","water_pic":"http:\/\/vfile1.dev.hogesoft.com:233\/water\/1398758846197070.png"},{"id":"21","name":"\u65b0\u6ef4","hostwork":"vfile1.dev.hogesoft.com:233","base_path":"\/web\/mediauploads\/mp4\/water\/","img_path":"1398754951451951.jpg","create_time":"2014-04-29","update_time":"1398754951","user_id":"221","user_name":"lulu","org_id":"4","order_id":"21","water_pic":"http:\/\/vfile1.dev.hogesoft.com:233\/water\/1398754951451951.jpg"},{"id":"16","name":"zhang1","hostwork":"vfile1.dev.hogesoft.com:233","base_path":"\/web\/mediauploads\/mp4\/water\/","img_path":"1394596717412388.jpg","create_time":"2014-03-06","update_time":"1394596717","user_id":"507","user_name":"kin123","org_id":"269","order_id":"16","water_pic":"http:\/\/vfile1.dev.hogesoft.com:233\/water\/1394596717412388.jpg"},{"id":"15","name":"111","hostwork":"vfile1.dev.hogesoft.com:233","base_path":"\/web\/mediauploads\/mp4\/water\/","img_path":"1394076445177361.jpg","create_time":"2014-03-06","update_time":"1394076445","user_id":"221","user_name":"lulu","org_id":"5","order_id":"15","water_pic":"http:\/\/vfile1.dev.hogesoft.com:233\/water\/1394076445177361.jpg"},{"id":"14","name":"\u676d\u5dde\u53f0\u6807","hostwork":"vfile1.dev.hogesoft.com:233","base_path":"\/web\/mediauploads\/mp4\/water\/","img_path":"1394072210114134.jpg","create_time":"2014-03-06","update_time":"1394072210","user_id":"221","user_name":"lulu","org_id":"5","order_id":"14","water_pic":"http:\/\/vfile1.dev.hogesoft.com:233\/water\/1394072210114134.jpg"},{"id":"10","name":"\u5b89\u5fbd\u53f0\u6807","hostwork":"vfile1.dev.hogesoft.com:233","base_path":"\/web\/mediauploads\/mp4\/water\/","img_path":"1389689140845862.png","create_time":"2014-01-14","update_time":"1394072525","user_id":"1","user_name":"hogesoft","org_id":"152","order_id":"10","water_pic":"http:\/\/vfile1.dev.hogesoft.com:233\/water\/1389689140845862.png"},{"id":"8","name":"\u65e0\u9521\u53f0\u6807","hostwork":"vfile1.dev.hogesoft.com:233","base_path":"\/web\/mediauploads\/mp4\/water\/","img_path":"1389168250457626.jpg","create_time":"2013-12-05","update_time":"1394072180","user_id":"463","user_name":"zhoujiafei","org_id":"4","order_id":"8","water_pic":"http:\/\/vfile1.dev.hogesoft.com:233\/water\/1389168250457626.jpg"},{"id":"7","name":"cctv","hostwork":"vfile1.dev.hogesoft.com:233","base_path":"\/web\/mediauploads\/mp4\/water\/","img_path":"1389168289124316.png","create_time":"2013-12-05","update_time":"1389168289","user_id":"463","user_name":"zhoujiafei","org_id":"4","order_id":"7","water_pic":"http:\/\/vfile1.dev.hogesoft.com:233\/water\/1389168289124316.png"}]
+
+[2015-08-13 17:00:53]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 26:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://vapi1.dev.hogesoft.com/admin/water_config.php?format=json&count=&offset=&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=3aa2a36810f2ff98c44d2247baff6a9f
+
+[2015-08-13 17:00:53]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 26:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'count' => NULL,
+  'offset' => NULL,
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '3aa2a36810f2ff98c44d2247baff6a9f',
+)
+
+[2015-08-13 17:00:53]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 26:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 327:[{"id":"27","name":"test","hostwork":"vfile1.dev.hogesoft.com:233","base_path":"\/web\/mediauploads\/mp4\/water\/","img_path":"1429519531835760.jpg","create_time":"2015-04-20","update_time":"1429519531","user_id":"368","user_name":"Qiang","org_id":"0","order_id":"27","water_pic":"http:\/\/vfile1.dev.hogesoft.com:233\/water\/1429519531835760.jpg"},{"id":"25","name":"11","hostwork":"vfile1.dev.hogesoft.com:233","base_path":"\/web\/mediauploads\/mp4\/water\/","img_path":"1427879745419070.jpg","create_time":"2015-04-01","update_time":"1427879745","user_id":"221","user_name":"lulu","org_id":"1","order_id":"25","water_pic":"http:\/\/vfile1.dev.hogesoft.com:233\/water\/1427879745419070.jpg"},{"id":"23","name":"\u900f\u660e","hostwork":"vfile1.dev.hogesoft.com:233","base_path":"\/web\/mediauploads\/mp4\/water\/","img_path":"1398758846197070.png","create_time":"2014-04-29","update_time":"1398759327","user_id":"368","user_name":"Qiang","org_id":"14","order_id":"23","water_pic":"http:\/\/vfile1.dev.hogesoft.com:233\/water\/1398758846197070.png"},{"id":"21","name":"\u65b0\u6ef4","hostwork":"vfile1.dev.hogesoft.com:233","base_path":"\/web\/mediauploads\/mp4\/water\/","img_path":"1398754951451951.jpg","create_time":"2014-04-29","update_time":"1398754951","user_id":"221","user_name":"lulu","org_id":"4","order_id":"21","water_pic":"http:\/\/vfile1.dev.hogesoft.com:233\/water\/1398754951451951.jpg"},{"id":"16","name":"zhang1","hostwork":"vfile1.dev.hogesoft.com:233","base_path":"\/web\/mediauploads\/mp4\/water\/","img_path":"1394596717412388.jpg","create_time":"2014-03-06","update_time":"1394596717","user_id":"507","user_name":"kin123","org_id":"269","order_id":"16","water_pic":"http:\/\/vfile1.dev.hogesoft.com:233\/water\/1394596717412388.jpg"},{"id":"15","name":"111","hostwork":"vfile1.dev.hogesoft.com:233","base_path":"\/web\/mediauploads\/mp4\/water\/","img_path":"1394076445177361.jpg","create_time":"2014-03-06","update_time":"1394076445","user_id":"221","user_name":"lulu","org_id":"5","order_id":"15","water_pic":"http:\/\/vfile1.dev.hogesoft.com:233\/water\/1394076445177361.jpg"},{"id":"14","name":"\u676d\u5dde\u53f0\u6807","hostwork":"vfile1.dev.hogesoft.com:233","base_path":"\/web\/mediauploads\/mp4\/water\/","img_path":"1394072210114134.jpg","create_time":"2014-03-06","update_time":"1394072210","user_id":"221","user_name":"lulu","org_id":"5","order_id":"14","water_pic":"http:\/\/vfile1.dev.hogesoft.com:233\/water\/1394072210114134.jpg"},{"id":"10","name":"\u5b89\u5fbd\u53f0\u6807","hostwork":"vfile1.dev.hogesoft.com:233","base_path":"\/web\/mediauploads\/mp4\/water\/","img_path":"1389689140845862.png","create_time":"2014-01-14","update_time":"1394072525","user_id":"1","user_name":"hogesoft","org_id":"152","order_id":"10","water_pic":"http:\/\/vfile1.dev.hogesoft.com:233\/water\/1389689140845862.png"},{"id":"8","name":"\u65e0\u9521\u53f0\u6807","hostwork":"vfile1.dev.hogesoft.com:233","base_path":"\/web\/mediauploads\/mp4\/water\/","img_path":"1389168250457626.jpg","create_time":"2013-12-05","update_time":"1394072180","user_id":"463","user_name":"zhoujiafei","org_id":"4","order_id":"8","water_pic":"http:\/\/vfile1.dev.hogesoft.com:233\/water\/1389168250457626.jpg"},{"id":"7","name":"cctv","hostwork":"vfile1.dev.hogesoft.com:233","base_path":"\/web\/mediauploads\/mp4\/water\/","img_path":"1389168289124316.png","create_time":"2013-12-05","update_time":"1389168289","user_id":"463","user_name":"zhoujiafei","org_id":"4","order_id":"7","water_pic":"http:\/\/vfile1.dev.hogesoft.com:233\/water\/1389168289124316.png"}]
+
+[2015-08-13 17:01:07]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 26:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://vapi1.dev.hogesoft.com/admin/water_config.php?format=json&count=&offset=&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=3aa2a36810f2ff98c44d2247baff6a9f
+
+[2015-08-13 17:01:07]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 26:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'count' => NULL,
+  'offset' => NULL,
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '3aa2a36810f2ff98c44d2247baff6a9f',
+)
+
+[2015-08-13 17:01:07]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 26:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 321:array (
+  'url' => 'http://vapi1.dev.hogesoft.com/admin/water_config.php?format=json&count=&offset=&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=3aa2a36810f2ff98c44d2247baff6a9f',
+  'content_type' => NULL,
+  'http_code' => 0,
+  'header_size' => 0,
+  'request_size' => 0,
+  'filetime' => -1,
+  'ssl_verify_result' => 0,
+  'redirect_count' => 0,
+  'total_time' => 0.00015100000000000001,
+  'namelookup_time' => 3.0000000000000001E-5,
+  'connect_time' => 0,
+  'pretransfer_time' => 0,
+  'size_upload' => 0,
+  'size_download' => 0,
+  'speed_download' => 0,
+  'speed_upload' => 0,
+  'download_content_length' => -1,
+  'upload_content_length' => -1,
+  'starttransfer_time' => 0,
+  'redirect_time' => 0,
+  'redirect_url' => '',
+  'primary_ip' => '',
+  'certinfo' => 
+  array (
+  ),
+  'primary_port' => 0,
+  'local_ip' => '',
+  'local_port' => 0,
+)
+
+[2015-08-13 17:04:42]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 26:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://vapi1.dev.hogesoft.com/admin/water_config.php?format=json&count=&offset=&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=3aa2a36810f2ff98c44d2247baff6a9f
+
+[2015-08-13 17:04:42]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 26:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'count' => NULL,
+  'offset' => NULL,
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '3aa2a36810f2ff98c44d2247baff6a9f',
+)
+
+[2015-08-13 17:04:42]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 26:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 327:[{"id":"27","name":"test","hostwork":"vfile1.dev.hogesoft.com:233","base_path":"\/web\/mediauploads\/mp4\/water\/","img_path":"1429519531835760.jpg","create_time":"2015-04-20","update_time":"1429519531","user_id":"368","user_name":"Qiang","org_id":"0","order_id":"27","water_pic":"http:\/\/vfile1.dev.hogesoft.com:233\/water\/1429519531835760.jpg"},{"id":"25","name":"11","hostwork":"vfile1.dev.hogesoft.com:233","base_path":"\/web\/mediauploads\/mp4\/water\/","img_path":"1427879745419070.jpg","create_time":"2015-04-01","update_time":"1427879745","user_id":"221","user_name":"lulu","org_id":"1","order_id":"25","water_pic":"http:\/\/vfile1.dev.hogesoft.com:233\/water\/1427879745419070.jpg"},{"id":"23","name":"\u900f\u660e","hostwork":"vfile1.dev.hogesoft.com:233","base_path":"\/web\/mediauploads\/mp4\/water\/","img_path":"1398758846197070.png","create_time":"2014-04-29","update_time":"1398759327","user_id":"368","user_name":"Qiang","org_id":"14","order_id":"23","water_pic":"http:\/\/vfile1.dev.hogesoft.com:233\/water\/1398758846197070.png"},{"id":"21","name":"\u65b0\u6ef4","hostwork":"vfile1.dev.hogesoft.com:233","base_path":"\/web\/mediauploads\/mp4\/water\/","img_path":"1398754951451951.jpg","create_time":"2014-04-29","update_time":"1398754951","user_id":"221","user_name":"lulu","org_id":"4","order_id":"21","water_pic":"http:\/\/vfile1.dev.hogesoft.com:233\/water\/1398754951451951.jpg"},{"id":"16","name":"zhang1","hostwork":"vfile1.dev.hogesoft.com:233","base_path":"\/web\/mediauploads\/mp4\/water\/","img_path":"1394596717412388.jpg","create_time":"2014-03-06","update_time":"1394596717","user_id":"507","user_name":"kin123","org_id":"269","order_id":"16","water_pic":"http:\/\/vfile1.dev.hogesoft.com:233\/water\/1394596717412388.jpg"},{"id":"15","name":"111","hostwork":"vfile1.dev.hogesoft.com:233","base_path":"\/web\/mediauploads\/mp4\/water\/","img_path":"1394076445177361.jpg","create_time":"2014-03-06","update_time":"1394076445","user_id":"221","user_name":"lulu","org_id":"5","order_id":"15","water_pic":"http:\/\/vfile1.dev.hogesoft.com:233\/water\/1394076445177361.jpg"},{"id":"14","name":"\u676d\u5dde\u53f0\u6807","hostwork":"vfile1.dev.hogesoft.com:233","base_path":"\/web\/mediauploads\/mp4\/water\/","img_path":"1394072210114134.jpg","create_time":"2014-03-06","update_time":"1394072210","user_id":"221","user_name":"lulu","org_id":"5","order_id":"14","water_pic":"http:\/\/vfile1.dev.hogesoft.com:233\/water\/1394072210114134.jpg"},{"id":"10","name":"\u5b89\u5fbd\u53f0\u6807","hostwork":"vfile1.dev.hogesoft.com:233","base_path":"\/web\/mediauploads\/mp4\/water\/","img_path":"1389689140845862.png","create_time":"2014-01-14","update_time":"1394072525","user_id":"1","user_name":"hogesoft","org_id":"152","order_id":"10","water_pic":"http:\/\/vfile1.dev.hogesoft.com:233\/water\/1389689140845862.png"},{"id":"8","name":"\u65e0\u9521\u53f0\u6807","hostwork":"vfile1.dev.hogesoft.com:233","base_path":"\/web\/mediauploads\/mp4\/water\/","img_path":"1389168250457626.jpg","create_time":"2013-12-05","update_time":"1394072180","user_id":"463","user_name":"zhoujiafei","org_id":"4","order_id":"8","water_pic":"http:\/\/vfile1.dev.hogesoft.com:233\/water\/1389168250457626.jpg"},{"id":"7","name":"cctv","hostwork":"vfile1.dev.hogesoft.com:233","base_path":"\/web\/mediauploads\/mp4\/water\/","img_path":"1389168289124316.png","create_time":"2013-12-05","update_time":"1389168289","user_id":"463","user_name":"zhoujiafei","org_id":"4","order_id":"7","water_pic":"http:\/\/vfile1.dev.hogesoft.com:233\/water\/1389168289124316.png"}]
+
+[2015-08-13 17:05:25]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 26:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://vapi1.dev.hogesoft.com/admin/water_config.php?format=json&count=&offset=&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=3aa2a36810f2ff98c44d2247baff6a9f
+
+[2015-08-13 17:05:25]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 26:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'count' => NULL,
+  'offset' => NULL,
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '3aa2a36810f2ff98c44d2247baff6a9f',
+)
+
+[2015-08-13 17:05:25]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 26:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 321:array (
+  'url' => 'http://vapi1.dev.hogesoft.com/admin/water_config.php?format=json&count=&offset=&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=3aa2a36810f2ff98c44d2247baff6a9f',
+  'content_type' => NULL,
+  'http_code' => 0,
+  'header_size' => 0,
+  'request_size' => 0,
+  'filetime' => -1,
+  'ssl_verify_result' => 0,
+  'redirect_count' => 0,
+  'total_time' => 0.0013179999999999999,
+  'namelookup_time' => 1.8E-5,
+  'connect_time' => 0,
+  'pretransfer_time' => 0,
+  'size_upload' => 0,
+  'size_download' => 0,
+  'speed_download' => 0,
+  'speed_upload' => 0,
+  'download_content_length' => -1,
+  'upload_content_length' => -1,
+  'starttransfer_time' => 0,
+  'redirect_time' => 0,
+  'redirect_url' => '',
+  'primary_ip' => '',
+  'certinfo' => 
+  array (
+  ),
+  'primary_port' => 0,
+  'local_ip' => '',
+  'local_port' => 0,
+)

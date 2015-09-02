@@ -1,0 +1,215 @@
+<?php
+define('ROOT_PATH', '../../../');
+define('CUR_CONF_PATH', '../');
+require_once(ROOT_PATH.'global.php');
+define('SCRIPT_NAME','Reranking');
+define('MOD_UNIQUEID','reranking');
+class Reranking extends cronBase
+{
+    function __construct()
+    {
+        parent::__construct();
+    }
+    function __destruct()
+    {
+        parent::__destruct();
+    }
+
+    public function initcron()
+    {
+        $array = array(
+            'mod_uniqueid' => MOD_UNIQUEID,
+            'name' => '排行队列',
+            'brief' => '访问统计排行队列',
+            'space' => '3600',	//运行时间间隔，单位秒
+            'is_use' => 1,	//默认是否启用
+        );
+        $this->addItem($array);
+        $this->output();
+    }
+    function show()
+    {
+        $sql = "SELECT * FROM ".DB_PREFIX."ranking_sort WHERE 1 and status = 1 ORDER BY last_time ASC LIMIT 5";
+        $qq = $this->db->query($sql);
+        include_once(ROOT_PATH . 'lib/class/publishconfig.class.php');
+        $this->publish_column = new publishconfig();
+        include_once(ROOT_PATH . 'lib/class/publishcontent.class.php');
+        $this->publishcontent = new publishcontent();
+        include_once(CUR_CONF_PATH . 'lib/cache.class.php');
+        $cache = new CacheFile();
+        $exists_table = $cache->get_cache('access_table_name');
+        while($info = $this->db->fetch_array($qq))
+        {
+            if($info['duration'] == 0)    //不限制时长,只需从nums表统计
+            {
+                $sql = "SELECT cid, access_nums AS num, column_id, app_bundle, title, url FROM ".DB_PREFIX."nums WHERE 1 AND del = 0";
+            }
+            else
+            {
+                if($info['start_time'])
+                {
+                    //$sql .= " AND access_time >= " . $info['start_time'];
+                    $time = $info['duration'] * 60;
+                    $start_time = $info['start_time'];
+                    $end_time = $info['start_time'] + $time;
+                    if ($end_time < TIMENOW && $end_time < $info['last_time'])
+                    {
+                        //continue;
+                    }
+                }
+                else
+                {
+                    $time = $info['duration'] * 60;
+                    $start_time = TIMENOW - $time;
+                    $end_time = TIMENOW;
+                }
+                ###根据起始时间关联merge表
+//				$time = $info['duration'] * 60;
+//				$start_time = TIMENOW - $time;
+//				$start_time = max($info['start_time'], $start_time);
+                $start_year = intval(date('Y', $start_time));
+                $start_month = intval(date('m', $start_time));
+//				$end_year = intval(date('Y', TIMENOW));
+//				$end_month = intval(date('m', TIMENOW));
+                $end_year = intval(date('Y', $end_time));
+                $end_month = intval(date('m', $end_time));
+                $table = array();
+                $i = $start_year;
+                $j = $start_month;
+                while($i < $end_year || $j <= $end_month)
+                {
+                    if ($i > $end_year) {  //年份大于等于当前年份时跳出循环
+                        break;
+                    }
+                    $j = strlen($j) != 2 ? '0' . $j : $j;
+                    $table_name = "record_" . $i . $j;
+                    if(in_array($table_name, $exists_table))
+                    {
+                        $table[] = $table_name;
+                    }
+                    if($j==12){
+                        $i++;$j=1;
+                    }else{
+                        $j++;
+                    }
+                }
+                $table = $this->convert_table_name($table);
+                if($table)
+                {
+                    $table_str = implode(',', $table);
+                }
+                $sql = "ALTER TABLE ".DB_PREFIX."merge UNION(".$table_str.")";
+                $this->db->query($sql);
+                ###关联结束
+                $sql = "SELECT cid,count(*) AS num, column_id, app_bundle, refer_url FROM ".DB_PREFIX."merge WHERE 1 AND del = 0";
+                $sql .= " AND access_time >= " . $start_time;
+                $sql .= " AND access_time <= " . $end_time;
+            }
+
+            if($info['column_id'])
+            {
+                $ret = $this->publish_column->get_column_by_ids('id,childs',$info['column_id']);
+                $idArr = array();
+                if($ret && is_array($ret) )
+                {
+                    foreach($ret as $k => $v)
+                    {
+                        $idArr[] = $v['childs'];
+                    }
+                }
+                $idStr = implode(",",$idArr);
+                if($idStr)
+                {
+                    $sql .= " AND column_id IN(".$idStr.")";
+                }
+            }
+            if($info['type'])
+            {
+                $info['type'] = explode(',', $info['type']);
+                $info['type'] = implode("','", $info['type']);
+                $sql .= " AND app_bundle IN('" . $info['type'] . "')";
+            }
+            ###从merge表查询需要group by cid
+            if ($info['output_type'] == 1) { //统计栏目
+                $sql .= " GROUP BY column_id ";
+            }
+            else {
+                $sql .= $info['duration'] ? " GROUP BY cid " : "";
+            }
+            $sql .= " ORDER BY num DESC LIMIT " . $info['limit_num'];
+            $q = $this->db->query($sql);
+            $rankingCon = array();
+            while($row = $this->db->fetch_array($q))
+            {
+                $row['sort_id'] = $info['id'];
+                ($info['output_type'] == 1) && ($row['cid'] = $row['column_id']);  //排行类型为栏目时 记录column_id 
+                $rankingCon[] = $row;
+            }
+            $sql = "DELETE FROM ".DB_PREFIX."ranking_cont WHERE sort_id = " . $info['id'];
+            $this->db->query($sql);
+            if(!empty($rankingCon))
+            {
+                //查询发布到发布库的内容标识,用于判断内容是否是发布库数据
+                $content_type = $this->publishcontent->get_all_content_type();
+                $pub_content_bundle = array();
+                foreach ((array)$content_type as $k => $v)
+                {
+                    $pub_content_bundle[] = $v['bundle_id'];
+                }
+
+                $rankingChunk = array_chunk($rankingCon,30,true);
+                foreach($rankingChunk as $key => $val)
+                {
+                    $sql = "INSERT INTO ".DB_PREFIX."ranking_cont(sort_id,cid,app_bundle,title,url,count) VALUES";
+                    $space = '';
+                    foreach($val as $k => $v)
+                    {
+                        //非发布库数据标题使用库里存储内容
+                        //从merge表统计出来如果没有title，到nums表查询标题
+                        //merge表结构不好更改，更改后客户升级也比较麻烦 所以临时解决方案 到nums表再查询一次
+                        if (!$v['title'] && $v['app_bundle'] && !in_array($v['app_bundle'], $pub_content_bundle))
+                        {
+                            $sql_nums = "SELECT title FROM ".DB_PREFIX."nums WHERE app_bundle = '".$v['app_bundle']."' AND cid=" . $v['cid'];
+                            $nums_q = $this->db->query_first($sql_nums);
+                            $v['title'] = $nums_q['title'];
+                        }
+
+                        !$v['url'] && $v['url'] = $v['refer_url'];
+                        $sql .= $space . "('{$v['sort_id']}','{$v['cid']}','{$v['app_bundle']}','{$v['title']}','{$v['url']}','{$v['num']}')";
+                        $space = ',';
+                    }
+                    $this->db->query($sql);
+                }
+            }
+            $sql = "UPDATE ".DB_PREFIX."ranking_sort SET last_time = " . TIMENOW . " WHERE id = " . $info['id'];
+            $this->db->query($sql);
+            echo $info['title'] . "<br/>";
+            flush();
+            ob_flush();
+        }
+        exit();
+    }
+
+    function convert_table_name($tableName)
+    {
+        if(!$tableName)
+        {
+            return false;
+        }
+        if(is_array($tableName))
+        {
+            foreach($tableName as $k => $v)
+            {
+                $tableName[$k] = DB_PREFIX . $v;
+            }
+        }
+        else
+        {
+            $tableName = DB_PREFIX . $tableName;
+        }
+        return $tableName;
+    }
+
+}
+require_once(ROOT_PATH . 'excute.php');
+?>

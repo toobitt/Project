@@ -1,0 +1,73 @@
+body,.middle-ware{background:#fff;}
+.nav-bg{width:100%;background:url({$RESOURCE_URL}appstore/bg.png);position:fixed;top:0;left:0;z-index: 1;}
+.nav{height:122px;width:1210px;margin:0 auto;position:relative;}
+.nav .logo{display: inline-block;font-size:36px;color:#fff;padding-left:50px;background:url({$RESOURCE_URL}appstore/logo.png) no-repeat left 45px;line-height:122px;padding-top:10px;text-shadow:2px 2px 3px rgba(0,0,0,.3);}
+.nav ul{position:absolute;margin:0;bottom:0;left:260px;}
+.nav li{cursor:pointer;float:left;text-align:center;color:#fff;font-size:14px;padding:0 15px 30px 15px;margin-left:10px;}
+.nav .current{font-size:24px;margin-top:-10px;background:url({$RESOURCE_URL}appstore/choosen.png) no-repeat center 52px;}
+.nav-bg .close{display:inline-block;width:19px;height:19px;background:url({$RESOURCE_URL}appstore/close.png);position:absolute;top:10px;right:10px;cursor:pointer;}
+
+.middle-ware{width:100%;height:20px;position: fixed;top:122px;left: 0;z-index: 1;}
+
+.app-main{width:1210px;overflow:hidden;margin:90px auto;margin-top:140px;margin-bottom:10px;}
+.app-tools{width:1210px;overflow:hidden;margin:10px auto;}
+.app-tools ul li {float:left;margin-right: 10px}
+.app-item{margin-bottom:60px;}
+.app-item ul{padding:0;margin:0;}
+.app-item li{float:left;width:226px;height:178px;position:relative;margin:0 20px 20px 0;overflow:hidden;-webkit-box-shadow:0 0 8px 1px rgba(0,0,0,.2) inset;box-shadow:0 0 8px 1px rgba(0,0,0,.2) inset;}
+.app-item li:nth-child(5){margin-right:0;}
+.app-item li em{width:226px;height:50px;position:absolute;left:0;bottom:0;font-size:24px;color:#fff;vertical-align:middle;font-style:normal;text-indent:1em;line-height:50px;}
+.app-item li em span{display:inline-block;width:70px;height:24px;border-radius:2px;border-bottom:1px solid;text-indent:2em;font-size:12px;line-height:24px;position:absolute;right:17px;bottom:12px;background:url({$RESOURCE_URL}appstore/installed.png) no-repeat 5px center;}
+.install{background-image:url({$RESOURCE_URL}appstore/installed.png);}
+.update{background-image:url({$RESOURCE_URL}appstore/star.png)!important;}
+.last-li{margin-right:0 !important;}
+
+.app-item-blue li{background:#b9e2fe;}
+.app-item-blue li em{background:url({$RESOURCE_URL}appstore/blue.png);}
+.app-item-blue li em span{background-color:#0687b1;border-color:#57c7ec;}
+
+.app-item-red li{background:#f7cad1;}
+.app-item-red li em{background:url({$RESOURCE_URL}appstore/red.png);}
+.app-item-red li em span{background-color:#a3221d;border-color:#d8706d;}
+
+.app-item-green li{background:#d2eac6;}
+.app-item-green li em{background:url({$RESOURCE_URL}appstore/green.png);}
+.app-item-green li em span{background-color:#59a212;border-color:#9cd763;}
+
+.app-item-yellow li{background:#fbeacc;}
+.app-item-yellow li em{background:url({$RESOURCE_URL}appstore/yellow.png);}
+.app-item-yellow li em span{background-color:#d18b09;border-color:#f7c157;}
+
+.app-item-green_2 li{background:#baecd3;}
+.app-item-green_2 li em{background:url({$RESOURCE_URL}appstore/green_2.png);}
+.app-item-green_2 li em span{background-color:#01ad57;border-color:#4ed793;}
+
+.app-item-purple li{background:#f9d5f9;}
+.app-item-purple li em{background:url({$RESOURCE_URL}appstore/purple.png);}
+.app-item-purple li em span{background-color:#582782;border-color:#936db6;}
+
+.app-item-pink li{background:#fdddea;}
+.app-item-pink li em{background:url({$RESOURCE_URL}appstore/pink.png);}
+.app-item-pink li em span{background-color:#bb386c;border-color:#ec83ac;}
+
+.app-item-blue_2 li{background:#d5f1f2;}
+.app-item-blue_2 li em{background:url({$RESOURCE_URL}appstore/blue_2.png);}
+.app-item-blue_2 li em span{background-color:#419f9f;border-color:#90d8d7;}
+
+#edit-area{display:none;width:100%;height:100%;position: fixed;left:0;top:0;background: rgba(0, 0, 0, .2);z-index: 2;}
+.edit-content-wrap{width:830px;height:590px;position:fixed;left:50%;top:10%;margin-left:-415px;background:white;z-index: 2;}
+
+.edit-close{position: absolute;top:7px;right:5px;cursor:pointer;font-size:0px;width: 18px;height:18px;background:url({$RESOURCE_URL}appstore/close_2.png);}
+
+.edit-content h2{ background: url(1)  no-repeat 10px center; line-height: 75px; background-color: #f6f6f6; border-bottom: 1px solid #ccc; padding-left: 70px; }
+.edit-content .btn, .iframe-back{border-radius:2px;height:28px;padding:0 20px;line-height:28px;background:url({$RESOURCE_URL}appstore/1px.png);display:inline-block;position:absolute;right:50px;top:25px;cursor:pointer;color:#fff;}
+.waiting-img{width:40px;height:40px;position: absolute;left:50%;top:20%;}
+
+.iframe-wrapper{display:none;}
+.iframe-back{background:-webkit-linear-gradient(#7c7c7c,#4c4c4c);background:-moz-linear-gradient(#7c7c7c,#4c4c4c);}
+.iframe-back:hover{background:-webkit-linear-gradient(#676666,#2e2d2d);background:-moz-linear-gradient(#676666,#2e2d2d);}
+
+.iframe-open .edit-info{display:none;}
+.iframe-open .iframe-wrapper{display:block;}
+#iframe{display:block;border:none;width:100%;height:515px;}
+#toolsiframe{display:block;border:none;width:100%;height:200px;}

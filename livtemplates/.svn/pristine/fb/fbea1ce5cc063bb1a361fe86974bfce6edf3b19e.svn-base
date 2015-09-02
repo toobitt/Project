@@ -1,0 +1,90 @@
+.clear{clear:both;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+a{text-decoration:none;}
+.twitter-head-r{width:88%;text-align:right;}
+.user{color:#333;overflow:hidden;}
+/*left-nav*/
+.user ._left{width:180px;border:1px solid #E9E8E6;background: #F9F9F9;float: left;padding:15px 10px;}
+.twitter-user{height:50px;margin-bottom:15px;}
+.twitter-user .user-pic{float:left;width:50px;height:50px;overflow:hidden;}
+.twitter-user .user-info{float:left;width:105px;margin-left:10px;padding-top:6px;}
+.twitter-user .user-info .user-name{font-size:14px;}
+.twitter-user .user-info .user-department{padding:5px 0 5px 0;color:#949494;}
+.twitter-user .exit{float:right;color:#8fa8c6;}
+.user ul.menu li{border-top:1px solid #E9E8E6;height:42px;line-height:42px;}
+.user ul.menu li a{width:170px;padding-left:10px;font-size:16px;color:#767676;display:block;}
+.user ul.menu li.on a{background: #5599CC;color:white;}
+.user ul.menu li:hover a{background: #5599CC;color:white;}
+/*middle*/
+.user ._mid{float:left;position:relative;width:600px;border:1px solid #D3D3D3;background: #fff;}
+.con{top:0;left:0;padding:15px 25px;color:#333;overflow:auto;}
+.con .pub{}
+.con .pub textarea{border-radius:2px;width:538px;height:30px;resize: none;border: 1px solid #CCC;color:#ccc;padding:5px;}
+.con .pub span{font-size:12px;color:#b0c0d7;}
+.con .pub div.btn_list{margin:5px 0 10px;}
+.con .pub span.btn_img,.con .pub span.btn_video,.con .pub span.btn_music{display:inline-block;height:16px;width:30px;padding-left:25px;cursor: pointer;}
+.con .pub span.btn_img{background:url({$RESOURCE_URL}ind_img.png) no-repeat left center;}
+.con .pub span.btn_video{background:url({$RESOURCE_URL}ind_video.png) no-repeat left center;}
+.con .pub span.btn_music{background:url({$RESOURCE_URL}ind_music.png) no-repeat left center;}
+.con .pub span span{height:16px;width:25px;line-height: 16px;display: block;margin-top:-16px;margin-left:22px;}
+.con .pub input.pub-btn{border-radius:2px;float:right;padding:0;border: 1px solid #aeaeae;height: 26px;width: 80px;font-size: 13px;background:#e2e3e5;cursor: pointer;color:#333;}
+.con .recommond{width:520px;height:100px;background: #F6F4F5;margin-top:20px;padding:15px;font-size:12px;}
+.con .recommond .title h3{float:left;font-size:16px;color:#333;}
+.con .recommond .title .date{float:right;color:#9a9a9a;height:30px;line-height:20px;padding-right:5px;}
+.con .recommond .news-con{width:520px;height:40px;line-height:20px;color:#9a9a9a;text-overflow:ellipsis;overflow:hidden;font-size:16px;}
+.con .recommond .news-replace{text-align:right;color:#333;margin-top:10px;padding-right:5px;}
+.con .recommond .news-replace em{padding:0 5px;}
+.con .conList{margin:20px 0 0;height:550px;overflow:auto;}
+.con .conList ul li{padding-bottom:20px;margin-bottom:20px;background:url({$RESOURCE_URL}dottedLine.png) repeat-x bottom;}
+.con .conList .user-pic{float:left;width:50px;height:50px;overflow:hidden;}
+.con .conList .twitter-area{float:left;width:470px;margin-left:10px;}
+.con .conList .twitter-area .twitter-title{line-height:1.5;}
+.con .conList .twitter-area .user-name{color:#6b9fcf;font-size:14px;}
+.con .conList .twitter-area .twitter-comment{display:none;position:relative;margin-top:12px;padding:15px;background: #f9f9f9;border:1px solid #e8e8e8;border-radius:2px;}
+.con .conList .twitter-area .twitter-comment .loading{display:none;position:absolute;top:50px;left:170px;margin-bottom:10px;height:36px;padding-left:25px;background:url({$RESOURCE_URL}twitter/loading.gif) no-repeat;}
+.con .conList .twitter-area .twitter-comment em{position:absolute;right:20px;top:-9px;display:block;width:17px;height:9px;background:url({$RESOURCE_URL}twitter/twitter_arrow.jpg) no-repeat}
+.con .conList .twitter-area .twitter-comment .twitter-comment-form{margin-bottom:15px;}
+.con .conList .twitter-area .twitter-comment .comment-txt{width:378px;height:26px;border:1px solid #d2d6d9;}
+.con .conList .twitter-area .twitter-comment .comment_btn{border-radius:2px;padding:0;border:1px solid #aeaeae;height:26px;width:46px;margin-left:8px;font-size:13px;background:#e2e3e5;cursor:pointer;color:#333;}
+.con .conList .twitter-area .twitter-comment .user-pic{width:30px;height:30px;margin-right:8px;}
+.con .conList .twitter-area .twitter-comment .twitter-title{font-size:13px;padding-top:5px;}
+.con .conList .twitter-area .twitter-comment .user-name{font-size:13px;}
+.con .conList .twitter-area .twitter-detail{margin-top:13px;font-size:12px;color:#96afce;}
+.con .conList .twitter-area .twitter-control{float:right;}
+.con .conList .twitter-area .twitter-control a{color:#96afce;padding:0 5px;cursor:pointer;}
+.con .conList .twitter-area .twitter-picList{margin-top:15px;}
+.con .conList .twitter-area .twitter-picList ul li{float:left;margin:0 8px 5px 0;padding:0;background:none;}
+/*right*/
+.user ._right{float:left;width:290px;margin-left:10px;}
+.common-r-area{border:1px solid #e0e0e0;border-radius:2px;padding:8px;}
+.common-r-area h3{color:#525252;border-bottom:1px solid #e0e0e0;padding:0 0 8px 8px;font-size:14px;}
+.common-r-area h3 span {float:right; font-size:12px; color:#999; margin-right:8px;}
+.common-r-area h3 span a {color:#999; margin-left:5px;}
+.common-r-area h3 span a:hover {color:#000; text-decoration:underline;}
+.run-info,.express-controll{margin-top:15px;background:#feffff;}
+.run-info ul,.express-controll ul{padding:8px 8px 0;}
+.run-info ul li{float:left;/*margin:0 45px 15px 0;*/padding-left:20px;width:105px;margin-bottom:15px;}
+.run-info ul li.true{background:url({$RESOURCE_URL}twitter/true.jpg) no-repeat left center;}
+.run-info ul li.false{background:url({$RESOURCE_URL}twitter/false.jpg) no-repeat left center;color:#ff0101}
+.express-controll ul li{float:left;width:115px;border:1px solid #e2e2e2;border-radius:2px;margin:0 10px 10px 0;}
+.express-controll ul li a{display:block;height:30px;line-height:30px;text-align:center;width:115px;background:#f9f9f9;color:#333;}
+/*转发*/
+.ui-widget-overlay{background:#000;opacity:0.5;}
+.ui-widget-header{background:#f3f3f3;border:none;color:#333;}
+.ui-widget-header .ui-icon{background-image:url({$RESOURCE_URL}jquery-ui/ui-icons_222222_256x240.png)}
+#transmit-dialog{display:none;}
+.transmit-box{font-size:12px;padding-bottom:20px;}
+.transmit-box .transmit-text{margin:10px 0 10px;height:16px;overflow:hidden;}
+.transmit-box .transmit-text .title{width:450px;display:inline-block;}
+.transmit-box .transmit-text .user-name{font-weight:bold;}
+.transmit-box .transmit-text .transmit-con{line-height:1.5;}
+.transmit-box .transmit-text .all{width:475px;height:auto;white-space:normal;}
+.transmit-box .transmit-text .W_arrow{float:right;display: none;font-size: 12px;height: 5px;line-height: 12px;margin-top:6px;overflow: hidden;vertical-align: middle;width:7px;}
+.transmit-box .transmit-text .W_arrow .down{display:block;margin:-7px 0 0 -2px;cursor:pointer;}
+.transmit-box .tip{font-size:12px;color:#666;text-align:right;}
+.transmit-box .tip .number-normal,.number-red{display:inline-block;font-family:Constantia,Georgia;width:30px;font-size:18px;text-align:center;}
+.transmit-box .tip .number-normal{color:#333;}
+.transmit-box .tip .number-red{color:red;}
+.transmit-box .tip .tip-number{font-family:Constantia,Georgia;font-size:18px;color:#333;}
+.transmit-box .transmit-txtarea{width:475px;height:70px;margin:5px 0 10px 0;border-radius:2px;border:1px solid #aeaeae;color:#666;}
+.transmit-box .transmit-btn{display:block;float:right;padding:0;border-radius:2px;border:1px solid #aeaeae;height:26px;width:46px;font-size:13px;background:#e2e3e5;cursor:pointer;color:#333;}

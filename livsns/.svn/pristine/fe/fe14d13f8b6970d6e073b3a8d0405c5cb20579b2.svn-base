@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- edited with XMLSpy v2007 (http://www.altova.com) by huhaiqin (EMBRACE) -->
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://EMBCallbackService" xmlns:sys="CCTVMRECI" targetNamespace="http://EMBCallbackService">
+	<types>
+		<xs:schema>
+			<xs:import namespace="CCTVMRECI" schemaLocation="DYEMB_MRECI.xsd"/>
+		</xs:schema>
+	</types>
+	<message name="EMBCallbackRequest">
+		<part name="EMBCallbackRequest" type="sys:EMBCallbackRequestType"/>
+	</message>
+	<portType name="typeEMBCallbackService">
+		<operation name="EMBCallback">
+			<input message="tns:EMBCallbackRequest"/>
+		</operation>
+	</portType>
+	<binding name="bindingEMBCallbackService" type="tns:typeEMBCallbackService">
+		<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="EMBCallback">
+			<soap:operation soapAction="EMBCallback"/>
+			<input>
+				<soap:body use="literal" namespace="EMBCallbackService"/>
+			</input>
+		</operation>
+	</binding>
+	<service name="EMBCallbackService">
+		<port name="typeEMBCallbackService" binding="tns:bindingEMBCallbackService">
+			<soap:address location="http://api.dev.hogesoft.com/livmedia/technical_review_callback.php"/>
+		</port>
+	</service>
+</definitions>

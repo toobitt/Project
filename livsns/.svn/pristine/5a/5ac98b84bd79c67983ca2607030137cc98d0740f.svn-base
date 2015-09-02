@@ -1,0 +1,69 @@
+/*
+Copyright (c) 2011, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 2.9.0
+*/
+html{color:#000;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,select,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,button,caption,cite,code,dfn,em,input,optgroup,option,select,strong,textarea,th,var{font:inherit}del,ins{text-decoration:none}li{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:baseline}sub{vertical-align:baseline}legend{color:#000}
+
+
+html,body{font:normal 12px "Hiragino Sans GB","Microsoft YaHei",tahoma,verdana,arial,sans-serif:width:100%;height:100%;min-width:320px;}
+
+body{-webkit-user-select:none; background-repeat:repeat;background-size:100% 100%;}
+body.ggk-body{background-image:url(../images/c_bg.png);}
+body.zhuanpan-body{background-image:url(../images/zhuanpan_bg.png);}
+/*刮刮卡*/
+.lottery-game-box{position:relative;width:320px;height:100%;margin:0 auto;overflow:hidden;}
+.lottery-game-box .lottery-canvas-wrap.mask{display:none;}
+.lottery-game-box .my-lottery-btn{text-decoration:none;background:#cc1a19;color:#fff;height:36px;line-height:36px;cursor:pointer;display:block;width:128px;text-align:center;border-bottom:5px solid #a7020c;border-radius:6px;font-size:18px;margin:13px auto;}
+.lottery-game-box .other-lottery-info{position:absolute;width: 311px;height:43px;left: -15px;bottom: -10px;color:#fff;font-size:12px;background:url(../images/awards_bottom.png) no-repeat;background-size:100% 100%;}
+.lottery-game-box .other-lottery-info .item{padding-left:40px;padding-top:3px;}
+.lottery-game-box .other-lottery-info span{display:inline-block;width:90px;}
+.lottery-game-box .form-lottery-info{margin:40px 20px 40px 20px;display:none;}
+.lottery-game-box .form-lottery-info>div{margin-bottom:20px;}
+.lottery-game-box .form-lottery-info span{font-size:14px;color:#fff;}
+.lottery-game-box .form-lottery-info input,.lottery-game-box .form-lottery-info textarea{vertical-align:middle;width:160px;border:1px solid #a64222;height:30px;line-height:30px;padding:0 2px;}
+.lottery-game-box .form-lottery-info textarea{height:50px;line-height:1.4;}
+.lottery-game-box .form-lottery-info .submit{margin:0 auto;width:90px;height:32px;margin-top:10px;font-size:16px;text-align:center;line-height:32px;cursor:pointer;color:#a64222;background:#ffca44;}
+.lottery-game-box .lottery-nologin-area{display:none;width:200px;height:100px;margin:50px auto 0;}
+.lottery-game-box .lottery-nologin-area a{cursor:pointer;display:inline-block;border-radius:2px;font-size:18px;width:100%;height:36px;line-height:36px;text-align:center;color:#fff;background:#f39d12;}
+.lottery-game-box .lottery-nologin-area .lottery-gologin{background:#f8b617;margin-top:28px;}
+.lottery-game-box .lottery-nologin-area .lottery-gologin:active{background:#f39d12;}
+.lottery-game-box .lottery-nologin-area .lottery-refresh:active{background:#f8b617;}
+
+.lottery-limit-tip{display:none;background:rgba(0,0,0,.5);position: fixed;top: 0;bottom: 0;left: 0;right: 0;}
+.lottery-limit-tip .lottery-limit-tip-area{position:absolute;top:50%;left:50%;margin:-90px 0 0 -140px;font-size:16px;width:280px;height:180px;color:#ffed5b;text-align:center;background: -webkit-linear-gradient(top,#b70232, #90022c);box-shadow: 0 0 8px #000;}
+.lottery-limit-tip .msg{height:100px;display:-webkit-box;-webkit-box-align:center;padding: 0 10px;line-height:1.6;max-height:100px;overflow:hidden;}
+.lottery-limit-tip .controll span{display:inline-block;margin:0 5px;width:70px;height:30px;font-size:14px;line-height:30px;cursor:pointer;color:#a64222;background:#ffca44;text-align:center;}
+.lottery-limit-tip .controll span.cancle-mask{display:none;}
+.lottery-limit-tip.need-confirm .controll span.cancle-mask{display:inline-block;}
+.lottery-shengming{position:absolute;bottom:12px;text-align:center;font-size:12px;color:#fff;width:100%;}
+
+
+/*大转盘*/
+.zhuanpan-game-box{width:100%;height:100%;position:static;}
+.zhuanpan-game-box .zhuanpan-head{width:275px;height:113px;margin:48px auto 0;background:url(../images/chaojiletou.png);background-size:100% 100%;}
+.zhuanpan-game-box .zhuanpan-wrap{-webkit-user-select:none;position:absolute;top:50%;left:50%;margin:-122px 0 0 -142px;width:285px;height:285px;background:url(../images/zhuanpan_circle.png) no-repeat;background-size:285px 285px;}
+.zhuanpan-game-box .zhuanpan-arrow{position:absolute;left:50%;top:-20px;margin-left:-24px;width:48px;height:59px;background:url(../images/arrow.png) no-repeat;background-size:100% 100%;}
+.zhuanpan-game-box .zhuanpan-canvas-area{width:260px;margin:-14px 0 0 12px;}
+.zhuanpan-game-box .zhuanpan-start-btn{cursor:pointer;position:absolute;-webkit-user-select:none;left:50%;margin-left:-56px;bottom:87px;width:112px;height:112px;font-size:0;background:url(../images/start.png) no-repeat center #fff;border-radius:50%;background-size:110px 110px;}
+.zhuanpan-game-box .zhuanpan-awards-pop{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.7);}
+.zhuanpan-game-box .gift-shadow{position:absolute;top:20px;z-index:2;background:url(../images/gift_shadow.png) no-repeat center;width:100%;height:290px;}
+.zhuanpan-game-box .gift-box{position:absolute;top:50%;background:url(../images/gift_box.png) no-repeat center;width:100%;height:133px;}
+.zhuanpan-game-box .lottery-mask{position:absolute;-webkit-user-select:none;left:50%;margin-left:-56px;bottom:87px;width:112px;height:112px;background:none;border-radius:50%;background-size:110px 110px;top:90px;}
+.zhuanpan-game-box .lottery-nologin-area .lottery-refresh{background:#eb7f31;}
+.zhuanpan-game-box .lottery-nologin-area .lottery-refresh:active{background:#f2a142;}
+.zhuanpan-game-box .lottery-nologin-area .lottery-gologin{background:#f2a142;margin-top:28px;}
+.zhuanpan-game-box .lottery-nologin-area .lottery-gologin:active{background:#eb7f31;}
+.zhuanpan-game-box .enterretry{text-shadow:1px 1px #fff;background-image:url(../images/retry.png);line-height:112px;text-align:center;color:#d56e0c;font-size:18px;font-weight:bold;}
+.zhuanpan-game-box .ggk-awards-pop-inner{background: -webkit-linear-gradient(top,#41ade3, #25378d);}
+.zhuanpan-game-box .ggk-awards-pop .cry-icon{background-image:url(../images/cry.png);}
+.zhuanpan-game-box .other-lottery-info{background-image:url(../images/awards_bottom.png);}
+.zhuanpan-game-box .lottery-limit-tip .lottery-limit-tip-area{background: -webkit-linear-gradient(top,#41ade3, #25378d);}
+.zhuanpan-game-box .lottery-limit-tip .controll span{background-color:#fed348;}
+.zhuanpan-game-box .form-lottery-info .submit{background-color:#fed348;}
+.zhuanpan-game-box .form-lottery-info input, .zhuanpan-game-box .form-lottery-info textarea{border-color:#41ade3;}
+
+@media screen and (device-height:480px){
+	.zhuanpan-game-box .zhuanpan-head{margin-top:10px;}
+}

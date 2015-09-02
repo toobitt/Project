@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="yes" name="apple-touch-fullscreen" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<link rel="apple-touch-icon-precomposed" href="" />
+<link href="./css/gmu.css" rel="stylesheet" type="text/css"/>
+<link href="./css/bae.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="./css/common.css" type="text/css" />
+<link rel="stylesheet" href="css/road.css" type="text/css" />
+<link rel="stylesheet" href="http://api.map.baidu.com/library/TrafficControl/1.4/src/TrafficControl_min.css" type="text/css" />
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.4&ak=G3zlz1NuGD2GWPHlIvnbHGvH"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/library/TrafficControl/1.4/src/TrafficControl_min.js"></script>
+<script type="text/javascript" src="./js/zepto.min.js"></script>
+<script type="text/javascript" src="./js/gmu/gmu.js"></script>
+<script type="text/javascript" src="./js/gmu/widget/refresh/refresh.js"></script>
+<script type="text/javascript" src="./js/gmu/widget/refresh/$iscroll.js"></script>
+<script type="text/javascript" src="./js/gmu/widget/navigator/navigator.js"></script>
+<script type="text/javascript" src="./js/gmu/widget/navigator/$scrollable.js"></script>
+<script type="text/javascript" src="./js/gmu/widget/navigator/evenness.js"></script>
+<script type="text/javascript" src="./js/bae_progressbar.js"></script>
+<script type="text/javascript" src="./js/road/road.js"></script>
+<title>实时路况</title>
+</head>
+<body>
+<div class="first-body transition">
+	<div data-role="bae_header" class="ui-bae-header">
+		<div class="ui-bae-header-list">
+			<div class="ui-bae-header-left">
+				<a href="javascript:;" data-role="bae_header_button" class="ui-bae-go-back"></a>
+			</div>实时路况
+		</div>
+		<ul class="ui-bae-color-line"> 
+			<li>&nbsp;</li>  <li>&nbsp;</li> <li>&nbsp;</li> <li>&nbsp;</li> <li>&nbsp;</li> 
+		</ul>
+	</div>
+	<div class="road-wrap">
+		<!--栏目开始-->
+	    <div class="subnav m2o-flex">
+	    	<div class="nav-box m2o-flex-one">
+	        <ul>
+	        </ul>
+	        </div>
+	        <a id="arrow"><span>>></span></a>
+	    </div>
+	    <!--栏目结束-->
+		<div class="data-list-wrap">
+			<div class="ui-refresh-up ui-refresh-btn hide" noevent="true">&nbsp;</div>
+			<ul id="thelist" class="data-list">
+				<!-- 路况列表 -->
+	        </ul>
+			<div class="ui-refresh-down ui-refresh-btn" noevent="true"></div>
+		</div>
+	</div>
+	<a class="road-map-icon map">&nbsp;</a>
+	<!--滚动面板结束-->
+	<div class="getloc-wrap">
+		<div class="map-item map-nav"></div>
+		<div class="map-item map-road">
+			<p>显示实时路况</p>
+			<div class="status">
+				<a style="background-color:#f30400">拥堵</a><a style="background-color:#ffa200">缓行</a><a style="background-color:#10d878">畅通</a>
+			</div>
+		</div>
+		<div id="roadMap"></div>
+	</div>
+	<div id="wirelessDiv">&nbsp;</div>
+</div>
+</body>
+</html>

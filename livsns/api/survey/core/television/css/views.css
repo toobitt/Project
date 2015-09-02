@@ -1,0 +1,39 @@
+.page-content{display:none; }
+
+/*vote-info*/
+.header-block .attr-block{line-height:19px;font-size:1.2rem;vertical-align:middle; text-align:justify; padding:0 0 13px;color:#333;}
+.header-block .attr-block a{color:#8ec860;  margin-left:1rem; padding:0 3px;}
+.header-block .vote-info-block{padding:0 0 18px;font-size:1.2rem;}
+.header-block .choice-info{float:left;text-align:center;line-height:17px;width:45px;height:17px;color:#fff;background-color:#2274e2; }
+.header-block .vote-info{float:right; line-height:18px; font-size:1.2rem; padding-left:20px;text-align:right;background:url(../images/vote.png) no-repeat left center;background-size:14px;display:none; }
+
+.header-block .time-info{height:18px; line-height:18px; margin-left:-18px; padding:0 10px 0 18px; color:#fff; background-color:#fe7d7d; border-radius:0 10px 10px 0; display:none; }
+.header-block .time-info.show{display:inline-block; }
+.header-block .time-info .time{margin-left:10px; }
+
+.btn-area .btn{margin-bottom:10px; cursor:pointer; }
+.btn-area .view-result, .btn-area .view-form{display:none; }
+.btn-area .view-result.show, .btn-area .view-form.show{display:block; }
+
+/*detail-link*/
+.link{display:block;color:#999;}
+
+.form-block{display:none;}
+.form-block .link{float:right;}
+
+/*progress*/
+.progress-line{margin:0 17px 0 41px;min-height:19px;line-height:19px;vertical-align:middle;}
+.progress-line .choice-info{display:inline-block;margin-right:8px; width:50px;white-space:nowrap; overflow:hidden;text-overflow:ellipsis;min-height:19px; line-height:19px;vertical-align:middle;font-size:1.2rem;color:#333;}
+
+.progress-bar{ display:inline-block;width:100%; height: 8px;background-color: #f0f2f2;position: relative;}
+.progress-valid{height: 100%;width: 0%;-webkit-transition:width 1s; transition:width 1s;background-color: #fc6;display: inline-block;position: absolute;left: 0;top: 0;}
+.progress-line:nth-child(even) .progress-valid{background-color:#69f; }
+
+.cent-info{display:inline-block;padding-left:12px; width:100px;font-size:1rem; color:#999; text-align:right;  vertical-align: top;}
+
+
+.preview-block{margin-bottom:80px; display:none; }
+.preview-block .cell_name{color:#333; }
+.nodata{line-height:22px; color:#dd4a68; text-align:center; margin:20px 0; font-size:1.4rem; }
+.nodata.client{color:#333;}
+.nodata.client a{margin:0 5px; color:#2274e2;}

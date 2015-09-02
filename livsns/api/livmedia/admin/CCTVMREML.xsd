@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2007 (http://www.altova.com) by test (test) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="CCTVMREML" targetNamespace="CCTVMREML" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="AVMaterialEntity" type="tns:AVMaterialEntityType">
+		<xs:annotation>
+			<xs:documentation>视音频实体</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="ClipList" type="tns:ClipListType">
+		<xs:annotation>
+			<xs:documentation>素材列表信息</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="FileGroups">
+		<xs:annotation>
+			<xs:documentation>文件元素信息</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="tns:FileGroup" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="FileGroup" type="tns:FileGroupType">
+		<xs:annotation>
+			<xs:documentation>文件组元素信息</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="StorageInfo" type="tns:StorageInfoType">
+		<xs:annotation>
+			<xs:documentation>文件组存储信息</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="AVFormat" type="tns:AVFormatType">
+		<xs:annotation>
+			<xs:documentation>文件组对应的音视频文件格式信息</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="FileItem" type="tns:FileItemType">
+		<xs:annotation>
+			<xs:documentation>物理文件基本信息</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="EntityData" type="tns:EntityDataType">
+		<xs:annotation>
+			<xs:documentation>视音频实体基本属性</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="ExtendAttributes" type="tns:ExtendAttributesType">
+		<xs:annotation>
+			<xs:documentation>扩展属性</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="EntityDataType">
+		<xs:sequence>
+			<xs:element name="MaterialID" type="xsd:string">
+				<xs:annotation>
+					<xs:documentation>资源唯一标识代码</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ProgramCode" type="xsd:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>节目代码</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="MaterialName" type="xsd:string">
+				<xs:annotation>
+					<xs:documentation>资源名称</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="MaterialType" type="xsd:int" default="1">
+				<xs:annotation>
+					<xs:documentation>资源类型（素材、成品节目、播出节目、通稿等）</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TotalLength" type="xs:long">
+				<xs:annotation>
+					<xs:documentation>素材总时长</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="MarkIn" type="xsd:long" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>入点。对于含有视频的单位是帧，纯音频单位是采样点</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="MarkOut" type="xsd:long" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>出点。对于含有视频的单位是帧，纯音频单位是采样点</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="tns:ExtendAttributes" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="AVMaterialEntityType">
+		<xs:sequence>
+			<xs:element ref="tns:EntityData"/>
+			<xs:element name="EntityMetaData" type="tns:EntityMetaDataType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>实体对象属性</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="tns:FileGroups" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="EntityMetaDataType">
+		<xs:sequence>
+			<xs:element ref="tns:ClipList" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ClassType">
+		<xs:sequence>
+			<xs:element name="Classification" type="xsd:string">
+				<xs:annotation>
+					<xs:documentation>分类法</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ClassNumber" type="xsd:string">
+				<xs:annotation>
+					<xs:documentation>分类号</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ExtendAttributesType">
+		<xs:sequence>
+			<xs:element name="ExtendAttribute" type="tns:ExtendAttributeType" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>扩展属性或者扩展属性组的列</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ExtendAttributeType">
+		<xs:sequence>
+			<xs:element name="AttributeID" type="xsd:string">
+				<xs:annotation>
+					<xs:documentation>例对应的属性ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AttributeValue" type="xsd:string">
+				<xs:annotation>
+					<xs:documentation>特定行和列对应的属性值</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="FileItemType">
+		<xs:sequence>
+			<xs:element name="FileName" type="xsd:string">
+				<xs:annotation>
+					<xs:documentation>物理文件名称，不包含路径信息</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FileID" type="xsd:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>文件ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FileSize" type="xsd:long" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>文件大小（字节）</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FileVerifyCode" type="xsd:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>文件验证代码</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FileHint" type="xsd:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>文件备注信息</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="MarkIn" type="xsd:long" default="0" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>文件入点，对于视频单位是帧，音频单位是采样点，当需要对文件源文件剪切时填写</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="MarkOut" type="xsd:long" default="0" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>文件出点，对于视频单位是帧，音频单位是采样点，当需要对文件源文件剪切时填写</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FileLength" type="xsd:long" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>文件长度，视频用帧；音频用采样点</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ChannelIndex" type="xsd:int" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>音频文件声道序号.音频文件从0开始，对于视频文件没有意义</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AudioCHInfo" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>声道内容信息</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="AudioCH" type="xsd:int">
+							<xs:annotation>
+								<xs:documentation>声道号</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="AudioLang" type="xsd:string">
+							<xs:annotation>
+								<xs:documentation>声道语种</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="AudioDescription" type="xsd:string" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>声道内容</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element ref="tns:ExtendAttributes" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="AVFormatType">
+		<xs:sequence>
+			<xs:element name="FileFormatType" type="xsd:int">
+				<xs:annotation>
+					<xs:documentation>文件格式类型</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FileFormatSubType" type="xsd:int">
+				<xs:annotation>
+					<xs:documentation>文件格式子类型</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="IsIncludeVideo" type="xsd:int">
+				<xs:annotation>
+					<xs:documentation>是否包含视频</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="IsIncludeAudio" type="xsd:int">
+				<xs:annotation>
+					<xs:documentation>是否包含音频</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VideoInfo" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>视频格式信息</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="VideoCodingFormat" type="xsd:int">
+							<xs:annotation>
+								<xs:documentation>视频编码类型</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="VideoSubType" type="xsd:int">
+							<xs:annotation>
+								<xs:documentation>视频编解码的子类型</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="CXSize" type="xsd:int">
+							<xs:annotation>
+								<xs:documentation>画面X尺寸</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="CYSize" type="xsd:int">
+							<xs:annotation>
+								<xs:documentation>画面Y尺寸</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="StandardRate" type="xsd:int">
+							<xs:annotation>
+								<xs:documentation>基本帧频</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="StandardScale" type="xsd:int">
+							<xs:annotation>
+								<xs:documentation>系数（用于帧序号计算）</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="ScanMode" type="xsd:int">
+							<xs:annotation>
+								<xs:documentation>扫描模式</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="ColorFormat" type="xsd:int">
+							<xs:annotation>
+								<xs:documentation>视频颜色格式</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="VideoBitrate" type="xsd:int">
+							<xs:annotation>
+								<xs:documentation>视频码率</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="IsConstantRate" type="xsd:int">
+							<xs:annotation>
+								<xs:documentation>是否为恒定码率编码</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="GOPSize" type="xsd:int">
+							<xs:annotation>
+								<xs:documentation>IBP帧压缩类型时的IBP帧组大小	</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="ReferencePeriod" type="xsd:int">
+							<xs:annotation>
+								<xs:documentation>IBP帧压缩类型时IP帧的间隔周期</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="IsY16_235" type="xsd:int">
+							<xs:annotation>
+								<xs:documentation>1:Y[16-235]---normal, 0:Y[0-255]---KEY</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="AudioInfo" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>音频格式信息</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="AudioCodingFormat" type="xsd:int">
+							<xs:annotation>
+								<xs:documentation>音频编码类型</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="AudioSubType" type="xsd:int">
+							<xs:annotation>
+								<xs:documentation>音频编码子类型</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="Channels" type="xsd:int">
+							<xs:annotation>
+								<xs:documentation>声道数目</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="AudioDataRate" type="xsd:int">
+							<xs:annotation>
+								<xs:documentation>音频码率 bits/s</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="AudioSamplingFreq" type="xsd:int">
+							<xs:annotation>
+								<xs:documentation>每秒采样数量</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="AudioBitDepth" type="xsd:int">
+							<xs:annotation>
+								<xs:documentation>采样位数</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="BlockAlign" type="xsd:int">
+							<xs:annotation>
+								<xs:documentation>每采样字节数量</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="StorageInfoType">
+		<xs:sequence>
+			<xs:element name="SystemID" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>文件所属系统ID，EMB进行资源映射时使用</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="StorageType" type="xsd:int">
+				<xs:annotation>
+					<xs:documentation>存储类型：0.FTP路径  1.UNC文件共享路</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="StoragePath" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>存储路径</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="FileGroupType">
+		<xs:sequence>
+			<xs:element name="GroupMetadata" type="tns:GroupMetadataType">
+				<xs:annotation>
+					<xs:documentation>文件组的元数据信息</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="tns:FileItem" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="GroupMetadataType">
+		<xs:sequence>
+			<xs:element name="GroupName" type="xsd:string">
+				<xs:annotation>
+					<xs:documentation>文件组名称</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="GroupType" type="xsd:int">
+				<xs:annotation>
+					<xs:documentation>文件组类型（高码流视频、高码流音频、高码流混视音频、低码流视音频、字幕工程文件、节目工程文件、图片等）</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SubGroupType" type="xsd:int" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>文件组子类型，只有当文件组类型为音频时才有效</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="GroupHint" type="xsd:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>文件组说明</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="tns:StorageInfo" minOccurs="0"/>
+			<xs:element name="FormatTemplete" type="xsd:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>视音频格式模板名称，填写模板名称后可以不用填写下面的详细文件格式</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="tns:AVFormat" minOccurs="0"/>
+			<xs:element name="IsNeedEncrypt" type="xs:boolean" default="0" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>是否对视频文件进行加密处理</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="IsNeedAddCG" type="xs:boolean" default="0" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>是否对视频文件进行叠加字幕处理</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="tns:ExtendAttributes" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ClipListType">
+		<xs:sequence>
+			<xs:element name="Clip" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="ClipID" type="xs:string">
+							<xs:annotation>
+								<xs:documentation>素材ID</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="ClipName" type="xs:string" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>素材名称</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="Description" type="xs:string" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>素材描述</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="StoryMarkIn" type="xs:long">
+							<xs:annotation>
+								<xs:documentation>在故事板里面的入点</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="StoryMarkOut" type="xs:long">
+							<xs:annotation>
+								<xs:documentation>在故事板中的出点</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="ClipMarkIn" type="xs:long">
+							<xs:annotation>
+								<xs:documentation>在素材中的入点</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="ClipMarkOut" type="xs:long">
+							<xs:annotation>
+								<xs:documentation>在素材中的出点</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

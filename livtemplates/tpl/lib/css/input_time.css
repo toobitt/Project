@@ -1,0 +1,4 @@
+@CHARSET "UTF-8";
+ .time_box{width:252px;height:34px;border:1px solid #d8d8d8;margin-top:5px;background:#ffffff;background:gray;display:inline-block;vertical-align:middle;margin-left:10px;}
+ .time_box .time_text{width:50px;height:20px;float:left;margin-left:5px;margin-top:5px;border:0px;background:#ffffff;}
+ .time_box .time_word{color:#000000;float:left;font-size:12px;margin-left:5px;margin-top:10px;}

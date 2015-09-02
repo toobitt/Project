@@ -1,0 +1,22 @@
+.clear{clear:both;}
+#group_more{display:none; background: none repeat scroll 0 0 #FFFFFF; border: 5px solid #CCCCCC; font-size: 12px; position: absolute; width: 300px;}
+.more_up{}
+.more_up .logo{float: left;}
+.more_up .logo img{height: 99px; padding: 2px; width: 99px;}
+.more_up ul{float: left;}
+.more_up ul li{padding: 2px 0; width: 160px;}
+.marks{display: inline-block; text-align: right; width: 70px;}
+.contents{}
+.more_down{}
+.more_down .marks{display: inline-block; float: left; text-align: left; width: 35px;}
+.more_down .contents{ display: inline-block; float: left; overflow: hidden; width: 256px;}
+
+.granfs_table{border:1px solid #B2D0EA;border-collapse:none;width:800px;}
+.granfs_table .grands_first{height: 28px; font-weight: bold; background: none repeat scroll 0% 0% #EFF6FC;text-align:center;}
+.granfs_table .grands_first td{border-bottom:1px solid #b2d0ea;border-right:1px solid #b2d0ea;}
+.granfs_table .grands_tr td{border:1px solid #B2D0EA; padding-left:5px;font-size:12px;text-align:center;height:28px;}
+
+#sub_left{font-size:12px;}
+.mt5{margin:5px;line-height: 32px;padding-bottom: 3px;}
+.w200{width:218px;height:25px;}
+.h25{height:25px;}

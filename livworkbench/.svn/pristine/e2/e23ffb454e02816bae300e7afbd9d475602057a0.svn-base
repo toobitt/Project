@@ -1,0 +1,16 @@
+html,body{height:100%;}
+.weather-wrap{background:#5e8fd1;height:100%;color:white;text-align:center; }
+.weather header{position:relative;height:2.2em;line-height:2.2em;font-size:2em;text-align:center;}
+
+.weather .today{margin:0 auto;}
+.weather .today-pic img{max-width:12em;}
+.weather .today .temperature{font-size:3.2em;}
+.weather .today .date{font-size:1.8em;}
+
+.weather .forecast-item{border-right:1px solid #fff;}
+.weather .forecast-item:last-child{border:none;}
+.weather .weather-pic img{max-width:8em;max-height:8em;}
+.weather .week{font-size:1.8em;}
+.weather .temperature{font-size:1.5em;}
+
+.weather footer{font-size:1.2em;height:2em;line-height:2em;}

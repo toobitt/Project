@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd";>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<title>详情</title>
+<link type="text/css" href="css/reset.css" rel="stylesheet">
+<link type="text/css" href="css/bootstrap.css" rel="stylesheet">
+<link type="text/css" href="css/flat-ui.css" rel="stylesheet">
+<link type="text/css" href="css/global.css" rel="stylesheet">
+<link type="text/css" href="css/hoge-ui.css" rel="stylesheet">
+<link type="text/css" href="css/sco.message.css" rel="stylesheet">
+<link type="text/css" href="css/jquery-ui-timepicker.css" rel="stylesheet">
+
+<script type="text/javascript" src= "js/sea.js"></script>
+<!-- <script type="text/javascript" src= "js/seajs.config.js"></script> -->
+<link type="text/css" rel="stylesheet" href="css/content.css" />
+<link type="text/css" rel="stylesheet" href="css/list.css" />
+<link type="text/css" rel="stylesheet" href="css/form.css" />
+</head>
+<body class="page-content">
+<div class="cloud-wrap cloud-shrink ">
+	<header class="navbar-fixed" role="banner">
+		<div class="container">
+			<div class="cloud-header">
+				审核流程
+			</div>
+			<!-- <ul class="cloud-menu">
+					<li class="cloud-manage active">
+						<a class="btn" href="http://v.hogecloud.com/index.php/welcome"><span class="icons manage"></span>管理视频</a>
+					</li>
+					<li class="cloud-usage ">
+						<a class="btn" href="http://v.hogecloud.com/index.php/welcome/status"><span class="icons usage"></span>流量统计</a>
+					</li>
+					<li class="cloud-usage ">
+						<a class="btn" href="http://v.hogecloud.com/index.php/player/show"><span class="icons yun-player"></span>云播放器</a>
+					</li>
+				   <li class="cloud-usage ">
+						<a class="btn" href="http://v.hogecloud.com/index.php/developer/application"><span class="icons app"></span>应用接入</a>
+					</li>
+			</ul> -->
+				<div class="cloud-user">
+					<a class="personal-center">
+			        	<!--<span class="menu-avatar">
+			        		<img src="http://img.hogecloud.com/material/auth/img/2015/04/20150414153218FqVx.jpeg" />
+			        	</span>-->
+						<span class="user-name overhidden" title="test">test</span>
+	        		</a>
+	        		<a class="logout" href="login.php?a=loginout">
+	        			|  退出
+	        		</a>
+	        		<!-- <div class="user-info-center">
+	        			<div class="info-center">
+	        				<img src="http://img.hogecloud.com/material/auth/img/2015/04/20150414153218FqVx.jpeg">
+	        				
+	        				<div class="user-item pull-left">
+	        					<div class="user-item-list ">
+	        						<span class="username overhidden" title="test">test</span>
+	        						<span>余额:100</span>
+	        					</div>
+	        					<div class="user-item-list">
+	        						<span>试用用户</span>
+	        					</div>
+	        				</div>
+	        			</div>
+	        			<ul class="userinfo-list">
+	        				<li class="info-list"><a href="http://v.hogecloud.com/index.php/user/">修改头像</a></li>
+	        				<li class="info-list"><a href="http://v.hogecloud.com/index.php/user/">修改密码</a></li>
+	        				<li class="info-list"><a href="http://v.hogecloud.com/index.php/user/user_bind_app_list">应用管理</a></li>
+	        				 
+		        			<li class="info-list"><a href="http://v.hogecloud.com/index.php/user/real_time_charge">实时清单</a></li>
+		        			<li class="info-list"><a href="http://v.hogecloud.com/index.php/user/price">产品价格</a></li>
+		        			<li class="info-list"><a href="http://v.hogecloud.com/index.php/user/recharge">快速充值</a></li>
+		        			<li class="info-list"><a href="http://v.hogecloud.com/index.php/user/charge_record">消费纪录</a></li>
+		        			
+		        		</ul>
+	        		</div>
+	        		<span class="drop"></span> -->
+				</div>
+							
+		</div>
+	</header>
+<section class="container">
+	<div class="container cloud-form m2o-flex">
+		<aside class="cloud-aside">
+			<span class="go-artical"></span>
+			<div class="cloud-list">
+				<div class="cloud-item">
+					<label>索引图：</label>
+					<div class="suoyin-box">
+						<img src="">
+						<span class="indexpic-suoyin indexpic-suoyin-current"></span>
+					</div>
+					<input type="file" class="suoyin-file" style="display:none;">
+				</div>
+			</div>
+			<div class="video-list">
+				<div class="video-list-title">审核跟踪</div>
+				<div class="video-list-content">
+					<ul>
+						<!--<li class="sys-flex current">
+							<div class="video-list-item sys-flex-one">
+								<span>文稿由编辑人员A签发给crystal1990进行第一轮审核</span>	
+								<span>2015-07-09 19:42:23</span>
+							</div>
+						</li>
+						 <li class="sys-flex">
+							<div class="video-list-item sys-flex-one">
+								<span>文稿由编辑人员A签发给crystal1990进行第一轮审核</span>	
+								<span>2015-07-09 19:42:23</span>
+							</div>
+						</li>
+						<li class="sys-flex">
+							<div class="video-list-item sys-flex-one">
+								<span>文稿由编辑人员A签发给crystal1990进行第一轮审核</span>	
+								<span>2015-07-09 19:42:23</span>
+							</div>
+						</li>
+						<li class="sys-flex">
+							<div class="video-list-item sys-flex-one">
+								<span>文稿由编辑人员A签发给crystal1990进行第一轮审核</span>	
+								<span>2015-07-09 19:42:23</span>
+							</div>
+						</li>
+						<li class="sys-flex">
+							<div class="video-list-item sys-flex-one">
+								<span>文稿由编辑人员A签发给crystal1990进行第一轮审核</span>	
+								<span>2015-07-09 19:42:23</span>
+							</div>
+						</li> -->
+					</ul>
+				</div>
+			</div>
+		</aside>
+		<div class="cloud-section m2o-flex-one artical-body">
+			<a class="goback" href="list_web.html">返回</a>
+			<span class="list-aside-detail"></span>
+			<!--<h1 class="artical-title">苦瓜炒鸡蛋千万不能吃！</h1>
+			<div class="artical-main">
+				 <p>第十四届环青海湖国际公路自行车赛最新战报：132公里的第五赛段设有两个途中冲刺点，分别位于第41.6公里处的湖东羊场和第77.3公里的青海湖景区门口。第十四届环青海湖国际公路自行车赛最新战报：132公里的第五赛段设有两个途中冲刺点，分别位于第41.6公里处的湖东羊场和第77.3公里的青海湖景区门口。</p>
+				<p style="text-align: center;"><img data-s="300,640" data-type="jpeg" data-src="http://mmbiz.qpic.cn/mmbiz/8xWjhdI8xrs6GCZo13OswJtnRV4z210MZOAXPNhV2Whe1p5icm5oy1dKibCDPWf4EFBamTiat56kRibRr798okcaiag/0?wx_fmt=jpeg" data-ratio="0.6636363636363637" data-w="440" src="http://img.ycgbtv.com.cn/material/news/img/2015/07/d36f90c65de64c908b8287334918a259.jpg" class="image" imageid="51795" hash="1437024624372"></p>
+				<p style="text-align: center;"><img data-s="300,640" data-type="jpeg" data-src="http://mmbiz.qpic.cn/mmbiz/8xWjhdI8xrs6GCZo13OswJtnRV4z210MAdhxx4AFw32MuIHMCag1Sg4icKJo1DLSiaS9tUwkicYfsY2wxmOrpdnvw/0?wx_fmt=jpeg" data-ratio="0.625" data-w="440" src="http://img.ycgbtv.com.cn/material/news/img/2015/07/435b7185b34bc2079c9ff899a92be39f.jpg" class="image" imageid="51796" hash="1437024624373"></p>
+				<p>赛段唯一的特级爬坡点则位于第85.6公里处的洛合垭口，海拔3740米，车手们将在短短4公里的距离中迅速爬升近450米，对所有车手来说都将是一个不小的挑战。</p> 
+			</div>-->
+		</div>
+	</div>
+</section>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/template.js"></script>
+<script type="text/javascript" src="js/global.js"></script>
+<script type="text/javascript" src="js/utils.js"></script>
+<script type="text/javascript" src="js/spin.min.js"></script>
+<script type="text/javascript" src="js/toast.min.js"></script>
+<script type="text/javascript" src="js/content.js"></script>
+</body>
+</html>
+
+

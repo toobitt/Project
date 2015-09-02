@@ -1,0 +1,52 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="yes" name="apple-touch-fullscreen" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<link rel="apple-touch-icon-precomposed" href="" />
+<link rel="stylesheet" href="css/gmu.css" type="text/css"/>
+<link rel="stylesheet" href="css/bae.css" type="text/css"/>
+<link rel="stylesheet" href="css/common.css" type="text/css" />
+<link rel="stylesheet" href="css/subway.css" type="text/css" />
+<link rel="stylesheet" href="css/service_info.css" type="text/css" />
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<title>地铁</title>
+</head>
+<body>
+	<div class="first-body transition" _attr="1">
+		<div data-role="bae_header" class="ui-bae-header">
+			<div class="ui-bae-header-list">
+				<div class="ui-bae-header-left">
+					<a href="javascript:history.back()" data-role="bae_header_button" class="ui-bae-go-back"></a>
+				</div>票价
+			</div>
+			<ul class="ui-bae-color-line"> 
+				<li>&nbsp;</li>  <li>&nbsp;</li> <li>&nbsp;</li> <li>&nbsp;</li> <li>&nbsp;</li> 
+			</ul>
+		</div>
+		<div class="tab-wrap detail-wrap">
+			<header class="notice-header">
+				<h2 class="title">地铁1号线票价: 2元起步</h2>
+				<div class="detail">
+					<span class="time">2013-03-01 08:30</span>
+				</div>	
+			</header>
+			<div class="img-box">
+				<img src="images/one-day.png" / >
+				<span>地铁票价方案</span>
+			</div>
+			<div class="notice">
+				<p>起步价2元乘5公里，起步里程以外，每增加一元，分别可乘5、5、7、7、9公里......（即，2元5公里、3元10公里、4元15公里、5元22公里、6元29公里......）。一号线现行里程全程票价6元。
+					</p>
+			</div>
+		</div>
+		
+	</div>
+</body>
+</html>
+
+
+
+

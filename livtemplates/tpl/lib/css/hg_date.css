@@ -1,0 +1,52 @@
+.date_table{background: #F5F6F8;padding: 12px;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;}
+.date_table td.date_th{border-bottom: 1px solid #CFD2D7; border-top: 1px solid #CFD2D7; color: #727272; font-size: 12px; padding: 3px 0;font-weight: 500;}
+
+.date_table tr.list_week{cursor:pointer;height: 28px;}
+.date_table tr.week_current td span{color:#fff;}
+.date_table tr.week_current{background:#5F9BD1;text-align:center;}
+.date_table tr.list_week:hover td{}
+.date_table tr.list_week:hover{background:none repeat scroll 0 0 #C9E5FD;text-align:center;}
+.date_table tr.list_day{height: 30px;}
+
+.date_table tr.list_day th{color:#727272;text-align:center;}
+.date_table td{color:#282828;text-align:center;font-weight: 600;font-size: 14px;}
+
+.date_table tr.top{height: 35px;}
+.date_table tr.top th.day_show:hover{background: none;color:#282828;cursor:default;}
+.date_table tr.top td.btn,.date_table tr.top th.day_show{padding-bottom:5px;font-size: 16px;}
+/*.date_table tr.top td.btn:hover{background: #848486;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;}*/
+.date_table tr.top td.btn span.left{background: url("{$RESOURCE_URL}date_left.png") no-repeat scroll 0 0 transparent; cursor: pointer; display: inline-block; height: 16px; text-align: center; width: 12px;}
+.date_table tr.top td.btn span.right{background: url("{$RESOURCE_URL}date_right.png")  no-repeat scroll 0 0 transparent; cursor: pointer; display: inline-block; height: 16px; text-align: center; width: 12px;}
+
+.date_table tr.list_day td span{cursor: pointer; display: inline-block; height: 21px;line-height: 21px; padding: 2px; width: 21px;}
+.date_table td span.week{color:#224798;}
+.date_table td span.dised{color:#BFBFBF;}
+.date_table tr.list_day td span:hover{background:#C9E5FD;text-align:center;}
+.date_table tr.list_day td span.current{background:#5F9BD1;text-align:center;color:#fff;}
+.date_table tr.list_day td span.dised:hover{background:#C9E5FD;text-align:center;cursor:default;}
+
+/****/
+.date_table{padding:0;background:#fff!important;border-collapse:collapse;}
+.date_table tr.top td.btn, .date_table tr.top th.day_show{border:0;}
+.date_table td.date_th{border:0;padding:0 0 12px 0;}
+.date_table td{border:1px solid #d4d4d4;padding:0;}
+.date_table tr.list_day td span{height:38px;line-height:38px;width:38px;padding:0;}
+.date_table td span.dised{color:#000;background:url("{$RESOURCE_URL}calendar.png") repeat-x;}
+.date_table td span.dised:active{background:url("{$RESOURCE_URL}calendar-active.png") repeat-x!important;}
+.date_table td span.week{color:#000;}
+.date_table tr.top td.btn span.left{background:url("{$RESOURCE_URL}calendar_date_left.png") no-repeat scroll 0 0 transparent;width:8px;height:12px;}
+.date_table tr.top td.btn span.right{background: url("{$RESOURCE_URL}calendar_date_right.png") no-repeat scroll 0 0 transparent;width:8px;height:12px;}
+.date_table tr.top td.btn span.left:hover{background-image:url("{$RESOURCE_URL}calendar_date_left_hover.png");}
+.date_table tr.top td.btn span.right:hover{background-image:url("{$RESOURCE_URL}calendar_date_right_hover.png");}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2) {
+	.date_table td span.dised{background-image:url("{$RESOURCE_URL}calendar-2x.png");background-size:2px 38px;}
+	.date_table td span.dised:active{background-image:url("{$RESOURCE_URL}calendar-active-2x.png");background-size:2px 38px;}
+    .date_table tr.top td.btn span.left{background-image:url("{$RESOURCE_URL}calendar_date_left-2x.png");background-size:8px 12px;}
+	.date_table tr.top td.btn span.right{background-image: url("{$RESOURCE_URL}calendar_date_right-2x.png");background-size:8px 12px;}
+	.date_table tr.top td.btn span.left:hover{background-image:url("{$RESOURCE_URL}calendar_date_left_hover-2x.png");background-size:8px 12px;}
+	.date_table tr.top td.btn span.right:hover{background-image:url("{$RESOURCE_URL}calendar_date_right_hover-2x.png");background-size:8px 12px;}
+}

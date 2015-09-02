@@ -1,0 +1,8 @@
+<p class="title">填写验证码</p>
+<div class="verify item">
+<div class="item">
+<input type="text" name="verify_code" required placeholder="输入验证码">
+<div class="verify-code" _type="#type#">点击获取验证码</div>
+<input type="hidden" name="session_id" value=""/>
+</div>
+</div>

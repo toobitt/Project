@@ -1,0 +1,34 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,select,p,blockquote,th,td{margin:0;padding:0}
+body{background:#eee; color:#989898; font-size:14px; -webkit-font-smoothing:antialiased; }
+
+li{list-style:none}
+
+img{width:100%; height:auto; vertical-align:middle; }
+.hide{display:none!important; }
+a{color:#8a8a8a; }
+p{margin:0; }
+em{font-style:normal; }
+.button{border:none; color:#fff; border-radius:3px; }
+*{-webkit-tap-highlight-color:rgba(0,0,0,0); -webkit-touch-callout:none; -webkit-text-size-adjust: none;}
+*, *:after{-webkit-box-sizing:border-box; box-sizing : border-box; }
+select, select:active{outline: none; }
+.btn[type="submit"], .btn[type="button"]{-webkit-appearance:none;}
+
+.m2o-overflow{overflow:hidden; white-space: nowrap; text-overflow:ellipsis; }
+.clear{overflow:visible;}
+.clear:after{clear: both; content: '.';display: block;visibility:hidden;height:0;}
+.img-box{overflow:hidden; text-align:center; background:url("./../images/imgdefault.png") no-repeat center center #888; }
+.transition{-webkit-transition:all 0.3s; transition:all 0.3s; }
+
+.modal-open{overflow:hidden; height:100%; }
+
+
+/* 盒模型 */
+.hg-flex{display:-webkit-box;width:auto;display:-ms-flexbox;}
+.hg-flex-center{-webkit-box-align:center;-ms-flex-align: center;}
+.hg-flex-end{-webkit-box-align:end;-ms-box-align:end;box-align:end;}
+.hg-flex-start{-webkit-box-align:start;-ms-box-align:end;box-align:start;}
+.hg-flex-one{-webkit-box-flex:1;-ms-flex:1;}
+.hg-flex-two{-webkit-box-flex:2;-ms-flex:2;}
+.hg-vertical{-webkit-box-orient:vertical;-ms-flex-direction:column;}
+.hg-flex-overflow{flex-wrap:wrap;}

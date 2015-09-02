@@ -1,0 +1,1 @@
+SELECT * FROM m2o_app_module WHERE 1 AND app_id = 2 ORDER BY sort_order ASC

@@ -1,0 +1,1 @@
+{if $materialinfo}	{foreach $materialinfo as $pic}		<div id="photo_{$pic['id']}"><img src="{code}echo hg_bulid_img($pic);{/code}" width="80" height="80" /><br /><input type="checkbox" class="n-h selectPhoto" name="selectPhoto" value="{$pic['id']}" /><em class="delPic" pic_id="{$pic['id']}">删除</em></div>	{/foreach}{/if}

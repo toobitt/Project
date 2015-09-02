@@ -1,0 +1,190 @@
+/*公共样式*/
+.add-button, .set-button, .back-button, .add-button-pure{border-radius:2px; display: inline-block; font-size:14px; 
+     line-height: 34px; height:34px; padding:0 15px 0 40px; cursor:pointer; border: none; width:auto;}
+.save-button,.save-button2, .cancel-button,.save-pink{border-radius:2px; display: inline-block; font-size:16px; 
+     line-height: 34px; height:34px; padding:0 30px; cursor:pointer; border: none; width:auto;}
+.pop-save-button{border-radius:2px; display: inline-block; font-size:12px; height:26px; line-height: 26px; 
+     padding:0 14px; cursor:pointer; border: none; width:auto;}
+.close-button, .close-button2{border-radius:2px; display: inline-block; font-size:0; line-height: 34px; height:34px;
+     padding:0 17px; cursor:pointer; border: none; width:auto;}
+.pop-close-button, .pop-close-button2, .slide-close-button, .pop-close-btn{display: inline-block; font-size:0; cursor:pointer; border: none; width:auto; }
+.upload-button,.delete-button,.mk-save{background-color:#999; border-radius:2px; color:#fff; height:24px; line-height:24px;
+     display:inline-block; cursor:pointer; border:none; width:auto;}
+.orange-button, .explain-button,.share-button{ border-radius:2px; display:inline-block; color:#fff; font-size:12px;
+     cursor: pointer; border: none; width:auto;}
+.save-btn, .cancel-btn, .view-button, .send-btn, .mem-pink{border-radius:2px; display:inline-block; height:28px; line-height: 28px;
+     padding:0 15px; color:#fff; font-size:12px; cursor: pointer; border: none; width:auto;}
+.save-btn:focus, .save-button:focus, .save-button2:focus, .save-pink:focus, .mk-save:focus
+{border:none; -webkit-box-shadow:none; color:#fff!important;}
+.pop-save-button:focus{border:none; -webkit-box-shadow:none; }
+
+/*新增 button*/
+.add-button{background:url({$RESOURCE_URL}buttons/add.png) 15px center no-repeat,-webkit-linear-gradient(#6EA5E8, #5192E2); 
+    background:url({$RESOURCE_URL}buttons/add.png) 15px center no-repeat,-moz-linear-gradient(#6EA5E8, #5192E2); 
+    background:url({$RESOURCE_URL}buttons/add.png) 15px center no-repeat,linear-gradient(#6EA5E8, #5192E2);
+    color:#fff;}
+.add-button:hover{background-image:url({$RESOURCE_URL}buttons/add.png),-webkit-linear-gradient(#629EE7, #357ed3); 
+    background-image:url({$RESOURCE_URL}buttons/add.png),-moz-linear-gradient(#629EE7, #357ed3);
+    background-image:url({$RESOURCE_URL}buttons/add.png),linear-gradient(#629EE7, #357ed3); border:none;}
+
+.add-button-pure{background:url({$RESOURCE_URL}buttons/add.png) 15px center no-repeat #20bf87; }
+.sub-add{height:32px; line-height: 32px; font-size:14px;}
+
+/*设置 button*/
+.set-button{background:url({$RESOURCE_URL}buttons/set.png) 13px center no-repeat,-webkit-linear-gradient(#d0d0d0,#bcbcbc); 
+    background:url({$RESOURCE_URL}buttons/set.png) 10px center no-repeat,-moz-linear-gradient(#d0d0d0,#bcbcbc);
+    background:url({$RESOURCE_URL}buttons/set.png) 10px center no-repeat,linear-gradient(#d0d0d0,#bcbcbc); color:#333;}
+.set-button:hover{background-image:url({$RESOURCE_URL}buttons/set.png),-webkit-linear-gradient(#ddd,#c1c1c1);
+    background-image:url({$RESOURCE_URL}buttons/set.png),-moz-linear-gradient(#ddd,#c1c1c1);
+    background-image:url({$RESOURCE_URL}buttons/set.png),linear-gradient(#ddd,#c1c1c1); border:none;}
+
+/*保存 button*/
+.save-button, .save-btn{background:-webkit-linear-gradient(#6EA5E8, #5192E2); background:-moz-linear-gradient(#6EA5E8, #5192E2); 
+    background:linear-gradient(#6EA5E8, #5192E2); color:#fff; }
+.save-button:hover, .save-btn:hover{background:-webkit-linear-gradient(#629EE7, #357ed3); background:-moz-linear-gradient(#629EE7, #357ed3); 
+    background:linear-gradient(#629EE7, #357ed3); border:none;}
+.save-button2{background:#eee; color:#5e6d81;} 
+.save-button2:hover{background:#ddd; border:none;}
+.save-pink{background:-webkit-linear-gradient(#f488b9 0%,#ee82b3 48%,#ec82b2 50%, #e67cac 100%);
+	 background:-moz-linear-gradient(#f488b9 0%,#ee82b3 48%,#ec82b2 50%, #e67cac 100%);
+	 background:linear-gradient(#f488b9 0%,#ee82b3 48%,#ec82b2 50%, #e67cac 100%);  color:#fff; padding:0 50px;}
+.save-pink:hover{border:none;}
+
+
+/*弹框 保存 button*/
+.pop-save-button{background:-webkit-linear-gradient(#f3f3f3, #dedede); background:-moz-linear-gradient(#f3f3f3, #dedede);
+     background:linear-gradient(#f3f3f3, #dedede); border-radius:2px; font-size:14px; color:#000; }
+.pop-save-button:hover{background:-webkit-linear-gradient(#dedede, #f3f3f3); background:-moz-linear-gradient(#dedede, #f3f3f3);
+     background:linear-gradient(#dedede, #f3f3f3); border:none;}
+
+
+/*关闭 button*/
+.close-button{background:url({$RESOURCE_URL}buttons/close.png) no-repeat scroll center,-webkit-linear-gradient(#cdcdcd,#b9b9b9);
+    background:url({$RESOURCE_URL}buttons/close.png) no-repeat scroll center,-moz-linear-gradient(#cdcdcd,#b9b9b9);
+    background:url({$RESOURCE_URL}buttons/close.png) no-repeat scroll center,linear-gradient(#cdcdcd,#b9b9b9);}
+.close-button:hover{background-image:url({$RESOURCE_URL}buttons/close.png),-webkit-linear-gradient(#bdbdbd,#a6a6a6); 
+    background-image:url({$RESOURCE_URL}buttons/close.png),-moz-linear-gradient(#bdbdbd,#a6a6a6);
+    background-image:url({$RESOURCE_URL}buttons/close.png),linear-gradient(#bdbdbd,#a6a6a6); border:none;}
+.close-button2{background:url({$RESOURCE_URL}buttons/close1.png) no-repeat scroll center #eee;}
+.close-button2:hover{background:url({$RESOURCE_URL}buttons/close1.png) no-repeat scroll center #ddd; border:none; }
+.pop-close-button{background:url({$RESOURCE_URL}buttons/close3.png) no-repeat scroll center; width:14px; height:14px;}
+
+.pop-close-button2{background:url({$RESOURCE_URL}buttons/close4.png) no-repeat scroll center,-webkit-linear-gradient(#f4f4f4,#dfdfdf); 
+   background:url({$RESOURCE_URL}buttons/close4.png) no-repeat scroll center,-moz-linear-gradient(#f4f4f4,#dfdfdf);
+   background:url({$RESOURCE_URL}buttons/close4.png) no-repeat scroll center,linear-gradient(#f4f4f4,#dfdfdf); height:26px; padding:0 13px; border-radius:2px;}
+.pop-close-button2:hover{background:url({$RESOURCE_URL}buttons/close4.png) no-repeat scroll center,-webkit-linear-gradient(#dfdfdf,#f3f3f3); 
+   background:url({$RESOURCE_URL}buttons/close4.png) no-repeat scroll center,-moz-linear-gradient(#dfdfdf,#f3f3f3);
+   background:url({$RESOURCE_URL}buttons/close4.png) no-repeat scroll center,linear-gradient(#dfdfdf,#f3f3f3); border:none;}
+   
+.pop-close-btn{background:url({$RESOURCE_URL}buttons/close4.png) no-repeat scroll center; height:26px; padding:0 13px; border-radius:2px;}
+   
+.slide-close-button{background:url({$RESOURCE_URL}buttons/bg-all.png) no-repeat scroll -72px -96px #fff; height:20px; padding:0 10px;}
+.slide-close-button:hover{background:url({$RESOURCE_URL}buttons/bg-all.png) no-repeat scroll -94px -96px #fff; border:none;}
+
+/*取消 button*/
+.cancel-button{background:-webkit-linear-gradient(#cdcdcd, #b9b9b9); background:-moz-linear-gradient(#cdcdcd, #b9b9b9); 
+            background:linear-gradient(#cdcdcd, #b9b9b9); color:#fff; font-size: 18px;}
+.cancel-button:hover{background:-webkit-linear-gradient(#bebebe,#ababab); background:-moz-linear-gradient(#bebebe,#ababab);
+            background:linear-gradient(#bebebe,#ababab); border:none;}
+.cancel-btn{background:-webkit-linear-gradient(#666, #525252); background:-moz-linear-gradient(#666, #525252); background:linear-gradient(#666, #525252); }
+.cancel-btn:hover{background:-webkit-linear-gradient(#606060, #444243); background:-moz-linear-gradient(#606060, #444243);
+            background:linear-gradient(#606060, #444243); border:none; }
+
+/*返回 button*/
+.back-button{background:url({$RESOURCE_URL}buttons/back.png) no-repeat scroll 10px center,-webkit-linear-gradient(#7c7c7c,#4c4c4c); 
+    background:url({$RESOURCE_URL}buttons/back.png) no-repeat scroll 10px center,-moz-linear-gradient(#7c7c7c,#4c4c4c); 
+    background:url({$RESOURCE_URL}buttons/back.png) no-repeat scroll 10px center,linear-gradient(#7c7c7c,#4c4c4c); 
+    color:#fff;} 
+.back-button:hover{background-image:url({$RESOURCE_URL}buttons/back.png),-webkit-linear-gradient(#676666,#2e2d2d); 
+    background-image:url({$RESOURCE_URL}buttons/back.png),-moz-linear-gradient(#676666,#2e2d2d);
+    background-image:url({$RESOURCE_URL}buttons/back.png),linear-gradient(#676666,#2e2d2d); border:none;} 
+
+/*整合*/
+/*查看 button*/
+.view-button{background:-webkit-linear-gradient(#74a7e5, #5996df); background:-moz-linear-gradient(#74a7e5, #5996df);
+    background:linear-gradient(#74a7e5, #5996df); height:28px; line-height: 28px; padding:0 21px; }
+.view-button:hover{background:-webkit-linear-gradient(#5e9be4, #347ed3); background:-moz-linear-gradient(#5e9be4, #347ed3);
+    background:linear-gradient(#5e9be4, #347ed3); border:none;}
+/*上传 button*/
+.upload-button{padding:0 5px;}
+/*删除 button*/
+.delete-button{padding:0 8px;}
+/*整合 button*/
+.share-button{background-color:#6ea5e8; font-size:14px; height:33px; line-height: 33px; padding:0 20px;}
+/*表单页说明 button*/
+.explain-button{background-color:#5b5b5b; height:24px; line-height:24px; padding:0 16px;}
+.explain-button:hover{background-color:#000; border:none;}
+/* 橙色按钮 */
+.orange-button{background:-moz-linear-gradient(#f0704d,#e36340); background:-webkit-linear-gradient(#f0704d,#e36340); 
+     background:linear-gradient(#f0704d,#e36340); height:30px; line-height:30px; padding:0 14px;}
+/*发送*/
+.send-btn,.mk-save{background:-webkit-linear-gradient(#fdfdfd ,#f3f3f3); background:-moz-linear-gradient(#fdfdfd ,#f3f3f3);
+	 background:linear-gradient(#fdfdfd ,#f3f3f3); color:#7d7d7d; font-size:14px; }
+.send-btn:hover{background:-webkit-linear-gradient(#f3f3f3 ,#fdfdfd); background:-moz-linear-gradient(#f3f3f3 ,#fdfdfd);
+	 background:linear-gradient(#f3f3f3 ,#fdfdfd);}
+.send-btn{border:1px solid #ccc; padding:0 20px; }
+.send-btn:hover, .send-btn:focus{ border:1px solid #ccc;}
+
+
+/*商超粉色*/
+.mem-pink{background:-webkit-linear-gradient(#f584b8 ,#e877ab); background:-moz-linear-gradient(#f584b8 ,#e877ab);
+	 background:linear-gradient(#f584b8 ,#e877ab); border-radius:3px; font-size: 14px; line-height:29px;}
+.mem-pink:hover{border:none;}
+.mk-save{padding:0 10px; color: #575757; }
+.mk-save:hover{border:none;}
+.mkt-save{background:-webkit-linear-gradient(#f584b8 ,#e877ab); background:-moz-linear-gradient(#f584b8 ,#e877ab);
+	 background:linear-gradient(#f584b8 ,#e877ab); color:#fff;}
+
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2) {
+	
+.add-button{background-image:url({$RESOURCE_URL}buttons/add-2x.png),-webkit-linear-gradient(#6EA5E8, #5192E2); 
+    background-image:url({$RESOURCE_URL}buttons/add-2x.png),-moz-linear-gradient(#6EA5E8, #5192E2);
+    background-image:url({$RESOURCE_URL}buttons/add-2x.png),linear-gradient(#6EA5E8, #5192E2); background-size:16px 16px,100% 100%;}
+.add-button:hover{background-image:url({$RESOURCE_URL}buttons/add-2x.png),-webkit-linear-gradient(#629EE7, #357ed3); 
+    background-image:url({$RESOURCE_URL}buttons/add-2x.png),-moz-linear-gradient(#629EE7, #357ed3);
+    background-image:url({$RESOURCE_URL}buttons/add-2x.png),linear-gradient(#629EE7, #357ed3); background-size:16px 16px,100% 100%;}
+.add-button-pure{background-image:url({$RESOURCE_URL}buttons/add-2x.png); background-size:16px 16px; }
+    
+.set-button{background-image:url({$RESOURCE_URL}buttons/set-2x.png),-webkit-linear-gradient(#d0d0d0,#bcbcbc);
+    background-image:url({$RESOURCE_URL}buttons/set-2x.png),-moz-linear-gradient(#d0d0d0,#bcbcbc);
+    background-image:url({$RESOURCE_URL}buttons/set-2x.png),linear-gradient(#d0d0d0,#bcbcbc); background-size:16px 16px,100% 100%;}
+.set-button:hover{background-image:url({$RESOURCE_URL}buttons/set-2x.png),-webkit-linear-gradient(#ddd,#c1c1c1);
+    background-image:url({$RESOURCE_URL}buttons/set-2x.png),-moz-linear-gradient(#ddd,#c1c1c1);
+    background-image:url({$RESOURCE_URL}buttons/set-2x.png),linear-gradient(#ddd,#c1c1c1); background-size:16px 16px,100% 100%;}
+.close-button{background-image:url({$RESOURCE_URL}buttons/close-2x.png),-webkit-linear-gradient(#cdcdcd,#b9b9b9); 
+    background-image:url({$RESOURCE_URL}buttons/close-2x.png),-moz-linear-gradient(#cdcdcd,#b9b9b9); 
+    background-image:url({$RESOURCE_URL}buttons/close-2x.png),linear-gradient(#cdcdcd,#b9b9b9); background-size:22px 21px,100% 100%;}
+.close-button:hover{background-image:url({$RESOURCE_URL}buttons/close-2x.png),-webkit-linear-gradient(#bdbdbd,#a6a6a6); 
+    background-image:url({$RESOURCE_URL}buttons/close-2x.png),-moz-linear-gradient(#bdbdbd,#a6a6a6);
+     background-image:url({$RESOURCE_URL}buttons/close-2x.png),linear-gradient(#bdbdbd,#a6a6a6); background-size:22px 21px,100% 100%;}
+.close-button2{background-image:url({$RESOURCE_URL}buttons/close1.png); background-size:24px 24px;}
+.close-button2:hover{background-image:url({$RESOURCE_URL}buttons/close1.png); background-size:24px 24px; }
+.back-button{background-image:url({$RESOURCE_URL}buttons/back-2x.png),-webkit-linear-gradient(#7c7c7c,#4c4c4c); 
+    background-image:url({$RESOURCE_URL}buttons/back-2x.png),-moz-linear-gradient(#7c7c7c,#4c4c4c); 
+    background-image:url({$RESOURCE_URL}buttons/back-2x.png),linear-gradient(#7c7c7c,#4c4c4c); background-size:16px 13px,100% 100%;} 
+.back-button:hover{background-image:url({$RESOURCE_URL}buttons/back-2x.png),-webkit-linear-gradient(#676666,#2e2d2d); 
+    background-image:url({$RESOURCE_URL}buttons/back-2x.png),-moz-linear-gradient(#676666,#2e2d2d); 
+    background-image:url({$RESOURCE_URL}buttons/back-2x.png),linear-gradient(#676666,#2e2d2d); background-size:16px 13px,100% 100%;} 
+.pop-close-button{background-image:url({$RESOURCE_URL}buttons/close3@2x.png); background-size:14px 14px;}
+.pop-close-button:hover{background-image:url({$RESOURCE_URL}buttons/close3@2x.png); background-size:14px 14px;}
+
+
+.pop-close-button2{background-image:url({$RESOURCE_URL}buttons/close4-2x.png),-webkit-linear-gradient(#f4f4f4,#dfdfdf); 
+    background-image:url({$RESOURCE_URL}buttons/close4-2x.png),-moz-linear-gradient(#f4f4f4,#dfdfdf); 
+    background-image:url({$RESOURCE_URL}buttons/close4-2x.png),linear-gradient(#f4f4f4,#dfdfdf); background-size:16px 16px,100% 100%; }
+.pop-close-button2:hover{background-image:url({$RESOURCE_URL}buttons/close4-2x.png),-webkit-linear-gradient(#dfdfdf,#f3f3f3); 
+    background-image:url({$RESOURCE_URL}buttons/close4-2x.png),-moz-linear-gradient(#dfdfdf,#f3f3f3); 
+    background-image:url({$RESOURCE_URL}buttons/close4-2x.png),linear-gradient(#dfdfdf,#f3f3f3); background-size:16px 16px,100% 100%; }	
+
+.pop-close-btn{background-image:url({$RESOURCE_URL}buttons/close4-2x.png); background-size:16px 16px;}
+	
+.close-button2{background-image:url({$RESOURCE_URL}buttons/close1.png);}
+.close-button2:hover{background-image:url({$RESOURCE_URL}buttons/close1@2x.png); }
+
+
+}

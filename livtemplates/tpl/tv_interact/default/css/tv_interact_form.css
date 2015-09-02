@@ -1,0 +1,33 @@
+.m2o-item input[type="radio"]{display:block;}
+.m2o-item .indexpic{width:176px; height:176px; line-height:176px; border:1px solid #e0dcdd; font-size:0; margin:5px; position:relative;
+	background:url({$RESOURCE_URL}tv_interact/suoyin-default.png) no-repeat scroll center center #fff; text-align:center;}
+.m2o-item .indexpic img{vertical-align: middle;background: #fff;max-width: 160px;max-height: 160px;}
+.m2o-item .indexpic-suoyin,.indexpic-suoyin-current{position:absolute; left:-2px; top:-2px; width:16px; height:46px;}
+.m2o-item .indexpic-suoyin{background:url({$RESOURCE_URL}tv_interact/suoyintu.png) no-repeat; }
+.m2o-item .indexpic-suoyin-current{background:url({$RESOURCE_URL}tv_interact/suoyintu-current.png) no-repeat;}
+.m2o-main .m2o-m{padding: 5px 20px 50px!important;}
+.m2o-m .m2o-item{font-size:14px; padding:10px 0px;display: -webkit-box;}
+.m2o-m .tv-info{border-bottom:1px solid #ccc; padding:15px 0;}
+.m2o-m .tv-info a{width: 126px;height: 34px;line-height: 34px;text-align: center;font-size: 14px;cursor: pointer;background-color: #5394e4;color: #fff;display: block;}
+.m2o-m .cut-off{border-bottom: 1px dotted #ccc;}
+.m2o-m .info{margin-left:5px;}
+.m2o-m .info span{margin:0 10px;}
+.m2o-m .w50{width:50px;}
+.m2o-m .w200{width:200px;}
+.m2o-m .w400{width:400px;}
+.m2o-m .m2o-item .title{display:inline-block; text-align:right; width:100px; margin-right:15px; color: #333; min-height:24px; font-size: 14px; vertical-align: top; padding-top:5px;}
+.m2o-m .m2o-item .brief{width:720px; font-size: 14px;}
+.m2o-m .m2o-item .img-info{float: right;}
+.m2o-m .m2o-item .info-tip{width:528px;}
+.m2o-m .img-info a{width: 80px;display: block;text-align: center;font-size: 14px;margin-top: 5px;}
+.m2o-m .m2o-item .icon{width: 80px;height: 80px;margin-right: 20px;background:url({$RESOURCE_URL}tv_interact/add-big.png) no-repeat center;cursor:pointer;}
+.m2o-m .icon img{width:100%;height:100%}
+.m2o-m .info textarea{width:400px;height:60px;margin-top: 10px;}
+.m2o-m .info-switch{display:-webkit-box;margin:5px;}
+.m2o-m .info-switch input[type="radio"]{display:block}
+.m2o-m .info-switch .switch{display:-webkit-box;margin-right:50px;}
+.m2o-m .info-switch input[type="number"]{margin-top: -3px;}
+.m2o-m .info-switch p{margin: 1px 0 0 5px;}
+.hg-sort-box ul{margin:0}
+.hg-sort-box ul .sort-back{cursor:pointer}
+.hide{display:none!important;}

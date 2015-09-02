@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="description" content="">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+<link rel="stylesheet" type="text/css" href="{liv_assist_url}/css/lottery_preview.css" />
+
+<script type="text/javascript">
+var RESOURCE_URL = "{liv_url}";
+var globalprize = {liv_prize};
+</script>
+
+<script type="text/javascript" src="{liv_assist_url}/js/common/device.min.js"></script>
+<script type="text/javascript" src="{liv_assist_url}/js/common/zepto.js"></script>
+<script type="text/javascript" src="{liv_assist_url}/js/common/spin.min.js"></script>
+<script type="text/javascript" src="{liv_assist_url}/js/common/viewPC.js"></script>
+<script type="text/javascript" src="{liv_assist_url}/js/common/print.js"></script>
+<script type="text/javascript" src="{liv_assist_url}/js/common/api.js"></script>
+<script type="text/javascript" src="{liv_assist_url}/js/common/template.js"></script>
+<script type="text/javascript" src="{liv_assist_url}/js/common/lottery.js"></script>
+<script type="text/javascript" src="{liv_assist_url}/js/hg_spin.js"></script>
+<script type="text/javascript" src="{liv_assist_url}/js/myspin.js"></script>
+<title>{liv_title}</title>
+</head>
+<body class="zhuanpan-body">
+<div class="zhuanpan-game-box lottery-game-box" _id="{liv_id}">
+<div>
+<div class="zhuanpan-head"></div>
+<a class="my-lottery-btn" href="{liv_winlist_url}">我的中奖列表</a>
+<div class="zhuanpan-wrap lottery-canvas-wrap">
+<canvas id="zhuanpan-canvas" class="zhuanpan-canvas-area" width="260" height="300"></canvas>
+<div class="zhuanpan-arrow"></div>
+<a class="zhuanpan-start-btn lottery-start-btn">再玩一次</a>
+<div class="ggk-mask lottery-mask"></div>
+</div>
+<div class="ggk-awards-pop lottery-awards-pop">
+<div class="ggk-awards-pop-inner">
+<div class="close"></div>
+<div class="awards-tip-box lottery-result-box">
+<div class="awards-tip">
+</div>
+<div class="other-lottery-info"></div>
+</div>
+<div class="lottery-personinfo-box form-lottery-info">
+<div><span>联系电话：</span><input type="tel" class="tel-txt" /></div>
+<div><span>联系地址：</span><textarea class="address-txtarea"></textarea></div>
+<div class="submit lottery-submit">提交</div>
+</div>
+</div>
+</div>
+<div class="lottery-nologin-area">
+<a class="lottery-refresh">刷新</a><a class="lottery-gologin">登录</a>
+</div>
+</div>
+<div class="lottery-limit-tip">
+<div class="lottery-limit-tip-area">
+<div class="msg"></div>
+<div class="controll">
+<span class="sure sure-mask">确定</span>
+<span class="cancle cancle-mask">取消</span>
+</div>
+</div>
+</div>
+<div class="lottery-shengming">本活动与苹果公司无关</div>
+</div>
+
+<script id="people-lottery-info" type="text/html">
+		{{each list as value i}}
+		<div class="item">
+		<span class="member-name">{{value.member_name}}</span><span class="member-prize">{{value.prize}}</span><span class="member-time">{{value.create_time}}</span>
+		</div>
+		{{/each}}
+		</script>
+
+<script id="lottery-tip-info" type="text/html">
+		{{if !+id}}<div class="cry-icon"></div>{{/if}}
+		<span class="awards-name {{if !+id}}no-awards-name{{/if}}">{{tip}}</span>
+		{{if +id}}<div>恭喜你!</div>{{/if}}
+		{{if +id}}<div class="awards-duijiang lottery-reward-btn">去兑奖</div>{{/if}}
+		{{if pic}}<div class="awards-pic"><img src="{{pic}}" /></div>{{/if}}
+		</script>
+
+
+</body>
+</html>

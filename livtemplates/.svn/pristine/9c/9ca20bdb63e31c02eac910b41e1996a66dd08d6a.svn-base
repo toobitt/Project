@@ -1,0 +1,874 @@
+/*铁路列表页*/
+.m2o-direction {
+  width: 200px;
+  color: #939393;
+}
+.m2o-sort {
+  color: #8fa8c6;
+}
+.m2o-count {
+  width: 80px;
+  color: #8fa8c6;
+}
+.m2o-list .m2o-switch {
+  width: 120px;
+}
+.m2o-list .m2o-switch .common-switch {
+  bottom: 0;
+  right: 0;
+}
+.m2o-title-overflow {
+  max-width: 270px;
+}
+.m2o-color {
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  border-radius: 50px;
+  vertical-align: middle;
+}
+/*地铁线路表单页*/
+.m2o-l .m2o-item{
+	width:190px; 
+}
+.m2o-l .m2o-item .title {
+  width: 38px;
+}
+.m2o-l .m2o-item input[type="text"]:not(.color-picker) {
+  width: 103px;
+  text-indent: 5px;
+  margin-right: 8px;
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+.m2o-l .m2o-item input[type="text"]:not(.color-picker):focus {
+  border: 1px solid #77b7f9;
+  background-color: #fff;
+  top: -5px;
+}
+.m2o-l .m2o-item > div:not(:last-child) {
+  margin-bottom: 5px;
+}
+.m2o-l .m2o-item .way-time {
+  font-style: normal;
+}
+.m2o-l .m2o-item .time-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 10px;
+  background: url("{$RESOURCE_URL}subway/clock.png") no-repeat scroll 7px 4px #649ee8;
+}
+.m2o-l .m2o-item .engname {
+  margin-left: 38px;
+}
+.ohms-box {
+  width: 165px;
+  z-index: 10001;
+}
+.ohms-mao:nth-child(4) {
+  display: none;
+}
+.ohms-input-s {
+  display: none;
+}
+.m2o-main .way-m {
+  padding: 0;
+}
+.m2o-m .m2o-item {
+  padding: 5px 10px;
+  margin: 0 20px;
+}
+.m2o-m .m2o-item .title {
+  width: 60px;
+  text-align: right;
+  margin-top: 5px;
+}
+.m2o-m .m2o-item .pname{
+  display:inline-block;
+  font-size:14px; 
+  line-height: 28px; 
+}
+.m2o-m .m2o-item input[type="text"],
+.m2o-m .m2o-item textarea {
+  font-size: 14px;
+  text-indent: 4px;
+  height: 22px;
+  line-height: 22px;
+}
+.m2o-m .m2o-item textarea {
+   max-width:820px;
+   height: 76px;	
+}
+.m2o-m .m2o-item input[type="radio"] {
+  display: inline-block;
+  height: 13px;
+  margin: 0 5px;
+}
+.m2o-m .m2o-item em {
+  font-style: normal;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.m2o-m .dottedLine {
+  background: url("{$RESOURCE_URL}dottedLine.png") repeat-x 0 center;
+  padding: 5px 20px;
+  margin-left: 65px;
+}
+.m2o-m .dottedLine:hover {
+  background: url("{$RESOURCE_URL}dottedLine.png") repeat-x 0 center;
+}
+.m2o-m .solidLine {
+  border-bottom: 1px solid #e7e7e7;
+  margin-bottom: 10px;
+}
+.way-head {
+  height: 45px;
+  line-height: 45px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ccc;
+}
+.way-head .way-title {
+  margin-left: 45px;
+  display: inline-block;
+  font-size: 18px;
+}
+.way-head .site_num {
+  margin-left: 20px;
+  font-size: 14px;
+  color: #727272;
+}
+.way-head .list_sort {
+  float: right;
+  margin-right: 40px;
+  font-size: 14px;
+  color: #69a2e9;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.way-head .site_num em {
+  font-style: normal;
+}
+.m2o-item .colorpicker-wrap {
+  display: inline-block;
+  width: 30px!important;
+  vertical-align: top;
+}
+/*滑动线路*/
+.way-cover {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 955px;
+  height: 120px;
+  display: none;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 998;
+}
+.way-map {
+  margin: 0 52px 60px;
+  position: relative;
+}
+.way-map .way-list {
+  position: absolute;
+}
+.way-map .slider {
+  height: 6px;
+  margin-top: 54px;
+  border: none;
+  background: #ccc;
+  z-index: 99;
+}
+.way-map .way-sort {
+  position: absolute;
+}
+.way-map #way-extendslider.bend-Show {
+  display: block;
+}
+.way-map .extend-bend {
+  position: absolute;
+  width: 100px;
+  border: 6px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  height: 54px;
+  1display: none;
+}
+.way-map .extend-bend.right {
+  top: 0;
+  right: -3px;
+  border-left-color: transparent;
+}
+.way-map .extend-bend.left {
+  top: 60px;
+  left: -3px;
+  border-right-color: transparent;
+}
+.way-map .extend-bend.top_2 {
+  top: 60px;
+}
+.way-map .extend-bend.top_3 {
+  top: 120px;
+}
+.way-map .extend-bend.top_4 {
+  top: 180px;
+}
+.way-map .bend-Show {
+  display: block;
+}
+.way-map .ui-slider-handle,
+.way-map .program-con {
+  display: inline-block;
+  border-radius: 50px;
+  background-color: #fff;
+}
+.way-map .ui-slider-handle {
+  width: 28px;
+  height: 28px;
+  top: -13px;
+  margin-left: -7px;
+  background: #ee3442;
+  box-shadow: 0 0 0 1px #fff inset;
+  border: 1px solid #ee3442;
+  z-index: 999;
+}
+.way-map .site-move {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: -10px;
+  margin-left: -14px;
+  cursor: pointer;
+  border-radius: 50px;
+  background: url("{$RESOURCE_URL}subway/add_site.png") no-repeat center #659de8;
+  display: inline-block;
+}
+.way-map .program-con {
+  position: relative;
+  top: 25px;
+  width: 10px;
+  height: 10px;
+  border: 3px solid #949494;
+  cursor: pointer;
+}
+.way-map .program-li {
+  position: absolute;
+  width: 95px;
+  left: 0;
+  top: -30px;
+}
+.way-map .program-li .theme-label {
+  max-width: 75px;
+  display: inline-block;
+  margin-left: -29px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: top;
+}
+.way-map .program-li .theme-edit {
+  vertical-align: top;
+  width: 20px;
+  height: 20px;
+  display: none;
+  cursor: pointer;
+  font-size: 0;
+  background: url("{$RESOURCE_URL}subway/delele_site.png") no-repeat 0 center;
+}
+.way-map .program-li:hover .program-con,
+.way-map .program-li.selected .program-con {
+  border: 3px solid #659ee5;
+}
+.way-map .program-li:hover .theme-label,
+.way-map .program-li.selected .theme-label {
+  color: #659ee5;
+}
+.way-map .program-li:hover .theme-edit,
+.way-map .program-li.selected .theme-edit {
+  display: inline-block;
+}
+.way-map .program-li .hover-line {
+  width: auto;
+  position: absolute;
+  top: -38px;
+  left: -62px;
+  border: 1px solid #facb5f;
+  border-radius: 3px;
+  background-color: #fffcd7;
+  padding: 5px;
+  display: block;
+  color: #eda802;
+  white-space: nowrap;
+  display: none;
+}
+.way-map .program-li .hover-line:after {
+  position: absolute;
+  top: 28px;
+  left: 55px;
+  border: 10px solid transparent;
+  border-top-color: #fffcd7;
+  content: '';
+}
+.way-map .program-li .hover-line:before {
+  position: absolute;
+  top: 28px;
+  left: 54px;
+  border: 11px solid transparent;
+  border-top-color: #facb5f;
+  content: '';
+}
+.way-map .program-li .hover-line span {
+  display: inline-block;
+  width: 60px;
+  text-align: center;
+  line-height: 18px;
+  color: #fff;
+  margin-top: 5px;
+  padding: 0 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.way-map .program-li:hover .hover-line {
+  display: block;
+}
+.way-map .program-huan .program-con {
+  width: 24px;
+  height: 24px;
+  border: none;
+  top: 19px;
+  left: -6px;
+  background: url("{$RESOURCE_URL}subway/icon_huancheng.png") no-repeat 0 center;
+}
+.way-map .program-huan:hover .program-con,
+.way-map .program-huan.selected .program-con {
+  border: none;
+}
+.way-content {
+  display: none;
+  /*下拉框*/
+  /*出入口信息*/
+}
+.way-content .way-tab {
+  height: 39px;
+  line-height: 39px;
+  margin: 0 20px 5px;
+  background-color: #77b6f9;
+  border-bottom: 1px solid #5695e4;
+  padding-left: 23px;
+}
+.way-content .way-tab li {
+  float: left;
+  width: 116px;
+  text-align: center;
+  font-size: 14px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  color: #fff;
+}
+.way-content .way-tab li.selected {
+  border: 1px solid #5695e4;
+  color: #000;
+  border-bottom: #fff;
+  background-color: #fff;
+}
+.way-content .way-item{
+  padding-bottom:50px; 
+}
+.way-content .site-name input {
+  width: 140px;
+}
+.way-content .site-engname input {
+  width: 94px;
+}
+.way-content .site-sign input {
+  width: 82px;
+}
+.way-content .site-titude input {
+  width: 72px;
+}
+.way-content .site-order input {
+  width: 72px;
+}
+
+.way-content .site-descrip {
+  margin: 10px 0 0 60px;
+  display: inline-block;
+}
+.way-content .site-axis {
+  margin-top: 10px;
+  display: inline-block;
+}
+.way-content .map-icon,
+.way-content .del-way {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.way-content .map-icon {
+  background: url("{$RESOURCE_URL}subway/map_icon.png") no-repeat center;
+}
+.way-content .del-way {
+  float: right;
+  margin-right: 20px;
+  background: url("{$RESOURCE_URL}subway/del.png") no-repeat center;
+}
+.way-content .way-road,
+.way-content .way-interval {
+  margin-bottom: 10px;
+}
+.way-content .add-way {
+  margin-left: 65px;
+  height: 28px;
+  line-height: 32px;
+  display: inline-block;
+  padding-left: 20px;
+  background: url("{$RESOURCE_URL}subway/add_way.png") no-repeat left center;
+  color: #6da1ea;
+  cursor: pointer;
+}
+.way-content .save-button {
+  margin-right: 10px;
+}
+.way-content .way-list {
+  height: 26px;
+  vertical-align: top;
+  border: 1px solid #cfcfcf;
+}
+.way-content .way-list .input_middle {
+  height: 26px;
+  line-height: 26px;
+  border: none;
+}
+.way-content .way-list .input_left,
+.way-content .way-list .input_right {
+  display: none;
+}
+.way-content .way-list .overflow {
+  font-size: 14px;
+  color: #000;
+}
+.way-content .way-list:hover ul {
+  display: block!important;
+}
+.way-content .down_list ul {
+  width: 111px;
+  top: 27px;
+  left: -1px;
+}
+.way-content .way-obj,
+.way-content .extend-obj {
+  display: inline-block;
+  vertical-align: top;
+}
+.way-content .service-obj {
+  display: inline-block;
+}
+.way-content .interval-point {
+  display: inline-block;
+  color: #cbcbcb;
+}
+.way-content .interval-point label {
+  color: #000;
+}
+.way-content .interval-point input {
+  width: 48px;
+  margin: 0 5px;
+}
+.way-content .interval-point input:last-child {
+  color: #999;
+}
+.way-content .passenger-list {
+  display: inline-block;
+}
+.way-content .passenger-list input[type="checkbox"] {
+  height: 13px;
+  margin: 0 5px;
+}
+.way-content .way-img label {
+  margin-top: 10px;
+}
+.way-content .img-list {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 800px;
+}
+.way-content .img-list li {
+  float: left;
+  width: 141px;
+  height: 104px;
+  position: relative;
+}
+.way-content .img-list .img-item {
+  border-style: solid;
+  border-width: 6px 5px 5px 6px;
+  border-color: #fff;
+}
+.way-content .img-list .img-item.selected {
+  border-color: #eef7fc;
+}
+.way-content .img-list .del-image {
+  position: absolute;
+  right: 5px;
+  bottom: 2px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  background: url("{$RESOURCE_URL}subway/delete.png") no-repeat center;
+  display:none;
+}
+.way-content .img-list .img-item:hover .del-image{
+  display:block;
+}
+.way-content .img-list .add-img {
+  border: 2px dashed #649ee7;
+  box-sizing: border-box;
+  margin: 6px;
+  color: #649ee7;
+  font-size: 14px;
+  line-height: 104px;
+  text-align: center;
+  cursor:pointer;
+}
+.way-content .img-list img {
+  width: 100%;
+  height: 100%;
+}
+.way-content .flat-list .add-img {
+  width: 139px;
+  height: 102px;
+  margin: 0;
+  box-sizing: content-box;
+}
+.way-content .gate-info,
+.way-content .service-info {
+  display: none;
+}
+.way-content .gate-info em {
+  color: #6da1ea;
+  text-decoration: underline;
+}
+.way-content .extend {
+  display: inline-block;
+  width: 825px;
+  vertical-align: top;
+}
+.way-content .extend .extend-name {
+  margin-right: 20px;
+  display: none;
+}
+.way-content .extend .site-descrip {
+  margin-left: 0;
+}
+.way-content .extend .station_id {
+  width: 305px;
+  display: none;
+}
+.way-content .let-list .add-way {
+  display: none;
+}
+.way-content .let-list.let-show .add-way {
+  display: block;
+}
+.way-content .userdefined {
+  display: none;
+}
+.way-content .userdefined input:first-child {
+  width: 145px;
+  margin-right: 4px;
+}
+.way-content .userdefined em {
+  margin: 0 3px;
+  color: #6da1ea;
+}
+.way-content .extend-img,
+.way-content .flat-list .add-img {
+  float: left;
+  border: 1px solid #ccc;
+  background: url("{$RESOURCE_URL}subway/default_img.png") no-repeat center;
+}
+.way-content .search-btn {
+  width: 20px;
+  border: none;
+  background: url("{$RESOURCE_URL}subway/search.png") no-repeat center;
+  box-shadow: none;
+}
+.way-content .extend-img {
+  width: 73px;
+  height: 65px;
+  margin-right: 10px;
+  position: relative;
+}
+.way-content .extend-img img {
+  width: 100%;
+  height: 100%;
+}
+.way-content .flat-list li {
+  margin: 0 13px 10px 0;
+}
+#way,
+#extend,
+#service {
+  display: none;
+  1position: relative;
+  1top: -500px;
+}
+/*地图*/
+.map-box {
+  width: 600px;
+  height: 510px;
+  position: absolute;
+  left: 50%;
+  margin-left: -300px;
+  top: 100px;
+  border: 10px solid #6ea5e8;
+  z-index: 10001;
+  transition: top 0.5s;
+}
+.map-box .map-title {
+  height: 30px;
+  background-color: #6ea5e8;
+  color: #fff;
+}
+.map-box .title_pos {
+  display: inline-block;
+  font-size: 14px;
+}
+.map-box span {
+  font-size: 14px;
+}
+.map-box .map-lude {
+  display: inline-block;
+  margin-left: 40px;
+}
+.map-box label {
+  margin-left: 20px;
+}
+.map-box input {
+  width: 72px;
+  height: 16px;
+}
+.map-box .map-save {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.map-box .map-close {
+  position: absolute;
+  top: 4px;
+  right: 5px;
+}
+.map-box #allmap {
+  width: 100%;
+  height: 480px;
+  background-color: #fff;
+}
+.map-pop {
+  top: -1000px;
+}
+/*分类*/
+.form-dioption-sort {
+  padding: 15px 0 15px 10px;
+}
+.sort-box-with-show {
+  background-color: #f2f2f2;
+  padding-bottom: 10px;
+}
+.sort-box-with-show p {
+  padding-bottom: 15px;
+}
+.sort-box-outer {
+  width: 95%;
+  background-color: #f9f9f9;
+}
+.sort-box-inner {
+  padding: 0 10px;
+}
+.hg-sort-box ul {
+  width: 176px;
+}
+.m2o-item input[type="radio"] {
+  margin-top: 10px;
+  display: inline-block;
+}
+/*等待图标*/
+.add-img .loading2 {
+  position: absolute;
+  top: 20px;
+  left: 45px;
+  width: 50px;
+  height: 50px;
+}
+.extend-img .loading2 {
+  left: 13px;
+  top: 10px;
+}
+.way-list .del-pull {
+  width: 20px;
+  height: 20px;
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 5px;
+  background: url("{$RESOURCE_URL}uploadify-cancel.png") no-repeat center;
+}
+.way-list li {
+  position: relative;
+}
+.way-list li:hover .del-pull {
+  display: inline-block;
+}
+/*发布至*/
+.m2o-gather {
+  width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.common-list-pub {
+  text-decoration: underline;
+  color: #49a34b;
+}
+.common-list-pre-pub {
+  color: #888;
+}
+.pop-box {
+  position: absolute;
+  left: 50%;
+  border: 10px solid #6ea5e8;
+  background-color: #fff;
+  z-index: 10001;
+  transition: top 0.5s;
+}
+.pop-box .pop-title {
+  font-size: 16px;
+  color: #fff;
+  line-height: 35px;
+  background-color: #6ea5e8;
+  vertical-align: top;
+}
+.pop-box .pop-save-button {
+  position: absolute;
+  right: 35px;
+}
+.pop-box .pop-close-button2 {
+  position: absolute;
+  right: 0;
+}
+.pop-box ul {
+  overflow-y: auto;
+}
+.pop-box li {
+  line-height: 38px;
+  border-bottom: 1px solid #d3d3d3;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+/*选取站点*/
+.bus-box {
+  width: 300px;
+  height: 400px;
+  margin-left: -150px;
+  top: 100px;
+}
+.bus-box ul {
+  max-height: 352px;
+}
+.bus-box label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 200px;
+}
+.bus-box input[type="checkbox"] {
+  height: 13px;
+  margin-right: 5px;
+}
+/*排序*/
+.site-box {
+  width: 350px;
+  height: 500px;
+  margin-left: -150px;
+  top: 95px;
+}
+.site-box ul {
+  max-height: 465px;
+}
+.site-box li:hover {
+  background-color: #ddeefe;
+  cursor: move;
+}
+.site-box .program-con {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  vertical-align: sub;
+  margin-right: 10px;
+  border: 3px solid #949494;
+  border-radius: 50%;
+}
+.cover-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+}
+/*发布*/
+.publish-box {
+  width: 300px;
+  height: 400px;
+  margin-left: -250px;
+  top: 0;
+}
+.publish-box ul {
+  max-height: 352px;
+}
+.publish-box label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 200px;
+  cursor: pointer;
+}
+.publish-box input[type="checkbox"] {
+  height: 13px;
+  margin-right: 5px;
+}
+.pop-hide {
+  top: -1000px;
+}
+.sort-placeholder{
+  border: 1px dotted black;
+  margin: 0 1em 1em 0;
+  border-radius:3px;
+  height: 115px;
+}
+
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2) {
+
+.m2o-l .m2o-item .time-icon {background-image: url("{$RESOURCE_URL}subway/clock-2x.png"); background-size:5px 6px;}
+.way-map .site-move {background-image: url("{$RESOURCE_URL}subway/add_site-2x.png"); background-size:14px 14px;}
+.way-map .program-li .theme-edit {background-image: url("{$RESOURCE_URL}subway/delele_site-2x.png"); background-size: 18px 18px; }
+.way-content .map-icon {background-image: url("{$RESOURCE_URL}subway/map_icon-2x.png");  background-size: 21px 26px; }
+.way-content .del-way {background-image: url("{$RESOURCE_URL}subway/del-2x.png");  background-size: 16px 16px; }
+.way-content .add-way {background-image: url("{$RESOURCE_URL}subway/add_way-2x.png");  background-size: 15px 15px; }
+.way-content .img-list .del-image {background-image: url("{$RESOURCE_URL}subway/delete-2x.png");  background-size: 18px 18px; }
+.way-content .extend-img,
+.way-content .flat-list .add-img {background-image: url("{$RESOURCE_URL}subway/default_img-2x.png"); background-size: 56px 33px; }
+.way-content .search-btn {background-image: url("{$RESOURCE_URL}subway/search-2x.png");  background-size: 16px 16px;}
+
+
+}

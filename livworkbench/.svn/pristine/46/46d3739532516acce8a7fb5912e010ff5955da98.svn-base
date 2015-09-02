@@ -1,0 +1,53 @@
+/*直播列表页*/
+.list-item{height:90px; margin:10px;}
+.list-item a{color:#000;}
+.list-item .list-pic{margin:0 20px 0 15px;}
+.list-item .channel-name{font-size:2.6em; padding-bottom:8px;}
+.list-item p{color:#999;font-size:2.2em; white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.list-item .live-name{color:#3b9ac6; margin-left:10px; }
+.list-item .live-flag{display:block;cursor:pointer;height:100%;width:70px; font-size:0; background:url(../images/live/live-icon-play-l.png) center no-repeat #fafafa; background-size:56px 56px; }
+.list-item .live-flag.broadcast{background-image:url(../images/live/live-icon-headphone-l.png);}
+.list-item.is-play .live-flag.broadcase{background-image:url(../images/live/live-icon-headphone-l-playing.png);}
+
+
+
+/*电视*/
+.player-wrap{height:300px; overflow:hidden;background-color:#000;text-align:center;}
+
+
+/*详情节目列表*/
+.detail-list .list-item{height:65px; line-height:65px; font-size:2.4em; color:#999; position:relative; background-color:#f2f2f2;}
+.detail-list .list-item .state{width:105px; position:absolute; left:0; text-align:center; color:#fff; background-color:#3b9ac6; display:none; }
+.detail-list .list-item.current .state{display:block; }
+.detail-list .live-time{width:105px;background:#eee;text-align:center;}
+.detail-list .live-name{text-indent:15px;color:#999;}
+.detail-list .live-flag{width:60px; background:url(../images/live/live-icon-play-s.png) no-repeat center #fafafa; background-size:44px 44px; }
+.detail-list .live{background-color:#fff;}
+.detail-list .live .live-time{background:#fafafa;}
+.detail-list .live .nowplay{color:#3b9ac6;}
+.detail-list .selected{background:#4da2ca;color:#fff;}
+.detail-list .selected .live-name{color:#fff;}
+.detail-list .selected .live-time{background:#3b9ac6;}
+.detail-list .selected .live-flag{background-image:url(../images/live/live-icon-play-s-white.png);background-color:#3b9ac6;}
+
+
+/* 广播播放器样式 */
+.broadcast-play-wrap{position:absolute; left:0; bottom:0; height:105px;width:100%;}
+.broadcast-play-wrap .flag{height:40px;text-align:center;color:#666;font-size:1.8em;line-height:40px;background:rgba(204,204,204,.8);}
+.broadcast-player{height:65px; line-height:65px; background-color:#3b9ac6; position:relative;}
+.broadcast-player .btn{display:inline-block;width:65px;height:65px; vertical-align:top; position:absolute; background:url() no-repeat center #288AB7; cursor:pointer; background-size:50px 50px; }
+.broadcast-player .pause{background-image:url(../images/live/live-simpleplayer-icon-pause.png);}
+.broadcast-player .on{background-image:url(../images/live/live-simpleplayer-icon-play.png);}
+.play-wrap{font-size:0; }
+.box-progress{display:inline-block; line-height: 65px; height:65px; width:100%; padding-left:65px; text-align: center; box-sizing: border-box; }
+.box-progress em{display:inline-block; width:2px; height:15px; background-color:#fff; vertical-align:middle;}
+.play-progress{display:inline-block; width:80%; height:7px; background-color:#288AB7; vertical-align:middle;}
+
+
+
+
+
+
+
+
+

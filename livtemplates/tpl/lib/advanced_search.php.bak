@@ -1,0 +1,74 @@
+{code}
+    $search_condition = $_configs['used_search_condition'];
+    $default_weight = array(
+    	'title' => "所有权重",
+    	'begin_w' => 0,
+    	'end_w' => 100,
+    	'default' => 1
+    );
+    array_unshift(  $formdata['weight'],1);
+    $formdata['weight'][0] = $default_weight;
+    
+{/code}
+
+{if $search_condition}
+
+{foreach $search_condition as $k => $v}
+
+    {code}
+        $con = $_configs['search_condition'][$v];
+        $key = $con['key']
+    {/code}
+    
+    {if $con['key'] == 'key'}
+        {template:new_search/title, $key, $_INPUT[$key],$_configs[$con['data']],$con['attr']}
+    {/if}
+
+    {if $con['key'] == 'author'} 
+        {template:new_search/author, $key, $_INPUT[$key],$_configs[$con['data']],$con['attr']}
+    {/if}
+    
+    {if $con['key'] == 'pub_column_id'} 
+        {template:new_search/pub_column, $key, $_INPUT[$key], '', }
+    {/if}
+    
+
+    {if $con['key'] == 'user_name'}
+
+        {template:new_search/creater, $key, $_INPUT[$key],$_configs[$con['data']],$con['attr']}
+
+    {/if}
+
+    {if $con['key'] == 'status'}
+    
+        {template:new_search/status, $key, 0, $_configs[$con['data']]}
+
+    {/if}   
+    
+    {if $con['key'] == 'trans_status'}
+    
+        {template:new_search/status, $key, 0, $_configs[$con['data']]}
+
+    {/if}       
+    
+     
+
+    
+    {if $con['key'] == 'date_search'}
+
+        {template:new_search/date, $key, 1, $_configs[$con['data']], $con['attr']}
+
+    {/if}     
+
+    
+    {if $con['key'] == 'weight'}
+
+        {template:new_search/weight, $key, 0,$formdata['weight'],$con['attr']}
+
+
+    {/if}     
+        
+{/foreach}
+{else}
+<div class="new-search-item" data-nosearch="true">未配置高级搜索条件项</div>
+{/if}

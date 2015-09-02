@@ -1,0 +1,117 @@
+/*mail-box css*/
+.person-mail{ width:528px;position:absolute;top:120px;display:none;z-index:1001;}
+.person-mail em{font-family: Georgia,Tahoma,Arial;font-size: 26px;}
+.person-mail .error{color:red;}
+.mail-top-bg{ background:url({$RESOURCE_URL}qingao/mail_top_bg.png) no-repeat; height:19px;*+height:18px;}
+.person-mail-title{ width:471px; background:url({$RESOURCE_URL}qingao/mail-hr.png) bottom no-repeat; height:22px; padding-bottom:15px; margin:0 auto}
+.person-mail-title span{ float:left; color:#d5e366; font-weight:bold}
+.mail-del{ float:right;width:13px;height:13px;background:url({$RESOURCE_URL}qingao/mail_delete.png) no-repeat;cursor:pointer;}
+.mail-con-bg{background:url({$RESOURCE_URL}qingao/mail_con_bg.png) repeat-y; padding-bottom:20px;_margin-top:-1px;}
+.person-mail-con{width:471px; margin:15px auto; }
+.mail-item{ height:24px;}
+.mail-item span{ color:#8b8b8f}
+.person-mail-con span{ font-size:12px; line-height:24px; vertical-align:middle}
+.person-mail-con span, .mail-txt{float:left}
+.person-mail-con span.tip-span{ float:right;color:#aaaaaf;height:30px;}
+.mail-txt{background-color:white; width:200px; height:20px; vertical-align:middle; border:1px solid #c3c3c3}
+.mail-txtarea{ width:471px;}
+.mail-btn{ margin-top:20px;}
+.face-btn,.vod-btn{float:left;margin-right:18px;display:inline;cursor:pointer;}
+.face-btn{ background:url({$RESOURCE_URL}qingao/mail_face.png) no-repeat;width:22px;height:23px;/*_background:transparent;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='{$RESOURCE_URL}qingao/mail_face.png')*/}
+.vod-btn{ background:url({$RESOURCE_URL}qingao/mail_v.png) no-repeat;width:24px;height:23px;}
+.mail-btn-public{ float:right; margin:0;background:url({$RESOURCE_URL}qingao/mail_public.png) no-repeat;width:58px;height:28px;line-height:26px;vertical-align:middle;text-align:center;color:#fff;cursor:pointer;}
+.mail-bottom-bg{ background:url({$RESOURCE_URL}qingao/mail_bottom_bg.png) no-repeat; height:35px;}
+.msg-tip{z-index:1001;position:absolute;top:250px;background:#2DA88F;padding:0 10px;height:50px;line-height:50px;text-align:center;border:1px solid green;display:none;color:white;}
+.person-mail .weibo-content{width:471px;margin:auto;margin-top:15px;}
+.person-mail .weibo-content div{float:left;background:#e6e6e6;height:50px;width:50px;}
+.person-mail .weibo-content .weibo-main{width:400px;height:50px;float:right;}
+.person-mail .mail-face-box{display:none;position:absolute;margin-left:24px;margin-top:-30px;}
+/*私信列表 css*/
+.my-message-box{width:480px;overflow:hidden;}
+.my-message-top{height:30px;border-bottom:4px solid #c7da34;vertical-align:middle;line-height:26px;}
+.my-message-top h3{color:#22b49f;float:left}
+.person-total{color:#acacac;float:left;font-size:12px}
+.person-total em{color:#469b13}
+.message-public{float:right;width:84px;}
+.public-btn{background:url({$RESOURCE_URL}qingao/public_btn.png);height:24px;display:block}
+.my-message-con{margin-top:23px;}
+.message-list li{list-style:none; border-bottom:1px dashed #dadada;padding-bottom:18px;margin-bottom:25px;}
+.person-pic{width:50px;height:50px;float:left;display:block}
+.message-descr{float:right;width:413px;}
+.message-name{color:#46ad0e;}
+.message-descr-title{color:#555555;font-size:14px;word-wrap:break-word;word-break:break-all;line-height:1.6}
+.message-descr-detail{margin-top:15px;}
+.message-date{color:#BFBFC3;float:left}
+.message-control{float:right;color:#8B8B8F}
+.message-control a{color:#8B8B8F;margin:0 5px 0 3px}
+.message-control a:hover{color:#46ad0e}
+
+/*私信展开页css*/
+.my-message-nav{margin-top:10px}
+.all-message-index a{color:#46ad0e;}
+.message-total{color:#555555;padding-left:6px;font-size:13px}
+.message-form{margin-bottom:15px;border-bottom:1px dashed #ccc;padding-bottom:10px}
+.reply-name,.tip-con{color:#646469;font-size:14px;float:left; font-weight:bold}
+.tip-con{width:104px;float:right}
+.message-form-item{margin:7px 0 5px}
+.message-txtarea{width:478px;}
+.message-btn-public{float:right;background:url({$RESOURCE_URL}qingao/message_public.png) no-repeat;width:56px;height:25px;line-height:24px;vertical-align:middle;text-align:center;color:#fff;}
+
+/*表情弹窗 css*/
+
+.biaoqing-box{ width:329px; height:208px;background:url({$RESOURCE_URL}qingao/biaoqing_bg.png);}
+.biaoqing-title{ color:#a8a8ab; padding:8px 0 0 30px;font-size:12px;}
+.biaoqing-con{ width:312px; height:162px; padding:10px 0 0 17px; overflow:hidden}
+/* .biaoqing-con table td{ border:1px solid #e6e6e6; width:25px;height:26px;} */
+.biaoqing-con td.left-td{ border-left:0;}
+.biaoqing-con td.right-td{ border-right:0;}
+.biaoqing-con td.top-td{ border-top:0;}
+.biaoqing-con td.bottom-td{ border-bottom:0;}
+.biaoqing-control{ padding-right:20px;}
+.biaoqing-control a{ display:block;height:7px; float:right; margin-left:6px; display:inline}
+.biaoqing{background:url({$RESOURCE_URL}qingao/biaoqing-off.png) no-repeat; width:7px;}
+.biaoqing-on{background-image:url({$RESOURCE_URL}qingao/biaoqing-on.gif); width:9px;}
+
+/*转发列表*/
+.zf-message-list li{margin-bottom:20px;}
+.zf-message-list .message-descr{ border-bottom:1px dotted #AAAAAF;padding-bottom:10px}
+.zf-place,.zf-con{color:#aaaaaf;font-size:12px;margin-bottom:4px}
+.zf-place span{padding-right:8px}
+.zf-con span{padding-right:6px}
+.t_assist{float:right}
+.pinglun_reply_content{border:2px solid #D6D6D6;border-radius: 3px 3px 3px 3px;color: #AAAAAF;line-height: 18px;padding: 2px 5px;width: 400px;}
+
+/*个人主页粉丝 关注css*/
+.guanzhu-nav{height:30px;border-bottom:1px solid #e1f3c7;background:#faffe5;line-height:30px;vertical-align:middle;}
+.nav-li,.nav-li-more{list-style:none;float:left;display:inline;padding-right:7px;background:url({$RESOURCE_URL}qingao/pay-border.jpg) right center no-repeat; margin-left:5px;font-size:13px}
+.nav-li-more{ background:none;_margin-top:5px}
+.more-j{margin-left:5px}
+.nav-li-more-hover{background-color:#fff;border:1px solid #dadada;border-bottom:0;position:relative;padding:0 8px;}
+.nav-item{color:#46ad0e;}
+.nav-item:hover{color:#333333;}
+.nav-more-btn{padding-right:5px}
+.guanzhu-second-nav{border:1px solid #dadada;position:absolute;left:-48px;top:30px;border-top:0;width:100px;display:none;background-color:#fff}
+.second-nav-item{margin-left:2px;padding:0 20px 0 10px;display:block;color:#46ad0e;}
+.second-nav-item:hover{background:#f5f5f5;color:#4b4b4b}
+.new-group{width:84px;float:right;background:url({$RESOURCE_URL}qingao/news-group.png) no-repeat;margin:3px 2px 0 0;height:24px;cursor:pointer}
+.fans-list li{border-bottom:1px solid #dfdfdf;padding-bottom:5px;margin-bottom:20px}
+.fans-title{color:#333333;float:left;font-size:16px}
+.fans-total{color:#46ad0e}
+.fans-search-form{float:right;width:140px}
+.fans-txt,.fans-search-btn,.fans-list-left,.fans-name,.fans-place{float:left}
+.fans-txt{width:110px;border:1px solid #cacaca;height:22px;vertical-align:middle;line-height:24px;}
+.fans-search-btn{width:25px;height:24px;background:url({$RESOURCE_URL}qingao/messahe-search.jpg) no-repeat;display:block;}
+.fans-list-left{width:50px;}
+.fans-photo{height:50px;width:50px;overflow:hidden}
+.person-message-btn{display:block;background:url({$RESOURCE_URL}qingao/person_message.jpg) no-repeat;height:18px;margin-top:4px;}
+.fans-list-right{float:right;width:413px;}
+.fans-right-item{margin-bottom:8px}
+.fans-name a{color:#46ad0e}
+.fans-place{color:#b2b2b2;padding-left:10px}
+.fans-attention{width:60px;height:20px;float:right;background:url({$RESOURCE_URL}qingao/attention.jpg) no-repeat;cursor:pointer}
+.number-detail{color:#646469;padding-right:5px}
+.number-detail em{padding-left:10px}
+.number-total{color:#46ad0e}
+.intro{color:#333333;line-height:1.5}
+.intr0-title{color:#c1c1c1;}
+.cancle-btn{width:65px;color:#46ad0e;float:right;cursor:pointer}

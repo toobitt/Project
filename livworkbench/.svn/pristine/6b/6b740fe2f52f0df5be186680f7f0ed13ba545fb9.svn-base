@@ -1,0 +1,73 @@
+/* 字体 */
+.ft16{font-size:1.6em;}
+.ft18{font-size:1.8em;}
+.ft20{font-size:2em;}
+.ft22{font-size:2.2em;}
+
+/* 间距 */
+.mt10{margin-top:10px;}
+.mt20{margin-top:20px;}
+.ml10{margin-left:10px;}
+.mb10{margin-bottom:10px;}
+
+/*颜色*/
+.gray{color:#808080; }
+
+
+/* 盒模型 */
+.m2o-flex{display:-webkit-box;width:auto;display:-ms-flexbox;}
+.m2o-flex-center{-webkit-box-align:center;-ms-flex-align: center;}
+.m2o-flex-one{-webkit-box-flex:1;-ms-flex:1;}
+.m2o-flex-two{-webkit-box-flex:2;-ms-flex:2;}
+.m2o-vertical{-webkit-box-orient:vertical;-ms-flex-direction:column;}
+
+
+.box-sizing{box-sizing:border-box;}
+img{width:100%; height:100%;}
+
+
+body{min-width:320px;background:#fafafa;font-size:62.5%;font-family:"Hiragino Sans GB","Microsoft YaHei",tahoma,verdana,arial,sans-serif;color:#000;-webkit-text-size-adjust:none;}
+a:link{color:#000;}
+a:link,a:visited{text-decoration:none;-webkit-tap-highlight-color:transparent;tap-highlight-color:transparent;}
+.clear{overflow:visible;}
+.clear:after{clear: both; content: '.';display: block;visibility:hidden;height:0;}
+.icon-du{display:inline-block;width:0.4em;}
+
+
+/* 头部导航 */
+.m2o-header{width:100%; line-height:3.6em;height:3.6em;}
+.m2o-nav{position:fixed; height:3.6em; width:auto; z-index:10; left:0; right:0; top:0; -webkit-transition:all .3s linear; background-color:#f8f9f8; border-bottom:1px solid #d5d5d5; }
+.m2o-nav-icon{display:inline-block;position:relative;z-index:11;width:3.6em;height:3.6em;background:url('') center no-repeat;}
+.m2o-nav-title{position:absolute; text-align:center; width:100%;}
+.m2o-nav-left{float:left;height:3.6em;}
+.m2o-nav-right{float:right;height:3.6em;}
+.m2o-nav-icon.back{background-image:url(../images/top_icon_back.png);}
+
+/*内容块*/
+.m2o-content{padding:0 10px 5px; background:url(../images/part.png) repeat-x 5px bottom transparent; background-size:18px 4px;}
+.m2o-content > div{border-bottom:1px solid #e9e9e9; padding:10px 5px;}
+.m2o-content > div:last-child{border-bottom:none; }
+.m2o-content p{line-height: 28px; }
+.m2o-gray-wave{background-image:url(../images/part_gray.png);}
+
+.fenge{ display:inline-block; margin:5px 0; width:80%; background:linear-gradient(transparent 7px, #d5d5d5 1px, transparent 8px) repeat-x 0px bottom;
+	 background-size:28px 20px;}
+
+/*按钮*/
+.m2o-aside{padding-bottom:70px; }
+.m2o-aside .m2o-btn{text-align:center; margin:20px 15px;}
+.m2o-aside .m2o-button-fixed{position:fixed; left:0; bottom:0; height:70px; margin:0; line-height:70px; width:100%; background-color:rgba(255, 255, 255, 0.75); }
+.m2o-aside .m2o-btn a{display:inline-block; height:44px; width:144px; line-height:44px; border-radius: 3px;}
+.m2o-aside .m2o-btn a:link{color:#fff;}
+.m2o-aside .m2o-bigbtn a{width:100%; box-sizing:border-box;}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2) {
+	.m2o-nav-icon{background-size:40px 44px; }
+	.m2o-nav-icon.back{background-image:url(../images/top_icon_back-2x.png);}
+	.m2o-content{background-image:url(../images/part-2x.png); background-size:18px 4px; }
+	.m2o-gray-wave{background-image:url(../images/part_gray-2x.png);}
+}

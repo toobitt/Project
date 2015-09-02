@@ -1,0 +1,17 @@
+.weather-img{float:left;margin-right:20px;width:126px;height:165px;position:relative;text-align:center;margin-bottom:10px;}
+.weather-img img, .weather-pic-item img{width:120px;height:165px;}
+.weather-img-box{clear:left;margin-left:72px;}
+.weather-img-box .weather-pic-item{float:left;margin:10px 10px 0 0;text-align:center;}
+.more-index{color: #7d7d7d;margin-left: 10px;}
+.notice-paixu{width:30px}
+.photo-add{width:60px;height:60px;font-size:40px;line-height: 56px;text-align:center;color:#fff;cursor:pointer;display: inline-block;background: #6ea5e8;margin-top: 50px;margin-left: 10px;border-radius: 50%;}
+.photo-add:hover{background:#6ea4ea;}
+.default{background:url({$RESOURCE_URL}news/suoyin-default.png) no-repeat center #fff;border:1px dashed #ccc;}
+.photo-item{position:relative;}
+.photo-item:hover .hide{display:none;}
+.photo-item:hover .delete{display:block;}
+.delete{cursor:pointer;position:absolute;width:20px;height:20px;background:#991214;border-radius:50%;text-align:center;line-height:20px;color:#fff;top:0px;right:0px;}
+.set-index{display:none;width:20px;position:absolute;background:#ccc;text-align:center;top:0;left:0;color:#666;cursor:pointer;}
+.photo-item:hover .set-index{display:block;}
+.default:hover .set-index{display:none;}
+.photo-item .current{display:block;background:#991214;color:#fff;}

@@ -1,0 +1,7 @@
+.comment{padding: 10px;background: #fafafa;}
+.comment .comment-list{padding: 10px 5px;border-bottom: 1px solid #d9d9d9;}
+.comment .avater{width: 35px;height: 35px;margin-right: 10px;position: relative;background:#9f9f9f;border-radius: 30px;}
+.comment .avater img{width: 100%;height: 100%;border-radius: 30px;}
+.comment .contain{font-size: 1.2em;vertical-align: middle;color:#828282}
+.comment .time{float:right}
+.comment .info{font-size: 1.4em;vertical-align: middle;margin-top:0.5em;}

@@ -1,0 +1,154 @@
+/*
+Copyright (c) 2011, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 2.9.0
+*/
+html{color:#000;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,select,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,button,caption,cite,code,dfn,em,input,optgroup,option,select,strong,textarea,th,var{font:inherit}del,ins{text-decoration:none}li{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:baseline}sub{vertical-align:baseline}legend{color:#000}
+
+
+body,.main-wrap{background:#eee;}
+.main-wrap{padding:10px;height:100%;}
+a{text-decoration:none;color:#333;}
+.m2o-overflow{white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+/* 列表项 */
+.list-item{background:#fff;margin-bottom:10px;border-bottom:2px solid #cbcbcb;}
+.list-pic{display:block;width:80px;height:50px;overflow:hidden;}
+.list-pic img{width:100%;height:100%;}
+
+/* 头部导航
+.m2o-header{width:100%;font-size:18px;line-height:44px;height:44px;}
+.m2o-nav-title{position:absolute;color:#3b9ac6;text-align:center;width:100%;}
+.m2o-nav{position:fixed;border-bottom:1px solid #a7a7a7;background:#f8f8f8;height:44px;width:auto;z-index:10;left:0;right:0;top:0;-webkit-transition:all .3s linear;}
+.m2o-nav-icon{display:inline-block;position:relative;z-index:11;width:44px;height:44px;background:url(../images/navicon/drawer.png) center no-repeat;}
+.m2o-nav-icon.touched{background-color:rgba(255,255,255,.5);}
+.m2o-nav-left{float:left;height:2em;}
+.m2o-nav-right{float:right;height:2em;}
+.m2o-nav-icon.back{background-image:url(../images/nav/navbar-icon-back.png);}
+.m2o-nav-icon.cancle{background-image:url(../images/nav/navbar-icon-cancle.png);}
+.m2o-nav-icon.comment{background-image:url(../images/nav/navbar-icon-comment.png);}
+.m2o-nav-icon.info{background-image:url(../images/nav/navbar-icon-info.png);}
+.m2o-nav-icon.modules{background-image:url(../images/nav/navbar-icon-modules.png);}
+.m2o-nav-icon.submit{background-image:url(../images/nav/navbar-icon-submit.png);}
+ */
+
+/* 选项卡式二级导航 */
+.subnav{height:35px;line-height:33px;text-align:center;color:#999;}
+.subnav .item{display:block; background-color:#f9f9f9;border-bottom:2px solid #cdcdcd;color:#999;}
+.subnav .item.selected{background-color:#eee;border-bottom-color:#3b9ac6;color:#3b9ac6;}
+
+/* 盒模型 */
+.m2o-flex{display:-webkit-box;width:auto;display:-ms-flexbox;}
+.m2o-flex-center{-webkit-box-align:center;-ms-flex-align: center;}
+.m2o-flex-end{-webkit-box-align:end;-ms-box-align:end;box-align:end;}
+.m2o-flex-one{-webkit-box-flex:1;-ms-flex:1;}
+.m2o-flex-two{-webkit-box-flex:2;-ms-flex:2;}
+.m2o-vertical{-webkit-box-orient:vertical;-ms-flex-direction:column;}
+.m2o-flex-overflow{flex-wrap:wrap;}
+
+/* 分栏 */
+.m2o-column-two{-webkit-column-count:2;column-count:2;}
+.m2o-column-three{-webkit-column-count:3;column-count:3;}
+.m2o-column-four{-webkit-column-count:4;column-count:4;}
+.m2o-column-five{-webkit-column-count:5;column-count:5;}
+
+/* 选项卡式 foot */
+.common-foot{height:49px;}
+.tabbar{position:fixed;bottom:0;width:100%;height:49px;border-top:1px solid #ababab;background:rgba(250,250,250,0.95);}
+.tabbar .icon{background:url(../images/tabbar/tabbar-icon-share.png) no-repeat center;display:block;}
+.tabbar .share{background-image:url(../images/tabbar/tabbar-icon-share.png);}
+.tabbar .playlist{background-image:url(../images/tabbar/tabbar-icon-playlist.png);}
+.tabbar .comment{background-image:url(../images/tabbar/tabbar-icon-comment.png);}
+.tabbar .collect{background-image:url(../images/tabbar/tabbar-icon-favor.png);}
+.tabbar .font{background-image:url(../images/tabbar/tabbar-icon-font.png);}
+
+/* 左图+文字 */
+.pic-intro-item{margin:15px 0;}
+.pic-intro-item .pic{display:block;width:85px;height:53px;margin-right:13px;}
+.pic-intro-item .intro{line-height:18px;font-size:12px;color:#999;}
+
+/* slide */
+.slider{height:180px;position:relative;}
+.slider .item{height:100%;}
+.slider img{height:100%;}
+.slider .ui-slider-item > a{height:100%;}
+.slider .ui-slider-dots{left:0;text-align:center;}
+.slider .ui-slider-dots > b{background:#b8d5e5;}
+.slider .ui-slider-dots .ui-state-active{background:#3b9ac6;}
+.slider .ui-slider-item{background:transparent;}
+
+/* 新闻详情 */
+.content{padding:0 5px;}
+.content h1{font-size:20px;line-height:1.5;color:#3b3b3b;}
+.content h5{color:#888;font-size:12px;margin:15px 0 20px;}
+.content .media-box{background:#333;position:relative;width:100%;height:165px;text-align:center;}
+.content .media-box video{height:100%;}
+.content .media-box img{width:100%;height:100%;}
+.content article{font-size:17px;line-height:1.8;text-indent:2em;}
+.content article .name{margin-right:1em;}
+
+#pullDown,#pullUp {
+	background:#fff;
+	height:40px;
+	line-height:40px;
+	padding:5px 10px;
+	border-bottom:1px solid #ccc;
+	font-weight:bold;
+	color:#888;
+	text-align:center;
+	vertical-align:middle;
+	-webkit-tap-highlight-color:#d1d1d1;
+}
+#pullDown:active,#pullUp:active {
+	background-color:#d1d1d1;
+}
+#pullDown .pullDownIcon,#pullUp .pullUpIcon {
+	display:none;
+	width:40px;
+	height:40px;
+	background:url(../images/bae_list_refresh.png) 0 0 no-repeat;
+	-webkit-background-size:40px 80px;
+	background-size:40px 80px;
+	-webkit-transition-property:-webkit-transform;
+	-webkit-transition-duration:250ms;
+}
+#pullDown .pullDownIcon {
+	-webkit-transform:rotate(0deg) translateZ(0);
+}
+#pullUp .pullUpIcon {
+	-webkit-transform:rotate(-180deg) translateZ(0);
+}
+#pullDown.flip .pullDownIcon {
+	-webkit-transform:rotate(-180deg) translateZ(0);
+}
+#pullUp.flip .pullUpIcon {
+	-webkit-transform:rotate(0deg) translateZ(0);
+}
+#pullDown.loading .pullDownIcon,#pullUp.loading .pullUpIcon {
+	background-position:0 100%;
+	-webkit-transform:rotate(0deg) translateZ(0);
+	-webkit-transition-duration:0ms;
+	-webkit-animation-name:loading;
+	-webkit-animation-duration:2s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:linear;
+}
+@-webkit-keyframes loading {
+	from {
+	-webkit-transform:rotate(0deg) translateZ(0);
+}
+to {
+	-webkit-transform:rotate(360deg) translateZ(0);
+}
+
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2) {
+	.tabbar .icon{background-size:80px 49px;}
+	.tabbar .share{background-image:url(../images/tabbar/tabbar-icon-share-2x.png);}
+	.tabbar .playlist{background-image:url(../images/tabbar/tabbar-icon-playlist-2x.png);}
+	.tabbar .comment{background-image:url(../images/tabbar/tabbar-icon-comment-2x.png);}
+}

@@ -1,0 +1,411 @@
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>吉林电视台新闻页</title>
+<link  rel="stylesheet" href="http://api.dev.hogesoft.com/publishsys/data/template/1/57/images/reset.css" type="text/css" />
+<link  rel="stylesheet" href="http://api.dev.hogesoft.com/publishsys/data/template/1/57/images/common.css" type="text/css" />
+<link  rel="stylesheet" href="http://api.dev.hogesoft.com/publishsys/data/template/1/57/images/new.css" type="text/css" />
+<style type="text/css">    ul.rankList li{ border-bottom: 1px solid #d3d3d3;  height: 35px; line-height: 35px; overflow: hidden; width: 320px;}
+ul.rankList li.last{border:none;}
+ul.rankList li span.ranknum{width: 20px; height: 20px; background: #cacaca; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; color: #FFFFFF; float: left; line-height: 20px; margin-top: 7px; font-family: "Arial";  font-weight: bold; text-align: center; }
+ul.rankList li span.front{background: #930000;}
+ul.rankList li a{color: #333333; float: left; padding-left: 10px;}
+ul.rankList li a:hover {color: #BA2636; }
+ul.rankList li span.follow {background: #A2A2A2;}
+ul.rankList li .more{color:#888888; text-align: center;}
+ul.rankList li .more a, .rankList li .more a :hover, .rankList li .more a :visited{color:#888888;}
+ul.rankList li .more{float:right; color:#930000; font-family: "Arial"; font-style: italic;}
+ul.rankList li span.cLGray{padding:0 10px; }  .nostyle {padding: 6px 0 0 14px;width: 306px;}
+.nostyle  h3 {font-size: 14px;text-align: center;}
+.nostyle  li {color: #9DA9B4;float: left; font-size: 14px; height: 26px;line-height: 26px; overflow: hidden; text-indent: 11px;width: 100%;} .pL {padding: 8px 0 15px 10px;margin: 0 auto;overflow: hidden;text-align: center;margin: 0 7px}
+.pL li {display: inline; float: left; overflow: hidden;}
+.pL a {display: block;}
+.pL p a {display: inline;}
+.pL .l20 { line-height: 20px;}
+.pL p {background: #EBEBEB; margin-top: 2px;}   .copyright {
+    clear: both;
+    color: #333333;
+    font-size: 12px;
+    line-height: 28px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 8px 0;
+    text-align: center;
+    width: 960px;
+}
+.copyright .en {
+    font-family: Arial;
+}
+.copyright a {
+    color: #333333;
+    text-decoration: none;
+}
+.copyright a:hover {
+    color: #BD0A01;
+    text-decoration: underline;
+} </style></head>
+
+<body>
+	<!--头部-->
+<div class="Top">
+	<div class="topdao">
+    	<div class="logo"><a href="/"><img  src="http://api.dev.hogesoft.com/publishsys/data/template/1/57/images/logo.png" alt="吉林网络广播电视台"  /></a></div>
+        <div class="sousuo">
+        	<div class="kind">
+            	<p><img  src="http://api.dev.hogesoft.com/publishsys/data/template/1/57/images/ipad_lie.png"  />iPad版</p><p><img  src="http://api.dev.hogesoft.com/publishsys/data/template/1/57/images/phone_lie.png"  />手机版|</p>
+            </div>
+            <div class="search">
+				<form  action="/" method="post" style="display:inline;">
+				<p><a href="/">忘记密码?</a><a href="/" target="_blank" class="zhu">注册</a></p>
+                <div class="yonghu">用户名  <input name="username" style="width:90px;border:1px #d6d6d6 solid; height:17px;" value="" id="username" />  密码  <input type="password" name="password" style="width:90px;border:1px #d6d6d6 solid; height:17px;" value="" /> <input type="submit" name="submit" value="登录" class="int" /></div></form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
+
+<!--导航-->
+<div class="Nav">
+	<div class="nav1">
+    	<div class="daohang">
+    	<ul class="nostyle">
+ </ul>
+    	</div>
+    </div>
+</div>
+
+<!--新闻-->
+<div class="jl_top"></div>
+<div class="jl_borwidth">
+	<h2><img  src="http://api.dev.hogesoft.com/publishsys/data/template/1/57/images/new_title.jpg"  /></h2>
+	<ul  class="classprimary">
+	<li>
+	colprefix<a href="http://web.dayang.com.cn:233/folder4" class="goto-column">图集</a>	
+	prefix	<a href="http://web.dayang.com.cn:233/folder4/2012-11-14/2012-11-14-13514.html">图集图集11</a>
+	<span class="publish-time">2013-04-07 16:12:59</span>	</li>
+	<li>
+	colprefix<a href="http://web.dayang.com.cn:233/folder4" class="goto-column">图集</a>	
+	prefix	<a href="http://web.dayang.com.cn:233/folder4/2012-11-14/2012-11-14-13514.html">图集图集11</a>
+	<span class="publish-time">2013-04-07 16:12:59</span>	</li>
+</ul>
+</div>
+<div class="new_borwidth">
+	<div class="new_left">
+		<div class="new_bigtu">
+			<ul class="classprimary">
+	<li>	
+		<a href="http://zhibo.dayang.com.cn:233/folder70/2013-04-12/13735.html"><img src="Array" />html</a>
+		<p><a href="http://zhibo.dayang.com.cn:233/folder70/2013-04-12/13735.html">小娃子.flv</a></p>
+					<div class="classdesc"><a href="http://zhibo.dayang.com.cn:233/folder70/2013-04-12/13735.html" class="classdetail"></a></div>
+			</li>
+	<li>	
+		<a href="http://zhibo.dayang.com.cn:233/folder70/2013-04-12/13735.html"><img src="Array" />html</a>
+		<p><a href="http://zhibo.dayang.com.cn:233/folder70/2013-04-12/13735.html">小娃子.flv</a></p>
+					<div class="classdesc"><a href="http://zhibo.dayang.com.cn:233/folder70/2013-04-12/13735.html" class="classdetail"></a></div>
+			</li>
+	<li>	
+		<a href="http://web.dayang.com.cn:233/folder4/folder40/2013-04-12/13733.html"><img src="Array" />html</a>
+		<p><a href="http://web.dayang.com.cn:233/folder4/folder40/2013-04-12/13733.html">小小李小龙.mp4</a></p>
+					<div class="classdesc"><a href="http://web.dayang.com.cn:233/folder4/folder40/2013-04-12/13733.html" class="classdetail"></a></div>
+			</li>
+	<li>	
+		<a href="http://web.dayang.com.cn:233/folder4/folder40/2013-04-12/13733.html"><img src="Array" />html</a>
+		<p><a href="http://web.dayang.com.cn:233/folder4/folder40/2013-04-12/13733.html">小小李小龙.mp4</a></p>
+					<div class="classdesc"><a href="http://web.dayang.com.cn:233/folder4/folder40/2013-04-12/13733.html" class="classdetail"></a></div>
+			</li>
+	<li>	
+		<a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-12/13732.html"><img src="Array" />html</a>
+		<p><a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-12/13732.html">小小李小龙.mp4</a></p>
+					<div class="classdesc"><a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-12/13732.html" class="classdetail"></a></div>
+			</li>
+	<li>	
+		<a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-12/13732.html"><img src="Array" />html</a>
+		<p><a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-12/13732.html">小小李小龙.mp4</a></p>
+					<div class="classdesc"><a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-12/13732.html" class="classdetail"></a></div>
+			</li>
+	<li>	
+		<a href="http://web.dayang.com.cn:233/folder4/folder41/2013-04-11/13731.html"><img src="Array" />html</a>
+		<p><a href="http://web.dayang.com.cn:233/folder4/folder41/2013-04-11/13731.html">ceshi.flv</a></p>
+					<div class="classdesc"><a href="http://web.dayang.com.cn:233/folder4/folder41/2013-04-11/13731.html" class="classdetail"></a></div>
+			</li>
+	<li>	
+		<a href="http://web.dayang.com.cn:233/folder4/folder41/2013-04-11/13731.html"><img src="Array" />html</a>
+		<p><a href="http://web.dayang.com.cn:233/folder4/folder41/2013-04-11/13731.html">ceshi.flv</a></p>
+					<div class="classdesc"><a href="http://web.dayang.com.cn:233/folder4/folder41/2013-04-11/13731.html" class="classdetail"></a></div>
+			</li>
+	<li>	
+		<a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-11/13730.html"><img src="Array" />html</a>
+		<p><a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-11/13730.html">ceshi.flv</a></p>
+					<div class="classdesc"><a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-11/13730.html" class="classdetail"></a></div>
+			</li>
+	<li>	
+		<a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-11/13730.html"><img src="Array" />html</a>
+		<p><a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-11/13730.html">ceshi.flv</a></p>
+					<div class="classdesc"><a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-11/13730.html" class="classdetail"></a></div>
+			</li>
+	<li>	
+		<a href="http://web.dayang.com.cn:233/folder4/2013-04-11/2013-04-11-13729.html"><img src="Array" />html</a>
+		<p><a href="http://web.dayang.com.cn:233/folder4/2013-04-11/2013-04-11-13729.html">ceshi.flv</a></p>
+					<div class="classdesc"><a href="http://web.dayang.com.cn:233/folder4/2013-04-11/2013-04-11-13729.html" class="classdetail"></a></div>
+			</li>
+	<li>	
+		<a href="http://web.dayang.com.cn:233/folder4/2013-04-11/2013-04-11-13729.html"><img src="Array" />html</a>
+		<p><a href="http://web.dayang.com.cn:233/folder4/2013-04-11/2013-04-11-13729.html">ceshi.flv</a></p>
+					<div class="classdesc"><a href="http://web.dayang.com.cn:233/folder4/2013-04-11/2013-04-11-13729.html" class="classdetail"></a></div>
+			</li>
+	<li>	
+		<a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-11/13728.html"><img src="Array" />html</a>
+		<p><a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-11/13728.html">ceshi.flv</a></p>
+					<div class="classdesc"><a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-11/13728.html" class="classdetail"></a></div>
+			</li>
+	<li>	
+		<a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-11/13728.html"><img src="Array" />html</a>
+		<p><a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-11/13728.html">ceshi.flv</a></p>
+					<div class="classdesc"><a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-11/13728.html" class="classdetail"></a></div>
+			</li>
+	<li>	
+		<a href="http://web.dayang.com.cn:233/folder4/2013-04-11/2013-04-11-13727.html"><img src="Array" />html</a>
+		<p><a href="http://web.dayang.com.cn:233/folder4/2013-04-11/2013-04-11-13727.html">ceshi.flv</a></p>
+					<div class="classdesc"><a href="http://web.dayang.com.cn:233/folder4/2013-04-11/2013-04-11-13727.html" class="classdetail"></a></div>
+			</li>
+</ul>
+		</div>
+		<div class="new_dianshi">
+			<h2><span><a href="#">更多>></a></span><a href="#">电视栏目访问排行</a></h2>
+			<ul>
+				<li><span class="dianbo">点播：406698</span><span class="num">1</span><a href="#">新闻联播</a></li>
+				<li><span class="dianbo">点播：406698</span><span class="num">2</span><a href="#">新闻联播</a></li>
+				<li><span class="dianbo">点播：406698</span><span class="num">3</span><a href="#">新闻联播</a></li>
+				<li><span class="dianbo">点播：406698</span><span class="num">4</span><a href="#">新闻联播</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="new_middle">
+		<div class="new_tulist">
+			<ul class="rankList"> 
+		<li><span class="front ranknum">0</span><a href="http://zhibo.dayang.com.cn:233/folder70/2013-04-12/13735.html">小娃子.flv</a><span class="more">3000</span></li> 
+		<li><span class="front ranknum">1</span><a href="http://zhibo.dayang.com.cn:233/folder70/2013-04-12/13735.html">小娃子.flv</a><span class="more">3000</span></li> 
+		<li><span class="front ranknum">2</span><a href="http://web.dayang.com.cn:233/folder4/folder40/2013-04-12/13733.html">小小李小龙.mp4</a><span class="more">3000</span></li> 
+		<li><span class="follow ranknum">3</span><a href="http://web.dayang.com.cn:233/folder4/folder40/2013-04-12/13733.html">小小李小龙.mp4</a><span class="more">3000</span></li> 
+		<li><span class="follow ranknum">4</span><a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-12/13732.html">小小李小龙.mp4</a><span class="more">3000</span></li> 
+		<li><span class="follow ranknum">5</span><a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-12/13732.html">小小李小龙.mp4</a><span class="more">3000</span></li> 
+		<li><span class="follow ranknum">6</span><a href="http://web.dayang.com.cn:233/folder4/folder41/2013-04-11/13731.html">ceshi.flv</a><span class="more">3000</span></li> 
+		<li><span class="follow ranknum">7</span><a href="http://web.dayang.com.cn:233/folder4/folder41/2013-04-11/13731.html">ceshi.flv</a><span class="more">3000</span></li> 
+		<li><span class="follow ranknum">8</span><a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-11/13730.html">ceshi.flv</a><span class="more">3000</span></li> 
+		<li><span class="follow ranknum">9</span><a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-11/13730.html">ceshi.flv</a><span class="more">3000</span></li> 
+		<li><span class="follow ranknum">10</span><a href="http://web.dayang.com.cn:233/folder4/2013-04-11/2013-04-11-13729.html">ceshi.flv</a><span class="more">3000</span></li> 
+		<li><span class="follow ranknum">11</span><a href="http://web.dayang.com.cn:233/folder4/2013-04-11/2013-04-11-13729.html">ceshi.flv</a><span class="more">3000</span></li> 
+		<li><span class="follow ranknum">12</span><a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-11/13728.html">ceshi.flv</a><span class="more">3000</span></li> 
+		<li><span class="follow ranknum">13</span><a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-11/13728.html">ceshi.flv</a><span class="more">3000</span></li> 
+		<li><span class="follow ranknum">14</span><a href="http://web.dayang.com.cn:233/folder4/2013-04-11/2013-04-11-13727.html">ceshi.flv</a><span class="more">3000</span></li> 
+</ul>
+		</div>
+		<div class="new_voidlist">
+			<ul class="pL">
+        <li><a target="_blank" href="http://zhibo.dayang.com.cn:233/folder70/2013-04-12/13735.html"><img width="130" height="80" src="http://img.dev.hogesoft.com:233/material/mediaserver/img/130x80/2013/04/d77477bc9dd5ca2de24c444d9ec2c5cd.jpg"></a>
+           <p><a href="http://zhibo.dayang.com.cn:233/folder70/2013-04-12/13735.html" class="l20" target="_blank">小娃子.flv</a></p>
+        </li>
+        <li><a target="_blank" href="http://zhibo.dayang.com.cn:233/folder70/2013-04-12/13735.html"><img width="130" height="80" src="http://img.dev.hogesoft.com:233/material/mediaserver/img/130x80/2013/04/d77477bc9dd5ca2de24c444d9ec2c5cd.jpg"></a>
+           <p><a href="http://zhibo.dayang.com.cn:233/folder70/2013-04-12/13735.html" class="l20" target="_blank">小娃子.flv</a></p>
+        </li>
+        <li><a target="_blank" href="http://web.dayang.com.cn:233/folder4/folder40/2013-04-12/13733.html"><img width="130" height="80" src="http://img.dev.hogesoft.com:233/material/mediaserver/img/130x80/2013/04/dde852758997af4f46024b5715db5ec3.jpg"></a>
+           <p><a href="http://web.dayang.com.cn:233/folder4/folder40/2013-04-12/13733.html" class="l20" target="_blank">小小李小龙.mp4</a></p>
+        </li>
+        <li><a target="_blank" href="http://web.dayang.com.cn:233/folder4/folder40/2013-04-12/13733.html"><img width="130" height="80" src="http://img.dev.hogesoft.com:233/material/mediaserver/img/130x80/2013/04/dde852758997af4f46024b5715db5ec3.jpg"></a>
+           <p><a href="http://web.dayang.com.cn:233/folder4/folder40/2013-04-12/13733.html" class="l20" target="_blank">小小李小龙.mp4</a></p>
+        </li>
+        <li><a target="_blank" href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-12/13732.html"><img width="130" height="80" src="http://img.dev.hogesoft.com:233/material/mediaserver/img/130x80/2013/04/dde852758997af4f46024b5715db5ec3.jpg"></a>
+           <p><a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-12/13732.html" class="l20" target="_blank">小小李小龙.mp4</a></p>
+        </li>
+        <li><a target="_blank" href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-12/13732.html"><img width="130" height="80" src="http://img.dev.hogesoft.com:233/material/mediaserver/img/130x80/2013/04/dde852758997af4f46024b5715db5ec3.jpg"></a>
+           <p><a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-12/13732.html" class="l20" target="_blank">小小李小龙.mp4</a></p>
+        </li>
+        <li><a target="_blank" href="http://web.dayang.com.cn:233/folder4/folder41/2013-04-11/13731.html"><img width="130" height="80" src="http://img.dev.hogesoft.com:233/material/mediaserver/img/130x80/2013/04/74c308b365ed6177729a38db9f46cd6e.jpg"></a>
+           <p><a href="http://web.dayang.com.cn:233/folder4/folder41/2013-04-11/13731.html" class="l20" target="_blank">ceshi.flv</a></p>
+        </li>
+        <li><a target="_blank" href="http://web.dayang.com.cn:233/folder4/folder41/2013-04-11/13731.html"><img width="130" height="80" src="http://img.dev.hogesoft.com:233/material/mediaserver/img/130x80/2013/04/74c308b365ed6177729a38db9f46cd6e.jpg"></a>
+           <p><a href="http://web.dayang.com.cn:233/folder4/folder41/2013-04-11/13731.html" class="l20" target="_blank">ceshi.flv</a></p>
+        </li>
+        <li><a target="_blank" href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-11/13730.html"><img width="130" height="80" src="http://img.dev.hogesoft.com:233/material/mediaserver/img/130x80/2013/04/74c308b365ed6177729a38db9f46cd6e.jpg"></a>
+           <p><a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-11/13730.html" class="l20" target="_blank">ceshi.flv</a></p>
+        </li>
+        <li><a target="_blank" href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-11/13730.html"><img width="130" height="80" src="http://img.dev.hogesoft.com:233/material/mediaserver/img/130x80/2013/04/74c308b365ed6177729a38db9f46cd6e.jpg"></a>
+           <p><a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-11/13730.html" class="l20" target="_blank">ceshi.flv</a></p>
+        </li>
+        <li><a target="_blank" href="http://web.dayang.com.cn:233/folder4/2013-04-11/2013-04-11-13729.html"><img width="130" height="80" src="http://img.dev.hogesoft.com:233/material/mediaserver/img/130x80/2013/04/74c308b365ed6177729a38db9f46cd6e.jpg"></a>
+           <p><a href="http://web.dayang.com.cn:233/folder4/2013-04-11/2013-04-11-13729.html" class="l20" target="_blank">ceshi.flv</a></p>
+        </li>
+        <li><a target="_blank" href="http://web.dayang.com.cn:233/folder4/2013-04-11/2013-04-11-13729.html"><img width="130" height="80" src="http://img.dev.hogesoft.com:233/material/mediaserver/img/130x80/2013/04/74c308b365ed6177729a38db9f46cd6e.jpg"></a>
+           <p><a href="http://web.dayang.com.cn:233/folder4/2013-04-11/2013-04-11-13729.html" class="l20" target="_blank">ceshi.flv</a></p>
+        </li>
+        <li><a target="_blank" href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-11/13728.html"><img width="130" height="80" src="http://img.dev.hogesoft.com:233/material/mediaserver/img/130x80/2013/04/d4064cf1dbc527114b59485d21586b92.jpg"></a>
+           <p><a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-11/13728.html" class="l20" target="_blank">ceshi.flv</a></p>
+        </li>
+        <li><a target="_blank" href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-11/13728.html"><img width="130" height="80" src="http://img.dev.hogesoft.com:233/material/mediaserver/img/130x80/2013/04/d4064cf1dbc527114b59485d21586b92.jpg"></a>
+           <p><a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-11/13728.html" class="l20" target="_blank">ceshi.flv</a></p>
+        </li>
+        <li><a target="_blank" href="http://web.dayang.com.cn:233/folder4/2013-04-11/2013-04-11-13727.html"><img width="130" height="80" src="http://img.dev.hogesoft.com:233/material/mediaserver/img/130x80/2013/04/d4064cf1dbc527114b59485d21586b92.jpg"></a>
+           <p><a href="http://web.dayang.com.cn:233/folder4/2013-04-11/2013-04-11-13727.html" class="l20" target="_blank">ceshi.flv</a></p>
+        </li>
+      </ul>
+		</div>
+	</div>
+	<div class="new_right">
+		<div class="new_bao">
+			<img  src="http://api.dev.hogesoft.com/publishsys/data/template/1/57/images/img3.jpg"  />
+		</div>
+		<div class="new_hot">
+				<div class="classprimary"	>
+		<hheader class="classdesc"><a href="http://zhibo.dayang.com.cn:233/folder70/2013-04-12/13735.html">小娃子.flv</a></hheader>
+		<div class="classdesc">	<a href="http://zhibo.dayang.com.cn:233/folder70/2013-04-12/13735.html" class="classdetail">小娃子.flv</a></div>
+	</div>
+	<div class="classprimary"	>
+		<hheader class="classdesc"><a href="http://zhibo.dayang.com.cn:233/folder70/2013-04-12/13735.html">小娃子.flv</a></hheader>
+		<div class="classdesc">	<a href="http://zhibo.dayang.com.cn:233/folder70/2013-04-12/13735.html" class="classdetail">小娃子.flv</a></div>
+	</div>
+	<div class="classprimary"	>
+		<hheader class="classdesc"><a href="http://web.dayang.com.cn:233/folder4/folder40/2013-04-12/13733.html">小小李小龙.mp4</a></hheader>
+		<div class="classdesc">	<a href="http://web.dayang.com.cn:233/folder4/folder40/2013-04-12/13733.html" class="classdetail">小小李小龙.mp4</a></div>
+	</div>
+	<div class="classprimary"	>
+		<hheader class="classdesc"><a href="http://web.dayang.com.cn:233/folder4/folder40/2013-04-12/13733.html">小小李小龙.mp4</a></hheader>
+		<div class="classdesc">	<a href="http://web.dayang.com.cn:233/folder4/folder40/2013-04-12/13733.html" class="classdetail">小小李小龙.mp4</a></div>
+	</div>
+	<div class="classprimary"	>
+		<hheader class="classdesc"><a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-12/13732.html">小小李小龙.mp4</a></hheader>
+		<div class="classdesc">	<a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-12/13732.html" class="classdetail">小小李小龙.mp4</a></div>
+	</div>
+	<div class="classprimary"	>
+		<hheader class="classdesc"><a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-12/13732.html">小小李小龙.mp4</a></hheader>
+		<div class="classdesc">	<a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-12/13732.html" class="classdetail">小小李小龙.mp4</a></div>
+	</div>
+	<div class="classprimary"	>
+		<hheader class="classdesc"><a href="http://web.dayang.com.cn:233/folder4/folder41/2013-04-11/13731.html">ceshi.flv</a></hheader>
+		<div class="classdesc">	<a href="http://web.dayang.com.cn:233/folder4/folder41/2013-04-11/13731.html" class="classdetail">ceshi.flv</a></div>
+	</div>
+	<div class="classprimary"	>
+		<hheader class="classdesc"><a href="http://web.dayang.com.cn:233/folder4/folder41/2013-04-11/13731.html">ceshi.flv</a></hheader>
+		<div class="classdesc">	<a href="http://web.dayang.com.cn:233/folder4/folder41/2013-04-11/13731.html" class="classdetail">ceshi.flv</a></div>
+	</div>
+	<div class="classprimary"	>
+		<hheader class="classdesc"><a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-11/13730.html">ceshi.flv</a></hheader>
+		<div class="classdesc">	<a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-11/13730.html" class="classdetail">ceshi.flv</a></div>
+	</div>
+	<div class="classprimary"	>
+		<hheader class="classdesc"><a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-11/13730.html">ceshi.flv</a></hheader>
+		<div class="classdesc">	<a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-11/13730.html" class="classdetail">ceshi.flv</a></div>
+	</div>
+	<div class="classprimary"	>
+		<hheader class="classdesc"><a href="http://web.dayang.com.cn:233/folder4/2013-04-11/2013-04-11-13729.html">ceshi.flv</a></hheader>
+		<div class="classdesc">	<a href="http://web.dayang.com.cn:233/folder4/2013-04-11/2013-04-11-13729.html" class="classdetail">ceshi.flv</a></div>
+	</div>
+	<div class="classprimary"	>
+		<hheader class="classdesc"><a href="http://web.dayang.com.cn:233/folder4/2013-04-11/2013-04-11-13729.html">ceshi.flv</a></hheader>
+		<div class="classdesc">	<a href="http://web.dayang.com.cn:233/folder4/2013-04-11/2013-04-11-13729.html" class="classdetail">ceshi.flv</a></div>
+	</div>
+	<div class="classprimary"	>
+		<hheader class="classdesc"><a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-11/13728.html">ceshi.flv</a></hheader>
+		<div class="classdesc">	<a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-11/13728.html" class="classdetail">ceshi.flv</a></div>
+	</div>
+	<div class="classprimary"	>
+		<hheader class="classdesc"><a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-11/13728.html">ceshi.flv</a></hheader>
+		<div class="classdesc">	<a href="http://web.dayang.com.cn:233/folder4/folder39/2013-04-11/13728.html" class="classdetail">ceshi.flv</a></div>
+	</div>
+	<div class="classprimary"	>
+		<hheader class="classdesc"><a href="http://web.dayang.com.cn:233/folder4/2013-04-11/2013-04-11-13727.html">ceshi.flv</a></hheader>
+		<div class="classdesc">	<a href="http://web.dayang.com.cn:233/folder4/2013-04-11/2013-04-11-13727.html" class="classdetail">ceshi.flv</a></div>
+	</div>
+
+			<ul class="hot_tu">
+				<ul>
+	<li>小娃子.flv</li>
+	<li>小娃子.flv</li>
+	<li>小小李小龙.mp4</li>
+	<li>小小李小龙.mp4</li>
+	<li>小小李小龙.mp4</li>
+	<li>小小李小龙.mp4</li>
+	<li>ceshi.flv</li>
+	<li>ceshi.flv</li>
+	<li>ceshi.flv</li>
+	<li>ceshi.flv</li>
+	<li>ceshi.flv</li>
+	<li>ceshi.flv</li>
+	<li>ceshi.flv</li>
+	<li>ceshi.flv</li>
+	<li>ceshi.flv</li>
+</ul>
+cols_width	333
+
+			</ul>
+			<ul>
+	<li>小娃子.flv</li>
+	<li>小娃子.flv</li>
+	<li>小小李小龙.mp4</li>
+	<li>小小李小龙.mp4</li>
+	<li>小小李小龙.mp4</li>
+	<li>小小李小龙.mp4</li>
+	<li>ceshi.flv</li>
+	<li>ceshi.flv</li>
+	<li>ceshi.flv</li>
+	<li>ceshi.flv</li>
+	<li>ceshi.flv</li>
+	<li>ceshi.flv</li>
+	<li>ceshi.flv</li>
+	<li>ceshi.flv</li>
+	<li>ceshi.flv</li>
+</ul>
+cols_width	333
+
+		</div>
+	</div>
+</div>
+<!--广告-->
+<div class="gg"><img  src="http://api.dev.hogesoft.com/publishsys/data/template/1/57/images/img5.jpg"  /></div>
+<!--国内、国际、科学、社会-->
+<div class="jl_allwidth">
+	<div class="new_guo">
+		<span class="livcms_cell" style="font-size:12px;color:#ffffff;background:#ff0000">liv_国内</span>
+		<div class="guo_tu">
+			<span class="livcms_cell" style="font-size:12px;color:#ffffff;background:#ff0000">liv_国内图片</span>
+		</div>
+		<span class="livcms_cell" style="font-size:12px;color:#ffffff;background:#ff0000">liv_国内列表</span>
+	</div>
+	<div class="new_guo">
+		<span class="livcms_cell" style="font-size:12px;color:#ffffff;background:#ff0000">liv_国际</span>
+		<div class="guo_tu">
+			<span class="livcms_cell" style="font-size:12px;color:#ffffff;background:#ff0000">liv_国际图片</span>
+		</div>
+		<span class="livcms_cell" style="font-size:12px;color:#ffffff;background:#ff0000">liv_国际列表</span>
+	</div>
+	<div class="new_guo">
+		<span class="livcms_cell" style="font-size:12px;color:#ffffff;background:#ff0000">liv_科学</span>
+		<div class="guo_tu">
+			<span class="livcms_cell" style="font-size:12px;color:#ffffff;background:#ff0000">liv_科学图片</span>
+		</div>
+		<span class="livcms_cell" style="font-size:12px;color:#ffffff;background:#ff0000">liv_科学列表</span>
+	</div>
+	<div class="new_she">
+		<span class="livcms_cell" style="font-size:12px;color:#ffffff;background:#ff0000">liv_社会</span>
+		<div class="guo_tu">
+			<span class="livcms_cell" style="font-size:12px;color:#ffffff;background:#ff0000">liv_社会图片</span>
+		</div>
+		<span class="livcms_cell" style="font-size:12px;color:#ffffff;background:#ff0000">liv_社会列表</span>
+	</div>
+</div>
+<!--热播剧-->
+<div class="jl_rebo">
+	<span class="livcms_cell" style="font-size:12px;color:#ffffff;background:#ff0000">liv_热播剧</span>
+	<span class="livcms_cell" style="font-size:12px;color:#ffffff;background:#ff0000">liv_热播剧列表</span>
+</div>
+<!--网站底部-->
+<div class="clear"></div>
+<div class="footer">
+      <div class="copyright" >
+		<atarget="_blank" href="#">关于厚建</a> | <a target="_blank" href="http://#l">About HogeSoft</a> | <a  target="_blank" href="#">服务协议</a> | <a  target="_blank" href="#">隐私权保护</a> | <a  target="_blank" href="#">开放平台</a> | <a  target="_blank" href="#">广告服务</a> | <a  target="_blank" href="#">厚建招聘</a> | <a  target="_blank" href="#">厚建公益</a> | <a  target="_blank" href="3">客服中心</a> | <a  target="_blank" href="#">网站导航</a>
+  	<div class="en">Copyright � 1990 - 2013 Hogesoft. All Rights Reserved</div>
+		<a  target="_blank" href="http://www.hoge.cn">厚建公司</a> <a  target="_blank" href="http://#">版权所有</a>
+</div>
+</div>
+</body>
+</html>

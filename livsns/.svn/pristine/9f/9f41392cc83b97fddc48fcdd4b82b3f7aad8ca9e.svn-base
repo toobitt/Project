@@ -1,0 +1,64 @@
+-- phpMyAdmin SQL Dump
+-- version 3.4.3.1
+-- http://www.phpmyadmin.net
+--
+-- 主机: 10.0.1.31
+-- 生成日期: 2013 年 03 月 26 日 10:59
+-- 服务器版本: 5.5.9
+-- PHP 版本: 5.2.17
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- 数据库: `dev_member`
+--
+
+--
+-- 转存表中的数据 `liv_group`
+--
+
+INSERT INTO `liv_group` (`id`, `name`, `brife`, `user_id`, `user_name`, `create_time`, `update_time`, `ip`) VALUES
+(1, '管理员', ' 管理', 1, 'hogesoft', 1342590042, 1342591303, '::1'),
+(2, '超级管理员', '超级用户', 1, 'hogesoft', 1342592145, 1342593449, '::1'),
+(5, '普通会员', '普通', 1, 'hogesoft', 1342679387, 1342679387, '::1');;
+
+--
+-- 转存表中的数据 `liv_member_bloodtype`
+--
+
+INSERT INTO `liv_member_bloodtype` (`bloodtype_id`, `bloodtype_name`) VALUES
+(1, 'A型'),
+(2, 'B型'),
+(3, 'O型'),
+(4, 'AB型'),
+(5, '其他');;
+
+--
+-- 转存表中的数据 `liv_member_constellation`
+--
+
+INSERT INTO `liv_member_constellation` (`constellation_id`, `constellation_name`) VALUES
+(1, '白羊座'),
+(2, '金牛座'),
+(3, '双子座'),
+(4, '巨蟹座'),
+(5, '狮子座'),
+(6, '处女座'),
+(7, '天秤座'),
+(8, '天蝎座'),
+(9, '射手座'),
+(10, '摩羯座'),
+(11, '水瓶座'),
+(12, '双鱼座');;
+
+--
+-- 转存表中的数据 `liv_member_node`
+--
+
+INSERT INTO `liv_member_node` (`id`, `name`, `fid`, `brief`, `parents`, `childs`, `depath`, `is_last`, `create_time`, `ip`, `update_time`, `user_name`, `order_id`) VALUES
+(1, '普通会员', 0, '', '1', '1', 1, 1, 1345862341, '::1', 1345862341, 'hogesoft', 1),
+(2, '高级会员', 0, '', '2', '2,3,4,5', 1, 0, 1345862352, '::1', 1345862352, 'hogesoft', 2),
+(3, '金牌会员', 2, '', '2,3', '3', 2, 1, 1345862368, '::1', 1345862387, 'hogesoft', 3),
+(4, '银牌会员', 2, '', '2,4', '4', 2, 1, 1345862404, '::1', 1345862442, 'hogesoft', 4),
+(5, '铜牌会员', 2, '', '5,2', '5', 2, 1, 1345863909, '::1', 1345863909, 'hogesoft', 5);;

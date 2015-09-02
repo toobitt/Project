@@ -1,0 +1,90 @@
+html{color:#000;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,select,p,blockquote,th,td{margin:0;padding:0}	
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+li{list-style: none;}
+*{-webkit-touch-callout:none;}
+.ios{height:100%; overflow:hidden; }
+.ios body{height:100%; -webkit-overflow-scrolling:touch; overflow-y:auto; } 
+/* 盒模型 */
+.feedback-flex{display:-webkit-box;width:auto;display:-ms-flexbox;}
+.feedback-flex-center{-webkit-box-align:center;-ms-flex-align: center;}
+.feedback-flex-end{-webkit-box-align:end;-ms-box-align:end;box-align:end;}
+.feedback-flex-one{-webkit-box-flex:1;-ms-flex:1;}
+.feedback-flex-two{-webkit-box-flex:2;-ms-flex:2;}
+.feedback-flex-vertical{-webkit-box-orient:vertical;-ms-flex-direction:column;}
+.feedback-flex-overflow{flex-wrap:wrap;}
+.header{width:100%;font-size:2em;line-height:2.2em;}
+.nav-title{text-align:center;width:100%;}
+.nav{background:#fcfcfc;width:auto;border-bottom: 1px solid #eee;z-index:10;left:0;right:0;top:0;-webkit-transition:all .3s linear;}
+body{font-size:66.5%;position: relative;}
+.main-wrap{padding: 15px 10px;background: #fff;min-width: 300px;display: none;}
+.result-wrap{display: none;}
+.result{padding: 5px 10px 30px 10px;border-bottom:1px solid #e0e0e0;}
+.content .title , .result .title{display: block;line-height: 30px;color: #3b3b3b;vertical-align:-webkit-baseline-middle;}
+.content .title{font-size: 1.4em;clear: both;}
+.result .title{font-size: 1.6em;}
+.content .title b , .result .title b{color:red;}
+.content .select-more .check{display: block!important;}
+.content .list{overflow:hidden;margin-bottom: 5px;}
+.content .list li{margin: 5px 10px 0px 0px;line-height: 30px;font-size: 1.4em;background-size: 20px 20px;background-repeat: no-repeat;background-position: left 4px;overflow: hidden;}
+.content .select-one li{text-indent: 25px;background-image: url("../../image/icon.png");}
+.content .select-one li.select{background-image: url("../../image/radio_select.png");}
+.content .select-more li{text-indent: 25px;background-image: url("../../image/icon.png");}
+.content .select-more li.select{background-image: url("../../image/checkbox_select.png");}
+.content .question input{vertical-align: super;margin: 0 15px 0 5px;}
+.content .advice textarea{width:100%;height:120px;margin:5px 0px 5px 0px;border:1px solid #d3d3d3;font-size:1.4em;padding: 10px 0px 0px 0px;text-indent:1em;box-shadow: none;}
+.content .verify{position:relative;}
+.content .email input , .content .verify input{width: 99%;height: 40px;margin-top: 5px;text-indent: 1em;border: 1px solid #d3d3d3;font-size:1.4em;box-shadow: none;}
+.content .verify .verify-code{height: 30px;line-height: 30px;font-size: 1.4em;text-decoration: underline;position: absolute;right:0px;top: 5px;padding: 5px;}
+.content .verify .verify-code img{width: 70px;height: 30px;}
+.content .button , .result .button{width:99.5%;height:40px;border-radius:2px;font-size: 1.6em;line-height:40px;text-align:center;cursor:pointer;}
+.content .button.upload{margin-top: 10px;color: #42a6e8;position:relative;border:1px solid #42a6e8;}
+.content .button.submit{background:#42a6e8;color:#fff;margin-top:10px;border:1px solid #42a6e8;}
+.content .button .icon-ok{width: 20px;height: 20px;background:url("../../image/icon_ok.png");position: absolute;top: 10px;left: 80px;display:none;}
+.content .button .icon-ok.icon-loading{background-image:url("../../image/loading2.gif");background-size: 20px 20px;}
+.content .file-item{position:relative;clear: both; overflow:hidden;}
+.content .file-item input[type="file"]{opacity: 0.00000001;width: 100%;height: 50px;position: absolute;top: 5px;}
+iframe{border:none;display:none;}
+.content .index-pic{max-width: 100%;max-height: 200px;}
+.content .info ,.result .info{font-size: 1.4em;color: #666;line-height: 1.4;}
+.content .line , .result .line{display:block;border-bottom: 1px solid #ccc;margin-top: 10px;}
+.content .file-item .select-box{width:31%;position:relative;margin-bottom: 15px;float: left;}
+.content .file-item .select-box:before{position: absolute;content: '';border: 5px solid transparent;border-top-color: #d3d3d3;top: 15px;right: 5px;}
+.content .file-item .select-box:not(:first-child){margin-left: 7px;}
+.content .file-item .select{height:30px;position:relative;border:1px solid #d3d3d3;font-size: 14px;line-height: 30px;text-align: left;text-indent: 5px;white-space: nowrap;overflow:hidden;text-overflow: ellipsis;}
+.content .file-item select{width: 100%;position: absolute;top: 8px;opacity: 0.0000001;}
+.img-box{width: 80px;height: 100px;padding: 2px;border: 1px solid #42a6e8;border-radius:3px;position: absolute;right: 0px;top: -116px;background: #fff;z-index: 9999;display: none;}
+.img-box:before{position: absolute;content: '';border: 9px solid transparent;border-top-color: #42a6e8;bottom: -18px;left: 38px;}
+.img-box:after{position: absolute;content: '';border: 8px solid transparent;border-top-color: #fff;bottom: -16px;left: 39px;}
+.img-box img{width: 100%;height: 100%;}
+.img-box .touch-del{background: rgba(222,176,176,.6);position: absolute;top: 0px;left: 0px;font-size: 2.0em;line-height: 1.2;text-align: center;padding: 30px 15px 25px 15px;color: #fff;}
+.result .failed{border: 1px solid #f04854;color: #f04854;margin:20px 0px;}
+.result .success-audit{color: #42a6e8;border:1px solid #42a6e8;margin:20px 0px;}
+.result .my-info{min-height:40px;border: 1px solid #888;color: #888;padding: 10px;}
+.result .my-info.up{background: url("../../image/down@2x.png") no-repeat center 40px;background-size: 13px 7px;}
+.result .my-info .info-title{display: block;font-size: 1.6em;text-align: center;margin-bottom: 15px;}
+.result .info-list .color{color: #888;}
+.result .info-list li:not(:last-child){margin-bottom: 20px;}
+.result .info-list img{max-width: 100%;margin-top: 10px;}
+.result .my-info .down{background: url("../../image/up@2x.png") no-repeat right center;background-size: 13px 7px;padding-right: 20px;text-align: right;color: #2f8dd4;margin-top: 10px;}
+.talk-record{overflow: hidden;}
+.talk-record ul{overflow: hidden;padding:15px 10px 15px 10px;position:relative;}
+.talk-record li{overflow:hidden;margin-bottom: 30px;}
+.talk-record img{width: 45px;height: 45px;border-radius: 50%;}
+.talk-record .msg{display: block;font-size: 1.6em;padding: 10px;border-radius: 3px;line-height: 1.4;position:relative;}
+.talk-record .service-provider{background: #2f8dd4;color: #fff;margin-left: 20px;float: left;}
+.talk-record .user{background: #dfdfdf;color: #000;margin-right: 10px;float: right;}
+.talk-record .service-provider:after{border-width: 10px;border-style: solid;border-color: #fff #2f8dd4 #fff #fff;content: '';position: absolute;top: 10px;left: -20px;}
+.talk-record .user:after{border-width: 10px;border-style: solid;border-color: #fff #fff #fff #dfdfdf;content: '';position: absolute;top: 10px;right: -20px;}
+.talk-record .replay{padding:10px;background: #f8f9f8;border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;overflow: hidden;}
+.talk-record .replay input{display: block;height: 30px;border-radius:3px;border: 1px solid #ccc;text-indent: 10px;font-size: 1.4em;}
+.talk-record .btn-default{display:block;width: 60px;height: 30px;background:#cacfd2;border:1px solid #cacfd2;color: #fff;line-height:30px;border-radius:3px;text-align:center;font-size: 1.4em;margin-left:10px;}
+.talk-record .replay-btn{background: #2f8dd4;border:1px solid #2f8dd4;}
+.loading{position: absolute;top: 0;width: 100%;height: 100%;text-align:center;padding-top:210px;font-size:1.6em;background:url("../../image/loading2.gif") no-repeat center 180px #fff;background-size: 20px 20px;z-index:999999;color:#888;}
+.loading .msg{position: fixed;top:35%;width:230px;padding:20px 15px 20px 15px;border: 2px solid #CECECE;background: rgba(0,0,0,0.6);text-align: center;vertical-align: middle;z-index: 9999;font-size: 24px;color: #fff;}
+.loading .msg.img{background:url("../../image/loading2.gif") no-repeat center 30px rgba(0,0,0,0.6);background-size:64px 64px;padding: 115px 10px 20px 10px;}
+.talk-record .load{position: absolute;top:0;left:0;width: 100%;height: 100%;z-index: 999;background:url('../../image/loading2.gif') no-repeat center center rgba(0,0,0,0.6);background-size: 64px 64px;}
+
+
+
+.error-msg{overflow: hidden;width: 100%;height: 42px;line-height: 42px;text-align: center;font-size: 1.6em;color:red;display:none;}

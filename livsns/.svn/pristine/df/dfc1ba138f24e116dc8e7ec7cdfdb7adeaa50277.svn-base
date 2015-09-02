@@ -1,0 +1,28 @@
+<?php
+$errorConf = array(
+	UNKNOW => '未知错误',
+	NOID   => '没有id',
+	NO_NAME => '没有名称',
+	NO_CARD_NUMBER => '没有卡号',
+	THE_CARD_NUMBER_ALREADY_EXSIST => '此卡号已经存在',
+	NO_ID_CARD => '没有身份证号',
+	THE_ID_CARD_ALREADY_EXSIST => '此身份证号已经存在',
+	ID_CARD_ERROR => '身份证有误',
+	NO_FILE => '没有文件',
+	FAIL_MOVE => '移动文件失败',
+    NO_MARKET_ID => '没有商家超市id',
+    NOT_LOGIN => '没有登陆',
+    NO_PHONE_NUMBER => '没有电话号码',
+    FAIL_TO_BIND => '绑定失败',
+    YOU_HAVE_NOT_BIND => '您还未绑定',
+    NO_DATA => '没有数据',
+    NO_BIRTHDAY => '没有生日日期',
+    UNBIND_ERROR => '解绑失败',
+    NO_USER_INFO => '未传用户信息',
+    THIS_USER_ALREADY_EXISTS => '该商超里面的会员信息已经被绑定就不能绑定了',
+    ALREADY_BIND => '该用户在该超市已经绑定过',
+    THIS_USER_NOT_EXISTS => '该会员号不存在或未绑定手机号，请至超市会员中心咨询',
+    NOWRITE => '目录不可写',
+    NO_FILE_PATH => '没有文件路径',
+	);
+?>

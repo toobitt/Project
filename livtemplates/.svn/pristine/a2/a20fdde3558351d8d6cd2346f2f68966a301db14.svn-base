@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+.cls{clear:both;}
+.hidden{display:none;}
+.scrolldoorFrame{overflow:hidden;width:480px;}
+.scrollUl{width:475px;padding:0;list-style-type: none;height:35px; line-height:35px; margin-top:7px;text-align:center;margin-top:10px;1background:url({$RESOURCE_URL}qingao/tab_bg.jpg) repeat-x;}
+.scrollUl li{float:left; text-align:center;cursor:pointer;}
+.scrollUl li span{ margin:0px 12px;}
+.bor03{border-top:none; border-right:none; width:auto;}
+.t01{float:left;line-height:28px;cursor:pointer;color:#919094;  margin-right:5px; letter-spacing:1px; }
+.news .t01{color:#0A5596;}
+.life .t01{color:#947403;}
+.t02
+{ float:left;line-height:28px;cursor:pointer;color:#CACACD; margin-right:5px; letter-spacing:1px; }
+.t02 a{color:#777777;}
+.t01 a:hover{ font-weight:bold; color:#fff;text-decoration:none;}
+.t02 a:hover{color:#056FD2;text-decoration:none;}
+
+.ph_ul ul{ background:url({$RESOURCE_URL}qingao/ph.png) 17px 7px no-repeat;margin-top:13px;}
+.ph_ul ul li{ line-height:27px; }
+.ph_ul ul li a{ color:#565656;}
+.gtalk_more {background:#fff2e2; margin-top:20px; padding:5px 0; text-align:center; color:#646469; font-size:12px; cursor:pointer;}
+
+
+
+

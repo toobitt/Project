@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<title>列表</title>
+<link type="text/css" href="css/reset.css" rel="stylesheet">
+<link type="text/css" href="css/bootstrap.css" rel="stylesheet">
+<link type="text/css" href="css/flat-ui.css" rel="stylesheet">
+<link type="text/css" href="css/global.css" rel="stylesheet">
+<link type="text/css" href="css/hoge-ui.css" rel="stylesheet">
+<link type="text/css" href="css/sco.message.css" rel="stylesheet">
+<link type="text/css" href="css/jquery-ui-timepicker.css" rel="stylesheet">
+
+<!-- <script type="text/javascript" src= "js/seajs.config.js"></script> -->
+<link type="text/css" rel="stylesheet" href="css/content.css" />
+<link type="text/css" rel="stylesheet" href="css/list.css" />
+</head>
+
+<body class="page-content">
+<div class="cloud-wrap">
+	<header class="navbar-fixed" role="banner">
+		<div class="container">
+			<div class="cloud-header">
+				审核流程
+			</div>
+				<div class="cloud-user">
+					<a class="personal-center">
+			        	<!--<span class="menu-avatar">
+			        		<img src="http://img.hogecloud.com/material/auth/img/2015/04/20150414153218FqVx.jpeg" />
+			        	</span>-->
+						<span class="user-name overhidden"></span>
+	        		</a>
+	        		<a class="logout" href="login.php?a=loginout">
+	        			|  退出
+	        		</a>
+	        		<!-- <div class="user-info-center">
+	        			<div class="info-center">
+	        				<img src="http://img.hogecloud.com/material/auth/img/2015/04/20150414153218FqVx.jpeg">
+	        				
+	        				<div class="user-item pull-left">
+	        					<div class="user-item-list ">
+	        						<span class="username overhidden" title="test">test</span>
+	        						<span>余额:100</span>
+	        					</div>
+	        					<div class="user-item-list">
+	        						<span>试用用户</span>
+	        					</div>
+	        				</div>
+	        			</div>
+	        			<ul class="userinfo-list">
+	        				<li class="info-list"><a href="http://v.hogecloud.com/index.php/user/">修改头像</a></li>
+	        				<li class="info-list"><a href="http://v.hogecloud.com/index.php/user/">修改密码</a></li>
+	        				<li class="info-list"><a href="http://v.hogecloud.com/index.php/user/user_bind_app_list">应用管理</a></li>
+	        				 
+		        			<li class="info-list"><a href="http://v.hogecloud.com/index.php/user/real_time_charge">实时清单</a></li>
+		        			<li class="info-list"><a href="http://v.hogecloud.com/index.php/user/price">产品价格</a></li>
+		        			<li class="info-list"><a href="http://v.hogecloud.com/index.php/user/recharge">快速充值</a></li>
+		        			<li class="info-list"><a href="http://v.hogecloud.com/index.php/user/charge_record">消费纪录</a></li>
+		        			
+		        		</ul>
+	        		</div>
+	        		<span class="drop"></span> -->
+				</div>
+							
+		</div>
+	</header>
+</div>
+<section class="container">
+	<aside class="cloud-crumb">
+		<div class="cloud-title">视频内容管理</div>	
+	</aside>
+	<div class="cloud-main cloud-list">
+		<div class="filter-box m2o-flex">
+			<span class="list-menu"></span>
+			<div class="cloud-filter m2o-flex m2o-flex-one">
+			      <div class="form_dropdown search-dropdown" _type="0">
+			           <span class="select-item">全部状态</span>
+			           <ul class="search-list trans_status_list">
+				   		   <li _value="1" class="date_search_status">未处理</li>
+				   		   <li _value="2" class="date_search_status">已通过</li>
+				   		   <li _value="3" class="date_search_status">已打回</li>
+			          </ul>
+			           <input type="hidden" name="statu" value="1">
+			      </div>
+			      <!-- <div class="form_dropdown search-dropdown" _type="1">
+			           <span class="select-item">所有时间段</span>
+			           <ul class="search-list date_search_list">
+			               	  	   <li _value="1" class="">所有时间段</li>
+			    	       	  	   <li _value="2" class="">昨天</li>
+			    	       	  	   <li _value="3" class="">今天</li>
+			    	       	  	   <li _value="4" class="">最近3天</li>
+			    	       	  	   <li _value="5" class="">最近7天</li>
+			    	       	  	   <li _value="other" class="">自定义时间</li>
+			    	              </ul>
+			           <input type="hidden" name="date_search" value="">
+			      </div> -->
+			      <!-- <div class="time-select" style="">
+			      		<div class="m2o-flex">
+				           <input type="text" name="start_time" class="form-control datepicker hasDatepicker" value="" placeholder="请输入起始时间" id="dp1437534161873">
+				           <span>--</span>
+				           <input type="text" name="end_time" class="form-control datepicker hasDatepicker" value="" placeholder="请输入结束时间" id="dp1437534161874">
+			    		</div>
+			      </div> -->
+				  <div class="btn-group input-group">
+					   <input type="search" name="title" class="form-control" value="" id="search-key" placeholder="请输入关键词">
+				       <span class="input-group-btn">
+				        	<button type="submit" class="btn btn-submit">
+				        		<span class="search"></span>
+				        	</button>
+			           </span>
+				  </div>
+				  <!-- <div class="my-box">我的</div> -->
+			  	   <!-- <div class="form_dropdown search-dropdown">
+			           <span class="select-item">每页20条</span>
+			           <ul class="search-list date_search_list">
+				  	   		<li _value="20">每页20条</li>
+				  	   		<li _value="40">每页40条</li>
+				  	   		<li _value="60">每页60条</li>
+				  	   		<li _value="80">每页80条</li>
+				  	   		<li _value="100">每页100条</li>
+			           </ul>
+			           <input type="hidden" name="count" value="">
+     			  </div> -->
+            </div>
+			<!--<div class="navbar-btn ">
+				<span class="btn btn-mul btn-blue btn-upload">上传视频文件</span>
+				//<span class="btn btn100 btn-operate multi-stream-setting" />清晰度设置</span>
+			</div>-->
+		</div>
+		<div class="panel panel-list">
+			<div class="panel-body sys-flex">
+					<div class="panel-list-fl"> 
+						<div class="panel-heading panel-sort sys-flex sys-flex-center">
+							<div class="sys-item list-title">分类</div>
+						</div>
+						<ul class="panel-sort-ul">
+							<li class="current" _id="news"><a href="javascript:;">文稿</a></li>
+							<!-- <li><a href="#">图集</a></li> -->
+							<li _id="livmedia"><a href="#">视频</a></li>
+						</ul>	
+					</div>
+					<div class="panel-list-fr sys-flex-two">
+						  <div class="panel-heading sys-flex sys-flex-center">
+						        <div class="sys-item sys-flex-one list-title" title="标题">标题</div>
+						        <div class="sys-item list-code" title="当前指派人">当前指派人</div>
+						        <!-- <div class="sys-item list-rate" title="码率">审核状态</div> -->						       
+						        <div class="sys-item list-state" title="指派状态">
+						          <div class="sys-switch-status">
+						        	  审核状态
+						          </div>
+						        </div>
+						        <div class="sys-item list-style" title="更新时间">更新时间</div>  
+						        <div class="sys-item list-create" title="创建人/时间">创建人/时间</div>  
+						        <div class="sys-item list-rate" title="操作">操作</div>  
+						         <div class="sys-item list-set" title="当前状态">当前状态</div>    
+						  </div>
+						  <div class="panel-body-list">
+						  	
+						  </div>
+				</div>	
+			</div> 
+			<div class="panel-footer sys-flex sys-flex-center">
+				<div class="sys-item list-sort all-sort">
+	    			<label class="checkbox" for="checkbox1">
+	    				<input class="sys-check" type="checkbox" value="" id="checkbox1" data-toggle="checkbox" />
+	    			</label>
+	    		</div>
+				<div class="sys-item sys-flex-one list-config">
+				  	<!-- <span class="batch-handle btn-disable" _name="删除" href="<?php echo base_url()?>index.php/welcome/delete">批量删除</span>
+				  	<span class="batch-handle btn-disable" _name="发布" href="<?php echo base_url()?>index.php/welcome/audit?status=1">批量发布</span>
+				  	<span class="batch-handle btn-disable" _name="打回" href="<?php echo base_url()?>index.php/welcome/audit?status=0">批量打回</span>-->
+				</div>
+				<div class="page_size">
+				</div>
+		 	</div> 
+	</div>
+</section>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/jquery-ui-min.js"></script>
+<script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
+<script type="text/javascript" src="js/flatui-radio.js"></script>
+<script type="text/javascript" src="js/template.js"></script>
+<script type="text/javascript" src="js/global.js"></script>
+<script type="text/javascript" src="js/utils.js"></script>
+<script type="text/javascript" src="js/spin.min.js"></script>
+<script type="text/javascript" src="js/toast.min.js"></script>
+<script type="text/javascript" src="js/page.js"></script>
+<script type="text/javascript" src="js/list.js"></script>
+</body>
+</html>

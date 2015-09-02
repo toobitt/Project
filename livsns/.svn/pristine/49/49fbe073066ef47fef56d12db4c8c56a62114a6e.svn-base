@@ -1,0 +1,593 @@
+商家超市接口文档
+
+接口访问地址：http://(MOBILE_API)/supermarket/
+接口监权参数：appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7
+
++-----------------------------------------------------------------------------------------------------------------------------+
+
+(1)验证用户是否绑定
+   接口文件:member_bind.php
+   请求方式：GET／POST
+   请求参数:
+   			名称				描述
+   			a				（请求该方法的方法）isBind
+   			access_token	登陆后返回的token
+   			market_id		超市的id
+   返回结果:
+   			如果用户绑定:
+	   					[
+							{
+								id: "24",
+								market_id: "367",
+								barcode_img: "http://img.dev.hogesoft.com:233/material/supermarket/img/2013/08/ff0eb5158fb29ac1d7d9a856f15d8f6f.png",
+								member_id: "334",
+								name: "殷鸿涛",
+								age: "35",
+								month: "4",
+								day: "17",
+								constellation_id: "4",
+								card_number: "A00000000022",
+								phone_number: "13987659489",
+								id_card: "440901197804174911",
+								email: "jiafei@163.com",
+								user_id: "1",
+								user_name: "hogesoft",
+								org_id: "0",
+								update_user_id: "1",
+								update_user_name: "hogesoft",
+								create_time: "2013-08-29 15:08:48",
+								update_time: "2013-08-30 09:08:17",
+								ip: "10.0.2.60",
+								order_id: "148"
+							}
+						]
+			
+			如果用户没有绑定:
+						{
+							ErrorCode: "0x000013",
+							ErrorText: "您还未绑定"
+						}
+		
++-----------------------------------------------------------------------------------------------------------------------------+
+
+(2)绑定用户
+   接口文件: member_bind.php
+   请求方式：GET／POST
+   请求参数:
+   			名称				描述
+   			a				（请求该方法的方法）bind
+   			access_token	登陆后返回的token
+   			market_id		超市的id
+   			card_number		卡号
+   			phone_number	电话号码				
+   返回结果:
+   			如果绑定成功:
+	   					[
+							{
+								id: "24",
+								market_id: "367",
+								barcode_img: "http://img.dev.hogesoft.com:233/material/supermarket/img/2013/08/ff0eb5158fb29ac1d7d9a856f15d8f6f.png",
+								member_id: "334",
+								name: "殷鸿涛",
+								age: "35",
+								month: "4",
+								day: "17",
+								constellation_id: "4",
+								card_number: "A00000000022",
+								phone_number: "13987659489",
+								id_card: "440901197804174911",
+								email: "jiafei@163.com",
+								user_id: "1",
+								user_name: "hogesoft",
+								org_id: "0",
+								update_user_id: "1",
+								update_user_name: "hogesoft",
+								create_time: "2013-08-29 15:08:48",
+								update_time: "2013-08-30 09:08:17",
+								ip: "10.0.2.60",
+								order_id: "148"
+							}
+						]
+			
+			如果绑定失败:
+						{
+							ErrorCode: "0x000012",
+							ErrorText: "绑定失败"
+						}
+
++-----------------------------------------------------------------------------------------------------------------------------+
+
+(3)获取某一超市的所有门店
+   接口文件:get_store.php
+   请求方式：GET／POST
+   请求参数:
+   			名称				描述
+   			market_id		超市的id
+   			count			返回的个数	
+   			offset			查询的起始位置
+   返回结果:
+   			如果存在门店:
+	   					[
+							{
+								id: "90",
+								name: "花神庙店",
+								market_id: "2",
+								logo_id: "484,485",
+								index_pic: {
+												host: "http://img.dev.hogesoft.com:233/",
+												dir: "material/supermarket/img/",
+												filepath: "2013/08/",
+												filename: "20130829175728qcV9.png",
+												width: 1000,
+												height: 800
+											},
+								address: "花神庙2号",
+								opening_time: "08:00~22:00(周一~周日)",
+								tel: [
+										"025-23456789",
+										"025-23456789"
+									 ],
+								parking_num: "200",
+								brief: "简介",
+								traffic: "公交状况",
+								gps_x: "",
+								gps_y: "",
+								baidu_longitude: "118.787847",
+								baidu_latitude: "31.983516",
+								create_time: "2013-08-29 15:08:48",
+								update_time: "2013-08-30 09:08:17",
+								ip: "",
+								user_id: "1",
+								user_name: "hogesoft",
+								org_id: "152",
+								update_user_id: "1",
+								update_user_name: "hogesoft",
+								order_id: "90",
+								pics: [
+										{
+											host: "http://img.dev.hogesoft.com:233/",
+											dir: "material/supermarket/img/",
+											filepath: "2013/08/",
+											filename: "20130829175727M57K.png",
+											width: 1000,
+											height: 800
+										},
+										{
+											host: "http://img.dev.hogesoft.com:233/",
+											dir: "material/supermarket/img/",
+											filepath: "2013/08/",
+											filename: "20130829175728qcV9.png",
+											width: 1000,
+											height: 800
+										}
+									 ]
+							},
+							...
+							{
+								...
+							}
+						]
+			
+			如果不存在门店:{
+							ErrorCode: "0x000014",
+							ErrorText: "没有数据"
+						}
+			
++-----------------------------------------------------------------------------------------------------------------------------+
+					
+(4)获取某一门店的详细信息
+   接口文件:get_store.php
+   请求方式：GET／POST
+   请求参数:
+   			名称				描述
+   			id				门店id   			
+   返回结果:
+   			如果存在门店:
+	   					[
+							{
+								id: "90",
+								name: "花神庙",
+								market_id: "2",
+								logo_id: "484,485",
+								index_pic: {
+												host: "http://img.dev.hogesoft.com:233/",
+												dir: "material/supermarket/img/",
+												filepath: "2013/08/",
+												filename: "20130829175728qcV9.png",
+												width: 1000,
+												height: 800
+											},
+								address: "花神庙2号",
+								opening_time: "08:00~22:00(周一~周日)",
+								tel: [
+										"025-23456789",
+										"025-23456789"
+									 ],
+								parking_num: "200",
+								brief: "简介",
+								traffic: "公交状况",
+								gps_x: "",
+								gps_y: "",
+								baidu_longitude: "118.787847",
+								baidu_latitude: "31.983516",
+								create_time: "2013-08-29 15:08:48",
+								update_time: "2013-08-30 09:08:17",
+								ip: "",
+								user_id: "1",
+								user_name: "hogesoft",
+								org_id: "152",
+								update_user_id: "1",
+								update_user_name: "hogesoft",
+								order_id: "90",
+								pics: [
+										{
+											host: "http://img.dev.hogesoft.com:233/",
+											dir: "material/supermarket/img/",
+											filepath: "2013/08/",
+											filename: "20130829175727M57K.png",
+											width: 1000,
+											height: 800
+										},
+										{
+											host: "http://img.dev.hogesoft.com:233/",
+											dir: "material/supermarket/img/",
+											filepath: "2013/08/",
+											filename: "20130829175728qcV9.png",
+											width: 1000,
+											height: 800
+										}
+									 ]
+							}
+						]
+			
+			如果不存在门店:{
+							ErrorCode: "0x000014",
+							ErrorText: "没有数据"
+						}
+
++-----------------------------------------------------------------------------------------------------------------------------+
+
+(5)获取商品的分类
+   接口文件:get_product_sort.php
+   请求方式：GET／POST
+   请求参数:
+   			名称				描述
+   			fid				类别父级id（不传默认输出顶级的分类）
+   返回结果:
+   			如果存在分类:
+	   					[
+							{
+								id: "1",
+								name: "美食",
+								fid: "0",
+								childs: "1,2",
+								parents: "1",
+								depath: "1",
+								is_last: "0"
+							},
+							{
+								id: "3",
+								name: "衣服",
+								fid: "0",
+								childs: "3,4",
+								parents: "3",
+								depath: "1",
+								is_last: "0"
+							},
+							{
+								id: "5",
+								name: "家具",
+								fid: "0",
+								childs: "5",
+								parents: "5",
+								depath: "1",
+								is_last: "1"
+							}
+						]
+			
+			如果不存在分类:null
+			
++-----------------------------------------------------------------------------------------------------------------------------+
+
+(5)获取商品的详细信息
+   接口文件:get_product.php
+   请求方式：GET／POST
+   请求参数:
+   			名称				描述
+   			id				商品的id
+   返回结果:
+   			成功:
+	   					[
+							{
+								id: "74",
+								activity_id: "40",
+								market_id: "367",
+								name: "太湖店",
+								brief: "as",
+								img_id: "784,792",
+								index_img_id: "784",
+								product_sort_id: "4",
+								product_standard: "200g/只",
+								product_unit: "只",
+								vender: "无锡食品厂",
+								old_price: "18.8",
+								now_price: "17.2",
+								status: "2",
+								is_recommend: "0",
+								url: "ad",
+								create_time: "2013-08-29 15:08:48",
+								update_time: "2013-08-30 09:08:17",
+								ip: "",
+								user_id: "0",
+								org_id: "0",
+								user_name: "",
+								update_user_id: "0",
+								update_user_name: "",
+								order_id: "74",
+								index_pic: {
+												host: "http://img.dev.hogesoft.com:233/",
+												dir: "material/supermarket/img/",
+												filepath: "2013/09/",
+												filename: "20130902161309ZlOw.jpg",
+												imgwidth: 600,
+												imgheight: 564
+											},
+								status_format: "已审核",
+								pics: [
+										{
+											host: "http://img.dev.hogesoft.com:233/",
+											dir: "material/supermarket/img/",
+											filepath: "2013/09/",
+											filename: "20130902161309ZlOw.jpg",
+											imgwidth: 600,
+											imgheight: 564
+										},
+										{
+											host: "http://img.dev.hogesoft.com:233/",
+											dir: "material/supermarket/img/",
+											filepath: "2013/09/",
+											filename: "20130902162036QvTV.jpg",
+											imgwidth: 120,
+											imgheight: 170
+										}
+									]
+							}
+						]
+							
+			如果没有数据:{
+							ErrorCode: "0x000014",
+							ErrorText: "没有数据"
+					   }
+
++-----------------------------------------------------------------------------------------------------------------------------+
+
+(6)按条件获取商品
+   接口文件:get_product.php
+   请求方式：GET／POST
+   请求参数:
+   			名称					描述
+   			market_id			超市id
+   			product_sort_id		商品分类id
+   			is_recommend		是否推荐 是1 否0
+   			activity_id			活动id
+   			count				获取个数
+   			offset				查询起始位置
+   			order_by			以哪个字段排序(例如：create_time)
+   			sc					排序方式（sc=1 正序，不传的话：倒序）
+   			
+   返回结果:
+   			成功:
+	   					[
+							{
+								id: "74",
+								activity_id: "40",
+								market_id: "367",
+								name: "太湖店",
+								brief: "as",
+								img_id: "784,792",
+								index_img_id: "784",
+								product_sort_id: "4",
+								product_standard: "200g/只",
+								product_unit: "只",
+								vender: "无锡食品厂",
+								old_price: "18.8",
+								now_price: "17.2",
+								status: "2",
+								is_recommend: "0",
+								url: "ad",
+								create_time: "2013-08-29 15:08:48",
+								update_time: "2013-08-30 09:08:17",
+								ip: "",
+								user_id: "0",
+								org_id: "0",
+								user_name: "",
+								update_user_id: "0",
+								update_user_name: "",
+								order_id: "74",
+								index_pic: {
+												host: "http://img.dev.hogesoft.com:233/",
+												dir: "material/supermarket/img/",
+												filepath: "2013/09/",
+												filename: "20130902161309ZlOw.jpg",
+												imgwidth: 600,
+												imgheight: 564
+											},
+								status_format: "已审核",
+								pics: [
+										{
+											host: "http://img.dev.hogesoft.com:233/",
+											dir: "material/supermarket/img/",
+											filepath: "2013/09/",
+											filename: "20130902161309ZlOw.jpg",
+											imgwidth: 600,
+											imgheight: 564
+										},
+										{
+											host: "http://img.dev.hogesoft.com:233/",
+											dir: "material/supermarket/img/",
+											filepath: "2013/09/",
+											filename: "20130902162036QvTV.jpg",
+											imgwidth: 120,
+											imgheight: 170
+										}
+									]
+							},
+							...
+							{
+								...
+							}
+						]
+						
+			如果没有数据:{
+							ErrorCode: "0x000014",
+							ErrorText: "没有数据"
+					   }
+
++-----------------------------------------------------------------------------------------------------------------------------+
+	
+(7)按照超市里面的会员id获取与该用户相关的消息
+   接口文件:get_message.php
+   请求方式：GET／POST
+   请求参数:
+   			名称					描述
+   			market_id			超市的id
+   			access_token		登陆后返回的token
+   			device				客户端（ios:1,android:2）
+   			
+   返回结果:
+   			成功:
+	   					[
+							{
+								id: "88",
+								market_id: "367",
+								title: "今天天气好",
+								content: "天气好",
+								status: "2",
+								scope: "1",
+								member_id: "",
+								send_device: "",
+								age_start: "0",
+								age_end: "0",
+								birthday_start: "",
+								birthday_end: "",
+								constellation_id: "",
+								expire_time: "2013-09-30",
+								is_birthday: "0",
+								create_time: "2013-08-29 15:08:48",
+								update_time: "2013-08-30 09:08:17",
+								user_id: "1",
+								user_name: "hogesoft",
+								org_id: "152",
+								update_user_id: "1",
+								update_user_name: "hogesoft",
+								ip: "",
+								order_id: "88"
+							},
+							{
+								id: "79",
+								market_id: "367",
+								title: "王小二:生日消息",
+								content: "生日快乐",
+								status: "2",
+								scope: "3",
+								member_id: "24",
+								send_device: "",
+								age_start: "0",
+								age_end: "0",
+								birthday_start: "",
+								birthday_end: "",
+								constellation_id: "",
+								expire_time: "2013-09-30",
+								is_birthday: "1",
+								create_time: "2013-08-29 15:08:48",
+								update_time: "2013-08-30 09:08:17",
+								user_id: "0",
+								user_name: "MCP网页版",
+								org_id: "0",
+								update_user_id: "0",
+								update_user_name: "MCP网页版",
+								ip: "",
+								order_id: "79"
+							},
+							{
+								id: "85",
+								market_id: "367",
+								title: "开学季-全场5折",
+								content: "5折",
+								status: "2",
+								scope: "2",
+								member_id: "",
+								send_device: "",
+								age_start: "26",
+								age_end: "42",
+								birthday_start: "03-08",
+								birthday_end: "09-02",
+								constellation_id: "4",
+								expire_time: "2013-09-30",
+								is_birthday: "0",
+								create_time: "2013-08-29 15:08:48",
+								update_time: "2013-08-30 09:08:17",
+								user_id: "1",
+								user_name: "hogesoft",
+								org_id: "152",
+								update_user_id: "1",
+								update_user_name: "hogesoft",
+								ip: "",
+								order_id: "85"
+							}
+						]
+	
+		没有数据：{
+					ErrorCode: "0x000014",
+					ErrorText: "没有数据"
+				}
+	
++-----------------------------------------------------------------------------------------------------------------------------+	
+
+(8)获取某一个超市的信息
+   接口文件:get_supermarket.php
+   请求方式：GET／POST
+   请求参数:
+   			名称					描述
+   			id					超市id
+   			
+   返回结果:
+   			成功:
+	   					[
+							{
+								id: "367",
+								market_name: "周星星超市不要删",
+								logo_id: "416",
+								total_member: "7",
+								bind_member: "1",
+								total_product: "3",
+								featured_product: "1",
+								status: "3",
+								order_id: "367",
+								user_id: "1",
+								user_name: "hogesoft",
+								org_id: "152",
+								ip: "",
+								create_time: "2013-08-27 14:08:49",
+								update_user_id: "1",
+								update_user_name: "hogesoft",
+								update_time: "2013-09-04 16:09:13",
+								logo: {
+											host: "http://img.dev.hogesoft.com:233/",
+											dir: "material/supermarket/img/",
+											filepath: "2013/08/",
+											filename: "201308281800421zIz.png"
+											imgwidth: "800",
+											imgheight: "1000",
+									   },
+								total_store: "4",
+								status_format: "已打回"
+							}
+						]
+						
+			如果没有数据:{
+							ErrorCode: "0x000014",
+							ErrorText: "没有数据"
+					   }
+
++-----------------------------------------------------------------------------------------------------------------------------+	

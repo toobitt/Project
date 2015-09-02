@@ -1,0 +1,36 @@
+/*登录头部*/
+.personal{padding:0;min-width:320px;}
+.head{padding-top:1.3em; -webkit-box-align:end; }
+.head .exit, .head .edit{width:30%; line-height:5.4em; text-align:center; }
+.head .exit a, .head .edit a{display:inline-block; color:#fff; font-size:1.5em; padding-top:1.2em; line-height:2em; }
+.head .edit{background:url("../images/personal/icon_Editor.png") no-repeat center top;}
+.head .exit{background:url("../images/personal/icon_quit.png") no-repeat center top;}
+.head-area{width:8em; margin:0 auto;}
+.head p{width:8em; height:8em; border:3px solid #eff1f0; background:url("../images/personal/avatar.png") no-repeat center center #596571; border-radius:100%; overflow:hidden; }
+.head img{max-width:100%;}
+.head h3{text-align:center;}
+.head h3 a{font-size:1.8em; color:#fff; }
+.list{margin:1em; }
+.list li{line-height:3.5em;  padding:0 1.2em; }
+.list .anchor{display:inline-block; width:54%;}
+.list img{vertical-align: middle; }
+.list span{font-size:1.5em; vertical-align: sub; padding-left:0.8em; }
+.list .config{width:44%; font-size:1.2em; display:inline-block; vertical-align:middle; text-align:right; color:#888;}
+.list .next{background:url("../images/personal/icon_arrow.png") no-repeat right center; line-height: 100%;}
+.list .anchor-next{width:100%; height:3em; display:inline-block; text-align:right; vertical-align: middle; }
+.push .config{background:url("../images/personal/button_off.png") no-repeat right 0.4em;}
+.push .config.on{background-image:url("../images/personal/button_on.png");}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2) {
+	
+	.head p{background-image:url("../images/personal/avatar-2x.png"); background-size:82px 82px;} 
+	.head .edit{background-image:url("../images/personal/icon_Editor-2x.png"); background-size:20px 20px; }
+	.head .exit{background-image:url("../images/personal/icon_quit-2x.png"); background-size:20px 20px; }
+	.list .next{background-image:url("../images/personal/icon_arrow-2x.png"); background-size:12px 12px; }
+	.push .config{background-image:url("../images/personal/button_off-2x.png"); background-size:54px 38px; }
+	.push .config.on{background-image:url("../images/personal/button_on-2x.png"); background-size:54px 38px; }
+	
+}

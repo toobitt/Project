@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- edited with XMLSpy v2010 (http://www.altova.com) by HUHAIQIN (DAYANG) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="CCTVMRECI" xmlns:tns2="CCTVMREML" targetNamespace="CCTVMRECI" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<!--修改历史-->
+	<!--2010-6-25：增加修改EMB任务请求及响应-->
+	<!--2010-3-24：TranscodeFile中新增tns:SpliceIndex，用于表示多段拼接转码时的序号。-->
+	<!--2009-09-25：根据新大洋底层，增加相关元素：TranscodeFile中新增tns:ExtendFlags。-->
+	<!--2009-09-01: 3.2版本中tns:MD5GenerateOption和tns:AutoFileAudit增加枚举类型。
+
+
+是否验证MD5根据源文件是否有MD5来判断。转码和传输任务的源和目标都可以为空。
+
+
+独立技审、MD5任务也可以填写在转码任务节点。-->
+	<!--2009-08-27：EMBTaskProgress元素定义为全局元素。对xml结构没有影响。-->
+	<xs:import namespace="CCTVMREML" schemaLocation="DYEMB_MREML.xsd"/>
+	<xs:element name="CommonRequest" type="tns:CommonRequestType">
+		<xs:annotation>
+			<xs:documentation>通用请求信息</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="CommonResponse" type="tns:CommonResponseType">
+		<xs:annotation>
+			<xs:documentation>通用返回信息</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="AsynRequest" type="tns:AsynRequestType">
+		<xs:annotation>
+			<xs:documentation>异步请求信息</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="AsynResponse" type="tns:AsynResponseType">
+		<xs:annotation>
+			<xs:documentation>异步通用响应信息</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="AddEMBTaskRequest" type="tns:AddEMBTaskRequestType">
+		<xs:annotation>
+			<xs:documentation>增加EMB任务输入参数</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="AddEMBTaskResponse" type="tns:AddEMBTaskResponseType">
+		<xs:annotation>
+			<xs:documentation>增加EMB任务输出参数</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="QueryEMBTaskProgressRequest" type="tns:QueryEMBTaskProgressRequestType">
+		<xs:annotation>
+			<xs:documentation>查询EMB任务进度输入参数</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="QueryEMBTaskProgressResponse" type="tns:QueryEMBTaskProgressResponseType">
+		<xs:annotation>
+			<xs:documentation>查询EMB任务进度输出参数</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="QueryEMBTaskResultRequest" type="tns:QueryEMBTaskResultRequestType">
+		<xs:annotation>
+			<xs:documentation>查询EMB任务执行结果输入参数</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="QueryEMBTaskResultResponse" type="tns:QueryEMBTaskResultResponseType">
+		<xs:annotation>
+			<xs:documentation>查询EMB任务执行结果输出参数</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="CancelEMBTaskRequest" type="tns:CancelEMBTaskRequestType">
+		<xs:annotation>
+			<xs:documentation>取消EMB任务输入参数</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="CancelEMBTaskResponse" type="tns:CommonResponseType">
+		<xs:annotation>
+			<xs:documentation>取消EMB任务输出参数</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="ModifyEMBTaskRequest" type="tns:ModifyEMBTaskRequestType">
+		<xs:annotation>
+			<xs:documentation>修改EMB任务请求</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="ModifyEMBTaskResponse" type="tns:CommonResponseType">
+		<xs:annotation>
+			<xs:documentation>修改EMB任务请求响应</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="EMBCallbackRequest" type="tns:EMBCallbackRequestType">
+		<xs:annotation>
+			<xs:documentation>EMB任务异步回调通知输入参数</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="QueryEMBSystemStatusRequest" type="tns:QueryEMBSystemStatusRequestType">
+		<xs:annotation>
+			<xs:documentation>查询EMB系统状态请求</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="QueryEMBSystemStatusResponse" type="tns:QueryEMBSystemStatusResponseType">
+		<xs:annotation>
+			<xs:documentation>查询EMB系统状态响应</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="QueryEMBSystemStatusRequestType">
+		<xs:sequence>
+			<xs:element ref="tns:CommonRequest"/>
+			<xs:element name="QueryMode" type="xs:int">
+				<xs:annotation>
+					<xs:documentation>查询模式：                        1：获取EMB所有ACTOR和MANAGER的配置、状态（不包含actor运行任务数）
+2：获取EMB所有ACTOR和MANAGER的配置、状态（包含各个actor的运行任务数）</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="tns2:ExtendAttributes" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="QueryEMBSystemStatusResponseType">
+		<xs:sequence>
+			<xs:element ref="tns:CommonResponse"/>
+			<xs:element name="EMBServerInfo" type="tns:EMBServer" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="EMBServer">
+		<xs:sequence>
+			<xs:element name="ID" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Manager或Actor ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Name" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Manager或Actor名称</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="IP" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Manager或actor IP </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="IsManager" type="xs:boolean">
+				<xs:annotation>
+					<xs:documentation>是否Manager 
+false：为actor
+true：为manager</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Port" type="xs:int" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>通讯端口（只针对Manager有效）</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="IsMaster" type="xs:boolean" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>是否主Manager（只针对manager有效）
+false：备manager
+true：主manager</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Status" type="xs:int">
+				<xs:annotation>
+					<xs:documentation>1： 关机(或停止)
+2： 空闲
+3： 忙碌
+4： 异常</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="RunningTaskNum" type="xs:int" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>正在运行的任务数（只针对actor有效）</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ModifyEMBTaskRequestType">
+		<xs:sequence>
+			<xs:element ref="tns:CommonRequest"/>
+			<xs:element name="EMBTaskID" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>EMB任务ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Priority" type="xs:int" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>任务优先级</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TaskExecBeginTime" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>期望开始执行时间</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="tns2:ExtendAttributes" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CommonRequestType">
+		<xs:sequence>
+			<xs:element name="SourceID" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>源系统ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="UserID" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>用户ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="UserName" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>用户名称</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CommonResponseType">
+		<xs:sequence>
+			<xs:element name="Status" type="xs:int">
+				<xs:annotation>
+					<xs:documentation>返回状态</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Description" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>状态文字描述</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="AsynRequestType">
+		<xs:sequence>
+			<xs:element name="SourceID" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>源系统ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Priority" type="xs:int" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>优先级</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="RequestID" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>GUID，作为请求标识</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CallbackAddressInfo" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>异步回调地址，异步服务执行完毕回调通知时调用该地址。一般是Webservice的URL。</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="AsynResponseType">
+		<xs:sequence>
+			<xs:element name="RequestID" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>消息等异步方式调用时，使用该请求ID关联原始请求</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Status" type="xs:int">
+				<xs:annotation>
+					<xs:documentation>返回任务状态</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Description" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>状态文字描述</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="AddEMBTaskRequestType">
+		<xs:sequence>
+			<xs:element ref="tns:AsynRequest"/>
+			<xs:element name="TaskName" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>任务名称</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="UserID" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>提交任务的用户ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ExecuteMode" type="xs:int" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>任务执行模式 0：自适应1：单任务 2：分布式任务</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="BusinessType" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>业务类型</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SourceFiles" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>源文件信息</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element ref="tns2:FileGroup" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="TargetFiles" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>目标文件信息</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element ref="tns2:FileGroup" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="TaskTempleteName" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>EMB中配置的任务模板信息，如果这里填写了模板，下面的任务选项都不需要填写，模板中会有默认配置。</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TaskOption" type="tns:TaskOptionType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>任务选项</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="tns:TranscodeTasks" minOccurs="0"/>
+			<xs:element ref="tns:TransferTasks" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>传输/独立技审/独立MD5计算、验证等任务</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="tns:GlobalOption" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CancelEMBTaskRequestType">
+		<xs:sequence>
+			<xs:element ref="tns:CommonRequest"/>
+			<xs:element name="EMBTaskID" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>任务ID为添加任务时的请求ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="tns2:ExtendAttributes" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="QueryEMBTaskProgressRequestType">
+		<xs:sequence>
+			<xs:element ref="tns:CommonRequest"/>
+			<xs:element name="EMBTaskID" type="xs:string" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>任务ID为添加任务时的请求ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="tns2:ExtendAttributes" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="QueryEMBTaskProgressResponseType">
+		<xs:sequence>
+			<xs:element ref="tns:CommonResponse"/>
+			<xs:element ref="tns:EMBTaskProgress" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="QueryEMBTaskResultRequestType">
+		<xs:sequence>
+			<xs:element ref="tns:CommonRequest"/>
+			<xs:element name="EMBTaskID" type="xs:string" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>任务ID为添加任务时的请求ID，暂时只支持一个任务ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="tns2:ExtendAttributes" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="QueryEMBTaskResultResponseType">
+		<xs:sequence>
+			<xs:element ref="tns:AsynResponse"/>
+			<xs:element name="TaskResult" type="tns:TaskResultType" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TaskOptionType">
+		<xs:sequence>
+			<xs:element name="TCAbility" type="xsd:int" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>转码能力 int 值用户自定义，用来实现不同机器转不同的任务类型</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="IsDelSrc" type="xs:boolean" default="0" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>转码成功后是否删除源文件</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SourceValidateMode" type="xsd:int" default="0" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>转码或拷贝前源文件验证方式.0:不验证；1：验证时长 2：验证文件大小；3：验证MD5（只针对独立MD5验证任务或转码任务，源为FTP路径并且有验证码时，可能要求在转码前先下载文件到本地，进行MD5验证后再转码）</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TargetValidateMode" type="xsd:int" default="0" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>转码或拷贝后目标文件验证方式.0:不验证；1：验证时长 2：验证文件大小；3：验证MD5（只针对拷贝任务，目标拷贝完成后需要计算MD5，和原始文件MD5做比较）</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="MD5GenerateOption" type="xsd:int" default="0" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>MD5生成选项，可以进行位与组合：1，生成目标文件的MD5； 2，生成源文件MD5；4，只生成源Md5,忽略目标；8，只生成目标MD5,忽略源</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ForceTranscode" type="xs:boolean" default="0" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>源和目标格式一致时是否进行重新编码</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AutoFileAudit" type="xsd:int" default="0" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>是否需要对文件进行自动技审，可以进行位与组合：1，审核源文件； 2，审核目标文件；4,只对源独立技审，忽略目标；8：只对目标独立技审，忽略源</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="IsAddLogoInfo" type="xs:boolean" default="0">
+				<xs:annotation>
+					<xs:documentation>是否需要生成台标</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LogoInfo" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>生成台标相关信息</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="PicFileName" type="xsd:string">
+							<xs:annotation>
+								<xs:documentation>图象文件名字,可以是TAG或BMP32位图</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="StartPointX" type="xsd:int" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>叠加的开始位置</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="StartPointY" type="xsd:int" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>叠加的开始位置</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="SizeX" type="xsd:int" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>叠加的大小(像素单位)</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="SizeY" type="xsd:int" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>叠加的大小(像素单位)</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="bUseAlpha" type="xsd:int" default="0" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>是否使用输入的Alpha值</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="Alpha" type="xsd:int" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>输入的Alpha值</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element ref="tns2:ExtendAttributes" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TaskFileType">
+		<xs:sequence>
+			<xs:element name="FileName" type="xsd:string">
+				<xs:annotation>
+					<xs:documentation>物理文件名称，不包含路径信息</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FileVerifyCode" type="xsd:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>文件验证代码</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="IsFileValid" type="xs:boolean">
+				<xs:annotation>
+					<xs:documentation>文件验证结果</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Status" type="xs:int">
+				<xs:annotation>
+					<xs:documentation>状态,0代表成功，其他值代表出错</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Description" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>状态文字描述</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AuditInfo" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>文件自动技审信息</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EncryptSeed" type="xsd:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>加密种子</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FileID" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>文件ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FileSize" type="xs:long" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>文件大小（字节）</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FileLength" type="xs:long" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>文件长度，视频用帧；音频用采样点</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="tns2:ExtendAttributes" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="AddEMBTaskResponseType">
+		<xs:sequence>
+			<xs:element ref="tns:CommonResponse"/>
+			<xs:element name="EMBTaskID" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>返回对应的任务ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TaskResultType">
+		<xs:sequence>
+			<xs:element name="TaskFile" type="tns:TaskFileType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="EMBCallbackRequestType">
+		<xs:sequence>
+			<xs:element ref="tns:AsynResponse"/>
+			<xs:element name="TaskResult" type="tns:TaskResultType" minOccurs="0"/>
+			<xs:element ref="tns2:ExtendAttributes" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="TransferFile" type="tns:TransferFileType">
+		<xs:annotation>
+			<xs:documentation>传输任务文件信息</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="TranscodeFile" type="tns:TranscodeFileType">
+		<xs:annotation>
+			<xs:documentation>转码任务文件信息</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="TransferFileType">
+		<xs:sequence>
+			<xs:element ref="tns2:StorageInfo" maxOccurs="unbounded"/>
+			<xs:element name="FileName" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>物理文件名称，不包含路径信息</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FileID" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>文件ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FileSize" type="xs:long" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>文件大小（字节）</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FileVerifyCode" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>文件验证代码</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FileHint" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>文件备注信息</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="tns2:ExtendAttributes" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TransferInfoType">
+		<xs:sequence>
+			<xs:element name="SourceFile" type="tns:TransferFileType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="TargetFile" type="tns:TransferFileType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="TaskTempleteName" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>EMB中配置的任务模板信息，如果这里填写了模板，下面的任务选项都不需要填写，模板中会有默认配置。</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TaskOption" type="tns:TaskOptionType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>任务选项</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TranscodeFileType">
+		<xs:sequence>
+			<xs:element name="GroupType" type="xs:int">
+				<xs:annotation>
+					<xs:documentation>文件组类型（高码流视频、高码流音频、高码流混视音频、低码流视音频、字幕工程文件、节目工程文件、图片等）</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="tns2:StorageInfo" maxOccurs="unbounded"/>
+			<xs:element name="FileName" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>物理文件名称，不包含路径信息</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FileID" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>文件ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FormatTemplete" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>视音频格式模板名称，填写模板名称后可以不用填写下面的详细文件格式</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="tns2:AVFormat" minOccurs="0"/>
+			<xs:element name="IsNeedEncrypt" type="xs:boolean" default="0" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>是否对视频文件进行加密处理</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EncryptSeed" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>加密种子，如果为空，EMB自动生成</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="IsNeedAddCG" type="xs:boolean" default="0" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>是否对视频文件进行叠加字幕处理</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="IsAddAudioWatermark" type="xs:boolean" default="false" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>是否增加音频水印</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AudioWatermark" type="xs:int" default="0" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>音频水印码</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FileSize" type="xs:long" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>文件大小（字节）</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FileVerifyCode" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>文件验证代码</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FileHint" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>文件备注信息</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="MarkIn" type="xs:long" default="0" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>文件入点，对于视频单位是帧，音频单位是采样点，当需要对文件源文件剪切时填写</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="MarkOut" type="xs:long" default="0" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>文件出点，对于视频单位是帧，音频单位是采样点，当需要对文件源文件剪切时填写</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FileLength" type="xs:long" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>文件长度，视频用帧；音频用采样点</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Channels" type="xs:int" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>声道数目</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ChannelIndex" type="xs:int" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>音频文件的序号，从0开始，对于视频文件没有意义</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SpliceIndex" type="xs:int" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>多段拼接转码时的拼接序号，从1开始</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AFD" type="xs:int" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>素材的AFD信息(SMPTE 2016-1),优先读取视频格式中的AFD信息</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AudioMixerInfo" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>音频混音信息。对于目标文件的每个声道，都有8个逗号分隔的数字（整数或浮点数）来描述该声道由哪些源声道来混音以及混音的音量大小。
+
+
+
+
+例如，
+
+
+
+
+1）目标文件A只有一个声道，混音设置是采用源文件的1，2，5声道，均衡混音，AudioMixerInfo=“1,1,0,0,1,0,0,0”
+
+
+
+
+2)目标文件B有两个声道，声道1的混音设置是采用源文件的1，2，5声道，声道2的混音设置是采用源文件的3，4，6声道，
+
+
+
+
+非均衡混音，AudioMixerInfo=“0.3,0.5,0,0,1.1,0,0,0,0,0,0.2,0.8,0,1.1,0,0”</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="IsAddLogoInfo" type="xs:boolean" default="0" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>是否需要生成台标,只针对目标视频文件</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ExtendFlags" type="xs:int" default="0" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>源文件描述的扩展信息</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="tns2:ExtendAttributes" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="TransferTasks">
+		<xs:annotation>
+			<xs:documentation>传输任务</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="TransferInfo" type="tns:TransferInfoType" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>一次传输信息。包含一个传输任务对应的源和目标信息</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TranscodeTasks">
+		<xs:annotation>
+			<xs:documentation>转码任务</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="TranscodeInfo" type="tns:TranscodeInfoType" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>一次转码信息。包含一次转码任务相关的所有源文件和目标文件信息，以及转码任务相关参数信息等</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="TranscodeInfoType">
+		<xs:sequence>
+			<xs:element name="SourceFile" type="tns:TranscodeFileType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="TargetFile" type="tns:TranscodeFileType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="ExecuteMode" type="xs:int" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>任务执行模式 0：自适应1：单任务 2：分布式任务 </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TaskTempleteName" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>EMB中配置的任务模板信息，如果这里填写了模板，下面的任务选项都不需要填写，模板中会有默认配置。</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TaskOption" type="tns:TaskOptionType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>任务选项</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="GlobalOptionType">
+		<xs:sequence>
+			<xs:element name="TCAbility" type="xs:int" default="0" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>子任务默认转码能力 int 值用户自定义，用来实现不同机器转不同的任务类型</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="UseRequestIDAsTaskID" type="xs:boolean" default="false" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>是否使用请求ID作为任务ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="IsAddTC" type="xs:boolean" default="false" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>是否增加TC码</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TapeTC" type="xs:int" default="0" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>磁带TC码，单位帧。</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="tns2:ExtendAttributes" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="GlobalOption" type="tns:GlobalOptionType">
+		<xs:annotation>
+			<xs:documentation>全局选项</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="EMBTaskProgress">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="EMBTaskID" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>任务ID为添加任务时的请求ID</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="TaskProgress" type="xs:int">
+					<xs:annotation>
+						<xs:documentation>任务进度，0－100</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="TaskStatus" type="xs:int">
+					<xs:annotation>
+						<xs:documentation>任务状态：等待、挂起、运行、出错、完成等</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

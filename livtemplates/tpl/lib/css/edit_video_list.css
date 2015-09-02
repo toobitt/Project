@@ -1,0 +1,27 @@
+/*视频编辑*/
+.v_list_show{position:relative;}
+.edit_m,.edit_show{position:absolute;z-index:1000;}
+.edit_show{right:-440px;top:40px;width:400px;padding:11px;border-left:1px solid #b2b2b2;background:#eeeff1;height:100%;display:none;border-top: 1px solid #B2B2B2;min-height:800px;box-shadow:0 0 4px #dedede;-webkit-box-shadow:0 0 4px #dedede;-moz-box-shadow:0 0 4px #dedede;-o-box-shadow:0 0 4px #dedede;}
+.edit_m{background:url("{$RESOURCE_URL}bg-all.png") -2px -73px no-repeat;position:fixed;width:11px;height:22px;top:50px;right:422px;display:inline-block;font-size:0;}
+.edit_show .info{background:#fff;border:1px solid #e0e0e0;border-radius:2px;color:#292927;padding:5px 10px;margin-bottom:10px;}
+.edit_show .info h4{padding-left:6px;font-size:12px;line-height:28px;color:#515151;cursor: pointer;}
+.edit_show .info h4 span{float:right;margin:2px 2px 0 0;width:22px;height:18px;background:url("{$RESOURCE_URL}bg-all.png") -23px -88px no-repeat;cursor:pointer;display:inline-block;-webkit-transition: 0.25s background-position;-moz-transition: 0.25s background-position;-o-transition: 0.25s background-position;}
+.edit_show .info h4 span.b2{background-position:-23px -70px;}
+.edit_show .info ul{margin-bottom:10px;padding-top: 6px;padding-left:10px;border-top:1px solid #e0e0e0;}
+.edit_show .info ul li{overflow:hidden;line-height:22px;font-size:12px;}
+.edit_show .info.cz ul,.edit_show .info.vo ul{padding-top:10px;}
+.edit_show .info.cz ul{height:58px;padding-left:6px;}
+.edit_show .info.bj li,.edit_show .info.vo li{float:left;width:48%;}
+.edit_show .info.bj li{line-height:24px;}
+.edit_show .info.vo li.w{width:99%}
+.edit_show .info.vo li.h{text-overflow:ellipsis;white-space: nowrap;overflow: hidden;}
+.edit_show .info.cz li,.edit_show .info.cz li.but_j {float:left;margin:0 3px;}
+.edit_show .info.cz li.but_j{float:right;}
+.edit_show .info.cz li{margin-bottom:7px;}
+.edit_show .info.cz li.button{width:47px}
+.edit_show .info.ml li,.edit_show .info.ml li a{float:left;width:49px;height:28px;}
+.edit_show .info.vider_s{padding:0;background:none;border:0;position: relative;}
+.edit_show .info.vider_s span{background:url("{$RESOURCE_URL}bg-all.png") -67px -70px no-repeat;width:26px;height:26px;top:2px;right:3px;display:inline-block;font-size:0;cursor:pointer;position: absolute;}
+.edit_show .info.vider_s span:hover{background-position: -93px -70px;}
+.edit_show .info.cz li.but_j a{background:url("{$RESOURCE_URL}but_j.png") 0 0 no-repeat;display:inline-block;width:88px;height:24px;line-height:24px;margin:1px 0 5px;text-align: center;color:#505050;}
+.edit_show .info.bj li span,.edit_show .info.vo li span{color:#7B7B7B}

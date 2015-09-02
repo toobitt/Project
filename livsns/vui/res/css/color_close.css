@@ -1,0 +1,13 @@
+body{background:#000;}
+.gareas .gtop .lc span.subsub {font-weight:bold;font-family:"微软雅黑";font-size:15px;color: #FFFFFF;}
+.gareas .gtop .rc{color: #FFFFFF;float: right; text-align: right; width: 154px;}
+.gareas .gtop .rc span.rsubcolor{color:#9C9C9C;}
+.gareas .gtv{background:#000;}
+.garea .gleft .gsub4{background:#fff;}
+.garea .gright .gsub4,.gsub4_2,.gsub5{background:#fff;}
+.area_foot .foot_cot .copy_txt li.cp_atxt, li.cp_atxt a{color:#292929;}
+.area_foot .foot_cot .copy_txt li.cp_btxt{color:#292929;}
+.station .gtop{text-align:center;font:18px '寰蒋闆呴粦';font-weight:bold; margin: 12px 0;overflow:hidden;color:#fff}
+.station .gleft .gsub4{clear:both;border:1px solid #BDBDBD;border-top:none;padding:12px;zoom:1;_width:516px;background:#fff}
+.station .gright .gsub4,.gsub4_2{margin-bottom:8px;;clear:both;border:1px solid #BDBDBD;border-top:none;padding:12px;zoom:1;overflow:hidden;background:#fff}
+.station .gtop .lc span.subsub {font-weight:bold;font-family:"微软雅黑";font-size:15px;color: #FFFFFF;}

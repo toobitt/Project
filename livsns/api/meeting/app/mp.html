@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<title>名片</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/base.css" rel="stylesheet" >
+<link href="css/form.css" rel="stylesheet">
+</head>
+
+<body class="mp_bg">
+    <canvas id="canvas" width="1920" height="1080"></canvas>
+    <div class="mp_main" id="cardexchange">
+        <div class="mp_hoge"></div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script>
+        function CardExchange(){
+                this.userArray = [];
+                this.updateUserDateTimer = null;
+                this.collisionTimer = null;
+                this.lastID = 0;
+                this.lastCollisionTime = 0;
+                //已入场
+                this.entrUser = [];
+                this.collisionArray = [];
+                this.ctx = document.getElementById("canvas").getContext('2d');
+
+                this.getWeburl = function(indexpic, width, height){
+                                var _avatar = ''; 
+                                if(arguments.length ==0){
+                                    _avatar = indexpic.host + indexpic.dir +  indexpic.filepath + indexpic.filename;
+                                }else if(arguments.length ==1){
+                                    _avatar = indexpic.host + indexpic.dir + width + "x"  + "/" + indexpic.filepath + indexpic.filename;
+                                }else{
+                                   _avatar = indexpic.host + indexpic.dir +  width + "x"  + height + "/" + indexpic.filepath + indexpic.filename; 
+                                }
+                                return _avatar;
+                            };
+
+                this.updateDom = function(newuser){
+                            $("#cardexchange").append('<div data-exchangenum="' + newuser.exchangenum +'" data-left="' + newuser.position.left +'" data-top="' + newuser.position.top +'" class="user-item" style="left:' + newuser.position.left + 'px;top:' + newuser.position.top + 'px;background-image:url('+newuser.avatar +'); " id="mber' + newuser.id + '"  data-name=' + newuser.name + ' ></div>');
+                            };
+                this.assembleNewUser =  function(uid, avatar,uname){
+                        var   _user = {},
+                              _enteruser = {}
+
+                        _enteruser.member_id = _user.member_id = uid;
+                        _enteruser.name = _user.name = uname;
+                        _enteruser.id = _user.id = uid;
+                        _enteruser.position =  _user.position = this.renderPosition() ;
+
+                        if(typeof avatar === 'undefined' || typeof avatar.host === 'undefined'){
+                           _enteruser.avatar =  _user.avatar =  '/app/img/avatar.png';
+                        }else{
+                           _enteruser.avatar =  _user.avatar = this.getWeburl(avatar, 100, 100); 
+                        }
+
+                        _enteruser.exchangenum =  _user.exchangenum =  1;
+
+                        this.entrUser.push(_enteruser);
+                        this.updateDom(_user);
+                };
+        }
+
+        CardExchange.prototype.render = function() {
+            var _user = {},
+                _enteruser = {}
+                _flag  =  true,
+                _len = 0,
+                that = this;
+
+            $.ajax({
+                url : 'http://hdbbs.liv.cn/get_sign_members.php',
+                data : {},
+                dataType : 'json',
+                success : function(data){
+
+                    $.each(data, function(index, item){
+
+                        if(parseInt(item.id) <= parseInt(that.lastID) ){return;}
+                        _user = {};
+                        _enteruser = {}
+                        _enteruser.member_id = _user.member_id = item.member_id;
+                        _enteruser.name = _user.name = item.name;
+                        _enteruser.id = _user.id =item.id;
+                        _enteruser.position =  _user.position = that.renderPosition() ;
+
+                        if(typeof item.avatar === 'undefined' || typeof item.avatar.host === 'undefined'){
+                           _enteruser.avatar =  _user.avatar =  '/app/img/avatar.png';
+                        }else{
+                           _enteruser.avatar =  _user.avatar = that.getWeburl(item.avatar, 100, 100); 
+                        }
+                        _enteruser.exchangenum =  _user.exchangenum =  item.exchange_num;
+
+                        that.entrUser.push(_enteruser);
+
+                        that.updateDom(_user);
+
+
+                        that.lastID = parseInt(item.id);
+
+                        _len  = index;
+
+                    });
+
+                    //发现有效嘉宾开始交换名片
+                    if(_len  > 0){
+                        that.updateCollisionData();
+                    }
+
+
+
+                }
+            });           
+
+            
+        };
+
+        
+        CardExchange.prototype.renderPosition =  function(){
+            var _position = {};
+            _position.left = Math.ceil(this.random(1820)) + 50;
+            _position.top = Math.ceil(this.random(980)) + 50;
+            return _position;
+        }
+
+        CardExchange.prototype.updateCollisionData =  function(){
+            var that = this, 
+                _flag = true,
+                _self = null,
+                _other = null ,
+                _collision = {};
+
+            $.ajax({
+                url : 'http://hdbbs.liv.cn/collision.php',
+                dataType : 'json',
+                data : {create_time : that.lastCollisionTime},
+                success : function(data){
+                    if(data.ErrorCode) {return false;} 
+                    //console.log(that.lastCollisionTime + "lastCollisionTime");
+                    
+                    if(that.lastCollisionTime==0){
+                        _flag = false;
+                    }
+                    
+                    //过了超时时间重新请求数据
+                    if(typeof data[0].return !=="undefined" && data[0].return ==="refresh"){
+                        that.updateCollisionData();
+                        return;
+                    }
+
+                    $.each(data, function(index, item){
+                           _collision = {};
+
+                            if( $("#mber" + item.self_exchange_id).size() == 0 ){
+                                    //console.log(item.self_exchange_id + "self_exchange_id");
+                                    that.assembleNewUser(item.self_exchange_id, item.self_avatar, item.self_name)
+                            }
+                            if( $("#mber" + item.other_exchange_id).size() == 0){
+                                //console.log(item.other_exchange_id + "otherid");
+                                that.assembleNewUser(item.other_exchange_id, item.other_avatar, item.other_name)
+                            }
+
+                            _collision.selfid = item.self_exchange_id;
+                            _collision.otherid = item.other_exchange_id;
+                            that.collisionArray.push(_collision)
+                            that.lastCollisionTime = item.create_time;
+
+                    });
+
+                    
+                    if(_flag === false && that.collisionArray.length > 0){
+                       //console.log("first request not response");
+                       that.drawbaseline();
+                       //that.collisionAnimate();
+                    }
+                    
+
+                    if(that.collisionArray.length > 0 && _flag === true){
+                       
+                        that.collisionAnimate();
+                    }
+
+                },
+                error : function(err){
+                  //console.dir(err);  
+                }
+            });
+
+        }
+
+        CardExchange.prototype.drawbaseline =  function(){
+            var  i = 0,
+                len = this.collisionArray.length,
+                _item = {},
+                $sid = null,
+                $oid = null;
+            for(i; i < len; i++){
+                _item = this.collisionArray[i];
+                $sid = $("#mber" + _item.selfid);
+                $oid = $("#mber" + _item.otherid);
+
+                this.ctx.strokeStyle="rgba(200, 200, 200, 0.5)";
+                this.ctx.lineWidth=1;
+                this.ctx.beginPath();
+                this.ctx.moveTo($sid.data("left"), $sid.data("top"));
+                this.ctx.lineTo($oid.data("left"), $oid.data("top"));
+                this.ctx.closePath();
+                this.ctx.stroke();
+
+                $sid.addClass('scale-0-' + $sid.data('exchangenum') );
+                $oid.addClass('scale-0-' + $oid.data('exchangenum') );
+            }
+          
+            this.collisionArray = [];
+        }
+
+        CardExchange.prototype.drawLine =  function(cx, cy, dx, dy){
+            this.ctx.strokeStyle="rgba(200, 200, 200, 0.5)";
+            this.ctx.lineWidth=1;
+            this.ctx.beginPath();
+            this.ctx.moveTo(cx, cy);
+            this.ctx.lineTo(cx - dx, cy - dy);
+            this.ctx.closePath();
+            this.ctx.stroke();        
+        }
+
+        CardExchange.prototype.clearLine =  function(cx, cy, dx, dy){
+            this.ctx.strokeStyle="#efefef";
+            this.ctx.lineWidth=1;
+            this.ctx.beginPath();
+            this.ctx.moveTo(cx, cy);
+            this.ctx.lineTo(cx - dx, cy - dy);
+            this.ctx.closePath();
+            this.ctx.stroke();        
+        }
+
+
+
+
+        CardExchange.prototype.collisionAnimate =  function(){
+            var that = this,
+                _item = this.collisionArray.shift();
+
+            if(!_item) return;
+            var num = 100;
+
+            var $sid = $("#mber" + _item.selfid);console.log($sid);
+            var $oid = $("#mber" + _item.otherid);console.log($oid);
+            var sx = $sid.data('left');
+            var sy = $sid.data('top');
+            var ox = $oid.data('left');
+            var oy = $oid.data('top');
+            var dx = ox - sx;
+            var dy = oy - sy;
+            var pdx = dx / num;
+            var pdy = dy / num;
+
+            var cx = (sx + ox) / 2;
+            var cy = (sy + oy) / 2;
+            var _this = this;
+            var _n = 1;
+            var timer = setInterval(function(){
+                if(_n > num / 2){
+                    clearInterval(timer);
+                    timer = null;
+                    return;
+                }
+                if(_n > 1){
+                    var _n_ = _n - 1;
+                    that.clearLine(cx, cy, _n_ * pdx, _n_ * pdy);
+                    that.clearLine(cx, cy, -_n_ * pdx, -_n_ * pdy);    
+                }
+                that.drawLine(cx, cy, _n * pdx, _n * pdy);
+                that.drawLine(cx, cy, -_n * pdx, -_n * pdy);
+                _n++;
+                
+            }, 1000 / num);
+
+
+            /*缩放头像*/
+            $sid.data('exchangenum',  $sid.data('exchangenum') + 1);
+            $oid.data('exchangenum',  $oid.data('exchangenum') + 1);
+
+            $sid.addClass('scale-0-10 scale-0-' + $sid.data('exchangenum') );
+            $oid.addClass('scale-0-10 scale-0-' + $oid.data('exchangenum') );
+
+            setTimeout(function(){
+                $sid.removeClass('scale-0-10');
+                $oid.removeClass('scale-0-10');            
+            }, 1000);
+
+
+            if(this.collisionArray.length > 0){
+                setTimeout(function(){
+                    that.collisionAnimate();
+                }, 50);
+            }
+
+
+        }
+
+
+
+        
+        CardExchange.prototype.random  =  function(x){
+            return Math.random() * x;
+        }
+
+
+
+        var cardexchange =  new CardExchange();
+            cardexchange.render();
+
+    </script>
+</body>
+</html>

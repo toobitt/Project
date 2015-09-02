@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no,email=no">
+<title>报名蓝色系</title>
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/tpl.css">
+</head>
+<body>
+	<div class="page-content toolbar-through">
+		<div class="content-block list-block title-block">
+			<div class="img-block">
+				<div class="img-box">
+					<img src="./images/indexpic.png" />
+				</div>
+				<em class="tag primary">进行中</em>
+			</div>
+			<div class="line-item m2o-flex">
+				<label class="line-title">活动名称</label>
+				<div class="line-info m2o-flex-one">
+					<span class="liv_title">晒晒旅行照</span>
+				</div>
+			</div>
+			<div class="line-item m2o-flex">
+				<label class="line-title">时间</label>
+				<div class="line-info m2o-flex-one">
+					<span class="liv_start_time">2015-01-01</span>-<span class="liv_end_time">2015-02-01</span>
+				</div>
+			</div>
+			<div class="line-item m2o-flex">
+				<label class="line-title">地点</label>
+				<div class="line-info m2o-flex-one">
+					<span class="liv_address">南京市</span>
+				</div>
+			</div>
+			<div class="line-item m2o-flex">
+				<label class="line-title">发起人</label>
+				<div class="line-info m2o-flex-one">
+					<span class="liv_sponsor">善良菜刀</span>
+				</div>
+			</div>
+			
+			<div class="line-item line-mul">
+				<label class="line-title">描述</label>
+				<div class="line-info m2o-flex-one">
+					<span class="liv_brief">也许每个人都有一个旅行梦，也许你去过的地方并不多，但只要有到过的地方，你肯定有所记念。 1.晒一晒大家最美、最呆、最萌、的旅行照。 2.凡同时关注 豆瓣 新浪微博 公众微信。均有机会获得一次免费写真拍摄。</span>
+				</div>
+			</div>
+		</div>
+		<div class="content-block list-block form-block">
+			<div class="liv_forms_title">报名信息填写</div>
+			<form action="" name="targetWin" enctype="multipart/form-data" method="post">
+				<span class="liv_forms">
+					<div class="liv_input liv_item">
+						<span class="cell_name">您的真实姓名</span>
+						<span class="cell_input">
+							<input type="text" name="{cell_unique_name}" placeholder="{cell_brief}" value="王某某" />
+						</span>
+					</div>
+					<div class="liv_choose liv_item">
+						<span class="cell_name">您的性别</span>
+						<span class="cell_choose">
+							<span class="cell_element">
+								<input type="radio" name="{cell_unique_name}" value="{cell_options_element}" /><label>男</label>
+							</span>
+							<span class="cell_element">
+								<input type="radio" name="{cell_unique_name}" value="{cell_options_element}" /><label>女</label>
+							</span>
+						</span>
+					</div>
+					<div class="liv_choose liv_item">
+						<span class="cell_name">您喜欢的水果</span>
+						<span class="cell_choose">
+							<span class="cell_element">
+								<input type="checkbox" name="{cell_unique_name}" value="{cell_options_element}" /><label>苹果</label>
+							</span>
+							<span class="cell_element">
+								<input type="checkbox" name="{cell_unique_name}" value="{cell_options_element}" /><label>香蕉</label>
+							</span>
+						</span>
+					</div>
+					<div class="liv_tel liv_item">
+						<span class="cell_name">您的手机号码</span>
+						<span class="cell_input">
+							<input type="tel" name="{cell_unique_name}" placeholder="{cell_brief}" value="13912456789" />
+						</span>
+					</div>
+					<div class="liv_email liv_item">
+						<span class="cell_name">您的邮箱</span>
+						<span class="cell_input">
+							<input type="email" name="{cell_unique_name}" placeholder="{cell_brief}" value="lufdafdsf@163.com" />
+						</span>
+					</div>
+					<div class="liv_address liv_item">
+						<span class="cell_name">您的地址</span>
+						<span class="cell_element province cell_{cell_id}">
+							<select id="A_prov" class="cell_select">
+								<option _id="{cell_key}" value="{cell_options_element}">请选择</option>
+							</select>
+							<input type="hidden" value="" name="{cell_unique_name}" >
+						</span>
+						<span class="cell_element city cell_{cell_id}">
+							<select id="A_city" class="cell_select">
+								<option _id="{cell_key}" value="{cell_options_element}">请选择</option>
+							</select>
+							<input type="hidden" value="" name="{cell_unique_name}" >
+						</span>
+						<span class="cell_element area cell_{cell_id}">
+							<select id="A_area" class="cell_select">
+								<option _id="{cell_key}" value="{cell_options_element}">请选择</option>
+							</select>
+							<input type="hidden" value="" name="{cell_unique_name}" >
+						</span>
+						<span class="cell_element detail cell_{cell_id}">
+							<span class="cell_textarea">
+								<textarea name="{cell_unique_name}" placeholder="详细地址"></textarea>
+							</span>
+						</span>
+					</div>
+					<div class="liv_input liv_item">
+						<span class="cell_name">您的生日</span>
+						<span class="cell_input">
+							<input type="date" name="{cell_unique_name}" placeholder="{cell_brief}" value="1919-01-01" />
+						</span>
+					</div>
+					<div class="liv_select liv_item">
+						<span class="cell_name">您报名的原因</span>
+						<select name="{cell_unique_name}"  class="cell_select">
+							<option>选择报名原因</option>
+						</select>
+					</div>
+					<div class="liv_file liv_item">
+						<span class="cell_name">上传照片</span>
+						<span class="cell_file">
+							<a class="btn btn-wid130 btn-operate">上传</a>
+							<input type="file" name="file" value=""/>
+							<div class="file-drop">
+								<div class="m2o-flex m2o-flex-center">
+									<div class="file-info m2o-flex-one">
+										<label>已上传：</label>
+										<span class="name">1寸照.jpg</span>
+									</div>
+									<div class="file-set">
+										<a class="view" attr="">查看</a>
+										<a class="del">删除</a>
+									</div>
+								</div>
+							</div>
+						</span>
+					</div>
+					<div class="liv_file liv_item">
+						<span class="cell_name">上传照片</span>
+						<span class="cell_file">
+							<a class="btn btn-wid130 btn-operate">上传</a>
+							<input type="file" name="file" value=""/>
+							<div class="file-drop">
+								<div class="m2o-flex m2o-flex-center">
+									<div class="file-info m2o-flex-one">
+										<label>已上传：</label>
+										<span class="name">1寸照.jpg</span>
+									</div>
+									<div class="file-set">
+										<a class="view" attr="">查看</a>
+										<a class="del">删除</a>
+									</div>
+								</div>
+							</div>
+						</span>
+					</div>
+				</span>
+				<div class="hiddenBox">
+					<input type="hidden" name="id" value="" />
+					<input type="hidden" name="device_token" value="" />
+					<input type="hidden" name="appid" value="" />
+					<input type="hidden" name="access_token" value="" />
+					<input type="hidden" name="appkey" value="" />
+					<input type="hidden" name="submitUrl" value="http://localhost/livsns/api/feedback/core/feedback.php" />
+				</div>
+			</form>
+		</div>
+		<div class="content-block footer-block">
+			<span class="liv_footer_info">liv_底部信息</span>
+		</div>
+	</div>
+	<div class="fixed-bottom fixed-area">
+		<div class="btn-area">
+			<input type="button" name="subBtn" value="提交"/>
+			<button name="submitBtn">提交。。。</button>
+			<div class="limit" style="display:none">{"is_login":"0","is_device":"1"}</div>
+			<a class="btn btn-wid170 btn-primary btn-disable form-to-json"><span class="liv_submit_text">提交报名</span></a>
+		</div>
+	</div>
+<script type="text/javascript" src="./js/module/head.min.js"></script>
+<script type="text/javascript">
+	head.js(
+		{zepto : "./js/module/zepto.min.js"},
+		{spin : "./js/module/spin.min.js"},
+		{cookie : './js/module/jquery.cookie.js'},
+		{toast : './js/module/toast.js'},
+		{h5Client : './js/module/h5Client.js'},
+		{print : './js/module/print.min.js'},
+		{log : './js/module/log.js'},
+		{address : './js/module/address.min.js'},
+		{utils : './js/utils.js'}
+	);
+	head.ready(["zepto", "spin", "h5Client"], function(){
+		head.js('./js/module/hg_form.js', './js/baoming.js');
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+/*日历选择器*/
+.ui-datepicker{/* width:479px; height:237px;  */width:auto;height:auto;padding:5px; border-radius:3px; background:#fff; border:1px solid #d5dee9; z-index:999;/*  -webkit-column-count:2; -webkit-column-gap:5px;  */}
+
+.ui-datepicker .ui-datepicker-header, .ui-datepicker table{width:230px; }
+.ui-datepicker .ui-timepicker-div, .ui-datepicker .ui-datepicker-buttonpane{width:230px; }
+
+.ui-datepicker table{border:1px solid #d5dee9; border-top:none; border-radius:0 0 3px 3px;margin:0;}
+
+.ui-datepicker .ui-datepicker-header{border:1px solid #d5dee9; color:#838e9e; border-radius:3px 3px 0 0; background:#fff; padding:4px 0; }
+.ui-datepicker .ui-datepicker-title span{color:#304562; }
+
+.ui-datepicker .ui-datepicker-calendar thead{border:1px solid #d5dee9; border-top:none; }
+
+.ui-datepicker th{background-color:#fff; color:#838e9e; padding:2px; }
+.ui-datepicker td{border:1px solid #d5dee9; padding:0;}
+.ui-datepicker td .ui-state-hover{background-color:#fff; }
+.ui-datepicker .ui-state-default{border:none; padding:6px 8px; color:#838e9e; background:#f6fafd; }
+
+.ui-datepicker .ui-datepicker-other-month .ui-state-default{font-weight:bold; color:#d9dfe7; }
+
+.ui-datepicker .ui-datepicker-today .ui-state-default{color:#62b8e8; }
+
+.ui-datepicker .ui-timepicker-div{height:145px; border:1px solid #d5dee9; border-bottom:none; border-radius:3px 3px 0 0; margin-top:15px; }
+.ui-datepicker .ui-timepicker-div dl{margin-bottom:0; }
+.ui-state-hover, 
+.ui-widget-header .ui-state-hover{background:none;border:none;}
+.ui-icon, .ui-state-hover .ui-icon{cursor:pointer;background-image:url({$RESORCE_URL}hoge-ui/timepicker_prev.png)!important;background-position:center;}
+[data-handler="next"] .ui-icon, .ui-state-hover.ui-datepicker-next-hover .ui-icon{background-image:url({$RESORCE_URL}hoge-ui/timepicker_next.png)!important;}
+.ui-datepicker .ui-datepicker-prev{left:0;top:2px;}
+.ui-datepicker .ui-datepicker-next{right:0;top:2px;}
+
+/*时分*/
+.ui-datepicker .ui_tpicker_time_label{display:none; }
+.ui-datepicker .ui-slider{height:4px; background:#d8dfe7; border:none; }
+.ui-datepicker .ui-slider-horizontal .ui-slider-handle{width:12px; height:12px; top:-4px; margin-left:-3px; padding:0; background-color:#62b8e8; }
+.ui-datepicker .ui_tpicker_time{font-size:36px; padding-top:5px; margin-left:0; color:#304562; text-align:center; }
+
+.ui-datepicker .ui_tpicker_hour_label, .ui-datepicker .ui_tpicker_minute_label{margin-bottom:-16px; margin-left:10px; font-size:14px; color:#838e9e; }
+.ui-datepicker .ui_tpicker_hour,.ui-datepicker .ui_tpicker_minute{margin-bottom:30px; }
+.ui-timepicker-div dl dd{margin-left:45px; }
+
+
+/*按钮*/
+.ui-datepicker .ui-datepicker-buttonpane{padding:24px 12px 19px; border:1px solid #d5dee9; border-top:none; border-radius:0 0 3px 3px; margin-top:0; background-color:#fff; }
+.ui-datepicker .ui-datepicker-buttonpane:after{visibility:hidden; display:block; height:0; content:'.'; clear: both; }
+.ui-datepicker .ui-datepicker-buttonpane button{width:80px; height:34px; margin:0; box-sizing:border-box; font-size:14px; }
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current{background:#d8dfe7; color:#3f4752; }
+.ui-datepicker .ui-datepicker-buttonpane button.ui-priority-primary{background:#62b8e8; color:#fff; }
+
+
+

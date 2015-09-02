@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no,email=no">
+<title>公积金</title>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/refer.css">
+</head>
+<body>
+	<div class="page-content toolbar-through refer-cpfresult">
+		<div class="list-block">
+			<ul>
+				<li class="hg-flex hg-flex-center">
+					<div class="title">月缴：</div>
+					<div class="hg-flex-one"><span class="primary">1800.00</span>元</div>
+				</li>
+				<li class="hg-flex hg-flex-center">
+					<div class="title">余额：</div>
+					<div class="hg-flex-one"><span class="primary">49999.90</span>元</div>
+				</li>
+				<li class="hg-flex hg-flex-center">
+					<div class="title">周杰伦</div>
+					<div class="hg-flex-one">南京</div>
+				</li>
+			</ul>
+		</div>
+		<div class="tab-block">
+			<ul class="hg-flex">
+				<li class="active" data-year="2015">2015</li>
+				<li data-year="2014">2014</li>
+				<li data-year="2013">2013</li>
+			</ul>
+			<div class="panel">
+				<div class="panel-title hg-flex hg-flex-center">
+					<div class="date wid60">日期</div>
+					<div class="project hg-flex-one">项目</div>
+					<div class="num wid60">金额</div>
+					<div class="account wid100">账户余额</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript" src="./js/module/sea.js"></script>
+<script type="text/javascript" src="./js/main.js"></script>
+<script type="text/javascript">
+	seajs.use("views/cpfresult");
+</script>
+</body>
+</html>

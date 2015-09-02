@@ -1,0 +1,36 @@
+.nodata{font-size:16px; text-align:center; margin-top:55px; color:#999; }
+.noport{padding-top:100px;  background:url('./../images/bg_shopping.png') no-repeat center top transparent; background-size:120px; }
+
+
+.swiper-nav{position:fixed; top:0; left:0; width:100%; height:34px; background-color:#f7f7f7; z-index: 999;}
+.swiper-nav .swiper-slide{width:20%; height:100%; display:inline-block; text-align:center; line-height:32px; border-bottom:1px solid #d2d2d2; color:#515567;}
+.swiper-nav .swiper-slide-active{position:relative; color:#fc7430; background-color:#eee; border-bottom-color:#fe5e00;}
+.swiper-nav .swiper-slide-active:after{position:absolute; width:100%; height:1px; left:0; bottom:0; background-color:#fe5e00; content:''}
+
+.swiper-content{padding-top:43px; }
+.swiper-content .swiper-slide{min-height: 400px; }
+
+.port-list h3{margin-bottom:10px; font-size:25px; color:#fc7430; }
+.port-list .item{margin-bottom:4px; }
+.port-list .label{display:inline-block; width:40%; color:#a5a5a5; }
+.port-list .highlight .label{background-color:#f9c100; color:#fff; }
+.port-list .highlight .time{color:#333; }
+.port-list .city{color:#515567; }
+.port-list .info{height:77px; padding:15px 20px; background-color:#fff; }
+.port-list .column{height:32px; line-height: 32px; text-align:center; }
+.port-list .time{display:inline-block; width:60%; background-color:#f7f7f7; color:#999; }
+.port-list .tag{display:inline-block; height:24px; line-height:24px; color:#fff; padding:0 8px; background-color:#3b9ac6; }
+.port-list .green .tag{background-color:#3bc697; }
+.port-list .blue .tag{background-color:#3b9ac6; }
+.port-list .red .tag{background-color:#e60012; }
+.port-list .gray .tag{background-color:#ddd; color:#999; }
+.port-list .gray h3{color:#999; }
+.port-list .gray .city{color:#999; }
+
+/*页面*/
+.airport_content h1{display:none; }
+.airport_content span{font-size:8px!important;}
+.airport_content td{max-width:80px; word-wrap:break-word; }
+.airport_content tr:first-of-type span, .airport_content td:first-of-type span{font-size:10px!important; }
+.airport_content td:first-of-type{width:56px!important; }
+.airport_content table{margin:0 auto!important; }

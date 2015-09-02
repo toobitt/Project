@@ -1,0 +1,19 @@
+<?php
+$errorConf = array(
+	NOID=>'未传入查询ID',
+	EXISTS_TUJI=>'此分类存在图集，无法删除',
+	NODATA=>'无更新数据',
+	NOMETHOD=>'方法不存在',
+	EXISTS=>'分类名称已经存在',
+	JS_FILE_EXISTS=>'文件已经存在',
+	TYPE_ERROR=>'文件类型错误',
+	NO_APP_ID=>'没有应用id',
+	NO_DEVICE_TOKEN=>'没有设备号',
+	ACTIVATE_HAS_STATISTIC=>'该设备激活已经统计',
+	NOT_LOGIN=>'未登录',
+	NO_START_DATE=>'没有开始日期',
+	NO_END_DATE=>'没有结束日期',
+	START_CAN_NOT_OVER_END=>'开始时间不能大于结束时间',
+	TODAY_HAS_LIVENESS=>'今天已经统计过活跃数',
+);
+?>

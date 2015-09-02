@@ -1,0 +1,44 @@
+/*
+ *	用JavaScript模拟体育彩票选号器，每刷新一次页面，会生成不同组合的随机数字，用来研究JavaScript随机数相当不错
+ *	http://www.codefans.net/jscss/code/1376.shtml
+ */
+
+<html>
+<head>
+<title>体育彩票选号器</title>
+<script language="javascript">
+                function Quickpick()
+                {
+                        var ball
+                        for( ball = 0; ball < 5; ball++)
+                        {
+                                this[ball] = parseInt((Math.random() * Math.pow(10,16)) % 49) + 1;
+                                for(var list = 0; list < ball; list++)
+                                {
+                                        if(this[list] == this[ball])
+                                        {       
+                                                list = ball;
+                                                ball--;
+                                        }
+                                }
+                        }
+                        this[ball] = parseInt((Math.random() * Math.pow(10,16)) % 42) + 1;
+                        return this;
+                }
+</script>
+</head>
+<body>
+<script language="javascript">
+                var idx;
+                var powerball = new Array(6);
+                powerball = this.Quickpick();
+                document.write("<center>");
+                document.write("体育彩票选号器");        
+                document.write("<hr width=400><font size=+2>");
+                for(idx = 0; idx < 5; idx++)
+                        document.write(powerball[idx] + " - ")
+                document.write("</font><font color=#D00000 size=+2>" + powerball[idx] + "</font>");
+                document.write("</center>");
+</script>
+</body>
+</html>

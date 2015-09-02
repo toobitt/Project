@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no,email=no">
+<title>我的中奖信息</title>
+<link rel="stylesheet" href="./images/exchange.css">
+</head>
+<body class="page-content">
+	<div class="seller-box">
+		<span class="lottery-title">我的抽奖</span>
+		<div class="seller-box-item">
+			<span class="seller-box-tip">请输入商家号：</span>
+			<input type="text" name="seller_id" placeholder="输入商家号"/>
+			<span class="login">登录</span>
+		</div>
+	</div>
+	<div class="content-box">
+		<div class="current-seller-num sys-flex">当前商家号：<a class="overhidden"></a><span class="logout">退出</span></div>
+		<div class="award-box">
+			<img class="award-pic" style="opacity:0.000001"/>
+			<span class="award-tip">恭喜您获得的奖品是</span>
+			<span class="award prize"></span>
+		</div>
+		<div class="award-info">
+			<span class="award-info-tip">中奖信息</span>
+			<div class="award-item sys-flex">
+				<span>奖项：</span>
+				<span class="prize-name"></span>
+			</div>
+			<div class="award-item sys-flex">
+				<span>姓名：</span>
+				<span class="prize-address"></span>
+			</div>
+			<div class="award-item sys-flex">
+				<span>电话：</span>
+				<span class="phone-num"></span>
+			</div>
+			<input type="hidden" name="send" value="" />
+			<span class="btn"></span>
+			<span class="check-history">查看历史兑换记录</span>
+		</div>
+	</div>
+	<div class="record-box">
+		<div class="record-nav">
+			<span>历史兑换记录</span>
+			<a class="close-record"></a>
+		</div>
+		<ul class="record-list"></ul>
+	</div>
+<script type="text/html" id="award-info">
+	
+</script>
+<script type="text/html" id="record-info">
+	{{if data}}
+	{{each data}}
+	<li class="sys-flex">
+		<img src="{{if $value.host}}{{= $value.host}}{{= $value.dir}}{{= $value.filepath}}{{= $value.filename}}{{/if}}" />
+		<div class="record-list-info sys-flex-one">
+			<div class="sys-flex">
+				<span>{{= $value.prize_name}}</span>
+				<span>{{= $value.prize}}</span>
+			</div>
+			<div class="sys-flex">
+				<span>{{= $value.arddress}}</span>
+				<span>{{= $value.phone_num}}</span>
+			</div>
+			<div class="sys-flex">
+				<span>{{= $value.create_time}}</span>
+			</div>
+		</div>
+	</li>
+	{{/each}}
+	{{else}}
+		<span class="no-record">暂无兑换记录!</span>
+	{{/if}}
+</script>
+<script type="text/javascript" src="./images/head.min.js"></script>
+<script type="text/javascript">
+	head.js(
+		{zepto : "./images/zepto.min.js"},
+		{device : './images/device.min.js'},
+		{template : './images/template.js'},
+		{spin : './images/spin.min.js'},
+		{h5Client : './images/h5Client.js'},
+		{toast : './images/toast.js'},
+		{print : './images/print.min.js'},
+		{api : './images/api.js'}
+	);
+	head.ready(["zepto"], function(){
+		head.js('./images/utils.js', './images/exchange.js');
+	});
+</script>
+</body>
+</html>

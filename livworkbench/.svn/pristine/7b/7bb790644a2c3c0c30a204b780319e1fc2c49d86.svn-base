@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no,email=no">
+<title>公积金</title>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/refer.css">
+</head>
+<body>
+	<div class="page-content toolbar-through refer-cpfsearch">
+		<div class="list-block">
+			<form class="searchForm" action="" name="search-cpf" enctype="multipart/form-data">
+				<ul>
+					<li class="hg-flex hg-flex-center identity">
+						<div class="title">身份证</div>
+						<div class="input hg-flex-one"><input type="text" name="idcardNumber" placeholder="身份证"></div>
+					</li>
+					<li class="hg-flex hg-flex-center password">
+						<div class="title">查询密码</div>
+						<div class="input hg-flex-one"><input type="text" name="password" placeholder="公积金账号后四位加00"/></div>
+					</li>
+					<p class="tip">公积金账号可以向单位公积金经办人索取</p>
+					<li class="hg-flex hg-flex-center code">
+						<div class="title">验证码</div>
+						<div class="input hg-flex-one"><input type="text" name="code" placeholder="验证码"/></div>
+						<div class="img"><img src="./images/code.png"></div>
+					</li>
+				</ul>
+			</form>
+		</div>
+		<div class="btn-area">
+			<button class="btn btn-full btn-primary search">查询</button>
+		</div>
+	</div>
+<script type="text/javascript" src="./js/module/sea.js"></script>
+<script type="text/javascript" src="./js/main.js"></script>
+<script type="text/javascript">
+	seajs.use("views/cpfsearch");
+</script>
+</body>
+</html>

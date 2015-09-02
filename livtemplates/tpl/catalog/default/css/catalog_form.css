@@ -1,0 +1,28 @@
+.m2o-flex{display:-webkit-box;display:-moz-box;display:box;width:auto;}
+.m2o-flex-center{-webkit-box-align:center;-moz-box-align:center;box-align:center;}
+.m2o-flex-one{-webkit-box-flex:1;-moz-box-flex:1;box-flex:1;}
+
+.default-option{display:-webkit-box; width:496px; }
+.ad_form .form_ul .form_ul_div.default-option span.title{float:none; }
+.default-option p{display: inline-block; width: 20px; height: 20px; line-height: 17px; margin: 2px 0 0 15px; background-color: #7bb0e6; border-radius: 10px; text-align: center; color: #fff; font-size: 20px; cursor: pointer;}
+.option-contain{margin-top:-8px; }
+.option-contain input{width:109px!important;font-size:14px; margin:8px 3px 0 0;}
+
+/*输入框*/
+.form_ul .form_ul_div input[type="text"], .form_ul textarea{width: 475px; text-indent: 5px;}
+.form_ul .form_ul_div > input[type="text"]{height:25px!important; }
+.form_ul .sort{line-height:25px;}
+
+/*选项框*/
+.ad_form .form_ul .option-type > .form_ul_div{margin-bottom:0; }
+.ad_form .form_ul li.i input[type="checkbox"]{height:13px; }
+.type-choose{margin-left:85px;width:500px;}
+.type-choose li{float:left;margin-bottom:10px;width:100px;}
+.type-choose li span{margin-left: 5px;}
+
+
+/* listui扩展字段 */
+.style-setting-item{height:40px;line-height:40px;background-color:#eee;}
+.style-setting-item .title{line-height:40px!important;}
+.style-setting-item:last-child{background-image:url("{$RESOURCE_URL}dottedLine.png");background-repeat:repeat-x;background-position:0 bottom;}
+.style-setting-item input{margin-right:5px;}

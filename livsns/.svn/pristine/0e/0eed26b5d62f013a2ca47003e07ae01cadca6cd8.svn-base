@@ -1,0 +1,303 @@
+/***************************************************************************
+* LivSNS 0.1
+* (C)2004-2010 HOGE Software.
+*
+* $Id$
+***************************************************************************/
+
+DROP TABLE  `sns_ucenter`.`liv_favorites` ;
+CREATE TABLE  `sns_ucenter`.`liv_favorites` (
+`id` INT( 10 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`fa_id` INT( 10 ) NOT NULL ,
+`member_id` INT( 10 ) NOT NULL ,
+`sort_id` INT( 10 ) NOT NULL ,
+`title` VARCHAR( 50 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+`cid` INT( 10 ) NOT NULL ,
+`type_id` INT( 10 ) NOT NULL ,
+`link` VARCHAR( 100 ) NOT NULL ,
+`schematic` VARCHAR( 100 ) NOT NULL ,
+`create_time` INT( 10 ) NOT NULL
+) ENGINE = MYISAM CHARACTER SET utf8 COLLATE utf8_general_ci
+
+
+CREATE TABLE  `sns_ucenter`.`liv_type` (
+`id` INT( 10 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`name` VARCHAR( 20 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+`host` VARCHAR( 50 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+`apidir` VARCHAR( 60 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+`function` VARCHAR( 10 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+`param` VARCHAR( 10 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+`show_api` CHAR( 60 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
+) ENGINE = MYISAM CHARACTER SET utf8 COLLATE utf8_general_ci
+
+
+ALTER TABLE  `liv_album` ADD  `collect_count` INT( 10 ) NOT NULL AFTER  `video_count` ,
+ADD  `comment_count` INT( 10 ) NOT NULL AFTER  `collect_count` ;
+
+
+CREATE TABLE  `video`.`liv_station_concern` (
+`id` INT( 10 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`sid` INT( 10 ) NOT NULL ,
+`user_id` INT( 10 ) NOT NULL
+) ENGINE = MYISAM CHARACTER SET utf8 COLLATE utf8_general_ci
+
+ALTER TABLE  `liv_network_station` ADD  `tags` VARCHAR( 500 ) NOT NULL COMMENT  '以“,”隔开' AFTER  `web_station_name`
+
+
+ALTER TABLE  `sns_ucenter`.`liv_member` ADD  `type` TINYINT( 1 ) NOT NULL DEFAULT  '0'
+
+
+----------------------2011/3/9
+CREATE TABLE  `video`.`liv_program_history` (
+`id` INT( 10 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`sta_id` INT( 10 ) NOT NULL ,
+`user_id` INT( 10 ) NOT NULL ,
+`programe` VARCHAR( 10000 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+`update_time` INT( 10 ) NOT NULL ,
+`ip` CHAR( 64 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
+) ENGINE = MYISAM CHARACTER SET utf8 COLLATE utf8_general_ci
+
+CREATE TABLE  `video`.`liv_visit_history` (
+`user_id` INT( 10 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`cid` INT( 10 ) NOT NULL ,
+`type` TINYINT( 1 ) NOT NULL COMMENT  '(1-视频，2-网台)',
+`visit_time` INT( 10 ) NOT NULL ,
+`ip` CHAR( 64 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
+) ENGINE = MYISAM CHARACTER SET utf8 COLLATE utf8_general_ci COMMENT =  '历史访问记录'
+
+ALTER TABLE  `liv_network_station` ADD  `click_count` INT( 10 ) NOT NULL AFTER  `comment_count` ;
+
+-------------------2011/3/10
+
+ALTER TABLE `liv_visit_history`
+  DROP PRIMARY KEY,
+   ADD PRIMARY KEY(
+     `user_id`,
+     `cid`,
+     `type`);
+  
+---------------------------2011/3/11
+ALTER TABLE  `liv_video` ADD  `bans` VARCHAR( 400 ) NOT NULL COMMENT  '屏蔽字' AFTER  `state` ;
+
+
+---------------------------2011/4/21
+CREATE TABLE  `sns_mblog`.`liv_report` (
+`id` INT( 10 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`cid` INT( 10 ) NOT NULL ,
+`uid` INT( 10 ) NOT NULL ,
+`user_id` INT( 10 ) NOT NULL ,
+`type` TINYINT( 1 ) NOT NULL ,
+`content` VARCHAR( 500 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+`create_time` INT( 10 ) NOT NULL ,
+`ip` CHAR( 64 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+`state` TINYINT( 1 ) NOT NULL DEFAULT  '1' COMMENT  '0--删除 1--存在'
+) ENGINE = MYISAM CHARACTER SET utf8 COLLATE utf8_general_ci COMMENT =  '举报信息'
+
+-- -------------------------2011/4/25
+ALTER TABLE  `liv_report` CHANGE  `type`  `type` TINYINT( 1 ) NOT NULL COMMENT '举报内容类型：1：帖子，2：视频，3：微博评论，4：相册，5：视频评论，6：相册评论，7：帖子回复'
+
+
+-- -------------------------2011/4/26
+ALTER TABLE  `liv_report` ADD  `url` VARCHAR( 300 ) NOT NULL COMMENT  '举报地址' AFTER  `type` ;
+
+ALTER TABLE  `liv_advertising` ADD  `mark` VARCHAR( 20 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT  '广告标识' AFTER  `id` ;
+
+
+---------------------------2011/4/28
+ALTER TABLE  `liv_report` CHANGE  `type`  `type` TINYINT( 1 ) NOT NULL COMMENT '举报内容类型：0:举报地盘,1：帖子，2：视频，3：微博，4：相册，5：视频评论，6：照片，7：帖子回复，8：微博评论，9：频道，10：用户，11：频道评论'
+
+
+---------------------------2011/5/9
+
+CREATE DATABASE  `sns_activity` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+--
+-- 表的结构 `liv_activity`
+--
+
+CREATE TABLE IF NOT EXISTS `liv_activity` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '发起活动的主键',
+  `user_id` int(10) NOT NULL COMMENT '用户关联标识',
+  `user_name` varchar(100) NOT NULL COMMENT '发起活动的名字',
+  `action_name` varchar(100) NOT NULL COMMENT '活动的主题',
+  `action_sort` tinyint(1) DEFAULT '0' COMMENT '活动种类（0：线上，1：线下）',
+  `type_id` int(10) DEFAULT NULL COMMENT '活动类型',
+  `action_img` varchar(100) NOT NULL COMMENT '活动图标',
+  `start_time` int(10) NOT NULL COMMENT '活动的开始时间',
+  `end_time` int(10) NOT NULL COMMENT '活动的截止时间',
+  `place` varchar(200) NOT NULL COMMENT '活动的具体地点',
+  `need_pay` int(5) NOT NULL COMMENT '判断是否需要花销0：不要 有内容：要',
+  `need_num` int(5) NOT NULL COMMENT '活动人数的上限',
+  `introduce` mediumtext NOT NULL COMMENT '对活动的描述',
+  `yet_join` int(5) NOT NULL DEFAULT '0' COMMENT '已经通过审核的人数',
+  `apply_num` int(5) NOT NULL DEFAULT '0' COMMENT '已经申请的人数',
+  `collect_num` int(11) DEFAULT '0' COMMENT '收藏次数',
+  `concern` tinyint(1) DEFAULT '0' COMMENT '对于是否关注该地盘（活动发起者） 0：不要，1：要',
+  `contact` tinyint(1) DEFAULT '0' COMMENT '对联系方式的要求 0：不要，1：要',
+  `rights` tinyint(1) DEFAULT '0' COMMENT '对权限审核的要求 0：不要，1：要',
+  `link` varchar(250) NOT NULL COMMENT '活动链接',
+  `media_id` int(11) NOT NULL COMMENT '关联微博的媒体ID，用于发布微博时封面为分享图片',
+  `edit_count` tinyint(1) DEFAULT '0' COMMENT '编辑次数',
+  `create_time` int(10) NOT NULL COMMENT '活动的创建时间',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+
+
+--
+-- 表的结构 `liv_activity_apply`
+--
+
+CREATE TABLE IF NOT EXISTS `liv_activity_apply` (
+  `id` int(10) NOT NULL AUTO_INCREMENT COMMENT '活动报名表的主键',
+  `action_id` int(10) NOT NULL COMMENT '活动主键',
+  `user_id` int(10) NOT NULL COMMENT '用户关联标识',
+  `user_name` varchar(30) NOT NULL COMMENT '用户名',
+  `tel` char(15) NOT NULL COMMENT '手机号',
+  `apply_time` int(10) NOT NULL COMMENT '申请的时间',
+  `apply_status` tinyint(1) NOT NULL DEFAULT '1' COMMENT '0：无需审核；1:待审核；2:审核通过；3,审核未通过',
+  `leave_words` varchar(255) DEFAULT NULL COMMENT '申请时的留言',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
+
+
+--
+-- 表的结构 `liv_activity_colloct`
+--
+
+CREATE TABLE IF NOT EXISTS `liv_activity_colloct` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `action_id` int(10) NOT NULL COMMENT '活动标识',
+  `user_id` int(10) NOT NULL COMMENT '收藏者',
+  `create_at` int(10) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='活动收藏' AUTO_INCREMENT=20 ;
+
+
+--
+-- 表的结构 `liv_activity_type`
+--
+
+CREATE TABLE IF NOT EXISTS `liv_activity_type` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(20) NOT NULL COMMENT '类型名称',
+  `num` int(10) DEFAULT '0' COMMENT '活动数目',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='活动类型' AUTO_INCREMENT=8 ;
+
+--
+-- 导出表中的数据 `liv_activity_type`
+--
+
+INSERT INTO `liv_activity_type` (`id`, `name`, `num`) VALUES
+(1, '聚餐/派对', 1),
+(2, '旅游/户外', 1),
+(3, '演出/电影', 0),
+(4, '运动/比赛', 0),
+(5, '摄影/数码', 0),
+(6, '公益/环保', 0),
+(7, '讲座/沙龙', 0);
+
+
+---------------------------2011/5/24
+ALTER TABLE  `liv_thread` ADD  `action_id` INT( 10 ) NOT NULL COMMENT  '活动ID' AFTER  `category_id`
+
+---------------------------2011/5/25
+ALTER TABLE  `liv_member` ADD  `qq_login` CHAR( 35 ) NULL COMMENT  'QQ同步登陆' AFTER  `qq` ;
+
+ALTER TABLE  `liv_member` ADD UNIQUE (
+`qq_login`
+);
+
+ALTER TABLE  `liv_member` CHANGE  `avatar`  `avatar` CHAR( 100 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT  '0.jpg' COMMENT '头像 avatar 属于 用户表liv_member 存储图片路径'
+
+
+---------------------------2011/6/24
+ALTER TABLE  `liv_member` ADD  `cellphone` CHAR( 15 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT  '0' COMMENT '与微博绑定的手机号码' AFTER  `mobile` ;
+
+
+
+
+--------------------------2011/7/27 流媒体
+
+CREATE TABLE  `liv_mms`.`liv_channel` (
+`id` INT( 10 ) NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT  '主键ID',
+`logo` CHAR( 40 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT  '台标',
+`code` CHAR( 20 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT  '台号',
+`name` VARCHAR( 35 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT  '频道名称',
+`state` TINYINT( 1 ) NOT NULL COMMENT  '状态（-1全部，0待审核，1审核通过，2审核不通过）',
+`stream_id` INT( 10 ) NOT NULL COMMENT  '信号ID',
+`output` VARCHAR( 100 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT  '输出流',
+`server_id` INT( 10 ) NOT NULL COMMENT  '服务器ID，冗余数据',
+`is_del` TINYINT( 1 ) NOT NULL COMMENT  '是否删除',
+`create_time` INT( 10 ) NOT NULL COMMENT  '创建时间',
+`update_time` INT( 10 ) NOT NULL COMMENT  '更新时间',
+`ip` CHAR( 64 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT  '创建者IP'
+) ENGINE = MYISAM CHARACTER SET utf8 COLLATE utf8_general_ci COMMENT =  '频道表'
+
+CREATE TABLE  `liv_mms`.`liv_stream` (
+`id` INT( 10 ) NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT  '主键ID',
+`s_name` VARCHAR( 35 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT  '信号名称',
+`s_addr` CHAR( 35 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT  '信号地址',
+`s_brief` VARCHAR( 200 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT  '信号简介',
+`server_id` INT( 10 ) NOT NULL COMMENT  '服务器ID，关联liv_stream_server表',
+`create_time` INT( 10 ) NOT NULL COMMENT  '创建时间',
+`update_time` INT( 10 ) NOT NULL COMMENT  '更新时间',
+`ip` CHAR( 64 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT  '创建者IP'
+) ENGINE = MYISAM CHARACTER SET utf8 COLLATE utf8_general_ci COMMENT =  '信号流 表'
+
+
+CREATE TABLE  `liv_mms`.`liv_stream_server` (
+`id` INT( 10 ) NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT  '主键ID',
+`name` VARCHAR( 35 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT  '服务器名',
+`brief` VARCHAR( 200 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT  '服务器简介',
+`server_name` CHAR( 64 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT  '服务器名（域名地址）',
+`server_path` CHAR( 45 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT  '服务器地址',
+`server_ip` CHAR( 64 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT  '服务器IP',
+`create_time` INT( 10 ) NOT NULL COMMENT  '创建时间',
+`update_time` INT( 10 ) NOT NULL COMMENT  '更新时间',
+`ip` CHAR( 64 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT  '创建者IP'
+) ENGINE = MYISAM CHARACTER SET utf8 COLLATE utf8_general_ci COMMENT =  '服务器表'
+
+
+
+CREATE TABLE  `liv_mms`.`liv_program` (
+`id` INT( 10 ) NOT NULL ,
+`channel_id` INT( 10 ) NOT NULL COMMENT  '频道ID',
+`start_time` INT( 10 ) NOT NULL COMMENT  '开始时间',
+`toff` INT( 6 ) NOT NULL COMMENT  '时长',
+`theme` VARCHAR( 35 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT  '主题',
+`subtopic` VARCHAR( 35 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT  '副主题',
+`type_id` INT( 10 ) NOT NULL COMMENT  '节目类型',
+`dates` varchar(10) NOT NULL COMMENT '日期',
+`weeks` TINYINT( 2 ) NOT NULL COMMENT  '所属周',
+`describe` VARCHAR( 300 ) NOT NULL COMMENT  '描述',
+`create_time` INT( 10 ) NOT NULL COMMENT  '创建时间',
+`update_time` INT( 10 ) NOT NULL COMMENT  '更新时间',
+`ip` CHAR( 64 ) NOT NULL COMMENT  '创建者IP',
+PRIMARY KEY (  `id` )
+) ENGINE = MYISAM COMMENT =  '节目单'
+
+CREATE TABLE  `liv_mms`.`liv_program_item` (
+`id` INT( 10 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`name` VARCHAR( 35 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT  '节目名称',
+`start_time` INT( 10 ) NOT NULL COMMENT  '开始时间',
+`toff` INT( 6 ) NOT NULL COMMENT  '时长',
+`create_time` INT( 10 ) NOT NULL ,
+`update_time` INT( 10 ) NOT NULL ,
+`ip` CHAR( 64 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+`is_taped` TINYINT( 1 ) NOT NULL COMMENT  '是否录播'
+) ENGINE = MYISAM COMMENT =  '节目'
+
+
+ALTER TABLE  `liv_program_record` ADD  `rate` INT( 10 ) NOT NULL DEFAULT  '0' COMMENT  '频率/秒';
+
+
+ALTER TABLE  `liv_network_programme` ADD  `order_id` INT( 10 ) NOT NULL DEFAULT  '0' COMMENT  '排序ID'
+
+ALTER TABLE `liv_program_record` ADD `server_id` INT( 10 ) NOT NULL AFTER `conid`
+
+
+
+
+
+

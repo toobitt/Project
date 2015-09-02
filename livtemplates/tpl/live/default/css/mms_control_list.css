@@ -1,0 +1,70 @@
+/* CSS Document */
+/* 样式重置
+-----------------------------------------------------------------------------------------------------*/
+body{font-size:12px; font-family:"宋体";  margin:0 auto;}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;}
+img     { border:0; }
+ul,li { list-style:none;}
+.clear{ clear:both;}
+.clr{clear:both;font-size:0;line-height:0; height:0;}
+
+
+/*----------piclist--------------*/
+.pic_list{ width:100%;}
+.pic_list li{ width:192px; height:177px;background:#E5E5E5;border-radius:3px;margin:10px 0 10px 10px;  float:left;}
+.pic_list li div.img img,.pic_list div.img a{ width:172px; height:129px;}
+.pic_list li p{ line-height:20px;}
+.pic_list li p a{float:left;margin-left:10px;max-width:85px;}
+.pic_list li p span{ float:right;margin-right:10px;max-width:85px;text-align: right;}
+.pic_list li div.img a{display:block;background:#fff url("{$RESOURCE_URL}zb_load.gif") top left no-repeat;margin:10px 10px 5px;}
+.pic_list li div.zb a.qb{float:right;color:#3F8FD8;text-decoration: underline;cursor:pointer;}
+/*--------------live broadcast------------------*/
+.zb_div{ height:476px; background:#A7A5A6; padding-top:10px;margin-top: 10px;}
+/*---------left------------*/
+.zb_left{ width:405px; float:left; margin-left:10px; _display:inline;}
+.zb_ck{ width:405px; height:309px;}
+.qh_div{ height:139px; width:405px; margin-top:10px;}
+.qh_div .left{ float:left; width:3px; background:url({$RESOURCE_URL}leftbg.jpg) no-repeat; font-size:0; line-height:0; height:139px;}
+.qh_div .center{ float:left; width:379px; background:#D3D1D2;height:136px; border-top:1px solid #919191;border-bottom:1px solid #919191; padding-left:20px;}
+.qh_div .center span.btn,.qh_div .center span.btn2{font-weight:bold;font-size:12px;display: block;
+float: left;line-height: 33px;text-align: center;}
+.qh_div .center span.btn{cursor:pointer; background:url({$RESOURCE_URL}btnbg.jpg) no-repeat; width:66px; height:33px;  border:none;margin: 0 4px;padding:0 5px;text-align: center;}
+.qh_div .center span.btn:hover{background:url({$RESOURCE_URL}btnbg_2.png) no-repeat;color:#155ba3;}
+.qh_div .center span.btn2,.qh_div .center span.btn2:hover,.qh_div .center span.btn:active{cursor: default;background:url({$RESOURCE_URL}btnbg2.jpg) no-repeat; height:33px;border:none;color:#767676;text-shadow: -1px 0px 1px #e6e6e6;}
+.qh_div .right{ float:left; width:3px; background:url({$RESOURCE_URL}rightbg.jpg) no-repeat; font-size:0; line-height:0;height:139px}
+.ys_div,.ys_div_a{ background:url({$RESOURCE_URL}dx.jpg) 0 top no-repeat; width:366px; margin-left:-10px; margin-top:10px; color:#292929; line-height:25px; padding-top:5px; padding-left:15px;}
+.ys_div span{ float:right; padding-right:10px; text-decoration:underline;}
+.ys_div_a{background:url({$RESOURCE_URL}dx.jpg) 0 bottom no-repeat;margin-bottom: 10px;}
+/*---------right------------*/
+.zb_right{ width:400px; float:left;}
+.sp_pic li{ width:190px;margin-bottom:5px; margin-left:10px;float:left;_display:inline;}
+.sp_pic li img{ width:193px; height:151px;}
+.jm_div{ height:139px; width:394px; margin-left:10px;margin-top:-7px;}
+.jm_div .top{margin: 0;float:left; width:394px; background:url({$RESOURCE_URL}topjt.jpg) no-repeat; font-size:0; line-height:0; height:12px;}
+.jm_div .center{ float:left; width:392px; background:#D3D1D2; height:132px;border-left:1px solid #919191;border-right:1px solid #919191;overflow-y:scroll;overflow-x:hidden;}
+.jm_div .center ul{ margin-top:10px}
+.jm_div .center ul li{ line-height:25px; float:left; width:170px; margin-left:15px; color:#282828;}
+.jm_div .center ul li a{color:#282828; text-decoration:none}
+.jm_div .center ul li a:hover{ font-weight: bold; background:url({$RESOURCE_URL}jt.jpg) right center no-repeat; text-decoration:none; padding-right:10px;}
+.jm_div .center ul li span{ color:#656565; margin-right:7px;}
+.jm_div .bottom{ float:left; width:394px; background:url({$RESOURCE_URL}footbg2.jpg) no-repeat; font-size:0; line-height:0;height:5px;}
+.show_channel_info{height:35px;background:url({$RESOURCE_URL}signal.png) no-repeat;padding-left:50px;line-height:35px;}
+.show_channel_info span a{font-style:italic;}
+
+.stream_status{float:right;}
+
+.show_channel_info .t2{font-size:12px;margin-left:5px;}
+
+h2.title_bg{margin: 0 10px;background: url("{$RESOURCE_URL}dottedLine.png") repeat-x scroll 0 bottom;height: 39px;padding: 13px 0 0 15px;font-family: Microsoft YaHei;}
+h2.title_bg span.e{font-size:12px;margin-left:15px;margin-top:15px;color:#999;}
+h2.title_bg span{font-size:16px;margin-left:5px;color:#888;}
+/*----------------视频播放------------------*/
+.live_list{margin:10px 10px;display:inline-block;padding-top:10px;}
+.live_list li{float:left;width:184px;height:138px;border:1px solid lightGrey;margin:0 3px 6px 5px;background:#E5E5E5;border-radius:4px;}
+.live_list li .obj_pri_small{border-radius:4px;-webkit-border-radius:4px;-o-border-radius:4px;}
+.flv_box{margin:0;position:absolute;top:0;left:0;z-index:5}
+.channel_info{margin:0;line-height:30px;color:#fff;position:absolute;bottom:0;left:10px;z-index:10}
+.program_name{margin-left:10px;}
+.live_list li.big_flv{position: relative;width:378px;height:284px;overflow: hidden;border:1px solid lightGrey;float:left;background:#E5E5E5;border-radius:4px;margin-bottom:0;margin-top: 0px;}
+.program_title{width:288px;display:inline-block;text-shadow: 0 0 1px black;}
+.program_video_bg{position:absolute;bottom:0;left:0px;width:38px;background:#000;height:30px;filter:alpha(opacity=40);opacity: 0.4;z-index:8}

@@ -1,0 +1,80 @@
+/*区块列表*/
+.block-list {
+  padding: 10px;
+}
+.block-list > li {
+  width: 346px;
+  height: 170px;
+  padding: 15px;
+  margin: 10px;
+  float: left;
+  background-color: #f0f0f0;
+}
+.page-sort {
+  width: 124px;
+  position: relative;
+}
+.page-sort span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  height: 22px;
+  line-height: 22px;
+  padding: 0 5px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.page-sort .bjt {
+  width: 114px;
+  height: 170px;
+  background-color: #ffffff;
+}
+.page-sort .bjt img {
+  width: 100%;
+  height: 100%;
+}
+.block > span {
+  color: #757575;
+  line-height: 30px;
+}
+.block > span em {
+  font-style: normal;
+}
+.block-box {
+  height: 140px;
+  width: 236px;
+  position: relative;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.block-box li {
+  height: 98px;
+  text-align: center;
+  margin: 0 8px 4px 0;
+  float: left;
+  line-height: 0;
+}
+.block-box li .jt {
+  width: 68px;
+  height: 68px;
+  background-color: #ffffff;
+  line-height: 68px;
+}
+.block-box li img {
+  max-width: 68px;
+  max-height: 68px;
+  vertical-align: middle;
+}
+.block-box li span {
+  width: 65px;
+  line-height: 30px;
+  display: inline-block;
+  color: #000000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.block-box li:nth-child(3n) {
+  margin-right: 0;
+}

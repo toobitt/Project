@@ -1,0 +1,6 @@
+<div class="liv_textarea liv_item" data-required="{cell_is_required}">
+	<span class="cell_name">{cell_name}</span>{cell_more}
+	<span class="cell_textarea">
+	<textarea name="{cell_unique_name}" placeholder="{cell_brief}"></textarea>
+	</span>
+</div>

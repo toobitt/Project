@@ -1,0 +1,21 @@
+/* 投票 */
+.vote h1{font-size:2.2em;}
+.vote header{border-bottom:1px solid #d9d9d9;margin: 0 -10px;padding:0 1em;}
+.vote header p{padding:1em 0;}
+.vote header span{color:#888;font-size:1.4em;}
+.vote header .vote-type{display:inline-block;background:#888;color:white;padding:0 0.5em;}
+.vote header .multi-type{background:#be0201;}
+.vote header .count{float:right;}
+
+.vote-list{padding-top:1.5em;}
+.vote-item{margin-bottom:1.5em;font-size:1.6em;}
+.vote .checkbox{display:inline-block;width:1.2em;height:1.2em;margin-bottom:-0.3em;border:2px solid #888;border-radius:50%;}
+.vote .checkbox.selected{border-color:#be0201;position:relative;}
+.vote .checkbox.selected:before{position:absolute;content:'';background:#fff;bottom:0.2em;left:0.7em;width:0.55em;height:1.1em;-webkit-transform:rotate(45deg);}
+.vote .checkbox.selected:after{position:absolute;content:'';bottom:0.35em;left:0.5em;width:0.5em;height:1.1em;border:2px solid #be0201;-webkit-transform:rotate(45deg);border-top-color:transparent;border-left-color:transparent;}
+
+.vote .handler-btns{margin:2em 0 1em;}
+.vote .submit{background:#be0201;border:1px solid #be0201;color:#fff;}
+
+.vote .result .line{background:red;height:10px;}
+.vote .result .percent{font-size:0.8em;color:#949494;display:inline-block;margin-left:1em;}

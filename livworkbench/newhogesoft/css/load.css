@@ -1,0 +1,20 @@
+/*loading page*/
+.load-head .logo{float:none;margin:0 auto;}
+.load-head .menu{float:none;width:450px;margin:0 auto;padding-left:0;font-size:12px;padding-top:20px;}
+.load-head .menu li a{padding:0 30px 0 0;color:#909090;}
+.load-main{margin-top:40px;height:290px;padding-top:160px;background:url(../images/load_bg.png) no-repeat center;}
+.time-area{width:532px;height:64px;margin:0 auto;}
+.time-area-left,.time-area-right{float:left;width:16px;height:64px;}
+.time-area-left{background:url(../images/time_bg_left);}
+.time-area-mid{float:left;width:500px;height:64px;background:url(../images/time_bg_mid) repeat-x;overflow:hidden;}
+.time-list{margin:20px 0 10px;}
+.time-list li{float:left;width:100px;text-align:center;}
+.hover{color:#57bde5;}
+.time-area-right{background:url(../images/time_bg_right);}
+.intro-list{width:520px;margin:0 auto;padding-top:135px;}
+.intro-list li{display:none;color:#909090;}
+.load-footer-bg{padding-top:15px;border-top:1px solid #d2d2d2;text-align:center;}
+.load-footer-bg .copyright{color:#9a9a9a;}
+.ui-slider-horizontal{height:4px;}
+#slider{cursor:pointer;}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{width:100px;height:15px;margin:-1px 0 0 0;background:url(../images/time_button.png) no-repeat;border:0;background-color:none;cursor:pointer;}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="yes" name="apple-touch-fullscreen" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<link rel="apple-touch-icon-precomposed" href="" />
+<link rel="stylesheet" href="./css/common.css" type="text/css" />
+<link href="./css/bae.css" rel="stylesheet" type="text/css"/>
+<link href="./css/news.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="./js/jquery.js"></script>
+<script type="text/javascript" src="./js/bae_progressbar.js"></script>
+<script type="text/javascript" src="./js/bae_header.js"></script>
+<script type="text/javascript" src="./js/bae_button.js"></script>
+<script type="text/javascript" src="./js/bae_tabs.js"></script>
+<script type="text/javascript" src="./js/bae_banner.js"></script>
+<script type="application/javascript" src="./js/iscroll.js"></script>
+<script type="text/javascript" src="./js/hg_scroll.js"></script>
+<script type="text/javascript" src="./js/jquery.tmpl.min.js"></script>
+<script type="text/javascript" src="./js/news/news.js"></script>
+<script type="text/javascript" src="./js/news/news_ctrl.js"></script>
+<title>新闻</title>
+</head>
+<body>
+	<div class="list-wrap" data-role="page">
+		<div data-role="bae_header">新闻</div>
+		<div class="subnav m2o-flex">
+			<a class="item m2o-flex-one selected" href="">头条</a>
+			<!-- 栏目列表 -->
+		</div>
+		<div class="list-inner">
+			<div id="wrapper" class="wrapper">
+				<div id="scroller">
+					<div class="item index" data-role="news-list">
+						<div class="slider">
+							<div id="flipsnap" class="flipsnap">
+					           <!-- 轮播图 -->
+					        </div>
+					        <div id="indicator" class="pointer">
+					            <span class="current"></span>
+					            <span></span>
+					            <span></span>
+					            <span></span>
+					        </div>
+						</div>
+						首页
+						<ul id="thelist">
+				        </ul>
+					</div>
+					<div class="item" data-role="news-list">
+						栏目二
+					</div>
+					<div class="item" data-role="news-list">
+						栏目三
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="detail-wrap" data-role="page"></div>
+	<div class="comment-wrap" data-role="page"></div>
+</body>
+<script type="text/javascript" src="./js/widget_pc_debug_1.0.0.js"></script>
+<!-- tmpl模板 -->
+<script type="text/x-jquery-tmpl" id="subnav-item-tpl">
+<a class="item m2o-flex-one" _id="${id}">${name}</a>
+</script>
+<script type="text/x-jquery-tmpl" id="slider-item-tpl">
+<div class="item">
+	<img src="${src}">
+</div>
+</script>
+<!--  -->
+</html>

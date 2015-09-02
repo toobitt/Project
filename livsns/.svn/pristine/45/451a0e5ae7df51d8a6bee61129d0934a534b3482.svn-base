@@ -1,0 +1,49 @@
+html{width:100%;height:100%;}
+body{padding:0;margin:0;height:100%;height:100%;background:#2b2b31;font-family: "思源","Helvetica Neue", Helvetica, Arial, sans-serif; font-size:14px; }
+.antialiased{-webkit-font-smoothing:antialiased; }
+.container{width:1180px;padding:0px;margin:0 auto;}
+.transition{-webkit-transition:all 0.3s ease-out; transition:all 0.3s ease-out; }
+.pull-left{float:left;}
+.pull-right{float:right;}
+.overhidden{overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+ul{padding:0;margin:0;}
+li{list-style:none;}
+a{text-decoration:none;}
+.btn {padding: 0;border-radius: 4px;font-size: 14px;cursor:pointer;}
+.btn, .btn:focus, .btn:active:focus {box-shadow: none;outline: none;border: 1px solid transparent;}
+.btn-primary, .btn-primary:hover {background-color: #2b84e0;border-color: #2b84e0;}
+.btn-primary:hover {opacity: 0.8;}
+.alert{font-size:14px;text-align:center;border-radius:4px;border: 1px solid transparent;}
+.alert-success{color: #3c763d;background-color: #dff0d8;border-color: #d6e9c6;}
+.alert-error{color: #a94442;background-color: #f2dede;border-color: #ebccd1;}
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill ,input:focus:-webkit-autofill, textarea:focus:-webkit-autofill, select:focus:-webkit-autofill {background-color: rgb(255,255,255)!important;background-image: none!important;color: rgb(0, 0, 0)!important;box-shadow: 0 0 0px 1000px #fff inset!important;}
+
+/*盒模型结构*/
+.sys-flex,.m2o-flex {display: -moz-box; display: box; display: -webkit-box; }
+.sys-flex-center,.m2o-flex-center{ -webkit-box-align:center; -moz-box-align:center; box-align:center;}
+.sys-flex-one,.m2o-flex-one{-webkit-box-flex:1; -moz-box-flex:1; box-flex:1;}
+.sys-flex-two,.m2o-flex-two{ -webkit-box-flex:2; -moz-box-flex:2; box-flex:2;}
+.sys-vertical,.m2o-vertical{-webkit-box-orient:vertical;-ms-flex-direction:column;}
+.sys-pack-center{-webkit-box-pack: center;}
+
+/*登录注册*/
+.hoge-cloud-login .list-img , .register .list-img{filter:url(blur.svg#blur);-webkit-filter:blur(25px);-moz-filter:blur(25px);-o-filter:blur(25px);filter:blur(25px);filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=25, MakeShadow=false);}
+.hoge-cloud-login .login-box{width:240px;height:280px; padding:20px 10px 0;background:rgb(255,255,255);border-radius:15px; position: absolute;left:50%; top:50%; margin:-130px 0 0 -130px;}
+.hoge-cloud-login .login-logo{display:block;width:100%;height:145px;background:url(images/logo_login.png) no-repeat center center;}
+.hoge-cloud-login .login-item{ padding:0 10px;height:48px;border:1.5px solid #e0e0e0;border-radius:4px;margin:0 auto 20px auto;overflow: hidden;}
+.hoge-cloud-login .login-item-title{height:100%; margin-right:10px; line-height:48px;font-size:14px;color:#ccc; display:inline-block;}
+.hoge-cloud-login .login-item input[type="text"] ,.hoge-cloud-login .login-item input[type="password"]{height: 46px;line-height: 46px;font-size: 14px;border: none;}
+.hoge-cloud-login .login-item input[type="text"]:focus , .hoge-cloud-login .login-item input[type="password"]:focus{border:none;box-shadow: none;outline: none;}
+.hoge-cloud-login .btn-submit {display: block;width: 240px;height: 50px;line-height: 50px;color:#fff;margin:0px auto;font-size:20px;}
+
+.hoge-cloud-login .login-error{width:240px;height:48px;line-height:48px;margin:0 auto 20px auto;}
+.hoge-cloud-login .login-error span{display:block;padding: 0px 10px;}
+
+/*签发列表*/
+.qianfa_list{ background:#eee; }
+.qianfa_list ul{ width:100%;overflow:hidden; }
+.qianfa_list ul li{ background:#fff; min-height:49px;padding:0px 15px;  margin-bottom:10px;}
+.qianfa_list ul li .index-pic{  width: 48px; height: 36px;margin-right: 10px; float:left;}
+.qianfa_list ul li img{   vertical-align: middle; width: 48px; height: 36px; border-radius: 3px;}
+.qianfa_list ul li p{ font-size:14px; color:#333; line-height: 22px;}
+.qianfa_list ul li p .icon{}

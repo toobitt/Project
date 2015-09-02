@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>审核系统</title>
+    <link rel="icon" href="images/cloud.png" type="images/png">
+    <link href="css/index.css" rel="stylesheet" />
+</head>
+<body class="antialiased">
+	<div class="hoge-cloud-login login" >
+		<div class="login-box">
+			<span class="login-logo">审核系统</span>
+			<label class="login-item" for="username">
+				<span class="pull-left login-item-title">账号</span>
+				<input type="text" id="username" name="username"  required class="pull-left"/> 
+			</label>
+			<label class="login-item" for="password">
+				<span class="pull-left login-item-title">密码</span>
+				<input type="password" id="password" name="password"  required class="pull-left"/> 
+			</label>
+			<span class="btn btn-primary btn-submit" >登录</span>
+		</div>
+	</div>
+</body>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/global.js"></script>
+	<script type="text/javascript" src="js/utils.js"></script>
+	<script type="text/javascript" src="js/spin.min.js"></script>
+	<script type="text/javascript" src="js/toast.min.js"></script>
+	<script src="js/login.js"></script>
+</html>

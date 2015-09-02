@@ -1,0 +1,31 @@
+<?php
+$errorConf = array(
+	NOID					=>'未传入查询ID',
+	EXISTS_TUJI				=>'此分类存在图集，无法删除',
+	NODATA					=>'无更新数据',
+	NOMETHOD				=>'方法不存在',
+	EXISTS					=>'分类名称已经存在',
+	JS_FILE_EXISTS			=>'文件已经存在',
+	TYPE_ERROR				=>'文件类型错误',
+	NO_INPUT_TITLE			=>'请输入报料标题！',
+	NO_INPUT_CONTENT		=>'请输入报料内容！',
+	NO_VERIFYCODE			=>'请输入验证码！',
+	NO_SESSIONID			=>'缺少验证码参数！',
+	NEW_MEMBER_ERROR		=>'请求新会员中心错误！',
+	MEMBER_ERROR			=>'请求会员中心错误！',
+	CONTRIBUTE_ERROR		=>'数据提交失败!',
+	NO_MATERIAL_APP			=>'图片服务器未安装!',
+	PICTURE_FILE_ERROR		=>'图片上传异常!',
+	PICTURE_OVER_SIZE		=>'只允许上传100M以下的图片!',
+	MATERIAL_SERVER_ERROR	=>'图片服务器错误!',
+	NO_VIDEO_APP			=>'视频服务器未安装!',
+	VIDEO_FILE_ERROR		=>'视频上传错误！',
+	VIDEO_SERVER_ERROR		=>'视频服务器错误!',
+	UPDATE_FAILED           =>'更新失败！',
+	NO_APP_INFO             =>'无APP信息传入！',
+	CONTRIBUTE_LIMIT		=>'您已参加此活动',
+
+    OPINION_ERR => '审核意见添加失败',
+    OPINION_NO => '该报料不存在',
+);
+?>

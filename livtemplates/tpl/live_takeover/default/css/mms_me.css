@@ -1,0 +1,232 @@
+.channel-info-title {
+	margin: 20px 10px 5px 20px;
+	font-weight: bold;
+	font-size: 2em;
+}
+	.channel-info-title span {
+		margin-left: 0.5em;
+		font-size: 0.5em;
+		color: RGB(162, 162, 162);
+	}
+	#back-init {
+		float: right;
+		margin-top: 10px;
+		cursor: pointer;
+		margin-right: 40px;
+		text-decoration: underline;
+	}
+.main-content {
+	background: RGB(242, 242, 242);
+}
+	.stream-workbench {
+		padding: 25px 15px;
+		border-top: 1px dotted RGB(218, 218, 218);
+		overflow: hidden;
+		min-width: 1064px;
+	}
+		.output-stream {
+			margin-right: 20px;
+			float: left;
+			position: relative;
+			background: url({$RESOURCE_URL}/stream_big.png);
+		}
+			.output-stream object {
+				margin: 12px;
+				background: black;
+			}
+			.flashContent-describle {
+				position: absolute;
+				top: 12px;
+				left: 12px;
+				color: #dbdbd9;
+			}
+			.big-masking {
+				position: absolute;
+				left: 12px;
+				top: 12px;
+				width: 500px;
+				height: 375px;
+			}
+			.big-masking .play-controler {
+				display: none;
+			}
+			.big-masking:hover .play-controler {
+				display: block;
+			}
+			.play-controler span {
+				float: left;
+				width: 140px;
+				height: 140px;
+				margin: 230px 0 0 10px;
+				background: url(../../video_bg_big.png);
+				cursor: pointer;
+			}
+			.play-controler span:hover {
+				background: url(../../video_bg_hover_big.png);
+			}
+			.flashContent-describle div {
+				height: 24px;
+				background: black;
+				opacity: 0.4;
+			}
+			.flashContent-describle span {
+				position: absolute;
+				left: 12px;
+				top: 6px;
+			}
+		.stream-box {
+			width: 450px;
+			height: 400px;
+			float: left;
+		}
+			.stream-box .stream-type {
+				padding: 10px 0 15px 10px;
+				width: 418px;
+				line-height: 26px;
+			}
+				.stream-box .stream-type span {
+					display: inline-block;
+					width: 95px;
+					height: 24px;
+					margin-right: 17px;
+					border: 1px solid RGB(226, 226, 226);
+					border-radius:20px;
+					color: RGB(162, 162, 162);
+					text-align: center;
+					cursor: pointer;
+				}
+				.stream-box .stream-type .current-stream-type {
+					display: inline-block;
+					background: RGB(179,179,179);
+					color: white;
+				}
+				.stream-type div {
+					float: right;
+				}
+				.stream-type div a {
+					margin-left: 20px;
+					font-weight: bold;
+					cursor: pointer;
+				}
+			.stream-box #stream li {
+				float: left;
+				width:194px;
+				height:146px;
+				position: relative;
+				margin: 0 10px 15px 0;
+				padding: 10px;
+				background: url({$RESOURCE_URL}/stream_small.png);
+				cursor: pointer;
+			}
+				.stream-box #stream li object {
+					background: black;
+				}
+				.stream-describle {
+					position: absolute;
+					left: 10px;
+					top: 10px;
+					text-align: center;
+					color: #dbdbd9;
+				}
+				.stream-describle div {
+					height: 2em;
+					background: black;
+					opacity: 0.4;
+				}
+				.stream-describle span {
+					position: absolute;
+					left: 12px;
+					top: 6px;
+				}
+				#stream .current-stream {
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 194px;
+					height: 146px;
+					border: 10px solid #62abf0;
+					border-radius: 3px;
+				}
+				.small-masking {
+					position: absolute;
+					left: 10px;
+					top: 10px;
+					width: 194px;
+					height: 146px;
+					display: none;
+				}
+			#backup {
+				display: none;
+			}
+			#backup li {
+				float: left;
+				margin: 0 10px 17px 0;
+				position: relative;
+				width: 136px;
+				height: 102px;
+			}
+				#backup .beibo-img {
+					cursor: pointer;
+				}
+				.backup-describle {
+					position: absolute;
+					left: 0;
+					top: 78px;
+					color: #dbdbd9;
+				}
+				.backup-describle div {
+					height: 24px;
+					width: 136px;
+					background: black;
+					opacity: 0.4;
+				}
+				.backup-describle span {
+					position: absolute;
+					left: 12px;
+					top: 6px;
+				}
+				.backup-preview {
+					display: none;
+					position: absolute;
+					right: 0;
+					top: 0;
+					color: #dbdbd9;
+				}
+				.backup-preview div {
+					height: 24px;
+					width: 48px;
+					background: black;
+					opacity: 0.4;
+				}
+				.backup-preview span {
+					position: absolute;
+					left: 5px;
+					top: 6px;
+					padding-left: 16px;
+					background: url("{$RESOURCE_URL}/preview.png") no-repeat scroll 0 center transparent;
+				}
+				#backup .current-backup {
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 130px;
+					height: 96px;
+					border: 3px solid #62abf0;
+				}
+				#backup li:hover .backup-preview {
+					display: block;
+					cursor: pointer;
+				}
+
+
+.intro {
+	border-top: 1px dotted RGB(218, 218, 218);
+	padding: 10px 5px 10px 23px;
+	font: 1.2em;
+	line-height: 1.8;
+	color: RGB(162, 162, 162);
+}
+	.intro ol {
+		margin-left: 2em;
+	}
+

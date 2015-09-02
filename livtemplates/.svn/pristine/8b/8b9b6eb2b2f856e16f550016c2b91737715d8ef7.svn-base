@@ -1,0 +1,7 @@
+@charset "utf-8";
+.interview-bj,.interview-sc{width:35px}
+.interview-slt{width:70px}
+.interview-fl{width:100px;}
+.interview-zt{width:50px;}
+.interview-tjr{width:120px}
+.interview-biaoti-overflow{max-width:400px}

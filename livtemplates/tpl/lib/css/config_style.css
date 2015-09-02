@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+.config_box{width:800px;height:900px;border-right:1px dotted gray;}
+.config_box .db_config_box{width:100%;height:374px;border-bottom:1px dotted gray;}
+.config_box .db_config_box .child_box{width:100%;margin-top:10px;}
+.config_box .db_config_box .child_box .delete{width:20px;height:20px;cursor:pointer;margin-top:5px;background:url({$RESOURCE_URL}chg_plan_add_del.png) -23px -3px no-repeat;}
+.config_box .db_config_box .child_box .add{width:20px;height:20px;cursor:pointer;margin-top:5px;background:url({$RESOURCE_URL}chg_plan_add_del.png) -3px -3px no-repeat;}
+.config_box .db_config_box .child_box .define_c{width:405px;height:30px;float:left;margin-left:10px;}
+.define_c div{float:left;}
+.define_c input{float:left;}

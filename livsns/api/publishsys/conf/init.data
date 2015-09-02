@@ -1,0 +1,7 @@
+INSERT INTO `liv_template_style` (`id`, `title`, `mark`, `state`, `isdefault`, `isusing`, `site_id`, `create_time`, `update_time`, `user_id`, `user_name`, `appid`, `appname`) VALUES
+(1, '默认套系', 'default' , 1, 1, 0, 0, 1361862745, 1363850943, 1, 'hogesoft', 55, 'MCP网页版');
+
+INSERT INTO `liv_layout_node` (`id`, `title`, `user_id`, `user_name`, `create_time`, `update_time`) VALUES
+(1, '常用布局', 0, '', 0, 0),
+(2, '个性布局', 0, '', 0, 0),
+(3, '其他布局', 0, '', 0, 0);

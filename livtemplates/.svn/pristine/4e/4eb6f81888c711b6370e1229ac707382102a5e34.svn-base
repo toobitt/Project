@@ -1,0 +1,1 @@
+{if $videoinfo}	{foreach $videoinfo as $video}		<div id="video_{$video['id']}"><img src="{$video['img']}" width="100" height="80" /><br /><input type="checkbox" class="n-h selectVideo" name="selectVideo" value="{$video['id']}" /><em class="videoDelBtn" video_id="{$video['id']}">删除</em></div>	{/foreach}{/if}

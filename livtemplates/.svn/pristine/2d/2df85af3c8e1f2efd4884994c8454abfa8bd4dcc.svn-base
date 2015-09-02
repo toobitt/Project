@@ -1,0 +1,396 @@
+/*期刊左侧*/
+.nav-box {
+  display: block;
+}
+.m2o-main {
+  width: 100%;
+  min-height: 580px;
+}
+.m2o-l {
+  width: 230px;
+  padding: 10px;
+  border-right: 1px solid #cccccc;
+}
+.m2o-cont {
+  padding: 7px 0 7px 10px;
+}
+.m2o-cont label {
+  width: 52px;
+  text-align: right;
+  min-height: 24px;
+  padding-top: 2px;
+  line-height: 24px;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: top;
+  color: #999999;
+}
+.m2o-cont p,
+.m2o-cont input {
+  font-size: 14px;
+  color: #000000;
+  line-height: 26px;
+  display: inline-block;
+}
+.m2o-cont input {
+  width: 142px;
+  border: 1px solid #fff;
+  height: 22px;
+  margin: 0 2px;
+  text-indent: 6px;
+}
+.m2o-cont input:focus {
+  border-color: #d7d7d7;
+  box-shadow: none;
+}
+.m2o-cont select {
+  margin-top: 5px;
+}
+.m2o-cont img {
+  width: 120px;
+  height: 156px;
+}
+.m2o-cont .text {
+  width: 100px;
+}
+.m2o-cont .num {
+  width: 38px;
+}
+.m2o-cont em {
+  margin-left: 10px;
+  font-style: normal;
+  color: #999999;
+  display: inline-block;
+  text-align: right;
+  width: 15px;
+}
+.m2o-btn {
+  padding: 15px 12px;
+  text-align: center;
+}
+.cont-area .m2o-cont input {
+  border: 1px solid #d7d7d7;
+}
+/*期刊列表*/
+.magazine-list {
+  padding: 12px 28px;
+}
+.magazine-list li {
+  margin: 8px 15px;
+}
+/*文章列表*/
+.m2o-list {
+  position: relative;
+}
+.m2o-paixu a {
+  background: url("{$RESOURCE_URL}bg-all.png") no-repeat -43px -27px;
+  width: 14px;
+  height: 13px;
+  float: left;
+}
+.m2o-paixu input {
+  box-shadow: none;
+}
+.m2o-classify {
+  width: 80px;
+  color: #85accd;
+}
+.m2o-author {
+  width: 100px;
+  color: #999999;
+}
+.m2o-editor {
+  width: 70px;
+  color: #999999;
+}
+.m2o-time .name,
+.m2o-time .time {
+  color: #999999;
+}
+.m2o-state {
+  position: relative;
+}
+.m2o-bottom {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.list-config a {
+  cursor: pointer;
+  display: inline-block;
+  line-height: 28px;
+  margin: 2px 5px 0;
+  text-decoration: underline;
+}
+.common-list-empty {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Microsoft YaHei';
+  color: #da2d2d;
+  min-height: 41px;
+  line-height: 41px;
+}
+/*新增期刊*/
+#add-issue {
+  width: 488px;
+}
+#add-issue .pop-item ul {
+  top: 25px;
+}
+#add-issue .pop-item ul li {
+  line-height: 26px;
+}
+#add-issue .pop-add-content {
+  padding: 20px 10px;
+}
+.pop-item {
+  padding: 0 0 13px 10px;
+  color: #d7d7d7;
+}
+.pop-item .down_list {
+  width: 215px!important;
+}
+.pop-item .down_list ul {
+  width: 217px;
+}
+.pop-item .period-cover {
+  float: left;
+  width: 118px;
+  height: 154px;
+  background-color: #f0f0f0;
+  border: 1px solid #cfcfcf;
+  text-align: center;
+  color: #999999;
+  position: relative;
+  font-size: 16px;
+  line-height: 154px;
+  margin-right: 20px;
+}
+.pop-item .period-cover img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.pop-item label {
+  width: 52px;
+  text-align: right;
+  min-height: 24px;
+  line-height: 24px;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: top;
+  color: #999999;
+}
+.pop-item span,
+.pop-item input {
+  font-size: 14px;
+  color: #000000;
+  line-height: 26px;
+}
+.pop-item input {
+  border: 1px solid #d7d7d7;
+  height: 22px;
+  margin: 0 2px;
+  text-indent: 6px;
+  width: 213px;
+}
+.pop-img {
+  padding-bottom: 0;
+}
+.fenge-dotted {
+  background: url("{$RESOURCE_URL}dottedLine.png") repeat-x scroll center;
+}
+.m2o-text {
+  padding: 7px 0 0 10px;
+}
+.m2o-text ul {
+  width: 395px;
+  display: inline-block;
+}
+.m2o-text li {
+  width: 190px;
+  float: left;
+  margin: 0px 4px 13px 0;
+}
+.m2o-text .text {
+  width: 100px;
+}
+.m2o-text .num {
+  width: 40px;
+}
+.artical-sort li a {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  vertical-align: top;
+  margin: 4px 0 0 2px;
+   background-size:21px 21px;
+}
+.artical-sort li:hover .text-del {
+  opacity: 1;
+}
+.artical-sort li .contract-value {
+  width: 110px;
+}
+.text-del {
+  background: url("{$RESOURCE_URL}magazine/text-del.png") no-repeat scroll center;
+  opacity: 0;
+}
+.text-add {
+  background: url("{$RESOURCE_URL}magazine/text-add.png") no-repeat scroll center;
+  opacity: 1;
+}
+.result-tip {
+  overflow: hidden;
+  z-index: -1;
+  position: absolute;
+  top: 350px;
+  left: 122px;
+  background: #ffffff;
+  text-align: center;
+  margin-left: -100px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  border: 3px solid #6ea5e8;
+  -webkit-box-shadow: 0 0 4 4 rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 4 4 rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 4 4 rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  line-height: 50px;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  transition: all 2s ease;
+  opacity: 0;
+}
+.loading {
+  position: absolute;
+  top: 200px;
+  left: 125px;
+  width: 50px;
+  margin-left: -25px;
+  z-index: 990;
+  display: none;
+}
+/*最新杂志*/
+.m2o-lastest {
+  width: 175px;
+  border-right: 1px solid #cccccc;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.lastest-list {
+  padding: 0;
+}
+.lastest-list li {
+  width: 140px;
+  height: 212px;
+  padding: 10px;
+  margin: 0 0 1px 0;
+}
+.lastest-list li:hover,
+.lastest-list li.selected {
+  background-color: #a5c73c;
+}
+.lastest-list li:not(:last-child):hover .mag-img:after,
+.lastest-list li.selected .mag-img:after {
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) inset;
+  -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) inset;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) inset;
+}
+.lastest-list li:hover p,
+.lastest-list li.selected p {
+  color: #fff;
+}
+.lastest-list li:hover .period-href,
+.lastest-list li.selected .period-href {
+  background-color: #5f9be4;
+}
+.lastest-list li:hover h4,
+.lastest-list li.selected h4 {
+  color: #ffffff;
+}
+.lastest-list li > p {
+  margin-top: 2px;
+  padding-left: 10px;
+}
+.lastest-list li > p span {
+  margin-right: 3px;
+}
+.lastest-list li h4 {
+  padding-left: 10px;
+  margin-top: 2px;
+  height: 21px;
+}
+.lastest-list .mag-img {
+  width: 140px;
+  height: 176px;
+  border: 10px solid #ffffff;
+}
+.lastest-list .mag-img p {
+  width: 115px;
+  height: 22px;
+  line-height: 22px;
+  position: absolute;
+  top: 152px;
+  left: 20px;
+}
+.lastest-list .del {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.load-more {
+  line-height: 30px;
+  font-size: 14px;
+  color: #666666;
+  text-indent: 43px;
+  border-top: 1px solid #cccccc;
+  background: url("{$RESOURCE_URL}person/down_b-2x.png") no-repeat scroll 100px center;
+  cursor: pointer;
+}
+.period-href {
+  position: absolute;
+  top: 154px;
+  right: 20px;
+}
+.magazine-profile {
+  height: 85px;
+  border-bottom: 1px solid #cccccc;
+}
+.magazine-profile h2 {
+  width: 300px;
+  margin: 20px 0 0 20px;
+  height: 50px;
+  line-height: 65px;
+}
+.magazine-profile ul {
+  margin-left: 20px;
+}
+.magazine-profile li {
+  float: left;
+  height: 24px;
+  line-height: 24px;
+  margin-right: 18px;
+}
+.magazine-profile label {
+  color: #999999;
+}
+.magazine-profile span {
+  font-weight: bold;
+}
+.magazine-menu {
+  float: right;
+  margin-top: -35px;
+}
+.magazine-menu a {
+  margin-right: 10px;
+}

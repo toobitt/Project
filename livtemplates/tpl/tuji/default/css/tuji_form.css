@@ -1,0 +1,217 @@
+body{background:#F2F2F2 !important;}
+.form-box{width:960px;background:#464646;}
+.form-box{
+    margin: 0 10px 0 2px;
+    position: relative;
+    -webkit-box-shadow: 0px 0px 5px #CCC;
+    -moz-box-shadow: 0px 0px 5px #ccc;
+    -o-box-shadow: 0px 0px 5px #ccc;
+    box-shadow: 0px 0px 5px #CCC;
+    clear: both;
+    border: 1px solid #CCC;
+}
+.form-info{padding:10px;background:#fff;}
+.form-title{border-bottom:1px dashed #d9d9d9;padding:10px;}
+.form-del{float:right;font-size:12px;line-heiht:1;color:#838383;text-decoration:underline;margin:10px 0 0 0;}
+.form-inputs{padding:15px 0 15px 8px;border-bottom:1px dashed #d9d9d9;}
+.form-inputs-item-box{float:left;}
+.form-inputs-left{width:600px;}
+.form-inputs-middle{width:170px;}
+.form-inputs-right{width:150px;}
+.form-inputs-item{margin-bottom:10px;}
+.form-button{margin-top:10px;}
+.form-button input{float:right;}
+.form-upload{background:#464646;height:100%;overflow:auto;position:relative;z-index:1;}
+
+.f-title, .f-textarea{width:585px;}
+.f-textarea{height:44px;}
+.form-imgs{margin:10px 0 0 10px;padding-bottom:30px;}
+
+.form-add{float:left;width:160px;height:120px;border:2px dashed #7e7e7e;line-height:124px;text-align:center;cursor:pointer;background:#656565;position:absolute;overflow:hidden;color:#9d9d9d;font-size:16px;margin:10px 0 0 10px;}
+.form-add:hover{border-color:#3692e7;color:#3692e7;}
+.form-file{position:absolute;width:300px;height:124px;left:0;top:0;opacity:0;z-index:-1;}
+.form-img-each, .placeholder{position:absolute;left:0;top:0;padding:10px;width:164px;height:164px;}
+.form-img-each-mask{position:absolute;z-index:10001;left:0;top:0;border:1px dashed #ccc;background:#464646;height:182px;width:182px;}
+.form-img-each-transition{
+    -webkit-transition:all 0.3s;
+    -moz-transition:all 0.3s;
+    -o-transition:all 0.3s;
+    transition:all 0.3s;
+}
+.form-img-each.current, .form-img-each.current-nooption{background:#292929;}
+.form-img-box{width:160px;height:120px;border:2px solid transparent;display:table-cell;vertical-align:middle;text-align:center;}
+.form-img-title{margin-top:11px;position:relative;height:20px;color:#fff;z-index:10000;}
+.form-img-title-content{height:20px;line-height:20px;overflow:hidden;text-align:center;}
+.form-img-title textarea{position:absolute;width:160px;padding:2px;overflow-y:hidden;}
+.form-option{position:absolute;top:-57px;left:0;width:100%;z-index:100;background:#464646;}
+.form-option div{border-bottom:1px solid #686868;padding:15px;}
+.form-img-fm{background:url({$RESOURCE_URL}tuji/fm.png) no-repeat;width:16px;height:46px;position:absolute;left:0;top:0;z-index:100;display:none;cursor:pointer;left:10px;top:6px;}
+.form-img-fm:hover{background-image:url({$RESOURCE_URL}tuji/fm_current.png);}
+.form-img-option{position:absolute;z-index:999;top:112px;left:12px;width:160px;height:20px;display:none;}
+.form-img-option-mask{position:absolute;width:100%;height:100%;z-index:1;opacity:0.7;background:#000;}
+.form-img-option-box{position:relative;z-index:2;margin-top:3px;}
+.form-img-option-box span{float:left;background:url({$RESOURCE_URL}tuji/a.png) no-repeat;width:19px;height:15px;cursor:pointer;}
+.form-img-option-box .form-img-obig{background-image:url({$RESOURCE_URL}tuji/d.png);margin-left:10px;width:16px;height:13px;display:none;}
+.form-img-option-box .form-img-obig:hover{background-image:url({$RESOURCE_URL}tuji/dd.png);}
+.form-img-option-box .form-img-oleft{background-image:url({$RESOURCE_URL}tuji/a.png);margin-left:54px;}
+.form-img-option-box .form-img-oleft:hover{background-image:url({$RESOURCE_URL}tuji/aa.png);}
+.form-img-option-box .form-img-oright{background-image:url({$RESOURCE_URL}tuji/b.png);margin-left:14px;}
+.form-img-option-box .form-img-oright:hover{background-image:url({$RESOURCE_URL}tuji/bb.png);}
+.form-img-option-box .form-img-odel{background-image:url({$RESOURCE_URL}tuji/c.png);float:right;margin-right:8px;display:none;}
+.form-img-option-box .form-img-odel:hover{background-image:url({$RESOURCE_URL}tuji/cc.png);}
+
+.form-img-center{position:absolute;left:92px;top:72px;height:0;width:0;z-index:101;}
+.form-img-center img{position:relative;left:-50%;top:-50%;}
+
+.form-img-each.current .form-img-option, .form-img-each.current .form-img-fm{display:block;}
+.form-img-each.current-nooption .form-img-option, .form-img-each.current-nooption .form-img-fm{display:none;}
+.form-img-each.isfm .form-img-fm{display:block;background-image:url({$RESOURCE_URL}tuji/fm_current.png);}
+.form-img-each.selected .form-img-box{border-color:#3692e7;}
+.placeholder{background:#fff;opacity:0.8;}
+
+.form-des-number{color:#b0b0b0;height:20px;line-height:20px;padding:10px 15px 0;}
+.form-des-number span{color:red;margin:0 3px;}
+.form-des-box,.form-link-box{background:#000;color:#fff;border-bottom:1px solid #686868;display:none;}
+
+.form-option-del{text-decoration:underline;}
+.form-option .form-change-des{color:#777;}
+.form-option .form-change-des.can-option{color:#fff;text-decoration:underline;}
+.form-option-cancel{background:#282828;height:26px;line-height:26px;color:#fff;padding:0 10px;display:none;float:left;cursor:pointer;}
+.form-option-cancel{
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    -o-border-radius:2px;
+    border-radius:2px;
+}
+.form-option-cancel:hover{background:#417aaf;}
+
+.form-des-box textarea{margin:5px 0 10px 15px;position:relative;z-index:1000000;}
+.sort-box-with-show{background:#f2f2f2;padding-bottom:10px;}
+.sort-box-with-show p{padding-bottom:15px;}
+.tuji-sort-box-outer{width:211px;background:#f9f9f9;}
+.tuji-sort-box{padding: 0 10px;}
+#sort-box p {
+	-moz-transition: 0.5s padding-bottom;
+	-webkit-transition: 0.5s padding-bottom;
+	transition: 0.5s padding-bottom;;
+}
+.form-img-box .suo{
+    vertical-align:middle;
+    -webkit-backface-visibility: hidden;
+}
+.form-img-box .suo.transform-left{
+    -webkit-transition : all 0.3s ease-in 0s;
+    -moz-transition : all 0.3s ease-in 0s;
+    -o-transition : all 0.3s ease-in 0s;
+    transition : all 0.3s ease-in 0s;
+    -webkit-transform : rotate(-90deg);
+    -moz-transform : rotate(-90deg);
+    -o-transform : rotate(-90deg);
+    transform : rotate(-90deg);
+}
+.form-img-box .suo.transform-right{
+    -webkit-transition : all 0.3s ease-in 0s;
+    -moz-transition : all 0.3s ease-in 0s;
+    -o-transition : all 0.3s ease-in 0s;
+    transition : all 0.3s ease-in 0s;
+    -webkit-transform : rotate(90deg);
+    -moz-transform : rotate(90deg);
+    -o-transform : rotate(90deg);
+    transform : rotate(90deg);
+}
+
+
+
+#tuji_sort{position:absolute;left:0;top:35px;z-index:10000;width:160px;overflow:hidden;}
+
+.css_column_id{display:none !important;}
+.form-number-animate{position:absolute;background:red;height:20px;width:20px;border-radius:10px;text-align:center;line-height:20px;font-weight:bold;color:#fff;}
+
+.form-middle{top:40px;overflow:hidden;}
+.form-middle{
+    -webkit-box-shadow:0 0 5px 1px RGBA(133, 133, 131, 0.75);
+    -moz-box-shadow:0 0 5px 1px RGBA(133, 133, 131, 0.75);
+    -o-box-shadow:0 0 5px 1px RGBA(133, 133, 131, 0.75);
+    box-shadow:0 0 5px 1px RGBA(133, 133, 131, 0.75);
+}
+.form-dioption-title .input-hide, .form-dioption-brief .input-hide{color:#000;}
+.form-img-reddel{background:#464646;cursor:pointer;position:absolute;left:0;top:0;border:2px solid #fff;height:16px;width:16px;display:none;color:#fff;font-weight:bold;font-size:14px;line-height:14px;text-align:center;}
+.form-img-reddel{
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -o-border-radius:10px;
+}
+/*水印*/
+.water-pic{position:absolute;left:-400px;width: 215px;height:600px;background: #f9f9f9;overflow: hidden;overflow-y: scroll;transition: left .5s;-webkit-transition: left .5s;z-index:999999999}
+.water-pic input{height: auto;margin: 0 10px;}
+.water-pic .edit-slide-title{position: relative;border-bottom: 1px solid #e7e7e7;height: 43px;line-height: 43px;text-align: center;margin: 0 10px;}
+.water-pic .edit-slide-title .edit-slide-close{position: absolute;right: 10px;top: 17px;cursor: pointer;line-height: 1;height: 8px;width: 8px;background: url({$RESOURCE_URL}slide-close.png) no-repeat;text-indent: -100px;overflow: hidden;}
+.water-pic li{position: relative;margin: 0 10px;border-bottom: 1px solid #E7E7E7;cursor: pointer;}
+.water-pic li > div{height: 55px;display: table-cell;vertical-align: middle;}
+.water-pic li >div p{border: 1px solid #E0DCDB;width: 58px;height: 42px;line-height: 42px;vertical-align: middle;display: inline-block;text-align: center;margin-right: 10px;}
+.water-pic li img{max-width: 58px;max-height: 42px;}
+.water-pic li .water-pic-title{display:inline-block;max-width:120px;overflow:hidden;vertical-align:middle;text-overflow:ellipsis;height:18px;}
+.water-pic li .water-pic-title.hasimg{max-width:70px;}
+.left{left:0px!important;}
+
+
+
+.form-button-box{float:left;color:#fff;cursor:pointer;}
+.form-button-left, .form-button-middle, .form-button-right{float:left;height:26px;line-height:26px;text-align:center;}
+.form-button-left, .form-button-right{width:3px;background:url({$RESOURCE_URL}tuji/button-left.png) no-repeat;}
+.form-button-right{background-image:url({$RESOURCE_URL}tuji/button-right.png);}
+.form-button-middle{padding:0 5px;background:url({$RESOURCE_URL}tuji/button-middle.png) repeat-x;}
+
+.form-button-box:hover .form-button-left{background-image:url({$RESOURCE_URL}tuji/button-left-hover.png);}
+.form-button-box:hover .form-button-right{background-image:url({$RESOURCE_URL}tuji/button-right-hover.png);}
+.form-button-box:hover .form-button-middle{background-image:url({$RESOURCE_URL}tuji/button-middle-hover.png);}
+
+.form-button-box.form-button-cannot .form-button-left{background-image:url({$RESOURCE_URL}tuji/button-left-cannot.png);}
+.form-button-box.form-button-cannot .form-button-middle{background-image:url({$RESOURCE_URL}tuji/button-middle-cannot.png);}
+.form-button-box.form-button-cannot .form-button-right{background-image:url({$RESOURCE_URL}tuji/button-right-cannot.png);}
+
+.form-button-box.form-button-cannot{color:#7b7b7b;cursor:default;}
+
+.form-select-all input{vertical-align:middle;}
+.form-select-all em{font-style:normal;font-size:10px;}
+
+.form-select-all, .form-change-des, .form-option-del, .form-batch-watermark{float:left;margin-right:30px;}
+.form-select-all input{height:auto;line-height:26px;margin-bottom:3px;margin-right:6px;}
+
+/* 水印选择框 */
+.watermark-btn{position:absolute;cursor:pointer;bottom:-17px;right:-12px;height:20px;padding:0 5px;background:#999;color:#fff;line-height:20px;text-align:center;white-space: nowrap;text-overflow: ellipsis;width:50px;overflow:hidden;}
+.form-add .watermark-btn{bottom:0;right:0;}
+.set-watermark-box{display:none;top:20px;left:20px;position:absolute;padding-bottom:10px;background:#3b3b3b;border:1px solid #626262;width:380px;z-index:10001;}
+.set-watermark-box .arrow{position:absolute;top:-13px;border:6px solid transparent;border-bottom-color:#626262;}
+.set-watermark-box .arrow:after{position:absolute;content:'';top:-5px;left:-6px;width:0;height:0;border:6px solid transparent;border-bottom-color:#3b3b3b;}
+.set-watermark-box .down{position:absolute;border:6px solid transparent;border-top-color:#626262;}
+.set-watermark-box .down:after{position:absolute;content:'';top:-7px;left:-6px;width:0;height:0;border:6px solid transparent;border-top-color:#3b3b3b;}
+.set-watermark-box ul{margin-right:-1px;max-height:270px;min-height:270px;overflow:hidden;overflow-y:auto;}
+.set-watermark-box li{float:left;border-bottom:1px dotted #464646;border-right:1px dotted #464646;cursor:pointer;}
+.set-watermark-box .watermark-content{width:110px;height:52px;line-height:52px;border:1px solid transparent;margin:4px;}
+.set-watermark-box .watermark-content a{float:left;margin:4px 0 4px 4px;display:inline-block;width:60px;height:44px;background:#323232;}
+.set-watermark-box .watermark-content .name{text-indent:4px;color:#dadada;overflow: hidden;text-overflow: ellipsis;white-space:nowrap;}
+.set-watermark-box li:hover .watermark-content{background:#525252;}
+.set-watermark-box .selected .watermark-content{border-color:#6ea5e8;}
+.set-watermark-box li img{width:100%;max-height:100%;}
+.watermark-btns{margin-top:10px}
+.watermark-btns .handle-btn{display:inline-block;color:#fff;cursor:pointer;padding:0 20px;height:28px;line-height:28px;background:#7e7e7e;border-radius:2px;margin:0 5px;}
+.watermark-btns .handle-btn:hover{background-color:#525252;}}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2) {
+    .form-button-left, .form-button-right{background-image:url('{$RESOURCE_URL}tuji/button-left-2x.png');background-size:3px 26px;}
+    .form-button-right{background-image:url({$RESOURCE_URL}tuji/button-right-2x.png);background-size:3px 26px;}
+    .form-button-middle{background-image:url({$RESOURCE_URL}tuji/button-middle-2x.png);background-size:3px 26px;}
+
+    .form-button-box:hover .form-button-left{background-image:url({$RESOURCE_URL}tuji/button-left-hover-2x.png);background-size:3px 26px;}
+    .form-button-box:hover .form-button-right{background-image:url({$RESOURCE_URL}tuji/button-right-hover-2x.png);background-size:3px 26px;}
+    .form-button-box:hover .form-button-middle{background-image:url({$RESOURCE_URL}tuji/button-middle-hover-2x.png);background-size:3px 26px;}
+
+    .form-button-box.form-button-cannot .form-button-left{background-image:url({$RESOURCE_URL}tuji/button-left-cannot-2x.png);background-size:3px 26px;}
+    .form-button-box.form-button-cannot .form-button-middle{background-image:url({$RESOURCE_URL}tuji/button-middle-cannot-2x.png);background-size:3px 26px;}
+    .form-button-box.form-button-cannot .form-button-right{background-image:url({$RESOURCE_URL}tuji/button-right-cannot-2x.png);background-size:3px 26px;}
+}

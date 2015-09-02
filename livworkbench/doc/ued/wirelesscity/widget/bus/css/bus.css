@@ -1,0 +1,149 @@
+html,body{height:100%;}
+
+.bus-inner{width:290px;margin:0 auto;padding-top:20px;}
+.bus-inner .vertical-btns{margin-top:20px;}
+
+/* wrapper */
+.wrapper{position:absolute;bottom:0;top:111px;left:10px;right:10px;}
+.wrapper .scroll{width:100%;}
+.wrapper.collect-wrap{top:151px;left:5px;right:5px;}
+.station-detail .wrapper{top:165px;}
+
+/* btns */
+.common-btn{display:block;text-align:center;margin-bottom:15px;height:44px;line-height:44px;color:#fff;border-bottom:2px solid #24a87b;background:#3bc697;}
+.space-between-btns{justify-content: space-between;}
+.square-btn{display:block;height:75px;width:75px;margin-right:15px;background:url(../images/bus/bus_button_interchange.png);}
+.square-btn.route{background-image:url(../images/bus/bus_button_route.png);}
+.square-btn.station{background-image:url(../images/bus/bus_button_station.png);}
+
+/* 输入框 */
+.common-input-box{position:relative;width:290px;margin:0 auto;border-bottom:2px solid #cdcdcd;background:#fff;}
+.input-item{height:50px;border-bottom:1px solid #ddd;}
+.input-item:last-child{border:none;}
+.input-item .icon{display:block;width:22px;height:22px;margin:0 13px;}
+.input-item .input{display:block;border: none;height: 100%;padding: 0;}
+.input-item .input:focus{outline:none;}
+.input-item .handle-btn{display:block;width:50px;height:100%;background:url() no-repeat center;}
+.input-item .handle-btn.clear{background-image:url(../images/bus/bus_textfield_clear.png);}
+.input-item .handle-btn.location{background-image:url(../images/bus/bus_textfield_location.png);}
+.input-item .search-btn{display:block;width:60px;cursor:pointer;color:#fff;background:#3b9ac6;line-height:50px;font-size:16px;text-align:center;}
+
+/* 小图标 */
+.icon-search{background-image:url(../images/bus/bus_icon_search.png);}
+.icon-route{background-image:url(../images/bus/bus_icon_route.png);}
+.icon-station{background-image:url(../images/bus/bus_icon_station.png);}
+.icon-interchange{background-image:url(../images/bus/bus_textfield_interchange.png);}
+
+/* 地图上定位图标 */
+.bus-map-icon{position:fixed;bottom:24px;width:44px;height:34px;background:#3f6d82;z-index:1;}
+.bus-map-icon.getloc{background-image:url(../images/bus/bus_map_getloc.png);}
+.bus-map-icon.map{right:0;}
+
+.blue{color:#3b9ac6;}
+.red{color:#dd5858;}
+.green{color:#3bc697;}
+/* 公交信息 */
+.bus-item{border-bottom:2px solid #cbcbcb;background:#fff;color:#999;margin-bottom:10px;}
+.bus-item .bus-base-info{width:110px;}
+.bus-item .bus-info{height:70px;}
+.bus-item .handle{height:30px;background:#fafafa;border-top:1px solid #ddd;}
+.bus-item .bus-num{font-size:40px;margin-left:15px;}
+.bus-item .bus-special-flag{font-size:10px;margin-left:15px;}
+.bus-item .bus-end{font-size:18px;margin-bottom:12px;}
+.bus-item .nearest{font-size:13px;}
+.bus-item .handle{padding-left:15px;}
+.bus-item .handle .btn{display:block;height:100%;width:60px;background:url(../images/bus/bus_route_reverse.png);}
+.bus-item .handle .favor{background-image:url(../images/bus/bus_route_favor.png);}
+.bus-item .handle .favored{background-image:url(../images/bus/bus_route_favored.png);}
+
+/* 定位失败 */
+.geolocation-failed .buttons{width:255px;margin:0 auto;}
+.geolocation-failed .falied-pic{width:150px;height:140px;margin:0 auto 15px;background:url(../images/bus/bus_geolocation_failed.png);}
+
+/* 地图选位置 */
+.getloc-wrap{position:relative;height:100%;}
+.getloc-wrap .mask{background:rgba(238,238,238,0.9);border-bottom:2px solid rgba(59,154,198,0.8);position:absolute;top:0;left:0;width:100%;padding-top:10px;z-index:1;}
+.getloc-wrap .tip{color:#666;fonr-size:14px;text-align:center;height:38px;line-height:38px;}
+.getloc-wrap .bmap{height:100%;}
+
+/* 收藏 */
+.collect-tabs{height:30px;line-height:30px;margin:5px;justify-content: space-around;-webkit-box-pack: justify;}
+.collect-tab{width:32%;background:#ddd;color:#999;text-align:center;display:block;}
+.collect-tab.selected{background:#3b9ac6;color:#fff;}
+.collect-list{overflow:hidden;}
+.collect-item{margin-right:-45px;transition:all ease-in .3s;height:44px;background:#fff;border-bottom:1px solid #cbcbcb;margin-bottom:5px;}
+.collect-item a,.collect-item span{display:block;}
+.collect-item.current{margin-right:0;margin-left:-45px;background:#f7f7f7;}
+.collect-item .flag{height:22px;width:22px;margin:auto 22px auto 11px;}
+.collect-item .name{font-size:16px;color:#333;margin-right:15px;}
+.collect-item .info{font-size:14px;color:#999;}
+.collect-item .handle-btn{width:45px;height:100%;background:url(../images/bus/bus_favor_delete.png);}
+.collect-route .flag{background:url(../images/bus/bus_icon_route.png);}
+.collect-station .flag{background:url(../images/bus/bus_icon_station.png);}
+.collect-interchange .flag{background:url(../images/bus/bus_textfield_interchange_active.png);}
+
+/* 查询 */
+.query-area{overflow:hidden;}
+.query-area .title{color:#666;font-size:14px;}
+.query-area .clear-btn{float:right;background:url(../images/bus/bus_history_clear.png);width:50px;height:20px;}
+.query-area .recent-query{margin-right: -30px;border:1px solid #cbcbcb;border-left:none;border-right:none;margin-top:10px;}
+.query-area .recent-query a{margin-right:30px;line-height:32px;font-size:15px;color:#bbb;white-space:nowrap;}
+/* 查询下拉列表 */
+.fuzzy-matching{position:absolute;width:100%;}
+.fuzzy-matching ul{background:#fff;text-indent:50px;color:#999;border-bottom: 2px solid #cdcdcd;}
+.fuzzy-matching li{display:none;position:relative;height:40px;line-height:40px;border-bottom:1px solid #eee;}
+.fuzzy-matching li:Last-child{border:none;}
+.fuzzy-matching li .more{position:absolute;}
+
+/*详情顶部*/
+.handle-box{border-bottom:1px solid #3b9ac6;color:#999;}
+.handle-box .info{position:relative;hegiht:44px;line-height:44px;text-align:center;border-bottom:1px solid #c0c0c0;}
+.handle-box .icon{position:absolute;right:0;top:0;background:url(../images/bus/bus_textfield_location.png) no-repeat center;width:50px;height:50px;}
+.handle-box .handle-btn{display:block;color:#999;background:#fafafa;width:50%;height:33px;line-height:33px;text-align:center;border-right:1px solid #cbcbcb;}
+
+/*线路详情*/
+.route-info{background:#eee;color:#666;padding:5px 20px;border-bottom:1px solid #c0c0c0;}
+.route-info p{height:20px;line-height:20px;}
+.route-detail .wrapper{top:162px;}
+.route-detail .wrapper .item{border-bottom:1px solid #cbcbcb;height:50px;}
+.route-detail .icons{width:75px;}
+.route-detail .icon{margin:0 4px;display:block;width:22px;height:22px;background:url(../images/bus/bus_icon_spot.png);}
+.route-detail .icon.g4{background-image:url(../images/bus/bus_icon_4g.png);}
+.route-detail .icon.bus{background-image:url(../images/bus/bus_icon_bus.png);}
+.route-detail .icon.myloc{background-image:url(../images/bus/bus_icon_myloc.png);}
+.route-detail .station-name{font-size:20px;}
+.route-detail .station-time{font-size:14px;}
+
+/* 提示大图 */
+.login-wrap .flag{height:200px;background:url(../images/bus/)}
+.null-wrap .flag{height:200px;background:url(../images/bus/bus_favor_route_nodata.png) no-repeat center;}
+
+.nearby_station .list-item,.position-map-list .list-item{padding:5px 15px 10px;}
+.nearby_station .station-name,.position-map-list .name{font-size:18px;line-height:32px;height:32px;}
+.nearby_station .station-detail,.position-map-list .detail{color:#999;font-size:14px;}
+.nearby_station .more-btn,..position-map-list .more-btn{display:block;width:50px;}
+.nearby_station .nearby_pos{height:45px;line-height:45px;text-align:center;color:#999;border-bottom:1px solid #3b9ac6;}
+.nearby_station .wrapper{top:131px;}
+.position-map-list .mask{padding:10px 0;border-bottom:1px solid #3b9ac6;}
+.position-map-list .wrapper{top:150px;}
+
+/* 折叠栏 */
+.transfer-list-wrap .trandfer-name{height:50px;line-height:50px;color:#666;}
+.transfer-list-wrap .trandfer-name .icon{display:inline-block;width:45px;}
+.transfer-list-wrap .wrapper{top:126px;}
+.bae-collapse{border-bottom:2px solid #cdcdcd;margin-bottom:10px;}
+.ui-bae-collapse-head{font-size:16px;height:45px;background:#fff;border-radius:0;color:#666;border:none;}
+.ui-bae-collapse-head span{display:block;}
+.ui-bae-collapse-head .index{width:80px;text-align:center;background:#fafafa;}
+.ui-bae-collapse-head .info{text-indent:15px;}
+.ui-bae-collapse-head.collpsed .index{background:#3b9ac6;color:#fff;}
+.ui-bae-collapse-head .arrow{width:56px;background:#fafafa;}
+.ui-bae-collapse-body{border-radius:0;background:#fff;border-bottom:2px solid #cdcdcd;border:none;}
+.transfer-list li{padding:10px 0;color:#999;border-bottom:1px solid #ddd;}
+.transfer-list .icon{display:block;width:22px;height:22px;margin:0 16px;background:url(../images/bus/bus_icon_walk.png);}
+.transfer-list .icon.bus{background-image:url(../images/bus/bus_icon_bus.png);}
+.transfer-list .step{line-height:1.5;}
+
+
+
+

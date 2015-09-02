@@ -1,0 +1,32 @@
+@charset "utf-8";
+.channel_table {border-bottom: 1px solid #D7D5D6;border-right:1px solid #d7d5d6;border-top:1px solid #d7d5d6;margin: 0 auto;}
+.channel_table tr.title{height:20px;line-height:20px;}
+.channel_table tr th{background:#fff7d8;text-align:center;font-size:12px;color:#7e7d7b;width:14%;}
+.channel_table tr td{border-left:1px solid #d7d5d6; }
+.channel_table tr.title th{border-left:1px solid #d7d5d6;border-bottom: 1px solid #D7D5D6;}
+.channel_table tr td{font-size:0; position: relative;}
+
+.channel_table .item_start{cursor: pointer;background: none repeat scroll 0 0 #EAF7FD; border-bottom: 1px solid #D7D5D6; border-top: 1px solid #D7D5D6; clear: both; font-size: 12px; height: 40px; overflow: hidden; width: 100%;}
+.channel_table .item_start .t,.channel_table .item_start .n{height:20px;line-height:20px;font-size: 12px;padding: 0 5px;display:block;}
+
+/*颜色1*/
+.channel_table .item_start.a,.channel_table td .item-none.a{background:#eaf7fd}
+.channel_table .item_start.a .t{color:#9c9d98}
+.channel_table .item_start.a .n{color:#238ab3;line-height:18px;}
+
+.channel_table .item_none{cursor: pointer;font-size: 0px;overflow: hidden;clear: both;height: 42px;background:#eaf7fd;margin-top:-1px;border-bottom:1px solid #d7d5d6;}
+.channel_table .item_end{font-size: 0px;overflow: hidden;clear: both;height: 100%;background:#eaf7fd;margin-top:-1px;border-bottom:1px solid #d7d5d6;}
+
+.channel_table .none{background: none repeat scroll 0 0 #FFFFFF; color: #DA855E; cursor: pointer; font-size: 12px; vertical-align: middle; height: 17px; text-align: center;}/*空白高度*/
+.channel_table .none:hover{background: none repeat scroll 0 0 #FDEEE9;}
+
+span.lb-btn{float: left;padding-right: 6px;background:url("{$RESOURCE_URL}task_upload.png") -122px -124px no-repeat;margin:3px 0 0 5px;width:20px;height:20px;cursor:pointer;}
+span.lb-btn.cur,span.lb-btn:hover{background-position:-122px -152px;}
+.plan_form{margin-top: -21px;padding: 5px; width:410px;border:1px solid #61C4EC;background:#EAF7FD;position: absolute; z-index: 120;}
+.plan_form.i{width:515px}
+.plan_form .week_date{ float: left; padding-bottom: 2px; padding-top: 5px;}
+.plan_form .week_date label{}
+.plan_form .week_date label span{font-size: 12px;}
+.plan_form .week_date .close_plan{position: absolute;right: -7px;top: -8px;cursor:pointer; background:url("{$RESOURCE_URL}close_plan.png") no-repeat scroll 0 0 transparent; display: block; float: right; height: 16px; margin-left: 8px; width: 16px;}
+
+.show_bg{background: none repeat scroll 0 0 #000000; cursor: pointer; display: none; height: 100%; left: 0; opacity: 0.05; position: fixed; top: 0; width: 100%; z-index: 100;}

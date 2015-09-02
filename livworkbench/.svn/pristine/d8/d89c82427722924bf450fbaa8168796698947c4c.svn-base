@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>退款</title>
+<link rel="stylesheet" href="css/framework7.custom.min.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/discount.css">
+</head>
+<body>
+<div class="view view-main refund-tips">
+ 	<!-- <div class="navbar">
+		<div class="navbar-inner">
+			<div class="left">
+				<a href="javascript:history.back()" class="back link">
+					<i class="icon icon-back"></i>
+				</a>
+			</div>
+			<div class="center sliding">退款</div>
+			<div class="right">
+			 <a href="#" class="link">
+			 	<i class="icon icon-share"></i>
+			 </a>
+			</div>
+		</div>
+	</div> -->
+	<div class="pages toolbar-through">
+		<div class="page">
+			<div class="page-content">
+				<div class="content-box">
+					<div class="content-detail refund-title" style="display: none; ">
+						<div class="item-content">
+							<div class="item-inner">
+								<p class="tips">已消费的优惠券不会被审核<br />请联系客服进行人工退款</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="refund-detail" style="display: none; ">
+						<div class="content-block-title">退款方式(3-10个工作日)</div>
+					
+						<div class="content-block item-block alipay-block">
+							<div class="block-single m2o-flex m2o-flex-center">
+								<div class="info m2o-flex-one">
+									<div class="name m2o-overflow">退回原支付账户</div>
+								</div>
+								<div class="next"><i class="icon icon-dot"></i></div>
+							</div>
+						</div>
+						
+						<div class="content-block-title">退款原因(必填)</div>
+						<div class="content-block item-block remark-block">
+							<div class="list-block">
+				                  <textarea name="about-me" placeholder="退款原因"></textarea>
+							</div>
+						</div>
+						
+						<div class="content-block refund-button">
+					       <a _href="./refund-result.html?_ddtarget=push" class="button button-mid button-gradient button-disable">退款</a>
+				        </div>
+					</div>
+		        </div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="./js/sea-modules/seajs/2.2.1/sea.js"></script>
+<script type="text/javascript" src="./js/config.js"></script>
+<script type="text/javascript">
+	seajs.use("discount/refund_tips");
+</script>
+</body>
+</html>

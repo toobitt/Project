@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no,email=no">
+<title>我的中奖信息</title>
+<link rel="stylesheet" href="./images/common.css">
+<link rel="stylesheet" href="./images/index.css">
+</head>
+<body>
+	<div class="page-content toolbar-through">
+		<header class="header-block">
+			<div class="name">我的中奖信息</div>
+			<p class="copyright">&nbsp;</p>
+		</header>
+		<section class="list-block">
+		</section>
+		<div class="list-more">加载更多</div>
+	</div>
+	<div class="pop-box">
+		<div class="pop-overlay">
+			<div class="pop-confirm ">
+				<form id="formSure" enctype="multipart/form-data" method="post">
+					<!-- <div class="header">确认领奖</div>-->
+					<div class="inner">
+						<!-- <div class="item exchange_code">
+							<label>兑换码：</label>
+							<p class="exchange_p m2o-overflow"></p>
+						</div>
+						<input type="hidden" value="" name="sendno" />
+						<div class="item tips"></div>-->
+						<img class="qrcode" src=""/>
+					</div>
+					<div class="footer">
+						<!--  <button class="btn btn-primary btn-submit">确认</button>-->
+						<a class="btn btn-operate" _href="./form.html?_ddtarget=push">修改信息</a>
+					</div>
+					<div class="fixed-area">
+						<span class="btn-cancel">取消</span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+<script type="text/html" id="list">
+	{{if isTip}}
+		<div class="nodata">
+			<p>{{isTip}}</p>
+			<!-- <button class="btn btn-wid130 btn-operate">去抽奖</button> -->
+		</div>
+	{{else}}
+		{{each list as value i}}
+			<div class="item m2o-flex m2o-flex-center" data-id="{{value.id}}">
+				<div class="m2o-flex-one">
+					<h4 class="m2o-overflow">{{value.title}}</h4>
+					<p class="prize m2o-line2-overflow">{{value.name}}：{{value.prize}}</p>
+					<p class="date">{{value.create_time}}</p>
+				</div>
+				<div class="img-box">
+					<em class="tag exchange {{if value.provide_status == 1}}already{{/if}}">{{value.provide_title}}</em>
+					<img src="{{value.img_info}}">
+				</div>
+			</div>
+		{{/each}}
+	{{/if}}
+</script>
+<script type="text/javascript" src="./images/head.min.js"></script>
+<script type="text/javascript">
+	head.js(
+		{zepto : "./images/zepto.min.js"},
+		{template : './images/template.js'},
+		{spin : './images/spin.min.js'},
+		{h5Client : './images/h5Client.js'}
+	);
+	head.ready(["zepto", "h5Client"], function(){
+		head.js('./images/utils.js', './images/index.js');
+	});
+</script>
+
+</body>
+</html>

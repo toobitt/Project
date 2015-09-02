@@ -1,0 +1,7 @@
+.add, .save{display:inline-block;width:150px;height:40px;line-height:40px;text-align:center;background:#d82c7b;color:#fff;cursor:pointer;}
+.save{background:green;display:none;margin-left:10px;position:relative;}
+.box > li{border:1px solid #333;padding:15px;margin-bottom:15px;}
+.box > li:last-child{border:none;text-align:center;}
+.box label{display:inline-block;width:200px;margin-right:10px;text-align:right;}
+.box div{margin:10px 0;}
+.small{width:100px !important;margin-left:10px;}

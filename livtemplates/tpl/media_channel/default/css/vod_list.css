@@ -1,0 +1,24 @@
+.common-list-cell{height:40px;}
+.common-list-i{top:12px;}
+.vod-paixu{width:20px;}
+.vod-fabu{width:120px;margin-right:90px;}
+.vod-fengmian{width:50px;}
+.vod-fenlei{width:75px;}
+.vod-zhuangtai{width:60px;position:relative;}
+.vod-pinglun{width:80px;}
+.vod-ren{width:100px;}
+.vod-biaoti{overflow:hidden;cursor:pointer;}
+.vod-pub{text-decoration:underline;}
+.vod-fenlei .overflow{width:70px;}
+.vod-biaoti-content{display:block;font-size:14px;}
+.vod-total{color:#8fa8c6;margin-top:8px;}
+.vod-name{display:block;}
+.vod-time{color:#888;font-size:10px;-webkit-text-size-adjust:none;}
+.vod-biaoti a{font-size:14px;color:#000;display:inline-block;vertical-align:middle;}
+.vod-maliu{width:60px;}
+.vod-maliu span{display:inline-block;background:#4F6C98;border-radius:3px;color:#fff;font-size:9px;min-width:28px;line-height:12px;height:12px;text-align:center;padding:1px;vertical-align:middle;-webkit-text-size-adjust:none;}
+.vod-fengmian img{display:block;}
+/*.vod-list .vod-biaoti{color:#282828;font-size:14px;}*/
+.vod-list .vod-date, .vod-list .vod-duration{color:#666;font-size:12px;margin-left:5px;}
+.vod-list .vod-duration{font-size:9px;-webkit-text-size-adjust:none;}
+.vod-list .content_more{margin:0 -10px;padding-left:33px;}

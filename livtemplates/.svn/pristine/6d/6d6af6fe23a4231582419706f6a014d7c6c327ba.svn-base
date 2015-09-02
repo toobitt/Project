@@ -1,0 +1,19 @@
+.common-list-cell{height:120px}
+.common-list-i{top:52px}
+.issue-paixu{width:20px;}
+.issue-fengmian{width:100px;}
+.fengmian-inner{display:table-cell;width:72px;height:94px;vertical-align:middle;text-align:center;}
+.issue-fabu{width:130px;}
+.issue-fenlei{width:75px;}
+.issue-zhuangtai{width:60px;position:relative;}
+.issue-ren{width:100px;}
+.issue-biaoti{overflow:hidden;cursor:pointer;}
+.issue-pub{text-decoration:underline;}
+.issue-fenlei .overflow{width:70px;}
+.issue-biaoti-content{display:block;font-size:14px;}
+.issue-total{color:#8fa8c6;margin-top:8px;}
+.issue-name{display:block;}
+.issue-time{color:#888;font-size:10px;-webkit-text-size-adjust:none;}
+.issue-imgs{display:none;border-top:1px solid #c8d4e0;padding-left:45px;margin:0 -10px;}
+.issue-imgs ul.thumb li{margin:0 10px 10px 0;border:none;}
+.issue-imgs ul.thumb{width:auto;padding:0;}

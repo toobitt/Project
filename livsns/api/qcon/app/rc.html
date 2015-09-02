@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<title>入场</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/base.css" rel="stylesheet" >
+<link href="css/form.css" rel="stylesheet">
+<?php
+    $id = intval($_REQUEST['id']) ?  intval($_REQUEST['id']) : 1; 
+    $_id = "LED_".$id; 
+    $num = array('零','一','二','三','四');
+?>
+</head>
+
+<body>
+<div class="wrap clearfix">
+    <div class="rc-left">
+        <h1 class="rc-title">华东互联网高峰论坛</h1>
+        <div class="rc-code"><img src="img/img1.jpg" /></div>
+        <ul class="rc-left-list">
+            <li class="openapp"><a href="#">1.打开app签到模块</a></li>
+            <li class="scanningcode"><a href="#">2.扫描二维码</a></li>
+        </ul>
+    </div>
+    <div class="rc-right">
+        <div class="rc-right-qd">
+            <div class="rc-right-title clearfix">
+                <div class="rc-right-title-l"></div>
+                <div class="rc-right-title-c">
+                    <div class="rc-right-stratification">
+                        <div class="welcome-admission">欢迎<span>华东互联网高峰论坛嘉宾</span>入场</div>
+                        <div class="which-entrance" id="entrance" data-id="<?php echo $_id;  ?>" data-signtime=""><?php echo $num["$id"];  ?>号入口</div>
+                    </div>
+                </div>
+                <div class="rc-right-title-r"></div>
+            </div>
+            <div class="rc-guests-item">
+                <h1 id="rcinfo">请扫描左边的二维码<br/>进行签到</h1>
+                <ul class="rc-who" id="who"></ul>
+                <div class="rc-error">未能识别嘉宾身份,<br /> 请联系现场工作人员</div>
+            </div>
+        </div>
+        <div class="rc-guest">
+            <ul class="rc-right-list" id="guest"></ul>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.js"></script>
+<script>
+function Guest(){
+    this.timer = null;
+    this.itemHeight = 0;
+    this.colspan = 0;
+    this.screenID  = $('#entrance').data('id');
+    this.userArray = [];
+}
+Guest.prototype.init =  function(){
+    var that = this;
+
+    setInterval(function(){
+        that.updateData();
+    }, 1000);
+
+    that.updateData();
+}
+Guest.prototype.updateData =  function(){
+    var that= this,
+        _user = {},
+        _signtime = $("#entrance").data('signtime'),
+        _avatar = null;
+
+    $.ajax({
+        url : 'http://10.0.1.40/livsns/api/mobile/data/hd_bbs/sign_in_interact.php?appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+        type : 'GET',
+        data : {screen_id : this.screenID, sign_time : _signtime },
+        dataType : 'json',
+        success : function(data){
+           if(data.ErrorCode){
+                console.lod(data.ErrorCode);
+           }else if(data !== null && data.length > 0){
+                $.each(data, function(index, item){
+
+                    if(typeof item.avatar === 'undefined' || typeof item.avatar.host === 'undefined'){
+                        _avatar =  'style="background-image: url(http://hdbbs.liv.cn/app/img/avatar.png)"';
+                    }else{
+                        _avatar = 'style="background-image: url(' + item.avatar.host + item.avatar.dir +  item.avatar.filepath + item.avatar.filename + ')";'; 
+                    }
+                    _user.gtype = item.guest_type;
+                    _user.html  = '<li><div class="rc-right-picture" ' + _avatar + '></div><div class="rc-right-post"><p><span>' + item.name + '</span>' + item.job + '</p><p>' + item.company + '</p><p class="type-inside">' + item.guest_type_text + '</p></div></li>';
+
+                    that.userArray.push(_user);
+                    $("#entrance").data('signtime', item.sign_time);
+                });
+                if(_signtime){
+                    that.updateDom();
+                }else{
+                    that.updateDom(true);
+                }
+        }
+    });
+
+}
+Guest.prototype.updateDom  = function(init){
+    var that = this,
+        _item = null;
+    if(init){
+        console.log(that.userArray.join(""));
+        $('#guest').append(that.userArray.join(""));
+        that.userArray = [];
+    }else{
+        _item =  that.userArray.shift();
+        // $('#rcwho li').remove(); 
+       
+        if(_item=="2"){
+            $('#guest').append(_item.html).find("li:last").css('opacity', 0);  
+            $('#who').html(_item.html);
+            that.scrollItem();
+        }else{
+            $(".rc-error").slideDowon().delay(4000).slideUp();
+        }
+        if(that.userArray.length > 0){
+            that.timer =  setTimeout(function(){
+                that.updateDom(true);
+            }, 5000)
+        }  
+    }
+}
+Guest.prototype.scrollItem = function() {
+
+    var that = this;
+
+    if(!this.itemHeight){
+        this.itemHeight =  $('#guest').find('li').outerHeight();
+    }
+    if($("#guest li").size() <= 1){
+        $("#guest li:first").css('opacity', 1);
+        return false;
+    }
+
+    $("#guest li:first").before($("#guest li:last"));
+    $("#guest li:first").css('opacity', 1);
+
+    this.timerhy = setTimeout(function(){
+        $('#rcwho li').remove(); 
+        $('#guest').css({
+            top: -that.itemHeight + "px",
+        }).animate({
+            top : 0
+        }, 500);
+    }, 4000);
+
+}
+
+
+var guest =  new Guest();
+    guest.init();
+
+</script>
+</body>
+</html>

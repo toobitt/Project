@@ -1,0 +1,18 @@
+.ad_middle{width:860px;}
+.host-list{float:left;}
+.host-list .host-title{display:block;width:65px;}
+.host-box,.server-type{display:-webkit-box;}
+.host-box:not(:last-child){margin-bottom:10px;}
+.btn{display:block;width:20px;height:20px;border-radius:50%;color:#fff;background:#6ea5e8;text-align: center;font-size: 18px;margin: 2px 2px 2px 5px;cursor:pointer;display:none;}
+.btn.add_btn{line-height:18px}
+.btn.del_btn{line-height:4px}
+.host-box:hover .btn{display:block;}
+.ad_form .form_ul .form_ul_div span.title{width:75px;}
+.path-box{margin-right:5px;position:relative;}
+.path-box:after{ content:'';width: 0;height: 0;border-left: 5px solid transparent;border-right: 5px solid transparent;border-top: 5px solid #000;position: absolute;right: 5px;top: 10px;}
+.path-box ul{width: 69px;border: 1px solid #DEDEDE;position: absolute;z-index:9999;display:none;border-top:none;}
+.path-box ul li{height: 25px;line-height: 25px;text-indent: 3px;background: #fff;cursor:pointer;z-index: 9999;}
+.path-box ul li:hover{background:#EEEFF1}
+.path-box ul li:not(:last-child){border-bottom: 1px solid #DEDEDE;}
+.path-box .select-path{display:block;width:69px;height:23px;border:1px solid #DEDEDE;line-height: 23px;text-indent: 5px;}
+.host-box .btn-group{display:-webkit-box;width:60px;}

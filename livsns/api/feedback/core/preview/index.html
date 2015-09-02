@@ -1,0 +1,19 @@
+<table class="table table-striped">
+	  <caption>{#title_value}</caption>
+	  <thead>
+	    <tr>
+	   		<th class="m2o-t" title="标题">
+	   			<label for="checkbox">标题</label>
+	   		</th>
+	   		<th class="m2o-v" title="内容">
+	   			<label for="checkbox">内容</label>
+	   		</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+		<tr class="m2o-each" _name="{${key}$}">
+			<td class="m2o-{key}" title="{#{key}}">{#{key}}</td>
+			<td class="m2o-{value}">{#{value}}</td>
+		</tr>
+	  </tbody>
+</table>

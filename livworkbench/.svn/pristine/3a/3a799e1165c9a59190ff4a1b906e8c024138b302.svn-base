@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>视频快编</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/vod_split.css" />
+</head>
+<body>
+  <div class="fast-editor clearfix">
+      <div class="fast-editor-head">
+           <span class="time">全部时长:<em>10'26"</em></span>
+           <span class="common-button-group">
+                 <a class="view blue">预览</a>
+                 <a class="save blue">保存</a>
+                 <a class="reset gray">清空</a>
+           </span>
+      </div>
+      <div class="fast-editor-nav">
+           <ul>
+                <li>
+                    <span class="start"><img src="images/split/tmp2.png" /></span>
+                    <span class="time">06'18"</span> 
+                </li>
+                <li class="two-point">
+                    <span class="start"><img src="images/split/suo_06.png" /></span>
+                    <span class="end"><img src="images/split/suo_06.png" /></span>
+                    <span class="time">06'18"</span> 
+                </li>
+                <li class="two-point">
+                    <span class="start"><img src="images/split/suo_06.png" /></span>
+                    <span class="end"><img src="images/split/suo_06.png" /></span>
+                    <span class="time">06'18"</span> 
+                </li>
+                <li class="place-tag"></li>
+                <li class="two-point">
+                    <span class="start"><img src="images/split/suo_06.png" /></span>
+                    <span class="end"><img src="images/split/suo_06.png" /></span>
+                    <span class="time">06'18"</span> 
+                </li>
+                <li>
+                    <span class="start"><img src="images/split/tmp2.png" /></span>
+                    <span class="time">06'18"</span> 
+                </li>
+           </ul>
+           <div class="recycle-area"></div>
+      </div>
+    <div class="fast-editor-main clearfix">
+       <div class="common_category">
+            <div class="menu-inner">
+	            <ul>
+	                <li>
+	                     <a class="title selected">全部内容</a>
+	                </li>
+	                <li>
+	                     <a class="title">直播归档</a>
+	                     <a class="arrow"></a>
+	                </li>
+	                <li>
+	                     <a class="title">网友上传</a>
+	                </li>
+	                <li>
+	                     <a class="title">编辑上传</a>
+	                     <a class="arrow"></a>
+	                </li>
+	                <li>
+	                     <a class="title">标注归档</a>
+	                </li>
+	                <li>
+	                     <a class="title">视频测试</a>
+	                     <a></a>
+	                </li>
+	            </ul>
+            </div>
+       </div>
+       <div class="fast-editor-right">
+           <div class="top">
+               <div class="common-search-area fl"> 
+                    <div class="select-area">
+	                      <div class="current">
+	                           所有时间段
+	                           <ul>
+	                                <li><a>昨天</a></li>
+	                                <li><a>今天</a></li>
+	                                <li><a>最近3天</a></li>
+	                                <li><a>最近7天</a></li>
+	                           </ul>
+	                      </div>
+                    </div>
+                    <div class="search">
+                         <input type="text" class="key-word"/>
+                         <span class="btn"></span>
+                    </div>
+                </div>
+                <div class="common-page-link fr">
+                     <span class="page-all">共6页/计114条</span>
+                     <span class="current">1</span>
+                     <span class="page-code"><a>2</a></span>
+                     <span class="page-code"><a>3</a></span>
+                     <span class="page-next"><a>>></a></span>
+                     <span class="page-next"><a>>|</a></span>
+                </div>
+           </div>
+           <ul class="common-vod-area clear">
+                <li>
+                    <a class="pic">
+                         <img src="images/split/tmp2.png" />
+                         <span class="time">02'45"</span>
+                    </a>
+                    <a class="name">习近平当选国家主席 国家军委主席</a>
+                </li>
+                <li>
+                    <a class="pic">
+                         <img src="images/split/tmp2.png" />
+                         <span class="time">02'45"</span>
+                    </a>
+                    <a class="name">国家新闻出版广播电影电视总局改名 减4个字</a>
+                </li>
+                <li>
+                    <a class="pic">
+                         <img src="images/split/tmp2.png" />
+                         <span class="time">02'45"</span>
+                    </a>
+                    <a class="name">人社部称收入分配制度改革原则已定 正细化方案</a>
+                     
+                </li>
+                <li>
+                    <a class="pic">
+                         <img src="images/split/tmp2.png" />
+                         <span class="time">02'45"</span>
+                    </a>
+                    <a class="name">人大会议通过国务院机构改革和职能转变方案</a>
+                </li>
+                <li>
+                    <a class="pic">
+                         <img src="images/split/tmp2.png" />
+                         <span class="time">02'45"</span>
+                    </a>
+                    <a class="name">曝147位代表委员系顶级富豪 平均财富超85亿</a>
+                </li>
+                <li>
+                    <a class="pic">
+                         <img src="images/split/tmp2.png" />
+                         <span class="time">02'45"</span>
+                    </a>
+                    <a class="name">习近平当选国家主席 国家军委主席</a>
+                </li>
+                <li>
+                    <a class="pic">
+                         <img src="images/split/tmp2.png" />
+                         <span class="time">02'45"</span>
+                    </a>
+                    <a class="name">人大代表：国内汽车轮胎不好影响空气质量</a>
+                     
+                </li>
+                <li>
+                    <a class="pic">
+                         <img src="images/split/tmp2.png" />
+                         <span class="time">02'45"</span>
+                    </a>
+                    <a class="name">人社部称收入分配制度改革原则已定 正细化方案</a>
+                     
+                </li>
+                <li>
+                    <a class="pic">
+                         <img src="images/split/tmp2.png" />
+                         <span class="time">02'45"</span>
+                    </a>
+                    <a class="name">人大会议通过国务院机构改革和职能转变方案</a>
+                </li>
+                <li>
+                    <a class="pic">
+                         <img src="images/split/tmp2.png" />
+                         <span class="time">02'45"</span>
+                    </a>
+                    <a class="name">曝147位代表委员系顶级富豪 平均财富超85亿</a>
+                </li>
+                <li>
+                    <a class="pic">
+                         <img src="images/split/tmp2.png" />
+                         <span class="time">02'45"</span>
+                    </a>
+                    <a class="name">习近平当选国家主席 国家军委主席</a>
+                </li>
+                <li>
+                    <a class="pic">
+                         <img src="images/split/tmp2.png" />
+                         <span class="time">02'45"</span>
+                    </a>
+                    <a class="name">人大代表：国内汽车轮胎不好影响空气质量</a>
+                     
+                </li>
+           </ul>
+       </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+/*.common-list-cell{height:120px;}*/
+.common-list-i{top:22px;right:600px;}
+.qihao{width:130px;}
+.qishu{width:60px;}
+.paixu{width:20px;}
+.fengmian{width:100px;}
+.type{width: 60px;}
+.quanzhong{width: 60px;}
+.pinglun{width:120px;}
+.shenghe{width:120px;}
+/*.fengmian-inner{display:table-cell;width:72px;height:94px;vertical-align:middle;text-align:center;position:relative;}*/
+.fabu{width:60px;}
+.fenlei,.mingcheng,.riqi,.zhuangtai,.zhouqi{width:80px;}
+.ren{width:100px;}
+.biaoti{overflow:hidden;cursor:pointer;}
+.pub{text-decoration:underline;}
+.fenlei .overflow{width:70px;}
+.biaoti-content{display:block;font-size:14px;}
+.total{color:#8fa8c6;margin-top:8px;}
+.content-time{display:block;color:#888;font-size:10px;-webkit-text-size-adjust:none;}
+.imgs{display:none;border-top:1px solid #c8d4e0;padding-left:45px;margin:0 -10px;}
+.imgs ul.thumb li{margin:0 10px 10px 0;border:none;}
+.imgs ul.thumb{width:auto;padding:0;}
+
+.common-list-overflow{vertical-align:middle;}

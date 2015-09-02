@@ -1,0 +1,14 @@
+@charset "utf-8";
+.mem-fengmian{margin-left:-40px}
+.mem-huiyuan{width:130px;}
+.mem-email{width:170px}
+.mem-zc{width: 110px;}
+.mem-cz{width:40px;}
+.mem-zt{width:50px;}
+.mem-jh{width:60px;}
+.mem-sj{width:125px}
+.mem-title{margin-left: -30px; float:left}
+#cz{margin-left:5px}
+#cz em{cursor:auto;width:16px;height:16px;display:inline-block;background:url({$RESOURCE_URL}news_list.png)  no-repeat;margin-top:10px;}
+#cz em:hover{background-position: 0 -16px;}
+.common-list-i{position:absolute;top:11px;margin-left:15px;}

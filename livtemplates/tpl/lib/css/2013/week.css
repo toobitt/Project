@@ -1,0 +1,39 @@
+.public-list .common-list-item{height:50px;}
+.common-list-right{width:650px; position:relative;}
+.week-box{width:500px;position:relative;-webkit-user-select:none;-moz-user-select:none;user-select:none;}
+.prev-week-btn, .next-week-btn{cursor:pointer;display:inline-block;line-height:24px;width:24px;height:24px;text-indent:-9999px;color:#fff;text-align:center;}
+.prev-week-btn, .next-week-btn{background:url({$RESOURCE_URL}2013/left.png) no-repeat center;}
+.next-week-btn{background-image:url({$RESOURCE_URL}2013/right.png);}
+.prev-week-btn:hover{background-image:url({$RESOURCE_URL}2013/left-hover.png);}
+.next-week-btn:hover{background-image:url({$RESOURCE_URL}2013/right-hover.png);}
+
+.self-week, .self-week-title{width:273px;}
+.self-week a, .self-week-title a{display:inline-block;color:#333;line-height:50px;width:35px;text-align:center;}
+.self-week a{position:relative;}
+.self-week a:hover:after{
+    content:' ';
+    border:1px solid #cecece;
+    position:absolute;
+    width:23px;
+    height:23px;
+    left:50%;
+    top:50%;
+    margin:-13.5px 0 0 -12.5px;
+}
+.self-month{display:inline-block;width:40px;line-height:50px;}
+.self-week-title a, .self-month{color:#939393;}
+.self-week-title{left:72px;position:absolute;top:0;height:39px;overflow:hidden;}
+.self-week-title a{line-height:40px;}
+.current-index{background:rgba(255, 90, 90, .1) !important;}
+.is-set{color:#37c1f4 !important;}
+.img-load{position:absolute;left:186px;top:10px;z-index:1000;}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2) {
+    .prev-week-btn{background-image:url({$RESOURCE_URL}2013/left-2x.png);background-size:9px 10px;}
+    .next-week-btn{background-image:url({$RESOURCE_URL}2013/right-2x.png);background-size:9px 10px;}
+    .prev-week-btn:hover{background-image:url({$RESOURCE_URL}2013/left-hover-2x.png);}
+    .next-week-btn:hover{background-image:url({$RESOURCE_URL}2013/right-hover-2x.png);}
+}

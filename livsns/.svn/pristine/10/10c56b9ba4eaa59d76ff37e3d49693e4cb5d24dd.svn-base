@@ -1,0 +1,130 @@
+INSERT INTO `liv_group` (`id`, `name`, `issystem`, `isupdate`, `creditshigher`, `creditslower`, `starnum`, `usernamecolor`, `icon`, `description`, `rules`, `order_id`) VALUES
+(1, '注册会员', 1, 0, 0, 999999999, 1, '#000000', '', '新注册会员默认组', '', 1),
+(2, '限制会员', 1, 0, -999999999, 0, 0, '#565656', '', '永无翻身之日了', '', 2);;
+
+INSERT INTO `liv_credit_rules` (`id`, `rname`, `operation`, `issystem`, `iscustom`, `opened`, `cyclelevel`, `cycletype`, `cycletime`, `rewardnum`, `credit1`, `credit2`, `appids`, `gids`, `order_id`) VALUES
+(3, '登录', 'members_login_login', 1, 1, 1, 0, 1, 0, 1, 1, 2, '', '', 29),
+(7, '邀请用户', 'invite_users', 1, 0, 1, 0, 4, 0, 0, 10, 0, '', '', 24),
+(8, '开启客户端', 'open_client', 1, 0, 1, 0, 4, 0, 1, 10, 0, '', '', 3),
+(14, '发布报料', 'contribute', 1, 0, 1, 0, 1, 0, 1, 10, 10, '', '', 10),
+(10, '分享', 'share', 1, 0, 1, 0, 1, 0, 0, 10, 0, '', '', 7),
+(12, '发表评论', 'message', 1, 1, 1, 0, 1, 0, 1, 5, 10, '', '', 8),
+(42, '直播', 'live', 1, 0, 1, 4, 1, 0, 1, 10, 20, '', '', 21),
+(15, '报料成功', 'contribute_extra', 1, 0, 1, 0, 1, 0, 1, 20, 20, '', '', 12),
+(16, '评论成功', 'message_extra', 1, 1, 1, 0, 1, 0, 1, 20, 0, '', '', 14),
+(43, '视频', 'livmedia', 1, 0, 1, 4, 0, 0, 1, 10, 5, '', '', 22),
+(21, '投票', 'vote_vote_vote_add', 1, 0, 1, 0, 1, 0, 1, 160, 20, '', '', 15),
+(22, '实名认证', 'members_verify', 1, 0, 1, 0, 0, 0, 1, 10, 5, '', '', 23),
+(23, '修改昵称', 'members_editNickName', 1, 0, 1, 0, 4, 0, 0, -5, 0, '', '', 26),
+(24, '上传头像', 'members_editAvatar', 1, 0, 1, 0, 0, 0, 1, 10, 5, '', '', 25),
+(25, '修改用户名', 'members_editMemberName', 1, 0, 1, 0, 4, 0, 0, -1000, -5, '', '', 27),
+(26, '手机注册额外奖励', 'members_register_register_shouji', 1, 0, 1, 0, 0, 0, 1, 10, 5, '', '', 57),
+(27, '注册', 'members_register_register', 1, 1, 1, 0, 0, 0, 1, 0, 0, '', '', 42),
+(29, '评论删除', 'message_admin_del', 1, 0, 1, 0, 4, 0, 0, -100, -50, '', '', 16);;
+
+INSERT INTO `liv_credit_type` (`id`, `title`, `db_field`, `img`, `is_on`, `is_trans`, `is_update`, `order_id`) VALUES
+(1, '积分', 'credit1', 'a:4:{s:4:"host";s:32:"http://img.dev.hogesoft.com:233/";s:3:"dir";s:21:"material/members/img/";s:8:"filepath";s:8:"2014/04/";s:8:"filename";s:22:"20140408101116UXpX.png";}', 1, 1, 0, 1),
+(2, '经验', 'credit2', '', 1, 0, 1, 2);;
+
+INSERT INTO `liv_grade` (`id`, `name`, `digital`, `issystem`, `creditshigher`, `creditslower`, `icon`, `description`) VALUES
+(1, '小兵', 1, 1, 0, 500, '', '默认等级'),
+(39, '大兵', 2, 0, 500, 999999999, '', '');;
+
+INSERT INTO `liv_invite_set` (`id`, `is_on`, `invite_endtime`, `inviteaddcredit`, `invitedaddcredit`) VALUES
+(1, 1, 48, 'a:2:{s:12:"is_addcredit";s:1:"1";s:4:"base";a:2:{s:7:"credit1";i:5;s:7:"credit2";i:10;}}', 'a:2:{s:12:"is_addcredit";s:1:"1";s:4:"base";a:2:{s:7:"credit1";i:10;s:7:"credit2";i:5;}}');;
+
+INSERT INTO `liv_purview` (`id`, `pname`, `operation`, `allow`) VALUES
+(7, '社区帖子删除', 'members_posts_del', 1),
+(6, '禁止访问', 'members_login_login', 0);;
+
+INSERT INTO `liv_sign_count` (`id`, `todayq`, `yesterdayq`, `highestq`, `total`, `qdtidnumber`) VALUES
+(1, 0, 0, 0, 0, 0);;
+
+INSERT INTO `liv_sign_emot` (`id`, `is_sys`, `name`, `qdxq`, `count`, `img`, `description`, `order_id`) VALUES
+(1, 0, '高兴', 'kx', 0, 'a:4:{s:4:"host";s:32:"http://img.dev.hogesoft.com:233/";s:3:"dir";s:18:"material/mood/img/";s:8:"filepath";s:8:"2013/12/";s:8:"filename";s:22:"201312190959169p18.png";}', '今天很高兴的话,就选我吧&#33;', 2),
+(2, 0, '难过', 'ng', 0, 'a:4:{s:4:"host";s:32:"http://img.dev.hogesoft.com:233/";s:3:"dir";s:21:"material/members/img/";s:8:"filepath";s:8:"2014/04/";s:8:"filename";s:22:"20140411110800z3DT.png";}', '今天好难过,那选我吧&#33;', 5),
+(5, 1, '未选择', 'no_mood', 0, 'a:4:{s:4:"host";s:32:"http://img.dev.hogesoft.com:233/";s:3:"dir";s:21:"material/members/img/";s:8:"filepath";s:8:"2014/04/";s:8:"filename";s:22:"20140411090704Uhm8.png";}', '这是系统心情,禁止删除.', 1),
+(10, 0, '路过', 'lg', 0, 'a:4:{s:4:"host";s:32:"http://img.dev.hogesoft.com:233/";s:3:"dir";s:21:"material/members/img/";s:8:"filepath";s:8:"2014/04/";s:8:"filename";s:22:"201404141722135Br2.png";}', '我是来打酱油&#33;', 10),
+(8, 0, '感动', 'gd', 0, 'a:4:{s:4:"host";s:32:"http://img.dev.hogesoft.com:233/";s:3:"dir";s:21:"material/members/img/";s:8:"filepath";s:8:"2014/04/";s:8:"filename";s:22:"20140411110904qBD6.png";}', '好感动', 8),
+(9, 0, '愤怒', 'fn', 0, 'a:4:{s:4:"host";s:32:"http://img.dev.hogesoft.com:233/";s:3:"dir";s:21:"material/members/img/";s:8:"filepath";s:8:"2014/04/";s:8:"filename";s:22:"20140411110934YmdY.png";}', '我很愤怒', 9);;
+
+INSERT INTO `liv_sign_set` (`id`, `is_on`, `is_lastedop`, `is_qdxq`, `is_todaysay`, `is_todaysayxt`, `is_timeopen`, `lastedop`, `clsmsg`, `notice`, `limit_time`, `credits`) VALUES
+(1, 1, 1, 0, 0, 1, 0, 3, '签到系统正在维护中', '欢迎您来到签到中心&#33;', 'a:2:{s:5:"start";s:0:"";s:3:"end";s:0:"";}', 'a:3:{s:4:"base";a:2:{s:7:"credit1";i:10;s:7:"credit2";i:20;}s:8:"lastedop";a:3:{i:1;a:2:{s:7:"credit1";i:10;s:7:"credit2";i:20;}i:2;a:2:{s:7:"credit1";i:15;s:7:"credit2";i:30;}i:3;a:2:{s:7:"credit1";i:20;s:7:"credit2";i:40;}}s:5:"final";a:2:{s:7:"credit1";a:2:{s:3:"min";i:50;s:3:"max";i:100;}s:7:"credit2";a:2:{s:3:"min";i:50;s:3:"max";i:100;}}}');;
+
+INSERT INTO `liv_staricon` (`id`, `starname`, `issystem`, `opened`, `star`, `moon`, `sun`) VALUES
+(1, '经典样式', 1, 1, 'a:4:{s:4:"host";s:32:"http://img.dev.hogesoft.com:233/";s:3:"dir";s:21:"material/catalog/img/";s:8:"filepath";s:8:"2013/12/";s:8:"filename";s:22:"201312251444123E4z.gif";}', 'a:4:{s:4:"host";s:32:"http://img.dev.hogesoft.com:233/";s:3:"dir";s:21:"material/catalog/img/";s:8:"filepath";s:8:"2013/12/";s:8:"filename";s:22:"201312251445206fAl.gif";}', 'a:4:{s:4:"host";s:32:"http://img.dev.hogesoft.com:233/";s:3:"dir";s:21:"material/catalog/img/";s:8:"filepath";s:8:"2013/12/";s:8:"filename";s:22:"20131225144547WgM5.gif";}'),
+(2, '时尚样式', 0, 0, 'a:4:{s:4:"host";s:32:"http://img.dev.hogesoft.com:233/";s:3:"dir";s:21:"material/catalog/img/";s:8:"filepath";s:8:"2013/12/";s:8:"filename";s:22:"20131225172234vg5Y.png";}', 'a:4:{s:4:"host";s:32:"http://img.dev.hogesoft.com:233/";s:3:"dir";s:21:"material/catalog/img/";s:8:"filepath";s:8:"2013/12/";s:8:"filename";s:22:"20131225173459yNMw.png";}', 'a:4:{s:4:"host";s:32:"http://img.dev.hogesoft.com:233/";s:3:"dir";s:21:"material/catalog/img/";s:8:"filepath";s:8:"2013/12/";s:8:"filename";s:22:"20131225171608Nco7.png";}'),
+(4, '皇冠样式', 0, 0, 'a:4:{s:4:"host";s:32:"http://img.dev.hogesoft.com:233/";s:3:"dir";s:21:"material/members/img/";s:8:"filepath";s:8:"2014/01/";s:8:"filename";s:22:"20140110120828blpd.gif";}', 'a:4:{s:4:"host";s:32:"http://img.dev.hogesoft.com:233/";s:3:"dir";s:21:"material/members/img/";s:8:"filepath";s:8:"2014/01/";s:8:"filename";s:22:"20140110120828R74K.gif";}', 'a:4:{s:4:"host";s:32:"http://img.dev.hogesoft.com:233/";s:3:"dir";s:21:"material/members/img/";s:8:"filepath";s:8:"2014/01/";s:8:"filename";s:22:"20140103145727zi7x.gif";}');;
+
+INSERT INTO `liv_member_extension_field` (`extension_field_id`, `extension_field`, `extension_field_name`, `extension_sort_id`, `type`, `is_unique`, `create_time`, `update_time`, `order_id`) VALUES
+(1, 'qqnum', 'QQ号', 4, 0, 0, 1387252657, 1390361649, 1),
+(2, 'idnum', '身份证', 3, 0, 1, 1387252675, 1413267434, 2),
+(29, 'realname', '真实姓名', 16, 0, 0, 1413250311, 0, 29),
+(31, 'positive_photo', '正面身份证照', 16, 1, 0, 1413253554, 1413253602, 31),
+(7, 'birthday', '出生日期', 7, 0, 0, 1392861037, 1393484588, 7),
+(8, 'wechat', '微信', 4, 0, 0, 1393484557, 1409735341, 8),
+(9, 'gender', '性别', 8, 0, 0, 1393558618, 0, 9),
+(10, 'prov', '省', 2, 0, 0, 1393576235, 0, 10),
+(11, 'city', '市', 2, 0, 0, 1393576249, 0, 11),
+(12, 'dist', '区(县)', 2, 0, 0, 1393576264, 1409735495, 12),
+(32, 'negative_photo', '反面身份证照', 16, 1, 0, 1413253588, 0, 32);;
+
+INSERT INTO `liv_member_extension_sort` (`extension_sort_id`, `extension_sort`, `extension_sort_name`, `create_time`, `update_time`, `order_id`) VALUES
+(1, 'realname', '真实姓名', 1387252548, 0, 13),
+(2, 'address', '地址', 1387252557, 0, 7),
+(3, 'idnum', '证件', 1387252605, 1390362939, 8),
+(4, 'qqnum', '即时通讯', 1387252626, 1390361689, 1),
+(7, 'date_time', '日期', 1392860997, 0, 2),
+(8, 'gender', '性别', 1393558598, 0, 11),
+(16, 'auth_realname', '实名认证', 1413250276, 0, 16);;
+
+INSERT INTO `liv_member_platform` (`id`, `order_id`, `name`, `systemname`, `mark`, `brief`, `logo_display`, `logo_login`, `issystem`, `status`, `display`, `isregister`, `islogin`, `official_account`, `apikey`, `secretkey`, `callback`, `limit_version`, `limit_appid`, `org_id`, `user_id`, `user_name`, `appid`, `appname`, `create_time`, `update_time`, `update_org_id`, `update_user_id`, `update_user_name`, `ip`) VALUES
+(1, 5, '新浪微博', '新浪微博', 'sina', '', 'a:4:{s:4:"host";s:32:"http://img.dev.hogesoft.com:233/";s:3:"dir";s:21:"material/members/img/";s:8:"filepath";s:8:"2013/08/";s:8:"filename";s:22:"20130801100732q7di.png";}', 'a:4:{s:4:"host";s:32:"http://img.dev.hogesoft.com:233/";s:3:"dir";s:21:"material/members/img/";s:8:"filepath";s:8:"2013/08/";s:8:"filename";s:21:"201308011007329YL.png";}', 1, 1, 1, 1, 1, '1763215014', '2914398806', '2d620c05cb1277a800308d83a7f82e03', 'http://www.oschina.com/index.php?s=user&c=login&a=sina_login', '', '', 152, 1, 'hogesoft', 55, 'MCP网页版', 1375322850, 1403070580, 4, 454, 'janice', '127.0.0.1'),
+(2, 6, '腾讯qq', '腾讯QQ', 'qq', '', 'a:4:{s:4:"host";s:32:"http://img.dev.hogesoft.com:233/";s:3:"dir";s:21:"material/members/img/";s:8:"filepath";s:8:"2014/03/";s:8:"filename";s:22:"20140313145422Lug3.png";}', '', 1, 0, 1, 1, 1, '243243', '801065573', '94a5c459cb55826ceeb6c34bb50a4c80', 'http://www.oschian.com/user/login/qq_login/', 'a:2:{s:3:"min";s:0:"";s:3:"max";s:3:"1.1";}', '8', 152, 1, 'hogesoft', 55, 'MCP网页版', 1375323326, 1413430347, 0, 362, 'ayou', '127.0.0.1'),
+(4, 3, '普通会员', '普通会员', 'm2o', 'M2O会员', '', '', 1, 1, 0, 1, 1, '', 'm2o', 'm2o', 'm2o', '', '0', 14, 362, 'ayou', 55, 'MCP网页版', 1396315757, 1396315757, 0, 0, '', ''),
+(5, 1, '手机登陆', '手机快速注册', 'shouji', '手机绑定类型', '', '', 1, 1, 1, 1, 1, '', 'shouji', 'shouji', 'shouji', 'a:2:{s:3:"min";s:0:"";s:3:"max";s:0:"";}', '', 14, 362, 'ayou', 55, 'MCP网页版', 1396315792, 1418197632, 0, 362, 'ayou', ''),
+(6, 4, '邮箱登陆', '邮箱快速注册', 'email', '邮箱绑定', '', '', 1, 0, 0, 1, 1, '', 'email', 'email', 'email', '', '0', 14, 362, 'ayou', 55, 'MCP网页版', 1396315819, 1396321630, 14, 362, 'ayou', ''),
+(7, 14, '腾讯微博', '腾讯微博', 'txweibo', '腾讯微博验证', 'a:4:{s:4:"host";s:32:"http://img.dev.hogesoft.com:233/";s:3:"dir";s:21:"material/members/img/";s:8:"filepath";s:8:"2014/11/";s:8:"filename";s:22:"20141118155323HEmr.jpg";}', 'a:4:{s:4:"host";s:32:"http://img.dev.hogesoft.com:233/";s:3:"dir";s:21:"material/members/img/";s:8:"filepath";s:8:"2014/11/";s:8:"filename";s:22:"20141118155323Aqxp.jpg";}', 1, 1, 1, 1, 1, '3808935869', '3808935869', 'fe95fc3b3f68d0d061826ea74fd269db', 'http://mcp.dev.hogesoft.com:233/access_plat/callback.php', 'a:2:{s:3:"min";s:0:"";s:3:"max";s:0:"";}', '94', 4, 374, 'dong', 55, 'MCP网页版', 1396434396, 1418177109, 0, 362, 'ayou', '10.0.2.39'),
+(14, 11, '微信登陆', '', 'wechat', '', 'a:4:{s:4:"host";s:32:"http://img.dev.hogesoft.com:233/";s:3:"dir";s:21:"material/members/img/";s:8:"filepath";s:8:"2015/01/";s:8:"filename";s:21:"20150116165208g7f.jpg";}', 'a:4:{s:4:"host";s:32:"http://img.dev.hogesoft.com:233/";s:3:"dir";s:21:"material/members/img/";s:8:"filepath";s:8:"2015/01/";s:8:"filename";s:22:"20150116165208ideG.jpg";}', 1, 1, 1, 1, 1, '123456', 'appkey', '123456', '123456', 'a:2:{s:3:"min";s:0:"";s:3:"max";s:0:"";}', '', 0, 362, 'ayou', 55, 'MCP网页版', 1421398187, 1421398328, 4, 469, 'kin', '');;
+
+INSERT INTO `liv_sms_server` (`id`, `name`, `brief`, `logo`, `order_id`, `status`, `verifycode_length`, `verifycode_content`, `account`, `password`, `company_name`, `admin_mobile`, `over`, `over_remind`, `send_url`, `recvtime`, `content`, `over_url`, `over_mobile`, `over_content`, `accesskey`, `secretkey`, `bind_ip`, `http_address`, `org_id`, `user_id`, `user_name`, `appid`, `appname`, `create_time`, `update_time`, `update_org_id`, `update_user_id`, `update_user_name`, `ip`, `charset`, `return_type`) VALUES
+(1, '手机验证码', 'BechTech短信推送在线管理平台系统 V2.0 © 2013 BechTech 北程科技 客服电话：010-63589685-8006(短彩业务)', '', 1, 1, 6, '0123456789', 'ayou@hoge.cn', 'ayou.cn1', '南京厚建软件科技有限公司', '13951667105', 995, 10, 'http://10.0.1.40/livsns/api/company/authcode.php?appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&telephone={&#036;mobile}&content={&#036;content}', 0, '尊敬的用户您好，验证码是{&#036;c}，工作人员不会向您索取，请勿泄漏。如非本人，请忽略。', 'http://sms.bechtech.cn/Api/getLeft/data/json?accesskey=723&secretkey=59d19d5da9a24732802c6e6841930e861b16a147', '13951667105', '短信余额提醒，剩余：&#39;{&#036;over}&#39;；南京厚建', '55', 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7', '', '', 4, 462, 'zhulidong', 55, 'MCP网页版', 1389164099, 1407995589, 0, 362, 'ayou', '', 'UTF-8', 'json'),
+(2, '邀请发送', 'BechTech短信推送在线管理平台系统 V2.0 © 2013 BechTech 北程科技 客服电话：010-63589685-8006(短彩业务)', '', 1, 1, 6, '0123456789', 'ayou@hoge.cn', 'ayou.cn1', '南京厚建软件科技有限公司', '13951667105', 995, 10, 'http://10.0.1.40/livsns/api/company/authcode.php?appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&telephone={&#036;mobile}&content={&#036;content}', 0, '您的好友：{&#036;c}  ,邀请您一起使用叫醒应用&#33;【厚建软件出品】', 'http://sms.bechtech.cn/Api/getLeft/data/json?accesskey=723&secretkey=59d19d5da9a24732802c6e6841930e861b16a147', '13951667105', '短信余额提醒，剩余：&#39;{&#036;over}&#39;；南京厚建', '55', 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7', '', '', 4, 462, 'zhulidong', 55, 'MCP网页版', 1389164099, 1407995540, 0, 362, 'ayou', '', 'UTF-8', 'json');;
+
+INSERT INTO `liv_member_myset` (`id`, `title`, `mark`, `icon`, `url`, `display`, `usesource`, `uniquetype`, `mfcount`, `order_id`) VALUES
+(1, '我的积分', 'myjifen', 'a:4:{s:4:"host";s:32:"http://img.dev.hogesoft.com:233/";s:3:"dir";s:21:"material/members/img/";s:8:"filepath";s:8:"2014/08/";s:8:"filename";s:22:"20140827091332Z62a.png";}', 'myjifen', 1, 0, 0, 0, 2),
+(2, '我的报名', 'mybaoming', '', 'mybaoming', 0, 0, 0, 0, 1),
+(3, '我的报料', 'mycontribute', '', 'mycontribute', 1, 0, 0, 0, 4),
+(4, '我的违章', 'myviolation', '', 'myviolation', 0, 0, 0, 0, 5),
+(5, '我的水费', 'mywater', '', 'mywater', 1, 2, 0, 0, 6),
+(6, '我的播客', 'myboke', '', 'http://localhost/boke', 1, 1, 0, 0, 8),
+(8, '我的收货信息', 'shop_addr', '', '', 0, 0, 0, 0, 9),
+(9, '我的乘车信息', 'passengers', '', '', 1, 0, 0, 0, 11),
+(11, '我的收藏', 'myfavorites', '', 'myfavorites', 1, 0, 1, 6, 13),
+(13, '我的浏览记录', 'myhistory', '', 'myhistory', 1, 0, 0, 6, 14),
+(26, '我的评论', 'mymessage', '', 'mymessage', 1, 0, 0, 0, 26);;
+
+INSERT INTO `liv_member_myField` (`mfid`, `fieldmark`, `fieldname`, `brief`, `addstatus`, `issearch`, `isrequired`, `isunique`, `defaultsvalue`, `user_id`, `user_name`, `create_time`, `update_time`) VALUES
+(1, 'webtitle', '网站标题', '', 0, 1, 1, 0, '', 362, 'ayou', 1418350108, 1425113708),
+(2, 'url', '网址', '', 0, 0, 1, 1, '', 362, 'ayou', 1418350108, 1425113659),
+(3, 'brief', '描述', '', 0, 0, 0, 0, ' 南京厚建软件欢迎您', 362, 'ayou', 1418350108, 1423126059),
+(4, 'img', '图片', '图片URL链接', 0, 0, 0, 0, '', 362, 'ayou', 1418350108, 1418801851),
+(5, 'create_time', '创建时间', '数据创建时间', 2, 0, 0, 0, '', 362, 'ayou', 1418350108, 1418801858),
+(6, 'ip', 'IP', '这是用户储存数据所使用的IP', 3, 1, 0, 0, '', 362, 'ayou', 1418350108, 1425092685);;
+
+INSERT INTO `liv_member_myFieldBind` (`msid`, `mfid`) VALUES
+(11, 1),
+(11, 2),
+(11, 3),
+(11, 4),
+(11, 5),
+(11, 6),
+(13, 1),
+(13, 2),
+(13, 3),
+(13, 4),
+(13, 5),
+(13, 6);;
+
+INSERT INTO `liv_identifier_user_system` (`iusid`, `iusname`, `brief`, `identifier`, `opened`, `user_id`, `user_name`, `create_time`, `update_time`, `order_id`) VALUES
+(1, '系统默认', '我是注册用户默认系统,用于存放未传identifier和无需使用用户系统会员', 0, 1, 362, 'ayou', 642283800, 642283800, 1);;

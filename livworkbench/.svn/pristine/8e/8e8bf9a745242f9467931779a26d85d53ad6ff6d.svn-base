@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no,email=no">
+<title>注册</title>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/refer.css">
+</head>
+<body>
+	<div class="page-content toolbar-through refer-index">
+		<div class="list-block cpf-form register-form">
+			<form class="registerForm" action="" name="register-cpf" enctype="multipart/form-data">
+				<p class="tips">注册信息</p>
+				<ul>
+					<li class="username">
+						<div class="title">账号：</div>
+						<div class="input"><input type="text" name="userId" placeholder="6~16个字符" value=""></div>
+					</li>
+					<li class="password">
+						<div class="title">密码：</div>
+						<div class="input"><input type="password" name="password" placeholder="6~16个字符" value=""/></div>
+					</li>
+					<li class="repassword">
+						<div class="title">确认密码：</div>
+						<div class="input"><input type="password" name="repassword" placeholder="6~16个字符" value=""></div>
+					</li>
+					<li class="telephone">
+						<div class="title">手机号码：</div>
+						<div class="input"><input type="tel" name="mobileNumber" placeholder="11位手机号码" value=""></div>
+					</li>
+					<li class="email">
+						<div class="title">电子邮件：</div>
+						<div class="input">
+							<input type="email" name="email" value=""></div>
+					</li>
+					<li class="code">
+						<div class="title">验证码：</div>
+						<div class="input"><input type="text" name="checkid" ></div>
+						<div class="code-img">
+							<img title="验证码" src="" />
+						</div>
+					</li>
+				</ul>			
+				<p class="tips">绑定信息</p>
+				<ul>
+					<li class="card">
+						<div class="title">联名卡卡号：</div>
+						<div class="input"><input type="text" name="surplusAccount" value=""></div>
+					</li>
+					<li class="name">
+						<div class="title">姓名：</div>
+						<div class="input"><input type="text" name="fullName" value=""/></div>
+					</li>
+					<li class="certificate">
+						<div class="title">证件号码：</div>
+						<div class="input"><input type="text" name="idcardNumber" value=""></div>
+					</li>
+					<input type="hidden" name="deviceToken" value="1">
+				</ul>
+			</form>
+			<div class="btn-area">
+				<button class="btn btn-full btn-primary register">注册</button>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript" src="./js/module/sea.js"></script>
+<script type="text/javascript" src="./js/main.js"></script>
+<script type="text/javascript">
+	seajs.use("views/register");
+</script>
+</body>
+</html>

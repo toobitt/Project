@@ -1,0 +1,18 @@
+.select-search>div, .right_1>div, .key-search{float:left;height:43px;margin:0;}
+.down_list ul{width:106px;top:43px;left:-1px;border-bottom:1px solid #ccc;max-height:350px;overflow:auto;}
+.weight-box{left:-1px;}
+.choice-area .input_middle, .down_list ul li{padding:0;margin:0;border:none;line-height:32px;}
+.down_list ul li{border:1px solid #CCCCCC;text-align: center;border-bottom:0;}
+.choice-area .down_list{border-right:1px solid #ccc;border-left:1px solid #ccc;margin-right:-1px;}
+.choice-area .input_middle em {margin-top:20px;margin-right:10px;display:none;}
+.choice-area{height:100%;background:#fff;min-width:700px;}
+.serach-btn,.choice-area .status,.choice-area .time,.choice-area .weight{float:left;height:100%;background:#fff;line-height:43px;width:103px;text-align:center;color:#888;}
+.serach-btn{height:43px;}
+.choice-area .input_middle{width:100%;height:100%;text-align:center;color:#888;line-height:43px;}
+.choice-area .serach-btn{width:40px;background:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/search.png) no-repeat center #fff;cursor:pointer;}
+.choice-area .input_left, .choice-area .input_right, .text-search, .right_2{display:none;}
+.key-search{position:relative;background:#fff;width:0;overflow:hidden;transition: width .5s;-webkit-transition: width .5s;}
+.key-search-open{width:159px;}
+.key-search input[type="text"]{top:8px;left:8px;padding-right:25px;height:18px;position:absolute; width:119px; border:1px solid #ccc;}
+.key-search input[type="submit"]{background:url(../../../../.././../livtemplates/tpl/lib/images/bg-all.png) -111px -45px!important;width:22px;height:22px;position:absolute;top:9px;right:4px;}
+.outer{background:white;}

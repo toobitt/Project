@@ -1,0 +1,65 @@
+
+[2015-08-17 14:55:13]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/vod_update.php on line 2108:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/vod_update.php on line 1072:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/frm/base_frm.php on line 1230:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/catalog.class.php on line 208:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://localhost/livsns/api/catalog/catalog_update.php?format=json
+
+[2015-08-17 14:55:13]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/vod_update.php on line 2108:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/vod_update.php on line 1072:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/frm/base_frm.php on line 1230:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/catalog.class.php on line 208:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'format' => 'json',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '011d3e2010a29e593ecfb8e9bfbe360f',
+  'lpip' => '127.0.0.1',
+  'a' => 'update',
+  'id' => '1731',
+  'title' => '空尼奇瓦',
+  'tcolor' => '#000',
+  'isbold' => '0',
+  'isitalic' => '0',
+  'weight' => '0',
+  'submit_type' => '',
+  'pub_time' => '',
+  'publish-sites-1' => 'on',
+  'column_id' => 'a:1:{i:1689;s:6:"新闻";}',
+  'column_name' => '新闻',
+  'update_sort_id' => '127',
+  'keywords' => '',
+  'comment' => '',
+  'subtitle' => '',
+  'source' => '0',
+  'author' => '',
+  'source_img_pic' => 'http://img.dev.hogesoft.com:233/material/video_split/img/2015/08/ee63b9a17e893577f290bba31be62df2.png',
+  'vod_sort_id' => '127',
+  'img_src_cpu' => '',
+  'img_src' => '',
+  'module_id' => '190',
+  'referto' => '/livworkbench/run.php?mid=190&id=1731&infrm=1',
+  'infrm' => '1',
+  'catalog_doub_img' => '{&#036;data}',
+  'catalogdel' => '',
+  'materialdel' => '',
+  'app_uniqueid' => 'livmedia',
+  'mod_uniqueid' => 'livmedia',
+  'content_id' => 1731,
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+)
+
+[2015-08-17 14:55:13]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/vod_update.php on line 2108:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/vod_update.php on line 1072:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/frm/base_frm.php on line 1230:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/catalog.class.php on line 208:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 327:<strong>Error:</strong>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1534,'sign',1534,'sign',1439794513,1439794513)' at line 1<br /><strong>Errno:</strong>1064<br /><strong>SQL:</strong>:INSERT INTO liv_content (app_uniqueid,mod_uniqueid,content_id,catalog_field,value,identifier,user_id,user_name,update_user_id,update_user_name,create_time,update_time) VALUES ('livmedia','livmedia',1731,'doub_img','{&#036;data}',,1534,'sign',1534,'sign',1439794513,1439794513)
+<br />[2015-08-17 14:55:13]
+<br />/Users/mac/Events/Project/livsns/api/catalog/catalog_update.php on line 749:
+<br />&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/catalog/catalog_update.php on line 472:
+<br />&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/catalog/catalog_update.php on line 210:
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/db/db_mysql.class.php on line 107:
+<br />

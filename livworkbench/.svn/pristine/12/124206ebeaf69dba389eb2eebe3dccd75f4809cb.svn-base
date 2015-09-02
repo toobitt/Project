@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>城市之美</title>
+<link rel="stylesheet" href="./css/framework7.custom.min.css">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/greeting.css">
+</head>
+<body>
+<div class="view view-main">
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="left">
+				<a href="javascript:history.back()" class="back link">
+					<i class="icon icon-back"></i>
+				</a>
+			</div>
+			<div class="center sliding">城市之美</div>
+			<div class="right">
+			 <a href="#" class="link">
+			 	<i class="icon icon-share"></i>
+			 </a>
+			</div>
+		</div>
+	</div>
+	<div class="pages navbar-through">
+		<div class="page">
+			<div class="page-content aspect-greeting">
+				<div class="greeting-title">
+					<div class="img-box">
+						<img src="images/city.jpg">
+					</div>
+				</div>
+				<div class="content-block">
+					<p>智慧盐城APP“我把盐城寄出去”系列明信片征集结果已经出来啦！现在明信片美图正在展示中，快来邮寄给你们的亲朋好友吧！每天点击邮寄+点赞就可以参加活动抽奖啦！还等什么呢，轻触指尖送祝福，就从这刻开始吧！</p>
+				</div>
+				<div class="content-block-title content-label"><em class="title" data-letter="图片展示">图片展示</em></div>
+				<div class="content-block greet-list">
+					<ul class="clear">
+						<li class="item">
+							<a class="link" href="form.html">
+								<div class="img-box">
+									<img src="images/scenery2.jpg" />
+								</div>
+								<div class="item-title">
+									<span class="zan">123</span>
+									<span class="share">分享</span>
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a class="link" href="form.html">
+								<div class="img-box">
+									<img src="images/city2.jpg" />
+								</div>
+								<div class="item-title">
+									<span class="zan">123</span>
+									<span class="share">分享</span>
+								</div>
+							</a>
+						</li>
+						<li class="item">
+							<a class="link" href="form.html">
+								<div class="img-box">
+									<img src="images/scenery.jpg" />
+								</div>
+								<div class="item-title">
+									<span class="zan">123</span>
+									<span class="share">分享</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="content-block-title">活动细则：</div>
+				<div class="content-block">
+					<p>每个ID号每天可以寄出明信片3次，只要寄出明信片并且点赞的用户可以参与下面幸福转盘摇奖，系统将每天抽出三名幸运用户，可获得由智慧盐城提供的精美礼品一份。</p>
+					<p>活动时间：12月20日-1月20日<p>
+					<p>参与人群：智慧盐城用户</p>
+				</div>
+				<div class="content-block greeting-slyder">
+					<a class="item-link" href="#">
+						<div class="img-box">
+							<img src="images/slyder.jpg">
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>	
+	</div>
+</div>
+</body>
+</html>

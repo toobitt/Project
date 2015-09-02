@@ -1,0 +1,41 @@
+.photo-area{overflow:hidden;}
+.add-photo{display:inline-block;width:90px;height:26px;line-height:28px;color:#fff;text-align:center;cursor:pointer;background:#494949;border-radius:2px;}
+.photo-list{margin-top:10px;}
+.photo-item{width:245px;height:190px;position:relative;float:left;margin-right:30px;margin-bottom:15px;}
+.photo-item img{width:245px;height:190px;}
+.photo-item .delete{position:absolute;top:-5px;right:-5px;width:20px;height:20px;color:#fff;line-height:20px;text-align:center;cursor:pointer;background:#991214;border-radius:50%;}
+.add-list{margin-top:10px;}
+.add-button{cursor:pointer;width:20px;height:20px;display:inline-block;background:#6ea5e8;border-radius:50%;font-size:18px;color:#fff;text-align:center;line-height:18px;}
+.checkbox-list{position:relative;left:-700px;display:none; height:26px; line-height: 26px;}
+.active{display:inline-block;}
+.checkbox-item{display:inline-block;margin-right:30px;vertical-align:middle;}
+.checkbox-item .name{padding-left:4px;}
+
+.collect-fee{width:640px;height:30px;margin-left:85px; line-height: 24px;}
+.collect-fee input[type="checkbox"]{margin:2px 3px 0 0;}
+.collect-fee input[type="text"]{width:80px; float:left;}
+.collect-fee > span{float:left; margin:0 5px;}
+.struct-list{width:100px; float:left; height:24px; line-height: 24px;}
+.add-area{margin-left:85px; width:450px; overflow:hidden;}
+.service-time{margin-bottom:5px; margin-left:85px;}
+.service-time span{margin:0 5px;}
+.service-time input[type="text"]{width:100px;}
+
+.ad_form .form_ul li.i .struct-list input[type="text"]{height:15px; line-height: 15px;}
+.ad_form .form_ul li.i input[type="checkbox"]{height:14px;}
+
+/*时间选择*/
+.ohms-box{position:absolute;left:0;top:0;z-index:10000;width:165px;box-sizing:border-box;-webkit-box-sizing:border-box;
+	border:2px solid #7a7a7a;padding:10px 15px;background:#4c4c4c;}
+.ohms-inputs, .ohms-sliders{margin-bottom:15px;}
+.ohms-inputs{height:27px;text-align:center;}
+.ohms-input{width:43px;height:27px;background:#7f7f7f;color:#fff;padding:0;margin:0;border:none !important;text-align:center;}
+.ohms-input:focus, .ohms-input.on{background:#fff;color:#000;outline:none;box-shadow:none;}
+.ohms-mao{display:inline-block;width:17px;color:#b7b7b7;}
+.ohms-slider{display:none;height:7px;}
+.ohms-slider:first-child{display:block;}
+.ohms-slider .ui-slider-handle{width:18px;height:18px;border-radius:9px;top:-6px;margin-left:-9px;border:none;background:#72aef6;}
+.ohms-options{clear:both;margin-top:10px;text-align:center;}
+.ohms-ok{margin-right:10px;}
+.ohms-mao:nth-child(4){display:none;}
+.ohms-input-s{display:none;}

@@ -1,0 +1,14 @@
+/*  header  */
+.m2o-header{background:#1abc9c;color:white;}
+.m2o-header .m2o-l{font-size:28px;}
+.m2o-header .m2o-m-title{color:white;font-size:22px;line-height:44px;}
+.m2o-m-title::-webkit-input-placeholder{color:white;}
+.m2o-m-title::-moz-input-placeholder{color:white;}
+.m2o-m-title:focus{border-bottom-color:white;color:white!important;}
+.m2o-save{background:#eee;background-image:none;color:#5e6d81;padding:0 32px;}
+.m2o-close,.m2o-close:hover{background:url({$RESOURCE_URL}publishsys/close.png) center no-repeat #eee;}
+.m2o-save:hover,.m2o-close:hover{background-color:#ddd;}
+.submit{background:#eee; color:#5e6d81; cursor:pointer; height:34px; line-height: 30px; font-size:16px; border-radius: 2px; padding:0 20px; border:none; position:absolute; right:184px;}
+.submit:hover{border:none; background:#ddd;}
+.m2o-save:hover{background-image:none;}
+.m2o-header .edit-button:hover{color:#5e6d81;}

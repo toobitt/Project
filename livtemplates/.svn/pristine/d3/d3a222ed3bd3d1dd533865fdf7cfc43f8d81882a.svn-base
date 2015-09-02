@@ -1,0 +1,21 @@
+/*列表页*/
+
+.m2o-operate{width:120px; }
+.m2o-sort{width:120px; color:#8fa8c6}
+.m2o-sorts{width:120px; color:#8fa8c6}
+.m2o-paixu a{width: 14px; height: 13px; float: left; background: url("{$RESOURCE_URL}bg-all.png") no-repeat -43px -27px;}
+.m2o-paixu input { box-shadow: none;}
+.m2o-area{width:200px; color:#939393; }
+.m2o-op{width:160px; color:#939393; }
+
+
+
+/*附加信息配置*/
+.m2o-switch{width:150px; }
+.m2o-switch .common-switch{bottom:0; }
+.m2o-mark{width:140px; color:#939393; }
+.m2o-total{width:100px; color:#939393; }
+.m2o-brief{width:250px; color:#939393; }
+.m2o-type{width:300px; color:#939393; }
+.m2o-option{z-index: 99;}
+

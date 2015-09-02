@@ -1,0 +1,10 @@
+@charset "utf-8";
+.email-paixu{width:30px}
+.email-yjbt{width:150px;}
+.email-fsyx{width:170px;}
+.email-cz{width:35px}
+.email-zt{width:50px}
+.email-tjr{width:140px}
+.create-time{display:block;color:#7B7B7B;font-size:9px}
+.email-biaoti-overflow{max-width:400px}
+.common-list-i{position:absolute;top:11px;}

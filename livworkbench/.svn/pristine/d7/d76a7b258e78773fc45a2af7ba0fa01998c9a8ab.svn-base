@@ -1,0 +1,68 @@
+#wrapper{position:absolute; top:111px; left:0; bottom:0; overflow:auto; width:100%; transition:margin-left 0.5s; }
+#scroller{position:relative; width:100%; }
+
+
+.list-item{height:70px; margin:10px 0;}
+.list-item a{color:#000;}
+.list-item .list-pic{margin:0 15px 0 10px;}
+.list-item .channel-name{font-size:16px;padding-bottom:13px;}
+.list-item p{color:#999;font-size:12px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.list-item .live-name{color:#3b9ac6;}
+.list-item .live-flag{display:block;cursor:pointer;height:100%;width:56px; font-size:0; background:url(../images/live/live-icon-play-l.png) center no-repeat #fafafa;}
+.list-item .live-flag.broadcast{background-image:url(../images/live/live-icon-headphone-l.png);}
+.list-item.is-play .live-flag.broadcast{background-image:url(../images/live/live-icon-headphone-l-playing.png);}
+
+.detail-list .list-item{background:#f8f8f8;height:44px;line-height:44px;color:#999; position:relative; }
+.detail-list .list-item .state{width:85px; position:absolute; left:0; text-align:center; color:#fff; display:none; background-color:#3b9ac6; }
+.detail-list .list-item.current .state{display:block; }
+.detail-list .live-time{width:85px;background:#f5f5f5;text-align:center;}
+.detail-list .live-name{text-indent:15px;color:#999;}
+.detail-list .live-flag{width:44px;background:url(../images/live/live-icon-play-s.png) no-repeat center #fafafa;}
+.detail-list .live{background-color:#fff;}
+.detail-list .live .live-time{background:#fafafa;}
+.detail-list .live .live-name.nowplay{color:#3b9ac6;}
+.detail-list .current{background:#4da2ca;color:#fff;}
+.detail-list .current .live-name{color:#fff;}
+.detail-list .current .live-time{background:#3b9ac6;}
+.detail-list .current .live-flag{background-image:url(../images/live/live-icon-play-s-white.png);background-color:#3b9ac6;}
+
+.player-wrap{height:240px;overflow:hidden;background:#000;text-align:center;}
+.playlist-wrap{position:fixed; left:0; bottom:0; z-index:99; width:100%; height:0; transition:all linear .5s;}
+.playlist-wrap.show{height:100%;}
+.playlist-inner{height:100%; margin-top:76px; background-color:#eee; }
+
+
+/* 广播播放器样式 */
+.broadcast-play-wrap{height:80px;width:100%;}
+.broadcast-play-box{position:fixed;bottom:50px;width:100%;}
+.broadcast-play-wrap p{height:30px;text-align:center;color:#666;font-size:15px;line-height:30px;background:rgba(204,204,204,.8);}
+.broadcast-player{height:50px;background:#3b9ac6;}
+.broadcast-player .btn{display:inline-block;width:50px;height:50px;}
+.broadcast-player .pause{background:url(../images/live/live-simpleplayer-icon-pause.png);}
+
+/* 点播 */
+.vod-channel-list .each-list{margin-bottom:10px;border-bottom:2px solid #cbcbcb;}
+.vod-channel-list .list-item{margin-bottom:0;border:none;height:45px;}
+.vod-channel-list .list-pic{height:25px;width:40px;}
+.vod-channel-list .channel-name{padding:0;}
+.vod-channel-list .live-flag{background:url(../images/vod/vod-item-collapse-arrow-down.png) no-repeat center #fafafa;}
+.vod-channel-list .program-wrap{display:none;transition:all ease-in .3s;background:#fff;-webkit-column-gap:10px;column-gap:10px;padding:10px 10px 0;border-top:1px solid #ddd;}
+.vod-channel-list .current .live-flag{background-image:url(../images/vod/vod-item-collapse-arrow-up.png);}
+.vod-channel-list .current .program-wrap{display:block;}
+.vod-channel-list .current .list-item{background:#fafafa;}
+.vod-channel-list .program-item{cursor:pointer;height:30px;line-height:30px;background:#eee;margin-bottom:10px;text-align:center;font-size:14px;color:#666;}
+.vod-channel-list .program-item:hover{background:#ddd;}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2) {
+.list-item .live-flag{background-image:url(../images/live/live-icon-play-l-2x.png);background-size:56px 56px;}
+.list-item .live-flag.broadcast{background-image:url(../images/live/live-icon-headphone-l-2x.png);}
+.list-item.is-play .live-flag.broadcast{background-image:url(../images/live/live-icon-headphone-l-playing-2x.png);}
+.detail-list .live-flag{background-image:url(../images/live/live-icon-play-s-2x.png);background-size:44px 44px;}
+.detail-list .current .live-flag{background-image:url(../images/live/live-icon-play-s-white-2x.png);}
+.broadcast-player .pause{background-image:url(../images/live/live-simpleplayer-icon-pause-2x.png);background-size:50px 50px;}
+.vod-channel-list .live-flag{background-image:url(../images/vod/vod-item-collapse-arrow-down-2x.png);background-size:56px 45px;}
+.vod-channel-list .current .live-flag{background-image:url(../images/vod/vod-item-collapse-arrow-up-2x.png);}
+}

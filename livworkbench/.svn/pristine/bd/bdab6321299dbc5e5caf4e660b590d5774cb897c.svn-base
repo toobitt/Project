@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=devide-width,initial-scale=0.6,maximum-scale=1,user-scalable=0,target-densitydpi=high-dpi" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="yes" name="apple-touch-fullscreen" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<link rel="apple-touch-icon-precomposed" href="" />
+<link rel="stylesheet" href="./css/gmu.css" type="text/css"/>
+<link rel="stylesheet" href="./css/bae.css" type="text/css"/>
+<link rel="stylesheet" href="./css/common.css" type="text/css" />
+<link rel="stylesheet" href="./css/subway.css" type="text/css" />
+<script type="text/javascript" src="./js/zepto.min.js"></script>
+<script type="text/javascript" src="./js/api.js"></script>
+<script type="text/javascript" src="./js/gmu/gmu.js"></script>
+
+<script type="text/javascript" src="./js/gmu/slider.js"></script>
+<script type="text/javascript" src="./js/gmu/$multiview.js"></script>
+
+<script type="text/javascript" src="./js/gmu/dialog.js"></script>
+<script type="text/javascript" src="./js/gmu/refresh.js"></script>
+<script type="text/javascript" src="./js/gmu/navigator.js"></script>
+<script type="text/javascript" src="./js/bae/bae_progressbar.js"></script>
+
+<script type="text/javascript" src="./js/subway/hoge_storage.js"></script>
+<script type="text/javascript" src="./js/subway/layout.js"></script>
+<script type="text/javascript" src="./js/subway/subway.js"></script>
+<title>无锡地铁</title>
+</head>
+<body>
+	<div class="first-body transition" _attr="1">
+		<div data-role="bae_header" class="ui-bae-header">
+			<div class="ui-bae-header-list m2o-overflow">
+				<div class="ui-bae-header-left">
+					<a href="javascript:;" data-role="bae_header_button" class="ui-bae-go-back"></a>
+				</div>无锡地铁 
+			</div>
+			<ul class="ui-bae-color-line"> 
+				<li>&nbsp;</li>  <li>&nbsp;</li> <li>&nbsp;</li> <li>&nbsp;</li> <li>&nbsp;</li> 
+			</ul>
+		</div>
+		<div class="tab-wrap">
+			 <div class="network-wrap">
+			 	<div class="network-inner">
+			 		<div class="subway-map-box">
+				 	 <div class="subway-map-inner">
+						<img src="./images/subway/metro_map4800.png" usemap="#subway-mapArea" />
+						 <div class="map-area-box"></div>
+						 <div class="map-pop-box"></div>
+				 	 </div>
+				 	 <map name="subway-mapArea" id="subway-mapArea"></map>
+					<div class="pic-btns pic-left">
+						<a class="fullpic-add">+</a>
+						<a class="fullpic-reduction">一</a>
+						<a class="fullpic-location">&nbsp; </a>
+					</div>
+					<div class="pic-btns pic-right">
+						<a class="fullpic-notice">&nbsp; <span class="notice-num">0</span></a>
+					</div>
+				</div>
+			 	</div>
+			</div>
+			<div class="station-wrap"></div>
+			<div class="service-wrap"></div>
+		</div>
+		<div class="subnav footernav">
+			<ul>
+				<li data-type="network" class="selected"><a class="network">线路图</a></li>
+				<li data-type="station"><a class="station">站点查询</a></li>
+				<li data-type="service"><a class="service">服务公告</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="wirelessDiv">&nbsp;</div>
+	<script src="http://api.map.baidu.com/api?v=2.0&ak=G3zlz1NuGD2GWPHlIvnbHGvH" type="text/javascript"></script> 
+</body>
+</html>

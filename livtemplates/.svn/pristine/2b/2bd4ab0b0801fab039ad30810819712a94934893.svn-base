@@ -1,0 +1,40 @@
+.m2o-flex{
+    display:-webkit-box;
+    display:-moz-box;
+    display:box;
+    width:auto;
+}
+.m2o-flex-center{
+    -webkit-box-align:center;
+    -moz-box-align:center;
+    box-align:center;
+}
+.m2o-flex-one{
+    -webkit-box-flex:1;
+    -moz-box-flex:1;
+    box-flex:1;
+}
+.m2o-transition{
+    -webkit-transition:all .3s;
+    -moz-transition:all .3s;
+    transition:all .3s;
+}
+.m2o-transition6{
+    -webkit-transition:all .6s;
+    -moz-transition:all .6s;
+    transition:all .6s;
+}
+.m2o-border-box{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+.m2o-input{
+    padding:2px;
+    height:24px;
+    line-height:24px;
+    background:#fff;
+    border:none;
+    outline:none !important;
+}
+.m2o-input:focus{}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>公司新闻</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.ui.core.js"></script>
+<script type="text/javascript" src="js/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="js/jquery.switchable-2.0.min.js"></script>
+<script type="text/javascript" src="js/lazyload.js"></script>
+<script type="text/javascript" src="js/hoge.js"></script>
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="css/ie.css" />
+<![endif]-->
+
+<!--[if lt IE 7]>
+<script type="text/javascript" src="js/pngfix.js"></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('.index-second-nav .icon,.index-second-nav .industry .icon,.index-second-nav .development .icon,.hoge-head .menu li,.goTop,.hoge-footer .menu em,.culture-second-nav .circle em,.culture-change .title,.leader-list .photo em,.hoge-glory h3,.case-second-nav .circle em,.case-list .quo-icon,.job-second-nav a,.deparment-info .icon em,.hoge-head .menu li,.contact-second-nav .spanm,.contact-area .quo-icon');
+</script>
+<![endif]-->
+</head>
+<body>
+<!-- head -->
+<div class="hoge-head news-contant-headbg">
+	<div class="news-contant-head layout-wd">
+		<h1 class="logo">
+			<a href="index.html"></a>
+         	<a href="index.html" class="logo-circle"></a>
+		</h1>
+		<h1 class="hw">The choice of how to change / 创变之选</h1>
+	</div>
+</div>
+<!-- main -->
+<div class="news-contant-mainbg">
+	<div class="news-contant-main layout-wd clearfix">
+	<!-- left -->
+	<div class="news-contant-left fl">
+		<div class="title clearfix">
+			<h2>浙江卫视频道蓝天下网站</h2>
+			<p><span>2013-04-08</span><span>08:37:01</span>来源：<span>腾讯网</span></p>
+			<div class="share">
+				<a class="share2tencent"></a>
+				<a class="share2sina"></a>
+				<a class="share2renren"></a>
+			</div>
+		</div>
+		<div class="picture">
+		</div>
+		<div class="content">
+			<p>厚建内容发布系统，可以以不变应万变的满足各类客户的需求，可以是新闻类、视频类、综合类、商务类等等，正是这样高标准产品的设计，让厚建在新媒体的路越走越长，我们将继续诚心诚意的为客户作出最大的努力。</p>
+			<p>龙广在线网站（<a>WWW.HLJRAIDO.COM</a>）是黑龙江人民广播电视台官方网站，自2000年3月开通以来，以服务媒体、创新传播方式为己任。</p>
+			<p>十年来，龙广在线网站一直在努力打造龙广新媒体的旗舰。</p>
+			<p>从网站建立时的每天200人流量，到如今每天超过400万人次的访问量；</p>
+			<p>从网站在全国广播行业率先实现在线收听和记忆广播查询，到如今，网站在全国广播网站排名第6，在全省媒体网站中位列前三甲，论坛全国广播网站排名第二。</p>
+			<p>一次次惊喜，是龙广人不断创新的见证。</p>
+			<p>2010年，龙广在线网站助推龙广网络媒体发展登上新台阶。</p>
+			<p>网站着力打造的特色栏目——龙广视频全年制作、上传电台活动及节目视频600余条，点击超百万。</p>
+			<p>厚建内容发布系统，可以以不变应万变的满足各类客户的需求，可以是新闻类、视频类、综合类、商务类等等，正是这样高标准产品的设计，让厚建在新媒体的路越走越长，我们将继续诚心诚意的为客户作出最大的努力。厚建内容发布系统，可以以不变应万变的满足各类客户的需求，可以是新闻类、视频类、综合类、商务类等等，正是这样高标准产品的设计，让厚建在新媒体的路越走越长，我们将继续诚心诚意的为客户作出最大的努力。</p>
+			<p>龙广在线网站是黑龙江人民广播电视台官方网站，自2000年3月开通以来，以服务媒体／创新传播方式为己任。</p>
+			<p>十年来，龙广在线网站一直在努力打造龙广新媒体的旗舰。</p>
+			<p>从网站建立时的每天200人流量，到如今每天超过400万人次的访问量；</p>
+			<p>从网站在全国广播行业率先实现在线收听和记忆广播查询，到如今，网站在全国广播网站排名第6，在全省媒体网站中位列前三甲，论坛全国广播网站排名第二。</p>
+			<p>一次次惊喜，是龙广人不断创新的见证。</p>
+		</div>
+	</div>
+	<!-- right -->
+	<div class="news-contant-right">
+		<div class="part page">
+			<p class="title">公司新闻</p>
+			<a class="prev"><em><<</em>厚建内容发布系统</a>
+			<a class="next"><em>>></em>新闻视频类革新</a>
+		</div>
+		<div class="part">
+			<p class="title">Tags</p>
+			<ul class="tags">
+				<li><a>龙广网</a></li>
+				<li><a>蓝天下网站</a></li>
+				<li><a>新闻类</a></li>
+				<li><a>广播网站</a></li>
+				<li><a>黑龙江暴雪</a></li>
+				<li><a>龙广新媒体</a></li>
+				<li><a>厚建</a></li>
+				<li><a>网友志愿者</a></li>
+				<li><a>主持人评选</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+</div>
+<!-- foot -->
+<div class="hoge-footer-bg">
+         <div class="hoge-footer">
+              <ul class="menu clearfix">
+		           <li><a href="#">帮助</a>/</li>
+		           <li><a href="#">合作伙伴</a>/</li>
+		           <li><a href="#">最新消息</a>/</li>
+		           <li><a href="#">厚建招聘</a>/</li>
+		           <li><a href="#">关于厚建</a>/</li>
+		           <li><a href="#">联系我们</a></li>
+		           <li>
+		             <a class="sina"><em></em></a>
+		             <a class="tecent"><em></em></a>
+		           </li>
+             </ul>
+             <p class="mt35 copyright">Copyright @ 1998 - 2012 Hoge. All Rights Reserved.厚建公司 版权所有</p>
+             <p class="mt10 address">江苏省南京市雨花区雨花大道2号邦宁科技园  ｜  025-83326233  ｜  hogesoft@hogesoft.com</p>
+       	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="yes" name="apple-touch-fullscreen" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<link rel="apple-touch-icon-precomposed" href="" />
+<link rel="stylesheet" href="css/gmu.css" type="text/css"/>
+<link rel="stylesheet" href="css/bae.css" type="text/css"/>
+<link rel="stylesheet" href="css/common.css" type="text/css" />
+<link rel="stylesheet" href="css/subway.css" type="text/css" />
+<link rel="stylesheet" href="css/facilities_info.css" type="text/css" />
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<title>地铁</title>
+</head>
+<body>
+	<div class="first-body transition" _attr="1">
+		<div data-role="bae_header" class="ui-bae-header">
+			<div class="ui-bae-header-list">
+				<div class="ui-bae-header-left">
+					<a href="javascript:history.back()" data-role="bae_header_button" class="ui-bae-go-back"></a>
+				</div>出入口信息
+			</div>
+			<ul class="ui-bae-color-line"> 
+				<li>&nbsp;</li>  <li>&nbsp;</li> <li>&nbsp;</li> <li>&nbsp;</li> <li>&nbsp;</li> 
+			</ul>
+		</div>
+		<div class="tab-wrap access-wrap">
+			<div class="main-wrap m2o-flex">
+				<div class="access-num">
+					<span class="num fontsize50">5</span>
+					<span class="sign fontsize14">出入口</span>
+				</div>
+				<div class="m2o-flex-one">
+					<div class="item">
+						<span class="item-title fontsize30 red">中北路（北）</span>
+						<div class="item-info">
+							<span class="info-list fontsize24">复兴路、大东方百货A座B座、天安大厦、云蝠大厦、崇安寺步行街区、人民中路、苏宁广场、恒隆广场</span>
+						</div>
+					</div>
+					<div class="item">
+						<span class="item-title fontsize30 around">周边公交<span class="toggle-min"></span></span>
+						<div class="item-info around-info">
+							<span class="info-list fontsize24 sign-name">大东方百货（崇安寺）</span>
+							<span class="info-list fontsize18 sign-num">11、211、112、81、35、701、20、118、63、75、88、82、80</span>
+							<span class="info-list fontsize24 sign-name">健康路（人民路）</span>
+							<span class="info-list fontsize18 sign-num">11、211、112、81、35、701、20、118、63、75、88、82、80</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-wrap m2o-flex">
+				<div class="access-num">
+					<span class="num fontsize50">23</span>
+					<span class="sign fontsize14">出入口</span>
+				</div>
+				<div class="m2o-flex-one">
+					<div class="item">
+						<span class="item-title fontsize30 red">中北路（北）</span>
+						<div class="item-info">
+							<span class="info-list fontsize24">复兴路、大东方百货A座B座、天安大厦、云蝠大厦、崇安寺步行街区、人民中路、苏宁广场、恒隆广场</span>
+						</div>
+					</div>
+					<div class="item">
+						<span class="item-title fontsize30 around">周边公交<span class="toggle-add"></span></span>
+						<div class="item-info around-info">
+							<span class="info-list fontsize24 sign-name">大东方百货（崇安寺）</span>
+							<span class="info-list fontsize18 sign-num">11、211、112、81、35、701、20、118、63、75、88、82、80</span>
+							<span class="info-list fontsize24 sign-name">健康路（人民路）</span>
+							<span class="info-list fontsize18 sign-num">11、211、112、81、35、701、20、118、63、75、88、82、80</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+

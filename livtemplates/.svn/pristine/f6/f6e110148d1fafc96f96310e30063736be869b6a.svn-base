@@ -1,0 +1,6 @@
+新UI-查看属性-设置值	set_attr_value_form.php
+新属性基础数据表单	attribute_form_list.php
+
+前台属性管理列表	ui_attribute_list.php
+前台属性管理表单	ui_attribute_form_list.php
+前台属性预设表单	attribute_value_config_form.php

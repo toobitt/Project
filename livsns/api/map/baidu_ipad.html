@@ -1,0 +1,580 @@
+<!doctype html>
+<html>
+<head>
+<title>百度地图</title> 
+<meta name="viewport" content="user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0"/>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<style type="text/css">
+html{height:100%}
+body{height:100%;margin:0;padding:0;font-size:12px}
+.BMap_Marker img {width:100%}
+.BMap_pop>img{display:none;}
+
+#realtime_traffic_box{width:156px; margin-top:10px; font-size:18px; text-align:center; cursor:pointer; background:rgba(255, 255, 255, .6); border:1px solid #ccc; color:#000; }
+#realtime_traffic{line-height:38px; }
+#explain_traffic{display:none; height:30px; padding:0 5px;}
+#explain_traffic span{display:inline-block; padding:0 5px; height:19px; line-height:19px; font-size:16px;  color:#fff;margin-right:2px;}
+
+.yongji{background:#d84a47;}
+.huanxing{background:#f3ad00;}
+.changtong{background:#60be4b;}
+
+#sortshow{display:none;background:rgba(255, 255, 255, .6); border:1px solid #ccc; padding:10px; }
+#sortshow span{color:#333; margin-right:10px; font-size:18px; cursor:pointer;}
+#sortshow span:last-child{margin-right:0; }
+#sortshow em{width: 9px; height: 9px; display: inline-block; vertical-align: middle; border-radius: 50%; margin-right: 2px;}
+.info-box{z-index:999;position:absolute;top:25px;left:25px;}
+.share, .share-hover{float:right;width:44px;height:44px;background:url(share.png) no-repeat;}
+.share-hover{background-image:url(share-hover.png);}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2) {
+    .share, .share-hover{background-image:url(share-2x.png);background-size:44px 44px;}
+    .share-hover{background-image:url(share-hover-2x.png);}
+}
+</style>
+
+</head>
+<body>
+<div class="info-box">
+    <div id="ceshi"></div>
+    <div id="sortshow"></div>
+    <div id="realtime_traffic_box">
+        <div id="realtime_traffic" onclick="mapOption.toggleTraffic()">显示实时路况</div>
+        <div id="explain_traffic">
+            <span class="yongji">拥挤</span>
+            <span class="huanxing">缓行</span>
+            <span class="changtong">畅通</span>
+        </div>
+    </div>
+</div>
+
+<div id="map" style="width: 100%; height: 100%"></div>
+
+<script type="text/javascript" src="./convertor.js"></script>
+<script type="text/javascript">
+var mydom = function(selector){
+    return document.querySelector(selector);
+};
+
+var myevent = {
+    on : function(dom, type, handle){
+        dom.addEventListener(type, handle, false);
+    },
+
+    off : function(dom, type, handle){
+        dom.removeEventListener(type, handle, false);
+    }
+};
+
+function hg_initialize(){
+    mapOption.init();
+}
+
+function hg_showsort(data){
+    mapOption.showSort(data);
+}
+
+function hg_showpoints(data){
+    mapOption.showPoints(data);
+}
+
+var mapOption = {
+    element : mydom('#map'),
+    map : null,
+    level : 13,
+    lng : 0,
+    lat : 0,
+
+    data : {},
+    icons : {},
+    markers : [],
+
+    points : {},
+
+    currentPos : null,
+    currentPosMarker : null,
+    markPos : null,
+
+    traffic : null,
+
+    changeHash : false,
+    init: function() {
+        this.hash();
+        this.size(this.data['width'], this.data['height']);
+        var level = this.level = this.data['level'] || 13;
+        var lng = this.lng = this.data['lng'];
+        var lat = this.lat = this.data['lat'];
+        this.map = new BMap.Map('map', {enableHighResolution:true,maxZoom:18});
+        this.map.enableDoubleClickZoom();
+        this.map.enableContinuousZoom();    //启用地图惯性拖拽，默认禁用
+        //this.map.addControl(new BMap.NavigationControl({anchor: BMAP_ANCHOR_TOP_RIGHT}));  //添加默认缩放平移控件
+        if (lng && lat){
+            this.doDingwei(lng, lat);
+        }
+        this.loadSort();
+    },
+    size : function(width, height){
+        width && (this.element.style.width = width + 'px');
+        height && (this.element.style.height = height + 'px');
+    },
+    hash : function(){
+        var hash = location.hash.substr(1);
+        hash = hash.split('&');
+        for(var i = 0, len = hash.length; i < len; i++){
+            if(hash[i]){
+                var tmp = hash[i].split('=');
+                if(tmp[0]){
+                    this.data[tmp[0]] = decodeURIComponent(tmp[1]);
+                }
+            }
+        }
+    },
+    loadScript : function(src, id){
+        var script = document.createElement('script');
+        script.src = src;
+        script.async = true;
+        id && (script.id = id);
+        document.head.appendChild(script);
+    },
+    loadSort : function(){
+        if(this.data['suri']){
+            this.loadScript(this.data['suri'] + '&callback=hg_showsort', 'scriptforsort');
+        }else{
+            this.loadPoints();
+        }
+    },
+    showSort : function(data){
+        var icons = this.icons;
+        data = eval(data);
+        if (data.length > 0){
+            var item, point;
+            var points = [];
+            var sortshow = mydom('#sortshow');
+            var html = '';
+            var size = '';
+            html = html + '<span style="display:none;"><em style="background:#666;"></em>全部</span>';
+            for (var i = 0; i < data.length; i++){
+                item = data[i];
+                try{
+                    icons[item.id] = item.icon.host + item.icon.dir + size + item.icon.filepath + item.icon.filename;
+                }catch (e){
+                    icons[item.id] = '';
+                }
+                html = html + '<span><em style="background:' + item.color + ';"></em>' + item.title + '</span>';
+            }
+            sortshow.innerHTML = html;
+            sortshow.style.display = 'block';
+        }
+        this.loadPoints();
+    },
+    loadPoints : function(sort){
+        if(this.data['duri']){
+            sort = sort ? '&sort_id=' + parseInt(sort) : '';
+            var callback = '&callback=hg_showpoints' + sort;
+            this.loadScript(this.data['duri'] + callback, 'scriptforpoint');
+        }
+    },
+    showPoints : function(data){
+        if(!this.map){
+            return;
+        }
+        this.removeAllMarkers();
+        data = eval(data);
+        if(data && data.length){
+            for(var i = data.length - 1; i >= 0; i--){
+                var item = data[i];
+                this.points[item['id']] = item;
+                var blng = item.baidu_longitude;
+                var blat = item.baidu_latitude;
+                var lng = item.longitude;
+                var lat = item.latitude;
+                if(blng == 0 || blat == 0){
+                    if(lng == 0 || lat == 0){
+                        continue;
+                    }
+                    BMap.Convertor.translate(new BMap.Point(lng, lat), 2, this.addMarker, item, i, data.length, 0);     //真实经纬度转成百度坐标
+                }else{
+                    this.addMarker(new BMap.Point(blng, blat), item, i, data.length, 0);
+                }
+            }
+        }
+    },
+    addMarker : function(point, itemdata, index, length, self){
+        itemdata = itemdata || {};
+        this.points[itemdata['id']] && (this.points[itemdata['id']]['realpoint'] = point);
+        var size, myIcon, marker;
+        if (this.icons[itemdata.group_id]){
+            size = new BMap.Size(26,37);
+            myIcon = new BMap.Icon(this.icons[itemdata.group_id], size);
+        }else if (this.data['markicon']){
+            size = new BMap.Size(26,37);
+            myIcon = new BMap.Icon(this.data['markicon'], size);
+        }else{
+            size = new BMap.Size(15,15);
+            myIcon = new BMap.Icon('point.png', size);
+        }
+        marker = new BMap.Marker(point,{icon:myIcon});
+
+        var imghtml = '';
+        try{
+            if (itemdata.pic.filename){
+                var pic = itemdata.pic.host + itemdata.pic.dir + '200x200/' + itemdata.pic.filepath + itemdata.pic.filename;
+                imghtml = '<img src="' + pic + '" style="width:100px;height:100px;float:left;"/>';
+            }
+        }catch (e){
+            imghtml = '';
+        }
+
+        var content = itemdata.content || '';
+        var id = itemdata.id || 0;
+        var address = itemdata.address || '';
+        var time = date('H:i', itemdata.create_time || 0) || '';
+
+        if (self){
+            if (this.currentPosMarker){
+                this.map.removeOverlay(this.currentPosMarker);
+            }
+            var circle = new BMap.Circle(point, 500);
+            circle.setStrokeWeight(1);
+            circle.setStrokeColor('#fff');
+            if (self == 2){
+                this.map.panTo(point);
+                this.map.setCenter(point);
+            }
+            this.map.addOverlay(marker);
+            this.map.addOverlay(circle);
+            return;
+        }
+        var html = '<div style="position:relative;line-height:1.5;font-size:14px;">' +
+                //'<div style="float:left;margin-right:15px;background:red;">' + imghtml + '</div>' +
+                imghtml +
+                '<div style="overflow:hidden;">' +
+                    '<span style="font-size:12px;color:#999">' + time + '</span>&nbsp;&nbsp;' +
+                    content +
+                    '<div style="font-size:10px;color:#999">' + address + '</div>' +
+                    '<div class="share" ontouchstart="mapOption.toggleShareClass(this, 1)" ontouchend="mapOption.toggleShareClass(this, 0)" onclick="mapOption.doShare('+ id +')">&nbsp;&nbsp;</div>' +
+                '</div>' +
+                '<div style="clear:both;height:0;"></div>' +
+
+                '</div>';
+        var infoWindow = new BMap.InfoWindow(html, {
+            maxWidth : 320
+        });
+        infoWindow.id = itemdata['id'];
+        infoWindow.handler = function(event){
+            if(!this.moniClick){
+                mapOption.openDetail(this.id);
+            }
+            this.moniClick = false;
+        }
+        infoWindow.addEventListener('open', infoWindow.handler);
+
+        marker.id = itemdata['id'];
+        marker.infoWindow = infoWindow;
+        marker.handler = function(){
+            this.openInfoWindow(marker.infoWindow);
+        }
+        marker.addEventListener('click', marker.handler);
+
+        this.markers.push(marker);
+        //mydom('#ceshi').innerHTML += '[<span id="'+ id +'">'+ id +'</span>]';
+        var _this = this;
+        setTimeout(function(){
+            _this.map.addOverlay(marker);
+            _this.map.centerAndZoom(point, _this.level);
+            marker.setAnimation(BMAP_ANIMATION_DROP);
+            /*if (!_this.currentPos)
+            {
+                if (index == 0)
+                {
+                    _this.markPos = point;
+                    setTimeout(function(){
+                        marker.openInfoWindow(infoWindow);
+                    }, 400);
+                }
+            }*/
+        }, ((length - index) % 10) * 200);
+    },
+    highLine : function(obj, state){
+        obj.style.background = state ? '#eee' : '#fff';
+    },
+    openDetail : function(id){
+        location.href = '?func=showDetail&id=' + id;
+    },
+    doShare : function(id){
+        location.href = '?func=showShare&id=' + id;
+    },
+    doChange : function(id){
+        var item = this.points[id];
+        this.map.panTo(item['realpoint']);
+        var marker = this.getMarkerById(id);
+        marker.infoWindow.moniClick = true;
+        marker && marker.openInfoWindow(marker.infoWindow);
+    },
+    getMarkerById : function(id){
+        var markers = this.markers;
+        for(var i = 0, len = markers.length; i < len; i++){
+            if(markers[i].id == id){
+                return markers[i];
+            }
+        }
+    },
+    removeAllMarkers : function(){
+        if (this.markers && this.markers.length > 0){
+            for (var i = 0, len = this.markers.length; i < len; i++){
+                var marker = this.markers[i];
+                var infoWindow = marker.infoWindow;
+                infoWindow.id = null;
+                infoWindow.removeEventListener('open', infoWindow.handler);
+                infoWindow.handler = null;
+                infoWindow = null;
+                marker.id = null;
+                marker.removeEventListener('click', marker.handler);
+                marker.handler = null;
+                this.map.removeOverlay(marker);
+                marker = null;
+            }
+        }
+    },
+    doDingwei : function(lng, lat){
+        if(this.map){
+            this.currentPos = new BMap.Point(lng || this.lng, lat || this.lat);
+            this.map.setCenter(this.currentPos);
+            this.map.setZoom(this.level);
+            this.addMarker(this.currentPos, '', '', '', 1);
+        }
+    },
+    shTraffic : function(){
+        !this.traffic && (this.traffic = new BMap.TrafficLayer());        // 创建交通流量图层实例
+        this.map[this.data['type'] == 'traffic' ? 'addTileLayer' : 'removeTileLayer'](this.traffic);
+    },
+    toggleTraffic : function(){
+        var string = '';
+        var display = '';
+        if(this.data['type'] == 'traffic'){
+            this.data['type'] = 'normal';
+            string = '显示实时路况';
+            display = 'none';
+        }else{
+            this.data['type'] = 'traffic';
+            string = '关闭实时路况';
+            display = 'block';
+        }
+        mydom('#realtime_traffic').innerHTML = string;
+        mydom('#explain_traffic').style.display = display;
+        this.shTraffic();
+    },
+    toggleShareClass : function(obj, state){
+        obj.className = state ? 'share-hover' : 'share';
+    }
+};
+
+window.onload = function(){
+    mapOption.loadScript('http://api.map.baidu.com/api?v=1.4&callback=hg_initialize');
+
+    /*setInterval(function(){
+        if(mapOption.changeHash){
+            mapOption.data = [];
+            mapOption.hash();
+            var point = new BMap.Point(mapOption.data['lng'], mapOption.data['lat']);
+            BMap.Convertor.translate(point,0,mapOption.addMarker, '', '', '', 2);
+        }else{
+            mapOption.toggleTraffic();
+            mapOption.markPos && mapOption.map.panTo(mapOption.markPos);
+        }
+    }, 1000);*/
+
+
+    /*myevent.on(mydom('#ceshi'), 'click', function(event){
+        var id = event.target.id;
+        mapOption.doChange(id);
+    });*/
+}
+
+
+function date ( format, timestamp ) {
+    var a, jsdate=((timestamp) ? new Date(timestamp*1000) : new Date());
+    var pad = function(n, c){
+        if( (n = n + "").length < c ) {
+            return new Array(++c - n.length).join("0") + n;
+        } else {
+            return n;
+        }
+    };
+    var txt_weekdays = ["Sunday","Monday","Tuesday","Wednesday",
+        "Thursday","Friday","Saturday"];
+    var txt_ordin = {1:"st",2:"nd",3:"rd",21:"st",22:"nd",23:"rd",31:"st"};
+    var txt_months = ["", "January", "February", "March", "April",
+        "May", "June", "July", "August", "September", "October", "November",
+        "December"];
+    var f = {
+        // Day
+        d: function(){
+            return pad(f.j(), 2);
+        },
+        D: function(){
+            t = f.l(); return t.substr(0,3);
+        },
+        j: function(){
+            return jsdate.getDate();
+        },
+        l: function(){
+            return txt_weekdays[f.w()];
+        },
+        N: function(){
+            return f.w() + 1;
+        },
+        S: function(){
+            return txt_ordin[f.j()] ? txt_ordin[f.j()] : 'th';
+        },
+        w: function(){
+            return jsdate.getDay();
+        },
+        z: function(){
+            return (jsdate - new Date(jsdate.getFullYear() + "/1/1")) / 864e5 >> 0;
+        },
+
+        // Week
+        W: function(){
+            var a = f.z(), b = 364 + f.L() - a;
+            var nd2, nd = (new Date(jsdate.getFullYear() + "/1/1").getDay() || 7) - 1;
+
+            if(b <= 2 && ((jsdate.getDay() || 7) - 1) <= 2 - b){
+                return 1;
+            } else{
+
+                if(a <= 2 && nd >= 4 && a >= (6 - nd)){
+                    nd2 = new Date(jsdate.getFullYear() - 1 + "/12/31");
+                    return date("W", Math.round(nd2.getTime()/1000));
+                } else{
+                    return (1 + (nd <= 3 ? ((a + nd) / 7) : (a - (7 - nd)) / 7) >> 0);
+                }
+            }
+        },
+
+        // Month
+        F: function(){
+            return txt_months[f.n()];
+        },
+        m: function(){
+            return pad(f.n(), 2);
+        },
+        M: function(){
+            t = f.F(); return t.substr(0,3);
+        },
+        n: function(){
+            return jsdate.getMonth() + 1;
+        },
+        t: function(){
+            var n;
+            if( (n = jsdate.getMonth() + 1) == 2 ){
+                return 28 + f.L();
+            } else{
+                if( n & 1 && n < 8 || !(n & 1) && n > 7 ){
+                    return 31;
+                } else{
+                    return 30;
+                }
+            }
+        },
+
+        // Year
+        L: function(){
+            var y = f.Y();
+            return (!(y & 3) && (y % 1e2 || !(y % 4e2))) ? 1 : 0;
+        },
+        //o not supported yet
+        Y: function(){
+            return jsdate.getFullYear();
+        },
+        y: function(){
+            return (jsdate.getFullYear() + "").slice(2);
+        },
+
+        // Time
+        a: function(){
+            return jsdate.getHours() > 11 ? "pm" : "am";
+        },
+        A: function(){
+            return f.a().toUpperCase();
+        },
+        B: function(){
+            // peter paul koch:
+            var off = (jsdate.getTimezoneOffset() + 60)*60;
+            var theSeconds = (jsdate.getHours() * 3600) +
+                    (jsdate.getMinutes() * 60) +
+                    jsdate.getSeconds() + off;
+            var beat = Math.floor(theSeconds/86.4);
+            if (beat > 1000) beat -= 1000;
+            if (beat < 0) beat += 1000;
+            if ((String(beat)).length == 1) beat = "00"+beat;
+            if ((String(beat)).length == 2) beat = "0"+beat;
+            return beat;
+        },
+        g: function(){
+            return jsdate.getHours() % 12 || 12;
+        },
+        G: function(){
+            return jsdate.getHours();
+        },
+        h: function(){
+            return pad(f.g(), 2);
+        },
+        H: function(){
+            return pad(jsdate.getHours(), 2);
+        },
+        i: function(){
+            return pad(jsdate.getMinutes(), 2);
+        },
+        s: function(){
+            return pad(jsdate.getSeconds(), 2);
+        },
+        //u not supported yet
+
+        // Timezone
+        //e not supported yet
+        //I not supported yet
+        O: function(){
+            var t = pad(Math.abs(jsdate.getTimezoneOffset()/60*100), 4);
+            if (jsdate.getTimezoneOffset() > 0) t = "-" + t; else t = "+" + t;
+            return t;
+        },
+        P: function(){
+            var O = f.O();
+            return (O.substr(0, 3) + ":" + O.substr(3, 2));
+        },
+        //T not supported yet
+        //Z not supported yet
+
+        // Full Date/Time
+        c: function(){
+            return f.Y() + "-" + f.m() + "-" + f.d() + "T" + f.h() + ":" + f.i() + ":" + f.s() + f.P();
+        },
+        //r not supported yet
+        U: function(){
+            return Math.round(jsdate.getTime()/1000);
+        }
+    };
+
+    return format.replace(/[\\]?([a-zA-Z])/g, function(t, s){
+        if( t!=s ){
+            // escaped
+            ret = s;
+        } else if( f[s] ){
+            // a date function exists
+            ret = f[s]();
+        } else{
+            // nothing special
+            ret = s;
+        }
+
+        return ret;
+    });
+}
+
+</script>
+
+</body>
+</html>

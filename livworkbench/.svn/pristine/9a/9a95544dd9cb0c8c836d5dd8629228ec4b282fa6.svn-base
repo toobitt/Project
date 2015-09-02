@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>厚建文化</title><link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.ui.core.js"></script>
+<script type="text/javascript" src="js/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="js/jquery.switchable-2.0.min.js"></script>
+<script type="text/javascript" src="js/lazyload.js"></script>
+<script type="text/javascript" src="js/hoge.js"></script>
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="css/ie.css" />
+<![endif]-->
+
+<!--[if lt IE 7]>
+<script type="text/javascript" src="js/pngfix.js"></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('.index-second-nav .icon,.index-second-nav .industry .icon,.index-second-nav .development .icon,.hoge-head .menu li,.goTop,.hoge-footer .menu em,.culture-second-nav .circle em,.culture-change .title,.leader-list .photo em,.hoge-glory h3,.case-second-nav .circle em,.case-list .quo-icon,.job-second-nav a,.deparment-info .icon em,.hoge-head .menu li,.contact-second-nav .spanm,.contact-area .quo-icon');
+</script>
+<![endif]-->
+</head>
+<body>
+<!-- head start -->
+<div class="hoge-head">
+       <h1 class="logo">
+          <a href="index.html"></a>
+          <a href="index.html" class="logo-circle"></a>
+       </h1>
+       <ul class="menu">
+           <li><a href="m2o/index.html" class="m2o"></a></li>
+           <li><a href="#" class="d2o"></a></li>
+           <li><a href="#" class="w2o"></a></li>
+       </ul>
+       <div class="search"></div>
+</div>
+<div class="menu-area">
+       <ul class="menu">
+           <li><a href="index.html" class="index">首页</a></li>
+           <li class="on"><a href="culture.html" class="culture">了解厚建</a></li>
+           <li><a href="case.html" class="case">我们的客户</a></li>
+           <li><a href="job.html" class="job">加入我们</a></li>
+           <li><a href="contact.html" class="contact">商务合作</a></li>
+        </ul>
+</div>
+<div class="culture-banner-color">
+	<div class="hoge-nav-bg culture-banner" src="images/banner_2.png" _index="culture">
+	    <div class="hoge-nav">
+	        <div class="descr descr-culture">
+	                   <span class="cul-our"></span>
+	                   <span class="cul-open"></span>
+	                   <span class="cul-optional"></span>
+	                   <span class="cul-organics"></span>
+	        </div>
+	    </div>
+	</div>
+</div>
+<!-- head end -->
+<div class="hoge-main">
+    <!-- second nav start -->
+     <div class="second-nav culture-second-nav">
+	      <div class="wd1100">
+	        <ul class="clearfix">
+	             <li>
+	                  <a class="circle idea-one" href="#conception"><em></em></a>
+	                  <a href="#conception" class="title"> 
+	                     <b>CONCEPTION</b><em>公司理念</em>
+	                     <em class="descr">与客户成为搭档，倾听他的心声，架起良好IT生态系统与员工互为依靠，为他的提供动力及支持。</em>
+	                  </a>
+	             </li>
+	             <li>
+	                  <a class="circle idea-two" href="#honour"><em></em></a>
+	                  <a href="#honour" class="title">
+	                      <b>HONOUR</b><em>厚建荣誉</em>
+	                      <em class="descr">与客户成为搭档，倾听他的心声，架起良好IT生态系统与员工互为依靠，为他的提供动力及支持。</em>
+	                  </a>
+	             </li>
+	             <li>
+	                  <a class="circle idea-three" href="#opportunity"><em></em></a>
+	                  <a href="#opportunity" class="title">
+	                     <b>OPPORTUNITY</b><em>人才发展</em>
+	                     <em class="descr">与客户成为搭档，倾听他的心声，架起良好IT生态系统与员工互为依靠，为他的提供动力及支持。</em>
+	                  </a>
+	             </li>
+	             <li>
+	                  <a class="circle idea-four" href="#photos"><em></em></a>
+	                  <a href="#photos" class="title">
+	                     <b>PHOTOS</b><em>厚建纪念簿</em>
+	                     <em class="descr">与客户成为搭档，倾听他的心声，架起良好IT生态系统与员工互为依靠，为他的提供动力及支持。</em>
+	                  </a>
+	             </li>
+	        </ul>
+	     </div>
+	 </div>
+	 <!-- second nav end -->
+	 <div class="common-bg">
+	     <div class="culture-change layout-wd pb70"  id="conception">
+	          <h3 class="fz30 mt80">The choice of how to change / <span class="fz26"><em>创</em><em class="change">变</em>之选</span></h3>
+	          <div class="wd1500">
+		          <ul class="mt80 clearfix">
+			                <li>
+			                      <div class="title our">OUR</div>
+			                      <div class="descr">与客户成为搭档，倾听他的心声，和他一起架起良好的IT生态系统；与员工互为依靠，为他的成长提供动力及支持。无论是用户还是员工，我们的品牌与其达成的都是一种伙伴关系。</div>
+			                </li>
+			                <li>
+			                      <div class="title open">OPEN</div>
+			                      <div class="descr">开放的嵌入式原则及平台级应用，为用户的IT生态系统搭建提供便捷。开放的办公环境及开明的管理制度，帮助员工更好的享受工作。</div>
+			                </li>
+			                <li>
+			                      <div class="title optional">OPTIONAL</div>
+			                      <div class="descr">富有弹性的资源架构，灵活自由的系统搭建，不断迭代的产品应用帮助用户自在选择。我们不要螺丝钉，我们更希望员工可以在不同岗位不同层级自由流动。</div>
+			                </li>
+			                <li>
+			                      <div class="title organics">ORGANICS</div>
+			                      <div class="descr">我们最重要的价值表述便是帮助用户搭建有机智能的IT生态系统；帮助员工践行有机的职业生态体系。</div>
+			                </li>
+			      </ul>
+		     </div>
+	     </div>
+	 </div>
+     <div class="common-bg">
+          <div class="leader-list layout-wd">
+            <div class="wd1100">
+               <ul class="mt80">
+                    <li>
+                         <a class="photo"><em></em></a>
+                         <div class="info">
+                               <span class="name"><em>沈伟</em>首席执行官</span>
+                               <p class="sign">管理理念与客户成为搭档，倾听他的心声，和他一起架起良好的IT生态系统靠提供动力及支持无论是用户还是员工，我们的品牌其达成的都是一种伙伴关系。</p> 
+                         </div>
+                    </li>
+                    <li>
+                         <a class="photo photo-two"><em></em></a>
+                         <div class="info">
+                               <span class="name"><em>吴德殿</em>首席市场官 副总经理</span>
+                               <p class="sign">管理理念与客户成为搭档，倾听他的心声，和他一起架起良好的IT生态系统靠提供动力及支持无论是用户还是员工，我们的品牌其达成的都是一种伙伴关系。</p> 
+                         </div>   
+                    </li>
+                    <li>
+                         <a class="photo photo-three"><em></em></a>
+                         <div class="info">
+                               <span class="name"><em>刘军</em>首席运营官 副总经理</span>
+                               <p class="sign">管理理念与客户成为搭档，倾听他的心声，和他一起架起良好的IT生态系统靠提供动力及支持无论是用户还是员工，我们的品牌其达成的都是一种伙伴关系。</p> 
+                         </div>
+                    </li>
+                    <li>
+                         <a class="photo photo-four"><em></em></a>
+                         <div class="info">
+                               <span class="name"><em>童庆峰</em>首席技术官 副总经理</span>
+                               <p class="sign">管理理念与客户成为搭档，倾听他的心声，和他一起架起良好的IT生态系统靠提供动力及支持无论是用户还是员工，我们的品牌其达成的都是一种伙伴关系。</p> 
+                         </div>
+                    </li>
+                    <li>
+                         <a class="photo photo-five"><em></em></a>
+                         <div class="info">
+                               <span class="name"><em>赵翔</em>业务拓展中心总监</span>
+                               <p class="sign">管理理念与客户成为搭档，倾听他的心声，和他一起架起良好的IT生态系统靠提供动力及支持无论是用户还是员工，我们的品牌其达成的都是一种伙伴关系。</p> 
+                         </div>
+                    </li>
+               </ul>
+          </div>
+        </div>
+     </div>
+     <div class="common-bg">
+       <div class="hoge-glory layout-wd"  id="honour">
+          <p class="mt80">最具责任感的门户应用专家最具责任感的门户应用专家最具责任感的门户应用专家。</p>
+          <p>The most responsibility specialist in portal system</p>
+          <hr class="mt70"/>
+          <h3 class="fz28">厚建荣誉</h3>
+          <div class="wd1500">
+	              <ul class="mt75">
+	                   <li>
+	                        <a class="title">厚建荣誉1</a>
+	                        <a class="glory-icon glory1"></a>  
+	                   </li>
+	                   <li>
+	                        <a class="title">厚建荣誉1</a>
+	                        <a class="glory-icon glory2"></a>  
+	                   </li>
+	                   <li>
+	                        <a class="title">厚建荣誉1</a>
+	                        <a class="glory-icon glory3"></a>  
+	                   </li>
+	                   <li>
+	                        <a class="title">厚建荣誉1</a>
+	                        <a class="glory-icon glory4"></a>  
+	                   </li>
+	                   <li>
+	                        <a class="title">厚建荣誉1</a>
+	                        <a class="glory-icon glory5"></a>  
+	                   </li>
+	              </ul>
+              </div>
+     </div>
+    </div>
+     <div class="common-bg pb80" id="opportunity">
+          <div class="employee-benefit layout-wd">
+               <h3 class="fz26 mt80 mb50">员工福利</h3>
+               <div class="info">
+                    <p class="title">工资福利</p>
+                    <p>1、基本工资<br/>一旦被录用，就将获得具有竞争力的待遇。</p>
+                    <p class="title mt30">奖金福利</p>
+                    <p>1、绩效奖金<br/>一旦被录用，就将获得具有竞争力的待遇，就将获得具有竞争力的待遇获得具有竞争力的待遇。<br/>2、忠诚奖金<br/>一旦被录用，就将获得具有竞争力的待遇被录用，就将获得具有竞争力的待遇，就将获得具有竞争力的待遇获得具有竞争力的待遇。一旦被录用待遇获得具有竞争力的待遇就将获得具有竞争力的待遇，就将获得具有竞争力的待遇获得具有竞争力的待遇。</p>
+                    <p class="title mt30">培训福利</p>
+                    <p>1、绩效奖金<br/>一旦被录用，就将获得具有竞争力的待遇的待遇被录用，就将获得具有竞争力的待遇，就将获得具有竞争力的待遇获得具力一旦被录用，就将获得具有竞争力的待遇获得具有竞争力的待遇。<br/>2、忠诚奖金<br/>一旦被录用，就将获得具有竞争力的待遇被录用，就将获得具有竞争力的待遇，就将获得具有竞争力的待遇获得具待竞争力的待遇，就将获得具有竞争力的待遇获得具有竞争力的待遇。</p>       
+               </div>
+               <div class="more-job">
+                    <p class="mb30">想要了解更多厚建福利？申请职位申请职位申请职位申请职位申请职位申请职位申请职位申请职位申请职位申请职位。</p>
+                    <a class="search-icon">查看更多职位</a>
+                    <a class="mail-iocn">发送你的简历到厚建</a>
+               </div>
+          </div>
+     </div>
+     <div class="common-bg" id="photos">
+     <div class="hoge-book layout-wd pb80">
+          <h3 class="mt80 fz26">厚建纪念簿</h3>
+          <div class="wd1100">
+	          <ul class="hoge-book-list clearfix mt50">
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	          </ul>
+          </div>
+     </div>
+   </div>
+</div>
+<div class="hoge-footer-bg">
+         <div class="hoge-footer">
+              <ul class="menu clearfix">
+		           <li><a href="#">帮助</a>/</li>
+		           <li><a href="#">合作伙伴</a>/</li>
+		           <li><a href="#">最新消息</a>/</li>
+		           <li><a href="#">厚建招聘</a>/</li>
+		           <li><a href="#">关于厚建</a>/</li>
+		           <li><a href="#">联系我们</a></li>
+		           <li>
+		             <a class="sina"><em></em></a>
+		             <a class="tecent"><em></em></a>
+		           </li>
+             </ul>
+             <p class="mt35 copyright">Copyright @ 1998 - 2012 Hoge. All Rights Reserved.厚建公司 版权所有</p>
+             <p class="mt10 address">江苏省南京市雨花区雨花大道2号邦宁科技园  ｜  025-83326233  ｜  hogesoft@hogesoft.com</p>
+         </div>
+</div>
+</body>
+</html>

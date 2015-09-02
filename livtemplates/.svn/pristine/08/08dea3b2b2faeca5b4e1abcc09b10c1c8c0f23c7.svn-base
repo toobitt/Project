@@ -1,0 +1,28 @@
+.mytime-box{position:relative;z-index:10;border:1px solid #333;padding:10px;background:#fff;}
+.mytime-box:after{content:'';clear:both;display:block;height:0;overflow:hidden;}
+.mytime-box .mytime-each{float:left;1border-right:1px dashed red;}
+.mytime-box .mytime-each-on{box-shadow:0 0 3px 1px #f60062;}
+.mytime-h-box{width:32px;}
+.mytime-m-box, .mytime-s-box{width:32px;}
+.mytime-hh-box, .mytime-mm-box, .mytime-ss-box{width:32px;}
+.mytime-box .mytime-item{cursor:pointer;display:inline-block;border:1px solid blue;width:30px;height:30px;line-height:30px;text-align:center;}
+.mytime-box .mytime-item:hover{background:#ccc;color:#fff;}
+.mytime-box .mytime-item.mytime-item-on{background:#9acd32;color:#fff;}
+.mytime-box .mytime-item.mytime-item-disabled{background:#fff;color:#333;opacity:.1;}
+.mytime-title{position:relative;}
+.mytime-title span{display:inline-block;width:32px;text-align:center;}
+.mytime-title .mytime-maohao{position:absolute;top:0px;width:auto;text-align:left;}
+.mytime-title .mytime-maohao1{left:63px}
+.mytime-title .mytime-maohao2{left:126px;}
+.mytime-help{position:absolute;z-index:9;top:0;right:10px;background:#6dd300;color:#fff;width:170px;height:100%;border:1px solid #333;border-left:none;}
+.mytime-help{
+    -webkit-transition:all .3s;
+    -moz-transition:all .3s;
+    transition:all .3s;
+
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+.mytime-help-btn{cursor:pointer;position:absolute;z-index:11;top:0;right:0px;background:red;width:12px;height:12px;}
+.mytime-help.mytime-help-on{right:-170px;}

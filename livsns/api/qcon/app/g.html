@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>guest</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/base.css" rel="stylesheet" >
+<link href="css/style.css" rel="stylesheet">
+<script src="http://www.dev.hogesoft.com:233/t/1/57/js/jquery.js"></script>
+<style type="text/css">
+.guest-txt{}
+.guest-submit{ margin-top:15px;}
+</style>
+</head>
+<body>
+<!--
+<header class="header">
+	<a href="#" class="return"></a>
+    <h1>激活嘉宾身份</h1>
+</header>-->
+<section class="wrap">
+	<form method="post" action="/" id="guest" >
+        <div class="guest-yqm">
+            <div class="guest-yqm-layer clearfix">
+                <label class="guest-yqm-label">邀请码</label>
+                <div class="guest-yqm-input"><input type="text" value="" name="activatecode" class="guest-yqm-txt" placeholder="选填，邀请码用于确认用户身份"></div>
+            </div>
+        </div>
+    	<ul class="guest-info">
+        <li>
+            <label class="guest-info-user" for="user"><span class="username"></span>姓名</label>
+            <div class="guest-info-input"><input type="text" value="" name="user" id="user" class="guest-info-txt" required placeholder="必填" /></div>
+        </li>
+        <li>
+            <label class="guest-info-user" for="unit"><span class="unit"></span>单位</label>
+            <div class="guest-info-input"><input type="text" value="" name="company" id="unit" class="guest-info-txt" required placeholder="必填" /></div>
+        </li>
+        <li>
+            <label class="guest-info-user" for="post"><span class="post"></span>职务</label>
+            <div class="guest-info-input"><input type="text" value="" name="job" id="post" class="guest-info-txt" required placeholder="必填" /></div>
+        </li>
+        <li>
+            <label class="guest-info-user" for="mobile"><span class="mobile"></span>手机</label>
+            <div class="guest-info-input"><input type="tel" value="" name="telphone" id="mobile" class="guest-info-txt" required placeholder="必填" /></div>
+        </li>
+        <li class="guest-info-li">
+            <label class="guest-info-user" for="email"><span class="email"></span>电子邮箱</label>
+            <div class="guest-info-input"><input type="email" name="email" id="email" class="guest-info-txt" value="" required placeholder="必填" /></div>
+        </li>
+    </ul>
+    	<p class="guest-txt">提交后不可修改</p>
+        <div class="guest-btn"><input type="submit" class="guest-submit" value="提交激活身份"></div>
+    </form>
+</section>
+<script>
+var platform = navigator.userAgent.toLowerCase(),
+	postData = {},
+	_token = {};
+
+
+$(document).ready(function(){
+	$("#guest").submit(function(e){
+
+			var _guest_return  = true ;
+
+           //验证
+           $('.guest-info-input input').each(function(){
+                if ($(this).attr('required') && $.trim($(this).val()) == "" ) {    
+                     $(".guest-txt").html($(this).parents('li').find('label').text() + '不能为空');
+
+                     _guest_return = false;
+                     return false;
+                }
+                if( ($(this).attr('name')=="telphone") &&  !validateMobilePhone($("#mobile").val()) ){
+                       $(".guest-txt").html("手机格式不正确");
+                       _guest_return = false;
+                       return false;                                  
+                }
+                if( ($(this).attr('name')=="email") &&  !validateEmail($("#email").val()) ){
+                        $(".guest-txt").html("邮箱格式不正确");
+                       _guest_return = false;
+                       return false;                                  
+                }
+           });
+           if(!_guest_return){return false;}
+
+
+
+
+
+			e.preventDefault();
+		
+			postData.access_token = _token.access_token;
+			//postData.access_token = "08a8a52e10b3cb3e52ef5cffc4a5967c";
+
+			postData.device_token = _token.device_token;
+			//postData.device_token = "12333333";
+			postData.activate_code = $("#guest").find('input[name=activatecode]').val();
+			postData.name = $("#guest").find('input[name=user]').val();
+			postData.company = $("#guest").find('input[name=company]').val();
+			postData.job = $("#guest").find('input[name=job]').val();
+			postData.telephone = $("#guest").find('input[name=telphone]').val();
+			postData.email = $("#guest").find('input[name=email]').val();
+
+		
+
+			
+			//$(".guest-txt").slideUp();
+			$(".guest-submit").val("正在努力激活...");
+			$.getJSON('http://10.0.1.40/livsns/api/mobile/data/hd_bbs/activate.php',postData,function(data){
+				$(".guest-submit").val("提交激活身份");
+				if(data == null){return}
+				if(data.ErrorCode){
+					data.ErrorText =  data.ErrorText == "null"  ? "登陆出错" + data.ErrorCode : data.ErrorText;
+					$(".guest-txt").html(data.ErrorText);
+				}else{
+					$(".guest-txt").html("成功激活!");
+					//console.log(data);
+					updateIdentity(data[0].guest_type);
+				}
+			});	
+	
+	});
+	
+	
+});
+
+
+
+
+window.isIosDevice = (/iphone|ipod|ipad/gi).test(platform);
+window.isIPad = (/ipad/gi).test(platform);
+window.isAndroid = (/android/gi).test(platform);
+window.isSafari = (/safari/gi).test(platform) && !(/chrome/gi).test(platform);
+
+function goOutLink(link)
+{
+	if (isIosDevice)
+	{
+		document.location.hash = '#func=goOutLink&parameter="'+link+'"';
+	}
+	else if(isAndroid)
+	{
+		window.android.goOutLink(info);
+	}
+}
+/*h5处理完激活嘉宾身份*/
+function updateIdentity(info)
+{
+	if (isIosDevice)
+	{
+		document.location.hash = '#func=updateIdentity&parameter="'+info+'"';
+	}
+	else if(isAndroid)
+	{
+		window.android.updateIdentity(info);
+	}
+}
+
+/**  接收device_token、access_token信息，callInfo（）执行完以后，自动执行该方法
+*     客户端返回的数据json格式为：{"access_token":"kop298Fnk185Dklc"，"device_token":"ajliwr923klLL231"}
+*/
+function getInfo(json) {  
+	//document.getElementById("token").innerHTML=str; 
+	_token = json; 
+}
+
+/*获取设备信息*/
+function callInfo(){
+	if (isIosDevice){
+		document.location.hash = '#func=getInfo&parameter={"action" : "haha"}';
+	}else if(isAndroid){
+		window.android.callInfo();
+	}
+}
+
+callInfo();
+
+
+function validateEmail(email) { 
+        var regEmail =  /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;  
+        return regEmail.test(email); 
+} 
+
+function validateMobilePhone(mobile) { 
+        var regMobile = /^1[3|4|5|6|7|8|9][0-9]{1}[0-9]{8}$/; 
+        return  regMobile.test(mobile); 
+} 
+
+
+
+
+</script>
+</body>
+</html>

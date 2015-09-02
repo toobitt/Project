@@ -1,0 +1,110 @@
+/*电视列表页*/
+.nav-box{display: none;}
+.tv-wrap{width:auto;}
+
+.m2o-flex{width:100%;}
+
+.tv-list{margin:15px 0; padding: 0 8px; min-height:510px;}
+.tv-list li{float:left; width:332px; height:142px; border:1px solid #cbcbcb; border-radius:3px; background-color:#f0f0f0; margin:6px 8px; position:relative;}
+.tv-list li:hover,.tv-wrap li.current{border-color:#5594e3; background-color:#f7faff;}
+.tv-img{width:140px; height:125px; font-size: 0; padding:8px;}
+.tv-img img{width:140px; height:125px; }
+.tv-brief{padding:8px 0; color:#999;}
+.tv-brief h4{height:35px; line-height: 35px; color:#000; max-width:130px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.tv-brief h4 .num{font-size:10px; color:#999; margin-left:5px;}
+.tv-brief h4 .num em{font-style:normal;}
+.reaudit{cursor:pointer;}
+.tv-endtime span{color:#f67210; }
+.tv-sort span{color:#8fa8c6; }
+.del{background:url({$RESOURCE_URL}icon/close.png) no-repeat scroll center center transparent; position:absolute; right:-8px; top:-12px; width:22px; height:22px; display:none;}
+.edit{background:url({$RESOURCE_URL}tv_play/upload.png) no-repeat scroll center center transparent; width:69px; height:69px; position:absolute; left:55px; top:30px; display:none; z-index:56;}
+.num-equal .edit{background:none; z-index:-1;}
+.tv-list li:hover .del,.tv-wrap li:hover .edit{1display:block;}
+.tv-list li:hover .del{display:block;}
+.tv-bottom{background-color:#f9f9f9; border-top:1px solid #c8d4e2; min-height:43px; }
+.tv-operate{width:300px; line-height:43px; padding-left:15px;}
+.tv-operate input{height:13px; }
+.tv-operate a{cursor: pointer; margin:0 5px; text-decoration:underline; line-height:28px;}
+.linking{width:140px; height:125px; position:absolute; left:8px; top:8px;}
+.tv-publish{position:absolute;width:40px;line-height:20px;height:20px;color:#999;text-align:center;cursor:pointer;right:6px;top:6px;}
+
+/*电视表单页*/
+.indexpic{width:176px; height:176px; border:1px solid #e0dcdd; font-size:0; margin:5px; background:url({$RESOURCE_URL}news/suoyin-default.png) no-repeat scroll center center #fff; position:relative;}
+.indexpic-suoyin,.indexpic-suoyin-current{position:absolute; left:-2px; top:-2px; width:16px; height:46px;}
+.indexpic-suoyin{background:url({$RESOURCE_URL}news/suoyintu.png) no-repeat; }
+.indexpic-suoyin-current{background:url({$RESOURCE_URL}news/suoyintu-current.png) no-repeat;}
+.m2o-main .m2o-m{padding:5px 10px 50px;}
+.m2o-item{padding:15px;}
+.m2o-m .m2o-item{font-size:14px; background:url({$RESOURCE_URL}dottedLine.png) repeat-x scroll 0 bottom; padding:15px 0px; margin:0 10px;}
+.m2o-m .m2o-item.tv-info,.m2o-m .m2o-item.tv-info:hover,.tv-content .m2o-item:hover:last-child,.tv-content .m2o-item:last-child{background:none;}
+.m2o-m .m2o-item:hover{ background:url({$RESOURCE_URL}dottedLine.png) repeat-x scroll 0 bottom; }
+.m2o-m .m2o-item .title{display:inline-block; text-align:right; width:100px; margin-right:15px; color:#9f9f9f; min-height:24px; font-size: 14px; vertical-align: top; padding-top:5px;}
+.m2o-m .m2o-item textarea{width:790px; font-size: 14px;}
+.m2o-m .m2o-item input[type="input"]{width:290px; font-size: 14px; padding-left:10px;}
+.m2o-m .m2o-item input[type="checkbox"]{margin:0 10px; vertical-align: middle; box-shadow:none; }
+.m2o-m .m2o-item span{font-size:12px; padding-left:10px; color:red;}
+.m2o-m .tv-info{border-bottom:1px solid #ccc; background:none;}
+.tv-info a{width:126px; display:inline-block; height:34px; line-height: 34px; text-align: center; font-size:14px; cursor:pointer; }
+.tv-info .active{background-color:#5394e4; color:#fff; }
+.m2o-m .m2o-item .save-button{width:auto; border:none; padding:0 30px;}
+.transform-info{margin:15px 10px 0; text-align:center;}
+
+
+/*select模板*/
+.m2o-m .tv-select .title{margin-right:10px;}
+.m2o-m .tv-select .down_list{width:306px!important;}
+.tv-select .down_list .input_left, .tv-select .down_list .input_right{display:none;}
+.tv-select .down_list .input_middle{border:1px solid #cfcfcf; height:26px; line-height: 26px;}
+.tv-select .down_list .input_middle em{margin:12px 6px 0 0;}
+.tv-select .down_list ul, .down_list .ul{top:28px;}
+
+
+.tele-total{margin:10px 0 15px 2px;}
+.tele-total li{margin:8px 7px; position:relative; float:left;}
+.tele-total li p{width:215px; height:150px; border:2px solid #fff;}
+.tele-total li p:hover,.tele-total li.current p{border:2px solid #aaa;}
+.tele-total li:hover .del{display:block;}
+.tele-total li p img{width:100%; height:100%;}
+.play { background: url("{$RESOURCE_URL}common/video_play.png") no-repeat scroll center center transparent;
+    content: ""; height: 49px; left: 50%; margin: -48px 0 0 -20px; position: absolute;  top: 50%; width: 49px;}
+.play:hover { background-image: url("{$RESOURCE_URL}common/video_play_hover.png"); }
+.tele-total li > span{display: block; height:40px; line-height: 40px; font-size:14px;}
+.tele-total li em{background-color:#f0f0f0; color:#666; width:21px; height:21px; border-radius:100px; font-size:10px; -webkit-text-size-adjust:none; margin-right:5px; display:inline-block; line-height: 23px; text-align:center;}
+li.add-play:hover p{border:2px solid #fff;}
+li.add-play span{color:#aaa;}
+
+.loading{position:absolute;left:50%;top:50px;width:50px;margin-left:-25px;z-index:10000;display:none;}
+.loading img{width:64px;}
+.loadr{left:90px; top:40px;}
+.prevent-do{width:34px; height:34px; background-color:transparent; position:absolute; right:0; top:0; display: none;}
+.prevent-go{width:100%; height:100%; position:absolute; left: 0; top:0; background-color:transparent; z-index:10001; display:none;}
+
+.media_box{background:#000; left:50%; margin-left:-200px; top:-1000px; position:absolute; width:400px; height:300px; opacity:0;-webkit-transition:all .5s;-moz-transition:all .5s;transition:all .5s;}
+.media-box-show{opacity:1;top:95px;}
+.vedio-back-close{position:absolute;width:22px;height:26px;background:url("{$RESOURCE_URL}/common/bk.png") center no-repeat #4c4c4c;top:0;right:-22px;cursor:pointer;}
+.transcode{float:right; margin-right:5px; font-size:12px; cursor:pointer; }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2) {
+
+
+.del{background-image:url({$RESOURCE_URL}icon/close-2x.png); background-size:22px 22px;}
+.edit{background-image:url({$RESOURCE_URL}tv_play/upload-2x.png); background-size:60px 60px;}
+.indexpic{background-image:url({$RESOURCE_URL}news/suoyin-default-2x.png); background-size:67px 49px;}
+.indexpic-suoyin{background-image:url({$RESOURCE_URL}news/suoyintu-2x.png); background-size:16px 46px;}
+.indexpic-suoyin-current{background-image:url({$RESOURCE_URL}news/suoyintu-current-2x.png); background-size:16px 46px;}
+.m2o-m .m2o-item{background-image:url({$RESOURCE_URL}dottedLine-2x.png); background-size:69px 1px;}
+.m2o-m .m2o-item:hover{ background-image:url({$RESOURCE_URL}dottedLine-2x.png); background-size:69px 1px;}
+.vedio-back-close{background-image:url("{$RESOURCE_URL}/common/bk@2x.png"); background-size:12px 12px;}
+.play { background-image: url("{$RESOURCE_URL}common/video_play@2x.png"); background-size:49px 49px;}
+.play:hover { background-image: url("{$RESOURCE_URL}common/video_play_hover@2x.png"); background-size:49px 49px;}
+
+}
+
+
+
+
+
+

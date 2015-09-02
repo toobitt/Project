@@ -1,0 +1,97 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="yes" name="apple-touch-fullscreen" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<link rel="apple-touch-icon-precomposed" href="" />
+<link rel="stylesheet" href="css/gmu.css" type="text/css"/>
+<link rel="stylesheet" href="css/bae.css" type="text/css"/>
+<link rel="stylesheet" href="css/common.css" type="text/css" />
+<link rel="stylesheet" href="css/subway.css" type="text/css" />
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<title>地铁</title>
+</head>
+<body>
+	<div class="first-body transition" _attr="1">
+		<div data-role="bae_header" class="ui-bae-header">
+			<div class="ui-bae-header-list">
+				<div class="ui-bae-header-left">
+					<a href="javascript:history.back()" data-role="bae_header_button" class="ui-bae-go-back"></a>
+				</div>地铁 
+			</div>
+			<ul class="ui-bae-color-line"> 
+				<li>&nbsp;</li>  <li>&nbsp;</li> <li>&nbsp;</li> <li>&nbsp;</li> <li>&nbsp;</li> 
+			</ul>
+		</div>
+		<div class="subnav ui-navigator">
+			<div class="ui-scroller">
+			<ul class="ui-navigator-list">
+				<li data-type="network"><a href="network.html">线网规划</a></li>
+				<li data-type="station" class="selected ui-state-active"><a href="station.html">站点信息</a></li>
+				<li data-type="service"><a href="service.html">服务资讯</a></li>
+			</ul>
+			</div>
+		</div>
+		<div class="tab-wrap station-wrap">
+			<div class="subway-inner">
+				<div class="search-area">
+					<div class="common-input-box">
+						<div class="input-item m2o-flex m2o-flex-center station-point" _attr="station">
+							<span class="icon icon-station"></span>
+							<input class="common-search-input input m2o-flex-one" placeholder="输入站点名" value="">
+							<span class="handle-btn clear"></span></div><div class="fuzzy-matching">
+							<ul></ul>
+						</div>
+					</div>
+				</div>
+				<a class="item-area station-area" href="platform.html">
+					<p class="title fontsize20">您附近的站点</p>
+					<div class="m2o-flex m2o-flex-center item-station">
+						<div class="icons">
+							<span class="icon_spot_line1"></span>
+						</div>
+						<div class="station-name m2o-flex-one fontsize24">西漳站</div>
+						<div class="detail fontsize20">距离该站：148.75km</div>
+					</div>
+				</a>
+				<div class="item-area route-area">
+					<p class="title fontsize20">按地铁线路查询</p>
+					<a class="m2o-flex m2o-flex-center item-station" href="route.html">
+						<div class="mark mark-line1">
+						</div>
+						<div class="route fontsize40">1</div>
+						<div class="station-name m2o-flex-one">
+							<div class="fontsize24">号线</div>
+							<span class="fontsize14">Line</span>
+						</div>
+						<div class="detail">
+							<div class="fontsize24">堰桥站-长广溪站 </div>
+							<span class="fontsize14">Yanqiao - Changeguangxi</span>
+						</div>
+					</a>
+					<a class="m2o-flex m2o-flex-center item-station" href="route.html">
+						<div class="mark mark-line2">
+						</div>
+						<div class="route fontsize40">2</div>
+						<div class="station-name m2o-flex-one">
+							<div class="fontsize20">号线</div>
+							<span class="fontsize14">Line</span>
+						</div>
+						<div class="detail">
+							<div class="fontsize20">梅园-安镇 </div>
+							<span class="fontsize14">MeiPark - Anzhen</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="wirelessDiv">&nbsp;</div>
+</body>
+</html>
+
+
+
+

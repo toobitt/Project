@@ -1,0 +1,41 @@
+/*路况列表页*/
+.road-item{margin:0 15px; padding:10px 0; }
+.road-item .info{line-height: 22px; }
+.road-item .pic{max-height:200px; text-align: center; }
+.road-item .pic img{max-height:100%; }
+.road-item .title{font-size:2.2em; line-height:1.4; color:#333; } 
+.road-item .detail{margin-top:10px; font-size:1.6em;}
+.road-item .type{display:block; height:20px; line-height:20px; vertical-align:middle; padding:0 4px; background-color:#ffa200; color:#fff; border-radius:3px; }
+.road-item .address{color:#999; margin:0 10px; }
+.road-item .ntime{display:block; margin-top:3px; color:#999; }
+.list-item-li{border-bottom: 1px solid #cbcbcb;}
+
+
+/*路况详情*/
+#mapDiv{height:calc(100% - 140px ); width:calc(100% - 20px); margin:10px auto; z-index: -56; }
+#roadMap{height:100%; width:100%; }
+
+/*路况整体图*/
+.map-icon{position:absolute; left:0; bottom:24px; width:66px;height:51px;background-color:transparent;z-index:1000; background-size:66px 51px;}
+.map-icon.list{background-image:url(../images/road/switch-list.png);}
+.map-icon.map{background-image:url(../images/road/switch_map.png); }
+
+
+.map-item{position:absolute; left:10px; z-index:9; cursor:pointer; text-align:center; border:1px solid #ccc; background-color:rgba(255, 255, 255, 0.9); }
+.map-item a{display:inline-block; height:24px; line-height:22px; vertical-align:middle; padding:0 6px; margin:0 7px; font-size:1.8em; background-color:rgb(0, 0, 0); color:#fff; }
+
+.map-nav{top:10px; padding:0 4px; height:40px; line-height:40px; }
+.map-nav a{opacity: 0.6; }
+.map-nav a.selected{opacity: 1; }
+
+
+.map-road{top:60px; padding:0 7px; height:40px; overflow:hidden; transition:height 0.3s; }
+.map-road p{font-size:1.8em; line-height:40px; color:#333; }
+.map-road.map-open{height:74px; }
+
+.roadMap .map_tips{height:100px; width:200px; position:relative; font-size:1.8em; line-height:25px; margin-top:-100px; margin-left:-3px; padding:10px 5px; border:1px solid #999; border-radius:8px; box-shadow:0 3px 6px 0 #666; background-color:rgba(255, 255, 255, 0.8); }
+.roadMap .map_route{padding:0 5px; height:100%; overflow: hidden; }
+.roadMap .map_route em{float:left; width:65px; color:#999; }
+.roadMap .map_route p{color:#333;}
+.roadMap .map_tips:after{position:absolute; left:170px; top:120px; border:8px solid transparent; border-top-color:rgba(255, 255, 255, 0.8); content:''; }
+.roadMap .map_tips:before{position:absolute; left:169px; top:120px; border:9px solid transparent; border-top-color:#999; content:''; }

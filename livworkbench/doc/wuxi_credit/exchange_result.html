@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>积分商城</title>
+<link rel="stylesheet" href="css/framework7.min.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/credit.css">
+</head>
+<body>
+<div class="view view-main exchange-result">
+ 	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="left">
+				<a href="javascript:history.back()" class="back link">
+					<i class="icon icon-back"></i>
+				</a>
+			</div>
+			<div class="center sliding">兑换结果</div>
+			<div class="right"></div>
+		</div>
+	</div>
+	<div class="pages navbar-through">
+		<div class="page">
+			<div class="page-content">
+				<div class="content-detail exchange-success">
+					<div class="item-content common-order-info">
+						<div class="item-inner img-box">
+							<p class="item-info">恭喜您，兑换成功</p>
+							<p class="share-btn">分享给好友</p>
+						</div>
+						<div class="goods-info m2o-flex m2o-flex-center">
+							<img class="pic" src="./images/shopping.png">
+							<p class="name m2o-flex-one">湖景桃，全球最好吃的水蜜桃限量供应</p>
+							<div class="count">x1</div>
+						</div>
+						<div class="item-detail point-info m2o-flex m2o-flex-center">
+							<div class="flag m2o-flex-one">消费积分</div>
+							<div class="point-count red-color">12998</div>
+						</div>
+					</div>
+				</div>
+				<div class="content-block item-block">
+					<div class="block-detail block-single m2o-flex m2o-flex-center">
+						<div class="m2o-flex-one bold-title">订单状态</div>
+						<div class="order-status red-color">待发货</div>
+					</div>
+				</div>
+				<div class="content-block item-block">
+					<div class="block-title">收货信息</div>
+					<div class="block-detail credit-list list-block">
+						<ul>
+							<li>
+								<div class="item-content">
+									<div class="item-inner">
+										<div class="item-title label">姓名</div>
+										<div class="item-input">
+											<input readonly="" id="M_buyer" name="buyer" type="text" placeholder="姓名" value="过聪">
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="item-content">
+									<div class="item-inner">
+										<div class="item-title label">手机号</div>
+										<div class="item-input">
+											<input readonly="" id="M_phone" name="phone" type="text" placeholder="手机号" value="13812345678">
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="item-content">
+									<div class="item-inner">
+										<div class="item-title label">地址</div>
+										<div class="item-input">
+											<input readonly="" id="M_dtladdr" name="dtladdr" type="text" placeholder="地址" value="南京市雨花大道2号邦宁科技园4楼厚建软件">
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- 信息表单 end -->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/device.min.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/goShare.js"></script>
+</body>
+</html>

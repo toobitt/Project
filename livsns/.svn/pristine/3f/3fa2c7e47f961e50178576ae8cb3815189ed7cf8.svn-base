@@ -1,0 +1,13 @@
+<div class="liv_choose liv_item" data-required="{cell_is_required}">
+	<span class="cell_name">{cell_name}</span>{cell_more}
+	<span class="cell_description">{cell_description}</span>
+	<span class="cell_choose">
+		<span class="cell_element {cell_options_other_sign} {cell_options_noplay}">
+			<label><input type="radio" name="{cell_unique_name}" value="{cell_options_id}"/>{cell_options_name}</label>
+			{cell_options_other}
+		</span>
+	</span>
+	<span class="cell_input">
+		<input type="text" name="{cell_unique_name}" placeholder="{cell_brief}" value="" />
+	</span>
+</div>

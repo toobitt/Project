@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no,email=no">
+<title>{liv_title}</title>
+<link rel="stylesheet" href="{liv_assist_url}/css/swiper.min.css">
+<link rel="stylesheet" href="{liv_assist_url}/css/common.css">
+<link rel="stylesheet" href="{liv_assist_url}/css/tpl.css">
+</head>
+<body>
+	<div class="page-content toolbar-through page-green">
+		<div class="content-block list-block title-block">
+			<div class="header-block">
+				<span class="liv_indexpic">liv_索引图</span>
+			</div>
+			<div class="header-blocks">
+				<h1 class="htitle-block"><span class="liv_title">liv_标题</span></h1>
+				{liv_submit_num}人投票
+			</div>
+			<div class="brief-block">
+				<span class="liv_brief">liv_描述</span>
+			</div>
+			<div class="img-block">
+				<span class="liv_pictures">liv_图片信息</span>
+			</div>
+			
+			<div class="video-block">
+				<span class="liv_video_info">liv_视频信息</span>
+			</div>
+			
+			<div class="audio-block">
+				<span class="liv_audio_info">liv_音频信息</span>
+			</div>
+		</div>
+		<div class="content-block list-block form-block">
+			<form action="" target="targetWin" enctype="multipart/form-data" method="post">
+				<span class="liv_forms">liv_问卷表单</span>
+				<div class="hiddenBox">
+					<input type="hidden" name="id" value="{liv_id}" />
+					<input type="hidden" name="device_token" value="" />
+					<input type="hidden" name="appid" value="" />
+					<input type="hidden" name="access_token" value="" />
+					<input type="hidden" name="appkey" value="" />
+					<input type="hidden" name="submitUrl" value="{liv_url}" />
+				</div>
+			</form>
+		</div>
+		<div class="content-block footer-block">
+			<!-- <span class="liv_footer_info">liv_底部信息</span> -->
+		</div>
+	</div>
+	<div class="fixed-bottom fixed-area">
+		<div class="btn-area">
+			<a class="btn btn-wid138 btn-green form-to-json"><span class="liv_submit_text">提交</span></a>
+		</div>
+	</div>
+<script type="text/javascript" src="{liv_assist_url}/js/module/head.min.js"></script>
+<script type="text/javascript">
+	head.js(
+		{zepto : "{liv_assist_url}/js/module/zepto.min.js"},
+		{swiper : "{liv_assist_url}/js/module/swiper.jquery.min.js"},
+		{spin : "{liv_assist_url}/js/module/spin.min.js"},
+		{toast : '{liv_assist_url}/js/module/toast.js'},
+		{h5Client : '{liv_assist_url}/js/module/h5Client.js'},
+		{print : '{liv_assist_url}/js/module/print.min.js'},
+		{log : '{liv_assist_url}/js/module/log.js'},
+		{address : '{liv_assist_url}/js/module/address.min.js'},
+		{utils : '{liv_assist_url}/js/utils.js'}
+	);
+	head.ready(["zepto", "spin", "h5Client"], function(){
+		head.js('{liv_assist_url}/js/module/hg_form.js', '{liv_assist_url}/js/surveys.js');
+	});
+</script>
+</body>
+</html>

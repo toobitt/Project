@@ -1,0 +1,21 @@
+.indexpic{width:160px;height:160px;border:1px solid #e0dcdd;display:table-cell;text-align:center;vertical-align:middle;}
+.indexpic-box{width:162px;height:162px;margin:0 auto;position:relative;}
+.form-cioption-indexpic{padding-left:0;padding-right:0;}
+.indexpic-suoyin, .indexpic-suoyin-current{position:absolute;left:-2px;top:-2px;background:url("{$RESOURCE_URL}news/suoyintu.png") no-repeat;width:16px;height:46px;}
+.indexpic-suoyin-current{background-image:url("{$RESOURCE_URL}news/suoyintu-current.png");}
+
+.service_list{display:inline-block; vertical-align: middle; }
+.service_list .input_left, .service_list .input_right{display:none; }
+.service_list .input_middle{border:none; background-color:transparent; }
+.service_list .input_middle em{background:url("{$RESOURCE_URL}tuji/drop.png") no-repeat;}
+
+#service_show{width:110px; }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2) {
+	.indexpic-suoyin, .indexpic-suoyin-current{background-image:url("{$RESOURCE_URL}news/suoyintu-2x.png") ;background-size:16px 46px; }
+	.indexpic-suoyin-current{background-image:url("{$RESOURCE_URL}news/suoyintu-current-2x.png");background-size:16px 46px;}
+
+}

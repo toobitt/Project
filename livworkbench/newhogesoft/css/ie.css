@@ -1,0 +1,62 @@
+.second-nav .title{*display:block;height:70px;margin-top:25px;}
+.index-second-nav .title{*display:block;height:70px;margin-top:35px;}
+.second-nav{*margin-bottom:40px;}
+.hoge-nav .descr-culture{position:relative;display:block;}
+.hoge-nav .culture-location{display:block;}
+.hoge-nav .cul-our,.hoge-nav .cul-open,.hoge-nav .cul-optional,.hoge-nav .cul-organics,.hoge-nav .hide{display:none;}
+.hoge-nav .culture-location0,.hoge-nav .culture-location1,.hoge-nav .culture-location2,.hoge-nav .culture-location3{display:block;}
+.goTop{_position:absolute;_bottom:auto;_top:expression(eval(document.documentElement.scrollTop)+460+'px');}
+/*ie6 png透明*/
+.hoge-nav .on a,.hoge-nav a:hover{_background-image:none;}
+.hoge-head .logo{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale',image="500px", src="images/logo.png");_background:none;}
+.hoge-head a.logo-circle{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/logo-circle.png");_background:none;}
+.hoge-head .search{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/400.png");_background:none;}
+.hoge-nav .descr-index{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/descr1.png");_background:none;}
+/*圆角图片*/
+/*index*/
+.index-second-nav .company{background:url(../images/index_corner1.png) no-repeat;_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/index_corner1.png");_background:none; }
+.index-second-nav .industry{background:url(../images/index_corner2.png) no-repeat;_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/index_corner2.png");_background:none;}
+.index-second-nav .development{background:url(../images/index_corner3.png) no-repeat;_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/index_corner3.png");_background:none;}
+.switch-control a{background:url(../images/switch_corner2.png) no-repeat;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/switch_corner2.png");_background:none;}
+.switch-control a:hover{background:url(../images/switch_corner1.png) no-repeat;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/switch_corner1.png");_background:none;}
+/*culture*/
+.culture-second-nav .circle{background:url(../images/culture_corner1.png) no-repeat;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/culture_corner1.png");_background:none;}
+.culture-second-nav .idea-two{background:url(../images/culture_corner2.png) no-repeat;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/culture_corner2.png");_background:none;}
+.culture-second-nav .idea-three{background:url(../images/culture_corner3.png) no-repeat;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/culture_corner3.png");_background:none;}
+.culture-second-nav .idea-four{background:url(../images/culture_corner4.png) no-repeat;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/culture_corner4.png");_background:none;}
+.leader-list .photo{width:113px;height:113px;background:url(../images/culture_corner5.png) no-repeat;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/culture_corner5.png");_background:none;}
+.leader-list .photo:hover{background:url(../images/culture_corner6.png) no-repeat;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/culture_corner6.png");_background:none;}
+.leader-list .photo em{margin-top:4px;}
+.hoge-nav .cul-our{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/descr2_1.png");_background:none;}
+.hoge-nav .cul-open{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/descr2_2.png");_background:none;}
+.hoge-nav .cul-optional{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/descr2_3.png");_background:none;}
+.hoge-nav .cul-organics{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/descr2_4.png");_background:none;}
+/*case*/
+.case-list .switch-list ul a img{*padding-top:20px;}
+.hoge-nav .descr-case{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/descr3.png");_background:none;}
+.case-second-nav .circle{width:108px;height:108px;background:url(../images/case_corner1.png) no-repeat;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/case_corner1.png");_background:none;}
+.case-second-nav .case-two{background:url(../images/case_corner2.png) no-repeat;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/case_corner2.png");_background:none;}
+.case-second-nav .case-three{background:url(../images/case_corner3.png) no-repeat;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/case_corner3.png");_background:none;}
+.case-second-nav .case-four{background:url(../images/case_corner4.png) no-repeat;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/case_corner4.png");_background:none;}
+.case-second-nav .case-five{background:url(../images/case_corner5.png) no-repeat;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/case_corner5.png");_background:none;}
+.case-second-nav .case-six{background:url(../images/case_corner6.png) no-repeat;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/case_corner6.png");_background:none;}
+.case-second-nav .circle em{margin-top:29px;}
+.case-list .switchable-triggers li{background:url(../images/trigger2.png) no-repeat;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/trigger2.png");_background:none;}
+.case-list .switchable-triggers li.current{background:url(../images/trigger1.png) no-repeat;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/trigger1.png");_background:none;}
+/*job*/
+.hoge-nav .descr-job{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/descr4.png");_background:none;}
+.rd-info .icon{background:url(../images/job_corner1.png) no-repeat;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/job_corner1.png");_background:none;}
+.ued-info .icon{background:url(../images/job_corner2.png) no-repeat;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/job_corner2.png");_background:none;}
+.vipc-info .icon{background:url(../images/job_corner3.png) no-repeat;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/job_corner3.png");_background:none;}
+.bd-info .icon{background:url(../images/job_corner4.png) no-repeat;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/job_corner4.png");_background:none;}
+.apo-info .icon{background:url(../images/job_corner5.png) no-repeat;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/job_corner5.png");_background:none;}
+.ad-info .icon{background:url(../images/job_corner6.png) no-repeat;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/job_corner6.png");_background:none;}
+.ac-info .icon{background:url(../images/job_corner7.png) no-repeat;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/job_corner7.png");_background:none;}
+/*contact*/
+.hoge-nav .descr-contact{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/descr5.png");_background:none;}
+.contact-second-nav .spanl{background:url(../images/contact_corner1.png) no-repeat;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/contact_corner1.png");_background:none;}
+.contact-second-nav .address .spanl{background:url(../images/contact_corner2.png) no-repeat;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/contact_corner2.png");_background:none;}
+.contact-second-nav .spanm{background:url(../images/contact_tel.png) no-repeat center;}
+/*footer*/
+.hoge-footer .menu .sina, .hoge-footer .menu .tecent{background:url(../images/footer_corner.png) no-repeat;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/footer_corner.png");_background:none;}
+.hoge-footer .menu em{_margin-top:2px;}

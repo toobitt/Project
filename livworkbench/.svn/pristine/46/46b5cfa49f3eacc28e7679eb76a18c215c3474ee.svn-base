@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>乐清政务</title>
+<link rel="stylesheet" href="img/framework7.min.css">
+<link rel="stylesheet" href="img/common.css">
+<link rel="stylesheet" href="img/query.css">
+<script type="text/javascript" src="img/zepto.min.js"></script>
+<script type="text/javascript" src="img/template.js"></script>
+<script type="text/javascript" src="img/query.js"></script>
+</head>
+<body>
+<div class="view view-main query">
+	<nav class="navbar">
+		<div class="navbar-inner">
+			<div class="left">
+				<a href="javascript:history.back()" class="back link">
+					<i class="icon icon-back"></i>
+				</a>
+			</div>
+			<div class="center sliding">办件查询</div>
+			<div class="right">
+			</div>
+		</div>
+	</nav>
+ 
+	<div class="pages navbar-through">
+		<div data-page="index" class="page page-index">
+			<section class="page-content page-form">
+				<header class="content-block-title">直接输入申报号、密码查询</header>
+				<form method="post" action="http://yqzw.wifiyq.com/yqzw.php" class="query-form">
+					<div class="content-block">
+						<div class="content-inner">
+							<div class="query-item query-num">
+								<label>申报号：</label>
+								<input type="text" name="projid" placeholder="申报号" value=""/>
+							</div>
+							<div class="query-item query-psd">
+								<label>查询密码：</label>
+								<input type="password" name="pwd" placeholder="密码" value=""/>
+							</div>
+						</div>
+					</div>
+					<div class="content-block content-btn">
+						<input type="hidden" name="f" value="getInfoJsonFromProjidAndPwd" />
+						<input type="button" class="button button-big button-submit" value="查询"/>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+</div>
+ <script type="text/html" id="query-detail">
+ 	<section class="page-content page-list">
+		<header class="content-block-title">办事基本信息</header>
+		<div class="list-block">
+			<ul>
+				{{each list as value i}}
+				<li class="item-content"><label>{{value.label}}：</label><span class="m2o-overflow">{{value.vv}}</span></li>
+				{{/each}}
+			</ul>
+		</div>
+		<div class="content-block content-btn">
+			<input type="hidden" name="f" value="getInfoJsonFromProjidAndPwd" />
+			<input type="button" class="button button-big button-submit" value="重新查询"/>
+		</div>		
+	</section>
+ </script>
+</body>
+</html>

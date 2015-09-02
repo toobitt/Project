@@ -1,0 +1,2 @@
+label.error{background:url(../images/error_bg.png) no-repeat;width:145px;height:46px;display:inline-block;line-height:46px;color:#00b099;text-align:center}
+label.success{background:none;height:0}

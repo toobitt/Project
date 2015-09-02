@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>现场抽奖</title>
+<link rel="stylesheet" href="./css/framework7.custom.min.css">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/lottery.css">
+</head>
+<body>
+<div class="view view-main">
+	<div class="pages toolbar-through">
+		<div class="page">
+			<div class="page-content guide-greeting">
+				<div class="content-block lottery-wrap" _num="3" _step="3">
+					<div class="lottery-area">
+						<p class="title">三等奖(3名)</p>
+					</div>
+					<a class="button button-primary lottery">抽奖</a>
+				</div>
+				<div class="content-block lottery-wrap" _num="2" _step="2">
+					<div class="lottery-area">
+						<p class="title">二等奖(2名)</p>
+					</div>
+					<a class="button button-primary lottery" >抽奖</a>
+				</div>
+				<div class="content-block lottery-wrap" _num="1" _step="1">
+					<div class="lottery-area">
+						<p class="title">一等奖(1名)</p>
+					</div>
+					<a class="button button-primary lottery">抽奖</a>
+				</div>
+			</div>	
+		</div>	
+	</div>
+</div>
+<script type="text/javascript" src="./js/module/head.min.js"></script>
+<script type="text/javascript">
+	head.js(
+		{zepto : "./js/module/zepto.min.js"},
+		{localstorage : './js/module/hg_localstorage.js'}
+	);
+	head.ready(["zepto", "localstorage"], function(){
+		head.js('./js/lottery.js');
+	});
+</script>
+</body>
+</html>

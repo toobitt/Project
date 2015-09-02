@@ -1,0 +1,200 @@
+
+[2015-08-14 09:47:14]
+/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 1001:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 326:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/material.class.php on line 356:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://10.0.1.40/livsns/api/material/admin/cache.php?format=json
+
+[2015-08-14 09:47:14]
+/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 1001:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 326:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/material.class.php on line 356:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'a' => 'check_cache',
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '011d3e2010a29e593ecfb8e9bfbe360f',
+)
+
+[2015-08-14 09:47:14]
+/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 1001:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 326:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/material.class.php on line 356:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 327:[{"img":{"jpg":{"code":" <img src=\"{filename}\" border=0>"},"gif":{"code":"<img src=\"{filename}\" border=0>"},"png":{"code":"<img src=\"{filename}\" border=0\/>"},"jpeg":{"code":"<img src=\"{filename}\" border=0\/>"},"pjpeg":{"code":"<img src=\"{filename}\" border=0\/>"},"tif":{"code":"<img src=\"{filename}\" border=0\/>"},"PNG":{"code":" <img src=\"{filename}\" border=0>"}},"doc":{"pdf":{"code":"<a href=\"{filename}\">{name}<\/a>"},"xls":{"code":"<a href=\"{filename}\">{name}<\/a>"},"txt":{"code":"<a href=\"{filename}\">{name}<\/a>"},"zip":{"code":"<a href=\"{filename}\">{name}<\/a>"},"docx":{"code":"<a href=\"{filename}\">{name}<\/a>"},"doc":{"code":"<a href=\"{filename}\">{name}<\/a>"}},"real":{"swf":{"code":"<a href=\"{filename}\">{name}<\/a>"}}}]
+
+[2015-08-14 09:47:59]
+/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 1001:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 326:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/material.class.php on line 356:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://10.0.1.40/livsns/api/material/admin/cache.php?format=json
+
+[2015-08-14 09:47:59]
+/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 1001:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 326:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/material.class.php on line 356:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'a' => 'check_cache',
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '011d3e2010a29e593ecfb8e9bfbe360f',
+)
+
+[2015-08-14 09:47:59]
+/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 1001:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 326:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/material.class.php on line 356:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 327:[{"img":{"jpg":{"code":" <img src=\"{filename}\" border=0>"},"gif":{"code":"<img src=\"{filename}\" border=0>"},"png":{"code":"<img src=\"{filename}\" border=0\/>"},"jpeg":{"code":"<img src=\"{filename}\" border=0\/>"},"pjpeg":{"code":"<img src=\"{filename}\" border=0\/>"},"tif":{"code":"<img src=\"{filename}\" border=0\/>"},"PNG":{"code":" <img src=\"{filename}\" border=0>"}},"doc":{"pdf":{"code":"<a href=\"{filename}\">{name}<\/a>"},"xls":{"code":"<a href=\"{filename}\">{name}<\/a>"},"txt":{"code":"<a href=\"{filename}\">{name}<\/a>"},"zip":{"code":"<a href=\"{filename}\">{name}<\/a>"},"docx":{"code":"<a href=\"{filename}\">{name}<\/a>"},"doc":{"code":"<a href=\"{filename}\">{name}<\/a>"}},"real":{"swf":{"code":"<a href=\"{filename}\">{name}<\/a>"}}}]
+
+[2015-08-14 09:49:03]
+/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 1001:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 326:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/material.class.php on line 356:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://10.0.1.40/livsns/api/material/admin/cache.php?format=json
+
+[2015-08-14 09:49:03]
+/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 1001:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 326:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/material.class.php on line 356:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'a' => 'check_cache',
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '011d3e2010a29e593ecfb8e9bfbe360f',
+)
+
+[2015-08-14 09:49:03]
+/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 1001:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 326:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/material.class.php on line 356:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 327:[{"img":{"jpg":{"code":" <img src=\"{filename}\" border=0>"},"gif":{"code":"<img src=\"{filename}\" border=0>"},"png":{"code":"<img src=\"{filename}\" border=0\/>"},"jpeg":{"code":"<img src=\"{filename}\" border=0\/>"},"pjpeg":{"code":"<img src=\"{filename}\" border=0\/>"},"tif":{"code":"<img src=\"{filename}\" border=0\/>"},"PNG":{"code":" <img src=\"{filename}\" border=0>"}},"doc":{"pdf":{"code":"<a href=\"{filename}\">{name}<\/a>"},"xls":{"code":"<a href=\"{filename}\">{name}<\/a>"},"txt":{"code":"<a href=\"{filename}\">{name}<\/a>"},"zip":{"code":"<a href=\"{filename}\">{name}<\/a>"},"docx":{"code":"<a href=\"{filename}\">{name}<\/a>"},"doc":{"code":"<a href=\"{filename}\">{name}<\/a>"}},"real":{"swf":{"code":"<a href=\"{filename}\">{name}<\/a>"}}}]
+
+[2015-08-14 09:49:03]
+/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 1001:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 326:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/material.class.php on line 356:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://10.0.1.40/livsns/api/material/admin/cache.php?format=json
+
+[2015-08-14 09:49:03]
+/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 1001:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 326:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/material.class.php on line 356:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'a' => 'check_cache',
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '011d3e2010a29e593ecfb8e9bfbe360f',
+)
+
+[2015-08-14 09:49:03]
+/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 1001:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 326:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/material.class.php on line 356:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 327:[{"img":{"jpg":{"code":" <img src=\"{filename}\" border=0>"},"gif":{"code":"<img src=\"{filename}\" border=0>"},"png":{"code":"<img src=\"{filename}\" border=0\/>"},"jpeg":{"code":"<img src=\"{filename}\" border=0\/>"},"pjpeg":{"code":"<img src=\"{filename}\" border=0\/>"},"tif":{"code":"<img src=\"{filename}\" border=0\/>"},"PNG":{"code":" <img src=\"{filename}\" border=0>"}},"doc":{"pdf":{"code":"<a href=\"{filename}\">{name}<\/a>"},"xls":{"code":"<a href=\"{filename}\">{name}<\/a>"},"txt":{"code":"<a href=\"{filename}\">{name}<\/a>"},"zip":{"code":"<a href=\"{filename}\">{name}<\/a>"},"docx":{"code":"<a href=\"{filename}\">{name}<\/a>"},"doc":{"code":"<a href=\"{filename}\">{name}<\/a>"}},"real":{"swf":{"code":"<a href=\"{filename}\">{name}<\/a>"}}}]
+
+[2015-08-14 09:49:31]
+/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 1001:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 326:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/material.class.php on line 356:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://10.0.1.40/livsns/api/material/admin/cache.php?format=json
+
+[2015-08-14 09:49:31]
+/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 1001:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 326:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/material.class.php on line 356:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'a' => 'check_cache',
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '011d3e2010a29e593ecfb8e9bfbe360f',
+)
+
+[2015-08-14 09:49:31]
+/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 1001:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 326:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/material.class.php on line 356:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 327:[{"img":{"jpg":{"code":" <img src=\"{filename}\" border=0>"},"gif":{"code":"<img src=\"{filename}\" border=0>"},"png":{"code":"<img src=\"{filename}\" border=0\/>"},"jpeg":{"code":"<img src=\"{filename}\" border=0\/>"},"pjpeg":{"code":"<img src=\"{filename}\" border=0\/>"},"tif":{"code":"<img src=\"{filename}\" border=0\/>"},"PNG":{"code":" <img src=\"{filename}\" border=0>"}},"doc":{"pdf":{"code":"<a href=\"{filename}\">{name}<\/a>"},"xls":{"code":"<a href=\"{filename}\">{name}<\/a>"},"txt":{"code":"<a href=\"{filename}\">{name}<\/a>"},"zip":{"code":"<a href=\"{filename}\">{name}<\/a>"},"docx":{"code":"<a href=\"{filename}\">{name}<\/a>"},"doc":{"code":"<a href=\"{filename}\">{name}<\/a>"}},"real":{"swf":{"code":"<a href=\"{filename}\">{name}<\/a>"}}}]
+
+[2015-08-14 09:49:31]
+/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 1001:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 326:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/material.class.php on line 356:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://10.0.1.40/livsns/api/material/admin/cache.php?format=json
+
+[2015-08-14 09:49:31]
+/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 1001:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 326:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/material.class.php on line 356:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'a' => 'check_cache',
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '011d3e2010a29e593ecfb8e9bfbe360f',
+)
+
+[2015-08-14 09:49:31]
+/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 1001:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 326:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/material.class.php on line 356:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 327:[{"img":{"jpg":{"code":" <img src=\"{filename}\" border=0>"},"gif":{"code":"<img src=\"{filename}\" border=0>"},"png":{"code":"<img src=\"{filename}\" border=0\/>"},"jpeg":{"code":"<img src=\"{filename}\" border=0\/>"},"pjpeg":{"code":"<img src=\"{filename}\" border=0\/>"},"tif":{"code":"<img src=\"{filename}\" border=0\/>"},"PNG":{"code":" <img src=\"{filename}\" border=0>"}},"doc":{"pdf":{"code":"<a href=\"{filename}\">{name}<\/a>"},"xls":{"code":"<a href=\"{filename}\">{name}<\/a>"},"txt":{"code":"<a href=\"{filename}\">{name}<\/a>"},"zip":{"code":"<a href=\"{filename}\">{name}<\/a>"},"docx":{"code":"<a href=\"{filename}\">{name}<\/a>"},"doc":{"code":"<a href=\"{filename}\">{name}<\/a>"}},"real":{"swf":{"code":"<a href=\"{filename}\">{name}<\/a>"}}}]
+
+[2015-08-14 09:59:42]
+/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 1001:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 326:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/material.class.php on line 356:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://10.0.1.40/livsns/api/material/admin/cache.php?format=json
+
+[2015-08-14 09:59:42]
+/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 1001:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 326:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/material.class.php on line 356:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'a' => 'check_cache',
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '011d3e2010a29e593ecfb8e9bfbe360f',
+)
+
+[2015-08-14 09:59:42]
+/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 1001:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 326:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/material.class.php on line 356:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 327:[{"img":{"jpg":{"code":" <img src=\"{filename}\" border=0>"},"gif":{"code":"<img src=\"{filename}\" border=0>"},"png":{"code":"<img src=\"{filename}\" border=0\/>"},"jpeg":{"code":"<img src=\"{filename}\" border=0\/>"},"pjpeg":{"code":"<img src=\"{filename}\" border=0\/>"},"tif":{"code":"<img src=\"{filename}\" border=0\/>"},"PNG":{"code":" <img src=\"{filename}\" border=0>"}},"doc":{"pdf":{"code":"<a href=\"{filename}\">{name}<\/a>"},"xls":{"code":"<a href=\"{filename}\">{name}<\/a>"},"txt":{"code":"<a href=\"{filename}\">{name}<\/a>"},"zip":{"code":"<a href=\"{filename}\">{name}<\/a>"},"docx":{"code":"<a href=\"{filename}\">{name}<\/a>"},"doc":{"code":"<a href=\"{filename}\">{name}<\/a>"}},"real":{"swf":{"code":"<a href=\"{filename}\">{name}<\/a>"}}}]
+
+[2015-08-14 09:59:43]
+/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 1001:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 326:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/material.class.php on line 356:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://10.0.1.40/livsns/api/material/admin/cache.php?format=json
+
+[2015-08-14 09:59:43]
+/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 1001:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 326:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/material.class.php on line 356:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'a' => 'check_cache',
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '011d3e2010a29e593ecfb8e9bfbe360f',
+)
+
+[2015-08-14 09:59:43]
+/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 1001:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/news/admin/news.php on line 326:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/material.class.php on line 356:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 327:[{"img":{"jpg":{"code":" <img src=\"{filename}\" border=0>"},"gif":{"code":"<img src=\"{filename}\" border=0>"},"png":{"code":"<img src=\"{filename}\" border=0\/>"},"jpeg":{"code":"<img src=\"{filename}\" border=0\/>"},"pjpeg":{"code":"<img src=\"{filename}\" border=0\/>"},"tif":{"code":"<img src=\"{filename}\" border=0\/>"},"PNG":{"code":" <img src=\"{filename}\" border=0>"}},"doc":{"pdf":{"code":"<a href=\"{filename}\">{name}<\/a>"},"xls":{"code":"<a href=\"{filename}\">{name}<\/a>"},"txt":{"code":"<a href=\"{filename}\">{name}<\/a>"},"zip":{"code":"<a href=\"{filename}\">{name}<\/a>"},"docx":{"code":"<a href=\"{filename}\">{name}<\/a>"},"doc":{"code":"<a href=\"{filename}\">{name}<\/a>"}},"real":{"swf":{"code":"<a href=\"{filename}\">{name}<\/a>"}}}]

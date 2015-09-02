@@ -1,0 +1,37 @@
+@charset "utf-8";
+.pop-catalog{width:380px; max-height:400px; padding:0 10px; border:10px solid #56a5f0; position:absolute; top:-650px; left:50%; margin-left:-200px; background-color:#fff; z-index: 10001; opacity:0; -webkit-transition: all 0.5s; transition: all 0.5s;}
+.catalog-show{top:90px; opacity:1;}
+.pop-add-title{line-height:45px;border-bottom: 1px solid #cdcdcd; }
+.pop-add-title h2{font-size:18px; margin-left:10px; }
+.pop-close{height:26px; padding:0 13px;display:inline-block; position:absolute; top:9px; right:10px; font-size:0; cursor:pointer; background:url("{$RESOURCE_URL}buttons/close4.png") no-repeat center #fff; }
+
+#lumin .sort-box-with-show{padding-bottom:15px; }
+.pop-add-box{margin-left:10px; padding-bottom:10px; height:340px; overflow-y:auto; }
+.pop-add-box h4{margin-top:10px;  font-size:14px; font-weight:normal; }
+.catalog-list{padding:5px 0;}
+.catalog-list li{padding:5px 0; position:relative;}
+.upload_pic{width:44px; height:40px; line-height:40px; display:inline-block; font-size:0; margin:0 5px 5px 0; background:url("{$RESOURCE_URL}vote_default_b.png") no-repeat center; vertical-align:top; text-align:center; }
+.upload_pic.no-bgpic{background:#fff; }
+.upload_pic img{width:44px; height:40px; vertical-align: middle; }
+.content{display: inline-block; vertical-align: top; width:220px;}
+.content input[type="text"]{width:129px;}
+.content input[type="file"]{width:149px;}
+.content input[type="radio"], .content input[type="checkbox"]{height:13px; margin:0 5px;}
+.content textarea{width:220px; height:56px;}
+.catalog-item > label{width:76px; margin:5px 5px 0 0; display:inline-block; text-align:right; word-wrap: break-word; } 
+.catalog-item > span{color:red; }
+.catalog-item .del{display:none; width:20px; height:20px; background:url("{$RESOURCE_URL}tuji/cc.png") no-repeat center #fff; position:absolute; right:2px; top:3px; cursor:pointer; }
+.catalog-item:hover .del{display:inline-block; }
+
+.img-batch{float:left; position:relative; }
+.del-img{position:absolute; top:-8px; right:-2px; display:none; width:20px; height:20px; cursor:pointer; z-index:99; background:url("{$RESOURCE_URL}icon/close.png") no-repeat center transparent; background-size:15px 15px;}
+.img-batch:hover .del-img{display:block; }
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2) {
+   .del-img{background-image:url("{$RESOURCE_URL}icon/close-2x.png"); background-size:15px 15px;}
+   .catalog-item .del{background-image:url("{$RESOURCE_URL}tuji/cc-2x.png");  background-size:19px 15px;}
+}

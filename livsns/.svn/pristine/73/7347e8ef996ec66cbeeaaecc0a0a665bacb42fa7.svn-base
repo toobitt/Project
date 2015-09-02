@@ -1,0 +1,11 @@
+<li class="item">
+	<a class="link" href="#url#">
+		<div class="img-box">
+			<img src="#indexpic#" />
+		</div>
+		<div class="item-title">
+			<span class="zan">#counts#</span>
+			<span class="share">分享</span>
+		</div>
+	</a>
+</li>

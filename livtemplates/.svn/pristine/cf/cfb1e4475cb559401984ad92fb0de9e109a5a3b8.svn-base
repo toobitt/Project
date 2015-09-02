@@ -1,0 +1,108 @@
+body{height:auto;overflow:auto;background:url({$RESOURCE_URL}menu2013/body-bg.png) repeat #f3f3f3!important;}
+.common-form-head{width:100%;height:35px;padding:25px 0 20px 0;background:url({$RESOURCE_URL}menu2013/shadow-xia-bg.png) left bottom repeat-x #f9f9f9;}
+.common-form-title{width:1210px;height:100%;margin:0 auto;}
+.common-form-title h2{float:left;width:225px;font-size:28px;}
+.common-form-title .form-dioption-title{position:relative;top:-7px;float:left;width:685px;height:35px;margin-left:10px;padding:0;border:0;}
+.common-form-title .form-dioption-title:hover{background:none;}
+.common-form-title .form-dioption-title .title{position:absolute;top:9px;width:560px;height:36px;line-height:40px;background:#f9f9f9;border:0;text-align:center;font-size:22px;color:#c7c7c7;}
+.common-form-title .form-dioption-title .title:hover,.common-form-title .form-dioption-title .title:focus{box-shadow:none!important;}
+.common-form-title .form-dioption-title .title:focus{border-bottom:2px solid #68a1e8;}
+
+/*color selector*/
+.color-selector{display:block;position:absolute;right:30px;bottom:-5px;height:23px;z-index:10000;}
+.color-selector span{float:left;width:23px;height:23px;background:url({$RESOURCE_URL}news/title-color.png) no-repeat;margin-right:5px;}
+.color-selector .form-title-color{background-image:url({$RESOURCE_URL}news/title-color.png);}
+.color-selector .form-title-color.hover, .color-selector .form-title-color.selected{background-image:url({$RESOURCE_URL}news/title-color-selected.png);}
+.color-selector .form-title-weight{background-image:url({$RESOURCE_URL}news/title-weight.png);}
+.color-selector .form-title-weight.hover, .color-selector .form-title-weight.selected{background-image:url({$RESOURCE_URL}news/title-weight-selected.png);}
+.color-selector .form-title-italic{background-image:url({$RESOURCE_URL}news/title-italic.png);}
+.color-selector .form-title-italic.hover, .color-selector .form-title-italic.selected{background-image:url({$RESOURCE_URL}news/title-italic-selected.png);}
+
+/*分类*/
+.hg-sort-box ul{width:161px;}
+/*文稿form*/
+.common-form-head .common-form-title{position:relative;}
+.common-form-title #weightPicker{position:absolute;right:286px;bottom:0;cursor:pointer;}
+.common-form-title #weightPicker .common-quanzhong-box{width:auto;}
+.common-form-title .form-dioption-submit{position:relative;float:right;height:34px;padding:0;border:0;background:none;}
+#content_form .common-form-title .common-form-save,.common-form-title .common-form-save{cursor:pointer;display:inline-block;position:absolute;right:44px;height:34px;padding:0 30px;line-height:30px;color:#fff;font-size:16px;border:none;background:url({$RESOURCE_URL}menu2013/form/form-button-blue.png) repeat-x;border-radius:2px;}
+#content_form .common-form-title .common-form-save:hover,.common-form-title .common-form-save:hover{background-image:url({$RESOURCE_URL}menu2013/form/form-button-blue-hover.png);}
+#content_form .common-form-title .option-iframe-back,.common-form-title .option-iframe-back{cursor:pointer;display:inline-block;position:absolute;right:0;width:34px;height:34px;margin:0;padding:0;background:url({$RESOURCE_URL}menu2013/form/close.png) no-repeat center center,url({$RESOURCE_URL}menu2013/form/form-button-gray.png) repeat-x;border-radius:2px;font-size:0;}
+#content_form .common-form-title .option-iframe-back:hover,.common-form-title .option-iframe-back:hover{background:url({$RESOURCE_URL}menu2013/form/close.png) no-repeat center center,url({$RESOURCE_URL}menu2013/form/form-button-gray-hover.png) repeat-x;}
+.common-form-main{position:relative;width:1210px;margin:0 auto;padding-bottom:10px;1min-height:500px;}
+.common-form-main .form-left{width:225px;position:static;float:left;margin-right:10px;1min-height:500px;}
+.common-form-main .form-left .form-dioption,.common-form-main .form-cioption{border:0;background:none;}
+.common-form-main .form-dioption-inner{background:#f9f9f9;}
+.common-form-main .form-left .form-dioption-inner{overflow:hidden;}
+.common-form-main .form-left .form-dioption-item:last-of-type{border:0;}
+.common-form-main .editor-header{background:#f9f9f9;height:35px;margin-top:0;border:0;border-bottom:1px solid #ececec;}
+/*.common-form-main .content-page-outer-box{margin-top:-80px;padding-top:20px;}*/
+.common-publish-button{color:#333;}
+#cntContaineroEdit1 td{background:url({$RESOURCE_URL}menu2013/body-bg.png) repeat #f3f3f3!important;border-top:0!important;border-left:0!important;}
+.edit-slide{width:265px!important;1top:85px!important;}
+.edit-slide-inner,.edit-slide-html-each{width:263px!important;}
+.keywords-start{color:#9f9f9f;}
+.indexpic{background:#fff;}
+.common-form-main{padding-top:10px;}
+.common-form-main .form-dioption{margin-top:0;}
+.common-form-main .form-dioption-inner{position:relative;}
+.common-form-main .form-middle{/*left:235px;*/position:static;1min-height:500px;overflow:hidden;}
+.common-form-main .editor-detail{width:100%;position:relative;margin-top:10px;}
+.common-form-main .editor-statistics{position:absolute;left:15px;top:0;}
+.common-form-main .form-right{width:245px;background:#f9f9f9;position:static;margin-top:0;float:right;}
+.common-form-main .form-right .form-cioption-item{margin:0;padding:8px;}
+.common-form-main .form-right .form-dioption-brief{position:relative;margin:0;1padding:0;padding-right:10px;1border:0;}
+.common-form-main #brief{width:230px;min-height:32px;padding-left:5px;max-height:54px;line-height:14px;}
+.news-fix-left,.news-fix-right{position:fixed;top:0;left:50%;top:0;}
+.news-fix-left{width:225px;margin-left:-605px;}
+.news-fix-right{width:265px;margin-left:340px;}
+.editor-header-fix{position:fixed!important;top:0!important;}
+/*图集form*/
+.tuji-area .form-left .form-dioption{margin-top:0;}
+.tuji-area .form-middle .form-option{position:static;top:0;}
+.tuji-area .form-dioption-brief{padding-left:0;}
+.tuji-area .form-dioption-brief:hover{background:none;}
+.tuji-area .form-dioption-brief #brief{width:185px;}
+
+/*视频form*/
+.vedio-head .common-form-title h2{width:266px;}
+.vedio-head .common-form-title .form-dioption-submit{width:auto;}
+.vedio-area{padding-top:10px;}
+.common-form-title #vod-title{width:560px;height:40px;line-height:40px;font-size:22px;}
+.common-form-title .form-dioption-title #vod-title:focus{border-bottom:2px solid #77B7F9;}
+.vedio-area .form-left{width:266px;}
+.vedio-area .form-middle{top:0;border:0;background:none;}
+.vedio-area .form-middle .form-middle-left{width:685px;min-height:535px;margin-left:10px;border:0;}
+.vedio-area .form-middle .form-middle-left #comment{width:650px;}
+.vedio-area .form-middle .form-middle-right{float:right;background:#f9f9f9;min-height:535px;}
+
+/*文稿外链*/
+.news-outlink-head .common-form-title h2{padding:0;background:none;}
+.news-outlink-main .outlink-area{width:705px;background:#fff;margin:0 auto;padding:10px 20px 20px;}
+.news-outlink-main .outlink-area .ad_form .form_ul li.i:last-of-type{background:none;}
+.news-outlink-main .outlink-area .form-add{cursor:pointer;}
+.news-outlink-main .outlink-area .indexpic-box{width:200px;}
+.news-outlink-main .outlink-area .indexpic{width:200px;}
+.news-outlink-main .outlink-area .form_ul li.i{background:none;}
+
+/*视频标注*/
+.common-form-main .content .right{position:relative;left:20px;}
+.mr10{margin-right:10px;}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2) {
+    body{background-image:url({$RESOURCE_URL}menu2013/body-bg-2x.png)!important;background-size:6px 6px!important;}
+    #cntContaineroEdit1 td{background-image:url({$RESOURCE_URL}menu2013/body-bg-2x.png)!important;background-size:6px 6px!important;}
+    .common-form-head{background-image:url({$RESOURCE_URL}menu2013/shadow-xia-bg-2x.png);background-size:2px 5px;}
+    #content_form .common-form-title .common-form-save,.common-form-title .common-form-save{background-image:url({$RESOURCE_URL}menu2013/form/form-button-blue-2x.png);background-size:2px 34px;}
+    #content_form .common-form-title .common-form-save:hover,.common-form-title .common-form-save:hover{background-image:url({$RESOURCE_URL}menu2013/form/form-button-blue-hover-2x.png);background-size:2px 34px;}
+    
+    #content_form .common-form-title .option-iframe-back,.common-form-title .option-iframe-back{background-image:url({$RESOURCE_URL}menu2013/form/close-2x.png),url({$RESOURCE_URL}menu2013/form/form-button-gray-2x.png);background-size:22px 21px,2px 34px;}
+    #content_form .common-form-title .option-iframe-back:hover,.common-form-title .option-iframe-back:hover{background-image:url({$RESOURCE_URL}menu2013/form/close-2x.png),url({$RESOURCE_URL}menu2013/form/form-button-gray-hover-2x.png);background-size:22px 21px,2px 34px;}
+      
+       
+}
+
+.form-dioption-inner-second{display:none !important;}

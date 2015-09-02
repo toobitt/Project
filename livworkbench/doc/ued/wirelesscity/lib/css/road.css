@@ -1,0 +1,18 @@
+html, body{width:100%; height:100%; }
+body{font-size:62.5%; color:#3b3b3b; }
+
+/*nav*/
+.subnav .item{font-size:1.6em;}
+
+/*路况*/
+.road .nodata{line-height:260px; margin-top:30px; font-size:1.6em; color:#999; text-align:center; background:url("../images/road/road_nodata.png") no-repeat center top;}
+.road-item{ background-color: #fff; padding:10px; margin-bottom: 10px; border-bottom: 2px solid #cbcbcb;}
+.road-item .info{line-height: 22px; font-size:1.6em; color:#999; }
+.road-item .info a{color:#999;}
+.road-item .detail{margin-top:10px; }
+.road-item .type{display:inline-block; height:16px; line-height:16px; padding:0 3px; background-color:#ff9600; color:#fff; border-radius:3px; }
+.road-item .type.congestion{background-color:#e60000; }
+.road-item .type.accident{background-color:#0c3b90; }
+.road-item .type.regulate{background-color:#0070e3; }
+.road-item .type.construct{background-color:#6cb700; }
+.road-item .ntime{float:right; margin-top:3px; color:#999; }

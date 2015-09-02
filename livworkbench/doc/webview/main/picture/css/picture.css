@@ -1,0 +1,8 @@
+
+/*列表*/
+.list-item-li{margin:0 15px;}
+.list-item{height:112px; margin:0; }
+.list-item .row{font-size:0; margin:15px 0; }
+.list-item .row img{width:100%; height:80px; }
+.list-item .content-block-title{color:#333; font-size:2.2em; margin:15px 0 0; }
+.list-item .row > div{background: url(../images/ui-slider-imgbg.png) no-repeat center center transparent; background-size:44px; }

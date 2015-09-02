@@ -1,0 +1,8 @@
+.common-form-main .form-right{width:210px; }
+.news-fix-left{width:197px; }
+.form-right .form-dioption-item{margin:0 !important;color:#9f9f9f !important;padding:10px;}
+.form-dioption-item .my-placeholder{border:1px solid transparent;padding:5px 0;}
+.form-dioption-item .my-placeholder.on{color:#333 !important;background:#fff;border-color:#77b7f9;}
+.my-placeholder:focus, #brief-clone:focus{box-shadow:none !important;outline:none !important;}
+.common-form-main .form-left{width:197px; margin-right:13px; }
+.common-form-main .form-dioption{margin:0; }

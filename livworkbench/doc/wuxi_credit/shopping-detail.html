@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>积分商城</title>
+<link rel="stylesheet" href="css/framework7.min.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/credit.css">
+</head>
+<body>
+<div class="view view-main shopping-detail">
+ 	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="left">
+				<a href="javascript:history.back()" class="back link">
+					<i class="icon icon-back"></i>
+				</a>
+			</div>
+			<div class="center sliding">商品详情</div>
+			<div class="right">
+			 <a href="#" class="link">
+			 	<i class="icon icon-share"></i>
+			 </a>
+			</div>
+		</div>
+	</div>
+	<div class="pages navbar-through toolbar-through">
+		<div class="page">
+			<div class="page-content">
+			</div>
+			<div class="btn-fixed">
+				<a href="./order_confirm_post.html" class="button button-big button-submit" >立即兑换</a>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/template.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript">
+	function index(){
+		var url = getUrl('index');
+		getAjax(url, {type : 'detail'}, function( data ){
+			var html = template('detail', data),
+				target = $('.page-content');
+			target.append( html );
+		})
+	}
+	index();
+</script>
+<script id="detail" type="text/html">
+    <div class="content-detail">
+		<div class="item-content">
+			<div class="item-inner">
+				<a class="img-box"><img src="{{image}}"></a>
+				<div class="item-cover"></div>
+				<p class="item-info">{{title}}</p>
+			</div>
+			<div class="item-detail m2o-flex m2o-flex-center">
+				<div class="gold-icon"><i class="icon icon-gold"></i></div>
+				<div class="m2o-flex-one gold-num">{{credit}}</div>
+				<div class="gold-info"><p>{{num}}人已兑换</p><p>{{surplus}}剩余</p></div>
+			</div>
+		</div>
+	</div>
+	{{if desc}}
+	<div class="content-block item-block">
+		<div class="block-title">商品描述</div>
+		<div class="block-detail">{{desc}}</div>
+	</div>
+	{{/if}}
+	{{if regulation}}
+	<div class="content-block item-block">
+		<div class="block-title">兑换规则</div>
+		<ul class="block-detail">{{regulation}}</ul>
+	</div>
+	{{/if}}
+	{{if hot}}
+	<div class="content-block item-block">
+		<div class="block-title">热门兑换</div>
+		<div class="block-detail">{{hot}}</div>
+	</div>
+	{{/if}}
+</script>
+</body>
+</html>

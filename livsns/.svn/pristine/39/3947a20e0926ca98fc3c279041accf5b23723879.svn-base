@@ -1,0 +1,382 @@
+<?php 
+/* $Id$ */
+?>
+
+<?php include hg_load_template('head');?>
+
+<script type="text/javascript">
+<!--
+$(document).ready(function() {
+
+	$('#upload_button').attr('disabled',"true");
+
+	//上传对象初始化
+	swfu = new SWFUpload( {
+		upload_url : '<?php echo VIDEO_UPLOAD;?>',
+		flash_url : 'res/swf/swfupload.swf',
+		file_size_limit : "1999MB",
+		button_placeholder_id : 'choice_button',
+		button_width : 68,
+		button_height : 22,
+		button_image_url : './res/img/button_up.png',
+		file_types :'<?php echo $upload_limit; ?>',
+		post_params : {
+			'a' : 'deal_upload',
+			'user' : '<?php echo hg_get_cookie('user');?>',
+			'pass' : '<?php echo hg_get_cookie('pass'); ?>'
+		},
+			
+		use_query_string : false, //以POST方式提交数据(true 则为GET)
+		swfupload_loaded_handler : swfupload_loaded_function,
+		file_dialog_start_handler : file_dialog_start_function,
+		file_queued_handler : file_queued_function,
+		file_dialog_complete_handler : file_dialog_complete_function,
+		upload_start_handler : upload_start_function,
+		upload_progress_handler : upload_progress_function,
+		upload_error_handler : upload_error_function,
+		upload_success_handler : upload_success_function,
+		upload_complete_handler : upload_complete_function,
+		debug: true	
+	});	
+
+	/* 对象加载时调用的函数  */
+	function swfupload_loaded_function ()
+	{
+		//alert('swfupload_loaded');
+	}
+
+	/* 打开文件对话框调用的函数  */
+	function file_dialog_start_function ()
+	{
+		//alert('open_file_dialog');
+	}
+
+	/* 文件进入上传队列中调用的函数 */
+	function file_queued_function(file_obj)
+	{
+		var file_name = file_obj.name;
+		var file_size = file_obj.size;		
+		var arr = file_name.split('.');
+		var file_layout = <?php echo $lay_out; ?>;
+		$('#file_name').val(file_name);
+
+		if(file_layout.test(file_name))
+		{
+			if((file_size/1024/1024) > 1999)
+			{
+				message_notice('上传文件超出限制!' , 0);	
+			}
+			else
+			{
+				$('#upload_button').removeAttr("disabled");
+
+				var video_size;	
+				if(file_size < 1024)
+				{
+					video_size = file_size + 'B';		
+				}
+				else if(file_size < 1048576 && file_size > 1024)
+				{
+					video_size = Math.round(file_size / 1024) + 'KB';	
+				}
+				else if(file_size > 1048576)
+				{
+					video_size = Math.round(file_size / 1024 / 1024) + 'MB';		
+				}					 
+				$('#video_size').text(video_size);
+
+				$('#upload_progress').css('display' , 'inline');
+				$('#progress_show').width(0);
+				$('#show_percent').text('0%');
+				$('#file_deal').css('display' , 'none');
+			}	
+		}
+		else
+		{			
+			message_notice('文件格式不合法!' , 0);
+		}		
+	}
+
+	/* 关闭文件对话框调用的函数  */
+	function file_dialog_complete_function() 
+	{
+		/*
+		if($('#error_message').html())
+		{
+			$('#error_message').empty();	
+		}*/			
+	}
+
+	/* 文件开始上传执行的函数 */
+	function upload_start_function(file_obj) {}
+
+	/**
+	 *	该事件由flash定时触发，提供三个参数分别访问上传文件对象、已上传的字节数，总共的字节数。
+	 *	可以在这个事件中来定时更新页面中的UI元素，以达到及时显示上传进度的效果。
+	 */
+	function upload_progress_function (file_obj, complete_bytes, total_bytes)
+	{
+		if(complete_bytes == total_bytes)
+		{
+			$('#progress_show').width(380);
+			$('#show_message').css('display' , 'inline-block');
+			$('#show_percent').text('100%');
+			$('#file_deal').css('display' , 'inline-block');
+			$('#waiting_notice').css('display' , 'inline-block');	
+		}
+		else
+		{
+			var progress = complete_bytes/total_bytes;
+			var lenght = 380;
+			var show_percent = Math.round((complete_bytes/total_bytes)*10000)/100;
+			$('#show_percent').text(show_percent + '%');			
+			var already_upload = Math.round(lenght * progress);
+			$('#progress_show').width(already_upload);
+			$('#progress_show').css('background-color' , '#63DF2D');
+		}
+	}
+
+	/**
+	 * 上传被终止或者没有成功完成，那么该事件都将被触发。
+	 *	error code参数表示了当前错误的类型。
+	 */
+	function upload_error_function(file_obj, error_code, message){}
+
+	/**
+	 * 当文件上传的处理已经完成（这里的完成只是指向目标处理程序发送了Files信息，只管发，不管是否成功接收）。
+	 * 并且服务端返回了200的HTTP状态时，触发此事件。
+	 */ 		
+	function upload_success_function(file_obj, server_data, received_response) 
+	{	
+		if(server_data == 1)
+		{
+			$('#file_deal').css('display' , 'none');
+			$('#waiting_notice').css('display' , 'none');			
+			message_notice('视频上传成功！' , 1);
+			$('#liv_info_video_count').text(parseInt($('#liv_info_video_count').text()) + 1);
+			$('#upload_button').attr('disabled',"true");
+			$('#look_upload').html('<a style="background:white;border:2px solid silver;padding:3px;" href="my_video.php" target="_blank">查看我上传的视频</a>');		
+			var info_video_count = 	parseInt($("#liv_info_video_count").html());
+			if(info_video_count)
+			{
+				$("#liv_info_video_count").html(info_video_count + 1);
+			}
+		}
+		else
+		{
+			$('#file_deal').css('display' , 'none');
+			$('#waiting_notice').css('display' , 'none');
+			//var json_obj = eval('(' + server_data + ')'); //将json串转化为json对象
+			//var message = json_obj.error;
+			message_notice(server_data , 0);
+			$('#upload_button').attr('disabled',"true");
+		}					
+	}
+
+	/* 上传完成执行的函数  */
+	function upload_complete_function(file_obj) {}		
+});
+
+/* return video size*/
+function video_size(video_size){}
+
+
+/* message notice*/
+function message_notice(notice , type)
+{
+	if(type == 1) //成功提示
+	{
+		$('#error_message').html('<div style="width:400px;font-size:14px;font-family:Arial,Verdana,Tahoma,Simsun,sans-serif; display:inline-block;background: #FDF8F2;border:1px solid #FCEBDB;margin:5px;padding:5px;color:#FC6400">'+ notice +'</div>');		
+	}
+	else	//错误提示
+	{
+		$('#error_message').html('<div style="width:400px;font-size:14px;font-family:Arial,Verdana,Tahoma,Simsun,sans-serif; display:inline-block;background: #FDF8F2;border:1px solid #FCEBDB;margin:5px;padding:5px;color:red">'+ notice +'</div>');	
+		//$('#error_message').animate({opacity:'show'},3000).animate({opacity:'toggle'},3000);
+	}				
+}
+
+/* 点击开始上传调用的函数 */
+function upload_video()
+{
+	if($('#video_name').val()=='')
+	{
+		message_notice('视频标题不能为空!' , 0);	
+	}
+	else if($('#video_name').val().length > 50)
+	{
+		message_notice('视频标题超出30个字!' ,  0);	
+	}	
+	else if(check_tag($('#video_tags').val()) > 9)
+	{
+		message_notice('标签数超出10个!' , 0);
+	}
+	else  
+	{
+		var url_param = '?';
+
+		if($('#video_name').val())
+		{
+			swfu.addPostParam('video_name', $('#video_name').val());
+		}
+
+		if($('#video_brief').val())
+		{
+			swfu.addPostParam('video_brief', $('#video_brief').val());
+		}
+
+		if($('#video_tags').val())
+		{
+			swfu.addPostParam('video_tags', $('#video_tags').val());
+		}
+
+		if($("input[name='video_sort']:checked").val())	
+		{
+			swfu.addPostParam('video_sort', $("input[name='video_sort']:checked").val());
+		}
+
+		swfu.addPostParam('video_copyright', $("input[name='video_copyright']:checked").val());
+		swfu.startUpload();	
+	}								
+}
+
+/* 验证标题是否为空  */
+function check_title()
+{
+	if($('#video_name').val() == '')
+	{
+		$('#title_notice').text('视频标题不能为空!');
+		$('#title_notice').css('color' , 'red');
+	}
+	else
+	{
+		$('#title_notice').text('OK');
+		$('#title_notice').css('color' , 'green');
+	}		
+}
+
+/* check tag */
+function check_tag(tag)
+{
+	var reg = new RegExp('\uff0c','g');
+	str=tag.replace(reg,',');	
+	var arr = str.split(',');	
+	return arr.length;
+}
+-->
+</script>
+
+<div class="main_div">	
+	<div class="right_window">	
+		<h3>视频上传 </h3>
+		<div class="show_info">
+			<div class="forms">
+			<ul>
+				<li>
+					<span>视频：</span>
+					<input type="text" id="file_name" name="file_name" value="" readonly class="sel" />
+					<span id="choice_button" class="up_button" ></span>
+				</li>
+				
+				<li>
+					<span>标题：</span>
+					<input type="text" id="video_name" name="video_name" value="" class="title" />
+					<span id="title_notice"></span>	
+				</li>
+				
+				<li>
+					<span class="for_top">简介：</span>
+					<textarea cols="30" rows="5" id="video_brief" name="introduction" class="introduction"></textarea>	
+				</li>
+
+				<li>
+					<span>标签：</span>
+					<input  type="text" id="video_tags" name="video_tags" value="" class="title" />
+					<span class="tip">(标签之间以逗号分开)</span>	
+				</li>
+				
+				<li>
+					<span>分类：</span>
+					<div class="video_sort" style="font-family:Arial,Verdana,Tahoma,Simsun,sans-serif;">
+					<?php
+					foreach($this->settings['album'] as $k => $v)
+					{
+						if($k % 10 == 0)
+						{
+							?> 
+							<br /><br />
+							<?php
+						}
+					?> 
+						<input id="video_sort_<?php echo $k; ?>" type="radio"  name="video_sort" value="<?php echo $v['id'] ?>" checked="<?php echo $v['checked']; ?>" /><label for="video_sort_<?php echo $k; ?>"><?php echo $v['name'];?></label>
+					<?php 		
+					}					
+					?>
+					</div>
+				</li>					
+				<li style="font-family:Arial,Verdana,Tahoma,Simsun,sans-serif;">
+					<span>版权：</span>
+					<input id="video_copyright_1" type="radio"  name="video_copyright" value="0" checked="checked" /><label for="video_copyright_1">转载</label>
+					<input id="video_copyright_2" type="radio"  name="video_copyright" value="1"/><label for="video_copyright_2">原创</label>				
+				</li>
+				
+				<li id="upload_progress" style="display:none">
+					<span>进度：</span>
+					<span class="start_state">
+						<span class="progress_show" id="progress_show"></span>			
+					</span>
+					<br /><br />
+					<span>你上传的视频大小为：</span><span id="video_size"></span>
+					<span>已完成：</span>
+					<span class="show_percent" id="show_percent">0%</span>
+					<br /><br />
+					<span class="waiting_notice" id="waiting_notice">视频正在处理中，请稍等...</span>
+					<span class="file_deal" id="file_deal" ></span>
+					<br /><br />					
+				</li>
+				
+				<li class="up_load" style="font-family:Arial,Verdana,Tahoma,Simsun,sans-serif;">
+					<div id="error_message" class="error_message"></div>
+					<span id="look_upload"></span>
+					<input style="vertical-align:middle;margin-left:5px;" onFocus="this.blur();" type="button" id="upload_button" onclick="upload_video();" value="上传视频" />
+				</li>
+			</ul>
+				<div class="help_info" style="font-family:Arial,Verdana,Tahoma,Simsun,sans-serif;">
+					<h4>提示信息：</h4>				
+			        <ol>
+			        	<li>1 .大小：所上传的视频文件大小不能超过2000M。</li>
+			        	<li>2 .支持格式：葫芦网支持绝大多数的视频格式。</li>
+			        	<li>    * 微软视频：.wmv .avi .dat .asf <br />
+    							* Real Player：.rm .rmvb .ram <br />
+    							* MPEG视频：.mpg .mpeg <br />
+    							* 手机视频：.3gp <br />
+    							* Apple视频：.mov <br />
+    							* Sony视频：.mp4 .m4v <br />
+    							* DV视频：.dvix .dv <br />
+    							* 其他常见视频：.dat .mkv .flv .vob .ram .qt .divx .cpk .fli .flc .mod
+						</li>
+			        	<li>3 .标题：标题最多可以填写30个字。</li>
+			        	<li>4 .标签：标签间使用","进行分隔。每个视频最多可以有十个标签。</li>
+			        	<li>5 .视频上传完成后，你可以查看上传的视频，也可以点击'选择文件'，继续上传文件。</li>
+			        </ol>
+				</div>			
+			</div>
+			<div class="clear1"></div>						
+			<div class="information" style="font-family:Arial,Verdana,Tahoma,Simsun,sans-serif;">
+				<h4>葫芦网慎重提醒你：</h4>
+				<p>	为响应国家九部委联合开展深入整治互联网和手机媒体淫秽色情及低俗信息专项行动的号召，营造一个健康文明的网络环境，给大家一个和谐积极的家园。</p>
+		        <ol>
+		        	<li>1. 不得上传任何有违国家法律法规的视频</li>
+		        	<li>2. 不得上传具有色情内容的视频</li>
+		        	<li>3. 不得上传内容低俗，格调不高的视频</li>
+		        	<li>4. 不得上传具有色情诱导性内容的视频</li>		        	
+		        </ol>
+		        <p>如果您上传了这些内容，我们将一律予以删除，我们希望我们最珍贵的网友们，理解并监督我们。 </p>
+			</div>
+		</div>
+		<img src="<?php echo RESOURCE_DIR?>img/right_window_bottom.gif" class="for_ie" />		
+	</div>	
+	<?php include hg_load_template('my_right_menu');?>
+</div>
+
+
+<?php include hg_load_template('foot');?>

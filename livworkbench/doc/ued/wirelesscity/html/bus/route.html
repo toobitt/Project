@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="yes" name="apple-touch-fullscreen" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<link rel="apple-touch-icon-precomposed" href="" />
+<link rel="stylesheet" href="./css/common.css" type="text/css" />
+<link rel="stylesheet" href="./css/bus.css" type="text/css" />
+<script src="./js/zepto.min.js"></script>
+<script src="./js/gmu/gmu.js"></script>
+<title>无线城市</title>
+<style>
+.common-input-box{border:none;}
+</style>
+</head>
+<body class="theme-">
+<header class="m2o-header">
+	<div class="m2o-nav">
+		<aside class="m2o-nav-left">
+			<a class="m2o-nav-icon modules"  href=""></a>
+		</aside>
+		<h1 class="m2o-nav-title">公交</h1>
+	</div>
+</header>
+<div class="subnav m2o-flex">
+	<a class="item m2o-flex-one" href="./nearby_geolocation_failed.html">附近</a>
+	<a class="item m2o-flex-one selected" href="./route.html">线路</a>
+	<a class="item m2o-flex-one" href="./station.html">站点</a>
+	<a class="item m2o-flex-one" href="./interchange.html">换乘</a>
+	<a class="item m2o-flex-one" href="./collect_list.html">收藏</a>
+</div>
+<div class="bus-inner">
+	<div class="search-area">
+		<div class="common-input-box">
+			<div class="input-item m2o-flex m2o-flex-center">
+				<span class="icon icon-route"></span>
+				<input class="input m2o-flex-one" placeholder="输入线路名" value=""/>
+				<span class="handle-btn clear"></span>
+			</div>
+			<div class="fuzzy-matching">
+				<ul>
+					<li _val="1">1路<a class="more"></a></li>
+					<li _val="10">10路<a class="more"></a></li>
+					<li _val="11">11路<a class="more"></a></li>
+					<li _val="15">15路<a class="more"></a></li>
+					<li _val="宜家">宜家<a class="more"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="vertical-btns">
+		<a class="common-btn">查询</a>
+	</div>
+	<div class="query-area">
+		<span class="title">最近查询</span>
+		<a class="clear-btn"></a>
+		<div class="recent-query">
+			<span>11</span>
+			<span>211</span>
+			<span>111</span>
+		</div>
+	</div>
+</div>

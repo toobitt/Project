@@ -1,0 +1,82 @@
+/* 字体 */
+.ft12{font-size:1.2em;}
+.ft16{font-size:1.6em;}
+
+/* 间距 */
+.mt10{margin-top:10px;}
+.mt20{margin-top:20px;}
+.ml20{margin-left:20px;}
+.mb10{margin-bottom:10px;}
+
+/* 盒模型 */
+.m2o-flex{display:-webkit-box;width:auto;display:-ms-flexbox;}
+.m2o-flex-center{-webkit-box-align:center;-ms-flex-align: center;}
+.m2o-flex-one{-webkit-box-flex:1;-ms-flex:1;}
+.m2o-flex-two{-webkit-box-flex:2;-ms-flex:2;}
+.m2o-vertical{-webkit-box-orient:vertical;-ms-flex-direction:column;}
+
+/* 分栏 */
+.m2o-column-two{-webkit-column-count:2;column-count:2;}
+.m2o-column-three{-webkit-column-count:3;column-count:3;}
+.m2o-column-four{-webkit-column-count:4;column-count:4;}
+.m2o-column-five{-webkit-column-count:5;column-count:5;}
+
+/* 按钮 */
+.m2o-big-btn{display:block;font-size:2em;line-height:2;text-align:center;margin:1em 0;background:#f7f7f7;border:1px solid #d9d9d9;color:#888;}
+
+body{min-width:320px;background:#fafafa;font-size:62.5%;font-family:"Hiragino Sans GB","Microsoft YaHei",tahoma,verdana,arial,sans-serif;color:#000;-webkit-text-size-adjust:none;}
+a:link{color:#000;}
+a:link,a:visited{text-decoration:none;-webkit-tap-highlight-color:transparent;tap-highlight-color:transparent;}
+.main-wrap{padding:10px;background:#fafafa;min-width:300px;}
+.main-wrap-nopadding{padding:0;min-width:320px;}
+.main-wrap-nopadding .m2o-list{padding:10px;}
+.main-wrap.has-foot{padding-bottom:60px;}
+.clear{overflow:visible;}
+.clear:after{clear: both; content: '.';display: block;visibility:hidden;height:0;}
+.icon-du{display:inline-block;width:0.4em;}
+
+
+/* 头部导航 */
+.m2o-header{width:100%;font-size:2.2em;line-height:2em;height:2em;}
+.m2o-nav-title{position:absolute;color:#fff;text-align:center;width:100%;}
+.m2o-nav{position:fixed;background:#be0201;height:2em;width:auto;z-index:10;left:0;right:0;top:0;-webkit-transition:all .3s linear;}
+.m2o-nav-icon{display:inline-block;position:relative;z-index:11;width:2em;height:2em;background:url(../images/navicon/drawer.png) center no-repeat;}
+.m2o-nav-icon.touched{background-color:rgba(255,255,255,.5);}
+.m2o-nav-left{float:left;height:2em;}
+.m2o-nav-right{float:right;height:2em;}
+.m2o-nav-icon.avatar,.m2o-nav-icon.drawer_avatar{background-image:url(../images/navicon/avatar.png);}
+.m2o-nav-icon.back{background-image:url(../images/navicon/back.png);}
+.m2o-nav-icon.collect{background-image:url(../images/navicon/collect.png);}
+.m2o-nav-icon.comment{background-image:url(../images/navicon/comment.png);}
+.m2o-nav-icon.down{background-image:url(../images/navicon/down.png);}
+.m2o-nav-icon.share{background-image:url(../images/navicon/share.png);}
+.m2o-nav-icon.delete{background-image:url(../images/navicon/delete.png);}
+.m2o-nav-icon.sure{background-image:url(../images/navicon/sure.png);}
+
+/* 头部左侧天气 */
+.m2o-nav .weather-box{display:block;position:relative;z-index:2;}
+.m2o-nav .weather-icon{display:inline-block;width:15px;height:15px;background:url(../images/sunny.png) no-repeat center;background-size:15px 15px;}
+.m2o-nav .weather-item{height:1.2em;line-height:1.2em;font-size:0.7em;color:#fff;padding:0.2em 0 0.2em 1em;}
+.m2o-nav .weather-temp{margin-left:0.5em;font-size:0.5em;}
+
+/* 主题-蓝色 #22ade6*/
+.theme-blue .m2o-nav{background-color:#22ade6;}
+.theme-blue .use-base-bg{background-color:#22ade6!important;}
+.theme-blue .use-base-color{color:#22ade6!important;}
+.theme-blue .use-base-border{border-color:#22ade6!important;}
+.theme-blue .main-wrap.has-foot{padding-bottom:3em;}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2) {
+	.m2o-nav-icon{background-image:url(../images/navicon/drawer@2x.png);background-size:24px 24px;}
+	.m2o-nav-icon.avatar,.m2o-nav-icon.drawer_avatar{background-image:url(../images/navicon/avatar@2x.png);}
+	.m2o-nav-icon.back{background-image:url(../images/navicon/back@2x.png);}
+	.m2o-nav-icon.collect{background-image:url(../images/navicon/collect@2x.png);}
+	.m2o-nav-icon.comment{background-image:url(../images/navicon/comment@2x.png);}
+	.m2o-nav-icon.down{background-image:url(../images/navicon/down@2x.png);}
+	.m2o-nav-icon.share{background-image:url(../images/navicon/share@2x.png);}
+	.m2o-nav-icon.delete{background-image:url(../images/navicon/delete@2x.png);}
+	.m2o-nav-icon.sure{background-image:url(../images/navicon/sure@2x.png);}
+}

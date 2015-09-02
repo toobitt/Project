@@ -1,0 +1,76 @@
+/*行动发布*/
+.pubAct-left{float:left;width:695px}
+.pub-form{padding:18px 0 80px 0;background:#fff;border-bottom:2px solid #BEBEBE}
+.pub-form textarea{width:540px;border:1px solid}
+.activity-icon{background:url({$RESOURCE_URL}act_flag.jpg) no-repeat left}
+.pub-tip{position:absolute;margin-left:60px;color:#aaa}
+.x-red{padding:10px 5px 0;color:#de2222}
+.pub-con{margin-top:30px}
+.pub-item{margin-bottom:15px}
+.pub-item-right{display:inline-block;width:528px;padding-left:3px;overflow:hidden}
+.radio-detail{width:532px;margin-top:10px;padding:10px 0 10px 10px;background:#f8f8f8}
+#actionForm .radio-detail{display:none}
+.address-detail,.information-detail{width:542px;padding:0;background:none}
+.pub-map{width:515px;height:320px;padding:5px;border:1px solid #e5e5e5}
+.hr{background:#e5e5e5;margin-top:10px;height:1px}
+.pub-input-title{display:block;float:left;width:100px;padding-right:5px;text-align:right;padding-top:3px}
+/*#actionForm .pub-input-title{width:125px;}*/
+.pub-address-input{color:#aaa;text-indent:0.5em}
+.pub-txt-input,.pub-form textarea{width:520px;border:1px solid;border-top-color:#abadb3;border-bottom-color:#e3e9ef;border-left-color:#e2e3ea;border-right-color:#dbdfe6}
+.pub-txt-input{height:30px;line-height:30px}
+.pub-endtime,.pub-startime{width:150px;color:#aaa;text-indent:0.5em}
+.wd80{width:80px}
+.wd110{width:110px}
+.wd320{width:320px}
+.wd330{width:330px}
+.pub-tag-tip{padding-left:15px;color:#aaa;font-size:12px}
+.add-poster{float:left;width:75px;height:30px;background:#e5e5e5;line-height:30px;padding:0 5px 0;cursor:pointer}
+.add-poster b{font-size:18px;color:#333}
+.poster-view{clear:both;float:left;margin:20px 0 0 100px;/*width:300px;height:50px;overflow:hidden*/}
+.poster-view img{max-width:540px;}
+.info-default{float:left;width:120px;height:33px;margin-bottom:10px;padding:12px 0 0 13px;margin-right:23px;background:#ededed;color:#aaa}
+.info-selected{background:#e5e5e5;color:#333}
+.information-list em{float:left;display:block;width:16px;height:16px;overflow:hidden;margin-top:2px;background:url({$RESOURCE_URL}inform.png) no-repeat}
+.information-list label{padding-left:8px}
+.information-list input{float:right;margin:4px 10px 0 0;*+margin-top:-20px}
+.info-default em.real-name{background-position:-18px 0}
+.info-selected em.real-name{background-position:0 0;}
+.info-default em.identity-card{background-position:-35px 0}
+.info-selected em.identity-card{background-position:-52px 0;}
+.info-default em.information-tel{background-position:-70px 0}
+.info-selected em.information-tel{background-position:-86px 0;}
+.info-default em.information-birthday{background-position:-17px -16px}
+.info-selected em.information-birthday{background-position:0 -16px;}
+.info-default em.information-address{background-position:-35px -17px}
+.info-selected em.information-address{background-position:-52px -17px;}
+.info-default em.information-email{background-position:-70px -16px}
+.info-selected em.information-email{background-position:-86px -16px}
+.info-default em.information-company{background-position:-17px -32px}
+.info-selected em.information-company{background-position:0 -32px;}
+.info-default em.information-number{background-position:-35px -33px}
+.info-selected em.information-number{background-position:-52px -33px;}
+.info-default em.politics-status{background-position:-70px -32px}
+.info-selected em.politics-status{background-position:-86px -32px}
+.info-default em.information-word{background-position:-17px -50px}
+.info-selected em.information-word{background-position:0 -50px;}
+.pub-controll{width:250px;margin:35px;}
+.pub-btn-save,.pub-btn-view{width:110px;height:35px;float:left;line-height:35px;text-align:center;color:#fff;cursor:pointer}
+.pub-btn-save{background:url({$RESOURCE_URL}pub_s.jpg) no-repeat;border:none}
+.pub-btn-view{display:block;background:url({$RESOURCE_URL}pub_view.jpg) no-repeat}
+
+/*报名信息填写*/
+.wd100{width:100px}
+.wd150{width:150px}
+.wd180{width:180px}
+.wd250{width:250px}
+.info-dialog-box{width:689px}
+.writeInfo-top{position:relative;width:689px;height:9px;background:url({$RESOURCE_URL}write_top.png) no-repeat}
+.close-btn{position:absolute;right:-27px;top:-25px;width:35px;height:34px;background:url({$RESOURCE_URL}form_close.png) no-repeat;cursor:pointer}
+.writeInfo-con{width:689px;padding-top:6px;background:url({$RESOURCE_URL}write_con.png) repeat-y}
+.apply-icon{background:url({$RESOURCE_URL}write-icon.jpg) no-repeat left}
+.back-none{padding:0;padding-left:4px;background:none;border:none}
+.write-controll{padding:20px 0 50px 104px}
+.write-btn-submit,.write-btn-cancel{width:80px;height:35px;float:left;line-height:35px;text-align:center;color:#fff;cursor:pointer}
+.write-btn-submit{background:url({$RESOURCE_URL}form_sumbit.jpg) no-repeat;border:none}
+.write-btn-cancel{display:block;background:url({$RESOURCE_URL}form_cancel.jpg) no-repeat}
+.writeInfo-bottom{width:689px;height:17px;background:url({$RESOURCE_URL}write_bottom.png) no-repeat}

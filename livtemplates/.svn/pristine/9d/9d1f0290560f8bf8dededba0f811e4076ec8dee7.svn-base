@@ -1,0 +1,1 @@
+{foreach $groups as $v}<li><a href="group.php?group_id={$v['group_id']}"><img src="{if is_string($v['logo'])}{$v['logo']}{else}{$v['logo']['host']}{$v['logo']['dir']}102x102/{$v['logo']['filepath']}{$v['logo']['filename']}{/if}"></a><p><a href="group.php?group_id={$v['group_id']}">{$v['name']}</a></p></li>{/foreach}

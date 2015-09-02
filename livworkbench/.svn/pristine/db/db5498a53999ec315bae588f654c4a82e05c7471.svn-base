@@ -1,0 +1,130 @@
+/*
+Copyright (c) 2011, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 2.9.0
+*/
+html{color:#000;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,select,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,button,caption,cite,code,dfn,em,input,optgroup,option,select,strong,textarea,th,var{font:inherit}del,ins{text-decoration:none}li{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:baseline}sub{vertical-align:baseline}legend{color:#000}
+
+
+body{min-width:320px;font-size:62.5%;font-family:"Open Sans",Arial,"Hiragino Sans GB","Microsoft YaHei","微软雅黑","STHeiti","WenQuanYi Micro Hei",SimSun,sans-serif;color:#000;-webkit-text-size-adjust:none;}
+body,.main-wrap{background:#eee;}
+.main-wrap{padding:10px;height:100%;}
+a{text-decoration:none;color:#333;}
+.m2o-overflow{white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.clear{overflow:visible;}
+.clear:after{clear: both; content: '.';display: block;visibility:hidden;height:0;}
+
+.views{overflow: hidden; }
+.slider-slide{background:url(../images/ui-slider-imgbg.png) no-repeat center center; }
+
+.pull-to-refresh-layer{margin-top:-48px; }
+
+/* 列表项 */
+.list-item{background:#fff;margin-bottom:10px;border-bottom:2px solid #cbcbcb;}
+.list-pic{display:block;width:80px;height:50px;overflow:hidden;}
+.list-pic img{width:100%;height:100%;}
+.transition{-webkit-transition:left .3s;}
+
+
+/* 选项卡式二级导航 */
+.subnav{height:45px;line-height:43px;text-align:center;color:#999;background:#f9f9f9;border:0}
+.subnav li{border-bottom:2px solid #cdcdcd;font-weight:normal;line-height:43px;background-color:#f9f9f9;}
+.subnav li a{color:#999; font-weight:normal; cursor: pointer; }
+.subnav li.selected{background-color:#eee; border-bottom-color:#3b9ac6; color:#3b9ac6;}
+.subnav li.selected a{color:#3b9ac6;}
+.ui-scroller {float: left;}
+.data-list{padding-bottom:10px;}
+.ui-refresh .ui-refresh-up, .ui-refresh .ui-refresh-down{margin:0 10px;1display:none;background-color:#eee;border:0;margin-top:10px;padding:0;}
+.ui-refresh-down{margin-top:0;padding-bottom:20px!important;}
+.ui-refresh .ui-refresh-up{margin:0 0 5px;}
+.ui-refresh-up.hide{display:none!important;}
+
+
+/* 盒模型 */
+.m2o-flex{display:-webkit-box; display:-ms-flexbox;}
+.m2o-flex-center{-webkit-box-align:center;-ms-flex-align: center;}
+.m2o-flex-end{-webkit-box-align:end;-ms-box-align:end;box-align:end;}
+.m2o-flex-one{-webkit-box-flex:1;-ms-flex:1;}
+.m2o-flex-two{-webkit-box-flex:2;-ms-flex:2;}
+.m2o-vertical{-webkit-box-orient:vertical;-ms-flex-direction:column;}
+.m2o-flex-overflow{flex-wrap:wrap;}
+
+/*nav*/
+.page{display:block!important; background-color:#eee;}
+
+/*头部*/
+.columnbar{position:absolute; top:0; left:0; width:100%; height:42px; background-color:#f9f9f9; }
+.columnbar a{font-size:2em; line-height:1.8em; border-bottom:1px solid #bcbcbc; }
+.columnbar a.active{color:#399ce1; border-bottom-color:#399ce1; }
+
+.hidden-navbar .navbar, .hidden-navbar .tabbar{-webkit-transition-duration:400ms; transition-duration:400ms; }
+.hidden-navbar .navbar{-webkit-transform:translate3d(0, 0, 0); transform:translate3d(0, 0, 0); }
+.hidden-navbar .tabbar{-webkit-transform:translate3d(0, -100%, 0); transform:translate3d(0, -100%, 0); z-index: 99;}
+1.navbar-through .page-content{padding-top:92px; }
+1.page.no-navbar .page-content{padding-top:44px; }
+
+.navbar{display:none!important; }
+
+
+/*图集预览*/
+.photo-browser-caption{height:46px; line-height:40px; font-size:1.8em; }
+
+/* 左图+文字 */
+.pic-intro-item{margin:15px 0;}
+.pic-intro-item .pic{display:block;width:85px;height:53px;margin-right:13px;}
+.pic-intro-item .intro{line-height:18px;font-size:12px;color:#999;}
+
+/*地图标示*/
+.anchorBL{display:none!important; }
+
+/*字体*/
+.fontsize14{font-size:1.4em; }
+.fontsize16{font-size:1.6em; }
+.fontsize18{font-size:1.8em; }
+.fontsize20{font-size:2em; }
+.fontsize22{font-size:2.2em; }
+.fontsize24{font-size:2.4em; }
+.fontsize26{font-size:2.6em; }
+.fontsize28{font-size:2.8em; }
+.fontsize30{font-size:3em; }
+.fontsize32{font-size:3.2em; }
+.fontsize40{font-size:4em; }
+.fontsize50{font-size:5em; }
+.fontsize60{font-size:6em; }
+
+/* 详情页设置字体大小 */
+.set-font-size{position:absolute;bottom:35px;right:20px;text-align:center;height:60px;width:240px; background-color:rgba(156, 156, 156, 0.8); z-index: 999; border-bottom:2px solid #686868; }
+.set-font-size span{display:inline-block; width:80px; line-height:60px; color:#eee; position:absolute; top:0;}
+.set-font-size span.selected{color:#eee;background:#686868;}
+.set-font-size .small{font-size:2em; left:0;}
+.set-font-size .middle{font-size:2.8em; left:80px; }
+.set-font-size .large{font-size:3.6em; left:160px; }
+
+/*提示框*/
+.ui-dialog{background-color:rgba(0,0,0,0.8); color:#fff; }
+.ui-dialog .ui-dialog-content{font-size:18px; padding:15px 25px; }
+.ui-dialog-btns, .ui-dialog .ui-dialog-close{display:none; }
+
+/*pop*/
+.fadeOut{opacity:0!important; }
+.fadeIn{opacity:1!important; box-shadow:0 0 2px 2px rgba(0, 0, 0, 0.3); }
+
+/*加载等待*/
+.preloader-indicator-modal{margin-left:-45px;margin-top:-45px;}
+.preloader-indicator-modal .preloader{width:54px;height:54px;background-image:url(../images/loading.gif);background-size:54px 54px;}
+
+/*没有数据时显示*/
+.tab .nodata{padding-top:50px; font-size:2.4em; text-align:center; color:#999; }
+.tab .nodata .refresh{color:#3b9ac5; margin-left:10px; }
+
+
+
+/*幻灯*/
+.photo-browser .toolbar{top:50%; background:transparent; }
+.photo-browser .toolbar a.link{position:absolute; width:125px; }
+.photo-browser .toolbar a.photo-browser-prev{left:0; }
+.photo-browser .toolbar a.photo-browser-next{right:0; }
+i.icon.icon-prev-white, i.icon.icon-next-white{ width:21px; height:39px; opacity:0.9; }
+i.icon.icon-prev-white{background-image:url(../images/news/arrow_left.png); }
+i.icon.icon-next-white{background-image:url(../images/news/arrow_right.png); }

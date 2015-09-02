@@ -1,0 +1,31 @@
+.edit_show .pd20{padding:20px 10px;}
+.out-color{color:#124693;}
+.mt10{margin-top:10px;}
+.common-list-i{top:12px;}
+.common-list-biaoti span{vertical-align:middle;}
+.common-list-overflow{display:inline-block;}
+.news-name{display:block;}
+.news-time{color:#888;font-size:10px;-webkit-text-size-adjust:none;}
+.common-list-biaoti a{font-size:14px;vertical-align:middle;}
+.addOuterlink_form{margin:0 15px;}
+.addOuterlink_form .info{padding:10px 0 15px;margin-bottom:5px;background:url(../../../.././../livtemplates/tpl/lib/images/dottedLine.png) repeat-x bottom;}
+.addOuterlink_form .info label{display:inline-block;width:60px;height:26px;line-height:26px;text-align:right;}
+.addOuterlink_form .info label.alignT{vertical-align:top;}
+.addOuterlink_form .title,.addOuterlink_form .descr,.addOuterlink_form .outlink{width:515px;height:25px;line-height:26px;font-size:14px;}
+.addOuterlink_form .descr{height:98px;}
+.addOuterlink_form .form-add{width:100px;height:35px;padding-bottom:5px;border-radius:5px;border:0;font-size:12px;cursor:pointer;}
+.addOuterlink_form .editor-btn{display:none;width:auto;height:auto;position:absolute;padding:3px 8px;border-radius:0;background:green;color:rgb(255, 255, 255);z-index:1000;}
+.addOuterlink_form .pic-area{display:inline-block;position:relative;width:150px;}
+.addOuterlink_form .pic-area:hover .editor-btn{display:block;}
+.addOuterlink_form .pic-area img{max-width:150px;max-height:150px;}
+.addOuterlink_form .sure{display:inline-block;width:127px;height:31px;background:url(../../../.././../livtemplates/tpl/lib/images/OK.png) no-repeat;margin-left:61px;border:0;color:#282828;cursor:pointer;font-size:14px;text-align:center;}
+.addOuterlink_form .iframe-loading{display:none;position:absolute;z-index:10000000000;left:260px;top:150px;width:50px;height:50px;}
+
+.max-wd{max-width:480px;}
+.news-outer{margin-left:8px;width:20px;height:20px;display:inline-block;background:url(../../../.././../livtemplates/tpl/lib/images/news/outer-refer.png) no-repeat center;}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2) {
+    .news-outer{background-image:url(../../../.././../livtemplates/tpl/lib/images/news/outer-refer-2x.png);background-size:17px 8px;}
+}

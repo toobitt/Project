@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html class="dingdone">
+<head>
+<meta charset="utf-8">
+<title>叮当 ● Dingdone 创想应用 如此有趣！</title>
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+<link href="images/style.css" rel="stylesheet">
+</head>
+
+<body>
+		<div id="preloader" style="display: none;"></div>
+    	<header class="dingdone-header">
+            <div class="wrap">
+                <h1 class="dingdone-logo"><a  href="#"></a></h1>
+                <h2 class="dingdone-return"><a  href="#"></a></h2>
+            </div>
+        </header>
+        <div id="box">
+            <div class="container">
+            	<section class="box">
+                    <div class="wrap">
+                        <div class="dingdone-btn clearfix">
+                            <div class="dingdone-application-trial"><a href="#">申请试用</a></div>
+                            <div class="dingdone-website"><a href="#">产品官网</a></div>
+                        </div>
+                        <hgroup class="dingdone-flipiny">
+                            <h1></h1>
+                        </hgroup>
+                        <div class="dingdone-step">
+                             <ul>
+                                <li class="dingdone-step1">
+                                    <div class="dingdone-step1-top"></div>
+                                    <div class="dingdone-step-bottom">为您的APP想个漂亮的名字；</div>  
+                                </li>
+                                <li class="dingdone-step2">
+                                    <div class="dingdone-step2-top"></div>
+                                    <div class="dingdone-step-bottom dingdone-step-txt">用叮当"烹饪"各种材料；</div>
+                                </li>
+                                <li class="dingdone-step3">
+                                    <div class="dingdone-step3-top"></div>
+                                    <div class="dingdone-step-bottom dingdone-step-txt1">Ding~<br/>应用自动生成了。</div>
+                                </li>
+                             </ul>
+                        </div>
+                        <div class="dingdone-module"></div>
+                    </div>
+                </section>
+                <section  class="box">
+                    <div class="wrap">
+                        <hgroup class="dingdone-flipiny1">
+                            <h1></h1>
+                        </hgroup>
+                        <div class="dingdone-list">
+                            <div class="dingdone-list-news">
+                                <a href="#" class="dingdone-module-news"></a>
+                                <div class="dingdone-module-news-desc">撰写、发布您的文稿，新闻资讯快速传达</div>
+                            </div>
+                            <div class="dingdone-list-special">
+                                <a href="#" class="dingdone-module-special"></a>
+                                <div class="dingdone-module-news-desc">海量模版让您随心所欲创作图文视听专题</div>
+                            </div> 
+                            <div class="dingdone-list-vod">
+                                <a href="#" class="dingdone-module-vod"></a>
+                                <div class="dingdone-module-news-desc">先进的流媒体技术让高清视频一畅到底</div>
+                            </div>
+                        </div>
+                        <div class="dingdone-list">
+                            <div class="dingdone-list-news">
+                                <a href="#" class="dingdone-module-super"></a>
+                                <div class="dingdone-module-news-desc">特惠商品、门店位置、会员信息一览无余</div>
+                            </div>
+                            <div class="dingdone-list-special">
+                                <a href="#" class="dingdone-module-weather"></a>
+                                <div class="dingdone-module-news-desc">全国城市的实时天气预报精准推送</div>
+                            </div> 
+                            <div class="dingdone-list-vod">
+                                <a href="#" class="dingdone-module-vote"></a>
+                                <div class="dingdone-module-news-desc">随时发起投票让互动无时间和空间的束缚</div>
+                            </div>
+                        </div>
+                        <div class="dingdone-client-module"></div>
+                    </div>
+                </section>
+                <section  class="box">
+                    <div class="wrap">
+                        <hgroup class="dingdone-flipiny2">
+                            <h1></h1>
+                        </hgroup>
+                        <div class="classical-client">
+                            <ul>
+                                <li class="wuxi"><a href="#"><span></span><p>智慧无锡</p></a></li>
+                                <li class="hangzhou"><a href="#"><span></span><p>爱杭州</p></a></li>
+                                <li class="changchun"><a href="#"><span></span><p>长春视界</p></a></li>                
+                            </ul>
+                        </div>
+                        <div class="classical-client">
+                            <ul>
+                                <li class="jinan"><a href="#"><span></span><p>无线济南</p></a></li>
+                                <li class="haining"><a href="#"><span></span><p>掌上海宁</p></a></li>
+                                <li class="anji"><a href="#"><span></span><p>美丽安吉</p></a></li>
+                            </ul>
+                        </div>
+                        <button type="button" name="dingdone-btn" class="dingdone-botton" value="立即申请试用">立即申请试用</button>
+                        <button type="button" name="dingdone-btn" class="dingdone-botton dingdone-contact" value="立即申请试用">立即电话我们</button>
+                    </div>
+                    <footer class="dingdone-footer"></footer>
+                </section>
+            </div>
+        </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="images/hammer.min.js"></script>
+    <script src="images/modernizr.js"></script>
+    <script>
+   /**
+    * super simple carousel
+    * animation between panes happens with css transitions
+    */
+    function Carousel(element)
+    {
+        var self = this;
+        element = $(element);
+
+        var container = $(">.container", element);
+        var panes = $(">.container>.box", element);
+
+        var pane_height = 0;
+        var pane_count = panes.length;
+
+        var current_pane = 0;
+
+
+        /**
+         * initial
+         */
+        this.init = function() {
+            setPaneDimensions();
+
+            $(window).on("load resize orientationchange", function() {
+                setPaneDimensions();
+            })
+        };
+
+
+        /**
+         * set the pane dimensions and scale the container
+         */
+        function setPaneDimensions() {
+            pane_height = element.height();
+            panes.each(function() {
+                $(this).height(pane_height);
+            });
+            container.height(pane_height*pane_count);
+        };
+
+
+        /**
+         * show pane by index
+         */
+        this.showPane = function(index, animate) {
+            // between the bounds
+            index = Math.max(0, Math.min(index, pane_count-1));
+            current_pane = index;
+
+            var offset = -((100/pane_count)*current_pane);
+            setContainerOffset(offset, animate);
+        };
+
+
+        function setContainerOffset(percent, animate) {
+            container.removeClass("animate");
+
+            if(animate) {
+                container.addClass("animate");
+            }
+
+            if(Modernizr.csstransforms3d) {
+                 container.css("transform", "translate3d(0,"+ percent +"%,0) scale3d(1,1,1)");
+            }
+            else if(Modernizr.csstransforms) {
+                container.css("transform", "translate(0, "+ percent +"%)");
+            }
+            else {
+                var px = ((pane_height*pane_count) / 100) * percent;
+                container.css("top", px+"px");
+            }
+        }
+
+        this.next = function() { return this.showPane(current_pane+1, true); };
+        this.prev = function() { return this.showPane(current_pane-1, true); };
+
+
+        function handleHammer(ev) {
+            // disable browser scrolling
+            ev.gesture.preventDefault();
+
+            switch(ev.type) {
+                case 'dragdown':
+                case 'dragup':
+                    // stick to the finger
+                    var pane_offset = -(100/pane_count)*current_pane;
+                    var drag_offset = ((100/pane_height)*ev.gesture.deltaY) / pane_count;
+
+                    // slow down at the first and last pane
+                    if((current_pane == 0 && ev.gesture.direction == "down") ||
+                        (current_pane == pane_count-1 && ev.gesture.direction == "up")) {
+                        drag_offset *= .4;
+                    }
+
+                    setContainerOffset(drag_offset + pane_offset);
+                    break;
+
+                case 'swipeup':
+                    self.next();
+                    ev.gesture.stopDetect();
+                    break;
+
+                case 'swipedown':
+                    self.prev();
+                    ev.gesture.stopDetect();
+                    break;
+
+                case 'release':
+                    // more then 2px moved, navigate
+                    if(Math.abs(ev.gesture.deltaY) > 2) {
+                        if(ev.gesture.direction == 'down') {
+                            self.prev();
+                        } else {
+                            self.next();
+                        }
+                    }
+                    else {
+                        self.showPane(current_pane, true);
+                    }
+                    break;
+            }
+        }
+
+        new Hammer(element[0], { drag_lock_to_axis: true }).on("release dragup dragdown swipeup swipedown", handleHammer);
+    }
+
+    var carousel = new Carousel("#box");
+    carousel.init();
+
+
+    </script>
+</body>
+</html>

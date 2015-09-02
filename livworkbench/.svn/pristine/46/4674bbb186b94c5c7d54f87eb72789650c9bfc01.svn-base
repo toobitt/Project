@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="yes" name="apple-touch-fullscreen" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<link rel="apple-touch-icon-precomposed" href="" />
+<link type="text/css" rel="stylesheet" href="css/common.css" />
+<link type="text/css" rel="stylesheet" href="css/bike.css" />
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/gmu.js"></script>
+
+<title>无线城市</title>
+</head>
+<body class="theme-">
+<header class="m2o-header">
+	<div class="m2o-nav">
+		<aside class="m2o-nav-left">
+			<a class="m2o-nav-icon back"  href="javascript:history.go(-1)">&nbsp;</a>
+		</aside>
+		<h1 class="m2o-nav-title">市民广场站</h1>
+	</div>
+</header>
+<nav class="subnav m2o-flex">
+	<a class="item m2o-flex-one " href="website_general.html?address=市民广场站&name=鸿山遗址博物馆">概括</a>
+	<a class="item m2o-flex-one selected" href="website_noticelist.html?address=市民广场站&name=鸿山遗址博物馆">公告</a>
+</nav>
+<div class="main-wrap bike">
+	<ul class="bike-list">
+		<li class="notice-item m2o-flex m2o-flex-center">
+			<div class="info m2o-flex-one">
+				<h3 class="name"><a href="website_noticeinfo.html">太湖新城市民广场迁移通知</a></h3>
+			</div>
+			<div class="detail">
+				<div class="date">3月1日</div>
+			</div>
+		</li>			
+		<li class="notice-item m2o-flex m2o-flex-center">
+			<div class="info m2o-flex-one">
+				<h3 class="name"><a href="website_noticeinfo.html">朝阳车站开站通知</a></h3>
+			</div>
+			<div class="detail">
+				<div class="date">3月1日</div>
+			</div>
+		</li>			
+		<li class="notice-item m2o-flex m2o-flex-center">
+			<div class="info m2o-flex-one">
+				<h3 class="name"><a href="website_noticeinfo.html">国邮大厦站点维修通知</a></h3>
+			</div>
+			<div class="detail">
+				<div class="date">3月1日</div>
+			</div>
+		</li>			
+		<li class="notice-item m2o-flex m2o-flex-center">
+			<div class="info m2o-flex-one">
+				<h3 class="name"><a href="website_noticeinfo.html">下月市民卡可租用公共自行车</a></h3>
+			</div>
+			<div class="detail">
+				<div class="date">3月1日</div>
+			</div>
+		</li>			
+		<li class="notice-item m2o-flex m2o-flex-center">
+			<div class="info m2o-flex-one">
+				<h3 class="name"><a href="website_noticeinfo.html">南禅寺朝阳广场站临时拆除通知</a></h3>
+			</div>
+			<div class="detail">
+				<div class="date">3月1日</div>
+			</div>
+		</li>			
+		<li class="notice-item m2o-flex m2o-flex-center">
+			<div class="info m2o-flex-one">
+				<h3 class="name"><a href="website_noticeinfo.html">3Q租车会员卡满一年后须延长有效期</a></h3>
+			</div>
+			<div class="detail">
+				<div class="date">2月10日</div>
+			</div>
+		</li>		
+	</ul>
+</div>
+</body>
+</html>

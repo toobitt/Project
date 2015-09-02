@@ -1,0 +1,87 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="yes" name="apple-touch-fullscreen" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<link rel="apple-touch-icon-precomposed" href="" />
+<link rel="stylesheet" href="css/gmu.css" type="text/css"/>
+<link rel="stylesheet" href="css/bae.css" type="text/css"/>
+<link rel="stylesheet" href="css/common.css" type="text/css" />
+<link rel="stylesheet" href="css/subway.css" type="text/css" />
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<title>地铁</title>
+</head>
+<body>
+	<div class="first-body transition" _attr="1">
+		<div data-role="bae_header" class="ui-bae-header">
+			<div class="ui-bae-header-list">
+				<div class="ui-bae-header-left">
+					<a href="javascript:history.back()" data-role="bae_header_button" class="ui-bae-go-back"></a>
+				</div>西漳站 
+			</div>
+			<ul class="ui-bae-color-line"> 
+				<li>&nbsp;</li>  <li>&nbsp;</li> <li>&nbsp;</li> <li>&nbsp;</li> <li>&nbsp;</li> 
+			</ul>
+		</div>
+		<div class="detail-wrap platform-wrap">
+			<div class="station-pic">
+				<img src="images/one-day.png">
+			</div>
+			<div class="m2o-flex m2o-flex-center item-station">
+				<div class="icons">
+					<span class="icon_spot_line1">&nbsp; </span>
+				</div>
+				<div class="station-name m2o-flex-one fontsize24">三阳广场</div>
+			</div>
+			<div class="station-info">
+				<p class="title fontsize20">本站首末班车时间</p>
+				<ul class="station-detail">
+					<li class="m2o-flex m2o-flex-center item-station">
+						<div class="icons">
+							<span class="icon_spot_line1">&nbsp; </span>
+						</div>
+						<div class="station-name m2o-flex-one fontsize22">开往<span>三阳广场：</span></div>
+						<div class="detail">
+							<span class="fontsize20">06:29<span>/</span>21:31</span>
+						</div>
+					</li>
+					<li class="m2o-flex m2o-flex-center item-station">
+						<div class="icons">
+							<span class="icon_spot_line1">&nbsp; </span>
+						</div>
+						<div class="station-name m2o-flex-one fontsize22">开往<span>三阳广场：</span></div>
+						<div class="detail">
+							<span class="fontsize20">06:29<span>/</span>21:31</span>
+						</div>
+					</li>
+				</ul>
+				<ul class="station-detail">
+					<li class="m2o-flex m2o-flex-center item-station">
+						<div class="icons">
+							<span class="icon_spot_line2">&nbsp; </span>
+						</div>
+						<div class="station-name m2o-flex-one fontsize22">开往<span>三阳广场：</span></div>
+						<div class="detail">
+							<span class="fontsize20">06:29<span>/</span>21:31</span>
+						</div>
+					</li>
+					<li class="m2o-flex m2o-flex-center item-station">
+						<div class="icons">
+							<span class="icon_spot_line2">&nbsp; </span>
+						</div>
+						<div class="station-name m2o-flex-one fontsize22">开往<span>三阳广场：</span></div>
+						<div class="detail">
+							<span class="fontsize20">06:29<span>/</span>21:31</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="station-btn">
+				<a class="fontsize22" href="access_info.html">出入口信息</a><a class="fontsize22" href="facilities_info.html">服务设施信息</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

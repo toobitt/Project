@@ -1,0 +1,7 @@
+<widget xmlns="http://www.jil.org/ns/widgets" id="hgbus" version="01.00.Beta" versioncode="1" height="200" width="300">
+	<name>RoadWidget</name>
+	<description>An example Widget</description>
+	<author email="Widget@chinamobile.com">Widget</author>
+	<icon src="icon.png"/>
+	<content src="road_all.html" encoding="utf-8"/>
+</widget>

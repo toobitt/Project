@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=devide-width,initial-scale=0.6,maximum-scale=1,user-scalable=0,target-densitydpi=high-dpi" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="yes" name="apple-touch-fullscreen" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<link rel="apple-touch-icon-precomposed" href="" />
+<link href="./css/gmu.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="./css/bae.css" type="text/css"/>
+<link rel="stylesheet" href="./css/common.css" type="text/css" />
+<link rel="stylesheet" href="./css/bus.css" type="text/css" />
+<script type="text/javascript" src="./js/zepto.min.js"></script>
+<script type="text/javascript" src="./js/api.js"></script>
+<script type="text/javascript" src="./js/gmu/gmu.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0.2&type=quick&ak=G3zlz1NuGD2GWPHlIvnbHGvH"></script>
+<script type="text/javascript" src="./js/bus/square.js"></script>
+<script type="text/javascript" src="./js/gmu/widget/dialog/dialog.js"></script>
+<script type="text/javascript" src="./js/gmu/widget/refresh/refresh.js"></script>
+<script type="text/javascript" src="./js/gmu/widget/refresh/$iscroll.js"></script>
+<script type="text/javascript" src="./js/gmu/widget/navigator/navigator.js"></script>
+<script type="text/javascript" src="./js/gmu/widget/navigator/$scrollable.js"></script>
+<script type="text/javascript" src="./js/gmu/widget/navigator/evenness.js"></script>
+<script type="text/javascript" src="./js/gmu/extend/touch.js"></script>
+<script type="text/javascript" src="./js/bae/bae_collapse.js"></script>
+<script type="text/javascript" src="./js/bae/bae_progressbar.js"></script>
+<script type="text/javascript" src="./js/bus/sha1.js"></script>
+<script type="text/javascript" src="./js/bus/hoge_storage.js"></script>
+<script type="text/javascript" src="./js/bus/bus_public.js"></script>
+<script type="text/javascript" src="./js/bus/bus.js"></script>
+<title>智能公交</title>
+</head>
+<body>
+	<div class="first-body transition" _attr="1">
+		<div data-role="bae_header" class="ui-bae-header">
+			<div class="ui-bae-header-list">
+				<div class="ui-bae-header-left">
+					<a href="javascript:;" data-role="bae_header_button" class="ui-bae-go-back"></a>
+				</div>智能公交 
+			</div>
+			<ul class="ui-bae-color-line"> 
+				<li>&nbsp;</li>  <li>&nbsp;</li> <li>&nbsp;</li> <li>&nbsp;</li> <li>&nbsp;</li> 
+			</ul>
+		</div>
+		<p class="current-address">当前位置 <span></span></p>
+		<div class="subnav">
+			<ul>
+				<li data-type="nearby"><a>附近</a></li>
+				<li data-type="route"><a>线路</a></li>
+				<li data-type="station"><a>站点</a></li>
+				<li data-type="transfer"><a>换乘</a></li>
+				<li data-type="collect"><a>收藏</a></li>
+			</ul>
+		</div>
+		<div class="tab-wrap"></div>
+	</div>
+	<!-- 地图 -->
+	<div class="getloc-wrap">
+		<div class="mask">
+			<div class="common-input-box">
+				<div class="input-item m2o-flex m2o-flex-center">
+					<span class="icon icon-search">&nbsp;</span>
+					<input class="input common-service-input m2o-flex-one" placeholder="搜索位置" value="">
+					<span class="handle-btn clear common-empty-input">&nbsp;</span>
+					<span class="handle-btn clear search">搜索</span>
+				</div>
+				<div class="fuzzy-matching">
+					<ul></ul>
+				</div>
+			</div>
+			<p class="tip">您可以拖动图片选择位置</p>
+		</div>
+		<div class="map_position map_tips tips_show">
+			<div class="map_content m2o-flex"><p class="m2o-flex-one m2o-overflow addressMap">现在的位置</p><a class="sure-btn"></a></div>
+			<a class="map_marker">&nbsp;</a>
+		</div>
+		<a class="bus-map-icon getloc">&nbsp;</a>
+		<a class="bus-map-icon map">&nbsp;</a>
+		<div id="mapDiv">
+		</div>
+		<div class="map-wrapper">
+			<div class="map-address-list">
+				<div class="map-list">
+					<ul id="thelist" class="data-list">&nbsp;</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="wirelessDiv">&nbsp;</div>
+</body>
+</html>

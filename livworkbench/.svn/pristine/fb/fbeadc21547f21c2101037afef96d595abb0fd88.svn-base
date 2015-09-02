@@ -1,0 +1,9 @@
+body{color:#3b3b3b;}
+.notice-header{margin: 0 20px;}
+.notice-header .title{line-height: 30px;font-size: 2.2em;margin-top: 15px;}
+.notice-header .detail {line-height: 30px;font-size: 1.4em;color: #999;}
+.img-box{padding:10px 20px 0px 20px;text-align:center;}
+.img-box img{max-width:100%;height:190px;}
+.img-box span{display:block;font-size: 1.6em;margin-top: 10px;text-align: center;}
+.notice{padding: 20px 30px;font-size: 1.6em;}
+.notice p{line-height:1.8;text-indent:35px;}

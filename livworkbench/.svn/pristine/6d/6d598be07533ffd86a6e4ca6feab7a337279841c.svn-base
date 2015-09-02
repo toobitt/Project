@@ -1,0 +1,7 @@
+<widget xmlns="http://www.jil.org/ns/widgets" id="hgbus" version="01.00.Beta" versioncode="1" height="200" width="300">
+	<name>BusWidget</name>
+	<description>An example Widget</description>
+	<author email="Widget@chinamobile.com">Widget</author>
+	<icon src="icon.png"/>
+	<content src="nearby_geolocation_failed.html" encoding="utf-8"/>
+</widget>

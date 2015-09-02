@@ -1,0 +1,13 @@
+INSERT INTO `liv_style` (`id`, `zh_name`, `type`, `formhtml`) VALUES
+('', '多选框', 'checkbox', '<input type=checkbox name="{$name}" value="{$data}" />{$data}'),
+('', '下拉框', 'option', '<option value="{$data}" >{$data}</option>'),
+('', '单选框', 'radio', '<input type="radio" name="{$name}" value="{$data}" />{$data}'),
+('', '图片上传','img', '<p class="upload_pic"><img /></p><input type="file" name="{$name}" class="catalog_avatar" style="display:none" />'),
+('', '文本框', 'text', '<input  type="text" name="{$name}" value="{$data}" />'),
+('', '文本域', 'textarea', '<textarea name="{$name}" cols="45" rows="4" >{$data}</textarea>');;
+
+
+
+
+
+

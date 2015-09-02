@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="yes" name="apple-touch-fullscreen" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />  
+<link rel="apple-touch-icon-precomposed" href="" />
+<link href="./css/bae.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="./css/common.css" type="text/css" />
+<link rel="stylesheet" href="./css/bus.css" type="text/css" />
+<script type="text/javascript" src="./js/jquery.js"></script>
+<script type="text/javascript" src="./js/bae_progressbar.js"></script>
+<script type="text/javascript" src="./js/bae_header.js"></script>
+<title>公交</title>
+</head>
+<body>
+	<div data-role="bae_header" data-event="javascript:history.go(-1);">地图选位置</div>
+	<div class="getloc-wrap">
+		<div class="mask">
+			<div class="common-input-box">
+				<div class="input-item m2o-flex m2o-flex-center">
+					<span class="icon icon-search"></span>
+					<input class="input m2o-flex-one" placeholder="无锡广电" value=""/>
+					<span class="handle-btn clear"></span>
+					<span class="search-btn">搜索</span>
+				</div>
+			</div>
+			<p class="tip">您可以拖动地图选择位置</p>
+		</div>
+		<a class="bus-map-icon getloc"></a>
+		<div class="bmap" id="getloc-map">
+		
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="./js/widget_pc_debug_1.0.0.js"></script>
+<script>
+$(function(){
+	Widget.ready = function(){
+	    var info = Widget.getSSOData("mail");
+	    console.log(info);
+	}
+});
+</script>
+</html>

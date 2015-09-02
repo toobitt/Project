@@ -1,0 +1,81 @@
+/*common_category*/
+.common_category{float:left;width:125px;overflow:hidden;}
+.common_category .vod-icon{position:relative;height:56px;background-color:#3f3f3f;border:1px solid #565656;border-bottom:0;}
+.common_category .vod-icon:before{position:absolute;left:-1px;top:-1px;content:'';width:56px;height:100%;background:url(../../../../.././../livtemplates/tpl/lib/images/split/video.png) center no-repeat;}
+.common_category .menu-inner{position:relative;width:2000em;}
+.common_category ul{float:left;width:125px;border-bottom:1px solid #565656;}
+.common_category ul li{position:relative;height:40px;line-height:40px;font-size:14px;}
+.common_category .title{display:block;border:1px solid #565656;border-bottom:0;text-indent:20px;color:#fff;}
+.common_category .title:hover{background:#4d4d4d;}
+.common_category .selected{background:#5b98d1;border-color:#5b98d1;}
+.common_category .selected:hover{background:#5b98d1;}
+.common_category .arrow{display:block;position:absolute;right:0;top:0;width:30px;height:100%;background:url(../../../../.././../livtemplates/tpl/lib/images/split/arrow_list_cur.gif) no-repeat center;z-index:100;}
+.common_category .arrow:hover{background:url(../../../../.././../livtemplates/tpl/lib/images/split/arrow_list.gif) no-repeat center #fefad7;}
+
+/*common-vod-list*/
+.common-vod-area li{float:left;width:120px;height:auto;padding:1px;margin:0 0 20px 25px;overflow:hidden;border:2px solid transparent;}
+.common-vod-area li:hover{border-color:#3692e7;}
+.common-vod-area .pic{display:block;position:relative;width:100%;height:90px;overflow:hidden;}
+.common-vod-area .pic img{max-height:90px;max-width:120px;}
+.common-vod-area .pic .time{position:absolute;bottom:0;right:0;padding:2px;background:#000;color:#fff;font-size:10px;-webkit-text-size-adjust:none;opacity:0.9;}
+.common-vod-area .date{position:absolute;bottom:0;left:0;padding:2px;/*width:100%;text-indent:10px;*/background:rgb(183, 190, 4);color:#fff;font-size:10px;-webkit-text-size-adjust:none;}
+.common-vod-area .name{display:block;max-height:38px;margin-top:2px;overflow:hidden;line-height:1.6;font-size:12px;color:#fff;}
+.common-vod-area .number{color:#a3a3a3;font-size:12px;}
+.common-vod-area .number em{padding-right:5px;font-size:11px;font-style:normal;-webkit-text-size-adjust:none;}
+
+/*common button*/
+.common-button-group a{display:inline-block;height:28px;margin-left:5px;padding:0 15px;line-height:28px;color:#fff;background-repeat:repeat-x;border-radius:2px;cursor:pointer;}
+.common-button-group .blue{background-image:url(../../../../.././../livtemplates/tpl/lib/images/split/small-blue.jpg);}
+.common-button-group .gray{background-image:url(../../../../.././../livtemplates/tpl/lib/images/split/small-gray.jpg);}
+.common-button-group .blue:hover{background-image:url(../../../../.././../livtemplates/tpl/lib/images/split/small-blue-hover.jpg);}
+.common-button-group .gray:hover{background-image:url(../../../../.././../livtemplates/tpl/lib/images/split/small-gray-hover.jpg);}
+
+/*common-searh*/
+.common-search-area{display:inline-block;position:relative;z-index:1000;height:28px;padding-right:250px;cursor:pointer;}
+/*select-area*/
+.common-search-area .select-area{position:relative;}
+.common-search-area .current-box{float:left;width:90px;padding-left:10px;height:28px;margin-right:6px;line-height:28px;font-size:12px;color:#fff;background:#595959;overflow:hidden;z-index:10;}
+.common-search-area .current{}
+.common-search-area ul{display:none;position:absolute;width:100%;left:0;top:28px;z-index:1000;background:#595959;width:100px;color:#fff;}
+.common-search-area .select-area.on ul{display:block;}
+.common-search-area li{height:28px;line-height:28px;padding-left:10px;}
+.common-search-area li:hover{background:#4d4d4d;}
+.common-search-area .sa-other{float:left;}
+.common-search-area .sa-other input{width:80px;background:#595959;margin-right:5px;color:#fff !important;}
+
+/*search*/
+.common-search-area .search{position:absolute;top:0;right:0;width:250px;height:28px;1background:#595959;font-size:12px;}
+.common-search-area .key-word, .common-search-area .key-who{width:100px;height:100%;border:0;padding:0;background-color:#595959;padding-left:5px;color:#fff;margin-right:2px;}
+.common-search-area .key-word:focus, .common-search-area .key-who:focus{outline:none;color:#fff !important;}
+.common-search-area .btn{position:absolute;top:0px;right:0px;width:28px;height:28px;background:url(../../../../.././../livtemplates/tpl/lib/images/split/search.png) no-repeat center #595959;background-size:12px 12px;}
+
+/*page-link*/
+.common-page-link{font-size:12px;}
+.common-page-link .page-all{float:left;line-height:22px;margin-right:5px;}
+.common-page-link .current,
+.common-page-link .page-code a,
+.common-page-link .page-prev a,
+.common-page-link .page-next a{cursor:pointer;display:block;float:left;width:22px;height:22px;margin-left:7px;color:#fff;background:#565656;text-align:center;line-height:22px;}
+.common-page-link .page-prev a,
+.common-page-link .page-next a{min-width:40px;}
+.common-page-link a:hover{background:#4d4d4d;}
+.common-page-link .current{background:#343434;}
+
+.key-word:focus{color:#fff !important;}
+.list-wu, .list-loading{margin-left:25px !important;float:left;width:auto !important;color:#fff !important;}
+.list-wu:hover{border-color:transparent !important;}
+.cat-loading{overflow:hidden;}
+.cat-loading img{margin-top:5px;}
+.file-cat-li.on .title{background-color:#5a98d1 !important;}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2) {
+   .common_category .vod-icon:before{background-image:url(../../../../.././../livtemplates/tpl/lib/images/split/video-2x.png);background-size:29px 29px;}
+   .common-button-group .blue{background-image:url(../../../../.././../livtemplates/tpl/lib/images/split/small-blue-2x.jpg);background-size:2px 28px;}
+   .common-button-group .gray{background-image:url(../../../../.././../livtemplates/tpl/lib/images/split/small-gray-2x.jpg);background-size:2px 28px;}
+   .common-button-group .blue:hover{background-image:url(../../../../.././../livtemplates/tpl/lib/images/split/small-blue-hover-2x.jpg);background-size:2px 28px;}
+   .common-button-group .gray:hover{background-image:url(../../../../.././../livtemplates/tpl/lib/images/split/small-gray-hover-2x.jpg);background-size:2px 28px;}
+   .common-search-area .btn{background-image:url(../../../../.././../livtemplates/tpl/lib/images/split/search-2x.png) no-repeat;background-size:12px 12px;}       
+}

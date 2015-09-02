@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>现场抽奖</title>
+<style type="text/css">
+	body, ul, li, h2{padding:0; margin:0; }
+	li{list-style:none}
+	.transition{-webkit-transition:all 0.5s; transition:all 0.3s;}
+	.translate{-webkit-transform:translate3d(0, -50%, 0); transform:translate3d(0, -50%, 0); }
+	.clear{overflow:visible;}
+	.clear:after{clear: both; content: '.';display: block;visibility:hidden;height:0;}
+
+	.wrap{overflow:hidden; }
+	.guide-lottery{width:640px; min-height:400px; margin:0 auto; text-align:center; }
+	.area{position:relative; margin:20px 0; overflow-x:hidden; overflow-y:auto; }
+	.mask{position:absolute; left:0; top:0; width:100%; height:100%; background-color:#808080; z-index: 999; opacity:1;  }
+	.mask.hide{opacity:0; z-index:-1; }
+	.inner{overflow:hidden; line-height:28px; color:#333; font-size:18px; border:2px solid #a40000; }
+	.inner li{line-height:34px; }
+	.inner label{font-size:#999; margin-right:20px; }
+	.button{display:inline-block; width:220px; height:40px; line-height: 40px; text-align:center; cursor:pointer; }
+	.button-primary{background-color:#a40000; color:#fff; border-radius:3px; }
+	.button-gray{background-color:#888; color:#fff; border-radius:3px; }
+	.disabled{background-color:#999; }
+	.lottery{margin-top:20px; }
+	
+	/*抽奖结果*/
+	.result-wrap .area{height:-webkit-calc( 100% - 160px ); height:calc( 100% - 160px )}
+	.result-wrap ul{margin-bottom:1px; }
+	.result-wrap ul:not(:last-child){border-bottom:1px solid #a40000; }
+	.result-wrap ul:not(:first-child){border-top:1px solid #a40000; }
+	.result-wrap li{float: left; display:inline-block; line-height: 34px; text-align:left; }
+	
+	.clearbtn{display:inline-block; padding:5px 18px; vertical-align:middle; color:#a40000; margin-left:20px; text-decoration:underline; cursor:pointer; }
+</style>
+</head>
+<body>
+<div class="wrap">
+	<div class="guide-lottery transition" _line="5" _num="2">
+		<div class="content-block lottery-wrap">
+			<div class="area">
+				<div class="inner autoHeight" style="height:200px"></div>
+				<div class="mask transition"></div>
+			</div>
+			<a class="button button-primary lottery">抽奖</a>
+		</div>
+		<input type="hidden" name="id" value="44" />
+		<div class="content-block result-wrap" _resultnum="3">
+			<h2>抽奖结果</h2>
+			<div class="area">
+			</div>
+			<div class="content-button">
+				<a class="button button-primary back">继续抽奖</a>
+				<a href="http://10.0.2.94/livsns/api/feedback/data/address.php?a=download_winner&id=44" class="button button-gray export">导出抽奖</a>
+				<a class="clearbtn">清空</a>
+			</div>
+		</div>
+	</div>	
+</div>
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+<script type="text/javascript" src="./js/module/hg_localstorage.js"></script>
+<script type="text/javascript" src="./js/new_lottery.js"></script>
+<script type="text/javascript">
+	var wrap = $('.guide-lottery'),
+		lineheight = 34,
+		height = $('body').height();
+	setTimeout(function(){
+		$('.content-block').add('.wrap').height( height );
+	}, 0);
+	wrap.new_lottery({
+		line : wrap.attr('_line'),
+		lineheight : lineheight,	//行高
+		num : wrap.attr('_num'),
+		url : 'http://localhost/livsns/api/feedback/feedback.php?a=get_winners',
+		getdataUrl : 'http://localhost/livsns/api/feedback/feedback.php?a=all_players',
+		resultnum : wrap.find('.result-wrap').attr('_resultnum'),
+		id : wrap.find('input[name="id"]').val()
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="yes" name="apple-touch-fullscreen" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<link type="text/css" rel="stylesheet" href="css/common.css" />
+<link type="text/css" rel="stylesheet" href="css/bike.css" />
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/gmu.js"></script>
+
+<title>无线城市</title>
+</head>
+<body class="theme-">
+<header class="m2o-header">
+	<div class="m2o-nav">
+		<aside class="m2o-nav-left">
+			<a class="m2o-nav-icon modules"  href="#">&nbsp;</a>
+		</aside>
+		<h1 class="m2o-nav-title">公共自行车</h1>
+	</div>
+</header>
+<nav class="subnav m2o-flex">
+	<a class="item m2o-flex-one " href="nearest_list.html">离我最近</a>
+	<a class="item m2o-flex-one " href="filter_list.html">区域筛选</a>
+	<a class="item m2o-flex-one selected" href="website_list.html">站点公告</a>
+</nav>
+<div class="main-wrap bike">
+	<ul class="bike-list">
+		<li class="area-item m2o-flex m2o-flex-end">
+			<div class="info m2o-flex-one">
+				<h3 class="name"><a href="./website_noticeinfo.html?address=市民官场站">太湖新城市民广场迁移通知</a></h3>
+				<div class="addition"><span class="address">太湖新城</span>
+					<span class="carportnum">市民官场站</span></div>
+			</div>
+			<div class="detail">
+				<div class="date">20分钟前</div>
+			</div>
+		</li>			
+		<li class="area-item m2o-flex m2o-flex-end">
+			<div class="info m2o-flex-one">
+				<h3 class="name"><a href="./website_noticeinfo.html?address=朝阳车站">朝阳车站开站通知</a></h3>
+				<div class="addition"><span class="address">崇安区</span>
+					<span class="carportnum">朝阳车站</span></div>
+			</div>
+			<div class="detail">
+				<div class="date">1天前</div>
+			</div>
+		</li>			
+		<li class="area-item m2o-flex m2o-flex-end">
+			<div class="info m2o-flex-one">
+				<h3 class="name"><a href="./website_noticeinfo.html?address=国邮大厦站">国邮大厦站点维修通知</a></h3>
+				<div class="addition"><span class="address">太湖新城</span>
+					<span class="carportnum">国邮大厦站</span></div>
+			</div>
+			<div class="detail">
+				<div class="date">2天前</div>
+			</div>
+		</li>			
+		<li class="area-item m2o-flex m2o-flex-end">
+			<div class="info m2o-flex-one">
+				<h3 class="name"><a href="./website_noticeinfo.html?address=">下月市民卡可租用公共自行车</a></h3>
+				<div class="addition"><span class="address">&nbsp;</span>
+					<span class="carportnum">&nbsp;</span></div>
+			</div>
+			<div class="detail">
+				<div class="date">3天前</div>
+			</div>
+		</li>			
+		<li class="area-item m2o-flex m2o-flex-end">
+			<div class="info m2o-flex-one">
+				<h3 class="name"><a href="./website_noticeinfo.html?address=国邮大厦站">南禅寺朝阳广场站临时拆除通知</a></h3>
+				<div class="addition"><span class="address">朝阳广场站</span>
+					<span class="carportnum">国邮大厦站</span></div>
+			</div>
+			<div class="detail">
+				<div class="date">3月1日</div>
+			</div>
+		</li>			
+		<li class="area-item m2o-flex m2o-flex-end">
+			<div class="info m2o-flex-one">
+				<h3 class="name"><a href="./website_noticeinfo.html?address=">3Q租车会员卡满一年后须延长有效期</a></h3>
+				<div class="addition"><span class="address">&nbsp;</span>
+					<span class="carportnum">&nbsp;</span></div>
+			</div>
+			<div class="detail">
+				<div class="date">2月10日</div>
+			</div>
+		</li>		
+	</ul>
+</div>
+</body>
+</html>

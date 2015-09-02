@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="yes" name="apple-touch-fullscreen" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<link rel="apple-touch-icon-precomposed" href="" />
+<link href="./css/bae.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="./css/common.css" type="text/css" />
+<link rel="stylesheet" href="./css/bus.css" type="text/css" />
+<script type="text/javascript" src="./js/jquery.js"></script>
+<script type="text/javascript" src="./js/bae_progressbar.js"></script>
+<script type="text/javascript" src="./js/bae_header.js"></script>
+<script type="application/javascript" src="./js/iscroll.js"></script>
+<script type="text/javascript" src="./js/hg_scroll.js"></script>
+<title>公交</title>
+<style>
+.search-area{position:relative;}
+.change-btn{position: absolute;width: 22px;height: 22px;background-color: #fff;top:40px;left:10px;}
+</style>
+</head>
+<body>
+	<div data-role="bae_header" data-event="javascript:history.go(-1);">公交</div>
+	<div class="subnav m2o-flex">
+		<a class="item m2o-flex-one" href="./nearby_route_failed.html">附近</a>
+		<a class="item m2o-flex-one" href="./route_search.html">线路</a>
+		<a class="item m2o-flex-one" href="./station_search.html">站点</a>
+		<a class="item m2o-flex-one selected" href="./interchange_search.html">换乘</a>
+		<a class="item m2o-flex-one" href="./collect_route.html">收藏</a>
+	</div>
+<div class="bus-inner">
+	<div class="search-area">
+		<div class="common-input-box">
+			<div class="input-item m2o-flex m2o-flex-center starting point">
+				<span class="icon icon-location"></span>
+				<input class="input m2o-flex-one" placeholder="输入起始站" value=""/>
+				<span class="handle-btn location"></span>
+			</div>
+			<div class="input-item m2o-flex m2o-flex-center terminal-point">
+				<span class="icon icon-location"></span>
+				<input class="input m2o-flex-one" placeholder="输入终点站" value=""/>
+				<span class="handle-btn location"></span>
+			</div>
+		</div>
+		<a class="change-btn icon-interchange"></a>
+	</div>
+	<div class="vertical-btns">
+		<a class="common-btn" href="./transfer_list.html">查询</a>
+	</div>
+	<div class="query-area">
+		<span class="title">最近查询</span>
+		<a class="clear-btn"></a>
+		<div class="recent-query">
+			<a class="recent-query-item">运河饭店</a>
+			<a class="recent-query-item">港下</a>
+			<a class="recent-query-item">无锡中央车站</a>
+			<a class="recent-query-item">解放北路</a>
+			<a class="recent-query-item">港下</a>
+			<a class="recent-query-item">解放北路</a>
+			<a class="recent-query-item">无锡中央车站</a>
+		</div>
+	</div>
+</div>
+</body>
+<script>
+$(function(){
+	$('.recent-query').on('click','.recent-query-item',function(){
+		var inputs = $('.input-item').find('input');
+		var aims = inputs.filter(function(){
+			return !$(this).val();
+		});
+		if( aims.length == 2 ){
+			inputs.eq(0).val( $(this).text() );
+		}else{
+			inputs.filter(function(){
+				return !$(this).val();
+			}).val( $(this).text() );
+		}
+	});
+});
+</script>
+</html>

@@ -1,0 +1,66 @@
+
+.nodata{font-size:1.6rem; text-align:center; margin-top:55px; color:#999; }
+
+/*查询首页*/
+.refer-index ul{margin:20px 25px; }
+.refer-index li{position:relative; line-height:45px; margin-bottom:15px; background-color:#fff; }
+.refer-index .title{text-align:center; color:#333; font-size:1.5rem; }
+.refer-index .mark{width:45px; height:100%; line-height: 45px; text-align:center; background-image:url('./../images/module-2x.png'); background-repeat:no-repeat; background-size:135px; background-color:#3fcfb4; color:#fff; }
+.refer-index .mark.water{background-position:0 0; }
+.refer-index .mark.energy{background-position:-44px 0; background-color:#f6615e; }
+.refer-index .mark.gas{background-position:-88px 0; background-color:#fcb35e; }
+.refer-index .mark.cpf{background-position:0 -44px; background-color:#42bdf6; }
+.refer-index .mark.phone{background-position:-44px -44px; background-color:#9899fe; }
+.refer-index .mark.traffic{background-position:-88px -44px; background-color:#bce26f; }
+
+/*公积金账号列表页*/
+.refer-cpflist{display: none; }
+.refer-cpflist li{position:relative; height:50px; padding:0 10px; border-bottom:1px solid #e5e5e5; background-color:#fff; }
+.refer-cpflist .title{margin-right:10px; color:#333; font-size:1.5rem; }
+.refer-cpflist .btn-area{margin:30px 15px; }
+
+.account-block{margin-top:15px; border-top:2px solid #3fcfb4; display:none; }
+.account-block .form_title{height:43px; line-height:43px; padding:0 10px; font-size:14px; background-color:#fff; color:#3fcfb4; border-bottom:1px solid #e5e5e5; }
+.account-block input{width:100%; height:43px; font-size:1.4rem; border:none; padding:5px; }
+.refer-cpflist .account-block li{height:45px; }
+
+
+/*公积金查询页*/
+.refer-cpfsearch li{height:45px; margin-top:15px; padding:0 10px; border-top:1px solid #e5e5e5; border-bottom:1px solid #e5e5e5; background-color:#fff; }
+.refer-cpfsearch .title{font-size:1.4rem; color:#333; margin-right:5px; }
+.refer-cpfsearch input{width:100%; height:43px; font-size:1.4rem; border:none; padding:5px; }
+.refer-cpfsearch .tip{margin-top:10px; padding:0 10px; color:#bdbdbd; }
+.refer-cpfsearch .code .img{width:76px; }
+.refer-cpfsearch .btn-area{margin:30px 15px; }
+
+/*公积金结果页*/
+.refer-cpfresult .list-block li{position:relative; height:45px; padding:0 10px; border-bottom:1px solid #e5e5e5; background-color:#fff;}
+.refer-cpfresult .list-block .primary{font-size:1.5rem; margin-right:3px; }
+.refer-cpfresult .title{font-size:1.4rem; color:#333; margin-right:5px; }
+
+.tab-block li{width:60px; line-height:45px; text-align:center; }
+.tab-block li.active{color:#46d0b6; }
+.tab-block .panel{border-top:1px solid #e5e5e5; background-color:#fff; }
+.tab-block .panel-title{color:#666; }
+.tab-block .panel-item, .tab-block .panel-title{height:40px; text-align:center;}
+.tab-block .panel-item{border-top:1px solid #e5e5e5; }
+.tab-block .wid60{width:60px; }
+.tab-block .wid100{width:100px; }
+.tab-block .company{font-size:1rem; color:#c7c7c7; -webkit-text-size-adjust:none; }
+.tab-block .type{display:block; margin-bottom:3px; }
+.tab-block .nodata{padding:30px 0 20px; margin-top:0; border-top:1px solid #e5e5e5; border-bottom:1px solid #e5e5e5; }
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2) {
+	.refer-index .mark{background-image:url('./../images/module-2x.png');}	
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 3),
+only screen and (-moz-min-device-pixel-ratio: 3),
+only screen and (-o-min-device-pixel-ratio: 3/1),
+only screen and (min-device-pixel-ratio: 3) {
+	.refer-index .mark{background-image:url('./../images/module-3x.png');}	
+}

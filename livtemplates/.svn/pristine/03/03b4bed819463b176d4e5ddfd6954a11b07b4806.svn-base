@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>demo</title>
+
+<script src="../lib/jquery-1.7.2.js" type="text/javascript"></script>
+<script src="../dist/jquery.validate.js" type="text/javascript"></script>
+<style>
+label{width:50px;float:left;}
+span{margin-left:15px;}
+span.error{color:red;}
+span.success{color:blue;}
+</style>
+</head>
+<body style="margin:50px;">
+<form>
+	<fieldset>
+		<legend>用户注册</legend>
+		<p>
+			<label for="user">用户名</label>
+			<input id="user" name="user" autocomplete="off" />
+		<p>
+			<label for="email">邮&nbsp;&nbsp;箱</label>
+			<input id="email" type="text" name="email" autocomplete="off" />
+		</p>
+		<p>
+			<label for="password">密&nbsp;&nbsp;码</label>
+			<input id="password" type="password" name="password" autocomplete="off" />
+		</p>
+		<p>
+			<label for="confirm_password">密&nbsp;&nbsp;码</label>
+			<input id="confirm_password" type="password" name="confirm_password" autocomplete="off" />
+		</p>
+		<p>
+			<label for="custom">自定义</label>
+			<input id="custom" type="text" name="custom" autocomplete="off" />
+		</p>
+		<p>
+			<label for="remote">ajax</label>
+			<input id="remote" name="remote" />
+		</p>
+		<p><input type="submit" /></p>
+	</fieldset>
+</form>
+
+<script type="text/javascript">
+
+$(function ($) {
+
+	/*默认的验证规则有：
+	required
+	remote //远程验证，即ajax验证,服务器只能返回true,false,字符串
+	minlength
+	maxlength
+	rangelength
+	min
+	max
+	email
+	url
+	date
+	dateISO
+	number
+	digits
+	creditcard
+	equalTo
+	*/
+	
+	/*如果默认的验证规则不适用，可加入自定义验证规则，方式如下：*/
+	$.validator.addMethod("mao", function(value, element, param) { //输入只能是mao
+		return value == "mao";
+	}, '请输入"mao"!');
+	
+	$( 'form' ).validate({
+		debug: true,
+		rules: {
+			user: {
+				required: true,
+				rangelength: [3,10]
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			password: {
+				required: true,
+				minlength: 3
+			},
+			confirm_password: {
+				equalTo: $('#password')
+			},
+			custom: {
+				mao: true
+			},
+			remote: {
+				remote: {
+					url: 'form.php'
+				}
+			}
+		},
+		messages: {
+			user: {
+				required: '不能不填的用户名'
+			},
+			email: {
+				required: '不能不填的emial'
+			}
+		},
+		errorClass: 'error', //验证返回false时，给input和errorElement添加的class
+		validClass: 'valid', //验证返回true时，给input加的class
+		errorElement: 'span', //包裹错误message的tag
+		success: function ( span ) {
+			span.text( '√' ).addClass('success');
+		},
+		errorPlacement: function (errorElement, input) {	//错误元素产生时，可以用这次函数控制显示位置
+			errorElement.appendTo( input.parent() );
+		}
+	})
+})
+
+</script>
+</body>
+</html>

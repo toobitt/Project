@@ -1,0 +1,37 @@
+.form_tit{background:url({$RESOURCE_URL}ybz_title.png) left top repeat-x;height:40px;line-height:40px;}
+.btn_sl{padding:8px 0 0 10px;width:146px;height:24px;cursor:pointer;line-height: 24px;display: block;font-size:12px;}
+.btn_sl a{display:block;width:73px;height:24px;line-height:24px;background:url({$RESOURCE_URL}include.png) no-repeat;float: left;text-align: center;color:#8c8a8b}
+.btn_sl a.first{background-position:0px -24px;}
+.btn_sl a.last{background-position:-73px 0px;}
+.btn_sl a.first.cur{background-position:0px 0px;font-weight:bold;color:#fff}
+.btn_sl a.last.cur{background-position:-73px -24px;font-weight:bold;color:#fff}
+.btn_sl a.first:hover{background-position:0px -72px;}
+.btn_sl a.first.cur:hover{background-position:0px -48px;}
+.btn_sl a.last:hover{background-position:-73px -48px;}
+.btn_sl a.last.cur:hover{background-position:-73px -72px;}
+
+.hg_pr_l{float:left;padding-top:8px;margin-left:4px}
+.hg_tab{padding:0 10px}
+h2.title_bg .btn_sl{float:right;margin-right:10px;padding-top:3px;}
+.form_tit .btn_sl{float:right;margin-right:10px}
+
+.c_a span {
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+.c_a .lm em {
+	background-position: -80px -24px;
+    height: 16px;
+    margin: 2px 0 0;
+    width: 16px;
+}
+.c_a em{
+    background: url("{$RESOURCE_URL}bg-all.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+}
+
+
+

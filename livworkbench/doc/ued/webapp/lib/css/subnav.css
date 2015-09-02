@@ -1,0 +1,18 @@
+/* 二级导航 - 选项卡式 */
+.subnav-tab{position:relative;overflow:hidden;font-size:1.2em;height:3em;line-height:3em;background:#f9f9f9;border-bottom:1px solid #ccc;}
+.subnav-tab .sub-item{position:relative;font-size:1.25em;width:2.5em;margin:0 1em;text-align:center;}
+.subnav-tab .sub-item.selected:after{position:absolute;content:'';height:3px;background:#be0201;bottom:-1px;width:100%;left:0;}
+.subnav-tab .add{position:absolute;top:0;right:0;color:#aaa;width:1.8em;font-size:1.5em;background:#f0f0f0;border-left:1px solid #d1d1d1;text-align:center;box-shadow:0 0 5px;}
+
+/* 二级标题 */
+.sub_title{text-indent:10px;font-size:2em;color:#be0201;height:2em;line-height:2em;background:#fafafa;border-bottom:#ececec;margin:0 -10px 10px;}
+.sub_title .icon{display:inline-block;width:0.3em;height:0.8em;background:#be0201;}
+.sub_title .tip{color:#888;font-size:0.9em;}
+
+
+/*收藏选项卡*/
+.collect-nav{position:relative;overflow:hidden;font-size:1.2em;height:3em;line-height:3em; border-bottom:1px solid #d5d5d5; box-shadow:0 0 0 1px #ededed;}
+.collect-nav .column{ -webkit-column-count:2; -webkit-column-rule:1px solid #d9d9d9; }
+.collect-nav .sub-item{text-align:center;}
+.collect-nav a{font-size:1.25em; color:#888; display:inline-block; line-height: 20px; border-bottom:2px solid #fafafa; }
+.collect-nav .sub-item.selected a{color:#be0201; border-bottom-color: #be0201; }

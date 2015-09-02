@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+</head>
+<body>
+<form>
+<input id="vid"/><br/>
+<input id="time2"/><br/>
+<input id="name"/><span id="insert-video">插入视频</span>
+</form>
+<script>
+(function(){
+	//domid,video字段
+    var iframeSrc = './index.php?cb=cb.html&settings=vid,id,name,title,time2,duration';
+    var w = 800, h = 620;
+    if(typeof jQuery != 'undefined'){
+        $('#insert-video').on('click', function(){
+            var iframeBox = $('#test-iframe');
+
+            if(!iframeBox[0]){
+            	iframeBox = $('<div id="test-iframe"><div class="test-iframe-title" style="background: #f4f4f4;padding: 15px 20px;color: #868686;font-size: 18px;">插入视频</div><div id="test-iframe-close" style="position:absolute;right: 10px;top: 10px;color:#fff;width: 40px;height:20px;font-size: 12px;background: #f27835;line-height:20px;text-align:center;cursor:pointer;">关闭</div><iframe src="'+ iframeSrc +'" style="width:100%;height:100%;" frameborder="0"></iframe></div>').css({
+                    position : 'absolute',
+                    border : '1px solid #dadada',
+                    width : w + 'px',
+                    height : h + 'px',
+                    'z-index' : 10000
+                }).appendTo('body');
+            }
+            iframeBox({
+                left : ($(document).width() - w) / 2 + 'px',
+                top : $('body').scrollTop() + ($(window).width() - w) / 2 + 'px',
+                display : 'block'
+            });
+            iframeBox.find('iframe').attr('src', iframeSrc);
+        });
+
+        $('body').on('click', '#test-iframe-close', function(){
+            $('#test-iframe').hide();
+        });
+    }else{
+        var $$ = function(id){
+            return document.getElementById(id);
+        };
+
+        $$('insert-video').onclick = function(){
+            var body = document.body;
+            var iframeBox = $$('test-iframe');
+            if(!iframeBox){
+                iframeBox = document.createElement('div');
+                iframeBox.id = 'test-iframe';
+                iframeBox.innerHTML = '<div class="test-iframe-title" style="background: #f4f4f4;padding: 15px 20px;color: #868686;font-size: 18px;">插入视频</div><div id="test-iframe-close" style="position:absolute;right: 10px;top: 10px;color:#fff;width: 40px;height:20px;font-size: 12px;background: #f27835;line-height:20px;text-align:center;cursor:pointer;">关闭</div><iframe src="'+ iframeSrc +'" style="width:100%;height:100%;" frameborder="0"></iframe>';
+                iframeBox.style.position = 'absolute';
+                iframeBox.style.width = w + 'px';
+                iframeBox.style.height = h + 'px';
+                iframeBox.style.zIndex = 10000;
+                iframeBox.style.border = '1px solid #dadada';
+                body.appendChild(iframeBox);
+                $$('test-iframe-close').onclick = function(){
+                    $$('test-iframe').style.display = 'none';
+                }
+            }
+            var bodyWidth = body.clientWidth;
+            var bodyScrollTop = body.scrollTop;
+            var winHeight = document.documentElement.clientHeight;
+            var style = iframeBox.style;
+            style.left = (bodyWidth - w) / 2 + 'px';
+            style.top = bodyScrollTop + (winHeight - h) / 2 + 'px';
+            style.display = 'block';
+            iframeBox.getElementsByTagName('iframe')[0].src = iframeSrc;
+        }
+    }
+})();
+</script>
+</body>
+</html>

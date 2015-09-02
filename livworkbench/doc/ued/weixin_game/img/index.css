@@ -1,0 +1,7 @@
+body{background-color:#edeff0; font-family:"PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size:14px;}
+
+.title{margin:20px; font-size:16px; text-align:center; }
+.index-list{min-width:200px; margin:20px; background-color:#fff; box-shadow:0 1px 2px #ccc; }
+.index-list li{height:40px; line-height: 40px; border-bottom:1px solid #edf0f2; margin:0 10px; padding:0 10px; }
+.index-list a{color:#5e5e5e; }
+.index-list a:hover{color:#d85060; }

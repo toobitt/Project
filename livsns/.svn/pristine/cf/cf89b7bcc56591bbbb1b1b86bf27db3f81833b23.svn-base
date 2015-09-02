@@ -1,0 +1,135 @@
+<?php
+/***************************************************************************
+* $Id$
+***************************************************************************/
+define('MOD_UNIQUEID','schedule_backup_auto');
+define('ROOT_DIR', '../../../');
+define('CUR_CONF_PATH', '../');
+require(ROOT_DIR.'global.php');
+require(CUR_CONF_PATH."lib/functions.php");
+class scheduleBackupAutoApi extends cronBase
+{
+	private $mLivemms;
+	private $mLive;
+	private $mSchedule;
+	public function __construct()
+	{
+		parent::__construct();
+		require_once ROOT_PATH . 'lib/class/live.class.php';
+		$this->mLive = new live();
+		
+		require_once CUR_CONF_PATH . 'lib/schedule.class.php';
+		$this->mSchedule = new schedule();
+		
+		require_once CUR_CONF_PATH . 'lib/livemms.class.php';
+		$this->mLivemms = new livemms();
+	}
+
+	public function __destruct()
+	{
+		parent::__destruct();
+	}
+
+	public function initcron()
+	{
+		$array = array(
+			'mod_uniqueid' => MOD_UNIQUEID,	 
+			'name' => '删除串联单已过期的备播文件',	 
+			'brief' => '删除已过期的串联单临时创建的备播文件 (暂时删除前一天的数据)',
+			'space' => '86400',	//运行时间间隔，单位秒
+			'is_use' => 0,	//默认是否启用
+		);
+		$this->addItem($array);
+		$this->output();
+	}
+	
+	/**
+	 * 删除已过期的串联单临时创建的备播文件 (暂时删除前一天的数据)
+	 * Enter description here ...
+	 * @zhulidong 将创建的备播文件删除机制修改为播放放结束后的一个小时之后
+	 */
+	public function schedule_backup_auto()
+	{
+		//$dates = date('Y-m-d', (strtotime(date('Y-m-d')) - 86400));
+		
+		$sql  = "SELECT id, channel_id, change2_id, change2_name, file_id, type FROM " . DB_PREFIX . "schedule ";
+		$sql .= " WHERE 1 AND (start_time + toff) < '" . intval(TIMENOW-3600) . "'";
+		$sql .= " AND type > 1 ";
+		$sql .= " AND is_file_delete = 0 ";
+		
+		$q = $this->db->query($sql);
+		
+		$channel_id = $schedule = array();
+		while ($row = $this->db->fetch_array($q))
+		{
+			$channel_id[$row['channel_id']] = $row['channel_id'];
+			$schedule[] = $row;
+		}
+		
+		if (empty($channel_id))
+		{
+			$this->errorOutput('频道id不存在或已被删除');
+		}
+		
+		//频道
+		$channel_id = implode(',', $channel_id);
+		
+		$channel_data = array(
+			'id'		=> $channel_id,
+			'is_stream'	=> 0,
+			'is_server'	=> 1,
+			'field'		=> ' id, server_id ',
+		);
+		
+		$channel_info = $this->mLive->getChannelInfoById($channel_data);
+		
+		$channel = array();
+		if (!empty($channel_info))
+		{
+			foreach ($channel_info AS $v)
+			{
+				$channel[$v['id']] = $v;
+			}
+		}
+		$server_info = $this->settings['server_info'];
+		$host 		 = $server_info['host'];
+		$input_dir 	 = $server_info['input_dir'];
+
+		foreach ($schedule AS $v)
+		{
+			if ($v['file_id'])
+			{
+				
+				$file_data = array(
+					'action'	=> 'delete',
+					'id'		=> $v['file_id'],
+				);
+				
+				$ret_delete = $this->mLivemms->inputFileOperate($host, $input_dir, $file_data);
+				if (!$ret_delete['result'])
+				{
+					continue;
+				}
+				
+				$schedule_data = array(
+					'id'			 => $v['id'],
+					'is_file_delete' => 1,
+				);
+				
+				$ret = $this->mSchedule->update($schedule_data);
+			}
+		}
+		
+		$this->addItem($schedule);
+		$this->output();
+	}
+}
+
+$out = new scheduleBackupAutoApi();
+$action = $_INPUT['a'];
+if (!method_exists($out,$action))
+{
+	$action = 'schedule_backup_auto';
+}
+$out->$action();
+?>

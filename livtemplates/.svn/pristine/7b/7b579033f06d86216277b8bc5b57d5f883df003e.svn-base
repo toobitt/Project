@@ -1,0 +1,29 @@
+/*form*/
+.more-index{color: #7d7d7d;margin-left: 10px;}
+.user_font{float:right;color:#7D7D7D;margin-top: 5px;}
+.n-h-s{margin-top:6px;margin-left:5px;color:#7D7D7D;}
+.s-s{color:#333;line-height:24px;position:relative;top:-5px;left:5px;}
+.ml_50{margin-left:50px;}
+.ml_42{margin-left:42px;}
+.formUlLiDiv {margin: 10px 0px 10px 20px;}
+.formUlLiDiv .title{width: 40px;margin-bottom: 10px;color: #7D7D7D;display: inline-block;text-align: right;}
+
+.goback{float: right;margin-right: 100px;}
+.user_color{color:#282828;}
+.formUlLiDiv .divInput {width:200px;}
+.formUlLiDiv .divInput_440 {width:440px;}
+.email_type {position: relative;top: -24px;left: 44px;}
+
+.form_ul_div.l input{float:left}
+.form_ul .n-h{float:none}
+.ad_middle table textarea{min-width:0;min-height: 0;}
+.option_del_box{display:inline-block;width:16px;height:16px;cursor:pointer;float:right;position: relative;right: 245px;top: 4px;}
+.option_del {
+	display: none;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+	float: right;
+	background: url('{$RESOURCE_URL}close_plan.png') 0 0 no-repeat;
+}
+.option_del_box_event{right: 170px;}

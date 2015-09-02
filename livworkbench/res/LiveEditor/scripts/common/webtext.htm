@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link  rel="stylesheet" type="text/css" href="webtext.css"/>
+    <script>
+        var sLangDir = parent.oUtil.langDir;
+        document.write("<scr" + "ipt src='language/" + sLangDir + "/webtext.js'></scr" + "ipt>");
+    </script>
+    <script>writeTitle()</script>
+    <script src="jquery-1.7.min.js" type="text/javascript"></script>
+	<link  rel="stylesheet" type="text/css" href="../jquery-ui.css"/>
+	<script type="text/javascript" src="../jquery-ui/jquery.ui.core.js"></script>
+	<script type="text/javascript" src="../jquery-ui/jquery.ui.widget.js"></script>
+	<script type="text/javascript" src="../jquery-ui/jquery.ui.mouse.js"></script>
+	<script type="text/javascript" src="../jquery-ui/jquery.ui.slider.js"></script>
+
+    <script src="common.js" type="text/javascript"></script>
+    <script src="init-text.js" type="text/javascript"></script>
+    <style>
+    .current{border-color:blue;}
+    </style>
+</head>
+<body>
+	<div class="text-item">
+		<div class="item-text-attr text-bold" onclick="I_DoCmd('Bold')" id="divBold">
+		</div><div class="item-text-attr text-italic" onclick="I_DoCmd('Italic')">
+		</div><div class="item-text-attr text-underline" onclick="I_DoCmd('Underline')">
+		</div>
+		<!-- <div class="item-text-attr text-forecolor">
+		</div><div class="item-text-attr text-bgcolor"></div> -->
+		<div class="item-text-attr text-strikethrough" onclick="I_DoCmd('Strikethrough')" >
+		</div>
+	</div>
+	<div class="text-item">
+		<div class="item-text-attr text-left" onclick="I_DoCmd('JustifyLeft')">
+		</div><div class="item-text-attr text-center" onclick="I_DoCmd('JustifyCenter')">
+		</div><div class="item-text-attr text-right" onclick="I_DoCmd('JustifyRight')">
+		</div>
+		<div class="item-text-attr text-select-fontfamily">
+			<select id="fontFramilySelect" style="width:80px;">
+			</select>
+		</div>
+	</div>
+	<div class="text-item">
+		<div class="item-text-attr text-order-list" onclick="I_DoCmd('InsertOrderedList')">
+		</div><div class="item-text-attr text-unorder-list" onclick="I_DoCmd('InsertUnOrderedList')" >
+		</div>
+		<div class="item-text-attr text-left-indent" onclick="I_DoCmd('Indent')">
+		</div><div class="item-text-attr text-right-indent" onclick="I_DoCmd('Outdent')">
+		</div>
+		<div class="item-text-attr text-sub" onclick="I_DoCmd('Subscript')">
+		</div><div class="item-text-attr text-super" onclick="I_DoCmd('Superscript')">
+		</div>
+	</div>
+	<div class="text-item">
+		<div>行　　高:<span class="line-height-slide myslider-ui"></span><label></label></div> 
+	</div>
+	<div class="text-item">
+		<div>字母间距:<span class="letter-spacing-slide myslider-ui"></span><label></label></div>
+	</div>
+	<div class="text-item font-size-box">
+		<p>选择字号:</p>
+		<div><div data-val="1.2em"><p>AB</p><p>1.2x</p></div></div>
+		<div><div data-val="1.5em"><p>AB</p><p>1.5x</p></div></div>
+		<div><div data-val="2em"><p>AB</p><p>2x</p></div></div>
+		<div><div data-val="2.5em"><p>AB</p><p>2.5x</p></div></div>
+		<div><div data-val="3em"><p>AB</p><p>3x</p></div></div>
+		<div><div data-val="4em"><p>AB</p><p>4x</p></div></div>
+	</div>
+</body>
+</html>

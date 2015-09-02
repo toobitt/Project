@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>积分商城</title>
+<link rel="stylesheet" href="css/framework7.min.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/credit.css">
+</head>
+<body>
+<div class="view view-main credits-shopping">
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="left sliding">
+				<a href="javascript:history.back()" class="back link">
+					<i class="icon icon-back"></i>
+				</a>
+			</div>
+			<div class="center sliding block-show">兑换确认</div>
+			<div class="right"></div>
+		</div>
+	</div>
+	<div class="pages navbar-through">
+		<div data-page="index" class="page">
+			<div class="page-content order-confirm">
+				<div class="content-detail">
+					<div class="item-content common-order-info">
+						<div class="item-inner goods-info m2o-flex m2o-flex-center">
+							<img class="pic" src="./images/shopping.png">
+							<p class="name m2o-flex-one">湖景桃，全球最好吃的水蜜桃限量供应</p>
+							<div class="count">x1</div>
+						</div>
+						<div class="item-detail point-info m2o-flex m2o-flex-center">
+							<div class="flag m2o-flex-one">消费积分</div>
+							<div class="point-count red-color">12998</div>
+						</div>
+					</div>
+				</div>
+				<!-- 数量 -->
+				<div class="content-block item-block">
+					<div class="block-detail m2o-flex m2o-flex-center">
+						<div class="m2o-flex-one bold-title">数量</div>
+						<div class="num-select-box"></div>
+					</div>
+				</div>
+				<!-- 数量 end-->
+				<div class="content-block submit-box">
+					<a class="btn btn-full btn-blue">确认兑换</a>
+				</div>
+				<div class="content-block-title">*注意：此商品确认兑换后需要凭密码到指定地点领取</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/zepto.numSelect.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script>
+$(function(){
+	$('.num-select-box').numBox();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+.photo-list{padding:10px 10px 0;}
+.photo-list li{float:left;position:relative;background:white;width:166px;height:400px;border:1px solid transparent;margin:10px 5px;padding:10px 15px;word-wrap:break-word;}
+.photo-list li:hover{border-color:#d3d3d3;}
+.photo-list li.active{border-color:#5a98d1;}
+.photo-list .preview{height:200px;width:100%;line-height:200px;text-align:center;overflow:hidden;}
+.photo-list .preview img{vertical-align:middle;height: 100%;width: 150px;}
+.handle{height:28px;line-height:28px;color:#666;}
+.handle .user-name{max-width:100px;text-overflow:ellipsis;}
+.handle .icons{float:right;}
+.handle .icons a{display:inline-block;width:25px;text-align:right;color:#666;cursor:pointer;background:url("{$RESOURCE_URL}icon/comment.png") left center no-repeat;}
+.handle .icons .zan{margin-left:10px;background-image:url("{$RESOURCE_URL}icon/zan.png");}
+.photo-list .pic-intro{max-height:120px;overflow:hidden;line-height:1.8;margin:5px 0;color:#666;}
+.photo-list .more-info p{color:#c3c3c3;line-height:1.8;}
+.photo-list li:hover .del{display:block;}
+.photo-list .del{position:absolute;height:22px;width:22px;background:url("{$RESOURCE_URL}icon/close.png") no-repeat center;top:-8px;right:-6px;border-radius:50%;cursor:pointer;display:none;}
+.albums-list .bottom{height: 40px;background: #f9f9f9;border-top:1px solid #c8d4e0;}
+.albums-list .bottom .left{margin-top:10px;}
+
+.reaudit{color:#82aacd;cursor:pointer}
+.tips{position: fixed;border: 4px solid #6ba4eb;width: 400px;height: 80px;top:40%;left: 50%;line-height: 80px;text-align: center;font-size: 18px;margin-left: -200px;opacity: 0;z-index: -10;background: white;transition: all ease-in .3s;}
+.set-cover{cursor: pointer;width: 50px;height: 28px;background: rgba(78,78,78,0.6);line-height: 30px;text-align: center;color: #fff;display: none;position: absolute;top: 20px;left: 24px;z-index: 999999999;}
+.photo-list li:hover .set-cover{display:block}
+.selected{border-color: #5a98d1!important}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2) {	
+	.handle .icons a{background-image:url("{$RESOURCE_URL}icon/comment-2x.png");background-size:14px 12px;}
+	.handle .icons .zan{background-image:url("{$RESOURCE_URL}icon/zan-2x.png");background-size:12px 11px;}
+	.photo-list .del{background:url("{$RESOURCE_URL}icon/close-2x.png");background-size:22px 22px;}
+}

@@ -1,0 +1,28 @@
+.fz0{font-size:0;}
+.common-list .common-list-head{padding:12px 10px;}
+form span .edit {background: url("{$RESOURCE_URL}bg-all.png") no-repeat scroll -60px -24px transparent;cursor: pointer;display: inline-block;font-size: 0;height: 16px;line-height: 0;margin-top: 6px;width: 16px;}
+.v_list_show .common-list-cell{height:49px;}
+
+.common-list-item .live-duration{font-size: 10px;color: #666666;-webkit-text-size-adjust: none;}
+
+#flv_box{background:black;}
+#flv_box .flv-close{position:absolute;cursor:pointer;right:0px;top:0px;z-index:1000;}
+#flv_box .flv-close span{background:url("{$RESOURCE_URL}bg-all.png") no-repeat scroll -67px -70px transparent;width:26px;height:26px;display:block;}
+#flv_box .flv-close span:hover{background-position:-93px -70px;}
+.common-list-i{top:13px;}
+.common-list-overflow{max-width:230px;}
+.max-wd150{max-width:150px;}
+.min-wd280{min-width:280px;}
+.bb-name{display:block;}
+.bb-time{color:#888;font-size:10px;-webkit-text-size-adjust:none;}
+.biaoz .content{padding:0;}
+.max-wd100{max-width:100px;}
+.qz-time span{font-size:12px;}
+.fz14{font-size:14px;}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2) {
+	#flv_preview .flv-close span{background-image:url({$RESOURCE_URL}slide-close-2x.png);background-size:8px 8px;}
+}
+

@@ -1,0 +1,71 @@
+@CHARSET "UTF-8";
+.editor_container {
+	border:1px solid #E9F2FF;
+	width: 100%;
+}
+
+.editor_container textarea
+{
+	font-size:12px;
+	font-family:'微软雅黑';
+	border :0;
+	line-height:20px;
+	margin:0px;
+	padding:0 2 0 2;
+	float:left;
+}
+
+.editor_line{
+	overflow:hidden;
+	text-align:right;
+	background:#f8f8f8;
+	width:4%;
+	border:#f8f8f8 1px solid;
+}
+
+.editor {
+	width:90%;
+	overflow-x:scroll;
+}
+
+#autolist
+{
+	width:120px;
+	border:1px solid #898C95;
+	margin:1px;
+	padding:2px;
+	background: #F4F4F4;
+}
+#autolist *
+{
+	padding:0;
+	margin:0;
+}
+#autolist li
+{
+	display:block;
+	list-style:none;
+}
+.current
+{
+	font-weight:bold;
+	background: #FBFBFB;
+}
+
+#browser
+{
+	border:1px solid #E9F2FF;
+	width:120px;
+	margin:2px;
+	padding:1px;
+}
+
+#browser a
+{
+	border:1px solid #E9F2FF;
+	background: #E9F2FF;
+	width:120px;
+	display:block;
+	text-decoration:none;
+	color:black;
+}

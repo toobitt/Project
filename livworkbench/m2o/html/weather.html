@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>天气</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.switchable-2.0.min.js"></script>
+</head>
+<body>
+<!-- head start -->
+<div class="header-bg">
+     <div class="head layout">
+          <h1 class="logo fl">M2O新媒体综合运营平台</h1>
+          <div class="fr mt15">
+               <div class="search-area fl">
+                    <a class="search-icon"></a>
+                    <input type="text" class="search-txt"/>
+               </div>
+               <ul class="news-list fl">
+               	   <li><a href="#">站票打折</a></li>
+               	   <li><a href="#">钓岛问题</a></li>
+               	   <li><a href="#">抢票插件</a></li>
+               </ul>
+          </div>
+     </div>
+</div>
+<div class="nav-bg">
+     <div class="nav layout">
+          <ul class="menu">
+              <li class="on"><a href="index.html">首页</a></li>
+              <li><a href="news.html">新闻</a></li>
+              <li><a href="live.html">直播</a></li>
+              <li><a href="vedio.html">视频</a></li>
+              <li><a href="dianbo.html">点播</a></li>
+              <li><a href="photo.html">图片</a></li>
+              <li><a class="all" href="index.html">全部</a>
+          		   <ul class="nav-more">
+          			  <li><a>票务</a></li>
+          			  <li><a>路况</a></li>
+          			  <li><a>杂志</a></li>
+          		   </ul>
+          	   </li>
+         </ul>
+     </div>
+</div>
+<!-- head end -->
+
+<div class="container layout clearfix">
+   <div class="weather">
+   		<!-- head -->
+   		<div class="weather-head">
+   			<div class="detail">
+   				<p class="current-place ft18">南京
+   					<a class="ft14 change">[更改]</a>
+   					<a class="time ft14">2013.3.8 星期五 二月初二</a>
+   					<a class="fr ml10 comment"></a>
+   					<a class="fr share"></a>
+   				</p>
+   				<p class="ft34 current">冰雹雨夹雪23°C</p>
+   				<ul class="ft14">
+   					<li>26°C~13°C</li>
+   					<li>东南风4～5级&nbsp;|&nbsp;湿度：60%</li>
+   					<li>紫外线等级：中等</li>
+   					<li>pm2.5:120</li>
+   					<li class="current-image"><img src="images/wea_head_rain.png"></li>
+   				</ul>
+   				<p class="ft14 update-time">更新时间 12:14</p>
+   			</div>
+   			<div class="week">
+   				<div class="week-wea">
+   					<ul>
+   						<li class="today">
+							<p class="ft12 date">明天</p>
+							<a><img src="images/wea_week1.png"></a>
+							<p class="ft14">25°C</p>
+							<p class="ft14">16°C</p>
+						</li>
+						<li>
+							<p class="ft12 date">后天</p>
+							<a><img src="images/wea_week2.png"></a>
+							<p class="ft14">28°C</p>
+							<p class="ft14">15°C</p>
+						</li>
+						<li>
+							<p class="ft12 date">星期一</p>
+							<a><img src="images/wea_week3.png"></a>
+							<p class="ft14">23°C</p>
+							<p class="ft14">14°C</p>
+						</li>
+						<li>
+							<p class="ft12 date">星期二</p>
+							<a><img src="images/wea_week1.png"></a>
+							<p class="ft14">24°C</p>
+							<p class="ft14">18°C</p>
+						</li>
+						<li>
+							<p class="ft12 date">星期三</p>
+							<a><img src="images/wea_week2.png"></a>
+							<p class="ft14">27°C</p>
+							<p class="ft14">20°C</p>
+						</li>
+						<li>
+							<p class="ft12 date">星期四</p>
+							<a><img src="images/wea_week3.png"></a>
+							<p class="ft14">25°C</p>
+							<p class="ft14">13°C</p>
+						</li>
+   					</ul>
+   				</div>
+   				<div class="curve">
+   					<img alt="高温" src="images/wea_high.png">
+   					<img alt="低温" src="images/wea_low.png">
+   					<img alt="日期" src="images/wea_date.png">
+   				</div>
+   			</div>
+   		</div>
+		<!-- left -->
+		<div class="weather-left ml15 fl">
+			<div class="cities">
+				<div class="title">
+					<a class="title-left fl"></a>
+					<a class="title-right fr"></a>
+					<h3 class="title-center">我关注的城市</h3>
+				</div>
+				<div class="city weather-border">
+					<ul>
+						<li>
+							<h3 class="ft20 mt5">
+								北京
+								<a class="set"></a>
+							</h3>
+							<a><img src="images/wea_lrain.png"></a>
+							<p><span class="low">6</span>~<span class="high">14°C</span></p>
+							<p class="ft10">南风 微风</p>
+						</li>
+						<li>
+							<h3 class="ft20 mt5">
+								上海
+								<a class="set"></a>
+							</h3>
+							<a><img src="images/wea_lsun.png"></a>
+							<p><span class="low">8</span>~<span class="high">12°C</span></p>
+							<p class="ft10">南风 微风</p>
+						</li>
+						<li>
+							<h3 class="ft20 mt5">
+								杭州
+								<a class="set"></a>
+							</h3>
+							<a><img src="images/wea_lcloudy.png"></a>
+							<p><span class="low">2</span>~<span class="high">8°C</span></p>
+							<p class="ft10">南风 微风</p>
+						</li>
+						<li>
+							<h3 class="ft20 mt5">
+								广州
+								<a class="set"></a>
+							</h3>
+							<a><img src="images/wea_lthunder.png"></a>
+							<p><span class="low">14</span>~<span class="high">22°C</span></p>
+							<p class="ft10">南风 微风</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="places mt20">
+				<div class="title">
+					<a class="title-left fl"></a>
+					<a class="title-right fr"></a>
+					<h3 class="title-center">相关地区</h3>
+				</div>
+				<div class="place weather-border">
+					<ul>
+						<li>
+							<span>江宁</span>
+							<a><img src="images/wea_s1.png"></a>
+							<span>8~12°C</span>
+						</li>
+						<li>
+							<span>江浦</span>
+							<a><img src="images/wea_s2.png"></a>
+							<span>8~12°C</span>
+						</li>
+						<li>
+							<span>溧水</span>
+							<a><img src="images/wea_s3.png"></a>
+							<span>8~12°C</span>
+						</li>
+						<li>
+							<span>高淳</span>
+							<a><img src="images/wea_s4.png"></a>
+							<span>8~12°C</span>
+						</li>
+						<li>
+							<span>六合</span>
+							<a><img src="images/wea_s5.png"></a>
+							<span>8~12°C</span>
+						</li>
+						<li>
+							<span>浦口</span>
+							<a><img src="images/wea_s6.png"></a>
+							<span>8~12°C</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="forecasts mt20">
+				<div class="title">
+					<a class="title-left fl"></a>
+					<a class="title-right fr"></a>
+					<h3 class="title-center">天气预报</h3>
+				</div>
+				<div class="forecast weather-border">
+					
+					<ul class="videoaction fl">
+						<li>
+							<a>
+								<img alt="视频" src="images/wea_video.png">
+							</a>
+							<a class="video-intro">
+								<em class="em12">“八月十五云遮月”未必换来“正月十五雪打灯”</em>
+								<em class="em10">明天（24日）是我国传统的元宵佳节，常言道，“八月十五云遮月，正月十五雪打灯”这句话应该如何理解，前后两句之间是否存在因果关系呢？</em>
+							</a>
+							<a class="play">
+								<img alt="播放" src="images/wea_play.png">
+							</a>
+						</li>
+						<li>
+							<a>
+								<img alt="视频" src="images/wea_video.png">
+							</a>
+							<a class="video-intro">
+								<em class="em12">“八月十五云遮月”未必换来“正月十五雪打灯”</em>
+								<em class="em10">明天（24日）是我国传统的元宵佳节，常言道，“八月十五云遮月，正月十五雪打灯”这句话应该如何理解，前后两句之间是否存在因果关系呢？</em>
+							</a>
+							<a class="play">
+								<img alt="播放" src="images/wea_play.png">
+							</a>
+						</li>
+						<li>
+							<a>
+								<img alt="视频" src="images/wea_video.png">
+							</a>
+							<a class="video-intro">
+								<em class="em12">“八月十五云遮月”未必换来“正月十五雪打灯”</em>
+								<em class="em10">明天（24日）是我国传统的元宵佳节，常言道，“八月十五云遮月，正月十五雪打灯”这句话应该如何理解，前后两句之间是否存在因果关系呢？</em>
+							</a>
+							<a class="play">
+								<img alt="播放" src="images/wea_play.png">
+							</a>
+						</li>
+					</ul>
+					<ul class="videolist">
+						<li>
+							<a>
+								<img src="images/wea_forecast_1.png">
+								<em>未来三天我国南方少雨升温</em>
+							</a>
+						</li>
+						<li>
+							<a>
+								<img src="images/wea_forecast_2.png">
+								<em>未来三天我国南方少雨升温</em>
+							</a>
+						</li>
+						<li>
+							<a>
+								<img src="images/wea_forecast_3.png">
+								<em>未来三天我国南方少雨升温</em>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- right -->
+		<div class="weather-right">
+			<div class="searchs">
+				<div class="title">
+					<a class="title-left fl"></a>
+					<a class="title-right fr"></a>
+					<h3 class="title-center">天气快查</h3>
+				</div>
+				<div class="search weather-border">
+					<div class="search-area">
+   						<input type="text" class="search-text ft14">
+   						<a class="search-icon ft14">
+   							查询
+   						</a>
+   					</div>
+   					<ul class="ft14">
+   						<li><a>北京</a></li><li><a>上海</a></li><li><a>天津</a></li><li><a>重庆</a></li><li><a>哈尔滨</a></li>
+   						<li><a>长春</a></li><li><a>沈阳</a></li><li><a>西安</a></li><li><a>郑州</a></li><li><a>南京</a></li>
+   						<li><a>广州</a></li><li><a>兰州</a></li><li><a>济南</a></li><li><a>武汉</a></li><li><a>杭州</a></li>
+   						<li><a>成都</a></li><li><a>长沙</a></li><li><a>南昌</a></li><li><a>福州</a></li><li><a>合肥</a></li>
+   					</ul>
+				</div>
+			</div>
+			
+			<div class="warnings mt20">
+				<div class="title">
+					<a class="title-left fl"></a>
+					<a class="title-right fr"></a>
+					<h3 class="title-center">24小时天气预警</h3>
+				</div>
+				<div class="warning weather-border">
+					<ul>
+						<li>
+							<a class="fl">
+								<img src="images/wea_24_2.png">
+							</a>
+							<p class="ft14 "><a class="warning-info">江苏省镇江市发布霾黄色预警</a></p>
+							<p class="ft10 time">发布时间：2013-02-23 14:29:19</p>
+						</li>
+						<li>
+							<a class="fl">
+								<img src="images/wea_24_3.png">
+							</a>
+							<p class="ft14"><a class="warning-info">黑龙江省牡丹江市发布大风蓝色预警</a></p>
+							<p class="ft10 time">发布时间：2013-02-23 14:29:19</p>
+						</li>
+						<li class="lastli">
+							<a class="fl">
+								<img src="images/wea_24_1.png">
+							</a>
+							<p class="ft14"><a class="warning-info">江苏省扬州市解除黄色预警</a></p>
+							<p class="ft10 time">发布时间：2013-02-23 14:29:19</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="infos mt20">
+				<div class="title  infos-title">
+					<a class="title-left fl"></a>
+					<a class="title-right fr"></a>
+					<h3 class="title-center">
+						24小时天气资讯
+						<span class="more fr ft12">
+							<a>
+								查看更多&nbsp;&nbsp;<img src="images/wea_more.png">
+							</a>
+						</span>
+					</h3>
+				</div>
+				<div class="info weather-border">
+					<ul>
+						<li>
+							<span class="num-r">1</span><a>国家防总：云南大部分地区连续四年严重旱情</a>
+						</li>
+						<li>
+							<span class="num-r">2</span><a>热带风暴“珊珊”对我国南海的影响趋于结束</a>
+						</li>
+						<li>
+							<span class="num-r">3</span><a>北京周六最高温9°C元宵节或有雨夹雪</a>
+						</li>
+						<li>
+							<span class="num-g">4</span><a>日本青森积雪5.15米 创该地区近年来最高纪录</a>
+						</li>
+						<li>
+							<span class="num-g">5</span><a>国家防总：云南大部分地区连续四年严重旱情</a>
+						</li>
+						<li>
+							<span class="num-g">6</span><a>热带风暴“珊珊”对我国南海的影响趋于结束</a>
+						</li>
+						<li>
+							<span class="num-g">7</span><a>北京周六最高温9°C元宵节或有雨夹雪</a>
+						</li>
+						<li>
+							<span class="num-g">8</span><a>日本青森积雪5.15米 创该地区近年来最高纪录</a>
+						</li>
+						<li>
+							<span class="num-g">9</span><a>国家防总：云南大部分地区连续四年严重旱情</a>
+						</li>
+						<li>
+							<span class="num-g">10</span><a>热带风暴“珊珊”对我国南海的影响趋于结束</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+   </div>
+</div>
+
+<!-- footer start -->
+<div class="footer">
+     <div>Copyright @ 2004-2011<span class="name">南京厚建软件有限责任公司 - 门户应用专家</span>版权所有  025-83326233</div>
+     <div class="mt5">苏ICP备05021966号</div>
+</div>
+<!-- footer end -->
+
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+div, p, span, img {
+	display: inline-block;
+}
+body {
+	margin: 0 auto 0;
+	height: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	background: -webkit-gradient(radial, center center, 620, center center, 10, from(#bbb), to(#f7f7f7) );
+	padding: 0 0 0 0;
+}
+.box {
+	overflow: hidden;
+	margin: 10px;
+	width: 300px;
+	min-height: 44px;
+	background: #fafafa;
+	border: #aaa solid 1px;
+	border-radius: 5px;
+}
+.text_info {
+	width: 100%;
+}
+.text_info p {
+	font-size: 16px;
+	line-height: 18px;
+	color: #505050;
+	padding: 10px;
+	display: block;
+}
+.text_info img {
+	max-width: 300px;
+	height: auto;
+}
+.weather {
+	position: relative;
+	width: 100%;
+	height: 180px;
+	overflow: hidden;
+}
+.weather p {
+	color: #303030;
+	font-size: 14px;
+	margin: 0;
+	left: 10px;
+	text-align: center;
+	text-shadow: #fff 0 1px 0;
+	position: absolute;
+}
+p.icon {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+}
+p.icon img {
+	width: auto;
+	height: 180px;
+	position: absolute;
+}
+p.icon img.day {
+	left: -15px;
+	top: -40px;
+}
+p.icon img.night {
+	right: -25px;
+	bottom: -30px;
+	opacity: 0.9;
+}
+p.info {
+	top: 15px;
+	font-size: 45px;
+}
+p.temp {
+	top: 65px;
+	font-size: 18px;
+}
+p.temp span {
+	font-size: 24px;
+}
+p.kongzhi {
+	top: 105px;
+	font-size: 18px;
+}
+p.city {
+	bottom: 10px;
+	left: auto;
+	right: 10px;
+}
+#infotext {
+	width: 260px;
+	color: #808080;
+	font-size: 14px;
+	padding: 0;
+	margin: 10px 0 10px 20px;
+	text-align: right;
+}
+#loading {
+	width: 260px;
+	font-weight: bold;
+	color: #505050;
+	font-size: 24px;
+	padding: 0;
+	margin: 60px 0 0 40px;
+}
+#loading a {
+	color: #505050;
+}
+.ad_info {
+	text-align: center;
+	text-shadow: rgba(0, 0, 0, 0.5) 0 -3px 30px;
+	font-size: 16px;
+	color: #888;
+	padding: 5px 0 5px 0;
+	width: 100%;
+	margin: 0;
+}
+.ad_info a {
+	width: 100px;
+	margin: 0;
+	color: #505050;
+	background: #fafafa;
+	background: -webkit-gradient(linear, 0 0, 0 100%,from(#f9f9f9),to(#ffffff));
+	border: #aaa solid 1px;
+	border-style: solid solid solid none;
+	padding: 4px 0px;
+	font-size: 14px;
+	text-shadow: #fff 0 1px 0;
+	text-decoration: none;
+	float: left;
+	border-radius: 0;
+	font-weight: bolder;
+	position: relative;
+	display: inline-block;
+}
+.ad_info a span {
+	padding: 7px 0 7px 22px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 20px 20px;
+	line-height: 18px;
+}
+a.right {
+	border-radius: 0 22px 22px 0;
+	border-style: solid solid solid none;
+}
+a.left {
+	border-radius: 22px 0 0 22px;
+	border-style: solid;
+}
+a.one {
+	border-radius: 22px;
+	border-style: solid;
+	padding: 4px 15px;
+}
+.ad_info a:ACTIVE {
+	background: -webkit-gradient(linear,0 0,0 100%, from(rgb(198, 40, 0)),to(rgb(128, 30, 0)));
+	color: #e0e0e0;
+	text-shadow: rgba(0, 0, 0, 0.75) 0 -1px 0;
+}
+a.sharebtn span {
+	background-image: url("http://www.4399sj.com/wx/image/pengyouquan.png");
+}
+a.download span {
+	background-image: url('http://www.4399sj.com/wx/image/logo.png');
+	position: relative;
+}
+a.download {
+	padding: 4px 0px 4px 4px;
+}
+a.subscribe span {
+	padding-left: 23px;
+	background-image: url("http://www.4399sj.com/wx/image/weixin.png");
+	background-size: 23px 18px;
+}
+.hideshare {
+	position: absolute;
+	top: 45px;
+	left: -5px;
+	height: 0px;
+	width: 0px;
+	display: inline-block;
+}
+.new {
+	position: absolute;
+	background: -webkit-gradient(linear,50% 20%,50% 80%,from(#faa),to(#e00));
+	padding: 0px 3px;
+	border-radius: 18px;
+	right: -5px;
+	font-weight: bolder;
+	top: -15px;
+	line-height: 18px;
+	color: #fff;
+	text-shadow: rgba(0,0,0,0.7) 0 -1px 0;
+	border: #fff 2px solid;
+	box-shadow: #000 0 1px 2px;
+	z-index: 100;
+}
+.game {
+	display: inlineblock;
+	margin: 5px 0px;
+	padding-left: 20px;
+	width: 100%;
+	font-size: 30px;
+	overflow: hidden;
+	border-bottom: 1px solid #fff;
+	text-align: left;
+}

@@ -1,0 +1,19 @@
+.wrap{ padding:0 15px;}
+.header{ background:#3d90d6;padding:5px 0; position:relative;}
+.header h1{ font-size:18px; color:#fff;font-weight:100; text-align:center; line-height:44px;}
+.video{ padding-bottom:65px;}
+.video-logo{ background:url(../img/video.png) no-repeat;background-size:  154px 28px; width:100%; height:28px; margin:20px 0 13px;}
+.video-content{ margin-bottom:20px;width:100%;text-align: center;}
+.video-download{ text-align:center; width:100%; height:44px; background:#3d90d6; font-size:18px; color:#fff; display: none;}
+.video-btn-ico{ width:30px; height:30px; display:inline-block;  background:url(../img/video_ico.png) no-repeat; vertical-align:middle; background-size:30px 30px;}
+.video-btn-txt{ display:inline-block; line-height:44px; padding-left:7px;vertical-align:middle;}
+
+@media only screen and (max-width: 950px){
+	.video-content{height:480px;width:640px; }
+}
+@media only screen and (max-width: 768px){
+	.video-content{height:510px;}
+}
+@media only screen and (max-width: 480px){
+	.video-content{height:218px;width: 290px;}
+}

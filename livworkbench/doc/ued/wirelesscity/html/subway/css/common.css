@@ -1,0 +1,107 @@
+/*
+Copyright (c) 2011, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 2.9.0
+*/
+html{color:#000;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,select,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,button,caption,cite,code,dfn,em,input,optgroup,option,select,strong,textarea,th,var{font:inherit}del,ins{text-decoration:none}li{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:baseline}sub{vertical-align:baseline}legend{color:#000}
+
+
+body{min-width:320px;font-size:62.5%;font-family:"Hiragino Sans GB","Microsoft YaHei",tahoma,verdana,arial,sans-serif;color:#000;-webkit-text-size-adjust:none;}
+body,.main-wrap{background:#eee;}
+.main-wrap{padding:10px;height:100%;}
+a{text-decoration:none;color:#333;}
+.m2o-overflow{white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+/* 列表项 */
+.list-item{background:#fff;margin-bottom:10px;border-bottom:2px solid #cbcbcb;}
+.list-pic{display:block;width:80px;height:50px;overflow:hidden;}
+.list-pic img{width:100%;height:100%;}
+.transition{-webkit-transition:left .3s;}
+
+
+/* 选项卡式二级导航 */
+.subnav{height:45px;line-height:43px;text-align:center;color:#999;background:#f9f9f9;border:0}
+.subnav .ui-navigator-list li{border-bottom:2px solid #cdcdcd;font-weight:normal;line-height:43px;background-color:#f9f9f9;}
+.subnav .ui-navigator-list li a{color:#999;font-size:1.5em;font-weight:normal; cursor: pointer; }
+.subnav .ui-navigator-list li.ui-state-hover, .ui-navigator-list li.selected{background-color:#eee;border-bottom-color:#3b9ac6;color:#3b9ac6;}
+.subnav .ui-navigator-list li.ui-state-hover a, .ui-navigator-list li.selected a{color:#3b9ac6;}
+.ui-scroller {float: left;}
+.data-list{padding-bottom:10px;}
+.ui-refresh .ui-refresh-up, .ui-refresh .ui-refresh-down{margin:0 10px;1display:none;background-color:#eee;border:0;margin-top:10px;padding:0;}
+.ui-refresh-down{margin-top:0;padding-bottom:20px!important;}
+
+
+/* 盒模型 */
+.m2o-flex{display:-webkit-box;width:auto;display:-ms-flexbox;}
+.m2o-flex-center{-webkit-box-align:center;-ms-flex-align: center;}
+.m2o-flex-end{-webkit-box-align:end;-ms-box-align:end;box-align:end;}
+.m2o-flex-one{-webkit-box-flex:1;-ms-flex:1;}
+.m2o-flex-two{-webkit-box-flex:2;-ms-flex:2;}
+.m2o-vertical{-webkit-box-orient:vertical;-ms-flex-direction:column;}
+.m2o-flex-overflow{flex-wrap:wrap;}
+
+/* 分栏 */
+.m2o-column-two{-webkit-column-count:2;column-count:2;}
+.m2o-column-three{-webkit-column-count:3;column-count:3;}
+.m2o-column-four{-webkit-column-count:4;column-count:4;}
+.m2o-column-five{-webkit-column-count:5;column-count:5;}
+
+/* 选项卡式 foot */
+.common-foot{height:54px;}
+.tabbar{position:fixed;bottom:0; width:100%;height:54px;border-top:1px solid #ababab;background:rgba(250,250,250,0.95);}
+.tabbar .icon{font-size:1.6em; text-align:center; line-height:80px; background:url(../images/tabbar/tabbar-icon-share.png) no-repeat center top; color:#999;}
+.tabbar .share{background-image:url(../images/tabbar/tabbar-icon-share.png);}
+.tabbar .playlist{background-image:url(../images/tabbar/tabbar-playlist.png);}
+.tabbar .comment{background-image:url(../images/tabbar/tabbar-icon-comment.png);}
+.tabbar .collect{background-image:url(../images/tabbar/tabbar-icon-favor.png);}
+.tabbar .font{background-image:url(../images/tabbar/tabbar-icon-font.png);}
+
+.tabbar .list{background-image:url(../images/bus/tabbar-playlist.png);}
+.tabbar .map{background-image:url(../images/bus/station_map.png);}
+.tabbar .refresh{background-image:url(../images/bus/station_refresh.png);}
+.tabbar .reverse{background-image:url(../images/bus/station_reverse.png);}
+
+/* 左图+文字 */
+.pic-intro-item{margin:15px 0;}
+.pic-intro-item .pic{display:block;width:85px;height:53px;margin-right:13px;}
+.pic-intro-item .intro{line-height:18px;font-size:12px;color:#999;}
+
+/* slide */
+.slider{height:180px;}
+.slider .item{height:100%;}
+.slider img{height:100%;}
+.slider .ui-slider-item > a{height:100%;}
+.slider .ui-slider-dots{left:0;text-align:center;}
+.slider .ui-slider-dots > b{background:#b8d5e5;}
+.slider .ui-slider-dots .ui-state-active{background:#3b9ac6;}
+.slider .ui-slider-item{background:transparent;}
+
+/*地图标示*/
+.anchorBL{display:none!important; }
+
+/*字体*/
+.fontsize14{font-size:1.4em; }
+.fontsize16{font-size:1.6em; }
+.fontsize18{font-size:1.8em; }
+.fontsize20{font-size:2em; }
+.fontsize22{font-size:2.2em; }
+.fontsize24{font-size:2.4em; }
+.fontsize26{font-size:2.6em; }
+.fontsize28{font-size:2.8em; }
+.fontsize30{font-size:3em; }
+.fontsize32{font-size:3.2em; }
+.fontsize50{font-size:5em; }
+.fontsize60{font-size:6em; }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2) {
+	.tabbar .icon{background-size:48px 34px;}
+	
+	.tabbar .list{background-image:url(../images/bus/tabbar-playlist-2x.png);}
+	.tabbar .map{background-image:url(../images/bus/station_map-2x.png);}
+	.tabbar .refresh{background-image:url(../images/bus/station_refresh-2x.png);}
+	.tabbar .reverse{background-image:url(../images/bus/station_reverse-2x.png);}
+	
+}

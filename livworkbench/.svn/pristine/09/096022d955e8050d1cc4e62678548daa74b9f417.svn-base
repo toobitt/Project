@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>路况</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.switchable-2.0.min.js"></script>
+</head>
+<body>
+<!-- head start -->
+<div class="header-bg">
+     <div class="head layout">
+          <h1 class="logo fl">M2O新媒体综合运营平台</h1>
+          <div class="fr mt15">
+               <div class="search-area fl">
+                    <a class="search-icon"></a>
+                    <input type="text" class="search-txt"/>
+               </div>
+               <ul class="news-list fl">
+               	   <li><a href="#">站票打折</a></li>
+               	   <li><a href="#">钓岛问题</a></li>
+               	   <li><a href="#">抢票插件</a></li>
+               </ul>
+          </div>
+     </div>
+</div>
+<div class="nav-bg">
+     <div class="nav layout">
+          <ul class="menu">
+              <li class="on"><a href="index.html">首页</a></li>
+              <li><a href="news.html">新闻</a></li>
+              <li><a href="live.html">直播</a></li>
+              <li><a href="vedio.html">视频</a></li>
+              <li><a href="dianbo.html">点播</a></li>
+              <li><a href="photo.html">图片</a></li>
+              <li><a class="all" href="index.html">全部</a>
+          		   <ul class="nav-more">
+          			  <li><a>票务</a></li>
+          			  <li><a href="road.html">路况</a></li>
+          			  <li><a>杂志</a></li>
+          		   </ul>
+          	   </li>
+         </ul>
+     </div>
+</div>
+<!-- head end -->
+
+<div class="container layout clearfix">
+   <div class="road-main">
+   		<!-- left -->
+   		<div class="road-left">
+   			<!-- left－top -->
+   			<div class="road-text-area">
+   				<h3 class="area-title">路况爆料</h3>
+   				<textarea></textarea>
+   				<div class="area-bottom">
+   					<div class="a-list">
+   						<a href="#"><img alt="图片" src="images/m2o/pic_icon.png"></a>
+   						<a href="#"><img alt="视频" src="images/m2o/vedio_icon.png"></a>
+   						<a href="#"><img alt="音频" src="images/m2o/music_icon.png"></a>
+   					</div>
+   					<div class="button-list">
+   						<span>
+   						<select class="accident">
+   							<option>事故</option>
+   							<option>管制</option>
+   							<option>施工</option>
+   							<option>拥堵</option>
+   							<option>其它</option>
+   						</select>
+   						</span>
+   						<input type="button" class="news"value="爆料">
+   					</div>
+   				</div>
+   			</div>
+   			<!-- left－bottom -->
+   			<div class="road-news">
+   				<ul>
+   					<li>
+   						<p>1234.jpg(34k)</p>
+   						<div class="road-newsphoto">
+   						<a href="#"><img alt="photo" src="images/road_news1.png"></a>
+   						<a class="road-delect"></a>
+   						</div>
+   					</li>
+   					<li>
+   						<p>2345.jpg(34k)</p>
+   						<div class="road-newsphoto">
+   						<a href="#"><img alt="photo" src="images/road_news2.png"></a>
+   						<a class="road-delect"></a>
+   						</div>
+   					</li>
+   				</ul>
+   			</div>
+   		</div>	
+   		
+   		<!-- right -->
+   		<div class="road-right">
+   			<div class="road-map">
+   				<img alt="地图" src="images/photolist_03.jpg">
+   				<div class="search-area">
+   					<input type="text" class="search-text">
+   					<a class="search-icon"></a>
+   				</div>
+   			</div>
+   			<div class="road-infolist">
+   				<ul>
+   					<li>
+   						<a class="userhead fl"><img alt="头像" src="images/road_55.jpg" class="userhead"></a>
+   						<div class="info">
+   							<a class="username">花步：</a>
+   							<span class="classification accident">事故</span>
+   							<span class="content">16：00分玄武湖隧道因事故及抛锚双向不畅，模范马路隧道、新庄立交、中央路入口排着长队。车流量大：卡子门立交往龙蟠中路。</span>
+   							<div class="location">中山路，珠江路</div>
+   						</div>
+   					</li>
+   					<li>
+   						<a class="userhead fl"><img alt="头像" src="images/road_57.jpg" class="userhead"></a>
+   						<div class="info">
+   							<a class="username">terrydesu：</a>
+   							<span class="classification control">管制</span>
+   							<span class="content">通济门隧道往西安门隧道、中山东路洪武路往逸仙桥、中央路傅厚岗至玄武门双向、中山南路淮海路南北双向、太平门进北京东路。桥北路红太阳、逗号广场往长江大桥排队。</span>
+   							<div class="location">中山路，珠江路
+   								<div class="info-icon">
+	   								<a class="road-comment"></a>
+	   								<a class="road-share"></a>
+	   							</div>
+   							</div>
+   						</div>
+   					</li>
+   					<li>
+   						<a class="userhead fl"><img alt="头像" src="images/road_51.jpg" class="userhead"></a>
+   						<div class="info">
+   							<a class="username">哈姆雷特小姐：</a>
+   							<span class="classification construction">施工</span>
+   							<span class="content">模范马路隧道进玄武湖隧道、卡子门立交往龙蟠中路、中央路傅厚岗双向、汉中门高架至草场门高架往北。车多缓行</span>
+   							<div class="location">中山路，珠江路</div>
+   						</div>
+   					</li>
+   					<li>
+   						<a class="userhead fl"><img alt="头像" src="images/road_53.jpg" class="userhead"></a>
+   						<div class="info">
+   							<a class="username">粽子焉：</a>
+   							<span class="classification congestion">拥堵</span>
+   							<span class="content">集庆门隧道双向、汉中路上海路双向、通济门隧道往北、龙脖子往太平门。另桥北路过江车辆排过泰山新村，逗号广场车辆缓行。今是周末呀，节前最后一个班，提醒大家注意哦！</span>
+   							<div class="location">中山路，珠江路</div>
+   						</div>
+   					</li>
+   					<li>
+   						<a class="userhead fl"><img alt="头像" src="images/road_53.jpg" class="userhead"></a>
+   						<div class="info">
+   							<a class="username">粽子焉：</a>
+   							<span class="classification others">其它</span>
+   							<span class="content">集庆门隧道双向、汉中路上海路双向、通济门隧道往北、龙脖子往太平门。另桥北路过江车辆排过泰山新村，逗号广场车辆缓行。今是周末呀，节前最后一个班，提醒大家注意哦！</span>
+   							<div class="location">中山路，珠江路</div>
+   						</div>
+   					</li>
+   					<li>
+   						<a class="userhead fl"><img alt="头像" src="images/road_57.jpg" class="userhead"></a>
+   						<div class="info">
+   							<a class="username">terrydesu：</a>
+   							<span class="classification control">管制</span>
+   							<span class="content">通济门隧道往西安门隧道、中山东路洪武路往逸仙桥、中央路傅厚岗至玄武门双向、中山南路淮海路南北双向、太平门进北京东路。桥北路红太阳、逗号广场往长江大桥排队。</span>
+   							<div class="location">中山路，珠江路
+   							</div>
+   						</div>
+   					</li>
+   					<li>
+   						<a class="userhead fl"><img alt="头像" src="images/road_51.jpg" class="userhead"></a>
+   						<div class="info">
+   							<a class="username">哈姆雷特小姐：</a>
+   							<span class="classification construction">施工</span>
+   							<span class="content">模范马路隧道进玄武湖隧道、卡子门立交往龙蟠中路、中央路傅厚岗双向、汉中门高架至草场门高架往北。车多缓行</span>
+   							<div class="location">中山路，珠江路</div>
+   						</div>
+   					</li>
+   					<li>
+   						<a class="userhead fl"><img alt="头像" src="images/road_53.jpg" class="userhead"></a>
+   						<div class="info">
+   							<a class="username">粽子焉：</a>
+   							<span class="classification congestion">拥堵</span>
+   							<span class="content">集庆门隧道双向、汉中路上海路双向、通济门隧道往北、龙脖子往太平门。另桥北路过江车辆排过泰山新村，逗号广场车辆缓行。今是周末呀，节前最后一个班，提醒大家注意哦！</span>
+   							<div class="location">中山路，珠江路</div>
+   						</div>
+   					</li>
+   				</ul>
+   				<div class="road-page">
+   					<a>上一页</a>
+   					<span class="road-pagenum">
+   						<a>1</a>
+   						<a>2</a>
+   						<a style="color:#1f5ba5;">3</a>
+   						<a style="border:0;">4</a>
+   						<a style="border:0;padding:0;">...</a>
+   						<a>25</a>
+   					</span>
+   					<a>下一页</a>
+   				</div>
+   					
+   				
+   			</div>
+   		</div>
+   </div>
+</div>
+
+<!-- footer start -->
+<div class="footer">
+     <div>Copyright @ 2004-2011<span class="name">南京厚建软件有限责任公司 - 门户应用专家</span>版权所有  025-83326233</div>
+     <div class="mt5">苏ICP备05021966号</div>
+</div>
+<!-- footer end -->
+
+
+</body>
+</html>

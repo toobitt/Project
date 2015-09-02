@@ -1,0 +1,7 @@
+INSERT INTO `liv_admin_org` (`id`, `name`, `fid`, `brief`, `parents`, `childs`, `depath`, `is_last`, `create_time`, `ip`, `update_time`, `user_name`, `order_id`) VALUES
+(1, '默认部门', 0, '', '1', '1', 0, 1, 1350269620, '10.0.1.184', 1350269620, '0', 1);;
+
+INSERT INTO `liv_admin_role` (`id`, `name`, `brief`, `order_id`, `create_time`, `update_time`, `user_name`, `user_id`, `update_user_name`, `update_user_id`, `index_page`, `open_way`, `publish_prms`, `site_prms`, `extend_prms`, `domain`) VALUES
+(1, '系统维护', '系统根用户', 1, 1309490760, 1364203020, 'hogesoft', 0, 'hogesoft', 1, '', 1, '', '', '', ''),
+(3, '管理员', '管理员', 0, 1309492192, 1368154061, 'hogesoft', 1, 'hogesoft', 1, '', 0, '', '', '', ''),
+(4, '编辑', '编辑角色2', 0, 1309492179, 1369191899, 'hogesoft', 1, 'hogesoft', 1, '', 0, '', '', '', '');;

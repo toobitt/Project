@@ -1,0 +1,19 @@
+<d0>
+{cell_d1}
+</d0>
+<d1>
+<div class="liv_item" _id="{cell_id}">
+<span class="cell_name">{cell_title}</span>{cell_more}
+{cell_d2}
+</div> 
+</d1>
+<d2>
+	<div class="progress-line hg-flex" _name="{cell_keyname}"> 
+			<span class="choice-info">{cell_name}</span> 
+			<div class="hg-flex-one"><p class="progress-bar"><span class="progress-valid"></span></p></div> 
+			<span class="cent-info hg-flex-one"> 
+				<span class="choice-num">{cell_total}</span> 
+				<span class="choice-cent">({cell_percent})</span> 
+			</span> 
+	</div> 
+</d2>

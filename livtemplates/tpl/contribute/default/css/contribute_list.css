@@ -1,0 +1,16 @@
+@charset "utf-8";
+.contribute-paixu{width:30px}
+.contribute-fengmian{width:60px}
+.contribute-fb{width:100px;}
+.contribute-bj{width:50px;}
+.contribute-sc{width:50px;}
+.contribute-fl{width:120px}
+.contribute-zt{width:50px;}
+.group-zt{width:50px;}
+.contribute-khd{width:100px;}
+.contribute-blr{width:140px}
+.pub-con{max-height:300px;height:80px;padding:30px 10px 10px;overflow:auto;background:#fff;border-radius:10px;}
+.common-picList{height:30px;margin:0 0 10px 35px;display:none;}
+.common-picList img{float:left;margin-right:8px;}
+.uploadBtn{cursor:pointer;float:left;border:1px dashed #aaa;width:40px;height:30px;line-height:30px;text-align:center;font-size:20px;}
+

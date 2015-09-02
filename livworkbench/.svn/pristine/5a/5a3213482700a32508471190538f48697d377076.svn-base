@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<link type="text/css" rel="stylesheet" href="img/reset.css" />
+<link type="text/css" rel="stylesheet" href="img/index.css" />
+<script type="text/javascript" src="index.js"></script>
+<meta name="viewport" content="initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0">
+<title>微信小游戏</title>
+</head>
+<body>
+	<div class="main-wrap">
+	<p class="title">小游戏</p>
+	<ul class="index-list">
+		<li><a href="xiaopingguo/index.html">小苹果</a></li>
+		<li><a href="baozi/index.html">吃包子</a></li>
+		<li><a href="naoyangyang/index.html">挠痒痒</a></li>
+		<li><a href="xxoo/index.html">xxoo</a></li>
+		<li><a href="cjrst/index.html">超级染色体</a></li>
+		<li><a href="hl/index.htm">恐龙保护干果</a></li>
+		<li><a href="ShengJinMao/index.html">神经猫</a></li>
+		<li><a href="mao2/index.html">围住神经猫2</a></li>
+		<!-- <li><a href="qwgh/index.html">青蛙过河</a></li> -->
+		<li><a href="honghaishilv/index.html">红海识绿</a></li>
+		<li><a href="jianren/index.html">贱人配对</a></li>
+		<li><a href="zhaonimei/index.html">找你妹</a></li>
+		<li><a href="zqyl/index.htm">最强眼力</a></li>
+		<li><a href="se/index.html">看你有多色</a></li>
+		<li><a href="duolao/index.html">看看你有多老</a></li>
+		<li><a href="duxinshu/index.html">读心术</a></li>
+		<li><a href="diandeng/index.html">最强电灯泡</a></li>
+		<li><a href="yibihua/index.html">一笔画</a></li>
+		<li><a href="zstz/index.htm">智商测试</a></li>
+		<li><a href="bunengsi/index.html">一个都不能死</a></li>
+		<li><a href="2048JD/index.htm">2048</a></li>
+		<li><a href="feidegenggao/index.html">我要飞的更高</a></li>
+		<li><a href="mingxuanyixian/index.html">命悬一线</a></li>
+		<li><a href="mstw/index.htm">密室逃脱</a></li>
+		<li><a href="zuqiu/index.html">滚滚足球</a></li>
+	</ul>
+</div>
+</body>
+</html>

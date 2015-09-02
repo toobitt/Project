@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<title>互动</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/base.css" rel="stylesheet" >
+<link href="css/form.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="wrap clearfix">
+	<div class="rc-left hd-left">
+    	<h1 class="rc-title">华东互联网高峰论坛</h1>
+        <div class="hd-left-content">
+    		<div class="hd-description">媒体的朋友们，感谢你们对中国两会给予的关注和作出的报道，大家辛苦了。下面就请提问相关人员来做回答。</div>
+            <div id="scrollable">
+            	<ul>
+                	<li class="item">
+                        <img class="item-img" src="http://hdbbs.liv.cn/app/img/avatar.png" />
+                        <div class="item-txt">
+                            <p><span>司徒君</span>产品总监</p>
+                            <p>华为技术有限公司</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="hd-hoge"></div>
+        </div>
+    </div>
+    <div class="rc-right">
+    	<div class="rc-right-qd">
+        	<div class="rc-right-title clearfix">
+                <div class="rc-right-title-l"></div>
+                <div class="rc-right-title-c hd-right-title-c">现场互动</div>
+                <div class="rc-right-title-r"></div>
+            </div>
+        </div>
+        <div class="hd-list" id="live">
+            <ul class="hd-right-list">
+            	
+            </ul>
+        </div>
+    </div>
+    <!--评论详情开始
+    <div class="comment-details clearfix">
+    	<div class="comment-details-filter"></div>
+    	<div class="comment-details-left">
+        	<div class="comment-details-title">谁是车费暴涨的最大得利者？<span class="comment-details-ico"></span></div>
+            <div class="comment-details-content clearfix">
+            	<div class="comment-details-img"></div>
+                <div class="comment-details-txt">
+                	<p>王菲<span>17分钟前</span></p>
+                    <div class="comment-details-desc"></div>
+                </div>
+            </div>
+            <div class="comment-details-opa"></div>
+        </div>
+        <div class="comment-details-right">
+        	<div class="comment-details-prev"></div>
+        </div>
+    </div>
+    评论详情结束-->
+    <!--问答详情开始-->
+    <div class="asked-details clearfix" id="qaer">
+    	<div class="comment-details-filter"></div>
+    	<div class="comment-details-left">
+        	<div class="asked-details-title clearfix">
+            	<div class="asked-details-img" /></div>
+                <div class="asked-details-txt"></div>
+            </div>
+            <div class="asked-details-content"></div>
+        </div>
+        <div class="comment-details-right">
+        	<div class="comment-details-prev"></div>
+        </div>
+    </div>
+    <!--问答详情结束-->
+</div>
+ 
+<script src="js/jquery.js"></script>
+<!--<script src="js/jquery.switchable.min.js"></script>-->
+<script>
+
+
+
+function Liveshow(){
+    this.timer = null;
+    this.itemArray = [];
+    this.updateDataTimer = null;
+    //用户在看了单个用户详细信息之后立即加载一次数据
+    this.oneTimer = null;
+    this.lastID = 0;
+    //this.lastCreateTime = null;
+}
+
+Liveshow.prototype.init =  function(){
+    var that = this,
+        _agendatimer = null;
+
+    that.setUpdateTimer();
+    that.updateData(true);
+
+    $(".comment-details-right").bind("click", function(){
+        that.hideQaerDetail();
+    });
+
+    //两分钟更新一次
+    _agendatimer = setInterval(function(){
+        that.updateAgenda();
+    }, 120000);
+
+
+}
+
+Liveshow.prototype.setUpdateTimer  = function(){
+    var that = this;
+    that.updateDataTimer =  setInterval(function(){
+        that.updateData();
+    }, 6000);
+}
+
+
+Liveshow.prototype.hideQaerDetail = function(){
+    var that = this;
+    $("#qaer").animate({
+            left : '1920px'
+    }, 800);
+
+    //开启更新数据
+    that.setUpdateTimer();
+}
+
+Liveshow.prototype.updateData =  function(flag){
+    var that= this,
+        _item = '',
+        _signtime = true,
+        _avatar = null;
+
+    /*
+    if(flag){
+        $("#live ul").html("数据加载中...");
+    }
+    */
+
+    $.ajax({
+        url : 'http://hdbbs.liv.cn/contribute_show.php',
+        type : 'GET',
+       // data : { appid : '6', appkey: '3ntzQET0v4rHzrGFDPIW1ScMP4yFHMGA', create_time : that.lastCreateTime},
+        data : { appid : '6', appkey: '3ntzQET0v4rHzrGFDPIW1ScMP4yFHMGA'},
+        dataType : 'json',
+        success : function(data){
+
+            /*
+            if(flag){
+                $("#live ul").html("");
+            } 
+            */  
+
+            $.each(data, function(index, item){
+
+                    if(parseInt(item.id) <= that.lastID ) { return false;}
+
+                    if(typeof _signtime ==="boolean"){ _signtime = item.id; }
+
+                    if(typeof item.avatar === 'undefined' || typeof item.avatar.host === 'undefined'){
+                        _avatar =  'style="background-image: url(/app/img/avatar.png)"';
+                    }else{
+                        _avatar = 'style="background-image: url(' + that.getWeburl(item.avatar, 160, 160) + ')";'; 
+                    }
+
+                    item.title = item.brief.length > 105 ? item.brief.substring(0, 100) + '...' :  item.brief;
+
+                    _item = '<li  data-content="'+ item.brief +'" data-avatar=\''+_avatar+'\'><div '+_avatar+' class="hd-right-img"></div><div class="hd-right-txt"><h2><span class="qa-er">'+ item.user_name +'<em>问</em>'+ item.name +'</span><span class="pass-time">'+ that.passtime(item.pass_time) +'</span></h2><div class="hd-right-desc" >'+ item.title +'</div></div></li>';
+
+                    that.itemArray.push(_item);
+            });
+
+            if(typeof _signtime !=="boolean"){
+                that.lastID = parseInt(_signtime);
+            }
+            
+            //没有新数据就退出
+            if(that.itemArray.length ==0){return;}
+
+            if(flag){
+                that.updateDom(true);
+            }else{
+               that.updateDom();
+            }
+          
+        },
+        error : function(){
+
+        }
+    });
+}
+
+
+Liveshow.prototype.updateDom  = function(init){
+    var that = this;
+
+    if(init){
+         $('#live ul').append(that.itemArray.join(""));
+         that.itemArray = [];
+    }else{  
+        $('#live ul').append(that.itemArray.pop()).find("li:last").css('opacity', 0);  
+
+        if(that.itemArray.length > 0){
+            clearInterval(this.updateDataTimer);
+            //里面有多余两条的内容就1s(要确保小于数据更新的时间)之后显示下一条内容
+            that.timer =  setTimeout(function(){
+                that.updateDom();
+            },1000);
+        }else{
+            that.setUpdateTimer();
+        }
+        that.scrollItem();
+    }
+    that.bindEvent();
+}
+
+
+Liveshow.prototype.scrollItem = function() {
+
+    // console.log("YYY");
+    if($("#live li").size()  <= 1){
+        $("#live li").slideDown(500);
+        return;
+    }
+
+    $('#live li:first').before($('#live li:last'));
+    $('#live li:first').css('opacity', 1);
+
+    $('#live ul').css({
+        top: -$('#live').find('li:first').outerHeight() + "px",
+    }).animate({
+        top : 0
+    }, 500);
+
+}
+
+//http://img.dev.hogesoft.com:233/material/auth/img/40x40/2014/03/201403131626078TOl.jpg
+Liveshow.prototype.getWeburl = function(indexpic, width, height){
+
+    var _avatar = ''; 
+    if(arguments.length ==0){
+        _avatar = indexpic.host + indexpic.dir +  indexpic.filepath + indexpic.filename;
+    }else if(arguments.length ==1){
+        _avatar = indexpic.host + indexpic.dir + width + "x"  + "/" + indexpic.filepath + indexpic.filename;
+    }else{
+       _avatar = indexpic.host + indexpic.dir +  width + "x"  + height + "/" + indexpic.filepath + indexpic.filename; 
+    }
+    return _avatar;
+}
+
+//pass_time 
+//过去了多长时间 
+//单位 ms
+Liveshow.prototype.passtime = function(pass_time){
+    var _passtime = ''
+
+    if(pass_time >= 86400 ){
+      _passtime =  parseInt(pass_time / 86400) + "天前";
+    }else if(pass_time > 3600) {
+      _passtime =  parseInt(pass_time / 3600) + "小时前";
+    }else if(pass_time > 300){
+       _passtime =  parseInt(pass_time / 60) + "分前";
+    }else{
+      _passtime =  "刚刚";
+    }
+    return _passtime
+    
+} 
+
+
+Liveshow.prototype.bindEvent = function(){
+    var that = this;
+    $("#live li").bind("click", function(){
+        that.showDetail($(this));
+    });
+}
+
+Liveshow.prototype.showDetail = function(obj){
+
+    //关掉一次更新数据
+    clearTimeout(this.oneTimer);
+    //关掉加载数据
+    clearInterval(this.updateDataTimer);
+
+    $("#qaer .asked-details-content").html(obj.data('content'));
+    $("#qaer .asked-details-txt").html(obj.find('h2').html());
+    $("#qaer .asked-details-img").remove();
+    $("#qaer .asked-details-txt").before('<div class="asked-details-img" ' + obj.data('avatar') +'></div>');
+    $("#qaer").animate({
+        left : 0
+    },800);
+
+}
+
+
+Liveshow.prototype.updateAgenda = function(){
+    var that = this;
+    $.getJSON('http://hdbbs.liv.cn/agenda.php?appid=6&appkey=3ntzQET0v4rHzrGFDPIW1ScMP4yFHMGA',function(data){
+        var _time = Math.floor($.now()/1000),
+            _index_time = 0,
+            _next_time = 0,
+            _start_time = 0,
+            _avatar = 'http://hdbbs.liv.cn/app/img/avatar.png';
+
+        $.each(data,function(index,value){
+            _index_time = value.publish_time_stamp;
+            data[index+1] = typeof data[index+1] === "undefined" ? value : data[index+1];
+            _next_time = data[index+1].publish_time_stamp;
+
+
+            if(_time > _index_time && _time >_next_time){
+                return true;
+            }else if(_time > _index_time && _time <= _next_time || _time == _index_time){
+                $('.hd-description').html(value.title);
+                $('#scrollable .item-txt').append('<p>' + value.brief + '</p>');
+                if(typeof value.avatar !== 'undefined' && typeof value.avatar.host !== 'undefined'){
+                   $('#scrollable img').attr('src', that.getWeburl(value.indexpic, 160, 160));
+                }
+                return false;
+            }else{
+                return true;
+            }
+
+        });//end for each
+
+    }); //end for getJSON
+}
+
+
+
+var liveshow =  new Liveshow();
+    liveshow.init();
+
+
+</script>
+</body>
+</html>

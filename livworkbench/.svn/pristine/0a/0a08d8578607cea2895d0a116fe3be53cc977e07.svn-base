@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>积分商城</title>
+<link rel="stylesheet" href="css/framework7.min.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/credit.css">
+<link rel="stylesheet" href="css/skin_A.css">
+</head>
+<body>
+<div class="view view-main user-address">
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="left">
+				<a href="javascript:history.back()" class="back link">
+					<i class="icon icon-back"></i>
+				</a>
+			</div>
+			<div class="center sliding">派送地址</div>
+			<div class="right">
+			 <a href="gainCredit.html" class="link icon-only open-panel"></a>
+			</div>
+		</div>
+	</div>
+ 
+	<div class="pages navbar-through">
+		<div data-page="index" class="page">
+			<div class="page-content">
+				<div class="content-block content-address">
+					<p class="user-basic"><span class="user-name" id="M_buyer">司徒君</span>,<span class="user-tel" id="M_phone">13995202986</span><span class="user-postcode" id="M_zipcode">210012</span></p>
+					<p class="user-address"><span class="user-provice" id="J_province"_val="320000">江苏省</span><span class="user-city" id="J_city" _val="320100" >南京市</span><span class="user-area" id="J_region" _val="320114">雨花台区</span></p>
+					<p><span id="M_dtladdr">邦宁科技园四楼南京厚建软件有限责任公司</span></p>
+					<p class="content-btn"><a class="button button-modify" href="user-address.html">修改</a></p>
+				</div>
+				<div class="content-block form-btn hide">
+					<a class="button button-big button-submit" 1href="exchange-success.html">提交</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

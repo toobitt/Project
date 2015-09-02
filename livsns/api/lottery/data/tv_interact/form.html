@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no,email=no">
+<title>填写兑换信息</title>
+<link rel="stylesheet" href="./images/common.css">
+<link rel="stylesheet" href="./images/index.css">
+</head>
+<body>
+	<div class="page-content toolbar-through">
+		<header class="header-block">
+			<div class="name">填写兑换信息</div>
+			<!-- <p class="copyright">中奖信息说明：解释权归厚建软件所有。</p> -->
+		</header>
+		<section class="form-block">
+			<div class="list-block">
+				<form action="" id="formSubmit" target="targetWin" enctype="multipart/form-data" method="post">
+					<ul>
+						<li class="item-content m2o-flex m2o-flex-center">
+							<div class="item-title label">姓名</div>
+							<div class="item-input m2o-flex-one">
+								<input name="address" type="text" placeholder="姓名" value="">
+							</div>
+						</li>
+						
+						<li class="item-content m2o-flex m2o-flex-center">
+							<div class="item-title label">手机号</div>
+							<div class="item-input m2o-flex-one">
+								<input name="phone_num" type="tel" placeholder="手机号" value="">
+							</div>
+						</li>
+					</ul>
+					<input type="hidden" name="access_token" value="" />
+					<input type="hidden" name="sendno" value="" />
+				</form>
+			</div>
+			<div class="btn-block">
+				<button class="btn btn-full btn-operate btn-submit">提交</button>
+			</div>
+		</section>
+	</div>
+<script type="text/javascript" src="./images/head.min.js"></script>
+<script type="text/javascript">
+	head.js(
+		{zepto : "./images/zepto.min.js"},
+		{toast : './images/toast.js'},
+		{spin : './images/spin.min.js'},
+		{print : './images/print.min.js'},
+		{h5Client : './images/h5Client.js'}
+	);
+	head.ready(["zepto"], function(){
+		head.js('./images/utils.js', './images/form.js');
+	});
+</script>
+</body>
+</html>

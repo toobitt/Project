@@ -1,0 +1,40 @@
+{template header}
+{if $iframe}
+<script type="text/javascript">
+	var uc_menu_data = new Array();
+	o = document.getElementById('header_menu_menu');
+	elems = o.getElementsByTagName('A');
+	for(i = 0; i<elems.length; i++) {
+		uc_menu_data.push(elems[i].innerHTML);
+		uc_menu_data.push(elems[i].href);
+	}
+	try {
+		parent.uc_left_menu(uc_menu_data);
+		parent.uc_modify_sid('{$sid}');
+	} catch(e) {}
+</script>
+{/if}
+<div class="container">
+	<h3>{lang home_stats}</h3>
+	<ul class="memlist fixwidth">
+		<li><em><!--{if $user['allowadminapp'] || $user['isfounder']}--><a href="admin.php?m=app&a=ls">{lang home_app_count}</a><!--{else}-->{lang home_app_count}<!--{/if}-->:</em>$apps</li>
+		<li><em><!--{if $user['allowadminuser'] || $user['isfounder']}--><a href="admin.php?m=user&a=ls">{lang home_member_count}</a><!--{else}-->{lang home_member_count}<!--{/if}-->:</em>$members</li>
+	</ul>
+	
+	<h3>{lang home_env}</h3>
+	<ul class="memlist fixwidth">
+		<li><em>{lang home_version}:</em>UCenter {UC_SERVER_VERSION} Release {UC_SERVER_RELEASE} <a href="http://www.discuz.net/forumdisplay.php?fid=151" target="_blank">{lang view_new_version}</a> 
+		<li><em>{lang home_environment}:</em>$serverinfo</li>
+		<li><em>{lang home_server_software}:</em>$_SERVER[SERVER_SOFTWARE]</li>
+		<li><em>{lang home_database}:</em>$dbversion</li>
+		<li><em>{lang home_upload_perm}:</em>$fileupload</li>
+		<li><em>{lang home_database_size}:</em>$dbsize</li>		
+		<li><em>{lang home_server_ip}:</em>$_SERVER[SERVER_NAME] ($_SERVER[SERVER_ADDR]:$_SERVER[SERVER_PORT])</li>
+		<li><em>magic_quote_gpc:</em>$magic_quote_gpc</li>
+		<li><em>allow_url_fopen:</em>$allow_url_fopen</li>		
+	</ul>
+</div>
+
+$ucinfo
+
+{template footer}

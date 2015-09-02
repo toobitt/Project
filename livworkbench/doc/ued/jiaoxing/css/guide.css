@@ -1,0 +1,40 @@
+.guide{position:fixed; top:0; left:0; bottom:0; right:0; }
+.weixin-guide{position:relative; height:100%; margin:0 auto; }
+.weixin-guide .logo{position:absolute;bottom:15px;right:20px;width:59px;height:30px;background-size:59px 30px;}
+.weixin-guide .finger{position:fixed;width:65px;height:112px;top:3px;right:17px;background:url(../images/finger-2x.png); background-size:65px 112px; } 
+.weixin-guide p{margin-top:20px; font-size:18px;line-height:30px;}
+.weixin-guide .text{padding:0 20px;background:rgba(255,255,255,.7)}
+.weixin-guide .ph{float:right;width:25px;height:40px;}
+
+.guide-pic{margin:0 auto; width:100%; height:269px; background:url(../images/weixin_icon-2x.png) no-repeat center center; background-size:365px 269px;}
+
+
+.weixin-guide .finger{
+	-webkit-transform-origin:center bottom;
+	-webkit-transform-style:preserve-3d;
+	-moz-transform-origin:center bottom;
+	-moz-transform-style:preserve-3d;
+	transform-origin:center bottom;
+	transform-style:preserve-3d;
+	-webkit-animation:animations 3s ease-in infinite;
+	-moz-animation:animations 3s ease-in infinite;
+	animation:animations 3s ease-in infinite;
+}
+@-webkit-keyframes animations{
+	0%{-webkit-transform:translateY(20px);}
+	50%{-webkit-transform:translateY(0);}
+	60%{-webkit-transform:rotateX(25deg);}
+	65%{-webkit-transform:rotateX(0);}
+}
+@-moz-keyframes animations{
+	0%{-moz-transform:translateY(20px);}
+	50%{-moz-transform:translateY(0);}
+	60%{-moz-transform:rotateX(25deg);}
+	65%{-moz-transform:rotateX(0);}
+}
+@animations{
+	0%{transform:translateY(20px);}
+	50%{transform:translateY(0);}
+	60%{transform:rotateX(25deg);}
+	65%{transform:rotateX(0);}
+}

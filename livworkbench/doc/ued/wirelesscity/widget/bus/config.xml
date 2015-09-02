@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.jil.org/ns/widgets" id="hoge-bus-id" version="01.00.Beta" versioncode="1" width="480">
+	<name>公交</name>
+	<description>公交模块</description>
+	<author email="widget@chinamobile.com">hoge</author>
+	<icon src="icon.png"/>
+	<content src="index.html" encoding="utf-8"/>
+	<feature name="cmap" required="true"/>
+</widget>

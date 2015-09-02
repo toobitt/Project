@@ -1,0 +1,25 @@
+<?php
+define('UNKNOW', 'Unknow');//未知错误
+define('NOID','0x000001');//没有id
+define('NO_NAME','0x000002');//没有名称
+define('NO_CARD_NUMBER','0x000003');//没有卡号
+define('THE_CARD_NUMBER_ALREADY_EXSIST','0x000004');//此卡号已经存在
+define('NO_ID_CARD','0x000005');//没有身份证
+define('THE_ID_CARD_ALREADY_EXSIST','0x000006');//此身份证已经存在
+define('ID_CARD_ERROR','0x000007');//此身份证有误
+define('NO_FILE','0x000008');//没有文件
+define('FAIL_MOVE','0x000009');//移动文件失败
+define('NOT_LOGIN','0x000010');//没有登陆
+define('NO_PHONE_NUMBER','0x000011');//没有电话号码
+define('FAIL_TO_BIND','0x000012');//绑定失败
+define('YOU_HAVE_NOT_BIND','0x000013');//您还未绑定
+define('NO_DATA','0x000014');//没有数据
+define('NO_BIRTHDAY','0x000015');//没有生日日期
+define('UNBIND_ERROR','0x000016');//解绑失败
+define('NO_USER_INFO','0x000017');//未传用户信息
+define('THIS_USER_ALREADY_EXISTS','0x000018');//该商超里面的会员信息已经被绑定就不能绑定了
+define('ALREADY_BIND','0x000019');//该用户在该超市已经绑定过
+define('THIS_USER_NOT_EXISTS','0x000020');//该超市不存在该用户
+define('NOWRITE','0x000021');//目录不可写
+define('NO_FILE_PATH','0x000022');//文件路径不存在
+?>

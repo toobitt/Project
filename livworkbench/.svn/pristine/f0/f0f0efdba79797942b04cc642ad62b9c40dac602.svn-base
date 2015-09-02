@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="yes" name="apple-touch-fullscreen" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<link rel="apple-touch-icon-precomposed" href="" />
+<link rel="stylesheet" href="./css/common.css" type="text/css" />
+<script src="./js/zepto.min.js"></script>
+<script src="./js/gmu/gmu.js"></script>
+
+<title>无线城市</title>
+</head>
+<body class="theme-">
+<header class="m2o-header">
+	<div class="m2o-nav">
+				<aside class="m2o-nav-left">
+							<a class="m2o-nav-icon modules"  href=""></a>
+					</aside>
+						<h1 class="m2o-nav-title">新闻</h1>
+	</div>
+</header>
+<div class="subnav m2o-flex">
+		<a class="item m2o-flex-one" href="">头条</a>
+		<a class="item m2o-flex-one" href="">无锡</a>
+		<a class="item m2o-flex-one" href="">微闻</a>
+		<a class="item m2o-flex-one" href="">天下</a>
+		<a class="item m2o-flex-one" href="">生活</a>
+		<a class="item m2o-flex-one" href="">房产</a>
+		<a class="item m2o-flex-one" href="">娱乐</a>
+	</div><link rel="stylesheet" type="text/css" href="./css/gmu/slider/slider.css">
+<link rel="stylesheet" type="text/css" href="./css/gmu/slider/slider.default.css">
+<script type="text/javascript" src="./js/gmu/widget/slider/slider.js"></script>
+<script type="text/javascript" src="./js/gmu/widget/slider/dots.js"></script>
+<script type="text/javascript" src="./js/gmu/widget/slider/$touch.js"></script>
+<script type="text/javascript" src="./js/gmu/widget/slider/$autoplay.js"></script>
+<script type="text/javascript" src="./js/gmu/widget/slider/$lazyloadimg.js"></script>
+<script type="text/javascript" src="./js/gmu/widget/slider/imgzoom.js"></script>
+<div class="slider">
+		<div class="slider-item">
+		<a href="http://www.baidu.com/"><img lazyload="./images/banner.png"></a>
+	</div>
+		<div class="slider-item">
+		<a href="http://www.baidu.com/"><img lazyload="./images/banner.png"></a>
+	</div>
+		<div class="slider-item">
+		<a href="http://www.baidu.com/"><img lazyload="./images/banner.png"></a>
+	</div>
+		<div class="slider-item">
+		<a href="http://www.baidu.com/"><img lazyload="./images/banner.png"></a>
+	</div>
+		<div class="slider-item">
+		<a href="http://www.baidu.com/"><img lazyload="./images/banner.png"></a>
+	</div>
+		<div class="slider-item">
+		<a href="http://www.baidu.com/"><img lazyload="./images/banner.png"></a>
+	</div>
+	</div>
+<script>
+$(function(){
+	$('.slider').slider();
+});
+</script><style>
+.list-item{height:70px;padding:0 10px;}
+.list-item.video .list-pic{position:relative;}
+.list-item.video .list-pic:after{position:absolute;content:'';background:url(./images/live/live-icon-play-l.png)no-repeat center;width:100%;height:100%;top:0;}
+.list-item .title{line-height:24px;margin-right:15px;position:relative;}
+.list-item .flag{position:absolute;bottom:4px;right:0;font-size:12px;text-align:center;height:16px;line-height:16px;width:32px;color:#fff;background:#33b5e5;}
+</style>
+<div class="main-wrap">
+<a href="./detail.html?type=video&src=http://www.w3school.com.cn/i/movie.mp4">
+<div class="list-item m2o-flex m2o-flex-center video">
+	<div class="info m2o-flex-one">
+		<h3 class="title">习近平:以壮士断腕勇气反腐到底					<span class="flag">视频</span>
+				</h3>
+	</div>
+	<span class="list-pic">
+		<img src="http://instasrc.com/80x50">
+	</span>
+</div>
+</a><a href="./detail.html">
+<div class="list-item m2o-flex m2o-flex-center ">
+	<div class="info m2o-flex-one">
+		<h3 class="title">2014年春运今日启幕 预计客运量超36亿人次				</h3>
+	</div>
+	<span class="list-pic">
+		<img src="http://instasrc.com/80x50">
+	</span>
+</div>
+</a><a href="./detail.html">
+<div class="list-item m2o-flex m2o-flex-center ">
+	<div class="info m2o-flex-one">
+		<h3 class="title">微信要革淘宝搜索广告的命 阿里高估值有压力				</h3>
+	</div>
+	<span class="list-pic">
+		<img src="http://instasrc.com/80x50">
+	</span>
+</div>
+</a><a href="./detail.html">
+<div class="list-item m2o-flex m2o-flex-center ">
+	<div class="info m2o-flex-one">
+		<h3 class="title">外媒称中国2014年或选某个大老虎作为反腐突破口				</h3>
+	</div>
+	<span class="list-pic">
+		<img src="http://instasrc.com/80x50">
+	</span>
+</div>
+</a><a href="./detail.html">
+<div class="list-item m2o-flex m2o-flex-center ">
+	<div class="info m2o-flex-one">
+		<h3 class="title">“春节四大晚会”3台确定停办 央视春晚成独苗				</h3>
+	</div>
+	<span class="list-pic">
+		<img src="http://instasrc.com/80x50">
+	</span>
+</div>
+</a><a href="./detail.html">
+<div class="list-item m2o-flex m2o-flex-center ">
+	<div class="info m2o-flex-one">
+		<h3 class="title">美前防长：韩国曾欲大规模空袭朝鲜被中美阻止				</h3>
+	</div>
+	<span class="list-pic">
+		<img src="http://instasrc.com/80x50">
+	</span>
+</div>
+</a></div>

@@ -1,0 +1,43 @@
+input[type="checkbox"]{height:auto;}
+.order-item{border-top:1px solid #c8d4e0;}
+.order-item .head{height:30px;line-height:30px;background:#f9f9f9;}
+.order-item .head .select{float:left;width:30px;text-align:center;}
+.order-item .head span, .order-item .title{color:#999;}
+.order-item .head .i{margin-right:20px;}
+.order-item .head .del{float:right;color:#999;cursor:pointer;margin-right:10px;}
+.order-item .info{padding:10px 0;}
+.order-item .sdiv{margin-left:50px;}
+.order-item .payment span{color:}
+.order-item .sdiv:last-child{text-align:center;margin-right:15px;}
+.order-item .first-div{padding-left:30px;line-height:24px;}
+
+.view-button{float:right;margin-right:10px;height:34px;line-height:34px;font-size:14px;}
+.indexpic{width:160px;height:160px;margin:0 auto;position: relative;}
+.indexpic .flag{position:absolute;left:-2px;top:-2px;background:url({$RESOURCE_URL}news/suoyintu.png) no-repeat;width:16px;height:46px;}
+.order-bottom{background-color:#f9f9f9;border-top:1px solid #c8d4e2;min-height:43px;line-height:43px;margin:0 -10px -10px;padding:0 10px;}
+.order-state,.m2o-audit,.batch-handle{cursor:pointer;}
+
+.no-content{height:50px;line-height:50px;text-indent:16px;color:red;font-size:14px;border-top:1px solid #c8d4e2;}
+
+/*搜索按钮*/
+.choice-area{margin-bottom:10px;}
+.data_time{margin-left:-1px;}
+.choice-area input{border-left:none;}
+.choice-area input:hover, .choice-area input:focus{box-shadow:none;border-color:#e0e0e0;}
+.down_list{height:29px; float:left;} 
+.input_left, .input_right, .text-search, .right_2{display:none;}
+.down_list .input_middle{background-color:transparent; border:1px solid #e0e0e0;}
+.product_list .input_middle{border-left:none; }
+.down_list .input_middle em{display: none;}
+.input_middle{height:27px; line-height: 27px; padding-left:0; margin:0; text-align:center;}
+.input_middle a{ color:#999;}
+.input{height:29px;}
+input.btn_search{margin:0;height:29px;background-color:#eee;}
+.down_list ul, .down_list .ul{top:29px;}
+.down_list ul li, .down_list .ul .li{line-height:26px; padding:0; text-align: center;background-color:#fff; }
+.down_list ul li a{color: #999;}
+
+.serach-btn{cursor:pointer;float:left; width:46px; height:29px; background:url({$RESOURCE_URL}menu2013/search.png) no-repeat scroll center;}
+.key-search{float:left;}
+.key-search input{width:100px; height:23px; padding-left:5px;}
+

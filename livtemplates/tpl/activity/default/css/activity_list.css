@@ -1,0 +1,12 @@
+@charset "utf-8";
+.mem-zc{width: 110px;}
+.activity-paixu{width:30px;}
+.activity-cz{width:40px;}
+.activity-zt{width:50px;}
+.activity-dd{width:100px;}
+.activity-kssj{width:160px}
+.activity-tjr{width:140px;}
+.activity-title{margin-left: -30px; float:left}
+#cz em{cursor:auto;width:16px;height:16px;display:inline-block;background:url({$RESOURCE_URL}news_list.png)  no-repeat;margin-top:10px;}
+
+.activity-time{color:#888;font-size:10px;-webkit-text-size-adjust:none;}

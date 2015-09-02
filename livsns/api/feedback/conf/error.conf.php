@@ -1,0 +1,25 @@
+<?php
+$errorConf = array(
+	UNKNOW 				=> '未知错误',
+	NOID   				=> '没有id',
+	NO_ACCESS_TOKEN 	=> '会员未登陆',
+	NO_RECORD 			=> '没有该记录',
+	PARA_ERROR			=> '参数错误',
+	FEEDBACK_NO_START	=> '该表单未开始',
+	FEEDBACK_END		=>' 该表单已过期',
+	NO_AUDIT 			=> '尚未审核',
+	ERROR_DEVICE_TOKEN 	=> '设备号错误',
+    NO_DEVICE_TOKEN     => '获取设备号失败',
+	ERROR_SEND			=> '发送失败',
+	ERROR_URL 			=> '链接错误',
+	HAS_FEEDED 			=> '已经提交过该表单',
+	FB_NO_START 		=> '活动尚未开始',
+	FB_END 				=> '活动已结束',
+	NOT_EXISTS_CONTENT 	=> '该内容未审核或不存在',
+	MOBILE_ERROR 		=> '手机号格式不正确',
+	EMAIL_ERROR 		=> '邮箱格式不正确',
+	CODE_FAIL 			=> '邀请码创建失败',
+	NO_DATA				=> '对不起，没有此数据',
+	FB_PROCESS			=> '对不起，信息已被处理，无法修改',
+);
+?>

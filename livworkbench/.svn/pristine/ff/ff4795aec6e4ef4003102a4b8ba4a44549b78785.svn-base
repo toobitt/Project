@@ -1,0 +1,8 @@
+<widget xmlns="http://www.jil.org/ns/widgets" id="320200_hogesoft_live_module" version="01.00.Beta" versioncode="2" width="480">
+	<name>直播无锡</name>
+	<description>直播无锡</description>
+	<author email="Widget@chinamobile.com">hogesoft</author>
+	<icon src="icon.png"/>
+	<content src="index.html" encoding="utf-8"/>
+	<feature name="http://jil.org/jil/api/1.1/widget"/>
+</widget>

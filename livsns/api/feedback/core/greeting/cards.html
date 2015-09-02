@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>#page_title#</title>
+<link rel="stylesheet" href="./css/framework7.custom.min.css">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/greeting.css">
+</head>
+<body>
+<?php 
+require_once('../../conf/config.php');
+$data = file_get_contents(FB_DOMAIN.'greet_result.php?person_id='.$_GET['person']);
+$card = json_decode($data,1);
+$card = $card[0];
+?>
+<div class="view view-main">
+	<div class="pages toolbar-through">
+		<div class="page">
+			<div class="page-content draw-greeting">
+				<div class="content-block">
+					<div class="img-box"><img src="#indexpic#"></div>
+					<div class="draw-content">
+						<h4>To: <?php echo $card['result'][0]['value']?></h4>
+						<p><?php echo $card['result'][1]['value']?></p>
+						<h5 class="textright">From：<?php echo $card['result'][2]['value']?></h5>
+					</div>
+				</div>
+				<div class="content-block content-app m2o-flex m2o-flex-center">
+					<div class="img-box">app图标</div>
+					<div class="app-content m2o-flex-one">
+						<h4>智慧盐城</h4>
+						<p>参与把美丽盐城寄给你</p>
+					</div>
+					<div class="app-button">
+						<a href="http://xz.zhihuiyancheng.com" class="download-icon">点击下载</a>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+</div>
+</body>
+</html>

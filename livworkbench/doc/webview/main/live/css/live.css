@@ -1,0 +1,50 @@
+/*直播列表页*/
+.list-item{height:90px; margin:0 15px;}
+.list-item a{color:#000;}
+.list-item .list-pic{margin-right:15px;}
+.list-item .channel-name{font-size:2.2em; padding-bottom:8px;}
+.list-item p{color:#999;font-size:1.8em; white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.list-item .live-name{color:#399ce1; margin-left:10px; }
+.list-item .live-flag{display:block;cursor:pointer;height:100%;width:27px; font-size:0; background:url(../images/live/play_def.png) center no-repeat transparent; background-size:27px 27px; }
+.list-item.is-play .live-flag{background-image:url(../images/live/play_sel.png);}
+
+
+
+/*电视*/
+.player-wrap{height:300px; overflow:hidden;background-color:#000;text-align:center;}
+
+
+/*详情节目列表*/
+.detail-list{background-color:#fafafa; }
+.detail-list .list-item{height:65px; line-height:65px; margin:0; font-size:2.4em; color:#999; position:relative; }
+.detail-list .live, .detail-list .live .live-name{color:#333; }
+.detail-list .list-item .state{width:105px; position:absolute; left:0; text-align:center; color:#fff; background-color:#3b9ac6; display:none; }
+.detail-list .list-item.current .state{display:block; }
+.detail-list .live-time{width:105px; text-align:center;}
+.detail-list .live-name{text-indent:15px; color:#999;}
+.detail-list .live-flag{width:60px; background:url(../images/live/live_play.png) no-repeat center transparent; background-size:64px; }
+.detail-list .live .live-time{background:#fafafa;}
+.detail-list .selected, .detail-list .selected .live-name{color:#399ce1; }
+.detail-list .selected{border-bottom-color:#399ce1; }
+.detail-list .selected .live-flag{background-image:url(../images/live/live_play_now.png); }
+
+/* 广播播放器样式 */
+.broadcast-play-wrap{height:105px;width:100%;}
+.broadcast-play-wrap .flag{height:40px;text-align:center;color:#666;font-size:1.8em;line-height:40px;background:rgba(204,204,204,.8);}
+.broadcast-player{height:65px; line-height:65px; background-color:#3b9ac6; position:relative;}
+.broadcast-player .btn{display:inline-block; width:65px;height:65px; background:url() no-repeat center #288AB7; cursor:pointer; background-size:50px 50px; }
+.broadcast-player .pause{background-image:url(../images/live/live-simpleplayer-icon-pause.png);}
+.broadcast-player .on{background-image:url(../images/live/live-simpleplayer-icon-play.png);}
+.play-wrap{font-size:0; }
+.box-progress{display:inline-block; position:absolute; left:15%; line-height: 65px; height:65px; width:80%;}
+.box-progress em{position:absolute; left:0; top:26px; width:12px; height:12px; border-radius:50%; background-color:#fff; vertical-align:middle;}
+.play-progress{display:inline-block; width:100%; height:7px; background-color:#288AB7; vertical-align:middle;}
+
+
+/*星期选项卡*/
+.weekbar{position:static; }
+.weekbar a{color:#333; }
+
+
+
+

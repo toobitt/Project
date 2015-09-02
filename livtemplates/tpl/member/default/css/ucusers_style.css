@@ -1,0 +1,18 @@
+/*form*/
+
+.user_font{float:right;color:#7D7D7D;margin-top: 5px;}
+.n-h-s{margin-top:6px;margin-left:5px;color:#7D7D7D;}
+.s-s{color:#333;line-height:24px;position:relative;top:-5px;left:5px;}
+.ml_50{margin-left:50px;}
+.formUlLiDiv{margin: 10px 0px 10px 20px;}
+.formUlLiDiv .title{width:280px;display:block;margin-bottom:10px;color:#7D7D7D;}
+.formUlLiDiv .font{margin-left:200px;color:#7D7D7D;}
+.formUlLiDiv .font1{margin-left:388px;color:#7D7D7D;}
+.formUlLiDiv .font2{margin-left:350px;color:#7D7D7D;}
+.formUlLiDiv .font3{margin-left:392px;color:#7D7D7D;}
+.formUlLiDiv .font4{margin-left:380px;color:#7D7D7D;position: relative;top: -37px;}
+.formUlLiDiv .font5{margin-left:390px;color:#7D7D7D;}
+.formUlLiDiv .font6{margin-left:490px;color:#7D7D7D;}
+
+.goback{float: right;margin-right: 100px;}
+.user_color{color:#282828;}

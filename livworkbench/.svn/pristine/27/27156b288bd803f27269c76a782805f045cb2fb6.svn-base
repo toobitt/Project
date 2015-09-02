@@ -1,0 +1,90 @@
+html {
+	width: 200px;
+	font-size: 12px;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+.text-item {
+	border-bottom: 1px solid #CFCFCF;
+	padding: 15px 10px;
+}
+.item-text-attr {
+	display: inline-block;
+	width: 28px;
+	height: 25px;
+}
+.item-text-attr:hover {
+	background-position: 0 -25px; 
+}
+.item-text-attr.selected {
+	background-position: 0 -75px;
+}
+.text-select-fontfamily {
+	background: none;
+	width: auto;
+	height: auto;
+	position: relative;
+	bottom: 5px;
+}
+.text-bold {
+	background: url(../icons/btnBold.gif);
+}
+.text-italic {
+	background: url(../icons/btnItalic.gif);
+}
+.text-underline {
+	background: url(../icons/btnUnderline.gif);
+}
+.text-forecolor {
+	background: url(../icons/btnForeColor.gif);
+}
+.text-bgcolor {
+	background: url(../icons/bgcolor.gif);
+}
+.text-strikethrough {
+	background: url(../icons/strikethrough.gif);
+}
+.text-left {
+	background: url(../icons/btnLeft.gif);
+}
+.text-center {
+	background: url(../icons/btnCenter.gif);
+}
+.text-right {
+	background: url(../icons/btnRight.gif);
+}
+.text-order-list {
+	background: url(../icons/btnNumber.gif);
+}
+.text-unorder-list {
+	background: url(../icons/btnList.gif);
+}
+.text-left-indent {
+	background: url(../icons/lIndent.gif);
+}
+.text-right-indent {
+	background: url(../icons/rIndent.gif);
+}
+.text-sub {
+	background: url(../icons/subscript.gif);
+}
+.text-super {
+	background: url(../icons/superscript.gif);
+}
+
+.myslider-ui {
+	display: inline-block;
+	margin: 0 10px;
+	width: 80px;
+	height: 0.5em;
+}
+.font-size-box{overflow:hidden;}
+.font-size-box > div {
+	width:60px;
+	height: 70px;
+	float:left;
+	position:relative;
+}
+.font-size-box > div > div{border:1px solid #ccc;border-radius:5px;background:white;text-align:center;position:absolute;bottom:0;}

@@ -1,0 +1,55 @@
+<html>
+<head>
+    <script type="text/javascript">
+        //<![CDATA[
+
+        function on_load_handler() {
+            var framename;
+
+            //console.log("FTA: onload_handler");
+            // listen for the parent to tell us the image submission
+            // has returned
+            if (window.addEventListener) {
+                //console.log("FTA: adding listener");
+                window.addEventListener("message", function(e) {
+                    framename = null;
+
+                    if (e.data.substr(0, 10) == "avpw_load:") {
+                        framename = e.data.substring(10);
+                    } else if (e.data == "avpw_load") {
+                        framename = 'avpw_img_submit_target'; // old way
+                    }
+
+                    if (framename) {
+                        //console.log("FTA: firing listener");
+                        var urlNode, hiresurlNode, url = '', hiresurl = '', sep = '---FEATHER-POSTMESSAGE---';
+                        // edited image url (ready)
+                        urlNode = parent[framename].document.getElementsByTagName("url");
+                        if (urlNode.length > 0) {
+                            url = urlNode[0].textContent;
+                            url = url.replace(/^\s+|\s+$/g, '');
+                        }
+                        // high-resolution URL (for future reference)
+                        hiresurlNode = parent[framename].document.getElementsByTagName("hiresurl");
+                        if (hiresurlNode.length > 0) {
+                            hiresurl = hiresurlNode[0].textContent;
+                            hiresurl = hiresurl.replace(/^\s+|\s+$/g, '');
+                        }
+
+                        if (url || hiresurl) {
+                            //parent.postMessage("avpw:image_saved:" + url, "*");
+                            parent.postMessage("avpw:" + url + sep + hiresurl, "*");
+                        }
+                    }
+                }, false);
+            }
+        }
+
+        //]]>
+    </script>
+</head>
+
+<body onload="on_load_handler()">
+</body>
+
+</html>

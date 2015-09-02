@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>新闻</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.switchable-2.0.min.js"></script>
+</head>
+<body>
+<!-- head start -->
+<div class="header-bg">
+     <div class="head layout">
+          <h1 class="logo fl">M2O新媒体综合运营平台</h1>
+          <div class="fr mt15">
+               <div class="search-area fl">
+                    <a class="search-icon"></a>
+                    <input type="text" class="search-txt"/>
+               </div>
+               <ul class="news-list fl">
+               	   <li><a href="#">站票打折</a></li>
+               	   <li><a href="#">钓岛问题</a></li>
+               	   <li><a href="#">抢票插件</a></li>
+               </ul>
+          </div>
+     </div>
+</div>
+<div class="nav-bg">
+     <div class="nav layout">
+          <ul class="menu">
+              <li><a href="index.html">首页</a></li>
+              <li class="on"><a href="news.html">新闻</a></li>
+              <li><a href="live.html">直播</a></li>
+              <li><a href="vedio.html">视频</a></li>
+              <li><a href="dianbo.html">点播</a></li>
+              <li><a href="photo.html">图片</a></li>
+              <li><a class="all" href="index.html">全部</a>
+          		   <ul class="nav-more">
+          			  <li><a>票务</a></li>
+          			  <li><a>路况</a></li>
+          			  <li><a>杂志</a></li>
+          		   </ul>
+          	   </li>
+         </ul>
+     </div>
+</div>
+<!-- head end -->
+
+<div class="container layout news-content clearfix">
+          <div class="fl">
+               <div class="second-nav">
+                   <a class="index.html">首页</a>&gt
+                   <a class="news.html">新闻</a>&gt
+                   <span>国际新闻</span>
+               </div>
+               <!-- 新闻详情业 start -->
+               <div class="news-area mt20">
+                   <div class="title">
+                       <h1>安倍：日本一直以“冷静方式”处理钓鱼岛问题</h1>
+                       <div class="detail">
+                            <a href="#" class="origin">中国新闻网</a>|<span class="time">2013-02-23 07:06</span>评论<a class="number" href="#">607</a>条 
+                       </div>
+                   </div>
+                   <div class="news-pic-list">
+                        <ul>
+                             <li class="show">
+                                   <img src="images/m2o/news_bigpic.png" />
+                                   <span>当地时间2013年2月22日，美国华盛顿，美国总统奥巴马会晤日本首相安倍晋三</span>
+                             </li>
+                             <li>
+                                   <img src="images/m2o/vedio/big.png" />
+                                   <span>奥巴马与安倍在会晤后共同面对记者</span>
+                             </li>
+                             <li>
+                                   <img src="images/m2o/news_bigpic.png" />
+                                   <span>当地时间2013年2月22日，美国华盛顿，美国总统奥巴马会晤日本首相安倍晋三</span>
+                             </li>
+                             <li>
+                                   <img src="images/m2o/photo_1.png" />
+                                   <span>奥巴马与安倍在会晤后共同面对记者</span>
+                             </li>
+                             <li>
+                                   <img src="images/m2o/news_bigpic.png" />
+                                   <span>奥巴马在开场白中重申日本是美国最亲密的盟友之一</span>
+                             </li>
+                             <li>
+                                   <img src="images/m2o/photo_1.png" />
+                                   <span>奥巴马在开场白中重申日本是美国最亲密的盟友之一</span>
+                             </li>
+                        </ul>
+                   </div>
+                   <div class="news-pic-tab">
+                        <div class="list">
+	                        <ul>
+	                            <li class="hover"><a><img src="images/m2o/news_smallpic.jpg" /></a></li>
+	                            <li><a><img src="images/m2o/vedio/big.png" /></a></li>
+	                            <li><a><img src="images/m2o/news_smallpic.jpg" /></a></li>
+	                            <li><a><img src="images/m2o/photo_1.png" /></a></li>
+	                            <li><a><img src="images/m2o/news_smallpic.jpg" /></a></li>
+	                            <li><a><img src="images/m2o/photo_1.png" /></a></li>
+	                        </ul>
+                        </div>
+                         <a class="news-prev"></a>
+                         <a class="news-next"></a>
+                   </div>
+
+                   <div class="main-body">
+<b>原标题：安倍首晤奥巴马声 称将继续冷静处理钓鱼岛问题</b>
+<p>中新社华盛顿2月22日电 (记者 吴庆才)正在美国访问的日本首相安倍晋三22日在白宫与奥巴马进行首次会晤。 在钓鱼岛问题上，安倍声称日本一直以“冷静方式”处理这一问题。他说：“我们将继续如此，我们一直都是如此。”</p>
+<p>当日，奥巴马与安倍在会晤后共同面对记者。安倍晋三在被问及钓鱼岛问题时通过翻译说：我们都同意日美同盟的存在是一个有助于该地区和平与稳定的稳定因素。</p.>
+<p>安倍表示，双方一致同意，在处理这些问题和其他的问题以及两国在该地区面临的广泛的问题时将保持密切的协调。他补充说：“所以，我们将在日美同盟的基础上继续协调处理此类问题。”</p>
+<p>安倍还说：“我们一贯以冷静的方式处理这一问题钓鱼岛问题，我们将继续这样做。”</p>
+<p>记者注意到，在短短几分钟的见面会中，奥巴马只字未提钓鱼岛问题，甚至未提中国二字。而在只有“一对一”两次提问机会的情况下，代表美方提问的美国记者却向奥巴马问起了美国国内问题。</p>
+<p>不过，奥巴马在开场白中重申日本是美国最亲密的盟友之一，美日同盟是美国区域安全和美国在亚太地区的行动的核心基础。他向安倍保证：“你可以放心，在你的整个首相任期中，你在美国将有一个强有力的合作伙伴。”</p>
+<p>两人还向记者透露，他们在会面中还讨论了朝鲜进行核试验的问题。奥巴马表达了美日将以强硬行动做出回应的决心。安倍晋三也表示，“我们不能容忍朝鲜发射导弹并进行核试验的行动。我们同意将进行合作，以坚定的态度对待朝鲜。”</p>
+<p>奥巴马与安倍会晤后，双方发表了一份有关日本参与TPP(泛太平洋战略经济伙伴关系协定)谈判的联合声明，表示两国将继续就日本有意加入TPP的问题进行双边磋商。完</p>
+ <p class="author">责任编辑：某某某</p>                  
+                  </div>
+               
+                   <!-- 相关新闻 start -->
+                   <div class="related-news">
+                        <h3>相关新闻</h3>
+                        <ul class="mt15">
+                             <li><a class="icon pic-icon">山西柳林煤企资金断链高利贷崩盘 多公务员卷入</a><span>2013.02.23</span></li>
+                             <li><a class="icon vedio-icon">徐翔录音震惊地方政府找私募借高利贷</a><span>2013.02.23</span></li>
+                             <li><a>建德企业主吐槽贷款难：金融机构资金流向高利贷</a><span>2013.02.23</span></li>
+                             <li><a>高利贷崩盘徐州楼市阵痛 开发商疯狂打折</a><span>2013.02.23</span></li>
+                             <li><a>放“高利贷”逾期 新都酒店计提坏账预亏</a><span>2013.02.23</span></li>
+                        </ul>
+                   </div>
+                   <!-- 相关新闻 end -->
+               </div>
+               <!-- 新闻详情业 end -->
+               
+               
+               
+               <!-- 评论 start -->
+               <div class="news-comment">
+                    <div class="title">共有<a>607</a>条评论, <a>3998</a>人参与</div>
+                    <ul class="mt20">
+                         <li>
+                               <div class="user">
+                                     <a class="photo"><img src="images/m2o/user_pic.jpg" /></a>
+                                     <a class="name">天地间</a>
+                                     <span class="time">2013-02-23 21:19:43</span>
+                                     <span class="controll"><a>支持(<em class="number">1</em>)</a><a>回复</a><a>分享</a></span>
+                               </div>
+                               <p>堂而皇之地抢夺人家的东西据为己有，哪有不冷静的道理</p>
+                         </li>
+                         <li>
+                               <div class="user">
+                                     <a class="photo"><img src="images/m2o/user_pic.jpg" /></a>
+                                     <a class="name">吉</a>
+                                     <span class="time">2013-02-23 21:19:43</span>
+                                     <span class="controll"><a>支持(0)</a><a>回复</a><a>分享</a></span>
+                               </div>
+                               <p>这样的措施其实并不能起到什么样的作用，只是表面的问题，实质的问题根本的不到解决，中央的举措，只是让百姓和一些相关人士，稳定一下心思</p>
+                         </li>
+                         <li>
+                               <div class="user">
+                                     <a class="photo"><img src="images/m2o/user_pic.jpg" /></a>
+                                     <a class="name">namida</a>
+                                     <span class="time">2013-02-23 21:19:43</span>
+                                     <span class="controll"><a>支持(0)</a><a>回复</a><a>分享</a></span>
+                               </div>
+                               <p>有选票的台湾，至今还要靠大陆输血？</p>
+                         </li>
+                    </ul>
+                    <div class="commonet-form mt20">
+                         <textarea class="txt-area" placeholder="网友评论仅供其表达个人看法，并不表明本站同意其观点或证实其描述。"></textarea>
+                         <div class="mt10">
+                           <span class="face">
+                               <img src="images/m2o/face.jpg" />
+                           </span>
+                            <span class="controll">
+	                            <a>注册</a><em>|</em><a>登录</a>
+	                            <span class="share"><input type="checkbox" /><em>分享到微博</em></span>
+	                            <input type="button" value="点击发布" class="btn" />
+                            </span>
+                         </div>
+                    </div>
+               </div>
+               <!-- 评论 end -->
+               
+               <!-- share start -->
+               <div class="news-share">
+                     <span class="share">
+                         <a></a>
+                         <span class="list">
+                           <a class="share-one"></a>
+                           <a class="share-two"></a>
+                           <a class="share-three"></a>
+                           <a class="share-four"></a>
+                           <a class="share-five"></a>
+                           <a class="share-six"></a>
+                        </span>
+                     </span>
+                     <a class="message"></a>
+               </div>
+	           <!-- share end -->
+               
+          </div>
+          <div class="fr vediolist">
+               <!-- 热点新闻 start-->
+               <div class="common-rank hot-news">
+                   <div class="common-title vedio－title">
+                         <h3>热点新闻</h3>
+                    </div>
+                    <ul class="ranking-con mt15 clearfix">
+	                          <li>
+	                             <a>
+	                              <em class="order one">1</em>
+	                              <em class="title">索尼发布PlayStation 4游戏机</em>
+	                              <em class="play-number">32,455</em>
+	                            </a>  
+	                          </li>
+	                          <li>
+	                             <a>
+	                              <em class="order one second">2</em>
+	                              <em class="title">皖政协提案：春节假延长至10天</em>
+	                              <em class="play-number">24,326</em>
+	                            </a>  
+	                          </li>
+	                          <li>
+	                             <a class="down">
+	                              <em class="order one second"">3</em>
+	                              <em class="title">艺考学艺术一年花费两三万</em>
+	                              <em class="play-number">21,788</em>
+	                            </a>  
+	                          </li>
+	                          <li>
+	                             <a>
+	                              <em class="order">4</em>
+	                              <em class="title">美联储公布会议道指收跌0.8%</em>
+	                              <em class="play-number">17,298</em>
+	                            </a>  
+	                          </li>
+	                          <li>
+	                             <a class="down">
+	                              <em class="order">5</em>
+	                              <em class="title">毒校服面料源自柯桥轻纺市场</em>
+	                              <em class="play-number">14,320</em>
+	                            </a>  
+	                          </li>
+	                          <li>
+	                             <a class="down">
+	                              <em class="order">6</em>
+	                              <em class="title">索尼发布PlayStation 4游戏机</em>
+	                              <em class="play-number">12,459</em>
+	                            </a>  
+	                          </li>
+	                          <li>
+	                             <a class="down">
+	                              <em class="order">7</em>
+	                              <em class="title">皖政协提案：春节假延长至10天</em>
+	                              <em class="play-number">8,455</em>
+	                            </a>  
+	                          </li>
+	                          <li>
+	                             <a class="down">
+	                              <em class="order">8</em>
+	                              <em class="title">艺考学艺术一年花费两三万</em>
+	                              <em class="play-number">5,092</em>
+	                            </a>  
+	                          </li>
+	                          <li>
+	                             <a class="down">
+	                              <em class="order">9</em>
+	                              <em class="title">美联储公布会议道指收跌0.8%</em>
+	                              <em class="play-number">4,356</em>
+	                            </a>  
+	                          </li>
+	                          <li>
+	                             <a class="down">
+	                              <em class="order">10</em>
+	                              <em class="title">毒校服面料源自柯桥轻纺市场</em>
+	                              <em class="play-number">2,459</em>
+	                            </a>  
+	                          </li>
+	                 </ul>    
+               </div>
+               <!-- 热点新闻 end -->
+               <!-- ad start -->
+               <div class="ad mt20">
+                     <a>
+                          <img src="images/m2o/news_ad.jpg" />
+                          <span class="title">ripper street</span>
+                     </a>
+               </div>
+               <!-- ad end -->
+               
+               <!-- 视频新闻 start -->
+               <div class="recommend-vedio vedio-news mt20 clearfix">
+                    <div class="common-title vedio－title">
+                         <h3>视频新闻</h3>
+                    </div>
+                    <div class="wd400 mt15">
+	                    <ul>
+	                         <li>
+	                             <a class="photo">
+	                                <img src="images/m2o/vedio/45.png" />
+	                                <em class="flag"></em>
+	                             </a>
+	                             <a class="title">索尼发布PlayStation 4游戏机</a>
+	                         </li>
+	                         <li>
+	                             <a class="photo">
+	                                <img src="images/m2o/vedio/22.png" />
+	                                <em class="flag"></em>
+	                             </a>
+	                             <a class="title">皖政协提案：春节假延长至10天</a>
+	                         </li>
+	                         <li>
+	                             <a class="photo">
+	                                <img src="images/m2o/vedio/ad_03.jpg" />
+	                                <em class="flag"></em>
+	                             </a>
+	                             <a class="title">索尼发布PlayStation 4游戏机</a>
+	                         </li>
+	                         <li>
+	                             <a class="photo">
+	                                <img src="images/m2o/vedio/45.png" />
+	                                <em class="flag"></em>
+	                             </a>
+	                             <a class="title">皖政协提案：春节假延长至10天</a>
+	                         </li>
+	                    </ul>
+                   </div>
+               </div>
+               <!-- 视频新闻 end -->
+               
+               <!-- 图片新闻 start -->
+               <div class="pic-news">
+                    <div class="common-title vedio－title">
+                         <h3>图片新闻</h3>
+                    </div>
+                    <ul class="mt15">
+                         <li>
+                             <a class="photo"><img src="images/m2o/vedio/2.png" /></a>  
+                             <a class="title">索尼发布PlayStation 4游戏机</a>
+                         </li>
+                         <li>
+                             <a class="photo"><img src="images/m2o/vedio/3.png" /></a>
+                             <a class="title">皖政协提案：春节假延长至10天</a>
+                         </li>
+                         <li>
+                             <a class="photo"><img src="images/m2o/vedio/4.png" /></a>
+                             <a class="title">皖政协提案：春节假延长至10天</a>
+                         </li>
+                    </ul>
+               </div>
+               <!-- 图片新闻 end -->
+               
+               <!-- 热门推荐 start -->
+               <div class="hot-recommend">
+                    <div class="common-title vedio－title">
+                         <h3>热门推荐</h3>
+                    </div>
+                    <ul class="mt15">
+                         <li class="first clearfix">
+                            <div class="wd400">
+	                             <div class="item">
+	                                <a class="photo"><img src="images/m2o/vedio/45.png" /></a>  
+	                                <a class="title">索尼发布PlayStation</a>
+	                             </div>
+	                             <div class="item">
+	                                <a class="photo"><img src="images/m2o/vedio/22.png" /></a>  
+	                                <a class="title">艺考学艺术一年花费</a>
+	                             </div>
+                             </div>
+                         </li>
+                         <li>
+                             <a class="title">皖政协提案：春节假延长至10天</a>
+                         </li>
+                         <li>
+                             <a class="title">艺考学艺术一年花费两三万</a>
+                         </li>
+                         <li>
+                             <a class="title">皖政协提案：春节假延长至10天</a>
+                         </li>
+                         <li>
+                             <a class="title">美联储公布会议道指收跌0.8%</a>
+                         </li>
+                         <li>
+                             <a class="title">皖政协提案：春节假延长至10天</a>
+                         </li>
+                         <li>
+                             <a class="title">毒校服面料源自柯桥轻纺市场</a>
+                         </li>
+                    </ul>
+               </div>
+               <!-- 图片新闻 end -->
+               
+               <!-- ad start -->
+               <div class="ad"><a href="#"><img src="images/m2o/ad_2.png" /></a></div>
+               <!-- ad end -->
+               
+               <!-- news-list  start-->
+               <div class="slider-newlist mt20 clearfix">
+                  <div class="wd400">
+	                   <ul>
+	                        <li><a href="#">索尼发布PS4</a></li>
+	                        <li><a href="#">政协提案：春节假</a></li>
+	                        <li><a href="#">艺考学协提案协</a></li>
+	                        <li><a href="#">美联储公布会议道指</a></li>
+	                        <li><a href="#">毒校服面料源自柯桥轻</a></li>
+	                   </ul>
+	                   <ul>
+	                        <li><a href="#">游戏机学一年花费</a></li>
+	                        <li><a href="#">延长至10天尼发布</a></li>
+	                        <li><a href="#">提案公布会议道指</a></li>
+	                        <li><a href="#">收跌0.8%协提案</a></li>
+	                        <li><a href="#">纺市场协提会议道</a></li>
+	                   </ul>
+                   </div>
+               </div>
+               <!-- news-list  end-->
+          </div>
+</div>
+
+<!-- footer start -->
+<div class="footer">
+     <div>Copyright @ 2004-2011<span class="name">南京厚建软件有限责任公司 - 门户应用专家</span>版权所有  025-83326233</div>
+     <div class="mt5">苏ICP备05021966号</div>
+</div>
+<!-- footer end -->
+</body>
+<script>
+$(function(){
+	/*news-smallpic switch*/
+	$('.news-pic-tab .list').switchable({
+		            triggers:false,
+				    effect: 'scrollLeft',
+				    steps: 1,
+				    panels: 'li',
+				    easing: 'ease-in-out',
+				    visible: 1, // important
+				    loop: false,
+				    end2end: false,
+				    autoplay:false,
+				    prev: $('.news-prev'),
+				    next: $('.news-next'),
+				    onSwitch: function(event, currentIndex) {
+				        var api = this,
+				            len=this.length;
+				        api.prevBtn.toggleClass('disabled', currentIndex === 0);
+				        api.nextBtn.toggleClass('disabled', currentIndex === len - 1);
+				        $('.news-pic-tab ul li').eq(currentIndex).addClass('hover').siblings().removeClass('hover');
+				        $('.news-pic-list ul li').eq(currentIndex).addClass('show').siblings().removeClass('show');
+				    }
+	  });
+	  /*news-pic tab*/
+	  $('.news-pic-tab ul li').each(function(index){
+             $(this).on('hover',function(){
+                 $(this).addClass('hover').siblings().removeClass('hover');
+                 $('.news-pic-list ul li').eq(index).addClass('show').siblings().removeClass('show');
+             });
+	  });
+     
+	  /*share*/
+	  $('.news-share').on('hover','.share',function(){
+		    $(this).toggleClass('hover').find('.list').slideToggle('fast');
+	  });
+	 
+});
+</script>
+</html>

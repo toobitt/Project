@@ -1,0 +1,107 @@
+.mr10{margin-right:10px;}
+.mt5{margin-top:5px;}
+.fr{float:right;}
+body{width:1210px;margin:0 auto;padding-bottom:10px;background:transparent!important;}
+.wrap,.footer{margin-left:0;margin-right:0;position:relative;background:#fff;-webkit-box-shadow: 0px 0px 5px #ccc;-moz-box-shadow: 0px 0px 5px #ccc;-o-box-shadow: 0px 0px 5px #ccc;box-shadow: 0px 0px 5px #ccc;clear:both;border:1px solid #ccc}
+.wrap, .unfullwrap, .leftmenu, #livwinarea,.been_marked_second,#hg_node_node .first{border-radius:0;}
+.been_marked_second div.first{height:39px;line-height:39px;}
+.been_marked_second li{height:40px;line-height:40px;}
+#hg_node_node .i{height:40px;}
+#hg_node_node .back{font-size:14px;}
+#hg_node_node .img{margin-top:18px;}
+.nav-box{height:43px;border:1px solid #ccc;margin-bottom:20px;display:block;}
+#append_menu li a.append_cur{background-repeat:repeat!important;}
+#append_menu li a{height:40px;line-height:40px;border-bottom:0;}
+#hidden-nav-option{display:none;}
+ul.been_marked_second li:first-child{height:39px;line-height:39px;}
+
+/*choice*/
+.select-search>div, .right_1>div, .key-search{float:left;height:43px;margin:0;}
+.down_list ul{width:92px;top:43px;left:-1px;border-bottom:1px solid #ccc;max-height:350px;overflow:auto;}
+.weight-box{left:-1px;}
+.choice-area .input_middle, .down_list ul li{padding:0;margin:0;border:none;line-height:32px;}
+.down_list ul li{border:1px solid #CCCCCC;text-align: center;border-bottom:0;}
+.choice-area .down_list{border-right:1px solid #ccc;}
+.choice-area .input_middle em {margin-top:20px;margin-right:10px;display:none;}
+.choice-area{height:100%;background:#fff;background:transparent;min-width:700px;}
+.choice-area .serach-btn,.choice-area .status,.choice-area .time,.choice-area .weight{float:left;height:100%;background:#fff;line-height:43px;width:103px;text-align:center;color:#888;}
+.choice-area .serach-btn{border-right:1px solid #ccc;}
+.choice-area .input_middle{width:100%;height:100%;text-align:center;color:#888;line-height:43px;}
+.choice-area .serach-btn{width:40px;background:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/search.png) no-repeat center #fff;cursor:pointer;}
+.choice-area .input_left, .choice-area .input_right, .text-search, .right_2{display:none;}
+.key-search{position:relative;background:#fff;width:0;overflow:hidden;transition: width .5s;-webkit-transition: width .5s;}
+.key-search-open{border-right:1px solid #ccc;width:159px;}
+.key-search input[type="text"]{top:8px;left:8px;padding-right:25px;height:18px;position:absolute; width:119px!important; border:1px solid #ccc;}
+.key-search input[type="submit"]{background:url(../../../../.././../livtemplates/tpl/lib/images/bg-all.png) -111px -45px!important;width:22px;height:22px;position:absolute;top:9px;right:4px;}
+
+.controll-area form{float:left;}
+
+/*****************old*****************************/
+/*按钮*/
+.controll-area{margin-top:-38px;}
+.controll-area a{float:left;height:34px;line-height:36px;cursor:pointer;}
+.controll-area a span{float:left;height:100%;}
+.controll-area a .left{width:5px;}
+.controll-area a .middle em{float:left;height:100%;padding:0 10px 0 35px;font-style:normal;font-size:14px;}
+.controll-area a .right{width:5px;}
+/*按钮 blue*/
+.controll-area a.blue{padding-right:0!important;padding-left:0!important;}
+.controll-area a.blue .left{background:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/blue-left-bg.png) no-repeat;display:none;}
+.controll-area a.blue .middle{background:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/form/form-button-blue.png) repeat-x;color:#fff;border-radius:2px;padding-right:6px;}
+.controll-area a.blue .middle .add{background:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/add.png) 10px center no-repeat;}
+.controll-area a.blue .right{background:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/blue-right-bg.png) no-repeat;display:none;}
+/*按钮 blue hover*/
+.controll-area a.blue:hover .left{background-image:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/blue-left-bg-hover.png);}
+.controll-area a.blue:hover .middle{background-image:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/form/form-button-blue-hover.png);}
+.controll-area a.blue:hover .right{background-image:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/blue-right-bg-hover.png);}
+/*按钮 gray*/
+.controll-area a.gray .left{background:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/gray-left-bg.png) no-repeat;}
+.controll-area a.gray .middle{background:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/gray-mid-bg.png) repeat-x;color:#333;}
+.controll-area a.gray .middle .set{background:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/set.png) 10px center no-repeat;}
+.controll-area a.gray .right{background:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/gray-right-bg.png) no-repeat;}
+.controll-area a.back .middle .set{background:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/back.png) 10px center no-repeat;}
+/*按钮 gray hover*/
+.controll-area a.gray:hover .left{background-image:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/gray-left-bg-hover.png);}
+.controll-area a.gray:hover .middle{background-image:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/gray-mid-bg-hover.png);}
+.controll-area a.gray:hover .right{background-image:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/gray-right-bg-hover.png);}
+
+/****************************new*********************************/
+.controll-area .add-button,.controll-area .button_6,.controll-area .back,.controll-area .set-button{display:block;float:left;height:34px!important;line-height:36px!important;font-weight:normal!important;width:auto;padding:0 15px 0 40px;border-radius:2px;cursor:pointer;font-style:normal;font-size:14px;color:#fff;}
+/*按钮 add*/
+.controll-area .add-button,.controll-area .button_6{margin-right:10px;background:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/add.png) 15px center no-repeat,url(../../../../.././../livtemplates/tpl/lib/images/menu2013/form/form-button-blue.png) repeat-x;}
+.controll-area .add-button:hover,.controll-area .button_6:hover{background:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/add.png) 15px center no-repeat,url(../../../../.././../livtemplates/tpl/lib/images/menu2013/form/form-button-blue-hover.png) repeat-x;border-radius:2px;color:#fff!important;}
+/*按钮 set*/
+.controll-area .set-button{margin-right:10px;background:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/set.png) 13px center no-repeat,-webkit-linear-gradient(#d0d0d0,#bcbcbc);background:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/set.png) 10px center no-repeat,-moz-linear-gradient(#d0d0d0,#bcbcbc);color:#333;}
+.controll-area .set-button:hover{background-image:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/set.png),-webkit-linear-gradient(#ddd,#c1c1c1);background-image:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/set.png),-moz-linear-gradient(#ddd,#c1c1c1);}
+.controll-area .back{margin-right:10px;background:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/back.png) 13px center no-repeat,-webkit-linear-gradient(#7c7c7c,#4c4c4c);background:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/back.png) 10px center no-repeat,-moz-linear-gradient(#7c7c7c,#4c4c4c);color:#fff;}
+.controll-area .back:hover{background-image:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/back.png),-webkit-linear-gradient(#676666,#2e2d2d);background-image:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/back.png),-moz-linear-gradient(#676666,#2e2d2d);}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2) {
+    .choice-area .serach-btn{background-image:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/search-2x.png);background-size:16px 16px;}
+	/***********************old************************/
+    .controll-area a.blue .left{background-image:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/blue-left-bg-2x.png);background-size:5px 34px;}
+    .controll-area a.blue .middle{background-image:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/form/form-button-blue-2x.png);background-size:5px 34px;}
+    .controll-area a.blue .right{background-image:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/blue-right-bg-2x.png);background-size:5px 34px;}
+    .controll-area a.blue:hover .left{background-image:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/blue-left-bg-hover-2x.png);background-size:5px 34px;}
+    .controll-area a.blue:hover .middle{background-image:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/form/form-button-blue-hover-2x.png);background-size:5px 34px;}
+    .controll-area a.blue:hover .right{background-image:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/blue-right-bg-hover-2x.png);background-size:5px 34px;}
+    .controll-area a.gray .left{background-image:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/gray-left-bg-2x.png);background-size:5px 34px;}
+    .controll-area a.gray .middle{background-image:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/gray-mid-bg-2x.png);background-size:5px 34px;}
+    .controll-area a.gray .right{background-image:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/gray-right-bg-2x.png);background-size:5px 34px;}
+    .controll-area a.gray:hover .left{background-image:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/gray-left-bg-hover-2x.png);background-size:5px 34px;}
+    .controll-area a.gray:hover .middle{background-image:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/gray-mid-bg-hover-2x.png);background-size:5px 34px;}
+    .controll-area a.gray:hover .right{background-image:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/gray-right-bg-hover-2x.png);background-size:5px 34px;}
+    .controll-area a.blue .middle .add{background-image:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/add-2x.png);background-size:16px 16px;}
+    .controll-area a.gray .middle .set{background-image:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/set-2x.png);background-size:16px 16px;}
+    .controll-area a.back .middle .set{background-image:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/back-2x.png);background-size:16px 16px;}
+     /***********************new************************/
+    .controll-area .add-button,.controll-area .button_6{background-image:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/add-2x.png),url(../../../../.././../livtemplates/tpl/lib/images/menu2013/form/form-button-blue-2x.png);background-size:16px 16px,2px 34px;}
+    .controll-area .add-button:hover,.controll-area .button_6:hover{background-image:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/add-2x.png),url(../../../../.././../livtemplates/tpl/lib/images/menu2013/form/form-button-blue-hover-2x.png);background-size:16px 16px,2px 34px;}
+    .controll-area .set-button{background-image:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/set-2x.png),-webkit-linear-gradient(#d0d0d0,#bcbcbc);background:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/set-2x.png),-moz-linear-gradient(#d0d0d0,#bcbcbc);color:#333;background-size:16px 16px,100% 100%;}
+    .controll-area .set-button:hover{background-image:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/set-2x.png),-webkit-linear-gradient(#ddd,#c1c1c1);background-image:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/set-2x.png),-moz-linear-gradient(#ddd,#c1c1c1);background-size:16px 16px,100% 100%;}
+    .controll-area .back{background-image:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/back-2x.png),-webkit-linear-gradient(#7c7c7c,#4c4c4c);background-image:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/back-2x.png),-moz-linear-gradient(#7c7c7c,#4c4c4c);color:#fff;background-size:16px 16px,100% 100%;}
+    .controll-area .back:hover{background-image:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/back-2x.png),-webkit-linear-gradient(#676666,#2e2d2d);background-image:url(../../../../.././../livtemplates/tpl/lib/images/menu2013/back-2x.png),-moz-linear-gradient(#676666,#2e2d2d);background-size:16px 16px,100% 100%;}
+}

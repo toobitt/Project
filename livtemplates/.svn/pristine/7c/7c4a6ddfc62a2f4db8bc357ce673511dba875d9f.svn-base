@@ -1,0 +1,193 @@
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix { display: inline-table; }
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */
+
+.bg-box{box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;border:20px solid #f01559;width:100%;height:100%;position:relative;}
+.bg-time{position:absolute;width:18px;height:20px;line-height:20px;text-align:center;color:#fff;border-radius:10px;}
+.bg-time-0{left:50%;top:-20px;}
+.bg-time-1{left:62.5%;top:-20px;}
+.bg-time-2{left:75%;top:-20px;}
+.bg-time-3{left:87.5%;top:-20px;}
+
+.bg-time-4{right:-20px;top:-20px;}
+
+.bg-time-5{right:-20px;top:25%;}
+.bg-time-6{right:-20px;top:50%;}
+.bg-time-7{right:-20px;top:75%;}
+
+.bg-time-8{right:-20px;bottom:-20px;}
+
+.bg-time-9{left:87.5%;bottom:-20px;}
+.bg-time-10{left:75%;bottom:-20px;}
+.bg-time-11{left:62.5%;bottom:-20px;}
+.bg-time-12{left:50%;bottom:-20px;}
+.bg-time-13{left:37.5%;bottom:-20px;}
+.bg-time-14{left:25%;bottom:-20px;}
+.bg-time-15{left:12.5%;bottom:-20px;}
+
+.bg-time-16{left:-20px;bottom:-20px;}
+
+.bg-time-17{left:-20px;top:75%;}
+.bg-time-18{left:-20px;top:50%;}
+.bg-time-19{left:-20px;top:25%;}
+
+.bg-time-20{left:-20px;top:-20px;}
+
+.bg-time-21{left:12.5%;top:-20px;}
+.bg-time-22{left:25%;top:-20px;}
+.bg-time-23{left:37.5%;top:-20px;}
+
+
+
+
+
+#drag-box{position:fixed;z-index:10000;left:20px;top:20px;width:460px;height:320px;}
+.drag-each{margin-bottom:5px;}
+.drag-title{height:30px;line-height:30px;background:#6dd300;color:#fff;margin-bottom:5px;}
+
+#file-box{height:300px;width:450px;border:1px solid #9acd32;overflow:auto;}
+.file-cat{float:left;border-right:1px solid #9acd32;height:100%;width:150px;overflow:hidden;}
+.file-cat-inner{width:2000px;position:relative;}
+.file-cat-item{width:150px;float:left;}
+.file-content{overflow:hidden;height:100%;}
+.file-cat-li{height:22px;line-height:22px;}
+.file-cat-li.on{background:#f60062;}
+.file-cat-child{float:right;}
+
+.file-list{height:100%;overflow:auto;}
+.file-list-li, .file-list-more{position:relative;z-index:100;float:left;width:82px;height:82px;margin:0 10px 10px 0;}
+.file-list-img{width:80px;height:60px;border:1px solid #333;}
+.file-list-title{height:20px;line-height:20px;text-align:center;overflow:hidden;}
+.file-list-more{background:#66F4DF;color:#fff;}
+
+.stream-item{cursor:pointer;text-align:center;float:left;width:45%;height:30px;line-height:30px;}
+.stream-item:hover{background:red;color:#fff;}
+
+.drop-area{width:500px;position:relative;left:700px;}
+.drop-start-time-bg, .drop-end-time-bg{position:absolute;z-index:1;top:0;height:100%;width:100px;background:#b81900;}
+.drop-start-time-bg{left:0px;}
+.drop-end-time-bg{right:0px;}
+.drop-hms-bg{position:absolute;z-index:1;left:100px;top:0;height:100%;width:300px;background:#ccc;}
+#drop-box{position:relative;z-index:2;width:100%;min-height:100%;height:100%;}
+#drop-box.light-state{box-shadow:0 0 2px 3px red;}
+.drop-item, .drop-item-place{height:50px;width:100%;padding:1px 0;}
+.drop-item-place{background:red;opacity:0.3;}
+.drop-start-time{display:none;}
+.drop-end-time{display:none;}
+.drop-hms{display:none;}
+.drop-info{float:left;width:200px;}
+.drop-info img{float:left;height:50px;}
+.drop-content{overflow:hidden;}
+.drop-content span{display:block;}
+#drop-box .drop-start-time, #drop-box .drop-end-time{cursor:pointer;width:100px;height:100%;display:block;color:#fff;}
+#drop-box .drop-start-time{float:left;}
+#drop-box .drop-end-time{float:right;}
+#drop-box .drop-hms{float:left;width:48px;height:48px;display:block;border-radius:25px;}
+.drop-close{position:absolute;right:120px;top:0px;background:red;height:30px;width:30px;line-height:30px;text-align:center;color:#fff;cursor:pointer;}
+.custom-set{color:red !important;position:relative;}
+.custom-set:after{
+    content:'固定开始时间';
+    position:absolute;
+    z-index:1;
+    left:-80px;
+    top:0;
+    color:green;
+}
+.empty-custom-set{
+    position:absolute;
+    left:-80px;
+    top:25px;
+    z-index:2;
+    color:#804dcc;
+    cursor:pointer;
+}
+.drop-item{position:relative;}
+.drop-item.drop-kongxi:after{
+    content:'前面有空隙';
+    position:absolute;
+    z-index:1;
+    left:100%;
+    top:0;
+    color:red;
+    width:200px;
+}
+.drop-item.drop-hu-part:after{
+    content:'该节目有部分被忽略';
+    position:absolute;
+    z-index:1;
+    left:100%;
+    top:0;
+    color:#000;
+    width:200px;
+}
+.drop-item.drop-hu:after{
+    content:'该节目被忽略';
+    position:absolute;
+    z-index:1;
+    left:100%;
+    top:0;
+    color:#000;
+    width:200px;
+}
+
+.drop-item.drop-guo-part:after{
+    content:'该节目部分超过时间';
+    position:absolute;
+    z-index:1;
+    left:100%;
+    top:0;
+    color:#f01454;
+    width:200px;
+}
+
+.drop-item.drop-guo:after{
+    content:'该节目超过时间';
+    position:absolute;
+    z-index:1;
+    left:100%;
+    top:0;
+    color:#f01454;
+    width:200px;
+}
+
+.date-hms-box{position:relative;height:100px;width:100px;border:1px solid red;background:#fff;}
+.date-hms-box{
+    border-radius:-webkit-calc(50% + 1px);
+    border-radius:-moz-calc(50% + 1px);
+    border-radius:calc(50% + 1px);
+}
+.date-hms{position:absolute;left:50%;bottom:50%;margin-left:-2px;width:4px;}
+.date-hms{
+    -webkit-transform-origin:bottom center;
+    -moz-transform-origin:bottom center;
+    transform-origin:bottom center;
+}
+.date-h{height:30%;background:red;}
+.date-m{height:40%;background:blue;}
+.date-s{height:45%;background:#bc8f8f;display:none;}
+.date-center{position:absolute;z-index:2;left:50%;top:50%;margin:-3px 0 0 -3px;border:1px solid #ccc;width:4px;height:4px;border-radius:3px;background:#fff;}
+
+.ohms-box{position:absolute;left:0;top:0;z-index:10000;width:220px;;border:2px solid green;padding:10px;background:#fff;}
+.ohms-inputs, .ohms-sliders{margin-bottom:5px;}
+.ohms-inputs{height:30px;}
+.ohms-input{width:50px;}
+.ohms-mao{display:inline-block;width:20px;text-align:center;}
+.ohms-sliders{}
+.ohms-slider{height:100px;width:10px;float:left;margin-left:25px;margin-right:35px;}
+.ohms-options{clear:both;margin-top:10px;text-align:center;}
+.ohms-option{display:inline-block;color:#fff;width:60px;height:24px;line-height:24px;text-align:center;cursor:pointer;}
+.ohms-ok{background:green;}
+.ohms-cancel{background:#1d1d1d;}
+
+

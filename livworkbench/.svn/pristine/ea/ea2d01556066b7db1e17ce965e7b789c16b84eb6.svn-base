@@ -1,0 +1,33 @@
+/*job*/
+.department-list-bg{background:#f6f4f4;}
+.department-list{padding:60px 0 80px;}
+.department-list ul{position:relative;}
+.department-list ul li{float:left;width:60px;height:60px;margin-left:30px;}
+.department-list ul li.department-slected{width:380px;line-height:60px;}
+.department-list ul li.department-slected a{position:static;float:left;background-image:url(../images/job_depart_icon_01.png);background-color:#3491db;}
+.department-list ul li a{z-index:10;display:block;position:absolute;width:60px;height:60px;background-color:#909090;background-position:center;background-repeat:no-repeat;border-radius:60px;font-size:0;}
+.department-list ul li a:hover{background-color:#3491db;}
+.rd{background-image:url(../images/job_depart_icon_01.png);}
+.ued{background-image:url(../images/job_depart_icon_02.png);}
+.apc{background-image:url(../images/job_depart_icon_03.png);}
+.bd{background-image:url(../images/job_depart_icon_04.png);}
+.hr{background-image:url(../images/job_depart_icon_05.png);}
+.ac{background-image:url(../images/job_depart_icon_06.png);}
+.department-list ul li .name{margin-left:12px;color:#909090;font-size:18px;}
+.job-area{padding:90px 0 60px;min-height:500px;}
+.job-con{display:none;}
+.show{display:block;}
+.deparment-info{float:left;width:190px;padding:125px 30px 0;color:#909090;line-height:1.8;background:url(../images/depart_big_icon.png) no-repeat center top;}
+.job-list{float:right;width:730px;}
+.job-list li{position:relative;padding:30px 15px 20px;border-bottom:1px solid #ebeceb;}
+.job-list li.hover{background:#f8f8f8;}
+.job-list li .more{display:block;position:absolute;top:57px;right:15px;width:85px;height:26px;line-height:24px;color:#909090;font-size:11px;text-align:center;background:url(../images/job_down.png) 68px center no-repeat #ededed;border-radius:20px;}
+.job-list li .click{top:35px;right:15px;width:20px;height:20px;border-radius:20px;background:url(../images/job_up.png) 6px 7px no-repeat #efefef;font-size:0;}
+.job-list .job-name{cursor:pointer;}
+.job-list .job-name a{font-size:18px;color:#333;}
+.job-list .job-name a:hover{color:#3491db;}
+.job-list .job-detail{margin:15px 0 10px;color:#909090;}
+.job-list .job-detail span{margin-right:30px;}
+.job-list .job-require{display:none;color:#333;}
+.job-list .job-require .title{color:#909090;}
+.job-list .job-require p{margin-top:8px;}

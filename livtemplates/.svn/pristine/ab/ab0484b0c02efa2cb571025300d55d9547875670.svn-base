@@ -1,0 +1,23 @@
+/*form*/
+
+.user_font{float:right;color:#7D7D7D;margin-top: 5px;}
+.n-h-s{margin-top:6px;margin-left:5px;color:#7D7D7D;}
+.s-s{color:#333;line-height:24px;position:relative;top:-5px;left:5px;}
+.ml_50{margin-left:50px;}
+.ml_42{margin-left:42px;}
+.formUlLiDiv {margin: 10px 0px 10px 20px;}
+.formUlLiDiv .title{width:280px;display:block;margin-bottom:10px;color:#7D7D7D;}
+.formUlLiDiv .font{margin-left:200px;color:#7D7D7D;}
+.formUlLiDiv .font1{margin-left:250px;color:#7D7D7D;}
+.formUlLiDiv .font2{margin-left:332px;color:#7D7D7D;}
+.formUlLiDiv .font3{margin-left:344px;color:#7D7D7D;}
+.formUlLiDiv .font4{margin-left:334px;color:#7D7D7D;position: relative;top: -37px;}
+.formUlLiDiv .font5{margin-left:336px;color:#7D7D7D;}
+.formUlLiDiv .font6{margin-left:490px;color:#7D7D7D;}
+
+.goback{float: right;margin-right: 100px;}
+.user_color{color:#282828;}
+.formUlLiDiv .divInput {width:200px;}
+.formUlLiDiv .divInput_440 {width:440px;}
+.email_type {position: relative;top: -30px;left: 60px;}
+.email_type_next {margin-top:20px;} 

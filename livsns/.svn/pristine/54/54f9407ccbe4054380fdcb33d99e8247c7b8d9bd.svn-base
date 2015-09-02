@@ -1,0 +1,13 @@
+INSERT INTO `liv_vod_media_node` (`id`, `name`, `fid`, `brief`, `parents`, `childs`, `depath`, `is_last`, `create_time`, `ip`, `update_time`, `user_name`, `order_id`, `color`, `count`, `collect_count`, `vod_leixing`) VALUES
+(1, '编辑上传', 0, '编辑上传', '1', '1', 1, 1, 1343370766, '127.0.0.1', 1344404237, 'hogesoft', 1, '#4AA44C', 0, 0, 0),
+(2, '网友上传', 0, '网友上传', '2', '2', 1, 1, 1343370783, '::1', 1343370783, 'hogesoft', 2, '#0F9AB9', 0, 0, 0),
+(3, '直播归档', 0, '直播归档', '3', '3', 1, 1, 1343370793, '10.0.1.221', 1349681883, '', 3, '', 0, 0, 0),
+(4, '标注归档', 0, '标注归档', '4', '4', 1, 1, 1343370827, '::1', 1343370827, 'hogesoft', 4, '#7E4DCB', 0, 0, 0);;
+
+INSERT INTO `liv_vod_config` (`id`, `config_order_id`, `name`, `type_id`, `unique_id`, `output_format`, `codec_format`, `codec_profile`, `width`, `height`, `video_bitrate`, `audio_bitrate`, `frame_rate`, `gop`, `vpre`, `is_use`, `is_open_water`, `water_mark`, `water_pos`, `water_pic_position`, `water_offset`) VALUES
+(1, 1, '默认转码配置', 1, 'UD', 'mp4', 'H264', 'H264_MAIN', 640, 480, 600, 48, 24, 250, 'slow', 1, 0, '', '/new/bbwu/Hoge//bin/water_mark_img/20140108160549Qzkx.jpg', '0,0', '');;
+
+
+INSERT INTO `liv_vod_config_type` (`id`, `name`, `user_name`, `create_time`) VALUES
+(1, '标配', 'hogesoft', 1395367424);;
+

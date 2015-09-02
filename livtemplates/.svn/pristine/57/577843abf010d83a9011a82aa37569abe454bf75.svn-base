@@ -1,0 +1,112 @@
+@charset "utf-8";
+body{font-size:14px;font-family:"microsoft yahei",Arial, Helvetica, sans-serif;}
+
+.clear{clear:both;}
+
+.clearfix:after {
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+* html>body .clearfix {
+display: inline-block;
+width: 100%;
+}
+* html .clearfix {
+/* Hides from IE-mac \*/
+height: 1%;
+/* End hide from IE-mac */
+}
+   /* ie7 hack*/
+*+html .clearfix {
+min-height: 1% ;
+}
+
+a{text-decoration: none}
+a:hover{}
+input,select,img{vertical-align:middle;}
+a img{border:none;}
+
+.group, .action, .trend, .myaction{background:#f1f1f1 url({$RESOURCE_URL}qingao/gbg.jpg) no-repeat center top;}
+
+.wrap, .gshows{width:964px;margin:0 auto;}
+header{min-width:966px;width:100%;background:url({$RESOURCE_URL}qingao/hbg.png) no-repeat center top;}
+.header .wrap{background:url({$RESOURCE_URL}qingao/header.png) no-repeat center top;height:113px;}
+.logo{float:left;width:148px;margin:45px 0 0 26px;display:inline;}
+.logo a{display:block;overflow:hidden;text-indent:-999em;height:53px;}
+.mainmenu{float:left;margin:76px 0 0 42px;}
+.mainmenu li{float:left;width:92px;background:url({$RESOURCE_URL}qingao/line1.png) no-repeat;line-height:22px;}
+.mainmenu  .mitem1{background:none;}
+.mainmenu li a{display:block;padding:0 0 0 42px;background:url({$RESOURCE_URL}qingao/mt.png) no-repeat;color:#666;font-size:18px;}
+.mainmenu .mitem1 a{background-position:5px 5px;}.mainmenu .mitem2 a{background-position:15px -22px;}.mainmenu .mitem3 a{background-position:16px -85px;}
+.group .mitem3 a{background-position:16px -51px;color:#00aa91} .action .mitem2 a{background-position:15px -116px;color:#00aa91}
+.trend .mitem1 a{background-position:5px -160px;color:#00aa91}
+.mainmenu li a:hover{text-decoration:none;color:#00aa91;}
+
+.searchs{float:left;margin:75px 0 0 31px;width:222px;height:26px;background:url({$RESOURCE_URL}qingao/search.png);line-height:16px;}
+.searchs input{float:left;border:none;padding:3px 0;height:20px;background:transparent;}
+input.search_key{width:190px;padding-left:4px;color:#CCC;font-size:12px;}
+.search_btn{width:26px;cursor:pointer;overflow:hidden;text-indent:-999em;}
+
+.share_box{float:left;margin:75px 0 0 18px;width:36px;line-height:24px;height:24px;position:relative;}
+.share_box a, .member a{display:block;overflow:hidden;overflow:visible;text-indent:-999em;}
+a.share_sina{background:url({$RESOURCE_URL}qingao/share.png) no-repeat 0 3px;padding:3px 0 5px;}
+.share_box .share_inner{height:24px;overflow:hidden;}
+.share_on .share_inner{background:url({$RESOURCE_URL}qingao/share.png) no-repeat 0 -40px;height:116px;position:absolute;top:0;left:0;width:36px;z-index:10005}
+
+.member{float:left;margin:73px 0 0 8px;background:url({$RESOURCE_URL}qingao/line1.png) no-repeat 0 4px;padding-left:6px;}
+.member a{background:url({$RESOURCE_URL}qingao/m.png) no-repeat;}
+.member .member_register, .member .member_login{width:54px;height:28px;float:left;margin-left:10px;}
+.mlogin a{width:25px;height:35px;float:left;margin:5px 0 0 10px;text-indent:0;font-size:12px;position:relative;}
+.mlogin a span{position:absolute;top:10px;left:5px;border-radius:2px;background:#ff8c00;width:12px;height:12px;color:#FFF;text-align:center;line-height:12px;}
+.mlogin .person_home{background-position:0 -78px;}
+.mlogin .person_mail{background-position:0 -126px;}
+.mlogin .person_feedback{background-position:0 -172px;}
+.mlogin .person_logout{background:none;color:#ff8c00;line-height:26px;}
+a.member_register{background-position:0 -28px;}
+.headb{background:url({$RESOURCE_URL}qingao/hb.png) no-repeat center top;height:15px;overflow:hidden;width:964px;margin:0 auto;}
+.action .headb{background-position:1px -15px;}
+.trend .headb{background-position:1px -30px;}
+.myaction .headb{background-position:1px -45px;}
+
+footer{padding:22px 0 95px;line-height:24px;font-size:12px;clear:both;}
+.homelink{color:#00AA91;padding:0 11px;}
+.homelink a{color:#00AA91;margin:0 5px;}
+.copyright{margin:0 0 0  16px;border-top:1px solid #dedede;width:626px;color:#aaaaaf}
+
+
+.action-step1, .action-step2{color:#F01455;}
+
+
+/*new add*/
+#tishi-body{background:#f1f1f1 url({$RESOURCE_URL}qingao/gbg.jpg) no-repeat center top;}
+.mlogin a{width:16px;height:16px;display:block;margin-right:10px;_margin-right:6px;}
+.mlogin .person_home{background:url({$RESOURCE_URL}qingao/user-normal.png) no-repeat;}
+.person_home:hover{background:url({$RESOURCE_URL}qingao/user-hover.png) no-repeat;}
+.mlogin .person_mail{background:url({$RESOURCE_URL}qingao/mail.png) no-repeat;width:20px;height:15px;margin-bottom:0}
+.person_mail:hover{background:url({$RESOURCE_URL}qingao/mail-hover.png) no-repeat;}
+.mlogin .person_feedback{background:url({$RESOURCE_URL}qingao/message-icon.png) no-repeat;width:21px;}
+.person_feedback:hover{background:url({$RESOURCE_URL}qingao/message-hover.png) no-repeat;}
+.mlogin .person_mypage{background:url({$RESOURCE_URL}qingao/mypage.png) no-repeat;}
+.person_mypage:hover{background:url({$RESOURCE_URL}qingao/mypage-hover.png) no-repeat;}
+.mlogin .person_logout{background:url({$RESOURCE_URL}qingao/exit.png) no-repeat;}
+.person_logout:hover{background:url({$RESOURCE_URL}qingao/exit-hover.png) no-repeat;}
+
+/*表情弹窗 css*/
+.biaoqing-box{ width:329px; height:208px; background:url({$RESOURCE_URL}qingao/biaoqing_bg.png) no-repeat;}
+.biaoqing-title{ color:#a8a8ab; padding:8px 0 0 30px;font-size:12px;}
+.biaoqing-con{ width:312px; height:162px; padding:7px 0 0 14px; overflow:hidden}
+.biaoqing-control{ padding-right:20px;}
+.biaoqing-control a{ display:block;height:7px; float:right; margin-left:6px; display:inline}
+.biaoqing-on{background:url({$RESOURCE_URL}qingao/biaoqing-on.gif) no-repeat; width:9px;}
+.biaoqing-off{background:url({$RESOURCE_URL}qingao/biaoqing-off.png) no-repeat; width:7px;}
+#face_box{position: absolute;margin-left: 24px;margin-top: -24px;}
+
+.biaoqing-con table{margin-left: 4px;}
+.biaoqing-con table tr{}
+.biaoqing-con table tr td{border-right: 1px solid #ccc;border-bottom: 1px solid #ccc;width: 29px;height: 30px;text-align: center;vertical-align: middle;}
+.biaoqing-con table tr td.td_last{border-right:0;border-bottom: 1px solid #ccc;width: 29px;height: 30px;text-align: center;vertical-align: middle;}
+.biaoqing-con table tr.tr_last td.td_last{border-right:0;border-bottom: 0;width: 29px;height: 30px;text-align: center;vertical-align: middle;}
+.biaoqing-con table tr.tr_last td{border-right: 1px solid #ccc;border-bottom: 0;width: 29px;height: 30px;text-align: center;vertical-align: middle;}

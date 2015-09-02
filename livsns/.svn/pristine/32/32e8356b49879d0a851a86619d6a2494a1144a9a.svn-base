@@ -1,0 +1,11 @@
+<div class="greeting-drawing">
+	<div class="content-inner">
+		<div class="img-box">
+			<img class="lazy" title="#title#" data-original="#indexpic#">
+		</div>
+		<a class="link" href="#url#"></a>
+	</div>
+	<div class="title m2o-flex">
+		<p class="order m2o-flex-one">#title#</p>
+	</div>
+</div>

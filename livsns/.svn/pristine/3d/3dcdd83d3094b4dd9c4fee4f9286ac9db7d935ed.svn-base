@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>#page_title#</title>
+<link rel="stylesheet" href="./css/framework7.custom.min.css">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/greeting.css">
+</head>
+<body>
+<div class="view view-main">
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="left">
+				<a href="javascript:history.back()" class="back link">
+					<i class="icon icon-back"></i>
+				</a>
+			</div>
+			<div class="center sliding">#title#</div>
+			<div class="right">
+			 <a href="#" class="link">
+			 	<i class="icon icon-share"></i>
+			 </a>
+			</div>
+		</div>
+	</div>
+	<div class="pages navbar-through">
+		<div class="page">
+			<div class="page-content aspect-greeting">
+				<div class="greeting-title">
+					<div class="img-box">
+						<img src="#indexpic#">
+					</div>
+				</div>
+				<div class="content-block">
+					<p>#brief#</p>
+				</div>
+				<div class="content-block-title content-label"><em class="title" data-letter="图片展示">图片展示</em></div>
+				<div class="content-block greet-list">
+					<ul class="clear">
+					@content@
+					</ul>
+				</div>
+				<div class="content-block-title">活动细则：</div>
+				<div class="content-block">
+					<p>#more_info#</p>
+					<p>活动时间：#start_time#-#end_time#<p>
+					<p>参与人群：智慧盐城用户</p>
+				</div>
+				<div class="content-block greeting-slyder">
+					<a class="item-link" href="#">
+						<div class="img-box">
+							<img src="images/slyder.jpg">
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>	
+	</div>
+</div>
+<script type="text/javascript" src="./js/module/head.min.js"></script>
+<script type="text/javascript">
+	head.js(
+		{zepto : "./js/module/zepto.min.js"},
+		{lazyload : "./js/module/lazyload.js"}
+	);
+	head.ready(["zepto", "lazyload"], function(){
+		head.js('./js/greeting_list.js');
+	});
+</script>
+</body>
+</html>

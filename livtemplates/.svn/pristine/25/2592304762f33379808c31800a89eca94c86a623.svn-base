@@ -1,0 +1,19 @@
+.common-list-cell{height:40px;}
+.common-list-i{top:12px;}
+.news-fabu{margin-right:80px;}
+.news-paixu{width:20px;}
+.news-fabu{width:120px;}
+.news-fenlei{width:75px;}
+.news-zhuangtai{width:60px;position:relative;}
+.news-pinglun{width:80px;}
+.news-quanzhong{width:60px;}
+.news-ren{width:100px;}
+.news-biaoti{overflow:hidden;cursor:pointer;}
+.news-pub{text-decoration:underline;}
+.news-fenlei .overflow{width:70px;}
+.news-biaoti-content{display:block;font-size:14px;}
+.news-total{color:#8fa8c6;margin-top:8px;}
+.news-name{display:block;}
+.news-time{color:#888;font-size:10px;-webkit-text-size-adjust:none;}
+.news-biaoti a{font-size:14px;color:#000;display:inline-block;vertical-align:middle;}
+.news-biaoti-overflow{max-width:350px;}

@@ -1,0 +1,9 @@
+<?php 
+/* $Id$ */
+?>
+{template:head}
+<div class="wrap">
+<a href="?mid={$_INPUT['mid']}&a=form">新增</a>
+{template:list}
+</div>
+{template:foot}

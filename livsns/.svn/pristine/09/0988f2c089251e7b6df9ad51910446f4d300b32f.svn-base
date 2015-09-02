@@ -1,0 +1,11 @@
+<div class="liv_captcha liv_item">
+	<span class="cell_name">{cell_name}</span>
+	<span class="cell_captcha m2o-flex">
+		<div class="captcha_input m2o-flex-one">
+			<input type="text" name="verify_code" placeholder="点击获取验证码" value="" />
+		</div>
+		<div class="captcha_img">
+			<img alt="验证码" title="看不清吗？点击可以刷新" src="{cell_captcha_url}" onclick="this.src = '{cell_captcha_url}&'+Math.random();" style="cursor: pointer;">
+		</div>
+	</span>
+</div>

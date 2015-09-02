@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url(reset.css);
+@import url(comm.css);
+
+body{font-size:12px;color:#4d4d4d;}
+a:link, a:visited{text-decoration:none;}
+a:hover, a:active{text-decoration:underline;}
+
+/* cp_menu */
+.cp_menu{width:200px;height:600px;float:left;border-right:1px solid silver;}
+.cp_menu .cp_list{margin:80px auto;}
+.cp_menu .cp_list tr{height:30px;font-size:14px;text-align:center;border:1px solid silver;}
+.cp_menu .cp_list tr td{width:40px;}
+
+
+
+/* cp_main */
+.warp{width:1080px;margin:0 1px; auto;float:left;}
+
+.header{background:url(top_bg.jpg) no-repeat center top;height:67px;padding-top:1px;}
+.header h1{float:left;width:238px;height:57px;padding:8px 0 0 9px;}
+.menu{float:left;margin: 10px 0 0 7px;border:1px solid #a2cfed;height:47px;line-height:47px;border-left:none;overflow:hidden;}
+.menu li{float:left;background:url(menu_li.png) no-repeat left top;padding: 0 5px;margin-left:-1px;list-style:none;}
+.menu li.cur{background-image:url(menu_cur.png);}
+.menu a, .menu span{display:block;background:url(menu_a.png) no-repeat center bottom;font-size:14px;font-weight:700;color:#FFF;}
+.menu li.cur a, .menu li.cur span{background:none;}
+.admin_zone{float:right;margin:23px 20px 0 0;line-height:20px;color:#FFF;display:inline;}
+.logout{text-decoration:underline;color:#FFF;margin-left:12px;}
+
+.search_add{margin-top:15px;}
+.search_add_tab{height:29px;}
+.search_add_tab a, .search_add_tab span{background-image:url(search_user.png);line-height:29px;float:left;}
+.search_add_tab a{padding-left:14px;margin-right:4px;color:#4d4d4d;}
+.search_add_tab span{padding-right:14px;background-position:right top}
+.search_add_tab .cur{background-position:0 -29px;height:30px;font-weight:700;}
+.search_add_tab .cur span{background-position:right -29px;height:30px;}
+
+.search_user{border:1px solid #a6d0e7;padding:14px 0 18px 10px;color:#514d4c;font-size:14px;}
+input.regtime, input.user, input.email{padding:0;border:1px solid #c2c2c2;height:22px;margin:0 15px 0 5px;font-size:12px;}
+input.user{width:118px;}
+input.email{width:182px;}
+input.regtime{margin:0 5px;width:70px;}
+.sbmit{height:30px;width:54px;margin:18px 0 0 490px;line-height:24px;}
+
+.user_list{margin-top:20px;}
+.tle{background:url(tle.png) no-repeat right top;padding-right:20px;height:29px;line-height:29px;}
+.tle strong{float:left;background:url(tle.png) no-repeat left top;height:29px;padding-left:30px;font-size:14px;color:#4d4d4d;}
+.tle a{float:left;}
+
+.user_list .user_list_c table thead  tr th{text-align:left;}
+
+.user_list_c, .os_c, .app_count_c, .app_list_c{padding:10px 12px 10px 10px;border:1px solid #A6D0E7;}
+.user_list_c table, .os_c table, .app_count_c table, .app_list_c table{width:100%;border-collapse:collapse;color:#828282;}
+.user_list_c thead, .app_list_c thead{background:#f4f4f4;line-height:31px;}
+.user_list_c tbody tr{line-height:40px;border-top:1px dashed #dcdcdc;}
+.user_checkbox, .app_list_c .app_checkbox{text-align:center;}
+tbody .user_name{width:154px;padding-left:20px}
+.user_name img{margin-right:8px;}
+thead .user_email{width:197px;padding-left:80px;text-align:left;}
+tbody .user_email{width:217px;padding-left:60px;}
+.user_regtime{width:251px;text-align:center;}
+.user_regip{width:209px;text-align:center;}
+tbody .user_edit{width:95px;text-align:center;}
+.user_list_c tbody{color:#4d4d4d;}
+tbody .user_checkbox{width:40px;}
+.user_list_c tfoot tr{border-top:1px dashed #dcdcdc;}
+.tfoot{padding-left:10px;}
+.tfoot label{margin:2px 0 0 10px;}
+.tfoot a{background:url(edit.png) no-repeat;width:46px;text-align:center;margin-left:10px;color:#393c45;line-height:23px;display:inline-block;}
+
+input{vertical-align:middle;}
+
+
+.pages{height:30px;padding-top:15px;font-family:"宋体",Arial,sans-serif,Helvetica,Tahoma;text-align:center;color:#4d4d4d;float:right;}
+.pages	a{padding:2px 7px;border:1px solid #c2d5e3;font-size:14px;line-height:16px;text-align:center;zoom:1;color:#4d4d4d}
+.pages	a:hover{border:1px solid #369;}
+.pages span.current{padding:2px 7px;font-size:14px;border:1px solid #c2d5e3;line-height:16px;background:#c2d5e3;zoom:1;}
+
+
+
+.os, .app_count, .app_list{margin-top:15px;}
+.os_c tr, .app_count_c tr{border-bottom:1px dashed #dcdcdc;line-height:31px;}
+.os_c table, .app_count_c table{margin-bottom:20px;}
+.os_c th{width:130px;text-align:right;padding-right:10px;}
+.os_c a, .app_count_c th{color:#267cc5;}
+.app_count_c th{width:84px;text-align:right;}
+
+.app_list .tle a{font-weight:700;margin-left:16px;color:#267CC5;text-decoration:underline;}
+.warn{margin-bottom:10px;line-height:20px;}
+.warn_icon{background:url(warn_icon.png) no-repeat;width:19px;height:19px;overflow:hidden;float:left;margin-right:10px;}
+.app_list_c td, .app_list_c th{text-align:left;}
+.app_checkbox{width:50px;}
+.app_id{width:55px;}
+.app_name{width:110px;}
+.app_url{width:720px;}
+.app_status{width:85px;}
+.app_list_c .opt tbody tr, .app_list_c .opt tfoot tr{border-top:1px dashed #dcdcdc;line-height:29px;}
+.app_list_c  tbody tr, .app_list_c tfoot tr{border-top:1px dashed #dcdcdc;line-height:29px;}
+.app_list_c #cp tbody tr, .app_list_c #cp tfoot tr{line-height:29px;}
+.app_list_c .sbmit{margin-top:10px;}
+tbody .app_id{color:#4d4d4d;}
+tbody .app_name, .app_url a , .app_more a, .user_edit a{color:#267CC5;}
+tbody .app_name, .user_name a, .user_name{font-weight:700;}
+tbody .app_status_success{color:#2a8800;}
+tbody .app_status_fail{color:#e10203;}
+
+.pages a{margin: 0px 2px;}
+.avatar img{width:25px;heigth:25px;border:1px solid silver; padding:2px;}
+
+.warp .rec{position:absolute;width:500px;height:200px;left:300px;top:200px;border:5px solid #0099CC;background-color:#FFFFFF;font-size:14px;display:none}
+.warp .rec .top{width:480px;float:left;margin:10px;}
+.warp .rec .lt{width:100px;float:left;margin:0px 10px;border:1px solid #ccc;padding:1px;}
+.warp .rec .rt{width:350px;float:left;margin:0px 10px;border:1px solid #ccc;padding:1px;height:120px;}
+.warp .rec .rt textarea{width:330px;height:110px;padding:5px;border:0px;font-size:12px; overflow:auto}
+.warp .rec .bottom{width:480px;float:left;height:25px;margin-top:5px;text-align:right;}
+.warp .rec .bottom input{background-color:#0099CC;padding:2px 10px;border:0px;color:#FFFFFF;font-weight:bold;}
+.warp .rec .lt .avatar{text-align:center;margin-top:10px;}
+.warp .rec .lt .avatar img{width:50px;height:50px;}
+.warp .rec .lt #rec_name{text-align:center;font-weight:bold;}

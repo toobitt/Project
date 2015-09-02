@@ -1,0 +1,8 @@
+#
+# robots.txt for LivMCP
+#
+#
+
+# exclude some access-controlled areas
+User-agent: *
+Disallow: /

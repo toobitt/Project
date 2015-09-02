@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="yes" name="apple-touch-fullscreen" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />  
+<link rel="apple-touch-icon-precomposed" href="" />
+<link href="./css/bae.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="./css/common.css" type="text/css" />
+<link rel="stylesheet" href="./css/bus.css" type="text/css" />
+<script type="text/javascript" src="./js/jquery.js"></script>
+<script type="text/javascript" src="./js/bae_progressbar.js"></script>
+<script type="text/javascript" src="./js/bae_header.js"></script>
+<script type="application/javascript" src="./js/iscroll.js"></script>
+<script type="text/javascript" src="./js/hg_scroll.js"></script>
+<script type="text/javascript" src="./js/jquery.tmpl.min.js"></script>
+<title>公交</title>
+</head>
+<body>
+	<div data-role="bae_header" data-event="javascript:history.go(-1);">地图选位置</div>
+	<div class="position-map-list">
+		<div class="mask">
+			<div class="common-input-box">
+				<div class="input-item m2o-flex m2o-flex-center">
+					<span class="icon icon-search"></span>
+					<input class="input m2o-flex-one" placeholder="无锡广电" value=""/>
+					<span class="handle-btn clear"></span>
+					<span class="search-btn">搜索</span>
+				</div>
+			</div>
+		</div>
+		<div id="wrapper" class="wrapper">
+			<div class="scroll">
+			
+			</div>
+		</div>
+		<a class="bus-map-icon map"></a>
+	</div>
+</body>
+<script type="text/javascript" src="./js/widget_pc_debug_1.0.0.js"></script>
+<script type="text/javascript">
+$(function(){
+	$.getJSON('./json/route.php?a=pos',function(json){
+		$('#pos-item-tpl').tmpl(json).appendTo('.scroll');
+		$.hg_scroll();
+	});
+});
+</script>
+<script type="text/x-jquery-tmpl" id="pos-item-tpl">
+<div class="list-item m2o-flex">
+	<div class="station-info m2o-flex-one">
+		<p class="name">${name}</p>
+		<p class="detail m2o-overflow">${detail}</p>
+	</div>
+	<a class="more-btn right-arrow"></a>
+</div>
+</script>
+</html>

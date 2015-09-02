@@ -1,0 +1,70 @@
+{
+    "status": 1,
+    "msg": "",
+    "data": {
+        "navi": [
+            {
+                "name": "e线精品",
+                "gid": "5",
+                "image": "www.111/1.jpg"
+            },
+            {
+                "name": "美食",
+                "gid": "5",
+                "image": "www.111/1.jpg"
+            },
+            {
+                "name": "休闲娱乐",
+                "gid": "5",
+                "image": "www.111/1.jpg"
+            },
+            {
+                "name": "生活服务",
+                "gid": "5",
+                "image": "www.111/1.jpg"
+            },
+            {
+                "name": "酒店",
+                "gid": "5",
+                "image": "www.111/1.jpg"
+            },
+            {
+                "name": "丽人",
+                "gid": "5",
+                "image": "www.111/1.jpg"
+            },
+            {
+                "name": "购物",
+                "gid": "5",
+                "image": "www.111/1.jpg"
+            },
+            {
+                "name": "e线大礼包",
+                "gid": "5",
+                "image": "www.111/1.jpg"
+            }
+        ],
+        "point": [
+            {
+                "name": "来领钱",
+                "gid": "5",
+                "image": "www.111/1.jpg"
+            },
+            {
+                "name": "来领钱",
+                "gid": "5",
+                "image": "www.111/1.jpg"
+            },
+            {
+                "name": "来领钱",
+                "gid": "5",
+                "image": "www.111/1.jpg"
+            },
+            {
+                "name": "来领钱",
+                "gid": "5",
+                "image": "www.111/1.jpg"
+            }
+        ]
+    }
+}

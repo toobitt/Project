@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>{liv_page_title}</title>
+<link rel="stylesheet" href="./css/framework7.custom.min.css">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/greeting.css">
+</head>
+<body>
+<div class="view view-main">
+	<div class="pages navbar-through">
+		<div class="page">
+			<div class="page-content aspect-greeting">
+				<div class="content-block"><span class="liv_title">liv_标题</span></div>
+				<div class="content-block">
+					<div class="img-box">
+						<span class="liv_indexpic image_w400">liv_索引图</span>
+					</div>
+				</div>
+				<div class="content-block">
+					<p><span class="liv_brief">liv_描述</span></p>
+				</div>
+				<div class="content-block-title content-label"><em class="title" data-letter="图片展示">图片展示</em></div>
+				<div class="content-block greet-list">
+				<form class="list-block" id="greeting-form" action="#url#" method="post">
+					<ul class="clear">
+						<span class="liv_forms">liv_表单</span>
+					</ul>
+					<div class="content-button">
+						<input type="hidden" name="id" value="#id#" />
+						<input type="hidden" name="a" value="create_greet" />
+						<input type="hidden" name="repeat_feed" value="1"/>
+						<input type="hidden" name="filturl" value="#filturl#"/>
+						<a href="#" class="button button-primary form-to-json"><span class="liv_submit_text">liv_提交按钮</span></a>
+						<!-- <a href="#" class="button button-cancel close-popup">取消</a> -->
+					</div>
+				</form>
+				</div>
+				<div class="content-block-title">活动细则：</div>
+				<div class="content-block">
+					<p><span class="liv_more_info">liv_更多信息</span></p>
+					<p>活动时间：<span class="liv_start_time">liv_开始时间</span>-<span class="liv_end_time">liv_结束时间</span><p>
+					<p>参与人群：智慧盐城用户</p>
+				</div>
+				<div class="content-block greeting-slyder">
+					<a class="item-link" href="#">
+						<div class="img-box">
+							<img src="./images/slyder.jpg">
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>	
+	</div>
+</div>
+<script type="text/javascript" src="./js/module/head.min.js"></script>
+<script type="text/javascript">
+	head.js(
+		{zepto : "./js/module/zepto.min.js"},
+		{toast : './js/module/toast.js'},
+		{viewPC : './js/module/viewPC.js'},
+		{print_r : './js/module/print.js'},
+		{h5app : './js/module/h5app.js'}
+	);
+	head.ready(["zepto", "h5app"], function(){
+		head.js('./js/greeting_form.js');
+	});
+</script>
+</body>
+</html>

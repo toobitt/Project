@@ -1,0 +1,12 @@
+
+.common-list-item{width:80px;}
+.common-list-biaoti .common-list-item{width:auto;}
+.paixu{width:20px;}
+.thumb{width:60px;}
+.thumb a{background: url("{$RESOURCE_URL}/load.gif") no-repeat scroll left top #FFFFFF;display:block;width:40px;height: 30px;position: relative;}
+.sort{width:100px;}
+.sort span{width:90px;display:inline-block;}
+.pubtime span{font-size:10px;}
+.duration{width:60px;}
+.movie-time{color: #888888;font-size: 10px;}
+		

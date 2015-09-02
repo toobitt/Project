@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="yes" name="apple-touch-fullscreen" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<link rel="apple-touch-icon-precomposed" href="" />
+<link href="./css/bae.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="./css/common.css" type="text/css" />
+<link rel="stylesheet" href="./css/bus.css" type="text/css" />
+<script type="text/javascript" src="./js/jquery.js"></script>
+<script type="text/javascript" src="./js/bae_progressbar.js"></script>
+<script type="text/javascript" src="./js/bae_header.js"></script>
+<script type="text/javascript" src="./js/bae_collapse.js"></script>
+<script type="application/javascript" src="./js/iscroll.js"></script>
+<script type="text/javascript" src="./js/hg_scroll.js"></script>
+<title>公交</title>
+<style>
+.search-area{position:relative;}
+.change-btn{position: absolute;width: 22px;height: 22px;background-color: #fff;top:40px;left:10px;}
+</style>
+</head>
+<body>
+	<div data-role="bae_header" data-event="javascript:history.go(-1);">换乘方案</div>
+	<div class="transfer-list-wrap">
+		<div class="trandfer-name">
+			<a class="icon"></a>
+			<span>无锡机场-无锡皮革城</span>
+		</div>
+		<div class="wrapper" id="wrapper">
+			<div class="scroll">
+			    <div data-role="bae-collapse" class="bae-collapse">
+					<div data-role="bae-collapse-head" class="head-background-border m2o-flex">
+						<span class="index">方案1</span>
+						<span class="info m2o-flex-one">共19站 换乘0次</span>
+						<span class="arrow"></span>
+					</div>
+					<div data-role="bae-collapse-body" data-display="true" class="body-border-fontsize">
+						<ul class="transfer-list">
+							<li class="m2o-flex ">
+								<a class="icon walk"></a>
+								<p class="step m2o-flex-one">步行，到达<span class="blue">二院</span>站</p>
+							</li>
+							<li class="m2o-flex">
+								<a class="icon bus"></a>
+								<p class="step m2o-flex-one">在<span class="blue">二院</span>站上车，乘坐<span class="blue">723路</span></p>
+							</li>
+							<li class="m2o-flex">
+								<a class="icon walk"></a>
+								<p class="step m2o-flex-one">在<span class="blue">皮革城</span>下车在<span class="blue">皮革城</span>下车在<span class="blue">皮革城</span>下车</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div data-role="bae-collapse" class="bae-collapse">
+					<div data-role="bae-collapse-head" class="head-background-border m2o-flex">
+						<span class="index">方案2</span>
+						<span class="info m2o-flex-one">共19站 换乘0次</span>
+						<span class="arrow"></span>
+					</div>
+					<div data-role="bae-collapse-body" class="body-border-fontsize">
+						<ul class="transfer-list">
+							<li class="m2o-flex ">
+								<a class="icon walk"></a>
+								<p class="step m2o-flex-one">步行，到达<span class="blue">二院</span>站</p>
+							</li>
+							<li class="m2o-flex">
+								<a class="icon bus"></a>
+								<p class="step m2o-flex-one">在<span class="blue">二院</span>站上车，乘坐<span class="blue">723路</span></p>
+							</li>
+							<li class="m2o-flex">
+								<a class="icon walk"></a>
+								<p class="step m2o-flex-one">在<span class="blue">皮革城</span>下车在<span class="blue">皮革城</span>下车在<span class="blue">皮革城</span>下车</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+$(function(){
+	$.hg_scroll();
+	$('.bae-collapse').on('click',function(){
+		$.myScroll.refresh();
+	});
+});
+</script>
+</html>

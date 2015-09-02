@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>#page_title#</title>
+<link rel="stylesheet" href="./css/framework7.custom.min.css">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/greeting.css">
+</head>
+<body>
+<div class="view view-main">
+	<!-- <div class="navbar">
+		<div class="navbar-inner">
+			<div class="left">
+				<a href="javascript:history.back()" class="back link">
+					<i class="icon icon-back"></i>
+				</a>
+			</div>
+			<div class="center sliding">#title#</div>
+			<div class="right">
+			 <a href="#" class="link">
+			 	<i class="icon icon-share"></i>
+			 </a>
+			</div>
+		</div>
+	</div> -->
+	<div class="pages toolbar-through">
+		<div class="page">
+			<div class="page-content guide-greeting">
+				<div class="content-block-title content-head m2o-flex m2o-flex-center">
+					<h2 class="title"><span class="appname">智慧盐城</span><span class="apptitle">#parent_name#</span></h2>
+					<p class="supple">·电子明信片互动传播活动</p>
+				</div>
+				<div class="content-block-title">
+					<span class="title-icon share-icon">互动分享</span>
+					<p class="content-label">互动分享</p>
+				</div>
+				<div class="content-block textcenter content-brief">
+					<div class="content-inner">#brief#</div>
+				</div>
+				
+				<div class="content-block-title content-letter">
+					<span class="title-icon letter-icon">寄给你</span>
+				</div>
+				<div class="content-block greeting-list" data-count="5">
+					@content@
+				</div>
+				<div class="content-block-title content-more">
+					<p class="content-label">点击更多 带你去一个叫盐城的地方</p>
+					<span class="title-icon symbol-icon">点击更多</span>
+				</div>
+				<div class="content-block">
+					<div class="app-icon">智慧盐城</div>
+					<div class="share-app" data-operation="sharePlatsAction" data-param='{"content_url":"#url#?share=1", "content":"#title#", "pic":"#indexpic#"}'>活动分享</div>
+				</div>
+			</div>	
+		</div>	
+	</div>
+</div>
+<script type="text/javascript" src="./js/module/head.min.js"></script>
+<script type="text/javascript">
+	head.js(
+		{zepto : "./js/module/zepto.min.js"},
+		{toast : './js/module/toast.js'},
+		{h5app : './js/module/h5app.js'},
+		{spinner : './js/spinner.js'},
+		{viewPC : './js/module/viewPC.js'},
+		{print : './js/module/print.js'},
+		{lazyload : './js/module/lazyload.js'}
+	);
+	head.ready(["zepto", "h5app"], function(){
+		head.js('./js/greeting_guide.js');
+		head.js('./js/greeting_list.js');
+	});
+</script>
+</body>
+</html>

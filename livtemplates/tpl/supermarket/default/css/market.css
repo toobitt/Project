@@ -1,0 +1,49 @@
+/*列表页*/
+.market-list{margin:9px 14px; padding-bottom: 10px; min-height:520px;}
+.market-list li{float:left; position:relative; width:273px; height:205px; overflow:hidden; border-radius:5px; margin:10px;}/*
+.market-list li.selected, .market-list li:not(:first-child):hover{border:1px solid #f57eb4; box-shadow: 0 0  0 1px #f57eb4 inset;}*/
+.market-name{height:48px; line-height:48px; font-size:24px; background-color:#f47eb4; border-top-left-radius:5px; border-top-right-radius:5px;}
+.market-name a{display:block; max-width: 250px; color:#fff; font-family:"冬青黑体"; font-size:24px; text-indent:15px;
+overflow: hidden; text-overflow: ellipsis; white-space: nowrap; vertical-align: middle;}
+.market-head{width:95%; border:none; background-color:transparent; position:absolute; top:1px; left:1px; height:40px; font-size:24px; color: #fff; text-indent:12px; display: none;}
+.market-head:hover, .market-head:focus{box-shadow: none; border:none; color:#fff!important;}
+.market-content{border:1px solid #e1e1e1; border-top:2px solid #f57eb4; padding:15px;  border-bottom-left-radius:5px; border-bottom-right-radius:5px;}
+.market-list li.selected .market-content, .market-list li:not(:first-child):hover .market-content{padding-top:16px; border:1px solid #f57eb4;  box-shadow: 0 0  0 1px #f57eb4 inset;}
+.market-img{width:55px; text-align:center;}
+.market-img img{width:55px; height:55px; display: block;}
+.market-img span{display:block; text-align: center; line-height: 24px; margin-top:5px; cursor:pointer;}
+.cover-img{position:absolute; top:65px; left:16px; width:55px; height:55px; background-color:transparent;}
+.market-profile{margin-left:15px;}
+.market-intro{border-bottom: 1px dotted #e1e1e1; line-height: 25px; font-size:14px; margin-top:4px; width:173px;}
+.market-intro:first-child{margin-top:0;}
+.market-intro label{color:#9f9f9f; padding-left:5px;}
+.market-intro span{}
+.market-time {margin-top:19px;}
+.market-time span{color:#999; padding-right:5px;}
+.market-time em{ width:25px; height:25px; position:absolute; display:none; cursor:pointer; bottom:14px;}
+.del{background:url({$RESOURCE_URL}market/del.png) no-repeat scroll center; right:12px; }
+.edit{background:url({$RESOURCE_URL}market/edit.png) no-repeat scroll center; right:38px;}
+.save, .mkt-save{position:absolute; top:12px; right:10px; display:none;}
+.market-list li:hover .del, .market-list li:hover .edit{display:block;}
+.market-list .market-add{border:1px solid #e1e1e1;height:203px;}
+.market-add .market-name{background-color:#f0f0f0; text-align:center; color:#ccc;}
+.market-default{line-height: 204px; height:154px; background:url({$RESOURCE_URL}market/default-pic.png) no-repeat scroll center 25px; font-size:22px; color:#ddd; text-align:center;}
+.market-default img{position:absolute; left:0; bottom: 0;}
+.market-add .market-head{text-align:center; background-color:#f0f0f0; display:block; color:#333!important;}
+.market-add .market-head:focus{color:#333!important;}
+.m2o-bottom{padding:0;}
+.market-operate{width:300px; line-height:43px; padding-left:15px;}
+.market-operate input{height:13px; }
+.market-operate a{cursor: pointer; margin:0 5px; text-decoration:underline; line-height:28px;}
+
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2) {
+
+.del{background-image:url({$RESOURCE_URL}market/del-2x.png); background-size:18px 18px;} 
+.market-default{background-image:url({$RESOURCE_URL}market/default-pic-2x.png); background-size:92px 55px;}
+.edit{background-image:url({$RESOURCE_URL}market/edit-2x.png); background-size:24px 24px;}
+}

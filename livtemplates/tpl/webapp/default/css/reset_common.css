@@ -1,0 +1,65 @@
+/* ---------------------- 字体 --------------- */
+.font-sm{font-size:12px;}
+
+.font-lh2{line-height:2;}
+.font-lh16{line-height:1.6;}
+/* ---------------------- 间距 --------------- */
+.mt10{margin-top:10px!important;}
+.mr10{margin-right:10px!important;}
+.mb10{margin-bottom:10px!important;}
+.ml10{margin-left:10px!important;}
+.mt30{margin-top:30px!important;}
+.pd10{padding:10px;}
+
+/* ---------------------- 浮动 --------------- */
+.l{float:left;}
+.r{float:right;}
+
+/* ---------------------- 颜色 --------------- */
+.cl-blk{color:#333;}
+.cl-wht{color:#fff;}
+.cl-gray{color:#bbb;}
+.cl-lbl{color:#0095CD;}
+.cl-ryan{color:#00b099}
+
+/* ---------------------- 背景色 --------------- */
+.bgc-ryan{background-color:#00b099}
+.bgc-blk{background-color:#333}
+.bgc-gray{background-color:#666;}
+
+/* ---------------------- 定位 --------------- */
+.pos-rel{position:relative;}
+.pos-abs{position:absolute;}
+
+/* ---------------------- link --------------- */
+a.no-under{
+	text-decoration: none;
+}
+
+/* ---------------------- 底边 --------------- */
+.bb-dot{border-bottom:1px dotted #ccc;}
+
+/* ---------------------- 尾部 --------------- 
+.footer{
+	margin-top:30px;
+	border-top:1px solid #c5c5c5;
+	border-bottom:1px solid #c5c5c5;
+	height:40px;
+	margin-bottom:7px;
+}
+.footer ul, .footer p, .footer li{height:100%; float:left; line-height:40px; font-size:12px;}
+.footer ul{width:318px; }
+.footer li{width:50px; margin-right:12px; float:left;}
+.footer li a{color:#787878;}
+.footer p{width:429px; color:#999;}*/
+/* ---------------------- CSS-HACK --------------- */
+/*.clearfix:after {
+	clear:both;
+	content:".";
+	display:block;
+	height:0;
+	visibility:hidden;
+}*/
+.blankfix{clear:both; display:block;height:0; overflow:hidden;font-size:0;}
+.blankfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.blankfix{zoom:1;}

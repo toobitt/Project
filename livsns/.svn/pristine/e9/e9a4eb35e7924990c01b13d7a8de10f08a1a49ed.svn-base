@@ -1,0 +1,3 @@
+{"root":{"title":"新闻综合频道","list":[{"name":"新闻纵贯线","time":"17:00","url":"","display":"0"},{"name":"安全365","time":"17:30","url":"","display":"0"},
+{"name":"广告","time":"18:30","url":"","display":"0"},{"name":"小夏说事","time":"18:10","url":"","display":"0"},{"name":"新闻60分","time":"18:30","url":"","display":"1"},
+{"name":"苏州气象","time":"19:00","url":"","display":"1"},{"name":"苏州新闻","time":"19:15","url":"","display":"1"},{"name":"生态苏州","time":"20:00","url":"","display":"1"}]}}

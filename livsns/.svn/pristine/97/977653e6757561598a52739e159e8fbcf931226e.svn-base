@@ -1,0 +1,3 @@
+INSERT INTO `liv_webvod_conf` (`id`, `source_modid`, `url`, `func`, `import_time`, `gap`) VALUES
+(1, '010013', 'http://eai.cutv.com/api/ProgramExportServiceNew.php', 'GetProgram', 1362534965, 0),
+(2, '010013', 'http://eai.cutv.com/api/ProgramExportServiceNew.php', 'GetCategory', 1362460369, 0);;

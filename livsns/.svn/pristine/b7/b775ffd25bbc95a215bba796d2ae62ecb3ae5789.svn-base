@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(reset.css);
+@import url(comm.css);
+
+body{font-size:12px; line-height:24px;color:#383b42;font-family:"simsun",arial,sans-serif;min-width:960px;}
+a{text-decoration:none;outline:none;}
+.warp{width:630px;margin:0 auto;padding:80px 0 110px;}
+.release{float:left;width:253px;padding:5px 0 0 22px;}
+.note{padding:15px 10px 46px;background:url(note.png) no-repeat right bottom;}
+
+.main{float:right;width:294px;margin-right:35px;display:inline;background:url(login.png) no-repeat left bottom;padding-bottom:3px;}
+.login h3{background:url(loginh.png) no-repeat left bottom;height:43px;}
+.login  h3 a{width:147px;color:#504c4b;font-size:12px;text-align:center;font-weight:700;line-height:38px;padding-top:5px;float:left;text-align:center;}
+.login h3 a.cur{background:url(loginhcur.png) no-repeat;}
+.form{border-left:1px solid #79bcf1;border-right:1px solid #79bcf1;padding:20px 0 9px 0;color:#514d4c;font-size:14px;}
+.form p{height:40px;}
+.form label{float:left;width:80px;text-align:right;}
+.inp input{padding:0;border:1px solid #c2c2c2;height:22px;width:180px;margin:0 5px;float:left;}
+.form .admincode{width:90px;}
+.form img{float:left;margin:2px 0 0 7px;}
+.smit input{height:30px;width:94px;margin-left:84px;line-height:24px;}
+
+.copyright{width:100%;background:#ededed;color:#828186;padding:5px 0;text-align:center;font-family:Arial, Helvetica, sans-serif;position:fixed;bottom:10px;}
+
+

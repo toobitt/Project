@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script>
+        (function(){
+            var hash = location.hash;
+            if(!hash){
+                hash = 'show';
+            }else{
+                hash = hash.substr(1);
+            }
+            hash = hash.split('&');
+            window.hash = hash[0];
+            var click = (hash[1] == 'click');
+            window.videoUrl = click ? hash[2] : hash[1];
+            document.write('<script src="http://mcp.dev.hogesoft.com:233/res/m2o.js?' + window.hash + ((window.hash == 'show' && click) ? '&click' : '') + '"></' + 'script>');
+        })();
+    </script>
+</head>
+<style>
+.upload-box{width:464px; border:1px solid #d6d6d6; border-radius:8px; box-shadow:0 1px 1px #b2b1af; float:left; margin:10px;}
+.upload-status{width:100%; text-align:center; padding:100px 0 27px;background-repeat:no-repeat;background-position:center 30px;}
+.upload-status .m2o-upload-status{font-size:22px; line-height:40px; margin-top:11px;}
+.upload-status .progressWrapper{}
+.upload-show{padding:101px 0; background:url(images/upload-show.png) no-repeat center;}
+.upload-doing{background-image:url(images/loading2.gif); background-size:64px 64px;}
+.upload-error{background-image:url(images/upload-error.png);}
+.upload-success{background-image:url(images/upload-success.png);}
+.upload-opera{position:relative;height:85px; text-align:center;  background-color:#54d4b3; border-bottom-left-radius:6px; border-bottom-right-radius:6px;}
+.upload-opera .upload-btn{display:inline-block;line-height:51px;width:219px; height:51px; font-size:22px; cursor:pointer; margin-top:17px; color:#fff; background:url(images/upload-btn.png) no-repeat center center #54d4b3; padding:0;}
+.m2o-video-upload{position:absolute;left:122px;top:17px;}
+
+.progressWrapper{padding:0 20px;line-height:24px;  font-size:14px;overflow:hidden;}
+.progressContainer{margin:5px;padding:4px;1border:solid 1px #E8E8E8;1background-color:#F7F7F7;overflow:hidden;}
+.message{margin:1em 0;padding:10px 20px;border:solid 1px #FFDD99;background-color:#FFFFCC;overflow:hidden;}
+/*.red{border:solid 1px #B50000;background-color:#FFEBEB;}
+.green{border:solid 1px #DDF0DD;background-color:#EBFFEB;}
+.blue{border:solid 1px #CEE2F2;background-color:#F0F5FF;}*/
+.progressName{float:left;font-size:14px;color:#a1a1a1;width:323px;height:24px;text-align:left;white-space:nowrap;overflow:hidden;}
+.progressBarInProgress,.progressBarComplete,.progressBarError{font-size:0;width:0%;height:2px;background-color:#54d4b3;margin-top:2px;}
+.progressBarComplete{width:100%;background-color:green;visibility:hidden;}
+.progressBarError{width:100%;background-color:red;visibility:hidden;}
+.progressBarStatus{margin-top:2px;width:337px;font-size:12px;font-family:Arial;text-align:left;white-space:nowrap;}
+a.progressCancel{font-size:0;display:block;height:14px;width:14px;background-image:url(../images/cancelbutton.gif);background-repeat:no-repeat;background-position:-14px 0px;float:right;}
+a.progressCancel:hover{background-position:0px 0px;}
+</style>
+<body>
+<div class="show item">
+    <p>测试数据测试数据测试数据测试数据测试数据测试数据</p>
+    <p>测试数据测试数据测试数据测试数据测试数据测试数据</p>
+    <p>测试数据测试数据测试数据测试数据测试数据测试数据</p>
+    <script>
+    document.write('<img src="http://mcp.dev.hogesoft.com/livtemplates/tpl/lib/images/menu2013/logo-2x.png?url='+ window.videoUrl +'"/>');
+    </script>
+    <br/>
+    测试数据测试数据测试数据测试数据测试数据测试数据<br/>
+    测试数据测试数据测试数据测试数据测试数据测试数据<br/>
+    测试数据测试数据测试数据测试数据测试数据测试数据<br/>
+    测试数据测试数据测试数据测试数据测试数据测试数据<br/>
+</div>
+<form class="upload item" style="margin-top:100px;">
+    <div class="upload-box">
+		<div class="upload-status upload-show">
+		</div>
+		<div class="upload-opera">
+			<span class="upload-btn">上传视频</span>
+			<span class="m2o-video-upload"></span>
+		</div>
+	</div>
+	<div id="test" style="display:none;">测试</div>
+</form>
+
+<script>
+    m2o.wrap('.item').each(function(item){
+        item.style.display = 'none';
+    });
+    m2o.wrap('.' + hash).each(function(ele){
+        ele.style.display = 'block';
+    });
+</script>
+</body>
+</html>

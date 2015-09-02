@@ -1,0 +1,189 @@
+/*采集左侧*/
+.aside-box {
+  width: 337px;
+  border-right: 1px solid #d8d8d8;
+}
+.aside-box .m2o-each-list {
+  margin: 0;
+}
+.aside-box .m2o-title {
+  padding: 0;
+}
+.aside-box .m2o-each {
+  padding: 0;
+  border-bottom-color: #d8d8d8;
+  cursor: pointer;
+}
+.aside-box .m2o-each:hover,
+.aside-box .m2o-each.current {
+  background-color: #70a7e7;
+  color: #ffffff;
+}
+.aside-box .m2o-each:hover .m2o-user a,
+.aside-box .m2o-each.current .m2o-user a {
+  color: #ffffff;
+}
+.aside-box .m2o-each .m2o-item {
+  font-size: 14px;
+}
+.aside-box .m2o-time {
+  width: 105px;
+}
+.m2o-avatar {
+  width: 44px;
+  text-align: center;
+}
+.m2o-avatar img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.m2o-user a {
+  font-size: 14px;
+}
+.m2o-num {
+  width: 60px;
+}
+.m2o-gather {
+  width: 110px;
+  color: #888;
+}
+.m2o-gather span {
+  margin-right: 3px;
+}
+.m2o-list {
+  position: relative;
+}
+.m2o-pre-gather {
+  text-decoration: underline;
+  color: #17b202;
+}
+.m2o-sort {
+  color: #8fa8c6;
+}
+.m2o-title-overflow {
+  max-width: 350px;
+}
+.m2o-all {
+  padding-left: 15px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.gather-tip {
+  background-color: #fff7ec;
+  color: #e5ad40;
+  padding: 10px 20px 5px;
+  border-bottom: 1px solid #c8d4e0;
+}
+.gather-tip ul {
+  margin-top: 5px;
+}
+.gather-tip li {
+  float: left;
+  line-height: 30px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.date-box {
+  width: 157px;
+}
+.date-box .m2o-item {
+  text-align: center;
+}
+.date-box span {
+  color: #999999;
+}
+.date-box .m2o-each:hover span,
+.date-box .m2o-each.current span {
+  color: #ffffff;
+}
+/*采集表单页*/
+.gather-box {
+  width: 770px;
+  margin: 0 auto;
+}
+.gather-box > div,
+.gather-box ul:first-child {
+  margin: 20px 0;
+}
+.gather-box li {
+  float: left;
+  margin-right: 30px;
+}
+.gather-box label {
+  display: inline-block;
+  vertical-align: middle;
+}
+.gather-box .title {
+  padding: 10px 0 0;
+}
+.gather-box .title input[type="text"] {
+  font-size: 30px;
+  height: 40px;
+  border: none;
+  border-bottom: 2px solid #fff;
+  width: 100%;
+  box-shadow: none;
+}
+.gather-box .title input[type="text"]:focus {
+  border: none;
+  border-bottom: 2px solid #000;
+}
+.gather-box .sort {
+  display: inline-block;
+  border: 1px solid #cccccc;
+  vertical-align: middle;
+  margin-top: 2px;
+}
+.gather-box .sort .input_left,
+.gather-box .sort .input_right {
+  display: none;
+}
+.gather-box .sort .input_middle {
+  border: none;
+}
+.gather-box .sort label {
+  color: #000;
+  font-size: 14px;
+}
+.gather-box #item_shows {
+  top: 24px;
+  width: 115px;
+}
+.gather-box #item_shows li {
+  line-height: 25px;
+}
+.gather-box #item_shows li a {
+  font-size: 14px;
+}
+.gather-box .info {
+  font-size: 14px;
+  color: #757575;
+}
+.gather-box .content {
+  height: 496px;
+  padding: 20px;
+  line-height: 22px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 1px solid #cccccc;
+  font-size: 14px;
+  color: #282828;
+}
+.gather-box .content table {
+  margin: 0 auto;
+}
+.gather-box input[type="text"] {
+  width: 170px;
+  font-size: 14px;
+  border: 1px solid #fff;
+}
+.gather-box input[type="text"]:focus {
+  border: 1px solid #77b7f9;
+}
+.gather-button {
+  padding: 30px 0;
+  text-align: center;
+  border-top: 1px dotted #d8d8d8;
+}

@@ -1,0 +1,141 @@
+/*左侧杂志信息*/
+.m2o-main{width:100%;}
+.m2o-l{width:230px; padding:10px; border-right: 1px solid #ccc;}
+/*.m2o-m{padding:1px;}*/
+.m2o-tent{padding:7px 0 7px 10px; color:#d7d7d7;}
+.m2o-tent p{float:left; width:118px; height:154px; background-color: #f0f0f0; border:1px solid #cfcfcf;
+     text-align:center; color:#999; font-size:16px; line-height: 154px; margin-right:20px;}
+.m2o-tent p img{width:100%; height:100%;}
+.m2o-tent label{width:52px; text-align:right; min-height:24px; line-height: 24px; margin-right:5px; display:inline-block;
+     vertical-align:top; color:#999999;}
+.m2o-tent span,.m2o-tent input{font-size:14px; color:#000; line-height: 26px;}
+.m2o-tent input{border:1px solid #d7d7d7; height:22px; margin:0 2px; text-indent: 6px;}
+.m2o-tent span img{width:120px; height:156px;}
+.m2o-tent .down_list{display: inline-block; height:25px; border:1px solid #ccc; width:147px!important;}
+.down_list .input_left, .down_list .input_right{display:none;}
+.down_list .input_middle{border:none; height:25px;}
+.down_list label{color:#000; font-size:14px; width:120px; text-align:left;}
+.down_list ul{top:26px;}
+.down_list ul li{line-height:25px;}
+.down_list ul li a{font-size:14px;}
+.fenge-dotted{background:url({$RESOURCE_URL}dottedLine.png) repeat-x scroll center;}
+.text{width:100px;}
+.num{width:40px;}
+.m2o-tent em{margin-left:30px; font-style:normal; color:#999; display:inline-block; text-align:right; width:15px;}
+.m2o-btn{padding:15px 12px;}
+
+
+/*左侧杂志列表*/
+.mgz-box{width:175px; border-right:1px solid #ccc; max-height:700px; overflow:hidden; overflow-y:auto; }
+.mgz-box li{width:140px; height:212px;padding:10px; position:relative;}
+.mgz-box li.selected, .mgz-box li:hover{ background-color:#a5c73c; }
+.mgz-img{width:120px; height:156px; border:10px solid #fff; }
+.mgz-img img{width:100%; height:100%;}
+.mgz-box .mgz-img p{width:110px; height:22px; line-height: 22px; color:#fff; position:absolute; left:20px; top:152px;
+    background-color:#333;}
+.mgz-img em{width:22px; height:22px; background:url({$RESOURCE_URL}common/icon_info.png) no-repeat scroll center center #5f9be4;
+    position:absolute; right:20px; top:154px; display:none;}
+.mgz-box li.selected .mgz-img em, .mgz-box li:hover .mgz-img em{display:block;}
+.mgz-box li h6{margin-top:5px; padding-left:10px;}
+.mgz-box li p{margin-top:2px; padding-left:10px; color:#999;}
+.mgz-box li p span{margin-right:3px;}
+.mgz-box li.selected h6, .mgz-box li:hover h6{color:#fff; font-weight:normal; }
+.mgz-box li.selected p, .mgz-box li:hover p{color:#fff; }
+.mgz-box li .del{background: url({$RESOURCE_URL}icon/close.png) no-repeat scroll center center transparent;
+     position: absolute; right: 0; top: 0; width: 22px; height: 22px; display: none;}
+.mgz-box li.selected .del, .mgz-box li:hover .del{display:block;}
+
+
+/**/
+.magazine-profile{height:85px; border-bottom: 1px solid #ccc;}
+.magazine-profile h2{width:300px; margin:20px 0 0 20px; height:50px; line-height: 65px;}
+.magazine-profile ul{margin-left:20px;}
+.magazine-profile li{float:left; height:24px; line-height: 24px; margin-right:18px;}
+.magazine-profile label{color:#999;}
+.magazine-profile span{font-weight:bold;}
+.magazine-menu{float:right; margin-top:-35px;}
+.magazine-menu a{margin-right:10px;}
+
+/*增加杂志弹框*/
+.pop-add-mag{position:absolute; left:50%; top:0; width:488px; margin-left:-254px; background-color:#6EA5E8; z-index: 999; padding:0 10px;
+     opacity:1; -webkit-transition: all .5s; -moz-transition: all .5s; transition: all .5s;}
+.pop-add-title{line-height: 45px; font-size:18px; color: #fff;}
+.pop-add-title p{width:200px; display: inline-block;}
+.pop-add-title p em{font-style:normal;}
+.pop-menu{float:right;}
+.pop-menu .pop-save-button{position:absolute; top:10px; right:41px;}
+.pop-menu .pop-close-button2{position: absolute; top:10px; right: 10px;}
+.pop-add-content{width:486px; background-color:#fff; padding:1px 1px 0;}
+.pop-content{margin:10px;}
+.m2o-text ul{width:395px; display: inline-block;}
+.m2o-text li{width:190px; float:left; margin:0px 4px 13px 0;}
+.pop-item input{width:213px;}
+.pop-item .down_list{width:215px!important;}
+.pop-item{padding:0 0 13px 10px;}
+.text-del{display:inline-block; width:20px; height:20px; background: url({$RESOURCE_URL}magazine/text-del.png) no-repeat scroll center; opacity: 0; 
+    position:relative; left:2px; top:4px; transition: opacity .3s ease-in; -webkit-transition: opacity .3s ease-in; -moz-transition: opacity .3s ease-in;}
+.pop-content .m2o-tent li:hover .text-del{opacity: 1;}
+
+.add-newmag{width:528px;}
+.add-newmag .pop-add-content{width:526px;}
+.add-newmag .pop-content{padding-bottom: 20px;}
+.pop-each{display:inline-block;}
+.pop-each select{margin-right:34px;}
+.pop-each input{width:93px;}
+.pop-each textarea{width:396px; height:52px; font-size:14px;}
+.pop-each .down_list{width:113px!important;}
+.pop-each .down_list label{width:85px;}
+.pop-title input{width:213px;}
+.pop-secondary label{width:106px; }
+.pop-secondary input{width:175px; }
+.pop-hide{opacity:0; top:-800px; }
+
+/*右侧列表*/
+.m2o-paixu a{background:url({$RESOURCE_URL}bg-all.png) no-repeat -43px -27px; width:14px; height:13px; float:left;}
+.m2o-classify{width:80px; color:#85accd;}
+.m2o-author{width:100px; color:#999;}
+.m2o-editor{width:70px; color:#999;}
+.m2o-time .name, .m2o-time .time{color:#999;}
+.list-config a{cursor: pointer; display: inline-block; line-height: 28px; margin: 2px 5px 0; text-decoration: underline;}
+.m2o-bottom{width:auto;}
+
+/*杂志列表页*/
+.magazine-list{padding:12px 28px; min-height: 540px;}
+.magazine-list li{float:left; width:150px; height:246px; margin:8px 15px; position:relative;}
+.magazine-list .mag-img{width:150px; height:195px;
+-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+.magazine-list .mag-img img{width:100%; height:100%; position:relative; z-index: -1;}
+.magazine-list li.selected .mag-img, .magazine-list li:not(:last-child):hover .mag-img{ box-shadow: 0 0 0 2px #000 inset;}
+.magazine-list li input{display:none;}
+.magazine-each h4{height:25px; line-height: 25px; margin-top:6px;}	
+.magazine-each p{color:#999; margin-top:2px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.magazine-each p span{margin-right:5px;}
+.magazine-list li .del{background: url({$RESOURCE_URL}icon/close.png) no-repeat scroll center center transparent;
+     position: absolute; right: -10px; top: -10px; width: 22px; height: 22px; display: none;}
+.magazine-list li:hover .del{display:block;}
+/*.magazine-each em{display: block; width:43px; height:22px; line-height: 22px; background-color: #fff;
+     position:absolute; right:2px; top:171px; font-style:normal; text-align:center; z-index: 99;}*/
+.magazine-add .mag-img{background: url({$RESOURCE_URL}magazine/magimg-add.png) no-repeat scroll center 62px #f0f0f0;
+     font-size:18px; color:#999; border:1px solid #cfcfcf; text-align:center; line-height: 240px; cursor: pointer;}
+
+/*操作*/
+.m2o-bottom{border-top:1px solid #c8d4e0; background:#f9f9f9;}
+.issue-operate{width:300px; line-height:43px; padding-left:15px;}
+.issue-operate input{height:13px; }
+.issue-operate a{cursor: pointer; margin:0 5px; text-decoration:underline; line-height:28px;}
+
+
+.record-set{padding:8px 10px 18px;}
+.record-set li{margin:12px;}
+.magazine-list .mag-img p{width: 145px; height: 24px; line-height: 24px; color: #fff; position: absolute; left: 0; top: 169px;
+     z-index:998; background-color: #333; padding-left:5px;}   
+.magazine-list .mag-img p em{font-style:normal; cursor:pointer; display: block; width:43px; height:22px; line-height: 22px; background-color: #fff;
+   text-align:center; position:absolute; left:2px; top:0;}
+.magazine-list .mag-img .edit{width: 22px; height: 22px; background: url(../../../.././../livtemplates/tpl/lib/images/common/icon_info.png) no-repeat scroll center center;
+   position: absolute; right: 2px; top: 171px; z-index:999;}
+.magazine-list li:hover .mag-img .edit{background-color:#a5c73c;}
+.magazine-list .mag-img a{position:absolute; top:0; left:0; width:150px; height:195px; z-index: 99;}
+.record-bottom{background-color: #f9f9f9; border-top: 1px solid #c8d4e2; min-height: 43px;}
+.record-operate{width: 300px; float: left; line-height: 43px; padding-left: 15px;}
+.record-operate input{height:13px;}
+.record-operate a{cursor: pointer; margin: 0 5px; text-decoration: underline; line-height: 28px;}

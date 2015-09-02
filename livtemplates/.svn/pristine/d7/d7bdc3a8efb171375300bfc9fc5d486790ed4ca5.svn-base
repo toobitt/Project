@@ -1,0 +1,7 @@
+.backup_img{width: 48px;height: 48px;margin: 1px;cursor: pointer;}
+.type_content_ul {margin-left: 15px;height: 200px;}
+.type_content_ul li {margin: 4px 4px;border: 1px solid #CFD2D7;float: left;width: 50px;height: 50px;}
+.type_content_ul li .backupinfo {border: 1px solid gray;float: left;position: absolute;z-index: auto;width: 100px;height: 30px;display: none;background: white;}
+.type_content_ul li .backupinfo span {display: inline-block;overflow: hidden;white-space: nowrap;width: 100px;}
+.pageBox {margin-left: 150px;}
+.count {position: relative;left: 20px;top: 22px;}

@@ -1,0 +1,5 @@
+ALTER TABLE  `liv_program_record` ADD  `plan_id` INT( 10 ) NOT NULL DEFAULT  '0' COMMENT  '计划ID' AFTER  `program_id`
+ALTER TABLE  `liv_program_record` ADD  `is_edit` TINYINT( 2 ) NOT NULL DEFAULT  '0' COMMENT  '编辑次数' AFTER  `force_codec`
+
+ALTER TABLE  `liv_program_plan` ADD  `record_id` INT( 10 ) NOT NULL DEFAULT  '0' COMMENT  '录制计划ID' AFTER  `channel_id`
+ALTER TABLE  `liv_program` ADD  `record_id` INT( 10 ) NOT NULL DEFAULT  '0' COMMENT  '录制计划ID' AFTER  `channel_id`

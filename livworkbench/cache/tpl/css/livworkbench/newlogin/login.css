@@ -1,0 +1,46 @@
+body{font:12px tahoma,verdana,arial,sans-serif;background:url(../../../../.././../livtemplates/tpl/lib/images/newlogin/login_bg.png) no-repeat -30px 10px #fff; /*-webkit-transform-style:preserve-3d;-webkit-backface-visibility:hidden;*/}
+.login-wrap{position:absolute;left:50%;top:50%;width:716px;height:260px;min-width:716px;margin:-130px 0 0 -358px;z-index:1000;}
+.sys-intro{float:left;width:390px;height:260px;overflow:hidden;background:url(../../../../.././../livtemplates/tpl/lib/images/newlogin/logo.png) no-repeat;}
+.login-form{position:relative;float:right;width:262px;}
+.login-form ul li{position:relative;margin-bottom:30px;border-radius:3px;border:1px solid #d3d3d3;}
+.login-form ul li.no-border{border:0;}
+.info-icon{display:block;position:absolute;top:0;left:0;width:40px;height:40px;background-color:#d8d8d8;background-repeat:no-repeat;background-position:center;z-index:10000;}
+.user{background-image:url(../../../../.././../livtemplates/tpl/lib/images/newlogin/h_user.png);}
+.password{background-image:url(../../../../.././../livtemplates/tpl/lib/images/newlogin/h_password.png);}
+.code{background-image:url(../../../../.././../livtemplates/tpl/lib/images/newlogin/h_code.png);}
+/*.active .info-icon{background-color:#70a6e6;}*/
+.active .user{background-image:url(../../../../.././../livtemplates/tpl/lib/images/newlogin/active_h_user.png);}
+.active .password{background-image:url(../../../../.././../livtemplates/tpl/lib/images/newlogin/active_h_password.png);}
+.active .code{background-image:url(../../../../.././../livtemplates/tpl/lib/images/newlogin/active_h_code.png);}
+.info-item{width:210px;height:40px;padding-left:50px;font-size:14px;border:0;}
+.login-btn{display:block;width:104px;height:43px;border:0;background:url(../../../../.././../livtemplates/tpl/lib/images/newlogin/h_lobtn.png) #666 no-repeat center;border-radius:5px;cursor:pointer;}
+.login-btn:hover,.login-active{background-color:#70a6e6;}
+.login-footer{position:fixed;z-index:10;bottom:0;width:100%;min-width:716px;height:29px;padding-bottom:10px;line-height:24px;text-align:center;color:#888788;font-size:14px;}
+.footer-logo{display:inline-block;background:url(../../../../.././../livtemplates/tpl/lib/images/newlogin/foot_logo.png) no-repeat;width:180px;height:29px;margin:0;padding-left:54px;}
+.hoge-made{display:inline-block;width:75px;height:24px;padding-left:69px;background:url(../../../../.././../livtemplates/tpl/lib/images/newlogin/foot_name.png) no-repeat left center;text-align:left;}
+.warning{position:absolute;bottom:35px;left:120px;min-width:100px;height:30px;line-height:30px;color:red;}
+
+.m2o-logo, .hoge-logo, .license-logo{display:inline-block;position:relative;}
+.m2o-logo{top:6px;background:url(../../../../.././../livtemplates/tpl/lib/images/newlogin/foot_logo.png) no-repeat;width:53px;height:23px;margin-right:8px;}
+.hoge-logo{top:3px;background:url(../../../../.././../livtemplates/tpl/lib/images/newlogin/foot_name.png) no-repeat;width:67px;height:17px;margin:0 2px 0 15px;}
+.license-logo{width:15px;}
+
+.info-item:focus{outline:none;}
+.login-form ul li.focus{outline:-webkit-focus-ring-color auto 5px;outline-offset:-2px;}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2) {
+	 body{background-image:url(../../../../.././../livtemplates/tpl/lib/images/newlogin/login_bg-2x.png);background-size:1100px 1100px;}
+	 .sys-intro{background-image:url(../../../../.././../livtemplates/tpl/lib/images/newlogin/logo-2x.png);background-size:390px 188px;}
+     .user{background-image:url(../../../../.././../livtemplates/tpl/lib/images/newlogin/h_user-2x.png);background-size:21px 16px;}
+    .password{background-image:url(../../../../.././../livtemplates/tpl/lib/images/newlogin/h_password-2x.png);background-size:21px 16px;}
+    .code{background-image:url(../../../../.././../livtemplates/tpl/lib/images/newlogin/h_code-2x.png);background-size:21px 16px;}
+    .login-btn{background-image:url(../../../../.././../livtemplates/tpl/lib/images/newlogin/h_lobtn-2x.png);background-size:20px 15px;}
+    .footer-logo{background-image:url(../../../../.././../livtemplates/tpl/lib/images/newlogin/foot_logo-2x.png);background-size:53px 20px;}
+    .hoge-made{background-image:url(../../../../.././../livtemplates/tpl/lib/images/newlogin/foot_name-2x.png);background-size:67px 17px;}
+
+    .m2o-logo{background-image:url(../../../../.././../livtemplates/tpl/lib/images/newlogin/foot_logo-2x.png);background-size:53px 20px;}
+    .hoge-logo{background-image:url(../../../../.././../livtemplates/tpl/lib/images/newlogin/foot_name-2x.png);background-size:67px 17px;}
+}

@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="yes" name="apple-touch-fullscreen" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<link rel="apple-touch-icon-precomposed" href="" />
+<link rel="stylesheet" href="./css/common.css" type="text/css" />
+<script src="./js/zepto.min.js"></script>
+<script src="./js/gmu/gmu.js"></script>
+
+<title>无线城市</title>
+</head>
+<body class="theme-">
+<header class="m2o-header">
+	<div class="m2o-nav">
+				<aside class="m2o-nav-left">
+							<a class="m2o-nav-icon modules"  href=""></a>
+					</aside>
+						<h1 class="m2o-nav-title">无锡晚高峰</h1>
+	</div>
+</header>
+<link rel="stylesheet" href="./css/live.css" type="text/css" />
+<style>
+.main-wrap{padding:0 15px 15px 15px;}
+.detail-list .list-item,.detail-list .live-time{background:#fff;}
+.detail-list .list-item .duration{margin-right:10px;}
+.detail-list .live-time{width:auto;margin-left:13px;}
+.broadcast-play-box{bottom:0;}
+</style>
+<div class="main-wrap">
+	<div class="intro-wrap">
+					<div class="pic-intro-item m2o-flex m2o-flex-center">
+	<span class="pic">
+		<img src="http://instasrc.com/85x53"/>
+	</span>
+	<div class="intro m2o-flex-one">国内外重大新闻第一时间播报，环球热点新闻重点关注，生活提示、文娱信息无所不包</div>
+</div>			</div>
+	<ul class="list detail-list">
+			<li class="list-item m2o-flex m2o-flex-center">
+	<div class="live-time">
+		01-14	</div>
+	<div class="m2o-flex-one live-name m2o-overflow">
+		大城小事	</div>
+	<span class="duration">90:33</span>
+	<div class="live-flag"></div>
+</li>			<li class="list-item m2o-flex m2o-flex-center">
+	<div class="live-time">
+		01-13	</div>
+	<div class="m2o-flex-one live-name m2o-overflow">
+		阿福讲故事	</div>
+	<span class="duration">90:33</span>
+	<div class="live-flag"></div>
+</li>			<li class="list-item m2o-flex m2o-flex-center">
+	<div class="live-time">
+		01-12	</div>
+	<div class="m2o-flex-one live-name m2o-overflow">
+		观点制胜（重播）	</div>
+	<span class="duration">90:33</span>
+	<div class="live-flag"></div>
+</li>			<li class="list-item m2o-flex m2o-flex-center">
+	<div class="live-time">
+		01-11	</div>
+	<div class="m2o-flex-one live-name m2o-overflow">
+		娱乐风尚	</div>
+	<span class="duration">90:33</span>
+	<div class="live-flag"></div>
+</li>			<li class="list-item m2o-flex m2o-flex-center">
+	<div class="live-time">
+		01-10	</div>
+	<div class="m2o-flex-one live-name m2o-overflow">
+		开心剧场	</div>
+	<span class="duration">90:33</span>
+	<div class="live-flag"></div>
+</li>			<li class="list-item m2o-flex m2o-flex-center">
+	<div class="live-time">
+		01-09	</div>
+	<div class="m2o-flex-one live-name m2o-overflow">
+		精彩节目	</div>
+	<span class="duration">90:33</span>
+	<div class="live-flag"></div>
+</li>		</ul>
+</div>
+
+<div class="broadcast-play-wrap">
+	<div class="broadcast-play-box">
+		<p class="flag">正在播放：欢乐直通车</p>
+		<div class="broadcast-player">
+			<span class="btn pause"></span>
+		</div>
+	</div>
+</div></body>
+</html>

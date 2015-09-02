@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="yes" name="apple-touch-fullscreen" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<link rel="apple-touch-icon-precomposed" href="" />
+<link href="./css/bae.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="./css/common.css" type="text/css" />
+<link rel="stylesheet" href="./css/bus.css" type="text/css" />
+<script type="text/javascript" src="./js/jquery.js"></script>
+<script type="text/javascript" src="./js/bae_progressbar.js"></script>
+<script type="text/javascript" src="./js/bae_header.js"></script>
+<script type="application/javascript" src="./js/iscroll.js"></script>
+<script type="text/javascript" src="./js/hg_scroll.js"></script>
+<script type="text/javascript" src="./js/jquery.tmpl.min.js"></script>
+<title>公交</title>
+</head>
+<body>
+	<div data-role="bae_header">公交</div>
+	<div class="subnav m2o-flex">
+		<a class="item m2o-flex-one" href="./nearby_route_failed.html">附近</a>
+		<a class="item m2o-flex-one" href="./route_search.html">线路</a>
+		<a class="item m2o-flex-one" href="./station_search.html">站点</a>
+		<a class="item m2o-flex-one" href="./interchange_search.html">换乘</a>
+		<a class="item m2o-flex-one selected" href="./collect_route.html">收藏</a>
+	</div>
+	<div class="collect-list-wrap">
+		<div class="collect-tabs m2o-flex">
+			<a class="collect-tab" href="./collect_route.html">线路</a>
+			<a class="collect-tab selected" href="./collect_station.html">站点</a>
+			<a class="collect-tab" href="./collect_interchange.html">换乘</a>
+		</div>
+		<div class="collect-wrap collect-station wrapper" id="wrapper">
+			<ul class="scroll collect-list">
+			
+			</ul>
+		</div>
+	</div>
+</body>
+
+<script type="text/x-jquery-tmpl" id="route-item-tpl">
+<li class="collect-item m2o-flex m2o-flex-center">
+	<span class="flag"></span>
+	<span class="name">${name}</span>
+	<span class="info m2o-flex-one m2o-overflow">${info}</span>
+	<a class="handle-btn"></a>
+</li>
+</script>
+<script>
+$(function(){
+	$.getJSON('./json/collect.php?type=station',function(json){
+		$('#route-item-tpl').tmpl(json).appendTo('.scroll');
+	})
+	$('.collect-list').on('click','.collect-item',function(){
+		$(this).toggleClass('current').siblings().removeClass('current');
+	});
+});
+</script>
+</html>

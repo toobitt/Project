@@ -1,0 +1,226 @@
+/*涓������峰��*/
+.dropdown-arrow{display:none; }
+.dropdown-menu{width:100%; margin-top:6px; }
+.open > .dropdown-menu{margin-top:6px!important; }
+.open.dropup > .dropdown-menu{margin-bottom:6px; }
+.form_dropdown .dropdown-menu li:first-child > a, .btn-nosegment .dropdown-menu li:first-child > a{border-radius:3px 3px 0 0;}
+.form_dropdown .dropdown-menu li:last-child > a, .btn-nosegment .dropdown-menu li:last-child > a{border-radius:0 0 3px 3px; border-bottom:none; }
+
+.form_dropdown .btn-group button{background-color:#fff; color: #2e3d50; border:1px solid #dfe1e0; text-align:left; }
+.form_dropdown .btn-group.open button, .form_dropdown .btn-group.selected button{border-color:#62b8e8; color:#66707e; background-color:#fff; }
+.form_dropdown .btn-group .caret{float: right; border-top-color: #d9dfe7;}
+.form_dropdown .btn-group.dropup .caret{border-bottom-color: #d9dfe7; }
+
+.form_dropdown .dropdown-menu{background-color: #fff; border: 1px solid #d9dfe7; border-radius:3px!important; }
+.form_dropdown .dropdown-menu li > a { height: 39px; line-height:39px; border-bottom: 1px solid #d9dfe7; padding:0 0 0 9px; text-align: left; color: #66707e; background-color: #fff; border-radius:0; font-size:14px;}
+.form_dropdown .dropdown-menu li > a:hover, .form_dropdown .dropdown-menu li.open > a{background-color:#ebf6fc; }
+.form_dropdown .dropdown-menu li.selected > a { color:#62b8e8; }
+.form_dropdown .dropdown-menu li > a .arrow_next, .form_dropdown .dropdown-menu li > a .arrow_next{float:right; margin:8px 4px 0 0; background-image: url({$RESOURCE_URL}hoge-ui/arrow.png);}
+/*.form_dropdown .dropdown-menu li > a:hover .arrow_next, .form_dropdown .dropdown-menu li.open > a .arrow_next {background-image: url({$RESOURCE_URL}hoge-ui/arrow_hover.png);}*/
+
+.form_dropdown .dropdown-menu .radio, .form_dropdown .dropdown-menu .checkbox{display:inline-block; color:#66707e; }
+.form_dropdown .dropdown-menu .checked{color:#62b8e8; }
+.form_dropdown .dropdown-menu li > a:hover .fui-radio-checked, .form_dropdown .dropdown-menu li > a:hover .fui-radio-unchecked, 
+	.form_dropdown .dropdown-menu li.open > a .fui-radio-unchecked, .form_dropdown .dropdown-menu li.selected > a .fui-radio-unchecked{background-image: url({$RESOURCE_URL}hoge-ui/radio_hover.png);}
+.form_dropdown .dropdown-menu li > a:hover .radio.checked .fui-radio-checked, 
+	.form_dropdown .dropdown-menu li.open > a .radio.checked .fui-radio-checked{background-image: url({$RESOURCE_URL}hoge-ui/radio_blue.png);}
+
+.btn-nosegment .dropdown-menu li > a{height:40px; line-height: 40px; padding:0 16px; text-align:left; color:#dbdfe8; }
+.btn-nosegment .dropdown-menu li > a:hover{background-color:#657283; color:#fff; }
+
+
+/*��抽��瀛�*/
+.keyword-wrap{margin-top:5px;}
+.tagsinput{border: 1px solid #d9dfe7; border-radius:3px;padding:6px 1px 1px 6px; color:#62b8e8; }
+.tagsinput .tag{ padding:7px 5px 7px 14px; margin-right:6px; font-size:12px;border-radius:3px; }
+.tagsinput .tag, .tagsinput-add:hover{background-color:#62b8e8; }
+.tagsinput .tag:hover { background-color: #48a7dc;}
+.tagsinput-add{width:34px; height:30px; background:url({$RESOURCE_URL}hoge-ui/plus.png) no-repeat center center #d9dfe7;}
+.tagsinput-add:before{content:'';}
+.tagsinput input{margin-top:3px;}
+.tagsinput-remove-link{width:20px; }
+
+
+/*骞荤�����*/
+.switch-radio{height:40px; line-height:40px; border:1px solid #d9dfe7; border-radius:3px; }
+.switch-radio .title{margin-left:10px; }
+.has-switch{width:48px; vertical-align: middle; float:right; margin:7px 8px; }
+.has-switch > div{width:112px;}
+.has-switch span,.has-switch label{height:24px;line-height:16px;}
+.has-switch span{width:35%; font-size:0; }
+.has-switch > div.switch-off{left:-25px; }
+.has-switch label{width:24px; border-width:5px; }
+.has-switch > div.switch-off label{background-color:#fff; border-color:#d9dfe7; }
+.has-switch > div.switch-on label{background-color:#fff; border-color:#62b8e8; }
+.has-switch span.switch-left{background-color:#62b8e8; }
+.has-switch span.switch-right{text-indent:0; background-color:#d9dfe7; }
+
+
+/*checkbox*/
+.fui-checkbox-unchecked:before,.fui-checkbox-checked:before{content:'';}
+.checkbox.checked, .radio.checked{color:#62b8e8; }
+.checkbox .icons .first-icon, .checkbox .icons .second-icon{width:20px;height:20px;background-repeat:no-repeat;background-size:100%;}
+.checkbox .icons .first-icon{background-image:url(../images/hoge-ui/unchecked.png);}
+.checkbox .icons .second-icon{background-image:url(../images/hoge-ui/checked.png);}
+.checkbox:hover .second-icon{background-image:url(../images/hoge-ui/unchecked_hover.png);}
+.checkbox.checked:hover .second-icon{background-image:url(../images/hoge-ui/checked.png);}
+
+/*radio*/
+.fui-radio-unchecked:before, .fui-radio-checked:before{content: ''; }
+.radio .icons .first-icon, .radio .icons .second-icon{width:20px;height:20px;background-repeat:no-repeat;background-size:20px;}
+.radio .icons .first-icon{background-image:url(../images/hoge-ui/unradio.png);}
+.radio .icons .second-icon{background-image:url(../images/hoge-ui/radio_blue.png);}
+.radio:hover .second-icon{background-image:url(../images/hoge-ui/unradio_hover.png);}
+.radio.checked:hover .second-icon{background-image:url(../images/hoge-ui/radio_blue.png);}
+
+/*���绀哄脊妗�*/
+#tipModal .modal-dialog{height:166px; width:392px; margin-top:150px; }
+#tipModal .modal-header{height:50px; padding:10px 30px; border-top-left-radius: 3px; border-top-right-radius: 3px; border-width:0; }
+#tipModal .modal-header p{font-size:20px; }
+#tipModal .alert-tip{background-color:#707a89; color:#fff; }
+#tipModal .modal-body{padding:20px 30px; border-color:#d8dfe7; border-width:0 1px; border-style:solid; }
+#tipModal .modal-body p{margin:0; }
+#tipModal .modal-footer{border-top:0; padding:0 29px 20px; text-align:left; margin-top:0; border-width:0 1px 1px; border-style:solid; border-color:#d8dfe7; 
+	border-bottom-left-radius:3px; border-bottom-right-radius:3px; }
+#tipModal .modal-footer a{height:34px; line-height:34px; }
+#tipModal #pop_ok{margin-left:10px; }
+
+/*�����藉脊妗�*/
+.modal .close-btn{background:url({$RESOURCE_URL}hoge-ui/close.png) no-repeat center; }
+
+/*宸ュ�锋��绀烘��tooltip*/
+.tooltip.bottom{padding-top:3px; }
+.tooltip{left:0!important; }
+.tooltip .tooltip-arrow{display:none; }
+.tooltip .tooltip-inner{width:200px; max-width:200px; font-size:12px; word-wrap:break-word; line-height:2; text-align:left; padding:7px 12px;
+	border:1px solid #d9dfe7; background-color:#f6f9fc; color:#3f4752; border-radius:3px; }
+.tooltip.bottom .tooltip-arrow{border-bottom-color:#d9dfe7; }
+.tooltip.bottom .tooltip-arrow:after{position:absolute; top:-8px; left:-9px; content:''; border:9px solid transparent; border-bottom-color:#f6f9fc;}
+
+.no-arrow.tooltip{left:35px!important; }
+.no-arrow.tooltip .tooltip-inner{width:420px; max-width:540px; font-size:14px;}
+
+/*tips*/
+.alert-warning{background-color:#fceeed; border-color:#e86b63; color:#e86b63; }
+.alert-success{background-color:#e3f7f2; border-color:#1fb18a; color:#1fb18a; }
+.alert-info{background-color:#ebf6fc; border-color:#52a9e2; color:#52a9e2; }
+
+/*������缁�������*/
+.btn-tabbar.btn-group{border-width:0!important; }
+.btn-tabbar.btn-group .btn-default{background-color:#fbfcfe; }
+.btn-tabbar.btn-group .btn-default:hover, .btn-tabbar.btn-group .btn-default.selected{border-color:#62b8e8; background-color:#fff; }
+.btn-tabbar.btn-group .btn-default:not('.btn-disable'):hover, .btn-tabbar.btn-group .btn-default.selected:not('.btn-disable'){border-color:#62b8e8; background-color:#fff; }
+.btn-tabbar.btn-group .btn-default + .btn-default:not(.selected){border-left-color:transparent; }
+.btn-tabbar.btn-group .btn-default:not(.selected) + .btn-default:hover{border-left-color:#62b8e8; }
+.btn-tabbar.btn-group .btn-default:hover + .btn-default.selected{border-left-color:transparent; }
+
+/*input/textarea*/
+.form-control{border:1px solid #dfe1e0; border-radius:3px; }
+.form-control:focus{border-color:#62b8e8; }
+
+/*btn style*/
+.btn{border-radius:3px; text-align:center; }
+.btn .icons{width: 24px;
+height: 30px;
+margin-right: -4px;
+background-repeat: no-repeat;
+background-position: center center;
+margin-top: 13px;
+float: left;
+margin-left: 15px;}
+.btn-num4, .btn-icon-num2, .btn-num2{padding:0; line-height: 40px; height:40px; font-size:14px; }
+.btn-set-num2{width:70px; height:30px; line-height: 30px; padding:0; font-size:12px; }
+.btn-num4{width:150px; }
+.btn-icon-num2{width:100px; }
+.btn-num2{width:80px; }
+.btn-full{width:100%;}
+
+.btn-lg, .btn-mid{height:46px; line-height:46px; font-size:16px; padding: 0; }
+.btn-lg{width:300px; }
+.btn-mid{width:200px; }
+.btn-mul{width:130px; height:36px; line-height: 36px; font-size:14px; padding:0; }
+.btn100{width:100px; height:36px; line-height: 36px; font-size:14px; padding:0; }
+.btn-icon{width:50px; height:36px; line-height: 36px; font-size:0; padding:0;  }
+
+.btn-info{border:1px solid #62b8e8; background-color:#62b8e8; color:#fff!important; }
+.btn-info:hover, .btn-info:focus{border-color:#81c6ed; background-color:#81c6ed; }
+.btn-info:active{border-color:#448bb9; background-color:#448bb9; }
+
+.btn-operate{background-color:#383e4c; color:#fff;}
+.btn-operate:hover, .btn-operate:focus{opacity:0.9; }
+.btn-operate:active{opacity:0.8; }
+.btn-operate a{color:#fff;}
+
+.btn-default{border:1px solid #d9dfe7; background-color:#d9dfe7; color:#3f4752; }
+.btn-default:hover, .btn-default:focus{border-color:#e1e6ec; background-color:#e1e6ec; color:#3f4752;}
+.btn-default:active{border-color:#b8bec5; background-color:#b8bec5; color:#3f4752;}
+
+.btn-tolerant{background-color:#dfe1e0; color:#283f51; }
+.btn-tolerant:hover, .btn-tolerant:focus{opacity:0.9; color:#283f51;}
+.btn-tolerant:active{opacity:0.8; color:#283f51;}
+
+.btn-primary{border:1px solid #1abc9c; background-color:#1abc9c; color:#fff;}
+.btn-primary:hover, .btn-primary:focus{border-color:#59c9b0; background-color:#59c9b0; }
+.btn-primary:active{border-color:#46a085; background-color:#46a085; }
+
+.btn-danger{border:1px solid #f19a91; background-color:#f19a91; color:#fff;}
+.btn-danger:hover, .btn-danger:focus{border-color:#ee8176; background-color:#ee8176; }
+.btn-danger:active{border-color:#cb6e64; background-color:#cb6e65; }
+
+.btn-disable, .btn-disable:hover, .btn-disable:active, .btn-disable:focus{cursor:default;border:1px solid #d9dfe7; color:#d9dfe7!important; background-color:#f6f9fc; }
+
+.btn-blue{border:1px solid #2b84e0; background-color:#2b84e0; color:#fff;}
+.btn-blue:hover{background-color: #247bd8;}
+.btn-grey{background-color:#bcbcbc;color:#2d3e50;}
+.btn-set{width: 80px;padding: 0;height: 36px;line-height: 36px;margin-left: 10px;}
+.btn-grey:hover{color:#2d3e50;}
+/* input ��� textarea*/
+.input-default{width:250px;height:40px;padding:0 10px;}
+.input-default, .textarea-default{border:1px solid #d5dee9;background:#fff;border-radius:3px;transition: border .25s linear;}
+.input-default:focus, .textarea-default:focus{outline:none;border-color:#62b8e8;}
+.input-info, .textarea-info{border-color:#62b8e8;}
+.input-error{border-color:#ee8176;}
+.input-disabled{border-color:#d9dfe7;}
+.textarea-default{width:510px;height:120px;resize:none;font-size:14px;padding:5px 10px;}
+
+.common-input{margin-right:10px;}
+.common-input input{background:#fff;border:1px solid #d9dfe7;border-radius:3px;height:40px;padding:0 10px;width:250px;}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2) {	
+	/*xiala*/
+	.form_dropdown .dropdown-menu li > a:hover .fui-radio-checked, .form_dropdown .dropdown-menu li > a:hover .fui-radio-unchecked, 
+		.form_dropdown .dropdown-menu li.open > a .fui-radio-unchecked, .form_dropdown .dropdown-menu li.selected > a .fui-radio-unchecked{background-image: url(../images/hoge-ui/radio_hover-2x.png);}
+	.form_dropdown .dropdown-menu li > a:hover .radio.checked .fui-radio-checked, 
+		.form_dropdown .dropdown-menu li.open > a .radio.checked .fui-radio-checked{background-image: url(../images/hoge-ui/radio_blue-2x.png);}
+	.form_dropdown .dropdown-menu li > a .arrow_next, .form_dropdown .dropdown-menu li > a .arrow_next{float:right; margin:8px 4px 0 0; background-image: url(../images/hoge-ui/arrow.png); background-size:16px 16px; }
+	/*.form_dropdown .dropdown-menu li > a:hover .arrow_next, .form_dropdown .dropdown-menu li.open > a .arrow_next {background-image: url({$RESOURCE_URL}hoge-ui/arrow_hover.png);}*/
+	
+
+	/*关键字*/
+	.tagsinput-add{background-image:url(../images/hoge-ui/plus.png); background-size:16px 16px; }
+
+	/*checkbox*/
+	.checkbox .icons .first-icon{background-image:url(../images/hoge-ui/unchecked-2x.png); background-size:20px 20px; }
+	.checkbox .icons .second-icon{background-image:url(../images/hoge-ui/checked-2x.png); background-size:20px 20px; }
+	.checkbox:hover .second-icon{background-image:url(../images/hoge-ui/unchecked_hover-2x.png);}
+	.checkbox.checked:hover .second-icon{background-image:url(../images/hoge-ui/checked-2x.png);}
+
+	/*radio*/
+	
+	.radio .icons .first-icon{background-image:url(../images/hoge-ui/unradio-2x.png); background-size:20px 20px; }
+	.radio .icons .second-icon{background-image:url(../images/hoge-ui/radio_blue-2x.png); background-size:20px 20px; }
+	.radio:hover .second-icon{background-image:url(../images/hoge-ui/unradio_hover-2x.png);}
+	.radio.checked:hover .second-icon{background-image:url(../images/hoge-ui/radio_blue-2x.png);}
+
+
+	/*弹框*/
+	.modal .close-btn{background-image:url(../images/hoge-ui/close-2x.png); background-size:16px 16px;  }
+}
+
+
+
+

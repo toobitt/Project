@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=480,initial-scale=1,maximum-scale=1,user-scalable=0,target-densitydpi=high-dpi" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="yes" name="apple-touch-fullscreen" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<link rel="apple-touch-icon-precomposed" href="" />
+
+<link rel="stylesheet" href="./css/framework7.min.css" type="text/css">
+<link rel="stylesheet" href="./css/common.css" type="text/css" />
+<link rel="stylesheet" href="./css/bike.css" type="text/css"/>
+<title>掌上自行车</title>
+</head>
+<body>
+	<div class="views">
+		<div class="view view-main">
+			<div class="navbar">
+				<div class="navbar-inner">
+	          		<div class="center sliding">掌上自行车</div>
+	          	</div>
+		    </div>
+		    <div class="pages navbar-through">
+		    	<div data-page="tabs" class="page">
+		    		<div class="page-content infinite-scroll">
+	    			</div>
+		    	</div>
+		    </div>
+    	</div>
+	</div>
+<script type="text/javascript" src="./js/zepto.min.js"></script>
+<script type="text/javascript" src="./js/template.js"></script>
+<script type="text/javascript" src="./js/framework7.js"></script>
+<script type="text/javascript" src="./js/bike/tool.js"></script>
+<script type="text/javascript" src="./js/bike/bike.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0.2&ak=G3zlz1NuGD2GWPHlIvnbHGvH"></script>
+<script type="text/javascript" src="./js/convertor.js"></script>
+</body>
+</html>

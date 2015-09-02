@@ -1,0 +1,194 @@
+<?php
+/***************************************************************************
+* LivSNS 0.1
+* (C)2004-2010 HOGE Software.
+*
+* $Id$
+***************************************************************************/
+require('global.php');
+class programPlanUpdateApi extends BaseFrm
+{
+	public function __construct()
+	{
+		parent::__construct();
+		include(CUR_CONF_PATH . 'lib/program_plan.class.php');
+		$this->obj = new programPlan();
+	}
+
+	public function __destruct()
+	{
+		parent::__destruct();
+	}
+
+	function show()
+	{
+		if($this->input['channel_id'])
+		{
+			$condition = ' AND p.channel_id='.$this->input['channel_id'];
+		}
+		$info = $this->obj->show($condition);
+		$time_arr = $all = $time_show = array();
+		foreach($info as $key => $value)
+		{
+			$time_arr[] = $value['start'];
+			$time_arr[] = $value['end'];
+			$all[$value['week_num']][] = $value;
+			
+		}
+		$time_arr = array_unique($time_arr);
+		if(!empty($time_arr))
+		{
+			$time_show = array(strtotime('00:00:00'));
+			foreach($time_arr as $k => $v)
+			{
+				$time_show[] = $v;
+			}
+		}
+		if(is_array($time_show))
+		{
+			sort($time_show);
+		}
+		$this->addItem(array('time_arr' => $time_show,'info' => $all));
+		$this->output();
+	}
+
+	function create()
+	{
+		if(!$this->input['channel_id'])
+		{
+			$this->errorOutput("频道不为空");
+		}
+		$start_time = urldecode($this->input['start_time']);
+		if(!$this->input['start_time'])
+		{
+			$this->errorOutput("开始时间不为空");
+		}		
+		$end_time = urldecode($this->input['end_time']);
+		if(strtotime(date("Y-m-d") . " " . $end_time) - strtotime(date("Y-m-d") . " " . $start_time) <= 0)
+		{
+			$this->errorOutput("结束时间必须大于开始时间");
+		}
+
+		$week_num = $this->input['week_day'];
+		if(empty($week_num))
+		{
+			$this->errorOutput("请选择节目计划的时间段");
+		}
+
+		$week = $this->obj->verify($start_time,$end_time,$this->input['channel_id']);
+		if(!empty($week))
+		{
+			$result = hg_array_sameItems($week_num, $week);
+			if(is_array($result) && !empty($result))
+			{
+				$weeks = $space = "";
+				foreach($result as $k => $v)
+				{
+					$weeks .= $space . $v;
+					$space = ",";
+				}			
+				$al = array(1,2,3,4,5,6,7);
+				$ch = array('一', '二' , '三' , '四' , '五' , '六' , '日' );
+				$output  = str_replace($al, $ch, $weeks);
+				$this->errorOutput("星期" . $output . "已经包含" . $start_time . "~" . $end_time . "的节目，请选择节目计划的时间段");
+			}
+		}
+
+		$info = $this->obj->create();
+		if(!$info)
+		{
+			$this->errorOutput("创建失败！");
+		}
+		$this->show();
+	}
+
+	function update()
+	{
+		if(!$this->input['id'])
+		{
+			$this->errorOutput("未传入更新ID");
+		}
+
+		if(!$this->input['channel_id'])
+		{
+			$this->errorOutput("频道不为空");
+		}
+
+		$start_time = urldecode($this->input['start_time']);
+		if(!$start_time)
+		{
+			$this->errorOutput("开始时间不为空");
+		}
+		$end_time = urldecode($this->input['end_time']);
+
+		if(strtotime(date("Y-m-d") . " " . $end_time) - strtotime(date("Y-m-d") . " " . $start_time) <= 0)
+		{
+			$this->errorOutput("结束时间必须大于开始时间");
+		}
+
+		$week_num = $this->input['week_day'];
+		if(empty($week_num))
+		{
+			$this->errorOutput("请选择节目计划的时间段");
+		}
+
+		$week = $this->obj->verify($start_time,$end_time,$this->input['channel_id'],$this->input['id']);
+		if(!empty($week))
+		{
+			$result = hg_array_sameItems($week_num, $week);
+			if(is_array($result) && !empty($result))
+			{
+				$weeks = $space = "";
+				foreach($result as $k => $v)
+				{
+					$weeks .= $space . $v;
+					$space = ",";
+				}			
+				$al = array(1,2,3,4,5,6,7);
+				$ch = array('一', '二' , '三' , '四' , '五' , '六' , '日' );
+				$output  = str_replace($al, $ch, $weeks);
+				$this->errorOutput("星期" . $output . "已经包含" . $start_time . "~" . $end_time . "的节目，请选择节目计划的时间段");
+			}
+		}
+		$info = $this->obj->update();	
+
+		if(!$info)
+		{
+			$this->errorOutput("更新失败！");
+		}
+		$this->show();
+	}
+
+	function delete()
+	{
+		if(!$this->input['id'])
+		{
+			$this->errorOutput("未传入对象ID");
+		}
+		$info = $this->obj->delete();
+		if(!$info)
+		{
+			$this->errorOutput("删除失败！");
+		}
+		$this->input['channel_id'] = $info;
+		$this->show();
+	}
+
+	function unknow()
+	{
+		$this->errorOutput("此方法不存在！");
+	}
+}
+
+$out = new programPlanUpdateApi();
+$action = $_INPUT['a'];
+if (!method_exists($out,$action))
+{
+	$action = 'unknow';
+}
+$out->$action();
+
+?>
+
+
+			

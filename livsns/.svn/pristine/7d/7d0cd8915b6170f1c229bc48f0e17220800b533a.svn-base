@@ -1,0 +1,121 @@
+html{width:100%;height:100%;}
+body{padding:0;margin:0;width:100%;height:100%;background:url(../images/bg.png) no-repeat center center #2b2b31;font-family: "思源","Helvetica Neue", Helvetica, Arial, sans-serif; font-size:14px; }
+.antialiased{-webkit-font-smoothing:antialiased; }
+.container{width:1180px;padding:0px;margin:0 auto;}
+.transition{-webkit-transition:all 0.3s ease-out; transition:all 0.3s ease-out; }
+.pull-left{float:left;}
+.pull-right{float:right;}
+.overhidden{overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+ul{padding:0;margin:0;}
+li{list-style:none;}
+a{text-decoration:none;}
+.btn {padding: 0;border-radius: 4px;font-size: 14px;cursor:pointer;}
+.btn, .btn:focus, .btn:active:focus {box-shadow: none;outline: none;border: 1px solid transparent;}
+.btn-primary, .btn-primary:hover {background-color: #2b84e0;border-color: #2b84e0;}
+.btn-primary:hover {opacity: 0.8;}
+.alert{font-size:14px;text-align:center;border-radius:4px;border: 1px solid transparent;}
+.alert-success{color: #3c763d;background-color: #dff0d8;border-color: #d6e9c6;}
+.alert-error{color: #a94442;background-color: #f2dede;border-color: #ebccd1;}
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill ,input:focus:-webkit-autofill, textarea:focus:-webkit-autofill, select:focus:-webkit-autofill {background-color: rgb(255,255,255)!important;background-image: none!important;color: rgb(0, 0, 0)!important;box-shadow: 0 0 0px 1000px #fff inset!important;}
+
+[ng\:cloak], [ng-cloak], .ng-cloak {display: none !important;}
+
+
+.icon{width:24px; height:24px; display:inline-block; vertical-align:middle; font-size:0; line-height:0; background-repeat:no-repeat; background-position:center -2px; background-size:24px; cursor:pointer; }
+.icon.icon-down{background-image:url('/img/icon_down.png'); background-size:16px; background-position:center; }
+
+
+.img-box{position:relative; display:inline-block; overflow:hidden; border-radius:50%; vertical-align: middle; line-height:0; font-size:0; background-color:#f0f0f0; }
+.img-box img{width:100%; height: auto; vertical-align: middle; }
+
+
+.nav{width:100%;height:98px;background:-webkit-gradient(linear, 0 0, 0 100%, from(#23232a), to(#2b2b31));}
+.nav .logo{width:200px;height:98px;}
+.nav .logo img{margin-top:30px;}
+.nav .user-info{margin-top:15px; }
+
+
+
+.userinfo{line-height:67px; display:inline-block; padding:0 10px 0 18px; vertical-align: middle; }
+.userinfo .img-box{width:40px; height:40px; background:url('/img/avatar.png') no-repeat center center #f3f4f6; background-size:40px;}
+.userinfo .name{max-width:60px; margin:0 8px; display:inline-block; vertical-align:middle; color:#999; }
+.navbar-user{cursor: pointer; }
+.navbar-user.hover{background-color:#363c42; border-radius:0 0 2px 2px; overflow:hidden; }
+.navbar-user .usermenu{display:none; background-color:#363c42; text-align:center; color:#fff; }
+.navbar-user.hover .usermenu{display:block; }
+.navbar-user.hover .icon-down{-webkit-transform:rotate(180deg); transform:rotate(180deg);}
+
+.usermenu ul{margin-bottom:0; }
+.usermenu li{height:40px; line-height: 40px; font-size:12px; margin:0 15px; padding:0 15px; border-top:1px solid #434952; }
+.usermenu a{display:block; color:#bdbdbd; text-decoration:none; text-align:left; }
+.usermenu li:hover, .usermenu a:hover{color:#fff; }
+
+
+
+.content{width:988px;height:374px;position:absolute;top:calc(50% - 187px);left:calc(50% - 494px);-webkit-transform: translateZ(0);-moz-transform: translateZ(0);-ms-transform: translateZ(0);-o-transform: translateZ(0);transform: translateZ(0);}
+.content .content-list{width:780px;height:100%;padding: 0;margin: 0;}
+.hoge-cloud .content-list{border-right:1px solid #45454e;}
+.content .cloud-list{float:left;width:120px;height:180px;}
+.content .content-list .cloud-list{margin:20px 70px 0px 0px;}
+.content .cloud-list.pointer-events{pointer-events:none;}
+.content .list-img{display:block;width:100px;height:100px;border-radius:50%;background-repeat:no-repeat;position:relative;margin: 10px 10px 20px 10px;}
+.content .list-img:before{display:block;content:'';width:100px;height:100px;border-radius:50%;z-index: -11;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-ms-transition:all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;position: absolute;top: 0;left: 0;}
+.content .cloudvideo .list-img{background-image:url(/img/icon.png);background-position:0 0;background-color:#2b84e0;}
+.content .cloudlive .list-img{background-image:url(/img/icon.png);background-position:0 -110px;background-color:#e61345;}
+.content .cloudvote .list-img{background-image:url(/img/icon.png);background-position:0 -220px;background-color:#14b287;}
+.content .cloudlottery .list-img{background-image:url(/img/icon.png);background-position:0 -330px;background-color:#ffd63a;}
+.content .cloudform .list-img{background-image:url(/img/icon.png);background-position:0 -550px;background-color:#63bb50;}
+.content .cloudsurvey .list-img{background-image:url(/img/icon.png);background-position:0 -440px;background-color:#9a4db8;}
+.content .cloudvideo .list-img:before{background:rgba(43,132,224,0.45);}
+.content .cloudlive .list-img:before{background:rgba(230,19,69,0.45);}
+.content .cloudvote .list-img:before{background:rgba(20,178,135,0.45);}
+.content .cloudlottery .list-img:before{background:rgba(255,214,58,0.45);}
+.content .cloudform .list-img:before{background:rgba(99,187,80,0.45);}
+.content .cloudsurvey .list-img:before{background:rgba(154,77,184,0.45);}
+.content .dingdone .list-img:before{background:rgba(98,184,232,0.45);}
+.content .list-title{display:block;width:120px;text-align:center;color:#838384;font-size: 18px;margin-top: 10px;}
+.content .dingdone{margin:20px 0px 0px 80px;}
+.content .dingdone .list-img{background-image:url(/img/icon.png);background-position:0 -660px;background-color:#62b8e8;}
+.hoge-cloud .cloud-list:hover .list-img:before{width:120px;height:120px;top:-10px;left:-10px;transition: all 0.2s ease;}
+.hoge-cloud .cloud-list:hover .list-title{color:#fff;}
+.content .pointer-events .list-img{-webkit-filter:brightness(0.5);-moz-filter:brightness(0.5);-o-filter:brightness(0.5);filter:brightness(0.5);background-color: rgba(170,170,170,0.45);}
+.content .pointer-events .list-img:before{background: rgba(170,170,170,0.45);}
+
+
+.footer{width: 100%;position:absolute;bottom:15px;right:0px;font-size:12px;color:#5a5a5b;}
+.footer span , .footer a{margin:0px 5px;}
+.footer a{cursor:pointer;color: #5a5a5b;}
+.footer a:hover{color:#fff;text-decoration:underline;}
+
+
+.hoge-cloud-login .list-img , .register .list-img{filter:url(blur.svg#blur);-webkit-filter:blur(25px);-moz-filter:blur(25px);-o-filter:blur(25px);filter:blur(25px);filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=25, MakeShadow=false);}
+.hoge-cloud-login .login-box{width:380px;min-height:335px;padding-bottom:65px;background:rgb(255,255,255);border-radius:15px;position:absolute;left:calc(50% - 190px);}
+.login .login-box{top:calc(50% - 200px);}
+.register .login-box{top:calc(50% - 235px);}
+.hoge-cloud-login .login-logo {display: block;width: 100%;height: 145px;text-align: center;line-height: 145px;font-size: 55px;color: #888788;}
+.hoge-cloud-login .login-item{display: block;width:240px;height:48px;border:1.5px solid #e0e0e0;border-radius:4px;margin:0 auto 20px auto;overflow: hidden;}
+.hoge-cloud-login .login-item-title{width: 73px;height:100%;line-height:48px;text-align: center;font-size:14px;color:#ccc;}
+.hoge-cloud-login .login-item input[type="text"] ,.hoge-cloud-login .login-item input[type="password"]{width: 165px;height: 46px;line-height: 46px;font-size: 14px;border: none;}
+.hoge-cloud-login .login-item input[type="text"]:focus ,.hoge-cloud-login .login-item input[type="text"]:active , .hoge-cloud-login .login-item input[type="password"]:focus ,.hoge-cloud-login .login-item input[type="password"]:active{border:none;box-shadow: none;outline: none; background: none;}
+.hoge-cloud-login .btn-submit {display: block;width: 240px;height: 50px;line-height: 50px;text-align: center;color:#fff;margin:0px auto;font-size:20px;cursor: pointer;}
+
+.hoge-cloud-login .login-error{width:240px;height:48px;line-height:48px;margin:0 auto 20px auto;}
+.hoge-cloud-login .login-error span{display:block;padding: 0px 10px;}
+
+
+
+@media only screen and (max-width: 767px){
+	body{backrgound-color:#fff!important;}
+	.hoge-cloud-login .login-box{width:260px;min-height:290px;padding-bottom:0;left: calc(50% - 130px);top: calc(50% - 160px);}
+	.hoge-cloud-login .login-logo{height:90px;line-height:90px;font-size:35px;}
+	.hoge-cloud-login .login-item{width:190px;height:40px;margin: 0 auto 15px auto;}
+	.hoge-cloud-login .login-item-title{width:50px;line-height:40px;}
+	.hoge-cloud-login .btn-submit{width: 190px;height: 40px;line-height:40px;  margin: 20px auto;}
+	.hoge-cloud-login .login-item input[type="text"], .hoge-cloud-login .login-item input[type="password"]{width:125px;  height: 38px;line-height: 38px;}
+	.popOverlay{position:absolute!important;top:20px!important;}
+}
+
+
+
+
+

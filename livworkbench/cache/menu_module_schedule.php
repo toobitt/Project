@@ -1,0 +1,1 @@
+<?php exit; ?>a:1:{i:154;a:12:{s:2:"id";s:3:"154";s:9:"module_id";s:3:"416";s:12:"app_uniqueid";s:8:"schedule";s:12:"include_apps";s:8:"schedule";s:12:"mod_uniqueid";s:13:"record_config";s:4:"name";s:15:"服务器配置";s:3:"url";s:15:"run.php?mid=416";s:9:"father_id";s:3:"153";s:5:"class";s:0:"";s:5:"close";s:1:"0";s:8:"order_id";s:1:"0";s:5:"index";s:1:"0";}}

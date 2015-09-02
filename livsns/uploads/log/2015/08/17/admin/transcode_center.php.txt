@@ -1,0 +1,701 @@
+
+[2015-08-17 10:56:42]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://vapi1.dev.hogesoft.com/admin/transcode_center.php?format=json&a=getCanUseServers&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=011d3e2010a29e593ecfb8e9bfbe360f
+
+[2015-08-17 10:56:42]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'a' => 'getCanUseServers',
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '011d3e2010a29e593ecfb8e9bfbe360f',
+)
+
+[2015-08-17 10:56:42]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 327:[{"83":{"id":"83","name":"10.0.1.58","cur_num":"0","trans_host":"10.0.1.58","trans_port":"8088","is_open":"1","is_carry_file":"0","transcode_tasks":"{\"transcoding_tasks\":\"0\",\"max_transcode_tasks\":\"5\",\"waiting_tasks\":\"0\"}","transcode_status":"{\"return\":\"success\"}","transcode_version":"{\"version\":\"0.1.0\",\"build\":\"0008\"}","transcode_config":"{\"max_transcode_tasks\":\"5\",\"default_transcode_file_source_path\":\"\/\",\"auth_url\":\"\",\"transcode_file_upload_temp_path\":\"\/tmp\/\",\"auth_appid\":\"\",\"auth_appkey\":\"\",\"default_transcode_file_destination_path\":\"\/\",\"return\":\"success\"}","create_time":"1434005356","update_time":"1439779960","order_id":"83","transcode_on":"0\u4e2a","transcode_wait":"0\u4e2a"},"max_size":"2000M"}]
+
+[2015-08-17 11:01:15]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://vapi1.dev.hogesoft.com/admin/transcode_center.php?format=json&a=getCanUseServers&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=011d3e2010a29e593ecfb8e9bfbe360f
+
+[2015-08-17 11:01:15]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'a' => 'getCanUseServers',
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '011d3e2010a29e593ecfb8e9bfbe360f',
+)
+
+[2015-08-17 11:01:15]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 321:array (
+  'url' => 'http://vapi1.dev.hogesoft.com/admin/transcode_center.php?format=json&a=getCanUseServers&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=011d3e2010a29e593ecfb8e9bfbe360f',
+  'content_type' => NULL,
+  'http_code' => 0,
+  'header_size' => 0,
+  'request_size' => 0,
+  'filetime' => -1,
+  'ssl_verify_result' => 0,
+  'redirect_count' => 0,
+  'total_time' => 9.2999999999999997E-5,
+  'namelookup_time' => 1.9000000000000001E-5,
+  'connect_time' => 0,
+  'pretransfer_time' => 0,
+  'size_upload' => 0,
+  'size_download' => 0,
+  'speed_download' => 0,
+  'speed_upload' => 0,
+  'download_content_length' => -1,
+  'upload_content_length' => -1,
+  'starttransfer_time' => 0,
+  'redirect_time' => 0,
+  'redirect_url' => '',
+  'primary_ip' => '',
+  'certinfo' => 
+  array (
+  ),
+  'primary_port' => 0,
+  'local_ip' => '',
+  'local_port' => 0,
+)
+
+[2015-08-17 11:03:27]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://vapi1.dev.hogesoft.com/admin/transcode_center.php?format=json&a=getCanUseServers&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=011d3e2010a29e593ecfb8e9bfbe360f
+
+[2015-08-17 11:03:27]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'a' => 'getCanUseServers',
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '011d3e2010a29e593ecfb8e9bfbe360f',
+)
+
+[2015-08-17 11:03:27]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 321:array (
+  'url' => 'http://vapi1.dev.hogesoft.com/admin/transcode_center.php?format=json&a=getCanUseServers&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=011d3e2010a29e593ecfb8e9bfbe360f',
+  'content_type' => NULL,
+  'http_code' => 0,
+  'header_size' => 0,
+  'request_size' => 0,
+  'filetime' => -1,
+  'ssl_verify_result' => 0,
+  'redirect_count' => 0,
+  'total_time' => 8.7000000000000001E-5,
+  'namelookup_time' => 2.0000000000000002E-5,
+  'connect_time' => 0,
+  'pretransfer_time' => 0,
+  'size_upload' => 0,
+  'size_download' => 0,
+  'speed_download' => 0,
+  'speed_upload' => 0,
+  'download_content_length' => -1,
+  'upload_content_length' => -1,
+  'starttransfer_time' => 0,
+  'redirect_time' => 0,
+  'redirect_url' => '',
+  'primary_ip' => '',
+  'certinfo' => 
+  array (
+  ),
+  'primary_port' => 0,
+  'local_ip' => '',
+  'local_port' => 0,
+)
+
+[2015-08-17 11:06:27]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://vapi1.dev.hogesoft.com/admin/transcode_center.php?format=json&a=getCanUseServers&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=011d3e2010a29e593ecfb8e9bfbe360f
+
+[2015-08-17 11:06:27]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'a' => 'getCanUseServers',
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '011d3e2010a29e593ecfb8e9bfbe360f',
+)
+
+[2015-08-17 11:06:27]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 327:[{"83":{"id":"83","name":"10.0.1.58","cur_num":"0","trans_host":"10.0.1.58","trans_port":"8088","is_open":"1","is_carry_file":"0","transcode_tasks":"{\"transcoding_tasks\":\"0\",\"max_transcode_tasks\":\"5\",\"waiting_tasks\":\"0\"}","transcode_status":"{\"return\":\"success\"}","transcode_version":"{\"version\":\"0.1.0\",\"build\":\"0008\"}","transcode_config":"{\"default_transcode_file_destination_path\":\"\/\",\"max_transcode_tasks\":\"5\",\"default_transcode_file_source_path\":\"\/\",\"auth_url\":\"\",\"transcode_file_upload_temp_path\":\"\/tmp\/\",\"auth_appid\":\"\",\"auth_appkey\":\"\",\"return\":\"success\"}","create_time":"1434005356","update_time":"1439780541","order_id":"83","transcode_on":"0\u4e2a","transcode_wait":"0\u4e2a"},"max_size":"2000M"}]
+
+[2015-08-17 11:09:29]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://vapi1.dev.hogesoft.com/admin/transcode_center.php?format=json&a=getCanUseServers&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=011d3e2010a29e593ecfb8e9bfbe360f
+
+[2015-08-17 11:09:29]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'a' => 'getCanUseServers',
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '011d3e2010a29e593ecfb8e9bfbe360f',
+)
+
+[2015-08-17 11:09:29]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 321:array (
+  'url' => 'http://vapi1.dev.hogesoft.com/admin/transcode_center.php?format=json&a=getCanUseServers&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=011d3e2010a29e593ecfb8e9bfbe360f',
+  'content_type' => NULL,
+  'http_code' => 0,
+  'header_size' => 0,
+  'request_size' => 0,
+  'filetime' => -1,
+  'ssl_verify_result' => 0,
+  'redirect_count' => 0,
+  'total_time' => 0.000102,
+  'namelookup_time' => 2.0000000000000002E-5,
+  'connect_time' => 0,
+  'pretransfer_time' => 0,
+  'size_upload' => 0,
+  'size_download' => 0,
+  'speed_download' => 0,
+  'speed_upload' => 0,
+  'download_content_length' => -1,
+  'upload_content_length' => -1,
+  'starttransfer_time' => 0,
+  'redirect_time' => 0,
+  'redirect_url' => '',
+  'primary_ip' => '',
+  'certinfo' => 
+  array (
+  ),
+  'primary_port' => 0,
+  'local_ip' => '',
+  'local_port' => 0,
+)
+
+[2015-08-17 11:10:10]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://vapi1.dev.hogesoft.com/admin/transcode_center.php?format=json&a=getCanUseServers&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=011d3e2010a29e593ecfb8e9bfbe360f
+
+[2015-08-17 11:10:10]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'a' => 'getCanUseServers',
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '011d3e2010a29e593ecfb8e9bfbe360f',
+)
+
+[2015-08-17 11:10:11]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 321:array (
+  'url' => 'http://vapi1.dev.hogesoft.com/admin/transcode_center.php?format=json&a=getCanUseServers&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=011d3e2010a29e593ecfb8e9bfbe360f',
+  'content_type' => NULL,
+  'http_code' => 0,
+  'header_size' => 0,
+  'request_size' => 0,
+  'filetime' => -1,
+  'ssl_verify_result' => 0,
+  'redirect_count' => 0,
+  'total_time' => 0.00012899999999999999,
+  'namelookup_time' => 2.4000000000000001E-5,
+  'connect_time' => 0,
+  'pretransfer_time' => 0,
+  'size_upload' => 0,
+  'size_download' => 0,
+  'speed_download' => 0,
+  'speed_upload' => 0,
+  'download_content_length' => -1,
+  'upload_content_length' => -1,
+  'starttransfer_time' => 0,
+  'redirect_time' => 0,
+  'redirect_url' => '',
+  'primary_ip' => '',
+  'certinfo' => 
+  array (
+  ),
+  'primary_port' => 0,
+  'local_ip' => '',
+  'local_port' => 0,
+)
+
+[2015-08-17 11:16:37]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://vapi1.dev.hogesoft.com/admin/transcode_center.php?format=json&a=getCanUseServers&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=011d3e2010a29e593ecfb8e9bfbe360f
+
+[2015-08-17 11:16:37]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'a' => 'getCanUseServers',
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '011d3e2010a29e593ecfb8e9bfbe360f',
+)
+
+[2015-08-17 11:16:37]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 327:[{"83":{"id":"83","name":"10.0.1.58","cur_num":"0","trans_host":"10.0.1.58","trans_port":"8088","is_open":"1","is_carry_file":"0","transcode_tasks":"{\"transcoding_tasks\":\"0\",\"max_transcode_tasks\":\"5\",\"waiting_tasks\":\"0\"}","transcode_status":"{\"return\":\"success\"}","transcode_version":"{\"version\":\"0.1.0\",\"build\":\"0008\"}","transcode_config":"{\"default_transcode_file_destination_path\":\"\/\",\"max_transcode_tasks\":\"5\",\"default_transcode_file_source_path\":\"\/\",\"auth_url\":\"\",\"transcode_file_upload_temp_path\":\"\/tmp\/\",\"auth_appid\":\"\",\"auth_appkey\":\"\",\"return\":\"success\"}","create_time":"1434005356","update_time":"1439781146","order_id":"83","transcode_on":"0\u4e2a","transcode_wait":"0\u4e2a"},"max_size":"2000M"}]
+
+[2015-08-17 14:41:14]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://vapi1.dev.hogesoft.com/admin/transcode_center.php?format=json&a=getCanUseServers&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=011d3e2010a29e593ecfb8e9bfbe360f
+
+[2015-08-17 14:41:14]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'a' => 'getCanUseServers',
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '011d3e2010a29e593ecfb8e9bfbe360f',
+)
+
+[2015-08-17 14:41:14]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 327:[{"83":{"id":"83","name":"10.0.1.58","cur_num":"0","trans_host":"10.0.1.58","trans_port":"8088","is_open":"1","is_carry_file":"0","transcode_tasks":"{\"transcoding_tasks\":\"0\",\"max_transcode_tasks\":\"5\",\"waiting_tasks\":\"0\"}","transcode_status":"{\"return\":\"success\"}","transcode_version":"{\"version\":\"0.1.0\",\"build\":\"0008\"}","transcode_config":"{\"max_transcode_tasks\":\"5\",\"default_transcode_file_source_path\":\"\/\",\"default_transcode_file_destination_path\":\"\/\",\"auth_url\":\"\",\"auth_appid\":\"\",\"auth_appkey\":\"\",\"transcode_file_upload_temp_path\":\"\/tmp\/\",\"return\":\"success\"}","create_time":"1434005356","update_time":"1439793430","order_id":"83","transcode_on":"0\u4e2a","transcode_wait":"0\u4e2a"},"max_size":"2000M"}]
+
+[2015-08-17 14:43:39]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://vapi1.dev.hogesoft.com/admin/transcode_center.php?format=json&a=getCanUseServers&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=011d3e2010a29e593ecfb8e9bfbe360f
+
+[2015-08-17 14:43:39]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'a' => 'getCanUseServers',
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '011d3e2010a29e593ecfb8e9bfbe360f',
+)
+
+[2015-08-17 14:43:39]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 321:array (
+  'url' => 'http://vapi1.dev.hogesoft.com/admin/transcode_center.php?format=json&a=getCanUseServers&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=011d3e2010a29e593ecfb8e9bfbe360f',
+  'content_type' => NULL,
+  'http_code' => 0,
+  'header_size' => 0,
+  'request_size' => 0,
+  'filetime' => -1,
+  'ssl_verify_result' => 0,
+  'redirect_count' => 0,
+  'total_time' => 0.001137,
+  'namelookup_time' => 1.9000000000000001E-5,
+  'connect_time' => 0,
+  'pretransfer_time' => 0,
+  'size_upload' => 0,
+  'size_download' => 0,
+  'speed_download' => 0,
+  'speed_upload' => 0,
+  'download_content_length' => -1,
+  'upload_content_length' => -1,
+  'starttransfer_time' => 0,
+  'redirect_time' => 0,
+  'redirect_url' => '',
+  'primary_ip' => '',
+  'certinfo' => 
+  array (
+  ),
+  'primary_port' => 0,
+  'local_ip' => '',
+  'local_port' => 0,
+)
+
+[2015-08-17 14:46:04]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://vapi1.dev.hogesoft.com/admin/transcode_center.php?format=json&a=getCanUseServers&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=011d3e2010a29e593ecfb8e9bfbe360f
+
+[2015-08-17 14:46:04]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'a' => 'getCanUseServers',
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '011d3e2010a29e593ecfb8e9bfbe360f',
+)
+
+[2015-08-17 14:46:04]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 321:array (
+  'url' => 'http://vapi1.dev.hogesoft.com/admin/transcode_center.php?format=json&a=getCanUseServers&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=011d3e2010a29e593ecfb8e9bfbe360f',
+  'content_type' => NULL,
+  'http_code' => 0,
+  'header_size' => 0,
+  'request_size' => 0,
+  'filetime' => -1,
+  'ssl_verify_result' => 0,
+  'redirect_count' => 0,
+  'total_time' => 0.000107,
+  'namelookup_time' => 2.0000000000000002E-5,
+  'connect_time' => 0,
+  'pretransfer_time' => 0,
+  'size_upload' => 0,
+  'size_download' => 0,
+  'speed_download' => 0,
+  'speed_upload' => 0,
+  'download_content_length' => -1,
+  'upload_content_length' => -1,
+  'starttransfer_time' => 0,
+  'redirect_time' => 0,
+  'redirect_url' => '',
+  'primary_ip' => '',
+  'certinfo' => 
+  array (
+  ),
+  'primary_port' => 0,
+  'local_ip' => '',
+  'local_port' => 0,
+)
+
+[2015-08-17 14:47:13]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://vapi1.dev.hogesoft.com/admin/transcode_center.php?format=json&a=getCanUseServers&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=011d3e2010a29e593ecfb8e9bfbe360f
+
+[2015-08-17 14:47:13]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'a' => 'getCanUseServers',
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '011d3e2010a29e593ecfb8e9bfbe360f',
+)
+
+[2015-08-17 14:47:13]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 321:array (
+  'url' => 'http://vapi1.dev.hogesoft.com/admin/transcode_center.php?format=json&a=getCanUseServers&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=011d3e2010a29e593ecfb8e9bfbe360f',
+  'content_type' => NULL,
+  'http_code' => 0,
+  'header_size' => 0,
+  'request_size' => 0,
+  'filetime' => -1,
+  'ssl_verify_result' => 0,
+  'redirect_count' => 0,
+  'total_time' => 7.7000000000000001E-5,
+  'namelookup_time' => 1.8E-5,
+  'connect_time' => 0,
+  'pretransfer_time' => 0,
+  'size_upload' => 0,
+  'size_download' => 0,
+  'speed_download' => 0,
+  'speed_upload' => 0,
+  'download_content_length' => -1,
+  'upload_content_length' => -1,
+  'starttransfer_time' => 0,
+  'redirect_time' => 0,
+  'redirect_url' => '',
+  'primary_ip' => '',
+  'certinfo' => 
+  array (
+  ),
+  'primary_port' => 0,
+  'local_ip' => '',
+  'local_port' => 0,
+)
+
+[2015-08-17 14:48:58]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://vapi1.dev.hogesoft.com/admin/transcode_center.php?format=json&a=getCanUseServers&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=011d3e2010a29e593ecfb8e9bfbe360f
+
+[2015-08-17 14:48:58]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'a' => 'getCanUseServers',
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '011d3e2010a29e593ecfb8e9bfbe360f',
+)
+
+[2015-08-17 14:48:58]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 327:[{"83":{"id":"83","name":"10.0.1.58","cur_num":"0","trans_host":"10.0.1.58","trans_port":"8088","is_open":"1","is_carry_file":"0","transcode_tasks":"{\"transcoding_tasks\":\"0\",\"max_transcode_tasks\":\"5\",\"waiting_tasks\":\"0\"}","transcode_status":"{\"return\":\"success\"}","transcode_version":"{\"version\":\"0.1.0\",\"build\":\"0008\"}","transcode_config":"{\"max_transcode_tasks\":\"5\",\"default_transcode_file_source_path\":\"\/\",\"default_transcode_file_destination_path\":\"\/\",\"auth_url\":\"\",\"auth_appid\":\"\",\"auth_appkey\":\"\",\"transcode_file_upload_temp_path\":\"\/tmp\/\",\"return\":\"success\"}","create_time":"1434005356","update_time":"1439793891","order_id":"83","transcode_on":"0\u4e2a","transcode_wait":"0\u4e2a"},"max_size":"2000M"}]
+
+[2015-08-17 14:51:52]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://vapi1.dev.hogesoft.com/admin/transcode_center.php?format=json&a=getCanUseServers&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=011d3e2010a29e593ecfb8e9bfbe360f
+
+[2015-08-17 14:51:52]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'a' => 'getCanUseServers',
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '011d3e2010a29e593ecfb8e9bfbe360f',
+)
+
+[2015-08-17 14:51:52]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 327:[{"83":{"id":"83","name":"10.0.1.58","cur_num":"0","trans_host":"10.0.1.58","trans_port":"8088","is_open":"1","is_carry_file":"0","transcode_tasks":"{\"transcoding_tasks\":\"0\",\"max_transcode_tasks\":\"5\",\"waiting_tasks\":\"0\"}","transcode_status":"{\"return\":\"success\"}","transcode_version":"{\"version\":\"0.1.0\",\"build\":\"0008\"}","transcode_config":"{\"max_transcode_tasks\":\"5\",\"default_transcode_file_source_path\":\"\/\",\"default_transcode_file_destination_path\":\"\/\",\"auth_url\":\"\",\"auth_appid\":\"\",\"auth_appkey\":\"\",\"transcode_file_upload_temp_path\":\"\/tmp\/\",\"return\":\"success\"}","create_time":"1434005356","update_time":"1439794071","order_id":"83","transcode_on":"0\u4e2a","transcode_wait":"0\u4e2a"},"max_size":"2000M"}]
+
+[2015-08-17 14:53:34]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://vapi1.dev.hogesoft.com/admin/transcode_center.php?format=json&a=getCanUseServers&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=011d3e2010a29e593ecfb8e9bfbe360f
+
+[2015-08-17 14:53:34]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'a' => 'getCanUseServers',
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '011d3e2010a29e593ecfb8e9bfbe360f',
+)
+
+[2015-08-17 14:53:37]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 327:[{"83":{"id":"83","name":"10.0.1.58","cur_num":"0","trans_host":"10.0.1.58","trans_port":"8088","is_open":"1","is_carry_file":"0","transcode_tasks":"{\"transcoding_tasks\":\"0\",\"max_transcode_tasks\":\"5\",\"waiting_tasks\":\"0\"}","transcode_status":"{\"return\":\"success\"}","transcode_version":"{\"version\":\"0.1.0\",\"build\":\"0008\"}","transcode_config":"{\"max_transcode_tasks\":\"5\",\"default_transcode_file_source_path\":\"\/\",\"default_transcode_file_destination_path\":\"\/\",\"auth_url\":\"\",\"auth_appid\":\"\",\"auth_appkey\":\"\",\"transcode_file_upload_temp_path\":\"\/tmp\/\",\"return\":\"success\"}","create_time":"1434005356","update_time":"1439794171","order_id":"83","transcode_on":"0\u4e2a","transcode_wait":"0\u4e2a"},"max_size":"2000M"}]
+
+[2015-08-17 14:53:38]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://vapi1.dev.hogesoft.com/admin/transcode_center.php?format=json&a=getCanUseServers&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=011d3e2010a29e593ecfb8e9bfbe360f
+
+[2015-08-17 14:53:38]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'a' => 'getCanUseServers',
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '011d3e2010a29e593ecfb8e9bfbe360f',
+)
+
+[2015-08-17 14:53:39]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 327:[{"83":{"id":"83","name":"10.0.1.58","cur_num":"0","trans_host":"10.0.1.58","trans_port":"8088","is_open":"1","is_carry_file":"0","transcode_tasks":"{\"transcoding_tasks\":\"0\",\"max_transcode_tasks\":\"5\",\"waiting_tasks\":\"0\"}","transcode_status":"{\"return\":\"success\"}","transcode_version":"{\"version\":\"0.1.0\",\"build\":\"0008\"}","transcode_config":"{\"max_transcode_tasks\":\"5\",\"default_transcode_file_source_path\":\"\/\",\"default_transcode_file_destination_path\":\"\/\",\"auth_url\":\"\",\"auth_appid\":\"\",\"auth_appkey\":\"\",\"transcode_file_upload_temp_path\":\"\/tmp\/\",\"return\":\"success\"}","create_time":"1434005356","update_time":"1439794171","order_id":"83","transcode_on":"0\u4e2a","transcode_wait":"0\u4e2a"},"max_size":"2000M"}]
+
+[2015-08-17 14:55:14]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://vapi1.dev.hogesoft.com/admin/transcode_center.php?format=json&a=getCanUseServers&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=011d3e2010a29e593ecfb8e9bfbe360f
+
+[2015-08-17 14:55:14]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'a' => 'getCanUseServers',
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '011d3e2010a29e593ecfb8e9bfbe360f',
+)
+
+[2015-08-17 14:55:14]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 327:[{"83":{"id":"83","name":"10.0.1.58","cur_num":"0","trans_host":"10.0.1.58","trans_port":"8088","is_open":"1","is_carry_file":"0","transcode_tasks":"{\"transcoding_tasks\":\"0\",\"max_transcode_tasks\":\"5\",\"waiting_tasks\":\"0\"}","transcode_status":"{\"return\":\"success\"}","transcode_version":"{\"version\":\"0.1.0\",\"build\":\"0008\"}","transcode_config":"{\"max_transcode_tasks\":\"5\",\"default_transcode_file_source_path\":\"\/\",\"default_transcode_file_destination_path\":\"\/\",\"auth_url\":\"\",\"auth_appid\":\"\",\"auth_appkey\":\"\",\"transcode_file_upload_temp_path\":\"\/tmp\/\",\"return\":\"success\"}","create_time":"1434005356","update_time":"1439794271","order_id":"83","transcode_on":"0\u4e2a","transcode_wait":"0\u4e2a"},"max_size":"2000M"}]
+
+[2015-08-17 14:56:17]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://vapi1.dev.hogesoft.com/admin/transcode_center.php?format=json&a=getCanUseServers&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=011d3e2010a29e593ecfb8e9bfbe360f
+
+[2015-08-17 14:56:17]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'a' => 'getCanUseServers',
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '011d3e2010a29e593ecfb8e9bfbe360f',
+)
+
+[2015-08-17 14:56:17]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 321:array (
+  'url' => 'http://vapi1.dev.hogesoft.com/admin/transcode_center.php?format=json&a=getCanUseServers&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=011d3e2010a29e593ecfb8e9bfbe360f',
+  'content_type' => NULL,
+  'http_code' => 0,
+  'header_size' => 0,
+  'request_size' => 0,
+  'filetime' => -1,
+  'ssl_verify_result' => 0,
+  'redirect_count' => 0,
+  'total_time' => 0.000118,
+  'namelookup_time' => 2.3E-5,
+  'connect_time' => 0,
+  'pretransfer_time' => 0,
+  'size_upload' => 0,
+  'size_download' => 0,
+  'speed_download' => 0,
+  'speed_upload' => 0,
+  'download_content_length' => -1,
+  'upload_content_length' => -1,
+  'starttransfer_time' => 0,
+  'redirect_time' => 0,
+  'redirect_url' => '',
+  'primary_ip' => '',
+  'certinfo' => 
+  array (
+  ),
+  'primary_port' => 0,
+  'local_ip' => '',
+  'local_port' => 0,
+)
+
+[2015-08-17 14:59:15]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://vapi1.dev.hogesoft.com/admin/transcode_center.php?format=json&a=getCanUseServers&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=011d3e2010a29e593ecfb8e9bfbe360f
+
+[2015-08-17 14:59:15]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'a' => 'getCanUseServers',
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '011d3e2010a29e593ecfb8e9bfbe360f',
+)
+
+[2015-08-17 14:59:15]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 321:array (
+  'url' => 'http://vapi1.dev.hogesoft.com/admin/transcode_center.php?format=json&a=getCanUseServers&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=011d3e2010a29e593ecfb8e9bfbe360f',
+  'content_type' => NULL,
+  'http_code' => 0,
+  'header_size' => 0,
+  'request_size' => 0,
+  'filetime' => -1,
+  'ssl_verify_result' => 0,
+  'redirect_count' => 0,
+  'total_time' => 8.1000000000000004E-5,
+  'namelookup_time' => 1.9000000000000001E-5,
+  'connect_time' => 0,
+  'pretransfer_time' => 0,
+  'size_upload' => 0,
+  'size_download' => 0,
+  'speed_download' => 0,
+  'speed_upload' => 0,
+  'download_content_length' => -1,
+  'upload_content_length' => -1,
+  'starttransfer_time' => 0,
+  'redirect_time' => 0,
+  'redirect_url' => '',
+  'primary_ip' => '',
+  'certinfo' => 
+  array (
+  ),
+  'primary_port' => 0,
+  'local_ip' => '',
+  'local_port' => 0,
+)
+
+[2015-08-17 15:19:14]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://vapi1.dev.hogesoft.com/admin/transcode_center.php?format=json&a=getCanUseServers&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=011d3e2010a29e593ecfb8e9bfbe360f
+
+[2015-08-17 15:19:14]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'a' => 'getCanUseServers',
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '011d3e2010a29e593ecfb8e9bfbe360f',
+)
+
+[2015-08-17 15:19:14]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 327:[{"83":{"id":"83","name":"10.0.1.58","cur_num":"0","trans_host":"10.0.1.58","trans_port":"8088","is_open":"1","is_carry_file":"0","transcode_tasks":"{\"transcoding_tasks\":\"0\",\"max_transcode_tasks\":\"5\",\"waiting_tasks\":\"0\"}","transcode_status":"{\"return\":\"success\"}","transcode_version":"{\"version\":\"0.1.0\",\"build\":\"0008\"}","transcode_config":"{\"max_transcode_tasks\":\"5\",\"default_transcode_file_source_path\":\"\/\",\"default_transcode_file_destination_path\":\"\/\",\"auth_url\":\"\",\"auth_appid\":\"\",\"auth_appkey\":\"\",\"transcode_file_upload_temp_path\":\"\/tmp\/\",\"return\":\"success\"}","create_time":"1434005356","update_time":"1439795707","order_id":"83","transcode_on":"0\u4e2a","transcode_wait":"0\u4e2a"},"max_size":"2000M"}]
+
+[2015-08-17 15:44:39]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://vapi1.dev.hogesoft.com/admin/transcode_center.php?format=json&a=getCanUseServers&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=011d3e2010a29e593ecfb8e9bfbe360f
+
+[2015-08-17 15:44:39]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'a' => 'getCanUseServers',
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '011d3e2010a29e593ecfb8e9bfbe360f',
+)
+
+[2015-08-17 15:44:39]
+/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 101:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/livmedia/admin/getSettingsFromMediaserver.php on line 49:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 327:[{"83":{"id":"83","name":"10.0.1.58","cur_num":"0","trans_host":"10.0.1.58","trans_port":"8088","is_open":"1","is_carry_file":"0","transcode_tasks":"{\"transcoding_tasks\":\"0\",\"max_transcode_tasks\":\"5\",\"waiting_tasks\":\"0\"}","transcode_status":"{\"return\":\"success\"}","transcode_version":"{\"version\":\"0.1.0\",\"build\":\"0008\"}","transcode_config":"{\"max_transcode_tasks\":\"5\",\"default_transcode_file_source_path\":\"\/\",\"default_transcode_file_destination_path\":\"\/\",\"auth_url\":\"\",\"auth_appid\":\"\",\"auth_appkey\":\"\",\"transcode_file_upload_temp_path\":\"\/tmp\/\",\"return\":\"success\"}","create_time":"1434005356","update_time":"1439797235","order_id":"83","transcode_on":"0\u4e2a","transcode_wait":"0\u4e2a"},"max_size":"2000M"}]

@@ -1,0 +1,20 @@
+[
+	{
+		"fullName" : "周杰伦",
+		"userId" : "1",
+		"number" : "1800.00",
+		"idcardNumber" : "436284198942039932"
+	},
+	{
+		"fullName" : "赵薇",
+		"userId" : "2",
+		"number" : "900.00",
+		"idcardNumber" : "436284198942039932"
+	},
+	{
+		"fullName" : "马云",
+		"userId" : "3",
+		"number" : "2000.00",
+		"idcardNumber" : "436284198942039932"
+	}
+]

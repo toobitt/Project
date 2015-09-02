@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script>
+    //console.log('videoinfo=' + encodeURIComponent(JSON.stringify({id : 10, title : '日'})) + '&settings=' + encodeURIComponent(JSON.stringify({id : 'id', title : 'title'})));
+(function(){
+    function parseJSON(json){
+        return JSON && JSON.parse ? JSON.parse(json) : (new Function("return " + json))();
+    }
+    var _location = location.search || location.href;
+    var info = {
+        videoinfo : {},
+        settings : {}
+    };
+    for(var key in info){
+        var match = _location.match(new RegExp(key + '=([^&]*)'));
+        match && match[1] && (info[key] = parseJSON(decodeURIComponent(match[1])))
+    }
+
+    var $parent = parent.document;
+    for(var each in info['settings']){
+        var item = $parent.getElementById(info['settings'][each]);
+        item && (item.value = info['videoinfo'][each]);
+    }
+
+    (function(){
+        var iframes = $parent.getElementsByName('iframe');
+        for(var index = 0, len = iframes.length; index < len; index++){
+            var _iframe = iframes[index];
+            if(_iframe.contentWindow == window){
+                _iframe.parentNode.removeChild(_iframe);
+                return;
+            }
+        }
+    })();
+})();
+</script>
+</body>
+</html>

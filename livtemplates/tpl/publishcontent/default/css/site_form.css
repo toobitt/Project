@@ -1,0 +1,20 @@
+.m2o-l{width:354px;}
+.m2o-l input,.m2o-l textarea{width:240px;}
+.m2o-l .title{width:70px;}
+.m2o-m .title{width:130px;text-align:right;padding-right:5px;}
+.m2o-m input{width:460px;}
+.m2o-m .m2o-item{padding:15px 0 15px 0;background:url('{$RESOURCE_URL}dottedLine.png') repeat-x 0 bottom;}
+.m2o-m .m2o-item:hover{background:url('{$RESOURCE_URL}dottedLine.png') repeat-x 0 bottom;}
+.m2o-m .m2o-item:last-child{background:none;}
+.site_fill_tip{color:#DCDCDC;margin-left:140px;padding-top:4px;display:block;}
+.important{float:none;}
+.common-switch{display:inline-block;top:0;left:4px;vertical-align:top;}
+.m2o-channel-btn:hover{background:#000;}
+.on{background:#000;}
+
+.url-domain{width:120px!important;border:0;}
+.url-domain:hover{border:0;}
+.site-form-title input{width:107px;}
+.form-dioption-item{padding:0;border:0;margin:0;overflow:hidden;}
+.m2o-close{margin:0;padding:0;}
+.each-keyword-input input{width:50px;}

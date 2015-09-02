@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="yes" name="apple-touch-fullscreen" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<link rel="apple-touch-icon-precomposed" href="" />
+<link type="text/css" rel="stylesheet" href="css/common.css" />
+<link type="text/css" rel="stylesheet" href="css/bike.css" />
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/gmu.js"></script>
+
+<title>无线城市</title>
+</head>
+<body class="theme-">
+<header class="m2o-header">
+	<div class="m2o-nav">
+		<aside class="m2o-nav-left">
+			<a class="m2o-nav-icon back"  href="javascript:history.go(-1)">&nbsp;</a>
+		</aside>
+		<h1 class="m2o-nav-title">市民广场站</h1>
+	</div>
+</header>
+<nav class="subnav m2o-flex">
+	<a class="item m2o-flex-one selected" href="website_general.html?address=市民广场站&name=鸿山遗址博物馆">概括</a>
+	<a class="item m2o-flex-one " href="website_noticelist.html?address=市民广场站&name=鸿山遗址博物馆">公告</a>
+</nav>
+<div class="main-wrap website">
+	<div class="general m2o-flex">
+		<div class="pic"><img src="../../lib/images/bike/public-bike.jpg" /></div>
+		<div class="m2o-flex-one">
+			<p class="web-item bikenum">可借车数: <span>12</span></p>
+			<p class="web-item carportnum">可停车位: <span>3</span></p>
+			<p class="update">数据更新于：01-17 08:20</p>
+			<p class="address">地址：鸿山遗址博物馆广场</p>
+			<div class="distance">450m</div>
+		</div>
+	</div>
+	<div class="gohere"><a href="#">到这里去</a></div>
+	<!-- <p class="time">工作日（周一~周五9:00~19:00），周末（周六周日）10:00~18:00；</p>
+	<p class="tips">本站点可以办理自行车卡；</p> -->
+	<p class="business">运营单位：无锡万紫共用传系统有限公司</p>
+	<p class="hotline">服务热线：400-0510-889</p>
+	<p class="reminding">本公司自行车与3Q自行车暂时不能通还通借，请大家还车时注意！</p>
+</div>
+</body>
+</html>

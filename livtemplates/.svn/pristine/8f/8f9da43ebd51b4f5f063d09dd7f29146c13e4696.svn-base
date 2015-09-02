@@ -1,0 +1,1 @@
+.aaaa {	color:#F00;	background:url({$list[0]['IMGURL']}ceshi.jpg);}

@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="yes" name="apple-touch-fullscreen" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<link rel="apple-touch-icon-precomposed" href="" />
+<link rel="stylesheet" href="./css/common.css" type="text/css" />
+<script src="./js/zepto.min.js"></script>
+<script src="./js/gmu/gmu.js"></script>
+
+<title>无线城市</title>
+</head>
+<body class="theme-">
+<header class="m2o-header">
+	<div class="m2o-nav">
+				<aside class="m2o-nav-left">
+							<a class="m2o-nav-icon modules"  href=""></a>
+					</aside>
+						<aside class="m2o-nav-right">
+							<a class="m2o-nav-icon info"  href=""></a>
+					</aside>
+				<h1 class="m2o-nav-title">点播</h1>
+	</div>
+</header>
+<link rel="stylesheet" href="./css/live.css" type="text/css" />
+<div class="subnav m2o-flex">
+	<a class="item m2o-flex-one"  href="./program_recommend.html">节目推荐</a>
+	<a class="item m2o-flex-one selected">全部频道</a>
+</div>
+<div class="main-wrap">
+	<div class="list vod-channel-list">
+			<div class="each-list">
+			<div class="list-item m2o-flex m2o-flex-center">
+	<span class="list-pic">
+		<img src="http://instasrc.com/80x50">
+	</span>
+	<div class="info m2o-flex-one">
+		<h3 class="channel-name">新闻综合频道</h3>
+	</div>
+	<div class="live-flag"></div>
+</div>			<div class="program-wrap m2o-column-two">
+							<div class="program-item">无锡新闻</div>
+							<div class="program-item">第一看点</div>
+							<div class="program-item">新闻夜线</div>
+							<div class="program-item">服务车</div>
+							<div class="program-item">发现</div>
+						</div>
+		</div>
+			<div class="each-list">
+			<div class="list-item m2o-flex m2o-flex-center">
+	<span class="list-pic">
+		<img src="http://instasrc.com/80x50">
+	</span>
+	<div class="info m2o-flex-one">
+		<h3 class="channel-name">都市咨询频道</h3>
+	</div>
+	<div class="live-flag"></div>
+</div>			<div class="program-wrap m2o-column-two">
+							<div class="program-item">无锡新闻</div>
+							<div class="program-item">第一看点</div>
+							<div class="program-item">新闻夜线</div>
+						</div>
+		</div>
+			<div class="each-list">
+			<div class="list-item m2o-flex m2o-flex-center">
+	<span class="list-pic">
+		<img src="http://instasrc.com/80x50">
+	</span>
+	<div class="info m2o-flex-one">
+		<h3 class="channel-name">经济频道</h3>
+	</div>
+	<div class="live-flag"></div>
+</div>			<div class="program-wrap m2o-column-two">
+							<div class="program-item">无锡新闻</div>
+							<div class="program-item">第一看点</div>
+							<div class="program-item">新闻夜线</div>
+							<div class="program-item">服务车</div>
+							<div class="program-item">发现</div>
+						</div>
+		</div>
+			<div class="each-list">
+			<div class="list-item m2o-flex m2o-flex-center">
+	<span class="list-pic">
+		<img src="http://instasrc.com/80x50">
+	</span>
+	<div class="info m2o-flex-one">
+		<h3 class="channel-name">娱乐频道</h3>
+	</div>
+	<div class="live-flag"></div>
+</div>			<div class="program-wrap m2o-column-two">
+							<div class="program-item">无锡新闻</div>
+							<div class="program-item">第一看点</div>
+							<div class="program-item">新闻夜线</div>
+							<div class="program-item">服务车</div>
+							<div class="program-item">发现</div>
+						</div>
+		</div>
+			<div class="each-list">
+			<div class="list-item m2o-flex m2o-flex-center">
+	<span class="list-pic">
+		<img src="http://instasrc.com/80x50">
+	</span>
+	<div class="info m2o-flex-one">
+		<h3 class="channel-name">娱乐频道</h3>
+	</div>
+	<div class="live-flag"></div>
+</div>			<div class="program-wrap m2o-column-two">
+							<div class="program-item">无锡新闻</div>
+							<div class="program-item">第一看点</div>
+							<div class="program-item">新闻夜线</div>
+							<div class="program-item">服务车</div>
+							<div class="program-item">发现</div>
+						</div>
+		</div>
+		</div>
+</div>
+</body>
+</html>
+<script>
+$('.live-flag').click(function(){
+	var parent = $(this).closest('.each-list');
+	parent.toggleClass('current');
+});
+</script>

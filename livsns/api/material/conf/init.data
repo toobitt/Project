@@ -1,0 +1,11 @@
+INSERT INTO `liv_affix_setting` (`aid`, `aname`, `mark`, `expand`, `code`, `is_open`) VALUES
+(1, 'jpg', 'img', 'jpg', '<img src="{filename}" border=0>', 1),
+(2, 'gif', 'img', 'gif', '<img src="{filename}" border=0>', 1),
+(3, 'png', 'img', 'png', '<img src="{filename}" border=0/>', 1),
+(4, 'bmp', 'img', 'bmp', '<img src="{filename}" border=0>', 1),
+(5, 'jpeg', 'img', 'jpeg', '<img src="{filename}" border=0/>', 1),
+(6, 'swf', 'real', 'swf', '<object codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" 100 75 classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">\n<param value="{filename}" name="movie" />\n<param value="high" name="quality" />\n<param name="wmode" value="transparent" />\n</object>', 1),
+(7, 'txt', 'doc', 'txt', '<a href="{filename}">{name}</a>', 1),
+(8, 'zip', 'doc', 'zip', '<a href="{filename}">{name}</a>', 1),
+(9, 'docx', 'doc', 'docx', '<a href="{filename}">{name}</a>', 1),
+(10, 'tif', 'img', 'tif', '<img src="{filename}" border=0/>', 1);;

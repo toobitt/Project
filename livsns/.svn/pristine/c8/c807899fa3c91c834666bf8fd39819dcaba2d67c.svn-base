@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- edited with XMLSpy v2006 sp2 U (http://www.altova.com) by wyb (HomeTest) -->
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://AddEMBTaskService" xmlns:sys="CCTVMRECI" targetNamespace="http://AddEMBTaskService">
+	<types>
+		<xs:schema>
+			<xs:import namespace="CCTVMRECI" schemaLocation="DYEMB_MRECI.xsd"/>
+		</xs:schema>
+	</types>
+	<message name="AddEMBTaskRequest">
+		<part name="AddEMBTaskRequest" type="sys:AddEMBTaskRequestType"/>
+	</message>
+	<message name="AddEMBTaskResponse">
+		<part name="AddEMBTaskResponse" type="sys:AddEMBTaskResponseType"/>
+	</message>
+	<portType name="typeAddEMBTaskService">
+		<operation name="AddEMBTask">
+			<input message="tns:AddEMBTaskRequest"/>
+			<output message="tns:AddEMBTaskResponse"/>
+		</operation>
+	</portType>
+	<binding name="bindingAddEMBTaskService" type="tns:typeAddEMBTaskService">
+		<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="AddEMBTask">
+			<soap:operation soapAction="AddEMBTask"/>
+			<input>
+				<soap:body use="literal" namespace="AddEMBTaskService"/>
+			</input>
+			<output>
+				<soap:body use="literal" namespace="AddEMBTaskService"/>
+			</output>
+		</operation>
+	</binding>
+	<service name="AddEMBTaskService">
+		<port name="typeAddEMBTaskService" binding="tns:bindingAddEMBTaskService">
+			<soap:address location="http://10.0.1.52:8080/embws/services/AddEMBTaskService"/>
+		</port>
+	</service>
+</definitions>

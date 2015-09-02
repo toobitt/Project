@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no,email=no">
+		<title><span class="liv_title">liv_标题</span></title>
+		<link rel="stylesheet" href="{liv_assist_url}/css/common.css">
+		<link rel="stylesheet" href="{liv_assist_url}/css/views.css">
+	</head>
+	<body>
+		<div class="page-content toolbar-through">
+			<div class="content-block  title-block">
+			     <div class="img-block">
+				     <div class="img-box">
+				         <span class="liv_indexpic">liv_索引图</span>
+				     </div>
+			     </div>
+			     <div class="header-block">	
+				 	<h1><span class="liv_title">liv_标题</span></h1>
+				 	<div class="attr-block"><span class="liv_brief">liv_描述</span><span class="liv_more">liv_更多</span></div>
+				 	<div class="vote-info-block clear">
+				 		<div class="time-info">距离本场投票结束<span class="time">00:00:00</span></div>
+				 		<div class="vote-info"><span class="vote-num">0</span>人已投票</div>
+				 	</div>
+			     </div>
+			 </div>
+		     <div class=" form-block">
+		        <form action="" enctype="multipart/form-data" method="post">
+		        	<span class="liv_forms">liv_问卷表单</span>
+		        	<span class="liv_verifycode">liv_验证码</span>
+					<input type="hidden" name="id" value="{liv_id}" />
+					<div class="btn-area">
+						<button class="btn btn-full btn-primary form-to-json">提交投票</button>
+						<button class="btn btn-full btn-operate view-result">查看结果</button>
+					</div>
+				</form>
+		 	 </div>	
+		 	 <div class="preview-block">
+		 	     <div class="preview-list"><span class="liv_result">liv_问卷结果</span></div>
+		 	 	<div class="btn-area">
+					<button class="btn btn-full btn-primary view-form show">继续投票</button>
+				</div>
+			 </div>
+		 </div>
+		 <div class="deviceLimit" style="display:none">{liv_limit}</div>
+		 <script type="text/javascript" src="{liv_assist_url}/js/sea.js"></script>
+		 <script type="text/javascript">
+		 seajs.config({
+				base: "{liv_assist_url}/js",
+			    alias: {
+			        '$':'zepto.min',
+			        'zepto' :'zepto.min',
+			        'spin' : 'spin.min',
+			        'package' : 'package',
+			    },
+			    preload : ['zepto']
+			});
+			seajs.use('views');
+		</script>
+	</body>
+</html>

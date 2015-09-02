@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<title>议程安排</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="css/base.css" rel="stylesheet" >
+<link href="css/style.css" rel="stylesheet">
+<style>
+.schedule-date, .schedule-content{display: none;}
+</style>
+</head>
+
+<body>
+<!--
+<header class="header">
+    <a href="#" class="return"></a>
+    <h1>议程安排</h1>
+</header>-->
+<section>
+    <div class="schedule-date"></div>
+    <div class="schedule-content"></div>
+    <div class="schedule-date"></div>
+    <div class="schedule-content"></div>
+</section>
+<script src="js/jquery.js"></script>
+<script>
+
+$.getJSON('http://hdbbs.liv.cn/agenda.php?appid=6&appkey=3ntzQET0v4rHzrGFDPIW1ScMP4yFHMGA',{},function(data){
+//$.getJSON('./js/agenda.json',{},function(data){
+    var _time = Math.floor($.now()/1000),
+        _status = "",
+        _index_time = 0,
+        _next_time = 0,
+        _start_time = 0,
+        _num = 0,
+        _click = '';
+
+    $.each(data,function(index,value){
+        _index_time = value.publish_time_stamp;
+        data[index+1] = typeof data[index+1] === "undefined" ? value : data[index+1];
+        _next_time = data[index+1].publish_time_stamp;
+
+        _click = '';
+        console.log(_time + "==" + _index_time + "/" + _next_time);
+        if(_time > _index_time && _time >_next_time){
+            _status = "done";
+            _click = ' onclick="goOutLink(\'' +value.outlink + '\')" ' ;
+        }else if(_time > _index_time && _time <= _next_time || _time == _index_time){
+            _status = "ing";
+        }else{
+            _status = "comesoon";   
+        }
+        
+        
+        if(data[0].column_name == value.column_name){
+            _num = 0;
+        }else{
+            _num = 1;
+        }
+        
+        
+        $('.schedule-date').eq(_num).html(value.column_name + '<span class="schedule-date-ico"></span>')
+
+        _start_time = value.publish_time.substring(11).substring(0,5);
+
+        value.brief = (value.brief == '这里输入描述') ? '' : value.brief;
+
+        if( index % 2 == 0 ){
+            console.log(index + "-->0");
+            $(".schedule-content").eq(_num).append('<div  class="schedule-item '+ _status+ '"><a  href="javascript:void(0);" ' + _click +'  class="schedule-item-l"><span class="schedule-item-l-layer">'  + value.title + '<span class="guest">' + value.brief +'</span></span></a><span class="schedule-item-c"></span><span class="schedule-item-r"><span class="schedule-item-r-layer">'  + _start_time + '</span></span></div>');
+        }else{
+            console.log(index + "-->1");
+            $(".schedule-content").eq(_num).append('<div  class="schedule-item '+ _status+ '"><span class="schedule-item-l"><span class="schedule-item-l-layer">'  + _start_time + '</span></span><span class="schedule-item-c"></span><a href="javascript:void(0);" ' + _click +' class="schedule-item-r"><span class="schedule-item-r-layer">' + value.title+ '<span class="guest">' + value.brief +'</span></span></a></a>');
+        }
+
+
+    
+
+    });
+    $('.schedule-date, .schedule-content').show();
+}); 
+
+var platform = navigator.userAgent.toLowerCase();
+window.isIosDevice = (/iphone|ipod|ipad/gi).test(platform);
+window.isIPad = (/ipad/gi).test(platform);
+window.isAndroid = (/android/gi).test(platform);
+window.isSafari = (/safari/gi).test(platform) && !(/chrome/gi).test(platform);
+
+/*
+function goOutLink(link)
+{
+    if (isIosDevice)
+    {
+        document.location.hash = '#func=goOutLink&parameter='+link;
+    }
+    else if(isAndroid)
+    {
+        window.android.goOutLink(link);
+    }
+}
+*/
+function goOutLink(tag) {
+    if (isIosDevice) {
+        tag = tag.replace('#', '&');
+        window.location.hash = '';
+        window.location.hash = '#' + tag;
+    } else if (isAndroid) {
+        window.android.goOutlink(tag);
+    }
+}           
+</script>
+</body>
+</html>

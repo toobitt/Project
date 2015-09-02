@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>城市之美</title>
+<link rel="stylesheet" href="./css/framework7.custom.min.css">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/greeting.css">
+</head>
+<body>
+<div class="view view-main">
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="left">
+				<a href="javascript:history.back()" class="back link">
+					<i class="icon icon-back"></i>
+				</a>
+			</div>
+			<div class="center sliding">城市之美</div>
+			<div class="right">
+			 <a href="#" class="link">
+			 	<i class="icon icon-share"></i>
+			 </a>
+			</div>
+		</div>
+	</div>
+	<div class="pages toolbar-through">
+		<div class="page">
+			<div class="page-content guide-greeting">
+				<div class="content-block-title content-head m2o-flex m2o-flex-center">
+					<h2 class="title"><span class="appname">智慧盐城</span><span class="apptitle">我把盐城寄给你</span></h2>
+					<p class="supple">·电子明信片互动传播活动</p>
+				</div>
+				<div class="content-block-title content-head-icon">
+					<span class="title-icon head-icon">引导</span>
+				</div>
+				<div class="content-block textcenter">
+					<p>泥萌好，<br/>今天我想和你分享一首诗和一幅图<br/>还有一句盐城你好，<br/>就是随时随地发给你的那种</p>
+				</div>
+				<div class="content-block content-logo">
+					<div class="img-box">
+						<img src="images/city.jpg">
+					</div>
+				</div>
+				<div class="content-block-title">
+					<span class="title-icon activity-icon">活动介绍</span>
+					<p class="content-label">活动介绍</p>
+				</div>
+				<div class="content-block textcenter content-brief">
+					<div class="content-inner">想DIY一张明信片寄给那个他（她）吗？那么快来参加<em class="red">“我把盐城寄出去”</em>活动吧！<br/>你可以用手机随手拍<br/>通过<em class="green">智慧盐城</em>APP<br />爆料平台上传照片参加征集就可把美丽盐城发给世界</div>
+				</div>
+				
+				<div class="content-block-title">
+					<span class="title-icon drawing-icon">一幅图</span>
+				</div>
+				<div class="content-block greeting-drawing">
+					<div class="img-box">
+						<img src="images/city.jpg">
+					</div>
+				</div>
+				
+				<div class="content-block-title">
+					<span class="title-icon word-icon">一句话</span>
+				</div>
+				<div class="content-block textcenter">
+					<p>一月不还没有出现<br/>二月你睡在隔壁<br/>三月下起了大雨<br />四月里遍地蔷薇<br />五月我们面对面坐着<br />六月我们彼此珍重道别<br />......<br />盐城你好</p>
+				</div>
+				<div class="content-block greeting-list" data-count="1">
+					<div class="greeting-drawing">
+						<div class="content-inner">
+							<div class="img-box">
+								<img src="images/city.jpg">
+							</div>
+							<a class="link" href="share.html"></a>
+						</div>
+						<div class="title m2o-flex">
+							<p class="order m2o-flex-one">作品001号~025号</p>
+						</div>
+					</div>
+					<div class="greeting-drawing">
+						<div class="content-inner">
+							<div class="img-box">
+								<img src="images/city.jpg">
+							</div>
+							<a class="link" href="share.html"></a>
+						</div>
+						<div class="title m2o-flex">
+							<p class="order m2o-flex-one">作品026号~050号</p>
+						</div>
+					</div>
+					<div class="greeting-drawing">
+						<div class="content-inner">
+							<div class="img-box">
+								<img src="images/city.jpg">
+							</div>
+							<a class="link" href="share.html"></a>
+						</div>
+						<div class="title m2o-flex">
+							<p class="order m2o-flex-one">作品051号~075号</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="content-block-title content-more">
+					<p class="content-label">点击更多 带你去一个叫盐城的地方</p>
+					<span class="title-icon symbol-icon">点击更多</span>
+				</div>
+				<div class="content-block">
+					<div class="app-icon">智慧盐城</div>
+					<div class="share-app" data-param='{"content_url":"111", "content":"222", "pic":"333"}'>活动分享</div>
+				</div>
+			</div>	
+		</div>	
+	</div>
+</div>
+<script type="text/javascript" src="./js/module/head.min.js"></script>
+<script type="text/javascript">
+	head.js(
+		{zepto : "./js/module/zepto.min.js"},
+		{toast : './js/module/toast.js'},
+		{h5app : './js/module/h5app.js'},
+		{viewPC : './js/module/viewPC.js'},
+		{spinner : './js/spinner.js'}
+	);
+	head.ready(["zepto", "h5app"], function(){
+		head.js('./js/greeting_guide.js');
+	});
+</script>
+</body>
+</html>

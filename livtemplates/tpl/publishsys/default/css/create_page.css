@@ -1,0 +1,77 @@
+/*
+Copyright (c) 2011, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 2.9.0
+*/
+html{color:#000;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,select,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,button,caption,cite,code,dfn,em,input,optgroup,option,select,strong,textarea,th,var{font:inherit}del,ins{text-decoration:none}li{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:baseline}sub{vertical-align:baseline}legend{color:#000}
+
+body{color:#333;font-family:黑体,Arial, Helvetica, sans-serif;}
+.clear{clear:both;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{zoom:1;}
+* html>body .clearfix {display: inline-block;width: 100%;}
+* html .clearfix {height: 1%}
+*+html .clearfix {min-height: 1%}
+a{color:#333;text-decoration:none;cursor:pointer}
+a:focus{outline:none;}
+input,select,img{vertical-align:middle;}
+a img{border:none;}
+.mt15{margin-top:15px;}
+.fl{float:left;}
+.fr{float:right;}
+.layout{width:1000px;margin:0 auto;}
+.container{background:white;}
+
+
+
+#selectBlock{position:fixed;left:0;top:0;width:200px;height:700px;background:#ccc;}
+
+#displayArea{margin-left:200px;min-height:500px;overflow:auto;background:#234567;padding:10px;}
+
+.list1{line-height:24px;}
+.list2{line-height:30px;overflow:auto;}
+	.list2 li{float:left;margin:10px;}
+	.list2 span{display:block;width:140px;}
+
+.one-cell{position:relative;}
+
+.one-cell .cell-ops {position:absolute;right:0;top:0;border:1px solid red;text-align:right;}
+.one-cell .cell-ops a{color:red;}
+
+.cont{background:#fff;min-height:200px;min-width:250px;margin:10px;float:left;}
+.cont.onhover{background:rgba(234, 135, 23, 0.5);}
+.cont-2{float:left;width:40%;background:#fff;}
+.cont-3{float:right;width:40%;background:#fff;}
+.cont-4,.cont-5,.cont-6{float:left;width:30%;margin-right:5%;}
+.cont-6{margin-right:0;}
+
+/*滑动区块1*/
+.slide_display_wrapper{width:400px;height:300px;background:#f2f2f2;border:1px solid #e3e3e3;}
+.slide_display{margin:5px;width:385px;height:285px;position:relative;overflow:hidden;}
+.slide_display img{display:block;width:385px;height:255px;}
+.slide_display em{display:block;height:40px;line-height:40px;position:relative;top:-40px;padding-left:15px;background:url(../images/overlay_black.png);color:white;font-size:14px;}
+.slide_display p{position:absolute;bottom:10px;margin-left:15px;color:#818181;}
+.slide_display p strong{color:red;}
+.slide_display li{float:left;}
+.slide_display .switchable-triggers{position:absolute;top:230px;right:10px;}
+.slide_display .switchable-triggers li{width:10px;height:10px;margin-left:10px;font-size:0;background:url(../images/slide_p.png);}
+.slide_display .switchable-triggers li.current{background:url(../images/slide_p_h.png);}
+
+.long_slide_display_wrapper{margin: 0 20px;height: 150px;background: #4a4a4a;position: relative;}
+.long_slide_display{left: 40px;top: 15px;width: 880px;height: 130px;overflow: hidden;}
+.long_slide_display .conts li{float:left;margin-right:20px;}
+.long_slide_display .conts li, .long_slide_display .conts li img {width:130px;height:100px;}
+.long_slide_display .conts li em{display:block;line-height:30px;text-align:center;color:white;}
+.long_slide_display_wrapper .ctrlBtn a{position:absolute;width:23px;height:47px;line-height:50px;top:48px;font-size:0;}
+.long_slide_display_wrapper .ctrlBtn em{display:block;width:100%;height:100%;}
+.long_slide_display_wrapper .ctrlPrev {left:0;background:url(../images/bg_left.png) no-repeat;}
+.long_slide_display_wrapper .ctrlNext {right:0;background:url(../images/bg_right.png) no-repeat;}
+.long_slide_display_wrapper .ctrlPrev em{background:url(../images/slide_left.png) no-repeat 20% 50%;}
+.long_slide_display_wrapper .ctrlNext em{background:url(../images/slide_right.png) no-repeat 80% 50%;}
+
+.mode-list {padding:10px;}
+.mode-list li,.data_source-list li{cursor:pointer;padding:10px 10px;border:1px solid green;margin:10px;float:left;width:150px;word-wrap: break-word;}
+.data_source_box{clear:both;border-top:1px solid #fff;position:relative;top:20px;}
+.data_source-list{padding:10px;}
+

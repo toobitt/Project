@@ -1,0 +1,28 @@
+<style>
+.dingdone-box{font-family:'Hiragino Sans GB W3',"Microsoft Yahei";}
+.dingdone-box .nav{ height:102px; background:#63b8e8;}
+.dingdone-box .wrap{ padding-left:10%;}
+.dingdone-box .main{ padding:50px 20px 0;}
+.dingdone-box .main p{ font-size:16px; color:#333;}
+.dingdone-box .main-content{ padding:28px 0 26px; line-height:30px;}
+.dingdone-box .main-content strong {font-weight:bold; color:#63b8e8;}
+.dingdone-box .main p.main-link,.main p.main-link a{ color:#858585;}
+.dingdone-box .main p.main-team{ padding:64px 0 24px;}
+</style>
+<div class="dingdone-box">
+	<div class="nav">
+        <div class="wrap"><img src="http://file.liv.cn/mail/img/email_logo.jpg" alt="叮当"></div>
+    </div>
+    <div class="wrap">
+        <div class="main">
+            <p>亲爱的用户：</p>
+            <div class="main-content">
+				您好！欢迎加入叮当，您本次申请注册邀请码为：<strong>{@$code@}</strong><br/>现在是叮当平台邀请使用期，如有问题请加入官方QQ群 ( 362083532 ) 交流。
+			</div>
+            <p class="main-link">请点击右侧链接完成注册：<a href="http://my.dingdone.com/register.php" target="_blank">http://my.dingdone.com/register.php</a></p>
+            <p class="main-team">叮当团队</p>
+            <p>{@$date@}</p>
+        </div>
+    </div>
+</div>
+

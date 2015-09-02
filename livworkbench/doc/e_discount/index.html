@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>首页</title>
+<link rel="stylesheet" href="css/framework7.custom.min.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/discount.css">
+</head>
+<body>
+<div class="view view-main discount-index">
+	<!-- <div class="navbar">
+		<div class="navbar-inner">
+			<div class="left">
+				<a href="javascript:history.back()" class="back link external">
+					<i class="icon icon-back"></i>
+				</a>
+			</div>
+			<div class="center sliding">首页</div>
+			<div class="right"></div>
+		</div>
+	</div> -->
+ 
+	<div class="pages">
+		<div data-page="index" class="page">
+			<div class="page-content infinite-scroll">
+				<div class="content-box">
+					<div class="content-block item-block today-block">
+						<div class="block-title m2o-flex"><span class="title-text">今日推荐</span></div>
+						<div class="list-block orderlist-block">
+							<ul>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="./js/sea-modules/seajs/2.2.1/sea.js"></script>
+<script type="text/javascript" src="./js/sea-modules/seajs/2.2.1/sea-debug.js"></script>
+<script type="text/javascript" src="./js/config.js"></script>
+<script type="text/javascript">
+	seajs.use("discount/index");
+</script>
+</body>
+</html>

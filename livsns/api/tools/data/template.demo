@@ -1,0 +1,155 @@
+define('ROOT_DIR', '../../../');
+define('CUR_CONF_PATH', '../');
+define('MOD_UNIQUEID','data_handle');//模块标识
+require_once(CUR_CONF_PATH . 'lib/functions.php');
+require_once(ROOT_DIR.'global.php');
+class {$name}Api extends appCommonFrm
+{
+	private $curl;
+ 	function __construct()
+	{
+		parent::__construct();
+		include_once (ROOT_PATH . 'lib/class/curl.class.php');
+	}
+
+	function __destruct()
+	{
+		parent::__destruct();
+	}
+	
+	function show()
+	{
+		$is_return = 0;
+		$data_handle = array();
+		$parameter = '{$parameter}';
+		if($parameter)
+		{
+			$parameter = stripcslashes($parameter);
+			eval($parameter);
+		}
+		$sql = "{$sql_content}";
+		$sql = stripcslashes($sql);
+		$dataformat = '{$dataformat}';
+		$data_tmp = array();
+		$output = array();
+		if($sql)
+		{
+			$q = $this->db->query($sql);
+			while($row = $this->db->fetch_array($q))
+			{
+				$data_tmp[] = $row;
+			}
+		}
+		if($data_tmp)
+		{
+			foreach($data_tmp as $k => $row)
+			{
+				if($dataformat)
+				{
+					$dataformat = stripcslashes($dataformat);
+					eval($dataformat);
+				}
+				$output[$k] = $row;
+			}
+		}
+		if(empty($output) || $is_return)
+		{
+			$output = $data_handle;
+		}
+		$format = $this->input['format'];
+		$is_mobile = intval($this->input['is_mobile']) ? 1 : 0;
+		if(!$callback)
+		{
+			$callback = $this->input['callback'] ? intval($this->input['callback']) : '';
+		}
+		if(empty($output))
+		{
+			$this->errorOut('NO_CONTENT',$callback,0);
+		}
+		
+        if($is_file)
+        {
+        	if(file_exists($filename) && (TIMENOW - filemtime($filename)) < 43200)//12个小时
+			{
+				$output = json_decode(file_get_contents($filename),1);
+			}
+			else
+			{
+				@unlink($filename);
+        		file_put_contents($filename ,json_encode($output));
+			}
+        }
+		if($callback)
+        {
+        		if($is_mobile)
+        		{
+        			echo json_encode(array($callback ."('" . json_encode($output) . "')"));exit;
+        		}
+        		else
+        		{
+        			echo $callback ."('" . json_encode($output) . "')";exit;
+        		}                
+        }
+		switch($format)
+		{
+			case 'json':
+				echo json_encode($output);exit;
+			break;
+			case 'xml':
+				$xml = '<?xml version="1.0" encoding="UTF-8"?>';
+				$xml .= '<' . $this->mRootNode .'>';
+				$xml .= $this->arrayToXml($output);
+				$xml .= '</' . $this->mRootNode .'>';
+				echo $xml;exit;
+			break;
+			default:
+				echo json_encode($output);exit;
+			break;
+		}						
+	}
+	
+	private function arrayToXml($data)
+    {
+        if (is_array($data))
+        {
+            $out = '';
+            foreach ($data AS $k => $v)
+            {
+                if (is_numeric($k))
+                {
+                    $k = 'items';
+                }
+                if (is_array($v))
+                {
+                    $out .= '<' . $k . '>' . $this->arrayToXml($v) . '</' . $k . '>';
+                }
+                else
+                {
+                    $out .= '<' . $k . '><![CDATA[' . $v . ']]></' . $k . '>';
+                }
+            }
+        }
+        else
+        {
+            $out = $data;
+        }
+        return $out;
+    }
+    
+    private function errorOut($error , $callback = false,$code = 1)
+    {
+    	if($callback)
+		{
+			$error = array("ErrorCode" => $code,'ErrorText' => $error);
+			echo $callback ."('" . json_encode(array($error)) . "')";exit;               
+		}
+    }
+}
+
+$out = new {$name}Api();
+$action = $_INPUT['a'];
+if (!method_exists($out,$action))
+{
+	$action = 'show';
+}
+$out->$action();

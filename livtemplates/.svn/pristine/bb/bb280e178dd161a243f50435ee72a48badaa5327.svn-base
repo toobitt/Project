@@ -1,0 +1,7 @@
+.important{float:none;padding-left:20px;}
+.m2o-header .m2o-title{border-bottom:0;}
+.m2o-m{margin-left:0;}
+.m2o-item .title{width:70px;text-align:right;}
+.m2o-m .m2o-item{padding:15px 0 15px 0;background:url({$RESOURCE_URL}dottedLine.png) repeat-x 0 bottom;}
+.m2o-m .m2o-item:hover{background:url({$RESOURCE_URL}dottedLine.png) repeat-x 0 bottom;}
+.m2o-m .m2o-item:last-child{background:none;}

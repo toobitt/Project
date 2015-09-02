@@ -1,0 +1,65 @@
+.handler-icon{display:inline-block;background:#fdd01b;color:white;padding:0 8px;line-height:24px;border-radius:4px;}
+.makefile{background:#1bbc9b;}
+
+/*列表*/
+.public-list .common-list-item{height:50px; }
+.max-wd{max-width:300px; }
+.ticket-fabu span{margin:0 3px; color:#9AAACC; text-decoration:underline; }
+.common-list-item .common-img {width:40px; height:30px; vertical-align: middle; margin-right:10px; }
+.common-title-detail span{color: #999; font-size: 12px; margin-right: 15px;}
+
+/*弹框*/
+.pop-box { position: absolute; left: 50%; border: 10px solid #6ea5e8; background-color: #fff; z-index: 10001; transition: top 0.5s;}
+.pop-box .pop-title { font-size: 16px; color: #fff; line-height: 35px; background-color: #6ea5e8; vertical-align: top;}
+.pop-box .pop-save-button { position: absolute; right: 35px;}
+.pop-box .pop-close-button2 { position: absolute; right: 0;}
+.pop-box ul { overflow-y: auto;}
+.pop-box li { line-height: 38px; border-bottom: 1px solid #d3d3d3; padding: 0 10px; margin: 0 10px;}
+.publish-wrap { width: 300px; height: 400px; margin-left: -250px; top: 0;}
+.publish-wrap ul { max-height: 352px;}
+.publish-wrap label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 200px; cursor: pointer;}
+.publish-wrap input[type="checkbox"] { height: 13px; margin-right: 5px;}
+.pop-hide { top: -1000px;}
+
+
+/* 表单页
+ */
+.source_item {cursor:pointer; border:1px solid #CCC; display:inline-block; padding:3px 5px; margin:5px;}
+.option_del_box{display:inline-block;width:16px;height:16px;cursor:pointer;float:right;position: relative;right: 250px;top: 4px;}
+.option_del { background: url("{$RESOURCE_URL}close_plan.png") no-repeat scroll 0 0 transparent; cursor: pointer; display: none;float: right; height: 16px; width: 16px;}
+
+.search-range{height:30px;position:relative;}
+.search-button{cursor:pointer;position:absolute;width:20px;height:20px;right:8px;top:3px;background: url({$RESOURCE_URL}bg-all.png)  -111px -45px no-repeat;}
+.search-k{width:210px;height:20px;}
+.more-z-index .down_list {z-index:10001;}
+.down_list {z-index:10000;}
+.date-picker{width:226px;}
+.ui-datepicker{z-index:999999!important;}
+.error{}
+.ui-multiselect { padding:2px 0 2px 4px; text-align:left }
+.ui-multiselect span.ui-icon { float:right }
+.ui-multiselect-single .ui-multiselect-checkboxes input { position:absolute !important; top: auto !important; left:-9999px; }
+.ui-multiselect-single .ui-multiselect-checkboxes label { padding:5px !important }
+
+.ui-multiselect-header { margin-bottom:3px; padding:3px 0 3px 4px }
+.ui-multiselect-header ul { font-size:0.9em }
+.ui-multiselect-header ul li { float:left; padding:0 10px 0 0 }
+.ui-multiselect-header a { text-decoration:none }
+.ui-multiselect-header a:hover { text-decoration:underline }
+.ui-multiselect-header span.ui-icon { float:left }
+.ui-multiselect-header li.ui-multiselect-close { float:right; text-align:right; padding-right:0 }
+
+.ui-multiselect-menu { display:none; padding:3px; position:absolute; z-index:10000; text-align: left }
+.ui-multiselect-menu:nth-child(1){padding-top:30px;}
+.ui-multiselect-checkboxes { position:relative /* fixes bug in IE6/7 */; overflow-y:auto }
+.ui-multiselect-checkboxes label { cursor:default; display:block; border:1px solid transparent; padding:3px 1px }
+.ui-multiselect-checkboxes label input { height:auto; margin-right:5px; }
+.ui-multiselect-checkboxes li { clear:both; font-size:0.9em; padding-right:3px }
+.ui-multiselect-checkboxes li.ui-multiselect-optgroup-label { text-align:center; font-weight:bold; border-bottom:1px solid }
+.ui-multiselect-checkboxes li.ui-multiselect-optgroup-label a { display:block; padding:3px; margin:1px 0; text-decoration:none }
+
+/* remove label borders in IE6 because IE6 does not support transparency */
+* html .ui-multiselect-checkboxes label { border:none }
+.sel-con{display:none;position:absolute;background:url({$RESOURCE_URL}add_btn.png) no-repeat center;width:30px;height:26px;cursor:pointer;}
+
+

@@ -1,0 +1,19 @@
+#flv_preview{position:absolute;left:50%;top:20px;border-radius:3px;box-shadow:0 0 10px #000;cursor:move;visibility:hidden;}
+#flv_preview{background:black;}
+#flv_preview .flv-close{position:absolute;cursor:pointer;right:3px;top:2px;z-index:1000;}
+#flv_preview .flv-close span{background:url("{$RESOURCE_URL}bg-all.png") no-repeat scroll -67px -70px transparent;width:26px;height:26px;display:block;}
+#flv_preview .flv-close span:hover{background-position:-93px -70px;}
+#flv_preview .flv-masking{width:400px;height:300px;position:absolute;top:14px;left:0;}
+.stream-xinhao{color:#000000}
+.red-zifu{color:#939393}
+.common-list-i{top:13px;}
+.bb-orign{font-size:12px;}
+.bb-orign .common-list-cell{display:inline;}
+.common-list-biaoti  .wd200{width:200px;}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2) {
+	#flv_preview .flv-close span{background-image:url({$RESOURCE_URL}slide-close-2x.png);background-size:8px 8px;}
+}
+

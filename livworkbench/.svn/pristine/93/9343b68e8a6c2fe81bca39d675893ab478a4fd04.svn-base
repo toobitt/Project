@@ -1,0 +1,6 @@
+MCP里面和窗口有关的事件处理
+
+
+①在页面全刷新或者刷新某个框架时会执行hg_window_destruct(global.js)里面.
+②页面大小变化时会执行hg_init_client_info(global.js)里面
+③在template/tpl/lab/iframe_list.php设置了窗口滚动时执行的事件,可根据需要添加函数

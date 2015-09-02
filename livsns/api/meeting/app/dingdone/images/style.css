@@ -1,0 +1,120 @@
+/* html5doctor.com Reset v1.6.1 - http://cssreset.com */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
+
+ul, ol, dl, li{list-style-type: none;}
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+.clear{clear:both; height:0px; font-size:0px; line-height:0px; overflow:hidden;}
+.clearfix:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+* html .clearfix {height: 1%;}
+.clearfix {display:inline-block;}
+.clearfix {display:block;}
+
+body{font:100 12px "HelveticaNeue UltraLight","方正正大黑简体","HiraginoSansGB W3","ProximaNova Light","ProximaNova Semibold","Microsoft YaHei","simsun",arial,sans-serif; background:#f5f5f5;}
+#preloader {position: fixed;top:0;left:0;right:0;bottom:0;background:#FFF url(circle.gif) no-repeat center center;z-index:1000000000000000;}
+#box{ position:relative; width:100%;overflow: hidden;}
+.box{background: #f5f5f5;width: 100%;z-index: 1004;overflow: hidden;}
+.box-bottom, .box-up{z-index: 1005;}
+.box .wrap{padding: 44px 15px 50px;}
+.last-box{padding-bottom: 0;}
+.wrap{ padding:0 15px;}
+
+html, body, #box, #box .container{
+    min-height: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#box {
+    overflow: hidden;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0,0,0) scale3d(1,1,1);
+    -webkit-transform-style: preserve-3d;
+}
+
+#box .animate {
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+#box .container {
+    -webkit-transform: translate3d(0,0%,0) scale3d(1,1,1);
+    -moz-transform: translate3d(0,0%,0) scale3d(1,1,1);
+    -ms-transform: translate3d(0,0%,0) scale3d(1,1,1);
+    -o-transform: translate3d(0,0%,0) scale3d(1,1,1);
+    transform: translate3d(0,0%,0) scale3d(1,1,1);
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+}
+
+
+#box .box {
+    overflow: hidden;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translate3d(0,0,0);
+}
+
+.dingdone-header{ background:#2d4375; height:39px; width:100%; padding:5px 0 0; overflow:hidden;position: fixed;z-index: 99999;}
+.dingdone-logo{ float:left; width:63px; height:32px;}
+.dingdone-logo a,.dingdone-return a{ display:block; width:100%; height:100%;}
+.dingdone-logo a{ background:url(logo.png) no-repeat; background-size:63px 32px;}
+.dingdone-return{ float:right; width:28px; height:28px; padding:8px 0 0;}
+.dingdone-return a{ background:url(return.png) no-repeat; background-size:28px 28px;}
+
+.dingdone-btn{ overflow:hidden;}
+.dingdone-btn a{ font-size:18px; color:#fff; font-family:"HiraginoSansGB W3";}
+.dingdone-application-trial,.dingdone-website{ height:42px; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; line-height:42px; margin-top:17px; width:47%; text-align:center;}
+.dingdone-application-trial{ float:left; background:#eb5b4c;}
+.dingdone-website{ float:right; background:#00acee;}
+.dingdone-flipiny{ padding:15px 0 21px;}
+.dingdone-flipiny h1{ background:url(flipiny.png) no-repeat; background-size:253px 50px; width:253px; height:50px; margin:0 auto;}
+.dingdone-flipiny1{ background:url(img.png) no-repeat; background-size:284px 56px; width:284px; height:56px; margin:20px auto 0;}
+.dingdone-flipiny2{ background:url(img7.png) no-repeat; background-size:220px 50px; width:220px; height:50px; margin:20px auto 0;}
+.dingdone-step{ overflow:hidden;}
+.dingdone-step ul{ width:100%;}
+.dingdone-step ul li{ width:89px; height:179px; position:relative;}
+.dingdone-step ul li.dingdone-step1{ float:left;}
+.dingdone-step ul li.dingdone-step2{ position:absolute; left:50%; margin-left:-45px;}
+.dingdone-step ul li.dingdone-step3{ float:right;}
+.dingdone-step ul li .dingdone-step1-top{ background:url(step1.png) no-repeat center top; background-size:66px 70px; width:66px; height:70px; margin:0 12px 0 11px;}
+.dingdone-step ul li .dingdone-step-bottom{ background:url(step.png) no-repeat center bottom; background-size:89px 91px; height:63px; margin-top:13px;font-size:12px; color:#f5f5f5; font-family:"Microsoft YaHei"; padding:25px 14px 0 14px; line-height:16px;}
+.dingdone-step ul li .dingdone-step-txt1{ text-indent:1em;}
+.dingdone-step ul li .dingdone-step2-top{ background:url(step2.png) no-repeat center top; background-size:71px 75px; width:71px; height:75px; margin:0 9px 0 10px;}
+.dingdone-step ul li .dingdone-step3-top{ background:url(step3.png) no-repeat center top; background-size:75px 75px; width:75px;  height:75px; margin:0 6px 0 8px;}
+.dingdone-module{ background:url(jiantou1.png) no-repeat; background-size:89px 71px; width:89px; height:71px; margin:0 auto;}
+.dingdone-list{ overflow:hidden;position:relative; margin-top:3px;}
+.dingdone-list-news,.dingdone-list-special,.dingdone-list-vod{ margin-top:14px; height:160px;}
+.dingdone-list-news{ position:relative; float:left;}
+.dingdone-module-news-desc{border:1px solid #dededd; font-size:12px; color:#979796; font-family:"SimHei"; line-height:18px;padding:50px 2px 9px; width:84px; margin-top:43px; background:#fbfdfe;}
+.dingdone-module-news,.dingdone-module-special,.dingdone-module-vod,.dingdone-module-super,.dingdone-module-weather,.dingdone-module-vote{width:89px; height:88px; position:absolute; left:0; top:0;}
+.dingdone-module-news{ background:url(img1.png) no-repeat; background-size:89px 88px;}
+.dingdone-module-special{ background:url(img2.png) no-repeat;background-size:89px 88px; }
+.dingdone-list-special{position:absolute; left:50%; margin-left:-45px;}
+.dingdone-list-vod{ position:relative; float:right;}
+.dingdone-module-vod{ background:url(img3.png) no-repeat;background-size:89px 88px;}
+.dingdone-module-super{ background:url(img6.png) no-repeat;background-size:89px 88px;}
+.dingdone-module-weather{ background:url(img4.png) no-repeat;background-size:89px 88px;}
+.dingdone-module-vote{ background:url(img5.png) no-repeat;background-size:89px 88px;}
+.dingdone-client-module{ background:url(jiantou2.png) no-repeat left top; background-size:54px 66px; width:54px; height:66px; position:relative; left:50%; margin-left:-27px; margin-top:20px;}
+.classical-client{ overflow:hidden; position:relative;}
+.classical-client li{ margin-top:15px;height:122px;}
+.classical-client li.wuxi,.classical-client li.jinan{ float:left;}
+.classical-client li span{width:78px; height:78px; display:block;}
+.classical-client li.wuxi span{ background:url(img8.png) no-repeat; background-size:78px 78px; }
+.classical-client li.hangzhou span{ background:url(img9.png) no-repeat; background-size:78px 78px; }
+.classical-client li.changchun span{ background:url(img10.png) no-repeat; background-size:78px 78px; }
+.classical-client li.jinan span{ background:url(img11.png) no-repeat; background-size:78px 78px; }
+.classical-client li.haining span{ background:url(img12.png) no-repeat; background-size:78px 78px; }
+.classical-client li.anji span{ background:url(img13.png) no-repeat; background-size:78px 78px; }
+.classical-client li p{color:#3c3c3c; font-size:16px; font-family:"SimHei"; text-align:center; padding:11px 0 16px;}
+.classical-client li.hangzhou,.classical-client li.haining{ position:absolute; left:50%; margin-left:-39px;}
+.classical-client li.changchun,.classical-client li.anji{ float:right;}
+.dingdone-botton{ background:#eb5b4c; color:#fff; font-size:17px; padding:14px 0 12px; width:100%; border:none; outline:none; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; font-family:"HiraginoSansGB W3"; cursor:pointer; margin:20px 0 0;}
+.dingdone-contact{ background:#00acee;}
+.dingdone-footer{ width:100%; height:93px; background:url(footer.png) no-repeat center  center #2d4375; background-size:54px 64px; margin:39px 0 0;}
+
+

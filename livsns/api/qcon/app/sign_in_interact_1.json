@@ -1,0 +1,17 @@
+{
+	[
+		{
+			 id : "4",
+			 name : "zhouxingxing",
+		         company : "tencent",
+			 job : "CTO",
+		 	 avatar :{
+				host : "http://nimg.hoolo.tv",
+				dir : "material/avatars/img",
+				filepath : "0000/00/",
+				filename : 'oQj523su0000.jpg"	
+			 }
+                }
+
+	]
+}

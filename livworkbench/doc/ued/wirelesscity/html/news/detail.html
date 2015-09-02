@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="yes" name="apple-touch-fullscreen" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<link rel="apple-touch-icon-precomposed" href="" />
+<link rel="stylesheet" href="./css/common.css" type="text/css" />
+<script src="./js/zepto.min.js"></script>
+<script src="./js/gmu/gmu.js"></script>
+
+<title>无线城市</title>
+</head>
+<body class="theme-">
+<header class="m2o-header">
+	<div class="m2o-nav">
+				<aside class="m2o-nav-left">
+							<a class="m2o-nav-icon back"  href="javascript:history.go(-1)"></a>
+					</aside>
+						<aside class="m2o-nav-right">
+							<a class="m2o-nav-icon comment"  href="./comment.html"></a>
+					</aside>
+				<h1 class="m2o-nav-title"></h1>
+	</div>
+</header>
+<link rel="stylesheet" type="text/css" href="./css/content.css" />
+<link rel="stylesheet" type="text/css" href="./css/news.css" />
+<div class="main-wrap">
+
+<div class="content">
+	<h1>李克强离京出席中国－中东欧国家领导人会晤</h1>
+	<h5>2013年11月25日 体坛周报</h5>
+	<div class="media-box">
+				<img src="./images/banner.png">
+			</div>
+	<article><span class="name">体坛周报讯</span>
+	国务院总理李克强25日上午乘专机离开北京，出席在罗马尼亚举行的中国－中东欧国家领导人会晤并对罗马尼亚进行正式访问，随后赴乌兹别克斯坦出席上海合作组织成员国总理第十二次会议。李克强即将对罗进行的正式访问是一次历史性访问；而中东欧16国总理汇聚布加勒斯特，参加中国-中东欧国家领导人会晤，充分显示了这些国家加强对华友好关系、发展互利共赢经贸合作强烈愿望
+	</article>
+</div></div>
+<footer class="common-foot">
+	<div class="tabbar m2o-flex">
+		<div class="m2o-flex-one icon share"></div>
+		<div class="m2o-flex-one icon comment"></div>
+		<div class="m2o-flex-one icon collect"></div>
+		<div class="m2o-flex-one icon font"></div>
+		</div>
+</footer><div class="share-wrap">
+	<div class="share-inner">
+		<div class="share-icons">
+			<div class="m2o-flex">
+				<a class="sina">
+					<img src="./images/news/share-icon-sina.png" />
+					<span>新浪微博</span>
+				</a>
+				<a class="tencent">
+					<img src="./images/news/share-icon-tencent.png" />
+					<span>腾讯微博</span>
+				</a>
+				<a class="wechat">
+					<img src="./images/news/share-icon-wechat.png" />
+					<span>微信好友</span>
+				</a>
+				<a class="wechatmoments">
+					<img src="./images/news/share-icon-wechatmoments.png" />
+					<span>微信朋友圈</span>
+				</a>
+			</div>
+			<div class="m2o-flex">
+				<a class="qzone">
+					<img src="./images/news/share-icon-qzone.png" />
+					<span>QQ空间</span>
+				</a>
+				<a class="evernote">
+					<img src="./images/news/share-icon-evernote.png" />
+					<span>印象笔记</span>
+				</a>
+				<a class="email">
+					<img src="./images/news/share-icon-email.png" />
+					<span>邮件分享</span>
+				</a>
+				<a class="message">
+					<img src="./images/news/share-icon-message.png" />
+					<span>短信分享</span>
+				</a>
+			</div>
+		</div>
+		<a class="share-cancel-btn">取 消</a>
+	</div>
+</div>
+<script>
+$(function(){
+	$('.share-cancel-btn').on('click',function(){
+		$('.share-wrap').removeClass('show');
+	});
+});
+</script><script>
+$(function(){
+	$('.icon.share').on('click',function(){
+		$('.share-wrap').addClass('show');
+	});
+});
+</script>

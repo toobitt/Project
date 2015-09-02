@@ -1,0 +1,97 @@
+//css文件编译在 lib/css/...
+@path:'../../../.././../livtemplates/tpl/lib/images/'; 
+.rounded-corners (@radius: 8px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -ms-border-radius: @radius;
+    -o-border-radius: @radius;
+    border-radius: @radius;
+}
+.border-radius-custom(@topleft: 5px, @topright: 5px, @bottomleft: 5px, @bottomright:5px){
+    @radius-custom: @topleft @topright @bottomleft @bottomright;
+    -webkit-border-radius:@radius-custom;
+    -moz-border-radius:@radius-custom;
+    border-radius:@radius-custom;
+}
+.transition(@prop: all, @time: 1s, @ease: linear){
+    -webkit-transition: @prop @time @ease;
+    -moz-transition: @prop @time @ease;
+    -o-transition: @prop @time @ease;
+    -ms-transition: @prop @time @ease;
+    transition: @prop @time @ease;
+}
+.box-shadow(@x:0, @y:3px, @blur:5px, @extend:0, @alpha:0.5, @orient:inset){
+    @shadow: @x @y @blur @extend rgba(0, 0, 0, @alpha) @orient;
+    -webkit-box-shadow:@shadow;
+    -moz-box-shadow:@shadow;
+    box-shadow:@shadow;
+}
+.box-shadow-custom(@x:0, @y:3px, @blur:5px, @extend:0, @alpha:0.5){
+    @shadow: @x @y @blur @extend rgba(0, 0, 0, @alpha);
+    -webkit-box-shadow:@shadow;
+    -moz-box-shadow:@shadow;
+    box-shadow:@shadow;
+}
+.box-module (@box-style : border-box) {
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+.box-flex(@num:1){
+    -webkit-box-flex:@num;
+    -moz-box-flex:@num;
+    box-flex:@num;
+}
+.transform(@rotate: 90deg, @scale: 1, @skew: 1deg, @translate: 10px){
+    -webkit-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+    -moz-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+    -o-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+    -ms-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+    transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+}
+.gradient(@origin: left, @start: #fff, @stop: #000){
+    background-color: @start;
+    background-image:-webkit-linear-gradient(@orign, @start, @stop);
+    background-image:-moz-linear-gradient(@orign, @start, @stop);
+    background-image:-o-linear-gradient(@orign, @start, @stop);
+    background-image:-ms-linear-gradient(@orign, @start, @stop);
+    background-image:linear-gradient(@orign, @start, @stop);
+}
+
+.ellipsis(){
+  overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+}
+.position-lefttop(@left:10px, @top:10px){
+  position:absolute;
+  top:@top;
+  left:@left;
+}
+.position-righttop(@right:10px, @top:10px){
+  position:absolute;
+  top:@top;
+  right:@right;
+}
+.position-rightbottom(@right:10px, @bottom:10px){
+  position:absolute;
+  right:@right;
+  bottom:@bottom;
+}
+@m10:10px;
+@w100:100px; @w150:150px; @w43:43px; @w230:230px;
+@h246:246px; @h195:195px; @h25:25px;
+@z99:99; @z-1:-1;
+@font-size12:12px;
+@font-size14:14px;
+@color-gray:#999;  
+//lighten(@color-gray,40%); #fff;  lighten(@color-gray,37%); #F7F7F7;  lighten(@color-gray,34%);  #f0f0f0;
+//  lighten(@color-gray,24%); #d6d6d6; lighten(@color-gray,20%); #ccc;   lighten(@color-gray,21%); #cfcfcf;
+//darken(@color-gray,40%) #333;  darken(@color-gray,60%);   #000;
+@color-c8d4e2 : #c8d4e2;
+@color-6ea5e8 : #6ea5e8;
+@color-85accd : #85accd;
+@color-da2d2d : #da2d2d;
+@color-aed2f2 : #aed2f2;
+@color-a5c73c : #a5c73c;
+@color-5f9be4 : #5f9be4;
+
+

@@ -1,0 +1,8 @@
+/*瀑布流*/
+.pinterest .box{float:left; width:48%; }
+.pinterest .right-box{float:right;}
+.pinterest .box-item{height:118px; margin-bottom:10px; position:relative; }
+.pinterest  img{width:100%; height:100%; }
+.pinterest .descr{width:100%; line-height:2.2em; position:absolute; bottom:0; left:0; font-size:1.6em; color:#fff; text-align:center; }
+.pinterest .box-item236{height:236px;}
+.pinterest .live:after{content:''; width:45px; height:45px; background:url(../images/video_play.png) center; background-size:45px 45px; position:absolute; left:50%; margin-left:-20px; top:30px; }

@@ -1,0 +1,10 @@
+/*刮刮卡*/
+.ggkBox{position:relative;background:url({$RESOURCE_URL}lottery/bg.png);width:320px;height:480px;background-size:320px 480px;}
+.ggk-canvas,.ggk-txt{position:absolute;width:235px;height:101px;top:199px;left:42px;}
+.ggk-txt{background:#f0f0f0;text-align:center;line-height:101px;color:#9f9f9d;font-size:28px;}
+
+/*大转盘*/
+.demo{width:320px; height:320px; position:relative;}
+#disk{width:320px; height:320px; background:url({$RESOURCE_URL}lottery/disk.jpg) no-repeat;background-size: 320px 320px;}
+#start{width:163px; height:320px; position:absolute; top: 27px;left: 94px;}
+#start img{width: 136px;cursor:pointer}

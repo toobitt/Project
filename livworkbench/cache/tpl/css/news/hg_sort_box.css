@@ -1,0 +1,66 @@
+.clock {
+	background: url("../.././../livtemplates/tpl/lib/images/list-all.png") no-repeat scroll -49px -224px transparent;
+    display: inline-block;
+    float: left;
+    height: 13px;
+    margin-top: 6px;
+    width: 13px;
+}
+.hg-sort-box {
+	display: block;
+	max-height:280px;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+
+.hg-sort-box .sort-box {
+	position: relative;
+	width: 1600px;
+}
+.hg-sort-box ul {
+	width: 191px;
+	float: left;
+	margin-right: 20px;
+	overflow: auto;
+}
+.hg-sort-box li {
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid #e7e7e7;
+}
+.hg-sort-box li .sort-back {
+	padding-left: 25px;
+	background: url(../../../.././../livtemplates/tpl/lib/images/slide-back.png) no-repeat 10px center;
+	color: #7c7c7c;
+}
+.hg-sort-box li .sort-name {
+	float: left;
+	width: 80%;
+}
+.hg-sort-box li .sort-name:hover {
+	background-color: #d8eefc;
+}
+.hg-sort-box li .sort-name-inner {
+	padding-left: 10px;
+}
+.hg-sort-box li .sort-next {
+	float: right;
+	height: 100%;
+	width: 20%;
+	background: url(../../../.././../livtemplates/tpl/lib/images/slide-next.png) no-repeat center center;
+	cursor: pointer;
+}
+.hg-sort-box li .sort-next:hover {
+	background-color: #fdf8ce;
+}
+.hg-sort-box li input {
+	border: 0 none;
+    float: left;
+    height: auto;
+    margin: 12px 10px 0 0;
+}
+.hg-sort-box ul {
+	-moz-transition: 0.2s height;
+	-webkit-transition: 0.2s height;
+	transition: 0.2s height;	
+}

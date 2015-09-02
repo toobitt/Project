@@ -1,0 +1,57 @@
+.live,.task_live,.channels{margin:0 10px 0 2px;}
+.live,.task_live{clear:both;height:auto;position:relative;margin-bottom:7px;}
+.task_live table.bor{margin:0;}
+.live table.bor{width:100%;background: white;}
+.live{border:1px solid #d8d8d8;border-top:0;}
+.task_live{height:auto;border:0;}
+.channels{background:url("{$RESOURCE_URL}channels_bg.png") repeat-x;display:block;height:23px;line-height:39px;padding:8px 0;border: 1px solid #D8D8D8;}
+.channels li.l{float:left;line-height:39px;margin-left:10px;}
+.channels li span.tit{float:left;margin-right:5px;color:#e0e0e0;height: 24px;line-height: 24px;}
+.close{display:inline-block;width:12px;height:12px;position:absolute;right:5px;top:9px;background:url("{$RESOURCE_URL}list-all.png") -41px -329px no-repeat;cursor:pointer;}
+.live a:hover.close,.task_live a:hover.close{background:url("{$RESOURCE_URL}list-all.png") -41px -316px no-repeat;}
+.live .program .date,.task_live .program .date{float:left;height:auto;clear:both;padding:6px 0px; margin:0 auto;width:4.5%;}
+.task_live .program .date{float:none;width:5%;}
+.live .program .date li,.task_live .program .date li{margin-bottom:3px;text-align:right;height:26px;display:block;width:100%}
+.live .program .date li a,.task_live .program .date li a{font-size:12px;line-height:26px;color:#2f2f2f;background:url("{$RESOURCE_URL}live_date.png") 0px -55px no-repeat;width:44px;height:26px;display:inline-block;text-align:center;cursor:pointer;}
+.live .program .date li a.current,.task_live .program .date li a.current{background:url("{$RESOURCE_URL}live_date.png") 0px -1px no-repeat;}
+.live .program .date li a:hover.current,.task_live .program .date li a.current:hover{background:url("{$RESOURCE_URL}live_date.png") 0px -1px no-repeat;}
+.live .program .date li a:hover,.task_live .program .date li a:hover{background:url("{$RESOURCE_URL}live_date.png") 0px -28px no-repeat;}
+.live .history span,.task_live .history span{width:14px;height:13px;background:url("{$RESOURCE_URL}list-all.png") -41px -346px no-repeat;display:inline-block; margin-top:5px}
+.live .program .tv,.task_live .program .tv{float:left;width:95.4%;display:inline;border-left:1px solid #D8D8D8}
+.task_live .program .tv{border-bottom:0px;width:100%;}
+.live .program .tv .left,.task_live .program .tv .left{background:url("{$RESOURCE_URL}list-mu.png") -13px 0 no-repeat;width:8px;height:223px;display:inline}
+.live .program .tv .right,.task_live .program .tv .right{background:url("{$RESOURCE_URL}list-mu.png") -19px 0 no-repeat;width:8px;height:223px;display:inline}
+.live .program .tv .time,.task_live .program .tv .time {font-size:12px;width:15.7%;border-left:1px solid #d8d8d8;height:auto;}
+.live .program .tv .time h4,.task_live .program .tv .time h4{line-height:21px;height:21px;font-size:12px;font-weight:300;padding-left:10px;border-left:1px solid #e8e8e8; margin-left:-1px; position:relative;background:#fff url("{$RESOURCE_URL}list-mu-tv.png") repeat-x;color:#525252}
+.live .program .tv .time-none h4{background:#fff url("{$RESOURCE_URL}list-mu-tv.png") repeat-x;padding-left:10px; border-left-radius:3px;-webkit-border-top-left-radius:3px;-moz-border-top-left-radius:3px;}
+.live .program .tv .time h4 strong,.task_live .program .tv .time h4 strong{ float:right;margin-right:5px}
+.task_live .program .tv .middle .last_time h4{padding-left:0}
+.live .program .tv .time span,.task_live .program .tv .time span{float:left;color:#bdbdbd;margin-right:4px;display:inline-block;font-family:sans-serif;}
+.live .program .tv .time ul,.task_live .program .tv .time ul {padding:8px 0px;clear:both;display:block}
+.scorll{height:185px;overflow-y:scroll;}
+.live .program .tv .time ul li ,.task_live .program .tv .time ul li {font-size:12px;overflow:hidden;padding:0 2px;height:25px;}
+.live .program .tv .time ul li a,.task_live .program .tv .time ul li a{display:block;padding:0 3px;line-height:22px;}
+.live .program .tv .time ul li a em,.task_live .program .tv .time ul li a em{overflow:hidden; white-space:nowrap; text-overflow:clip; /* for IE */ -o-text-overflow: clip; /* for Opera */ -icab-text-overflow: clip; /* for iCab */ -khtml-text-overflow: clip; /* for Konqueror Safari */ -moz-text-overflow: clip; /* for Firefox,mozilla */ -webkit-text-overflow: clip; /* for Safari,Swift*/ font-style:normal;width:69%; display:inline-block}
+.live .program .tv .time ul li a strong,.task_live .program .tv .time ul li a strong{height:12px;width:16px; text-align:center;font-size:10px;display:inline;background:#B5CFE6;color:#fff;font-weight:normal;line-height:12px;font-family:sans-serif;float:right;margin-top:6px;margin-right:4px}
+.live .program .tv .time ul li a:hover,.task_live .program .tv .time ul li a:hover{background:#5D99CF;color:#fff}
+.live .program .tv .time ul li a:hover span,.task_live .program .tv .time ul li a:hover span{color:#fff}
+.live .program .tv .time ul li a:hover strong,.task_live .program .tv .time ul li a:hover strong{ background:#fff;color:#333}
+.live .program .tv .time-none {line-height:22px;font-size:12px;width:10%;}
+.live .program .tv .middle .last_time{border-right:1px solid #d8d8d8}
+.live .program .tv .time-none h4,.task_live .program .tv .time-none h4{line-height:21px;font-size:12px;font-weight:300}
+.task_live .program .tv .time-none{width:20%;line-height:22px;font-size:12px;}
+.task_live .program .tv .time-none ul{border-left:0}
+.task_live .program .tv .time-none h4{padding-left:10px;padding-top:0;}
+.task_live .program .tv .time h4{font-weight:normal;border-right-radius:3px;}
+.live .program .tv .time h4{-webkit-border-top-right-radius:3px;-moz-border-top-right-radius:3px;}
+.task_live .program .tv .time{}
+.task_live .close{width:11px;width:11px; background-position:-54px -316px;}
+.task_live a:hover.close{background-position:-54px -316px;}
+.task_live .program .tv .last_time {width:2%;padding-left:0;}
+/*新增录播*/
+.channels .down_list{float:left}
+.channels_menu .input_left{background-position:-121px -73px;}
+.channels_menu .input_middle{height:24px;border-top:0;border-bottom:0;padding-left:3px}
+.card_show{float:left;background:url("{$RESOURCE_URL}bg-all.png") -46px -85px no-repeat;width:22px;height:26px;display:block;font-size:0;line-height:0;cursor:pointer;margin-left: 7px;}
+.channels_menu{margin:-4px 0 10px 0;clear: both;position: relative;}
+.channels_menu span.j_a{background:url("{$RESOURCE_URL}bg-all.png") -2px -97px no-repeat;display:inline-block;width:16px;height:9px;position:absolute;right:177px;top:-8px;font-size:0;}

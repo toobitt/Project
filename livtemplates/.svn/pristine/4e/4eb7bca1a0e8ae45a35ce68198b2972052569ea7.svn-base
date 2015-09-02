@@ -1,0 +1,19 @@
+.default-option{display:-webkit-box; width:496px; }
+.ad_form .form_ul .form_ul_div.default-option span.title{float:none; }
+.default-option p{display: inline-block; width: 20px; height: 20px; line-height: 17px; margin: 2px 0 0 15px; background-color: #7bb0e6; border-radius: 10px; text-align: center; color: #fff; font-size: 20px; cursor: pointer;}
+.option-contain{margin-top:-8px; }
+.option-contain input{width:109px!important;font-size:14px; margin:8px 3px 0 0;}
+
+/*输入框*/
+.form_ul .form_ul_div input[type="text"], .form_ul textarea{width: 475px; text-indent: 5px;}
+.form_ul .form_ul_div > input[type="text"]{height:25px!important; }
+.form_ul .sort{line-height:25px;}
+
+/*选项框*/
+.ad_form .form_ul .option-type > .form_ul_div{margin-bottom:0; }
+.ad_form .form_ul li.i input[type="checkbox"]{height:13px; }
+.type-choose{width: 490px; margin-left:85px; }
+.type-choose li{float:left; margin:2px 20px 8px 0;}
+.type-choose li span{margin-left: 5px;}
+
+

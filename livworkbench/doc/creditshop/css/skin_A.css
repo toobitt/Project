@@ -1,0 +1,35 @@
+/*new-label/ hot-label*/
+.content-shopping .tips-label.new-label{background-image:url(../images/new-label.png); }
+.content-shopping .tips-label.hot-label{background-image:url(../images/hot-label.png); }
+
+/*default avatar*/
+.cotent-title .content-media{background-image:url(../images/detault-avatar.png); border-color:#c1ced8; }
+.cotent-title .avatar-icon{background-image:url(../images/avatar-icon.png); background-color:#44a4ec; }
+.cotent-title .user-grade{background-image:url(../images/start-icon.png); }
+.cotent-title .next-arrow{background-image:url(../images/icon-next.png); }
+
+/*shop title*/
+.content-shopping .item-title{background-color:#f3c547; }
+.item-intro .item-credits{color:#ff840c; }
+.button.button-default{background-color:#c4c4c4; }
+
+/*address btn*/
+.button.button-submit{background-color:#f46262;}
+.button.button-submit:hover{opacity:0.9; }
+.button.button-cancel{background-color:#b7b7b7;}
+.button.button-disabled{border-color:#d9dfe7; color:#d9dfe7; background-color:#f6f9fc; }
+
+/*exchange success*/
+.credits-success .item-media{background-image:url(../images/success.png); }
+.button-goback{background-color:#afc3d2; }
+
+
+/*record*/
+.exchange-list .exchange-icon{background-image:url(../images/exchange.png); }
+.exchange-list .item-credits, .credits-list .item-after{color:#fb9324; }
+.buttons-row .tab-link{border:1px solid #2f8dd4; color:#2f8dd4; }
+.buttons-row .tab-link.active{background-color:#2f8dd4; color:#fff; }
+
+/*form*/
+input[type="text"].error{border-color:#f46262; }
+

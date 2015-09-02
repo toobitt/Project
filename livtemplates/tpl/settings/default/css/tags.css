@@ -1,0 +1,12 @@
+.tags-marks{display:inline-block;overflow:hidden;width:530px;}
+.tags-no-selected{display:block;background:#ccc;margin-left: -10px;margin-right: -10px;padding: 0 10px;}
+.tags-selected{display:block;}
+.tags-marks ul{float:left;}
+.tags-marks li{float:left;height:30px;margin:0 5px 10px 0;padding:0 10px 0;line-height:30px;background:#00b099;color:#fff;}
+.tags-marks .tag-destroy{color:#fff;padding-left:10px;cursor:pointer;}
+.tags-marks .tag-factory{position:relative;background:none;}
+.tags-marks .tag-factory{padding:0;}
+.tags-marks .tag-factory label{position:absolute;color:#aaa;left:10px;top:1px;}
+.tags-marks .tag-factory input{background:transparent;position:relative;width:160px;height:28px;border:1px solid;border-top-color:#abadb3;border-right-color:#dbdfe6;border-bottom-color:#e3e9ef;border-left-color:#e2e3ea;}
+.tags-marks .tag-factory .tag-add{display:block;position:absolute;top:1px;right:0;width:30px;height:30px;background:url("{$RESOURCE_URL}public_add_tag.jpg") no-repeat;cursor:pointer;}
+span.small{color:#aaa;font-size:12px;}

@@ -1,0 +1,13 @@
+.btn-group {display: -webkit-box;width: 60px;}
+.btn.add_btn {line-height: 18px;}
+.btn.del_btn {line-height: 4px;}
+.btn {display: block;width: 20px;height: 20px;border-radius: 50%;color: #fff;background: #6ea5e8;text-align: center;font-size: 18px;margin: 2px 2px 2px 5px;cursor: pointer;display: none;}
+.form_ul_div .property_ul{width: 350px;float: left;}
+.form_ul_div .property_ul .property_li{margin: 10px 0px;height: 30px;}
+.form_ul_div .source-list{max-height: 200px;min-height: 0px;float: left;overflow-y: auto;border: 2px solid #6E6D6D;padding: 2px;}
+.form_ul_div .source-list .list-ul{float: left;}
+.form_ul_div .source-list .list-ul .list-li{background-color: #F0EFEF;margin: 2px 0;padding: 5px;cursor: auto;}
+.form_ul_div .child-list{min-height: 0px;float: left;border: 2px solid #6E6D6D;padding: 2px;position: relative;z-index: 333;left: 5px;background-color: white;}
+.form_ul_div .child-list .child-ul{float: left;list-style: inherit;}
+.form_ul_div .child-list .child-ul .child-li{background-color: #F0EFEF;margin: 2px 0;padding: 5px;cursor: auto;list-style: inherit;}
+.form_ul_div .index-file{margin-left: 10px;border: 1px solid red;width: 465px;padding: 5px 0px;}

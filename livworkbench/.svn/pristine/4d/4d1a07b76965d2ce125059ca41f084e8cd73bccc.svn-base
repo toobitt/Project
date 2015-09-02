@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>明信片</title>
+<link rel="stylesheet" href="./css/framework7.custom.min.css">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/greeting.css">
+</head>
+<body>
+<div class="view view-main">
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="left">
+				<a href="javascript:history.back()" class="back link">
+					<i class="icon icon-back"></i>
+				</a>
+			</div>
+			<div class="center sliding">明信片</div>
+			<div class="right">
+			 <a href="#" class="link">
+			 	<i class="icon icon-share"></i>
+			 </a>
+			</div>
+		</div>
+	</div>
+	<div class="pages navbar-through">
+		<div class="page">
+			<div class="page-content form-greeting">
+				<div class="content-block-title content-fenge">分割线</div>
+				<form class="list-block" id="greeting-form" action="http://10.0.1.40/livsns/api/feedback/data/feedback.php">
+				   	<ul>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label">收件人: </div>
+									<div class="item-input">
+										<input type="text" placeholder="收件人" name="name" value="盐城广播电视台" />
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content siblings-imgbox item-textarea">
+								<div class="item-inner">
+									<div class="item-title label">寄&nbsp;&nbsp;&nbsp;&nbsp;语: </div>
+									<div class="item-input">
+										<textarea placeholder="寄语" name="brief">我把盐城寄给你！我把盐城寄给你愿我的祝福将你围绕，新年快乐，万事如意！</textarea>
+									</div>
+								</div>
+							</div>
+							<div class="item-content item-img">
+								<div class="img-box">
+									<img src="./images/city.jpg"/>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label">寄件人: </div>
+									<div class="item-input">
+										<input type="text" placeholder="寄件人" name="send" value="朱妍" />
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label">单&nbsp;&nbsp;&nbsp;&nbsp;位: </div>
+									<div class="item-input">
+										<input type="text" placeholder="单位" name="unit" value="电视台" />
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label">电&nbsp;&nbsp;&nbsp;&nbsp;话: </div>
+									<div class="item-input">
+										<input type="tel" placeholder="电话" name="tel" value="12345675678" />
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="content-button">
+						<input type="hidden" name="id" value="56" />
+						<a _href="./draw.html" class="button button-primary form-to-json">寄出去</a>
+						<!-- <a href="#" class="button button-cancel close-popup">取消</a> -->
+					</div>
+			   </form>
+			</div>
+		</div>	
+	</div>
+</div>
+<script type="text/javascript" src="./js/module/head.min.js"></script>
+<script type="text/javascript">
+	head.js(
+		{zepto : "./js/module/zepto.min.js"},
+		{toast : './js/module/toast.js'},
+		{viewPC : './js/module/viewPC.js'},
+		{h5app : './js/module/h5app.js'}
+	);
+	head.ready(["zepto", "h5app"], function(){
+		head.js('./js/greeting_form.js');
+	});
+</script>
+</body>
+</html>

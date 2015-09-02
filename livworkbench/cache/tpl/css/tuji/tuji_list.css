@@ -1,0 +1,31 @@
+html{-webkit-text-size-adjust:none;}
+/*.tuji-list .common-list-data .common-list-item{height:71px;}*/
+.common-list-pub-overflow{width:100px;overflow:hidden;}
+.common-list-overflow{display:block;font-size:14px;}
+.tuji-total{color:#8fa8c6;margin-left:5px;font-size:11px !important;}
+.tuji-name{display:block;}
+.tuji-time{color:#888;font-size:10px;-webkit-text-size-adjust:none;}
+.tuji-imgs{display:none;border-top:1px solid #c8d4e0;padding-left:45px;margin:0 -10px;}
+.tuji-imgs ul.thumb li{margin:0 10px 10px 0;border:none;}
+.tuji-imgs ul.thumb{width:auto;padding:0;}
+.rotate-box{position:relative;width:110px;height:71px;}
+.rotate-item{background:#eee;position:absolute;left:50%;top:50%;margin:-28px 0 0 -31px;width:60px;height:45px;border:1px solid #ddd;}
+.rotate-item-1{z-index:3;}
+.rotate-item-2{z-index:2;}
+.rotate-item-3{z-index:1;width:55px;height:41px;}
+.rotate-inner{width:60px;height:45px;display:table-cell;vertical-align:middle;text-align:center;}
+.tuji_pics_show{width:398px;height:300px;background:#000 url(../../../.././../livtemplates/tpl/lib/images/loading7.gif) no-repeat center;border:1px solid gray;position:relative;}
+.tip_box{width:200px;height:100px;position:absolute;left:25%;top:-33%;background:none repeat scroll 0 0 #000000;opacity:0.7;display:none;z-index:20;}
+.close_tip{position:absolute;left:89%;top:6%;z-index:20;width:15px;height:15px;background: url(../../../.././../livtemplates/tpl/lib/images/hoge_icon.png) no-repeat -185px -18px;overflow:hidden;}
+.pic_info{width:95%;height:15%;cursor:pointer;}
+.arrL,.arrR{position:absolute;width:50%;height:100%;cursor:pointer;left:0;top:0;z-index:10;}
+.arrR{cursor:pointer;left:50%;}
+.btnPrev,.btnNext{position:absolute;top:37%;width:39px;z-index:15;height:80px;cursor:pointer;}
+.btnPrev{left:12px;background:url(../../../.././../livtemplates/tpl/lib/images/btnL_1.png)}
+.btnNext{right:12px;background:url(../../../.././../livtemplates/tpl/lib/images/btnR_1.png)}
+.btn_l{background:url(../../../.././../livtemplates/tpl/lib/images/btnL_2.png) no-repeat;}
+.btn_r{background:url(../../../.././../livtemplates/tpl/lib/images/btnR_2.png) no-repeat;}
+.page_zoom { margin:0 auto; position:relative; width:100%; font-family:verdana; font-size:12px; }
+.bold { font-weight:bold; }
+.blue { color:blue; }
+.red { color:red; }

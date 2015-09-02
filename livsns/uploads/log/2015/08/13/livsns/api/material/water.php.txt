@@ -1,0 +1,51 @@
+
+[2015-08-13 16:54:37]
+/Users/mac/Events/Project/livsns/api/tuji/admin/tuji_get_name.php on line 109:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/tuji/admin/tuji_get_name.php on line 85:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 258:http://10.0.1.40/livsns/api/material/water.php?format=json&a=get_water_config&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=3aa2a36810f2ff98c44d2247baff6a9f
+
+[2015-08-13 16:54:37]
+/Users/mac/Events/Project/livsns/api/tuji/admin/tuji_get_name.php on line 109:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/tuji/admin/tuji_get_name.php on line 85:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 259:array (
+  'a' => 'get_water_config',
+  'lpip' => '127.0.0.1',
+  'm2o_ckey' => 'OjEN52E9LieIe9yx8mfDZEpDlUnxuya9',
+  'appid' => '55',
+  'appkey' => 'GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7',
+  'access_token' => '3aa2a36810f2ff98c44d2247baff6a9f',
+)
+
+[2015-08-13 16:54:37]
+/Users/mac/Events/Project/livsns/api/tuji/admin/tuji_get_name.php on line 109:
+&nbsp;&nbsp;/Users/mac/Events/Project/livsns/api/tuji/admin/tuji_get_name.php on line 85:
+&nbsp;&nbsp;&nbsp;&nbsp;/Users/mac/Events/Project/livsns/lib/class/curl.class.php on line 321:array (
+  'url' => 'http://10.0.1.40/livsns/api/material/water.php?format=json&a=get_water_config&lpip=127.0.0.1&m2o_ckey=OjEN52E9LieIe9yx8mfDZEpDlUnxuya9&appid=55&appkey=GLtPX7N7ijwb83wupXuIrEl1YvIeBbm7&access_token=3aa2a36810f2ff98c44d2247baff6a9f',
+  'content_type' => 'text/html',
+  'http_code' => 403,
+  'header_size' => 148,
+  'request_size' => 416,
+  'filetime' => -1,
+  'ssl_verify_result' => 0,
+  'redirect_count' => 0,
+  'total_time' => 0.002039,
+  'namelookup_time' => 1.9000000000000001E-5,
+  'connect_time' => 2.3E-5,
+  'pretransfer_time' => 4.8000000000000001E-5,
+  'size_upload' => 0,
+  'size_download' => 564,
+  'speed_download' => 276606,
+  'speed_upload' => 0,
+  'download_content_length' => 564,
+  'upload_content_length' => 0,
+  'starttransfer_time' => 0.002,
+  'redirect_time' => 0,
+  'redirect_url' => '',
+  'primary_ip' => '10.0.1.40',
+  'certinfo' => 
+  array (
+  ),
+  'primary_port' => 80,
+  'local_ip' => '10.0.9.25',
+  'local_port' => 65164,
+)

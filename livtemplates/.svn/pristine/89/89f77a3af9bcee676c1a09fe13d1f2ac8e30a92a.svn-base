@@ -1,0 +1,87 @@
+.ad_form{font-size:12px;padding：0}
+.ad_form .form_ul li.i{padding:10px 10px 10px 50px;background:url("{$RESOURCE_URL}dottedLine.png") repeat-x scroll 0 bottom}
+.ad_form .form_ul li.i .down_list{float: left;}
+.ad_form .form_ul li.i span.s,.ad_form .form_ul li.i .form_ul_div label span{color:#333;line-height:24px;}
+.ad_form .form_ul li.i span.error{color:red;padding-left:10px;}
+.ad_form .form_ul li.i input{height:19px;line-height:22px;}
+.ad_form .submit_ok,.ad_form .button_2{margin-left:50px;}
+.ad_form  .form_fb{float:left;width:560px;}
+.ad_form  .form_fb .info_show{padding:0;}
+.h_l .form_ul li.i{padding: 12px 0 12px 2px;}
+.h_l .submit_ok, .h_l .button_2 {margin-left:20px;}
+
+.ad_middle{border: 1px solid #D8D8D8;border-top: 0;border-left: 0;border-bottom: 0;min-height: 583px;height: auto;padding: 0 18px 0 12px;position: relative;width:720px;float: left;}
+.ad_middle h2,.ad_form h2{background:url("{$RESOURCE_URL}dottedLine.png") repeat-x scroll 0 bottom;height: 39px;padding: 13px 0 0 15px;font-family: Microsoft YaHei;}
+
+.ad_middle textarea{min-width:495px;min-height:80px;}
+
+.right_version{width: 132px;overflow: hidden;}
+.right_version h2{height: 39px;line-height: 45px;padding: 13px 0 0 10px;font-size: 12px;font-weight: 100;color: #7D7D7D;background: url("{$RESOURCE_URL}dottedLine.png") repeat-x scroll 0 bottom;}
+.ad_form .form_ul .form_ul_div{width:100%;}
+.ad_form .form_ul .top_left{margin:0px 2px;width:500px;float: left;}
+.ad_form .form_ul .indexpic{ border: 1px solid #CECECE;float: left;height: 120px;margin-left: 12px;padding: 1px;width: 160px;}
+.ad_form .form_ul .form_ul_div input{height:25px;}
+.ad_form .form_ul .form_ul_div input.tcolor{width:53px;display:none;height:20px;position:absolute;top:-4px;left:70px;vertical-align:middle;}
+.ad_form .form_ul .form_ul_div input.title{width:350px;}
+.ad_form .form_ul .form_ul_div input.date{background:url("{$RESOURCE_URL}hg_date.jpg") no-repeat right center;}
+.ad_form .form_ul .top_left input.title{width:350px;}
+.ad_form .form_ul .form_ul_div span.title{line-height:24px;color:#7d7d7d;margin-right: 5px;width:70px;text-align:right;display:block;float:left;min-height:24px;}
+span.r{color:#000000;margin-left: 5px;text-align:left;display:inline;vertical-align: middle; }
+.ad_form .button_6_14{font-weight: bold;margin-left:78px;margin-bottom: 25px;}
+.form_ul_div_l,.form_ul_div_r{float:left;}
+.form_ul_div_r{width:620px;}
+
+.form_ul_div label.gx{width: 115px;display: inline-block;overflow: hidden;height: 24px;}
+.ad_form .form_ul .form_ul_div .h{color:#7d7d7d;line-height:24px;height:24px;}
+
+.affix_table{width:600px;}
+.open_affix{margin-left:15px;text-decoration:underline;cursor:pointer;color:blue;}
+.border{border:1px solid #78BAFE;}
+.blue{color:red;}
+.bcolor{background-color:#F6F5F5;}
+.bg{height:25px;line-height:25px;}
+
+input.checks{float: left;}
+.form_ul_div label.r{float:left;margin-left:5px;display:inline-block;height:100%;vertical-align:middle;}
+
+.form_ul_div div.affix_title_default{line-height: 32px;height:32px;border: 1px solid #FFFFFF;border-bottom:none;padding: 0 10px;width: 662px;}
+.form_ul_div div.affix_title_default span.view{text-decoration:underline;float: left;cursor:pointer;vertical-align:middle;}
+.form_ul_div div.affix_title_show{line-height: 32px;background:#F6F4F5;height:32px;border: 1px solid #449FFC;border-bottom:none;padding: 0 10px;width: 662px;}
+.form_ul_div div.affix_title_show span.view{text-decoration:underline;float: left;cursor:pointer;}
+.form_ul_div div.affix_content{width: 682px;border:1px solid #449FFC;border-top:none;float:left;}
+
+/*上传样式*/
+.ad_form .form_ul .i div.imglist{position: relative;overflow:hidden;float: left;cursor: pointer;border: 1px solid #CCC;width: 100px;height: 75px;display: inline-block;text-align: center;background: white;margin: 10px 5px 0 5px;}
+.ad_form .form_ul .i div.imglist:hover{float: left;cursor: pointer;border: 1px solid #439DFD;width: 100px;height: 75px;display: inline-block;text-align: center;background: white;margin: 10px 5px 0 5px;}
+.ad_form .form_ul .i div.imglist div.del{background: none repeat scroll 0 0 #000000;color: #FFFFFF;height: 15px;line-height: 15px;filter: alpha(opacity=70);opacity: 0.7;position: absolute;right: 0;top: -20px;width: 15px;}
+.ad_form .form_ul .i div.imglist div.over{background: none repeat scroll 0 0 #000000;bottom: -20px;color: #FFFFFF;height: 18px;line-height: 18px;filter: alpha(opacity=70);opacity: 0.7;position: absolute;width: 100px;}
+.ad_form .form_ul .i div.imglist img{float: left;}
+.ad_form .form_ul .i div.awb{display:none;}
+.swfupload {margin: 10px 5px 0;}
+.ad_form .form_ul .i div.imglt{position: relative;overflow:hidden;cursor: pointer;border: 1px solid #CCC;width: 100px;height: 75px;display: inline-block;text-align: center;background: white;margin: 10px 5px 0 5px;}
+.ad_form .form_ul .i div.imglt:hover{float: left;cursor: pointer;border: 1px solid #439DFD;width: 100px;height: 75px;display: inline-block;text-align: center;background: white;margin: 10px 5px 0 5px;}
+.ad_form .form_ul .i div.imglt div.del{background: none repeat scroll 0 0 #000000;color: #FFFFFF;height: 15px;line-height: 15px;filter: alpha(opacity=70);opacity: 0.7;position: absolute;right: 0;top: -20px;width: 15px;}
+.ad_form .form_ul .i div.imglt div.over{background: none repeat scroll 0 0 #000000;bottom: -20px;color: #FFFFFF;height: 18px;line-height: 18px;filter: alpha(opacity=70);opacity: 0.7;position: absolute;width: 100px;}
+.ad_form .form_ul .i div.imglt img{float: left;}
+
+
+
+.form_ul_div div.water_title_default{line-height: 32px;height:32px;border: 1px solid #FFFFFF;border-bottom:none;padding: 0 10px;width: 662px;}
+.form_ul_div div.water_title_default span.view{text-decoration:underline;cursor:pointer;margin_top:150px;}
+.form_ul_div div.water_title_default span.water_info{ margin-left: 8px;cursor: pointer;float: right;text-decoration:underline;color:#727272;}
+.form_ul_div div.water_title_show{line-height: 32px;background:#F6F4F5;height:32px;border: 1px solid #449FFC;border-bottom:none;padding: 0 10px;width: 662px;}
+.form_ul_div div.water_title_show span.view{text-decoration:underline;cursor:pointer;}
+.form_ul_div div.water_title_show span.view_water{ float: right;line-height: 19px;margin-top: 7px;}
+.form_ul_div div.water_title_show span.water_info{ margin-left: 8px;cursor: pointer;float: right;text-decoration:underline;color:#727272;}
+.form_ul_div div.water_c{float:left;width: 580px;border:1px solid #449FFC; margin-left:10px;padding-bottom:10px;}
+.form_ul_div div.water_a_c{width: 580px;border:1px solid #449FFC; margin-left:10px;padding-bottom:10px;}
+
+.form_ul_div div.page_title_input{display:none;}
+.form_ul_div div.page_title{margin-left:140px;margin-bottom:10px;}
+.form_ul_div div.page_title span.pnum{color:#7d7d7d;margin-right:10px;}
+
+.vote_file{position: relative;/*left: -305px;*/ display:none;}
+.file_input {cursor:pointer;}
+#col_logo {float:left; width:100px; height:100px; border:1px solid #CCC; margin-right:10px; line-height:100px; text-align:center; color:#CCC;}
+#repeat_box {margin-left:75px;}
+.repeat_con {padding:10px 0;}

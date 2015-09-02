@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<link rel="stylesheet" type="text/css" href="./css/fb.css" />
+<title>{liv_page_title}</title>
+</head>
+<body>
+<div class="loading">
+</div>
+<div class="main-wrap">
+<div class="content">
+<iframe name="backMsg" id="backMsg" style="display:none;"></iframe>
+	<p style="text-align:center"><img src="{liv_indexpic}" class="index-pic" /></p>
+<p class="info">{liv_brief}</p>
+<span class="line"></span>
+<form action="{liv_url}" target="backMsg" enctype="multipart/form-data" method="post">
+<div class="fb-form">
+{liv_html}
+</div>
+<input type="hidden" name="id" value="{liv_id}"/>
+<input type="hidden" name="access_token" value=""/>
+<input type="hidden" name="device_token" value=""/>
+<input type="hidden" name="appid" value=""/>
+<input type="hidden" name="appkey" value=""/>
+<input type="hidden" name="a" value="create"/>
+<input type="hidden" name="func" value="create"/>
+<input type="hidden" name="pid" value=""/>
+<input type="hidden" name="jump_to" value="{liv_jump_to}"/>
+{liv_verifycode}
+<div class="error-msg"></div>
+<button type="submit" class="button submit">{liv_submit_text}</button>
+</form>
+</div>
+</div>
+<div class="result-wrap">
+<div class="result">
+</div>
+<div class="talk-record">
+</div>
+</div>
+<script type="text/javascript" src="../js/head.min.js"></script>
+<script type="text/javascript">
+	head.js(
+		{zepto : "../js/zepto.min.js"},
+		{h5Client : '../js/h5Client.js'},
+		{print : '../js/print.min.js'},
+		{log : '../js/log.js'}
+	);
+	head.ready(["zepto", "h5Client"], function(){
+		head.js('./js/fb.js', '../js/feedback.js');
+	});
+</script>
+</body>
+</html>

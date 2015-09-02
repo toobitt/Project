@@ -1,0 +1,8 @@
+/* 颜色 */
+.setting section{background:#fff;border:1px solid #d9d9d9;margin-bottom:1em;padding:0 1em 1em;}
+.setting h3{font-size:2em;height:2em;line-height:2em;}
+.setting .color-item{height:3em;position:relative;}
+.setting .color-item.selected:after{position:absolute;content:'';border:2px #fff solid;height:1.6em;width:0.6em;left:50%;-webkit-transform:rotate(45deg);border-top-color:transparent;border-left-color:transparent;}
+.setting .bg-item{width:33%;float:left;}
+.setting .bg-item a{display:block;padding:0 3px;}
+.setting .bg-item img{width:100%;}

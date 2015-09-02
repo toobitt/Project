@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title></title>
+</head>
+
+<body>
+<!-- Load Feather code -->
+<!-- <script type="text/javascript" src="http://feather.aviary.com/js/feather.js"></script> -->
+<script type="text/javascript" src="http://localhost/test/canvas/now/js/feather.js"></script>
+
+<!-- Instantiate Feather -->
+<script type="text/javascript">
+    var featherEditor = new Aviary.Feather({
+        apiKey: '07403a726',
+        apiVersion: 2,
+        language : 'zh_hant',
+        tools: 'all',
+        appendTo: '',
+        onSave: function(imageID, newURL) {
+            var img = document.getElementById(imageID);
+            img.src = newURL;
+        }
+    });
+
+    function launchEditor(id) {
+        featherEditor.launch({
+            image: id,
+            url: document.getElementById(id).src
+        });
+        return false;
+    }
+</script>
+
+<div id="injection_site"></div>
+
+<img id="image1" src="http://m3.img.libdd.com/farm2/132/76EC1F8D55E477EEE277CB2660799E84_426_639.JPEG"/>
+
+<!-- Add an edit button, passing the HTML id of the image and the public URL ot the image -->
+<p><button onclick="return launchEditor('image1');">Edit photo</button></p>
+
+</body>
+</html>

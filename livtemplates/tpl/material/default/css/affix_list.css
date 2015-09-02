@@ -1,0 +1,11 @@
+@charset "utf-8";
+.affix-paixu{width:30px}
+.affix-bj,.affix-sc{width:35px}
+.affix-slt{width:50}
+.affix-wjdx{width:70px;}
+.affix-scip{width:100px}
+.affix-scr{width:100px}
+.affix-sckhd{width:85px}
+/*.affix-paixu,.affix-biaoti,.affix-bj,.affix-sc,.affix-wjdx,.affix-scip,.affix-scr,.affix-sckhd,.affix-ssyy{margin-top:25px;}
+.nomargin{margin:0;padding:0}*/
+.affix-biaoti-overflow{max-width:400px}

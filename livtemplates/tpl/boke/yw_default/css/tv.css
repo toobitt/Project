@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url(reset.css);
+@import url(focus.css);
+a{font-size:12px;text-decoration:none;color:#2d59a1;}
+a:hover, a:active{color:#ff6600;text-decoration:underline;}
+
+.mb1{margin-bottom:10px;}
+
+body{background:#111 url(../img/vbg.jpg) repeat-x;color:#b1b1b1;font-size:12px;font-family:"simsun", arail, sans-serif;}
+
+.header{background:url(../img/tvbg.jpg) no-repeat 100% 0;padding-top:26px;position:relative;z-index:1000;height:58px;}
+.header h1, .header h2{float:left;margin:0 0 0 10px;display:inline;}
+.header h1 a, .header h2 a{display:block;width:295px;height:48px;text-indent:-9999em;overflow:hidden;background:url(../img/vlogo_bk2.png) no-repeat;}
+.header h1 a:active, .header h2 a:active{background-position:0 1px;}
+
+.head{background:url(../img/vmenu.png) no-repeat 100% 17px;height:41px;width:655px;float:right;padding:17px 0 0;}
+.menu{float:left;width:405px;padding-left:18px;position:relative;z-index:100;}
+.menu li{float:left;height:41px;position:relative;}
+.tv .menu .home, .menu .home:hover, .tv .menu .home:active{background:url(../img/vmenu2.png) no-repeat -16px 0;}
+.live .menu .live, .menu .live:hover, .live .menu .live:active{background:url(../img/vmenu2.png) no-repeat -126px 0;}
+.vblog .menu .hudo, .menu .hudo:hover, .vblog .menu .hudo:active{background:url(../img/vmenu2.png) no-repeat -224px 0;}
+.apai .menu .aipai, .menu .aipai:hover, .apai .menu .aipai:active{background:url(../img/vmenu2.png) no-repeat -323px 0;}
+/*
+.menu .home:active{background:url(vmenu2.png) no-repeat 0px 1px;}
+.menu .live:active{background:url(vmenu2.png) no-repeat -110px 1px;}
+.menu .hudo:active{background:url(vmenu2.png) no-repeat -208px 1px;}
+.menu .aipai:active{background:url(vmenu2.png) no-repeat -306px 1px;}
+*/
+.menu li a{text-indent:-9999em;overflow:hidden;display:block;height:40px;}
+
+.menu .home a{width:110px;}
+.menu .live a, .menu .hudo a, .menu .aipai a{width:98px;}
+.menu li ul{position:absolute;border:1px solid #1c1c1e;background:#212121;border-top:none;top:40px;left:-5px;padding:10px;width:82px;display:none;}
+.menu li.hover ul, .menu li:hover ul{display:block;}
+.menu li li{float:none;height:30px;padding-left:12px;border-bottom:1px dotted #383838;line-height:30px;}
+.menu li li a{text-indent:0;height:30px;font-size:14px;color:#999999;display:inline;}
+.menu li li a:hover{color:#ff5f01;text-decoration:underline;}
+
+.header .search{float:right;margin:9px 20px 0 0;display:inline;position:relative;}
+.header .search input{background:transparent;border:none;width:132px;padding:3px 5px;line-height:18px;height:18px;float:left;}
+.header .search .srh_btn{width:58px;height:24px;overflow:hidden;text-indent:-9999em;padding:0;}
+
+
+

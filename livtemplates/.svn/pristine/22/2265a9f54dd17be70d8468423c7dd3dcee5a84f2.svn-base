@@ -1,0 +1,32 @@
+body{width:100%;}
+.nav-box{display:none;}
+.select-search{float:left;}
+.down_list{min-width:70px;}
+.choice-area .down_list{border:1px solid #dadada; border-right: none;}
+.choice-area .search-k{border:1px solid #dadada; float:left; width:90px!important;}
+.choice-area .serach-btn{height:28px; width:26px; border:1px solid #dadada; border-left:none;}
+.select-search>div{height:26px;}
+.select-search .input{height:26px; width:75px!important; border:1px solid #dadada; border-right:none!important;}
+.select-search .input input{height:22px; width:100%;}
+.select-search input.btn_search{width:24px; height:28px; background-color:#ececec; margin:0; border-right:none; background-position:-111px -43px;}
+.choice-area .input_middle{line-height: 26px;}
+.down_list ul li{line-height:28px;}
+.down_list ul{top:26px;}
+.m2o-search{border-bottom: 1px solid #e4e9ed; margin:0 10px;height:40px;}
+
+.publish-form{position:relative;margin:0 10px;padding:15px 25px;display:none;}
+.publish-form li{margin-bottom:14px;}
+.publish-form .i{background:url({$RESOURCE_URL}/dottedLine.png) repeat-x bottom;padding-bottom:14px;}
+.publish-form .title{display:block;float:left;width:35px;height:30px;text-indent:3px;line-height:30px;color:#7d7d7d;}
+.publish-form .content-input{width:590px;height:26px;}
+.publish-form .descr-area{width:590px;height:90px;}
+.publish-form .link-input{width:780px;height:26px;}
+.publish-form .indexpic{position:absolute;top:15px;right:22px;width:175px;height:140px;border:1px solid #c4c4c4;background:url({$RESOURCE_URL}special/default-pic.png) no-repeat center #f9f9f9;}
+.publish-form .indexpic img{width:175px;height:140px;}
+.publish-form .save{cursor:pointer;display:block;margin-top:10px;width:98px;height:34px;margin-left:35px;color:#fff;text-align:center;font-size:14px;border:0;border-radius:2px;background:url({$RESOURCE_URL}menu2013/form/form-button-blue.png) repeat-x;}
+.publish-form .save:hover{background-image:url({$RESOURCE_URL}menu2013/form/form-button-blue-hover.png)}
+
+.define-mode .select-search .down_list, .define-mode .search-input-area{display:none;}
+.define-mode .select-search .data_source{display:block;border-right:1px solid #ccc;}
+.isonlydefine .data_source ul li{display:none;}
+.isonlydefine .data_source ul li:first{display:block;}

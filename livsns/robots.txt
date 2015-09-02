@@ -1,0 +1,8 @@
+#
+# robots.txt for LivPAI
+#
+#
+
+# exclude some access-controlled areas
+User-agent: *
+Disallow: /

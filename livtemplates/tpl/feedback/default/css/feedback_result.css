@@ -1,0 +1,23 @@
+.m2o-bt:hover .common-title{padding-left:15px;}
+.common-title{-webkit-transition: all 0.15s ease-in 0s;transition: all 0.15s ease-in 0s;}
+.w140{width:140px;}
+.color{color: #8fa8c6;}
+.m2o-allprocess{text-decoration: underline;}
+.proce{padding-right: 10px;cursor: pointer;}
+.replay-box{width:690px;border:1px solid #ddd;z-index:99999;position:absolute;background:#fff;left: 170px;}
+.replay-box .replay-head{height:50px;background:#91c1fc;padding:5px 10px;border-bottom:1px solid #ddd;position: relative;}
+.replay-box .replay-head span{display:block;}
+.replay-box .replay-head span.user-name{font-size: 16px;line-height: 50px;margin: 0px 10px;}
+.replay-box .replay-head h3{line-height:50px;margin-left:25px;}
+.replay-box .replay-head span.replay-close{width: 25px;height: 25px;position: absolute;top:15px;right: 15px;font-size: 24px;border: 1px solid #fff;color: #fff;border-radius: 50%;line-height: 25px;text-align: center;cursor:pointer;}
+.replay-box .replay-head img{width:50px;height:50px;border-radius:3px;}
+.replay-box .replay-body{height:235px;border-bottom:1px solid #ddd;padding:10px;overflow: auto;}
+.replay-box .replay-body .clear{clear:both;}
+.replay-box .replay-body .replay-list{max-width: 350px;padding: 7px 20px;border-radius: 10px;line-height: 1.6;font-size: 16px;margin-bottom:10px;}
+.replay-box .replay-body .replay-list.server-replay{float:right;background:#efefef}
+.replay-box .replay-body .replay-list.user-replay{float:left;background:#aaf756}
+.replay-box .replay-footer{height:85px;}
+.replay-box .replay-footer .replay-msg{width: 670px;height: 30px;padding: 10px;font-size: 16px;border: none;}
+.replay-box .replay-footer .replay-msg:hover , .replay-box .replay-footer .replay-msg:focus{-webkit-box-shadow:none;box-shadow:none;}
+.replay-box .replay-footer .replay-btn{float:right;display:block;width:100px;height:30px;background:#5394e4;line-height:30px;text-align:center;font-size:16px;color:#fff;border-radius:3px;margin-right:20px;margin-bottom: 10px;cursor:pointer;}
+.m2o-default , .m2o-default .m2o-item{cursor:not-allowed!important;}

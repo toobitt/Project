@@ -1,0 +1,39 @@
+html,body,.index-outer{height:100%;}
+.index-outer{background:url(../../images/600x800.jpg);}
+.index-wrap{width:100%;position:relative;}
+.index-icons{font-size:2em;max-width:11em;text-align:center;margin:0 1em;}
+.index-item{position:relative;background:#11a4e9;width:5em;height:5em;float:left;margin:3px;}
+.index-item.selected{background-color:#e4804f;}
+.index-icon{display:block;color:#fff;line-height:10em;font-size:0.8em;background:url(../../images/magazine/index/icon_today.png) no-repeat center 1em;}
+.index-icon:link{color:#fff;}
+.index-icon.travel{background-image:url(../../images/magazine/index/icon_camera.png);}
+.index-icon.weibo{background-image:url(../../images/magazine/index/icon_sina.png);}
+.index-icon.hot{background-image:url(../../images/magazine/index/icon_top.png);}
+.index-icon.car{background-image:url(../../images/magazine/index/icon_car.png);}
+.index-icon.special{background-image:url(../../images/magazine/index/icon_wonderful.png);}
+.index-icon.health{background-image:url(../../images/magazine/index/icon_health.png);}
+.index-icon.educate{background-image:url(../../images/magazine/index/icon_learn.png);}
+
+.handler-box{width:5em;}
+.handler-box .user{width:5em;border-radius:50%;text-align:center;display:block;padding-top:5px;}
+.handler-box .index-btn{display:block;height:4em;background:url(../../images/magazine/index/icon_add.png) no-repeat center;}
+.handler-box .index-btn.collect{background-image:url(../../images/magazine/index/icon_collect.png);}
+.handler-box .index-btn.set{background-image:url(../../images/magazine/index/icon_setting.png);}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2) {
+	.index-icon{background-image:url(../../images/magazine/index/icon_today-2x.png);background-size:44px 44px;}
+	.index-icon.travel{background-image:url(../../images/magazine/index/icon_camera-2x.png);}
+	.index-icon.weibo{background-image:url(../../images/magazine/index/icon_sina-2x.png);}
+	.index-icon.hot{background-image:url(../../images/magazine/index/icon_top-2x.png);}
+	.index-icon.car{background-image:url(../../images/magazine/index/icon_car-2x.png);}
+	.index-icon.special{background-image:url(../../images/magazine/index/icon_wonderful-2x.png);}
+	.index-icon.health{background-image:url(../../images/magazine/index/icon_health-2x.png);}
+	.index-icon.educate{background-image:url(../../images/magazine/index/icon_learn-2x.png);}
+	
+	.handler-box .index-btn{background-image:url(../../images/magazine/index/icon_add-2x.png);background-size:24px 24px;}
+	.handler-box .index-btn.collect{background-image:url(../../images/magazine/index/icon_collect-2x.png);}
+	.handler-box .index-btn.set{background-image:url(../../images/magazine/index/icon_setting-2x.png);}
+}

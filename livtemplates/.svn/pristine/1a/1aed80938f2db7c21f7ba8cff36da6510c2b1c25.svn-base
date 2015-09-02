@@ -1,0 +1,14 @@
+@charset "utf-8";
+.getBackupInfo,.postBackupInfo{border:1px solid #CFD2D7;margin: 2px 0px;}
+.getBackupInfo {overflow-y: auto;max-height: 200px;min-height: 30px;}
+.postBackupInfo {margin-top: 6px;overflow-y: auto;max-height: 200px;min-height: 150px;}
+.getBackupInfo li {margin:5px;background:#F5F6F8;border:1px solid #CFD2D7;height: 24px;line-height: 24px;}
+.getBackupInfo li .getBackupTitle {margin-left: 20px;}
+.getBackupInfo li .getBackupDelete {width: 20px;height: 20px;float: right;margin-right: 100px;margin-top: 2px;display: none;cursor: pointer;background:url("{$RESOURCE_URL}chg_plan_add_del.png") -23px -3px no-repeat;}
+.postBackupInfo .postBackupInfo_ul li {margin:2px 4px;border:1px solid #CFD2D7;float:left;width: 50px;height: 50px;}
+.postBackupInfo .postBackupInfo_ul {padding-left: 8px;padding-top: 8px;max-height: 200px;min-height: 145px;}
+.postBackupInfo .postBackupInfo_ul li img {width:48px; height: 48px;margin: 1px;cursor: pointer;}
+.postBackupInfo .postBackupInfo_ul li .backupTitle {border: 1px solid gray;float: left;position: absolute;z-index: auto;width: 100px;height: 30px;display: none;background: #FFF;}
+.postBackupInfo .postBackupInfo_ul li .backupTitle span {display: inline-block;overflow: hidden;white-space: nowrap;width: 100px;}
+.backupInfoBox {border:1px solid blue;width:620px;margin:1px 0px 2px;padding:4px;}
+.count {float: left;margin-left: 10px;display: inline-block;margin-top: 8px;}

@@ -1,0 +1,11 @@
+body{ background:#fff; font-family:"Source Han Sans","Microsoft Yahei";}
+.main{border-radius:15px; width:982px; height:540px; position:absolute; left:50%; top:50%; margin:-260px 0 0 -491px; background:#f7f8fa;overflow:hidden;}
+.logo img{ width:200px; height:108px; display:block; margin:36px auto 0;}
+.main p{ font-size:28px; color:#63b8e8; text-align:center; padding:10px 0 15px;}
+.text,.main .t-link{ font-size:14px; color:#4f4f4f; line-height:26px; text-align:left;padding:8px  20px;margin-top:10px}
+.text span{ color:#1e1e1e; font-weight:bold;}
+.text .t-brief{font-size:14px; color:#4f4f4f; line-height:26px; text-align:left;padding:15px 0;}
+.text .t-brief a{text-decoration:underline;color:#000}
+.btn{ width:188px; height:52px; background:#63b8e8; border-bottom:2px solid #479ecf; margin:10px auto 30px; font-size:24px; color:#fff; line-height:52px; text-align:center; display:block; border-radius:3px;}
+.btn:hover{ text-decoration:none;}
+.t-link a{color:#333;text-decoration:underline}

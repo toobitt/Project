@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>积分商城</title>
+<link rel="stylesheet" href="css/framework7.min.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/credit.css">
+<link rel="stylesheet" href="css/skin_A.css">
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/fn.address.js"></script>
+<script type="text/javascript" src="js/addAddress.js"></script>
+<script type="text/javascript" src="js/template.js"></script>
+</head>
+<body>
+<div class="view view-main user-address">
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="left">
+				<a href="javascript:history.back()" class="back link">
+					<i class="icon icon-back"></i>
+				</a>
+			</div>
+			<div class="center sliding">填写地址</div>
+			<div class="right">
+			 <a href="gainCredit.html" class="link icon-only open-panel"></a>
+			</div>
+		</div>
+	</div>
+ 
+	<div class="pages navbar-through">
+		<div data-page="index" class="page">
+			<div class="page-content">
+				<form name="userAddress" id="userAddress" action="send-address.html" enctype="multipart/form-data" method="post" >
+				<div class="list-block">
+					<ul>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label">收货人</div>
+									<div class="item-input"><input id="M_buyer" name="buyer" type="text" placeholder="名字"></div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label">省份</div>
+									<div class="item-input">
+										<select id="J_province" name="province">
+											<option value="">请选择</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label">城市</div>
+									<div class="item-input">
+										<select id="J_city" name="city">
+											<option value="">请选择</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label">地区</div>
+									<div class="item-input">
+										<select id="J_region" name="region">
+											<option value="">请选择</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label">详细地址</div>
+									<div class="item-input"><input id="M_dtladdr" name="dtladdr" type="text" placeholder="街道门牌号"></div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label">邮政编码</div>
+									<div class="item-input"><input id="M_zipcode" name="zipcode" type="text" placeholder="邮政编码"></div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label">联系电话</div>
+									<div class="item-input"><input id="M_phone" name="phone" type="tel" placeholder="手机或固话"></div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="content-block form-btn">
+					<div class="row">
+						<div class="col-50">
+							<input type="submit" class="button button-form button-submit" value="提交"/>
+						</div>
+						<div class="col-50">
+							<a class="button button-form button-cancel" href="send-address.html">取消</a>
+						</div>
+					</div>
+				</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

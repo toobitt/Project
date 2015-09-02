@@ -1,0 +1,11 @@
+.form_ul .info{line-height:35px;}
+.form_ul .info input{width: 474px;height: 25px!important;text-align: left;font-family: 'Arial';font-size: 13px;color: #000000;font-weight: normal;font-style: normal;text-decoration: none;}
+.form_ul textarea{width:474px;}
+.type-choose{margin-left: -20px;margin-top: -7px;}
+.type-choose li{float:left;margin: 10px 0px 0px 20px;}
+.type-choose li span{margin-left: 10px;}
+.default-option{width:484px;margin-left: 82px;margin-bottom: 12px;display:none;}
+.default-option p{cursor: pointer;width: 20px;height: 20px;
+background: #7bb0e6;display: inline-block;border-radius: 10px;text-align: center;color: #fff;margin: 6px 0 0 15px;font-size: 20px;line-height: 17px;}
+.option-contain input{text-indent: 5px;margin:4px 0 4px 3px;width:109px;font-size:14px;}
+.temp-edit-buttons{padding-bottom:20px;}

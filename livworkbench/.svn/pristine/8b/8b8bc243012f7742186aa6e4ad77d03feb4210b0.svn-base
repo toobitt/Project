@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>厚建文化</title><link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/culture.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.switchable-2.0.min.js"></script>
+<script type="text/javascript" src="js/hoge.js"></script></head>
+<script src="http://api.map.baidu.com/api?v=1.4" type="text/javascript"></script>
+<body>
+<div class="hoge-head-bg">
+	<div class="hoge-head">
+	       <h1 class="logo">hoge厚建</h1>
+	       <ul class="menu">
+	           <li><a href="index.html">M2O</a>/</li>
+	           <li><a href="product.html">更多产品和服务</a>/</li>
+	           <li><a href="news.html">动态</a>/</li>
+	           <li><a href="about.html" class="on">关于厚建</a>/</li>
+	           <li><a href="job.html">厚建招聘</a></li>
+	       </ul>
+	       <div class="search">
+	            <img src="images/phone.png" />
+	       </div>
+	</div>
+</div>
+<div class="hoge-main">
+     <div class="culture-idea layout-wd">
+          <ul class="mt100">
+               <li class="idea1">
+                    <a class="title idea-icon1" data-id="1"><b>CONCEPTION</b>/ 公司理念</a>
+                    <div class="descr">与客户成为搭档，倾听他的心声，和他一起架起良好的IT生态系统；无论是用与成的都是一种伙伴关系。</div>
+                    <div class="line line1"></div>
+               </li>
+               <li class="idea2">
+                    <a class="title idea-icon2" data-id="2"><b>LASTEST NEWS</b> / 最新消息</a>
+                    <div class="descr">与客户成为搭档，倾听他的心声，和他一起架起良好的IT生态系统；无论是用与成的都是一种伙伴关系。</div>
+                    <div class="line line2"></div>
+               </li>
+               <li class="idea3">
+                    <a class="title idea-icon3" data-id="3"><b>OPPORTUNITY</b>/ 人才发展</a>
+                    <div class="descr">与客户成为搭档，倾听他的心声，和他一起架起良好的IT生态系统；无论是用与成的都是一种伙伴关系。</div>
+                    <div class="line line3"></div>
+               </li>
+               <li class="idea4">
+                    <a class="title idea-icon4" data-id="4"><b>CONTACT US</b>/ 联系我们</a>
+                    <div class="descr">与客户成为搭档，倾听他的心声，和他一起架起良好的IT生态系统；无论是用与成的都是一种伙伴关系。</div>
+                    <div class="line line4"></div>
+               </li>
+          </ul>
+     </div>
+</div>
+     <hr/>
+     <a class="pull-btn"></a>
+     <div class="culture-change layout-wd  pb80">
+          <h3 class="fz20 mt100">THE CHOICE OF HOW TO CHANGE / 创<i>变</i>之选</h3>
+          <div class="wd1500">
+	          <ul class="mt100 clearfix">
+		                <li>
+		                      <div class="title our">OUR</div>
+		                      <div class="descr">与客户成为搭档，倾听他的心声，和他一起架起良好的IT生态系统；与员工互为依靠，为他的成长提供动力及支持。无论是用户还是员工，我们的品牌与其达成的都是一种伙伴关系。</div>
+		                </li>
+		                <li>
+		                      <div class="title open">OPEN</div>
+		                      <div class="descr">开放的嵌入式原则及平台级应用，为用户的IT生态系统搭建提供便捷。开放的办公环境及开明的管理制度，帮助员工更好的享受工作。</div>
+		                </li>
+		                <li>
+		                      <div class="title optional">OPTIONAL</div>
+		                      <div class="descr">富有弹性的资源架构，灵活自由的系统搭建，不断迭代的产品应用帮助用户自在选择。我们不要螺丝钉，我们更希望员工可以在不同岗位不同层级自由流动。</div>
+		                </li>
+		                <li>
+		                      <div class="title organics">ORGANICS</div>
+		                      <div class="descr">我们最重要的价值表述便是帮助用户搭建有机智能的IT生态系统；帮助员工践行有机的职业生态体系。</div>
+		                </li>
+		      </ul>
+	     </div>
+     </div>
+     <div class="bgcolor-f7f7f7">
+          <div class="leader-list layout-wd">
+            <div class="wd1100">
+               <ul class="mt100">
+                    <li>
+                         <a class="photo"><img src="images/photo_1.png" /></a>
+                         <div class="info">
+                               <span class="name"><em>沈伟</em>首席执行官</span>
+                               <p class="sign">管理理念与客户成为搭档，倾听他的心声，和他一起架起良好的IT生态系统靠提供动力及支持无论是用户还是员工，我们的品牌其达成的都是一种伙伴关系。</p> 
+                         </div>
+                    </li>
+                    <li>
+                         <a class="photo"><img src="images/photo_2.png" /></a>
+                         <div class="info">
+                               <span class="name"><em>吴德殿</em>首席市场官 副总经理</span>
+                               <p class="sign">管理理念与客户成为搭档，倾听他的心声，和他一起架起良好的IT生态系统靠提供动力及支持无论是用户还是员工，我们的品牌其达成的都是一种伙伴关系。</p> 
+                         </div>   
+                    </li>
+                    <li>
+                         <a class="photo"><img src="images/photo_3.png" /></a>
+                         <div class="info">
+                               <span class="name"><em>刘军</em>首席运营官 副总经理</span>
+                               <p class="sign">管理理念与客户成为搭档，倾听他的心声，和他一起架起良好的IT生态系统靠提供动力及支持无论是用户还是员工，我们的品牌其达成的都是一种伙伴关系。</p> 
+                         </div>
+                    </li>
+                    <li>
+                         <a class="photo"><img src="images/photo_4.png" /></a>
+                         <div class="info">
+                               <span class="name"><em>童庆峰</em>首席技术官 副总经理</span>
+                               <p class="sign">管理理念与客户成为搭档，倾听他的心声，和他一起架起良好的IT生态系统靠提供动力及支持无论是用户还是员工，我们的品牌其达成的都是一种伙伴关系。</p> 
+                         </div>
+                    </li>
+                    <li>
+                         <a class="photo"><img src="images/photo_5.png" /></a>
+                         <div class="info">
+                               <span class="name"><em>赵翔</em>业务拓展中心总监</span>
+                               <p class="sign">管理理念与客户成为搭档，倾听他的心声，和他一起架起良好的IT生态系统靠提供动力及支持无论是用户还是员工，我们的品牌其达成的都是一种伙伴关系。</p> 
+                         </div>
+                    </li>
+               </ul>
+          </div>
+        </div>
+     </div>
+     <div class="hoge-glory layout-wd">
+          <p class="mt100">最具责任感的门户应用专家最具责任感的门户应用专家最具责任感的门户应用专家。</p>
+          <p>The most responsibility specialist in portal system</p>
+          <hr class="mt70"/>
+          <h3 class="fz26">厚建荣誉</h3>
+          <div class="wd1500">
+	              <ul class="mt75">
+	                   <li>
+	                        <a class="title">厚建荣誉1</a>
+	                        <a class="glory-icon glory1"></a>  
+	                   </li>
+	                   <li>
+	                        <a class="title">厚建荣誉1</a>
+	                        <a class="glory-icon glory2"></a>  
+	                   </li>
+	                   <li>
+	                        <a class="title">厚建荣誉1</a>
+	                        <a class="glory-icon glory3"></a>  
+	                   </li>
+	                   <li>
+	                        <a class="title">厚建荣誉1</a>
+	                        <a class="glory-icon glory4"></a>  
+	                   </li>
+	                   <li>
+	                        <a class="title">厚建荣誉1</a>
+	                        <a class="glory-icon glory5"></a>  
+	                   </li>
+	              </ul>
+              </div>
+     </div>
+     <hr/>
+     <div class="hoge-newslist layout-wd">
+       <div id="newsListScroll">
+          <ul>
+                <li>
+                      <div class="title">
+                           <h3>厚建软件入驻邦宁科技</h3>
+                           <span class="date">2012/12/12  14:15</span>
+                      </div>
+                      <div class="photo"><img src="images/news_1.jpg" /></div>
+                      <div class="descr">厚建软件入驻邦宁科技园厚建软件入驻邦宁科技园厚建软件入驻邦宁科技园...</div>
+                </li>
+                <li>
+                      <div class="title">
+                           <h3>厚建软件入驻邦宁科技</h3>
+                           <span class="date">2012/12/12  14:15</span>
+                      </div>
+                      <div class="photo"><img src="images/news_2.jpg" /></div>
+                      <div class="descr">厚建软件入驻邦宁科技园厚建软件入驻邦宁科技园厚建软件入驻邦宁科技园...</div>
+                </li>
+                <li>
+                      <div class="title">
+                           <h3>厚建软件入驻邦宁科技</h3>
+                           <span class="date">2012/12/12  14:15</span>
+                      </div>
+                      <div class="photo"><img src="images/news_3.jpg" /></div>
+                      <div class="descr">厚建软件入驻邦宁科技园厚建软件入驻邦宁科技园厚建软件入驻邦宁科技园...</div>
+                </li>
+                <li>
+                      <div class="title">
+                           <h3>厚建软件入驻邦宁科技</h3>
+                           <span class="date">2012/12/12  14:15</span>
+                      </div>
+                      <div class="photo"><img src="images/news_2.jpg" /></div>
+                      <div class="descr">厚建软件入驻邦宁科技园厚建软件入驻邦宁科技园厚建软件入驻邦宁科技园...</div>
+                </li>
+                <li>
+                      <div class="title">
+                           <h3>厚建软件入驻邦宁科技</h3>
+                           <span class="date">2012/12/12  14:15</span>
+                      </div>
+                      <div class="photo"><img src="images/news_2.jpg" /></div>
+                      <div class="descr">厚建软件入驻邦宁科技园厚建软件入驻邦宁科技园厚建软件入驻邦宁科技园...</div>
+                </li>
+                <li>
+                      <div class="title">
+                           <h3>厚建软件入驻邦宁科技</h3>
+                           <span class="date">2012/12/12  14:15</span>
+                      </div>
+                      <div class="photo"><img src="images/news_2.jpg" /></div>
+                      <div class="descr">厚建软件入驻邦宁科技园厚建软件入驻邦宁科技园厚建软件入驻邦宁科技园...</div>
+                </li>
+                <li>
+                      <div class="title">
+                           <h3>厚建软件入驻邦宁科技</h3>
+                           <span class="date">2012/12/12  14:15</span>
+                      </div>
+                      <div class="photo"><img src="images/news_1.jpg" /></div>
+                      <div class="descr">厚建软件入驻邦宁科技园厚建软件入驻邦宁科技园厚建软件入驻邦宁科技园...</div>
+                </li>
+                <li>
+                      <div class="title">
+                           <h3>厚建软件入驻邦宁科技</h3>
+                           <span class="date">2012/12/12  14:15</span>
+                      </div>
+                      <div class="photo"><img src="images/news_1.jpg" /></div>
+                      <div class="descr">厚建软件入驻邦宁科技园厚建软件入驻邦宁科技园厚建软件入驻邦宁科技园...</div>
+                </li>
+                <li>
+                      <div class="title">
+                           <h3>厚建软件入驻邦宁科技</h3>
+                           <span class="date">2012/12/12  14:15</span>
+                      </div>
+                      <div class="photo"><img src="images/news_1.jpg" /></div>
+                      <div class="descr">厚建软件入驻邦宁科技园厚建软件入驻邦宁科技园厚建软件入驻邦宁科技园...</div>
+                </li>
+                <li>
+                      <div class="title">
+                           <h3>厚建软件入驻邦宁科技</h3>
+                           <span class="date">2012/12/12  14:15</span>
+                      </div>
+                      <div class="photo"><img src="images/news_2.jpg" /></div>
+                      <div class="descr">厚建软件入驻邦宁科技园厚建软件入驻邦宁科技园厚建软件入驻邦宁科技园...</div>
+                </li>
+                <li>
+                      <div class="title">
+                           <h3>厚建软件入驻邦宁科技</h3>
+                           <span class="date">2012/12/12  14:15</span>
+                      </div>
+                      <div class="photo"><img src="images/news_2.jpg" /></div>
+                      <div class="descr">厚建软件入驻邦宁科技园厚建软件入驻邦宁科技园厚建软件入驻邦宁科技园...</div>
+                </li>
+                <li>
+                      <div class="title">
+                           <h3>厚建软件入驻邦宁科技</h3>
+                           <span class="date">2012/12/12  14:15</span>
+                      </div>
+                      <div class="photo"><img src="images/news_1.jpg" /></div>
+                      <div class="descr">厚建软件入驻邦宁科技园厚建软件入驻邦宁科技园厚建软件入驻邦宁科技园...</div>
+                </li>
+          </ul>
+        </div>
+        <a class="prev disabled"><</a>
+        <a class="next">></a>
+     </div>
+     <div class="bgcolor-f7f7f7 pb80">
+          <div class="employee-benefit layout-wd">
+               <h3 class="fz26 mt100 mb50">员工福利</h3>
+               <div class="info">
+                    <p class="title">工资福利</p>
+                    <p>1、基本工资<br/>一旦被录用，就将获得具有竞争力的待遇。</p>
+                    <p class="title mt30">奖金福利</p>
+                    <p>1、绩效奖金<br/>一旦被录用，就将获得具有竞争力的待遇，就将获得具有竞争力的待遇获得具有竞争力的待遇。<br/>2、忠诚奖金<br/>一旦被录用，就将获得具有竞争力的待遇被录用，就将获得具有竞争力的待遇，就将获得具有竞争力的待遇获得具有竞争力的待遇。一旦被录用待遇获得具有竞争力的待遇就将获得具有竞争力的待遇，就将获得具有竞争力的待遇获得具有竞争力的待遇。</p>
+                    <p class="title mt30">培训福利</p>
+                    <p>1、绩效奖金<br/>一旦被录用，就将获得具有竞争力的待遇的待遇被录用，就将获得具有竞争力的待遇，就将获得具有竞争力的待遇获得具力一旦被录用，就将获得具有竞争力的待遇获得具有竞争力的待遇。<br/>2、忠诚奖金<br/>一旦被录用，就将获得具有竞争力的待遇被录用，就将获得具有竞争力的待遇，就将获得具有竞争力的待遇获得具待竞争力的待遇，就将获得具有竞争力的待遇获得具有竞争力的待遇。</p>       
+               </div>
+               <div class="more-job">
+                    <p class="mb30">想要了解更多厚建福利？申请职位申请职位申请职位申请职位申请职位申请职位申请职位申请职位申请职位申请职位。</p>
+                    <a class="search-icon">查看更多职位</a>
+                    <a class="mail-iocn">发送你的简历到厚建</a>
+               </div>
+          </div>
+     </div>
+     <div class="hoge-book layout-wd pb80">
+          <h3 class="mt100 fz26">厚建纪念簿</h3>
+          <div class="wd1100">
+	          <ul class="hoge-book-list clearfix mt50">
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	               <li><a href="javascript:void(0)" title="相册1"><img src="images/book1.png" /></a></li>
+	          </ul>
+          </div>
+          <ul class="hoge-book-con mt50">
+               <li>
+                     <div class="imglist"><img src="images/book_act_01.png" /></div>
+                     <p class="title">"湖边音乐会"</p>
+                     <p class="con">与客户成为搭档，倾听他的心声，和他一起架起良好的IT生态系统；与员工互为依靠，为他的成长提供动力及支持。无论是用户还是员工，我们的品牌与其达成的都是一种伙伴关系。与客户成为搭档，倾听他的心声，和他一起架起良好的IT生态系统；与员工互为依靠，为他的成长提供动力及支持。<br/><br/>与客户成为搭档，倾听他的心声，和他一起架起良好的IT生态系统；与员工互为依靠，为他的成长提供动力及关系。与客户成为搭档，倾听他的心声，，为他的成长提供动力及支持。无论是用户还是员工，我们的品牌与其达成的都是一种伙伴关系。</p>
+                     <p class="camera-model">摄影：aadsdsdfa <em class="date">日期：2011-12-12</em></p>
+               </li>
+          </ul>
+     </div>
+     <div class="map-area">
+          <div id="map" class="map"></div>
+          <div class="map-info">
+               <a class="telphone">400-888-8888</a>
+               <a class="mail">mail@hoge.com</a>
+               <a class="address">邦宁科技园402室</a>
+          </div>
+     </div>
+</div>
+<div class="hoge-footer-bg">
+         <div class="hoge-footer">
+              <ul class="menu clearfix">
+		           <li><a href="#">帮助</a>/</li>
+		           <li><a href="#">合作伙伴</a>/</li>
+		           <li><a href="#">最新消息</a>/</li>
+		           <li><a href="#">厚建招聘</a>/</li>
+		           <li><a href="#">关于厚建</a>/</li>
+		           <li><a href="#">联系我们</a></li>
+             </ul>
+             <p class="mt35 copyright">Copyright @ 1998 - 2012 Hoge. All Rights Reserved.厚建公司 版权所有</p>
+             <p class="mt10 address">江苏省南京市雨花区雨花大道2号邦宁科技园  ｜  025-83326233  ｜  hogesoft@hogesoft.com</p>
+         </div>
+</div>
+<script type="text/javascript">
+       var map=new BMap.Map('map');
+       var point=new BMap.Point(118.787354,31.985689);
+       map.centerAndZoom(point,17);
+       map.addControl(new BMap.NavigationControl());  
+       map.addControl(new BMap.ScaleControl());   
+</script>
+</body>
+</html>

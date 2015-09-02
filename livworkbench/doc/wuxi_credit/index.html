@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>积分商城</title>
+<link rel="stylesheet" href="css/framework7.min.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/credit.css">
+</head>
+<body>
+<div class="view view-main credits-shopping">
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="left">
+				<a href="javascript:history.back()" class="back link">
+					<i class="icon icon-back"></i>
+				</a>
+			</div>
+			<div class="center sliding">积分商城</div>
+			<div class="right"></div>
+		</div>
+	</div>
+ 
+	<div class="pages navbar-through">
+		<div data-page="index" class="page">
+			<div class="page-content">
+				<div class="login-info">
+					<div class="cotent-title m2o-flex-center avatar-login">
+						<div class="content-media"></div>
+						<div class="item-title next-arrow goUcenter m2o-flex-one">登陆后查看积分</div>
+					</div>
+					<div class="cotent-title m2o-flex-center user-login">
+						<div class="content-media"></div>
+						<div class="item-title m2o-flex-one">
+							<p class="gold-num">1394</p>
+							<p class="user-info">做任务，赚积分></p>
+						</div>
+						<a class="next-btn" href="./order_list_exchange.html">兑换记录</a>
+					</div>
+				</div>
+				<div class="content-block content-shopping">
+					<ul class="clear"></ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/device.min.js"></script>
+<script type="text/javascript" src="js/viewPC.js"></script>
+<script type="text/javascript" src="js/template.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/credit.js"></script>
+<script id="list" type="text/html">
+{{each list as value i}}
+    <li>
+		<a href="./shopping-detail.html?id={{value.id}}" class="item-link">
+			<div class="item-content">
+				<div class="item-inner">
+					<img src="{{value.image}}">
+					{{if value.lottery}}<em class="tips-label lottery-label">抽奖</em>{{/if}}
+					<div class="item-title">
+						<p class="item-name">{{value.title}}</p>
+						<p class="item-num"><span class="credits">{{value.credit}}</span><span class="exchange">{{value.num}}人已兑换</span></p>
+					</div>
+				</div>
+			</div>
+		</a>
+	</li>
+{{/each}}
+</script>
+</body>
+</html>

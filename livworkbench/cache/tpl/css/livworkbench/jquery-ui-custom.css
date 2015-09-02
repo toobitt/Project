@@ -1,0 +1,41 @@
+/*自动匹配*/
+.nav-box .custom-item input{padding:12px 1px 13px;margin-left:-1px;}
+.custom-item{width:104px;float:left;height:100%;border-right:1px solid #ccc;}
+.custom-item input{text-align:center;width:104px;height:16px;}
+.custom-item input::-moz-placeholder{color:#727272;}
+.custom-item input::-webkit-input-placeholder{color:#727272;}
+.custom-btn{width:40px;background:url(../../../.././../livtemplates/tpl/lib/images/menu2013/search.png) no-repeat center #fff;cursor:pointer;border:0;margin-top:10px;background-color:transparent;}
+.custom-btn:hover, .custom-btn:focus{background-color:transparent;border:0; box-shadow: none; }
+
+.ui-autocomplete{border:none; border-bottom:1px solid #ccc; background:#fff; max-height:400px;overflow-y:auto; padding:0; border-radius:0; }
+.ui-autocomplete .ui-menu-item{overflow:hidden; text-align:center; border:1px solid #ccc; border-bottom:none; width:auto;}
+.ui-autocomplete .ui-menu-item a{padding:0; line-height: 32px;cursor:pointer; border-radius:0; }
+.ui-autocomplete .ui-state-focus{border:1px solid #ccc; background:#ddeefe; color:#333;}
+
+
+/*日历选择器*/
+.ui-widget{font-family:Trebuchet MS,Tahoma,Verdana,Arial,sans-serif!important;}
+.ui-datepicker{width:239px!important; padding:0!important; border-radius:5px!important; background:#e9e9e9!important; border:none!important; z-index:999999999!important;}
+.ui-datepicker .ui-datepicker-header{border:1px solid #3676b3; color:#fff; border-top-left-radius:5px!important; border-top-right-radius:5px!important;
+	 background:-webkit-linear-gradient(#379efd,#4d85b8); background:-moz-linear-gradient(#379efd,#4d85b8); background:linear-gradient(#379efd,#4d85b8);}
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next{width:1.5em!important; height:1.5em!important; border:1px solid #296aa4; background:transparent!important; border-radius:3px!important; top:7px!important;}
+.ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next-hover{top:7px!important; border:1px solid #296aa4!important; }
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-prev-hover{left:10px!important;}
+.ui-datepicker .ui-datepicker-next, .ui-datepicker .ui-datepicker-next-hover{right:10px!important;}
+.ui-datepicker .ui-datepicker-prev .ui-icon{background:url(../../../.././../livtemplates/tpl/lib/images/2013/date-picker-pre.png) no-repeat center!important;}
+.ui-datepicker .ui-datepicker-next .ui-icon{background:url(../../../.././../livtemplates/tpl/lib/images/2013/date-picker-next.png) no-repeat center!important;}
+.ui-datepicker .ui-datepicker-header .ui-state-hover{background:transparent!important; }
+.ui-datepicker-title select.ui-datepicker-month, .ui-datepicker-title select.ui-datepicker-year{width:60px;}
+
+.ui-datepicker .ui-datepicker-title{margin:0 0.1em!important; line-height:2.4em!important; background:url(../../../.././../livtemplates/tpl/lib/images/2013/date-picker-bg.png) repeat-x center bottom;}
+.ui-datepicker table{border:1px solid #ccc; background-color:#fff; margin:0 0 0.1em;}
+.ui-datepicker th{background-color:#e9e9e9; padding:0.3em!important;}
+.ui-datepicker td{border:1px solid #ddd!important; padding:0!important;}
+.ui-datepicker .ui-state-default{border:none!important; display:block; font-weight:bold!important; padding:7px; color:#666; background:#fff!important;}
+.ui-datepicker .ui-state-hover{background:#eefbff!important;}
+.ui-datepicker .ui-state-active{background:#eefbff!important;}
+.ui-datepicker .ui-timepicker-div{padding:5px 10px 0;}
+.ui-datepicker .ui-state-highlight{background:#e6f3fc!important; color:#000;}
+.ui-datepicker .ui-slider{border:1px solid #ddd!important; background:#f6f6f6; border-radius:4px!important; font-size:0.5em!important;}
+.ui-datepicker .ui-slider .ui-slider-handle{border:1px solid #ccc!important; background:#f6f6f6!important; padding:0; border-radius:50%!important;}
+.ui-datepicker .ui-datepicker-buttonpane .ui-state-default{border:1px solid #ccc!important; background:#f6f6f6!important; color:#1c94c4!important; border-radius:0!important;}

@@ -1,0 +1,47 @@
+/*盒模型结构*/
+.sys-flex,.m2o-flex {display: -moz-box; display: box; display: -webkit-box; }
+.sys-flex-center,.m2o-flex-center{ -webkit-box-align:center; -moz-box-align:center; box-align:center;}
+.sys-flex-one,.m2o-flex-one{-webkit-box-flex:1; -moz-box-flex:1; box-flex:1;}
+.sys-flex-two,.m2o-flex-two{ -webkit-box-flex:2; -moz-box-flex:2; box-flex:2;}
+.sys-vertical,.m2o-vertical{-webkit-box-orient:vertical;-ms-flex-direction:column;}
+.sys-pack-center{-webkit-box-pack: center;}
+.hide{display:none;}
+
+.ad_form .form_ul .form_ul_div span.title{width:90px;}
+.set-attr-default{padding-left: 105px;}
+.set-attr-default[_type="single_choice"] .setting-item,
+.set-attr-default[_type="multiple_choice"] .setting-item{margin-bottom:10px;}
+.set-attr-default[_type="pic_radio"] .setting-item,
+.set-attr-default[_type="pic_upload_radio"] .setting-item{float:left;margin:0 10px 10px 0;}
+.set-attr-default input{outline:none;margin-right:5px;box-sizing:border-box;height:30px!important;padding:0;text-indent:5px;line-height:normal!important;}
+.set-attr-default input:focus{outline:none;box-shadow:none;}
+.set-attr-default input[type="file"]{display:none;}
+.set-attr-default input[type="radio"], .set-attr-default input[type="checkbox"]{height:19px!important;}
+.set-attr-default .pic-prev{width:120px;height:213px;line-height:198px;font-size:0;text-align:center;cursor:pointer;background:#f6fafd;}
+.set-attr-default .pic-prev img{max-width:100%;max-height:100%;vertical-align: middle;}
+.set-attr-default .add-btn{display:inline-block;height:30px;padding:0px 20px;line-height:30px;color:#fff;border-radius:3px;cursor:pointer;background:#48c9b0;margin-bottom:10px;}
+.set-attr-default .del-btn{position:relative;cursor:pointer;color: transparent;display:inline-block;width:20px;height:20px;border-radius:3px;margin-left:5px;background:#ee8176;}
+.set-attr-default .del-btn:after{position:absolute;content:'';width:12px;height:2px;background:#fff;left:50%;margin:-1px 0 0 -6px;top:50%;}
+
+.overflow{overflow:hidden;}
+
+.tile-item{margin-bottom:10px;}
+.tile-item .tname{float:left;width:90px;text-align:right;padding-right:10px;line-height:30px;color:#999;}
+
+/** 拾色器样式 */
+.sp-container{background:#f6f9fc;border-color:#d9dfe7;border-radius:3px;}
+.sp-replacer{width:111px;border-color:#dedede;background:#fff;height:20px;position:relative;}
+.sp-preview{width:20px;height:18px;border-color:#dedede;border-radius:3px;}
+.sp-dd{position:absolute;right:17px;color:transparent;top:9px;}
+.sp-dd:after{position:absolute;content:'';border:5px solid transparent;border-top-color:#aaa;border-top-width:7px;}
+
+/* 弹窗-选项卡 */
+.common-tab-wrap .tab-btns{border-left:1px solid #d8dfe7;text-align:center;font-size:14px;border-top-left-radius:3px;}
+.common-tab-wrap .tab-btn{cursor:pointer;width:124px;height:39px;line-height:38px;background:#f6fafd;border:1px solid #d8dfe7;border-left:none;border-bottom:none;}
+.common-tab-wrap .tab-btn:first-child{border-top-left-radius:3px;}
+.common-tab-wrap .tab-btn:last-child{border-top-right-radius:3px;}
+.common-tab-wrap .tab-btn.selected{background:#fff;position:relative;}
+.common-tab-wrap .tab-btn.selected:after{position:absolute;content:'';width:100%;height:1px;background:#fff;left:0;bottom:-1px;}
+.common-tab-wrap .tab-content{border:1px solid #d8dfe7;background:#fff;border-radius: 3px;border-top-left-radius: 0;}
+.common-tab-wrap .tab-item{padding:30px 0;}
+.common-tab-wrap .tab-item .item-name{color:#838e9e;font-size:12px;width:125px;text-align:right;padding:18px 30px 0 0;line-height:12px;}

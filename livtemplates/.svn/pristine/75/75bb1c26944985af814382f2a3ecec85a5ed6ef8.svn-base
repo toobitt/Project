@@ -1,0 +1,22 @@
+.basic-configuration{display: block;float: left;font-size: 14px;margin: 10px 0 0 15px;height: 35px;line-height: 35px;text-align: left;}
+.configuration-title{height:35px;line-height: 35px!important;}
+.i{overflow:hidden}
+.info{float:left}
+.info input{width:50px!important;height:19px!important;}
+.continuous-sign{float: left;margin: 10px 0 0 40px;}
+.item{height:auto;min-height:35px;display:-webkit-box;line-height: 35px;}
+.item .lastedop{color:#7d7d7d!important;display: block;height: 35px;line-height: 35px;min-width: 75px;}
+.item .qdxq{color:#7d7d7d!important;display: block;height: 35px;line-height: 35px;min-width: 75px;}
+.item .is_todaysayxt{color:#7d7d7d!important;display: block;height: 35px;line-height: 35px;min-width: 75px;}
+.item .todaysay{color:#7d7d7d!important;display: block;height: 35px;line-height: 35px;min-width: 75px;}
+.configuration{display:-webkit-box;}
+.margin{margin: 8px 0 0 20px;}
+.mar20{margin-left:20px;}
+.mar20 input[type="text"]{width:50px;}
+.configuration .type{margin-right: 10px;}
+.most-day{display: block;width: 23px;height: 23px;border: 1px solid #DEDEDE;border-left:none;margin-top: 4px;text-align: center;line-height: 23px;background: #eee;font-size: 14px;}
+.temp-edit-buttons{margin-top:20px;}
+.btn{width: 15px;height: 15px;background: #629ee7;color: #fff;line-height: 15px;text-align: center;border-radius: 50%;margin-top: 8px;cursor:pointer;display:none}
+.delete{margin-left:5px;}
+.item:hover .btn{display:block}
+.configuration-info{display:none}

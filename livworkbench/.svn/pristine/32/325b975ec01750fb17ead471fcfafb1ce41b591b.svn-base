@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>新闻</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.switchable-2.0.min.js"></script>
+</head>
+<style>a{color:inherit;}</style>
+<body>
+<!-- head start -->
+<div class="header-bg">
+     <div class="head layout">
+          <h1 class="logo fl">M2O新媒体综合运营平台</h1>
+          <div class="fr mt15">
+               <div class="search-area fl">
+                    <a class="search-icon"></a>
+                    <input type="text" class="search-txt"/>
+               </div>
+               <ul class="news-list fl">
+               	   <li><a href="#">站票打折</a></li>
+               	   <li><a href="#">钓岛问题</a></li>
+               	   <li><a href="#">抢票插件</a></li>
+               </ul>
+          </div>
+     </div>
+</div>
+<div class="nav-bg">
+     <div class="nav layout">
+          <ul class="menu">
+              <li><a href="index.html">首页</a></li>
+              <li class="on"><a href="news.html">新闻</a></li>
+              <li><a href="live.html">直播</a></li>
+              <li><a href="vedio.html">视频</a></li>
+              <li><a href="dianbo.html">点播</a></li>
+              <li><a href="photo.html">图片</a></li>
+              <li><a class="all" href="index.html">全部</a>
+          		   <ul class="nav-more">
+          			  <li><a>票务</a></li>
+          			  <li><a>路况</a></li>
+          			  <li><a>杂志</a></li>
+          		   </ul>
+          	   </li>
+         </ul>
+     </div>
+</div>
+<!-- head end -->
+
+
+<div class="container clearfix layout page-news"><div class="cont_01">
+	<div class="slide_display_wrapper">
+		<div class="slide_display">
+			<ul>
+				<li><img src="http://r3.sinaimg.cn/10260/2013/0206/dd/c/57377383/250x10000x100x0x0x1.jpg" /><em>希拉里就钓鱼岛问题警告中国</em><p>希拉里就钓鱼岛问题警告中国...<strong>[详细]</strong></p></li>
+				<li><img src="http://r3.sinaimg.cn/10260/2013/0206/48/0/11378603/250x10000x100x0x0x1.jpg" /><em>中国不甩希拉里的废话</em><p>希拉里就钓鱼岛问题警告中国...<strong>[详细]</strong></p></li>
+				<li><img src="http://r3.sinaimg.cn/10260/2013/0206/46/a/87377666/250x10000x100x0x0x1.jpg" /><em>希拉里就钓鱼岛问题警告中国</em><p>希拉里就钓鱼岛问题警告中国...<strong>[详细]</strong></p></li>
+			</ul>
+		</div>
+	</div>
+	<div class="news_C clearfix">
+		<span class="cr_1c5ba2 fl">实时新闻：</span>
+		<div class="news_C_slide fl">
+			<ul>
+				<li class="fl">
+					<a>科比摇身一变 湖人赢来连胜<em class="ft12 cr_808080">[13:22]</em></a>
+					<a class="news_C_more">更多</a>
+				</li>
+				<li class="fl">
+					<a>科比摇身一变 湖人赢来连胜<em class="ft12 cr_808080">[13:22]</em></a>
+					<a class="news_C_more">更多</a>
+				</li>
+				<li class="fl">
+					<a>科比摇身一变 湖人赢来连胜<em class="ft12 cr_808080">[13:22]</em></a>
+					<a class="news_C_more">更多</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+	<div class="clearfix">
+				<div class="news_D fr">
+			<h3 class="title_01">编辑精选</h3>
+			<div class="img_f_text">
+				<img src="http://i0.sinaimg.cn/dy/2013/0126/U7676P1DT20130126120805.jpg" />
+				<span>不让考试啊</span>
+			</div>
+			<div class="news_B anchor_A lh20 mt10">
+				<ul class="cr_808080 ft12">
+										<li><a target="_blank" href="http://news.sina.com.cn/c/2013-01-31/081026166493.shtml">江苏启东14名涉冲击</a></li>
+										<li><a target="_blank" href="http://news.sina.com.cn/c/2013-01-31/021926162758.shtml">黄奇帆：过去5年重庆</a></li>
+										<li><a target="_blank" href="http://news.sina.com.cn/c/2013-01-31/081026166493.shtml">10名在韩失踪中国</a></li>
+									</ul>
+			</div>
+		</div>
+				<div class="news_D fl">
+			<h3 class="title_01">编辑精选</h3>
+			<div class="img_f_text">
+				<img src="http://i0.sinaimg.cn/dy/2013/0126/U7676P1DT20130126120805.jpg" />
+				<span>不让考试啊</span>
+			</div>
+			<div class="news_B anchor_A lh20 mt10">
+				<ul class="cr_808080 ft12">
+										<li><a target="_blank" href="http://news.sina.com.cn/c/2013-01-31/081026166493.shtml">江苏启东14名涉冲击</a></li>
+										<li><a target="_blank" href="http://news.sina.com.cn/c/2013-01-31/021926162758.shtml">黄奇帆：过去5年重庆</a></li>
+										<li><a target="_blank" href="http://news.sina.com.cn/c/2013-01-31/081026166493.shtml">10名在韩失踪中国</a></li>
+									</ul>
+			</div>
+		</div>
+			</div>
+	<h3 class="title_01">图集</h3>
+	<div class="fade_display clearfix">
+		<ul class="conts">
+						<li><img src="http://r3.sinaimg.cn/10260/2013/0206/dd/c/57377383/250x10000x100x0x0x1.jpg" /><em>希拉里就钓鱼岛问题警告中国</em></li>
+						<li><img src="http://r3.sinaimg.cn/10260/2013/0206/48/0/11378603/250x10000x100x0x0x1.jpg" /><em>中国不甩希拉里的废话</em></li>
+						<li><img src="http://r3.sinaimg.cn/10260/2013/0206/46/a/87377666/250x10000x100x0x0x1.jpg" /><em>希拉里就钓鱼岛问题警告中国</em></li>
+					</ul>
+		<ul class="triggers">
+						<li ><img src="http://r3.sinaimg.cn/10260/2013/0206/dd/c/57377383/250x10000x100x0x0x1.jpg" /><em>希拉里就钓鱼岛问题警告中国</em></li>
+						<li ><img src="http://r3.sinaimg.cn/10260/2013/0206/48/0/11378603/250x10000x100x0x0x1.jpg" /><em>中国不甩希拉里的废话</em></li>
+						<li style="margin-bottom:5px;;"><img src="http://r3.sinaimg.cn/10260/2013/0206/46/a/87377666/250x10000x100x0x0x1.jpg" /><em>希拉里就钓鱼岛问题警告中国</em></li>
+					</ul>
+		<div class="current_desc"><span></span></div>
+	</div>
+	<div class="clearfix">
+		<div class="news_E fl">
+			<h3 class="title_01">热点排行</h3>
+			<ol class="anchor_A cr_808080">
+			   <li class="topNum">
+					<span>1</span>
+					<a href="http://news.sina.com.cn/c/2013-01-30/192426161704.shtml" target="_blank">日本忧中国有害物质随风飘至</a>
+				</li>
+				<li class="topNum">
+					<span>2</span>
+					<a href="http://news.sina.com.cn/c/2013-01-30/192426161704.shtml" target="_blank">日本忧中国有害物质随风飘至</a>
+				</li>
+				<li class="topNum">
+					<span>3</span>
+					<a href="http://news.sina.com.cn/c/2013-01-30/192426161704.shtml" target="_blank">日本忧中国有害物质随风飘至</a>
+				</li>
+				<li >
+					<span>4</span>
+					<a href="http://news.sina.com.cn/c/2013-01-30/192426161704.shtml" target="_blank">日本忧中国有害物质随风飘至</a>
+				</li>
+				<li >
+					<span>5</span>
+					<a href="http://news.sina.com.cn/c/2013-01-30/192426161704.shtml" target="_blank">日本忧中国有害物质随风飘至</a>
+				</li>
+				<li >
+					<span>6</span>
+					<a href="http://news.sina.com.cn/c/2013-01-30/192426161704.shtml" target="_blank">日本忧中国有害物质随风飘至</a>
+				</li>
+				<li >
+					<span>7</span>
+					<a href="http://news.sina.com.cn/c/2013-01-30/192426161704.shtml" target="_blank">日本忧中国有害物质随风飘至</a>
+				</li>
+				<li >
+					<span>8</span>
+					<a href="http://news.sina.com.cn/c/2013-01-30/192426161704.shtml" target="_blank">日本忧中国有害物质随风飘至</a>
+				</li>
+			</ol>
+		</div>
+		<div class="news_F fr">
+			<h3 class="title_01">热点活动</h3>
+						<p class="ft14 lh30">
+				<a>千呼万唤始出来</a>
+			</p>
+						<p class="cr_808080 area ft12">
+				<a>千呼万唤始出来千呼万唤始出来千呼万唤始出来...</a>
+			</p>
+						<p class="ft14 lh30">
+				<a>千呼万唤始出来</a>
+			</p>
+						<p class="cr_808080 lh30">
+				<a>千呼万唤始出来</a>
+			</p>
+						<p class="cr_808080 lh30">
+				<a>千呼万唤始出来</a>
+			</p>
+						<p class="cr_808080 lh30">
+				<a>千呼万唤始出来</a>
+			</p>
+						<p class="cr_808080 lh30">
+				<a>千呼万唤始出来</a>
+			</p>
+					</div>
+	</div>
+	<h3 class="title_01">专题</h3>
+	<div class="news_G clearfix">
+				<div class="img_f_text fl" >
+			<img src="http://i1.sinaimg.cn/dy/2013/0128/U8382P1DT20130128093101.jpg" />
+			<span>这个丑呀</span>
+		</div>
+				<div class="img_f_text fl" style="margin:0 13px;">
+			<img src="http://i1.sinaimg.cn/dy/2013/0128/U8382P1DT20130128093101.jpg" />
+			<span>这个丑呀</span>
+		</div>
+				<div class="img_f_text fl" >
+			<img src="http://i1.sinaimg.cn/dy/2013/0128/U8382P1DT20130128093101.jpg" />
+			<span>这个丑啊呀</span>
+		</div>
+			</div>
+</div><div class="cont_02">
+	<div class="news_A anchor_A news_bottom">
+				<h3><a class="cr_1c5ba2 ft18 lh30" target="_blank" href="news_content.html">重庆不雅视频当事女子被以敲诈</a></h3>
+				<p class="cr_666 ft12">[<a target="_blank" href="news_content.html">全国灰霾面积扩大至143万平方公里</a> <a target="_blank" href="http://weather.news.sina.com.cn/news/2013/0131/072184965.html">明日起雾霾将</a>]</p>
+				<p class="cr_666 ft12">[<a target="_blank" href="news_content.html">公安部允许交警戴口罩</a> <a target="_blank" href="http://news.sina.com.cn/c/2013-01-30/192426161704.shtml">日呼吁民众关门窗避中国</a> <a target="_blank" href="http://news.sina.com.cn/z/wgzdblxwm/">专题</a>]</p>
+				<h3><a >重庆不雅视频当事女子被以敲诈</a></h3>
+				<p class="cr_666 ft12">[<a target="_blank" href="news_content.html">公安部允许交警戴口罩</a> <a target="_blank" href="http://news.sina.com.cn/c/2013-01-30/192426161704.shtml">日呼吁民众关门窗避中国</a> <a target="_blank" href="http://news.sina.com.cn/z/wgzdblxwm/">专题</a>]</p>
+				<h3><a >重庆不雅视频当事女子被以敲诈</a></h3>
+				<p class="cr_666 ft12">[<a target="_blank" href="news_content.html">全国灰霾面积扩大至143万平方公里</a> <a target="_blank" href="http://weather.news.sina.com.cn/news/2013/0131/072184965.html">明日起雾霾将</a>]</p>
+				<p class="cr_666 ft12">[<a target="_blank" href="news_content.html">公安部允许交警戴口罩</a> <a target="_blank" href="http://news.sina.com.cn/c/2013-01-30/192426161704.shtml">日呼吁民众关门窗避中国</a> <a target="_blank" href="http://news.sina.com.cn/z/wgzdblxwm/">专题</a>]</p>
+				<h3><a >重庆不雅视频当事女子被以敲诈</a></h3>
+				<p class="cr_666 ft12">[<a target="_blank" href="news_content.html">全国灰霾面积扩大至143万平方公里</a> <a target="_blank" href="http://weather.news.sina.com.cn/news/2013/0131/072184965.html">明日起雾霾将</a>]</p>
+				<p class="cr_666 ft12">[<a target="_blank" href="news_content.html">公安部允许交警戴口罩</a> <a target="_blank" href="http://news.sina.com.cn/c/2013-01-30/192426161704.shtml">日呼吁民众关门窗避中国</a> <a target="_blank" href="http://news.sina.com.cn/z/wgzdblxwm/">专题</a>]</p>
+			</div>	
+	<div class="news_B anchor_A">
+		<h2>国际</h2>
+		<h4>印度政党向女性发两万把刀防身</h4>
+		<ul class="cr_808080">
+						<li><a target="_blank" href="news_content.html">江苏启东14名涉冲击国家机关被告均认罪</a></li>
+									<li><a target="_blank" href="news_content.html">江苏启东14名涉冲击国家机关被告均认罪</a></li>
+									<li><a target="_blank" href="news_content.html">江苏启东14名涉冲击国家机关被告均认罪</a></li>
+									<li><a target="_blank" href="news_content.html">江苏启东14名涉冲击国家机关被告均认罪</a></li>
+					</ul>
+	</div>
+	<div class="news_B anchor_A news_bottom">
+		<h2>国内</h2>
+		<ul class="cr_808080">
+						<li><a class="cr_b00704 ft14" target="_blank" href="news_content.html">江苏启东14名涉冲击国家机关被告均认罪</a></li>
+						<li><a  target="_blank" href="news_content.html">江苏启东14名涉冲击国家机关被告均认罪</a></li>
+						<li><a  target="_blank" href="news_content.html">江苏启东14名涉冲击国家机关被告均认罪</a></li>
+						<li><a  target="_blank" href="news_content.html">江苏启东14名涉冲击国家机关被告均认罪</a></li>
+						<li><a  target="_blank" href="news_content.html">江苏启东14名涉冲击国家机关被告均认罪</a></li>
+						<li><a class="cr_black ft14" target="_blank" href="news_content.html">江苏启东14名涉冲击国家机关被告均认罪</a></li>
+						<li><a  target="_blank" href="news_content.html">江苏启东14名涉冲击国家机关被告均认罪</a></li>
+						<li><a  target="_blank" href="news_content.html">江苏启东14名涉冲击国家机关被告均认罪</a></li>
+						<li><a  target="_blank" href="news_content.html">江苏启东14名涉冲击国家机关被告均认罪</a></li>
+						<li><a  target="_blank" href="news_content.html">江苏启东14名涉冲击国家机关被告均认罪</a></li>
+					</ul>
+	</div>	<div class="news_B anchor_A">
+		<h2>社会</h2>
+		<h4>印度政党向女性发两万把刀防身</h4>
+		<div class="l_i_r_p clearfix">
+			<img src="http://i2.sinaimg.cn/dy/2013/0129/U6458P1DT20130129172050.jpg" />
+			<p class="cr_808080 ft12">当官不难，身正不怕影歪，为民做事自一路坦途，好官就是我。<a class="cr_1c5ba2" target="_blank" href="http://news.sina.com.cn/z/dangguannan/">[详细]</a></p>
+		</div>
+		<ul class="cr_808080">
+						<li><a target="_blank" href="news_content.html">江苏启东14名涉冲击国家机关被告均认罪</a></li>
+									<li><a target="_blank" href="news_content.html">江苏启东14名涉冲击国家机关被告均认罪</a></li>
+									<li><a target="_blank" href="news_content.html">江苏启东14名涉冲击国家机关被告均认罪</a></li>
+									<li><a target="_blank" href="news_content.html">江苏启东14名涉冲击国家机关被告均认罪</a></li>
+					</ul>
+	</div>
+	<div class="anchor_A mt20">
+		<p><a class="mr10">[特辑]</a><a>苏宁易购正品有保障</a></p>
+		<p class="mt10"><a class="mr10">[特辑]</a><a>印度政党向女性发两万把刀防身</a></p>
+	</div>
+</div><div class="cont_03">
+	<h3 class="title_01">新闻直播</h3>
+	<ul class="img_list_01 clearfix cr_666 mt15">
+		<li class="fl">
+		  <a>
+			<img src="http://i2.sinaimg.cn/dy/2013/0130/U3165P1DT20130130112520.jpg">
+			<span class="">包吊床与日预设水泡</span>
+		  </a>
+		</li>
+		 <li class="fr">
+		   <a>
+			<img src="http://i2.sinaimg.cn/dy/2013/0130/U3165P1DT20130130112520.jpg">
+			<span class="">包吊床与日预设水泡</span>
+		 </a>
+		 </li>
+	</ul>
+	<ul class="icon_list anchor_A mt15">
+				<li><a href="news_content.html" target="_blank">心凌低温露背裸肩热舞</a></li>
+				<li><a href="news_content.html" target="_blank">心凌低温露背裸肩热舞</a></li>
+				<li><a href="news_content.html" target="_blank">心凌低温露背裸肩热舞</a></li>
+				<li><a href="news_content.html" target="_blank">心凌低温露背裸肩热舞</a></li>
+				<li><a href="news_content.html" target="_blank">心凌低温露背裸肩热舞</a></li>
+	</ul>
+	<div class="cont_03_line"></div>
+	<h3 class="title_01">观点</h3>
+	<div class="img_f_text mt15"><img src="http://i2.sinaimg.cn/dy/2013/0130/U7676P1DT20130130120131.jpg" /><span>我是不是最帅的？</span></div>
+	<ul class="option_list mt15 mb10">
+		<li><label><input type="radio" name="1"  />是的</label></li>
+		<li><label><input type="radio" name="1"  />必须是的</label></li>
+		<li><label><input type="radio" name="1" />没跑</label></li>
+	</ul>
+	<div class="news-vote-submit">提交投票</div>
+	<div class="news-vote-more">查看结果</div>
+	<div class="news_ad_01">
+		<img src="http://i2.sinaimg.cn/dy/2013/0125/U4708P1DT20130125174843.jpg" height="95" width="200" />
+	</div>
+	<h3 class="title_01">新闻爆料</h3>
+	<div class="news_B anchor_A">
+		<ul class="cr_808080">
+			<li><a target="_blank" href="news_content.html">江苏启东14名涉冲击国家机关被告均认罪</a></li>
+			<li><a target="_blank" href="news_content.html">江苏启东14名涉冲击国家机关被告均认罪</a></li>
+	   </ul>
+	</div>
+	<div class="brokeArea mt15">
+		<textarea></textarea>
+		<div class="news-bao-submit">我要爆料</div>
+		<div class="news-bao-more mb10">更多爆料</div>
+	</div>
+	<div class="cont_03_line"></div>
+	<h3 class="title_01">新闻热图</h3>
+	<div class="small_slide">
+		<ul>
+			<li><img src="http://r3.sinaimg.cn/10260/2013/0206/dd/c/57377383/250x10000x100x0x0x1.jpg" /></li>
+			<li><img src="http://r3.sinaimg.cn/10260/2013/0206/48/0/11378603/250x10000x100x0x0x1.jpg" /></li>
+			<li><img src="http://r3.sinaimg.cn/10260/2013/0206/46/a/87377666/250x10000x100x0x0x1.jpg" /></li>
+	    </ul>
+	</div>
+	<div class="news_B anchor_A">
+		<ul class="cr_808080">
+			<li><a target="_blank" href="news_content.html">江苏启东14名涉冲击国家机关被告均认罪</a></li>
+			<li><a target="_blank" href="news_content.html">江苏启东14名涉冲击国家机关被告均认罪</a></li>
+			<li><a target="_blank" href="news_content.html">江苏启东14名涉冲击国家机关被告均认罪</a></li>
+		</ul>
+	</div>
+</div>
+</div>
+
+<!-- footer start -->
+<div class="footer">
+     <div>Copyright @ 2004-2011<span class="name">南京厚建软件有限责任公司 - 门户应用专家</span>版权所有  025-83326233</div>
+     <div class="mt5">苏ICP备05021966号</div>
+</div>
+<!-- footer end -->
+
+<script type="text/javascript">
+$(function ($) {
+	var el = $('.small_slide');
+	el.switchable({
+		putTriggers: 'appendTo',
+	    panels: 'li',
+	    initIndex: 0, // display the last panel
+	    effect: 'scrollLeft', // taking effect when autoplay == true
+	    easing: 'cubic-bezier(.455, .03, .515, .955)', // equal to 'easeInOutQuad'
+	    end2end: true, // if set to true, loop == true
+	    loop: false, // not taking effect, because end2end == true
+	    autoplay: true,
+	    interval: 5,
+	    api: true // if set to true, Switchable returns API
+	})//.pause();
+});
+$(function() {
+	  $('.fade_display .conts').switchable({
+	    triggers: $('.triggers').find('li'),
+	    effect: 'fade',
+	    autoplay: true,
+	    onSwitch: function(event, currentIndex) {
+	      var api = this,
+	          cfg = api.config;	      new $.switchable.Anim(
+	    	        $('.current_desc'),
+	    	        {top:-3 + 63 * currentIndex},
+	    	        cfg.duration,
+	    	        cfg.easing
+	    	      ).run();
+	    }
+	  });
+	});
+$(function ($) {
+	var el = $('.slide_display');
+	el.switchable({
+		putTriggers: 'appendTo',
+	    panels: 'li',
+	    initIndex: 0, // display the last panel
+	    effect: 'scrollLeft', // taking effect when autoplay == true
+	    easing: 'cubic-bezier(.455, .03, .515, .955)', // equal to 'easeInOutQuad'
+	    end2end: true, // if set to true, loop == true
+	    loop: false, // not taking effect, because end2end == true
+	    autoplay: true,
+	    interval: 5,
+	    api: true // if set to true, Switchable returns API
+	})//.pause();
+});
+ $(function ($) {
+	$('.news_C_slide').switchable({
+		triggers: false,
+		panels: 'li',
+		effect: 'scrollLeft',
+		easing: 'ease-in-out',
+		end2end: true,
+		autoplay: true,
+		next: '.news_C_more',
+	});
+}); 
+</script>

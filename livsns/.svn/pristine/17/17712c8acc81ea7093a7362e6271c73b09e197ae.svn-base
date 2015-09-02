@@ -1,0 +1,106 @@
+﻿2011/4/7 chengqing
+
+1)api/friendships/isUserAtt.php
+接口名称  ： isUserAtt
+作用：查询关注某个用户在内的指定数目的用户
+参数： user_name : 必须包含的用户名称(必传)
+	  count : 返回的用户数量(选传，默认是20个用户)
+	  format:返回值格式：xml|json(必传)
+返回值：满足条件返回 : 查询出的用户信息(注：第一个是必须包含的用户信息)
+	         不满足条件返回  : false
+
+2)api/video/isSelfChannel.php
+接口名称 ：  isSelfChannel
+作用：查询某个用户在内的是否在规定时间内开通了个人频道
+参数：user_id: 用户ID / user_name : 用户名 (必传 ， 2选1)
+	  start_time ： 规定开通的开始时间(选传 ， 默认是2011-4-11 ， 格式 ： 年-月-日)
+	  end_time ： 规定开通的结束时间(选传 ， 默认是2011-6-30 ， 格式 ： 年-月-日)
+	  format:返回值格式：xml|json(必传)
+返回值：(bool) true/false
+
+3)api/video/isUploadVideo.php
+接口名称 ：  isUploadVideo
+作用：查询某个用户在内的是否在规定时间内上传了指定数目的视频
+参数： user_id: 用户ID / user_name : 用户名 (必传 ， 2选1)
+	  start_time ： 规定开通的开始时间(选传 ， 默认是2011-4-11 ， 格式 ： 年-月-日)
+	  end_time ： 规定开通的结束时间(选传 ， 默认是2011-6-30 ， 格式 ： 年-月-日)
+	  count : 规定视频的数量(选传，默认是5个视频)
+	  format:返回值格式：xml|json(必传)
+返回值：(bool) true/false
+
+4)api/albums/isUploadPhoto.php
+接口名称 ：  isUploadVideo
+作用：查询某个用户在内的是否在规定时间内上传了指定数目的图片
+参数： user_id: 用户ID / user_name : 用户名 (必传 ， 2选1)
+	  start_time ： 规定开通的开始时间(选传 ， 默认是2011-4-11 ， 格式 ： 年-月-日)
+	  end_time ： 规定开通的结束时间(选传 ， 默认是2011-6-30 ， 格式 ： 年-月-日)
+	  count : 规定图片的数量(选传，默认是10张图片)
+	  format:返回值格式：xml|json(必传)
+返回值：(bool) true/false
+
+5)api/status/isReleaseBlog.php
+接口名称 ：  isReleaseBlog
+作用：查询某个用户在内的是否在规定时间内发布了指定数目的微博
+参数： user_id: 用户ID / user_name : 用户名 (必传 ， 2选1)
+	  start_time ： 规定开通的开始时间(选传 ， 默认是2011-4-11 ， 格式 ： 年-月-日)
+	  end_time ： 规定开通的结束时间(选传 ， 默认是2011-6-30 ， 格式 ： 年-月-日)
+	  count : 规定发布的数量(选传，默认是20条微博)
+	  format:返回值格式：xml|json(必传)
+返回值：(bool) true/false
+
+6)api/friendships/isFans.php
+接口名称 ：  isFans
+作用：查询某个用户在内的是否达到了指定数目的粉丝
+参数： user_id: 用户ID / user_name : 用户名 (必传 ， 2选1)
+	  count : 规定粉丝的数量(选传，默认是10个粉丝)
+	  format:返回值格式：xml|json(必传)
+返回值：(bool) true/false
+
+以上6个接口需要用户登录验证
+
+----------------------------------------------------------------------------------------
+2011/4/7 yunna
+
+1、isCreateTopic.php
+接口名称 isCreateTopic
+作用：查询某用户在某个地盘下是否发表过帖子
+参数：user_id：要查询的用户，如果传递此参数，则查询指定的用户，若不传递此参数，就查询当前登录用户
+	name：地盘名称，必需参数，如果不传递此参数，将返回“参数不完整”错误
+	from：限定的开始时间，格式：2011-04-01（即：yyyy-mm-dd）
+	to：限定的结束时间，格式同参数“from”，此参数和“from”参数不需要成对传递
+	format:返回值格式：xml|json
+	code:编码，默认为utf-8，非必需参数
+返回值：（bool）true/false
+接口地址：http://127.0.0.1/livsns/api/group/isCreateTopic.php?user_id=5&name=西湖区&from=02-03&to=03-01&format=xml(实际应用时按需传递参数即可)
+
+注：此接口需要用户登录系统，因为在不传递user_id的时候，如果用户没有登录系统，则返回“参数不完整”错误
+
+2、isDomainAtt.php
+接口名称 isDomainAtt
+作用：查询某用户是否关注了某个地盘，并且该用户的地盘关注数是否大于某个指定值
+参数：user_id：要查询的用户，如果传递此参数，则查询指定的用户，若不传递此参数，就查询当前登录用户
+	name：地盘名称，必需参数，如果不传递此参数，将返回“参数不完整”错误
+	num：指定的个数，默认值为5
+	from：限定的开始时间，格式：2011-04-01（即：yyyy-mm-dd）
+	to：限定的结束时间，格式同参数“from”，此参数和“from”参数不需要成对传递
+	format:返回值格式：xml|json
+	code:编码，默认为utf-8，非必需参数
+返回值：（bool）true/false
+接口地址：http://127.0.0.1/livsns/api/group/isDomainAtt.php?user_id=5&name=西湖区&num=5&from=02-03&to=03-01&format=xml(实际应用时按需传递参数即可)
+
+注：此接口需要用户登录系统，因为在不传递user_id的时候，如果用户没有登录系统，则返回“参数不完整”错误
+
+3、isPvCounts.php
+接口名称 isPvCounts
+作用：查询当前用户在某个地盘帖子的最高点击数是否大于某个指定值
+参数：name：地盘名称，必需参数，如果不传递此参数，将返回“参数不完整”错误
+	num：指定的点击数，必需参数，无默认值
+	from：限定的开始时间，格式：2011-04-01（即：yyyy-mm-dd）
+	to：限定的结束时间，格式同参数“from”，此参数和“from”参数不需要成对传递
+	format:返回值格式：xml|json
+	code:编码，默认为utf-8，非必需参数
+返回值：如果指定的地盘中帖子的点击量大于指定的数字，则返回这些帖子（数组），否则返回false
+接口地址：http://127.0.0.1/livsns/api/group/isPvCounts.php?name=西湖区&num=500&from=02-03&to=03-01&format=xml(实际应用时按需传递参数即可)
+
+注：此接口需要用户登录系统
+

@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>用户管理中心-首页</title>
+<link href="images/user.css" rel="stylesheet" type="text/css" />
+<script src="js/new_tab.js" type="text/javascript"></script>
+<!--[if IE 6]>
+<link href="images/ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+</head>
+
+<body>
+
+	<div class="cp_frame">
+		
+		<div class="warp">
+	            <div class="header">
+	                <h1><a href="admin.php"><img src="images/logo.jpg" alt="用户管理中心" /></a></h1>
+	                <ul class="menu">
+	                    <li class="cur"><span>首页</span></li>
+	                    <li><a onFocus="this.blur();" href="admin.php?m=app&a=ls" title="应用管理">应用管理</a></li>
+	                    <li><a onFocus="this.blur();" href="admin.php?m=user&a=ls" title="用户管理">用户管理</a></li>
+	                    <li><a onFocus="this.blur();" href="admin.php?m=uset&a=ls" title="用户设置">用户设置</a></li>
+	                    <li><a onFocus="this.blur();" href="admin.php?m=ugroup&a=ls" title="用户组设置">用户组设置</a></li>
+	                    <li><a onFocus="this.blur();" href="admin.php?m=credit&a=ls" title="积分设置">积分设置</a></li>
+	                    <li><a onFocus="this.blur();" href="admin.php?m=admin&a=ls" title="管理员">管理员</a></li>
+	                    <li><a onFocus="this.blur();" href="admin.php?m=badword&a=ls" title="语句过滤">语句过滤</a></li>
+	                    <li><a onFocus="this.blur();" href="admin.php?m=db&a=ls" title="数据备份">数据备份</a></li>
+	                    <li><a onFocus="this.blur();" href="admin.php?m=cache&a=update" title="更新缓存">更新缓存</a></li>
+	                    
+	                </ul>
+	                <div class="admin_zone">
+	                    $username<a href="admin.php?m=user&a=logout" class="logout">退出</a>
+	                </div>
+	            </div>
+	            
+	            {if $iframe}
+				<script type="text/javascript">
+					var uc_menu_data = new Array();
+					o = document.getElementById('header_menu_menu');
+					elems = o.getElementsByTagName('A');
+					for(i = 0; i<elems.length; i++) {
+						uc_menu_data.push(elems[i].innerHTML);
+						uc_menu_data.push(elems[i].href);
+					}
+					try {
+						parent.uc_left_menu(uc_menu_data);
+						parent.uc_modify_sid('{$sid}');
+					} catch(e) {}
+				</script>
+				{/if}
+	            
+	             <div class="app_count">
+	            		<h3 class="tle"><strong>统计信息</strong></h3>
+	                    <div class="app_count_c">
+	                    	<table cellspacing="0" cellpadding="0" border="0">                        	
+	                            <tbody>
+	                            		<tr>
+	                                    	<!--<th>应用总数：</th>
+	                                        -->
+	                                        
+	                                        <td><em><!--{if $user['allowadminapp'] || $user['isfounder']}--><a href="admin.php?m=app&a=ls">{lang home_app_count}</a><!--{else}-->{lang home_app_count}<!--{/if}-->:</em>$apps</td>
+	                                    </tr> 
+	                                    <tr>
+	                                    	<!--<th>用户总数：</th>
+	                                        --><td><em><!--{if $user['allowadminuser'] || $user['isfounder']}--><a href="admin.php?m=user&a=ls">{lang home_member_count}</a><!--{else}-->{lang home_member_count}<!--{/if}-->:</em>$members</td>
+	                                    </tr>
+	                                    <tr><td>微博数目:$status_nums</td></tr>
+	                                    <tr><td>地盘数目:$group_nums</td><td>帖子数目:$thread_nums</td></tr> 
+	                                    <tr><td>相册数目:$albums_nums</td><td>图片数目:$pics_nums</td></tr>
+	                                    <tr><td>频道数目:$station_nums</td><td>节目单数目:$program_nums</td><td>视频数目:$video_nums</td></tr>                          	
+	                            </tbody>
+	                        </table>
+	                    </div>
+	            </div>
+	            <!--<ul class="memlist fixwidth">
+					<li><em>{if $user['allowadminapp'] || $user['isfounder']}<a href="admin.php?m=app&a=ls">{lang home_app_count}</a>{else}{lang home_app_count}{/if}:</em>$apps</li>
+					<li><em>{if $user['allowadminuser'] || $user['isfounder']}<a href="admin.php?m=user&a=ls">{lang home_member_count}</a>{else}{lang home_member_count}{/if}:</em>$members</li>
+				</ul>
+	           	
+	            -->
+	            <div class="os">
+	            		<h3 class="tle"><strong>系统信息</strong></h3>
+	                    <div class="os_c">
+	                    	<table cellspacing="0" cellpadding="0" border="0">                        	
+	                            <tbody>              
+	                                    <tr>
+	                                    	<td><em>{lang home_environment}:</em>$serverinfo</td>
+	                                    </tr>
+	                                    <tr>
+	                                    	<td><em>{lang home_server_software}:</em>$_SERVER[SERVER_SOFTWARE]</td>
+	                                    </tr>
+	                                    <tr>
+	                                      	<td><em>{lang home_database}:</em>$dbversion</td>
+	                                    </tr>
+	                                    <tr>
+	                                        <td><em>{lang home_upload_perm}:</em>$fileupload</td>
+	                                    </tr>
+	                                     <tr>
+	                                        <td><em>{lang home_database_size}:</em>$dbsize</td>
+	                                    </tr> 
+	                                     <tr>
+	                                        <td><em>{lang home_server_ip}:</em>$_SERVER[SERVER_NAME] ($_SERVER[SERVER_ADDR]:$_SERVER[SERVER_PORT])</td>
+	                                    </tr>
+	                                    <tr>
+	                                        <td><em>magic_quote_gpc:</em>$magic_quote_gpc</td>
+	                                    </tr> 
+	                                    <tr>
+	                                        <td><em>allow_url_fopen:</em>$allow_url_fopen</td>
+	                                    </tr>                           	
+	                            </tbody>
+	                        </table>
+	                    </div>
+	            </div>
+	            
+	            <!--<ul class="memlist fixwidth">
+					<li><em>{lang home_version}:</em>UCenter {UC_SERVER_VERSION} Release {UC_SERVER_RELEASE} <a href="http://www.discuz.net/forumdisplay.php?fid=151" target="_blank">{lang view_new_version}</a> 
+					<li><em>{lang home_environment}:</em>$serverinfo</li>
+					<li><em>{lang home_server_software}:</em>$_SERVER[SERVER_SOFTWARE]</li>
+					<li><em>{lang home_database}:</em>$dbversion</li>
+					<li><em>{lang home_upload_perm}:</em>$fileupload</li>
+					<li><em>{lang home_database_size}:</em>$dbsize</li>		
+					<li><em>{lang home_server_ip}:</em>$_SERVER[SERVER_NAME] ($_SERVER[SERVER_ADDR]:$_SERVER[SERVER_PORT])</li>
+					<li><em>magic_quote_gpc:</em>$magic_quote_gpc</li>
+					<li><em>allow_url_fopen:</em>$allow_url_fopen</li>		
+				</ul>                    	
+	    -->
+	    </div>
+    </div>
+    $ucinfo    
+</body>
+</html>

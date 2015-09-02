@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>hogesoft 大转盘</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	
+	<style>
+	.canvas-wrap, .handle-btns{text-align:center;}
+	.handle-btns{margin-top:20px;}
+	.new-game-btn{background:#cc1a19;color:#fff;height:36px;line-height:36px;display:block;width:128px;text-align:center;border-bottom:5px solid #a7020c;border-radius:6px;font-size:18px;margin:13px auto;}	</style>
+</head>
+<body>
+	<div class="canvas-wrap">
+		<canvas id="mycanvas" width="300" height="300"></canvas>
+	</div>
+	<div class="handle-btns">
+		<a class="new-game-btn">开始游戏</a>
+	</div>
+	<script src="./js/zepto.js"></script>
+	<script src="./js/engine.js"></script>
+	<script src="./js/mylottery.js"></script>
+</body>
+</html>

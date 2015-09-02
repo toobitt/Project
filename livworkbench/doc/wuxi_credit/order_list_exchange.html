@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>积分商城</title>
+<link rel="stylesheet" href="css/framework7.min.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/credit.css">
+</head>
+<body>
+<div class="view view-main credits-shopping">
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="left sliding">
+				<a href="javascript:history.back()" class="back link">
+					<i class="icon icon-back"></i>
+				</a>
+			</div>
+			<div class="center sliding">积分商城记录</div>
+			<div class="right">
+			</div>
+		</div>
+	</div>
+	<div class="pages navbar-through">
+		<div data-page="index" class="page">
+			<div class="page-content">
+				<div class="content-block order-lists" _title="积分商城记录">
+					<ul>
+						<!-- <li class="item-content">
+							<a href="./order_detail_post.html">
+								<div class="m2o-flex m2o-flex-center order-info">
+									<div class="m2o-flex-one">订单号：6374172741</div>
+									<div>2014-07-13 14:30</div>
+								</div>
+								<div class="m2o-flex goods-info">
+									<div class="item-media">
+										<img src="./images/shopping.png">
+									</div>
+									<p class="item-title m2o-flex-one">湖景桃，全球最好吃的水蜜桃限量供应</p>
+									<div class="count">x1</div>
+								</div>
+								<div class="m2o-flex m2o-flex-center other-info">
+									<div class="m2o-flex-one">
+										<span class="status red-bg">待领取</span>
+									</div>
+									<span class="item-credits red-color">12998</span>
+								</div>
+							</a>
+						</li>
+						<li class="item-content">
+							<a href="./order_detail_post.html">
+								<div class="m2o-flex m2o-flex-center order-info">
+									<div class="m2o-flex-one">订单号：6374172741</div>
+									<div>2014-07-13 14:30</div>
+								</div>
+								<div class="m2o-flex goods-info">
+									<div class="item-media">
+										<img src="./images/shopping.png">
+									</div>
+									<p class="item-title m2o-flex-one">全家 FamilyMart 20元代金券</p>
+									<div class="count">x1</div>
+								</div>
+								<div class="m2o-flex m2o-flex-center other-info">
+									<div class="m2o-flex-one">
+										<span class="status blue-bg">已发货</span>
+									</div>
+									<span class="item-credits red-color">12998</span>
+								</div>
+							</a>
+						</li>
+						<li class="item-content">
+							<a href="./order_detail_post.html">
+								<div class="m2o-flex m2o-flex-center order-info">
+									<div class="m2o-flex-one">订单号：6374172741</div>
+									<div>2014-07-13 14:30</div>
+								</div>
+								<div class="m2o-flex goods-info">
+									<div class="item-media">
+										<img src="./images/shopping.png">
+									</div>
+									<p class="item-title m2o-flex-one">湖景桃，全球最好吃的水蜜桃限量供应</p>
+									<div class="count">x1</div>
+								</div>
+								<div class="m2o-flex m2o-flex-center other-info">
+									<div class="m2o-flex-one">
+										<span class="status gray-bg">已收货</span>
+									</div>
+									<span class="item-credits red-color">12998</span>
+								</div>
+							</a>
+						</li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/template.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript">
+	function index(){
+		var url = getUrl('index'),
+			colorStae = ["red-bg", "blue-bg", "gray-bg"];
+		getAjax(url, {type : 'record'}, function( data ){
+			$.each(data, function(kk, vv){
+				vv.colorClass = colorStae[vv.state];
+			});
+			var html = template('record', {list : data}),
+				target = $('.order-lists').find('ul');
+			target.append( html );
+		})
+	}
+	index();
+</script>
+<script id="record" type="text/html">
+{{each list as value i}}
+    <li class="item-content">
+		<a href="./order_detail_post.html">
+			<div class="m2o-flex m2o-flex-center order-info">
+				<div class="m2o-flex-one">订单号：{{value.order}}</div>
+				<div>{{value.create_time}}</div>
+			</div>
+			<div class="m2o-flex goods-info">
+				<div class="item-media">
+					<img src="{{value.image}}">
+				</div>
+				<p class="item-title m2o-flex-one">{{value.title}}</p>
+				<div class="count">x{{value.num}}</div>
+			</div>
+			<div class="m2o-flex m2o-flex-center other-info">
+				<div class="m2o-flex-one">
+					<span class="status {{value.colorClass}}">{{value.status}}</span>
+				</div>
+				<span class="item-credits red-color">{{value.credit}}</span>
+			</div>
+		</a>
+	</li>
+{{/each}}
+</script>
+</body>
+</html>

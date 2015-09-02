@@ -1,0 +1,11 @@
+@charset "utf-8";
+.share-bj,.share-sc{width:35px}
+.share-slt{width:70px}
+.share-fl{width:100px;}
+.share-zt{width:50px;}
+.share-tjsj{width:100px}
+.share-biaoti-overflow{max-width:400px}
+.share-pt{width:300px}
+.result-tip{border:1px solid #50a6e1;width:100px;height:30px;line-height:30px;text-align:center;position:absolute;top:50%;left:50%;margin-left:-50px;margin-top:-15px;}
+.wd350{width:350px;}
+.share-close{background:url("{$RESOURCE_URL}bg-all.png") -67px -70px no-repeat;width:26px;height:26px;top:2px;right:3px;display:inline-block;font-size:0;cursor:pointer;position: absolute;}

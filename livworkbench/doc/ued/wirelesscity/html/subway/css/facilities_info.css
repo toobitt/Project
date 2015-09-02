@@ -1,0 +1,22 @@
+body{background: #eee;}
+.tab-wrap{padding:30px;}
+.tab-wrap .main-wrap{height: auto;background:#fff;padding:20px;}
+.tab-wrap.server-wrap .main-wrap{border-bottom:1px solid #cbcbcb;}
+.tab-wrap .main-wrap .item-title{display: block;width: 100%;height: 44px;color: #fff;line-height: 44px;text-indent: 10px;}
+.tab-wrap .main-wrap .item-title.red{background: #ca0c0c;}
+.tab-wrap .main-wrap .item-title.green{background: #39b698;}
+.tab-wrap .main-wrap .item-info{padding: 30px 20px 20px 20px;}
+.tab-wrap .item-info .info-list{display:block;color:#999;padding:10px 0px 10px 0px;}
+.tab-wrap .item-info .info-list:first-child{padding-bottom:10px;}
+.tab-wrap .item-info .info-list:last-child{padding-top:10px;}
+.tab-wrap .main-wrap .item-title.around{background:url(../images/subway/icon_bus-2x.png) no-repeat 10px center #3b9ac6;text-indent: 50px;}
+.tab-wrap .item-title span{display:block;width:20px;height:20px;float: right;margin:15px 10px}
+.tab-wrap .item-title .toggle-min{background:url(../images/subway/icon_togreduction-2x.png) no-repeat center center;}
+.tab-wrap .item-title .toggle-add{background:url(../images/subway/icon_togadd-2x.png) no-repeat center center;}
+.tab-wrap .access-num{width:100px;}
+.tab-wrap .access-num span{display:block;color:#c90c0c;text-align: center;}
+.tab-wrap .access-num span.num{font-weight: bolder;margin-top:-15px;}
+.tab-wrap .access-num span.sign{letter-spacing: 2px;}
+.tab-wrap .item-info.around-info{background:#eaf9ff;}
+.tab-wrap .around-info .sign-name{color:#3b9ac6;}
+.tab-wrap .around-info .sign-num{color:#78aac8;}
